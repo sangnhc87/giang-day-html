@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tích Có Hướng Và Ứng Dụng - Hình Học 12</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary: #7c3aed;
+            --primary-light: #a78bfa;
+            --secondary: #f59e0b;
+            --accent: #06b6d4;
+            --bg-main: linear-gradient(135deg, #fef3c7 0%, #fce7f3 50%, #e0e7ff 100%);
+            --bg-card: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --success: #10b981;
+            --error: #ef4444;
+            --border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-main);
+            background-attachment: fixed;
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #7c3aed, #db2777, #f59e0b);
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin: 25px 0;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 12px;
+            border-radius: 14px;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .tab-btn {
+            padding: 10px 18px;
+            background: #f1f5f9;
+            border: none;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .tab-btn:hover {
+            background: #e2e8f0;
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, #7c3aed, #db2777);
+            color: white;
+        }
+
+        .section {
+            display: none;
+            animation: fadeIn 0.4s;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+
+        .card h2 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ede9fe;
+            padding-bottom: 10px;
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin: 15px 0 10px;
+            font-size: 1.05rem;
+        }
+
+        .formula {
+            background: linear-gradient(135deg, #fef3c7, #fed7aa);
+            border-left: 4px solid var(--secondary);
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .formula.main {
+            background: linear-gradient(135deg, #ede9fe, #fce7f3);
+            border-left-color: var(--primary);
+        }
+
+        .formula.proof {
+            background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+            border-left-color: var(--success);
+        }
+
+        .exercise {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 12px 0;
+            border: 1px solid var(--border);
+        }
+
+        .exercise-num {
+            background: linear-gradient(135deg, #7c3aed, #db2777);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .exercise-num.hard {
+            background: linear-gradient(135deg, #dc2626, #ea580c);
+        }
+
+        .exercise-num.find {
+            background: linear-gradient(135deg, #0891b2, #0d9488);
+        }
+
+        .solution {
+            display: none;
+            background: #ecfdf5;
+            border: 1px solid #6ee7b7;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 12px;
+        }
+
+        .solution.show {
+            display: block;
+        }
+
+        .solution h4 {
+            color: #047857;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 4px;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #7c3aed, #db2777);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #e2e8f0;
+            color: var(--text);
+        }
+
+        .choices {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 12px 0;
+        }
+
+        @media (max-width: 600px) {
+            .choices {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .choice {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 15px;
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .choice:hover {
+            border-color: var(--primary-light);
+            background: #faf5ff;
+        }
+
+        .choice.correct {
+            border-color: var(--success);
+            background: #d1fae5;
+        }
+
+        .choice.wrong {
+            border-color: var(--error);
+            background: #fee2e2;
+        }
+
+        .choice-label {
+            width: 26px;
+            height: 26px;
+            background: linear-gradient(135deg, #7c3aed, #db2777);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin: 15px 0;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #7c3aed, #db2777);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #7c3aed, #db2777);
+            border-radius: 4px;
+            transition: width 0.4s;
+        }
+
+        .note {
+            background: #fef3c7;
+            border: 1px solid #fbbf24;
+            border-radius: 10px;
+            padding: 12px 15px;
+            margin: 12px 0;
+            color: #92400e;
+            font-size: 0.9rem;
+        }
+
+        .note::before {
+            content: '💡 ';
+        }
+
+        .flex-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            align-items: flex-start;
+        }
+
+        .flex-1 {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .flex-img {
+            flex: 0 0 280px;
+        }
+
+        .img-box {
+            background: linear-gradient(135deg, #f0f9ff, #fdf4ff);
+            border-radius: 14px;
+            padding: 15px;
+            border: 1px solid var(--border);
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .img-box svg {
+            width: 100%;
+            height: auto;
+        }
+
+        .img-caption {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .flex-img {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>✖️ Tích Có Hướng Và Ứng Dụng</h1>
+        <p>Hình học Không gian Oxyz - Lớp 12</p>
+    </header>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showSection('theory')">📚 Lý Thuyết</button>
+            <button class="tab-btn" onclick="showSection('dientich')">📐 Diện Tích</button>
+            <button class="tab-btn" onclick="showSection('thetich')">📦 Thể Tích</button>
+            <button class="tab-btn" onclick="showSection('dongphang')">🔷 Đồng Phẳng</button>
+            <button class="tab-btn" onclick="showSection('timkiem')">🔍 Bài Toán Tìm</button>
+            <button class="tab-btn" onclick="showSection('exercises')">✍️ Trắc Nghiệm</button>
+        </div>
+
+        <!-- LÝ THUYẾT -->
+        <div id="theory" class="section active">
+            <div class="card">
+                <h2>📌 1. Công Thức Tích Có Hướng</h2>
+
+                <div class="flex-row">
+                    <div class="flex-1">
+                        <p>Cho \(\overrightarrow{a} = (a_1; a_2; a_3)\) và \(\overrightarrow{b} = (b_1; b_2; b_3)\)</p>
+
+                        <div class="formula main">
+                            <strong>Tích có hướng:</strong>
+                            \[\overrightarrow{a} \times \overrightarrow{b} = \left( a_2b_3 - a_3b_2; \; a_3b_1 - a_1b_3;
+                            \; a_1b_2 - a_2b_1 \right)\]
+                        </div>
+
+                        <div class="note">
+                            <strong>Mẹo nhớ công thức:</strong> Viết hai dòng tọa độ thẳng cột.
+                            <br>\( \vec{a} = (a_1; a_2; a_3) \)
+                            <br>\( \vec{b} = (b_1; b_2; b_3) \)
+                            <br>
+                            - Hoành độ: Che cột 1 ("cột đầu"), nhân chéo \( a_2 b_3 - a_3 b_2 \)
+                            <br>- Tung độ: Che cột 2 ("cột giữa"), nhân chéo ngược \( a_3 b_1 - a_1 b_3 \)
+                            <br>- Cao độ: Che cột 3 ("cột cuối"), nhân chéo \( a_1 b_2 - a_2 b_1 \)
+                        </div>
+                    </div>
+
+                    <div class="flex-img">
+                        <div class="img-box">
+                            <svg viewBox="0 0 300 240">
+                                <defs>
+                                    <linearGradient id="gradPlane" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:0.2" />
+                                        <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.1" />
+                                    </linearGradient>
+                                    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5"
+                                        orient="auto">
+                                        <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" />
+                                    </marker>
+                                    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5"
+                                        orient="auto">
+                                        <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
+                                    </marker>
+                                    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5"
+                                        orient="auto">
+                                        <polygon points="0 0, 10 3.5, 0 7" fill="#22c55e" />
+                                    </marker>
+                                </defs>
+
+                                <!-- Mặt phẳng chứa a, b -->
+                                <polygon points="50,160 180,130 250,170 120,200" fill="url(#gradPlane)" stroke="#7c3aed"
+                                    stroke-width="1" stroke-dasharray="4,2" />
+
+                                <!-- Gốc O -->
+                                <circle cx="150" cy="165" r="4" fill="#1e293b" />
+                                <text x="135" y="175" fill="#1e293b" font-size="14" font-weight="bold">O</text>
+
+                                <!-- Vectơ a -->
+                                <line x1="150" y1="165" x2="230" y2="145" stroke="#ef4444" stroke-width="3"
+                                    marker-end="url(#arrowRed)" />
+                                <g transform="translate(235, 145)">
+                                    <text x="0" y="0" fill="#ef4444" font-size="16" font-weight="bold">a</text>
+                                    <path d="M 0,-4 L 10,-4 M 7,-7 L 10,-4 L 7,-1" stroke="#ef4444" stroke-width="1.5"
+                                        fill="none" />
+                                </g>
+
+                                <!-- Vectơ b -->
+                                <line x1="150" y1="165" x2="190" y2="205" stroke="#3b82f6" stroke-width="3"
+                                    marker-end="url(#arrowBlue)" />
+                                <g transform="translate(195, 215)">
+                                    <text x="0" y="0" fill="#3b82f6" font-size="16" font-weight="bold">b</text>
+                                    <path d="M 0,-4 L 10,-4 M 7,-7 L 10,-4 L 7,-1" stroke="#3b82f6" stroke-width="1.5"
+                                        fill="none" />
+                                </g>
+
+                                <!-- Vectơ a x b -->
+                                <line x1="150" y1="165" x2="150" y2="65" stroke="#22c55e" stroke-width="3"
+                                    marker-end="url(#arrowGreen)" />
+                                <g transform="translate(160, 60)">
+                                    <text x="0" y="0" fill="#22c55e" font-size="16" font-weight="bold">n = a</text>
+                                    <path d="M 0,-4 L 10,-4 M 7,-7 L 10,-4 L 7,-1" stroke="#22c55e" stroke-width="1.5"
+                                        fill="none" />
+                                    <text x="42" y="0" fill="#22c55e" font-size="16" font-weight="bold">× b</text>
+                                    <path d="M 52,-4 L 62,-4 M 59,-7 L 62,-4 L 59,-1" stroke="#22c55e"
+                                        stroke-width="1.5" fill="none" />
+                                </g>
+
+                                <!-- Góc vuông -->
+                                <path d="M 150,150 L 160,150 L 160,165" stroke="#22c55e" stroke-width="1.5"
+                                    fill="none" />
+
+                                <!-- Quy tắc bàn tay phải (minh họa vòng cung) -->
+                                <path d="M 190,155 Q 180,185 170,185" stroke="#64748b" stroke-width="1.5"
+                                    stroke-dasharray="3,3" marker-end="url(#arrowBlue)" />
+                            </svg>
+                        </div>
+                        <p class="img-caption">Hình 1: VTPT n vuông góc với mp chứa a và b</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📌 2. Tính Chất & Chứng Minh</h2>
+
+                <div class="flex-row">
+                    <div class="flex-1">
+                        <div class="formula">
+                            <strong>Tính chất:</strong>
+                            <br>1. \(\overrightarrow{a} \times \overrightarrow{b} \perp \overrightarrow{a}\) và
+                            \(\overrightarrow{a} \times \overrightarrow{b} \perp \overrightarrow{b}\)
+                            <br>2. \(|\overrightarrow{a} \times \overrightarrow{b}| = |\overrightarrow{a}| \cdot
+                            |\overrightarrow{b}| \cdot \sin(\overrightarrow{a}, \overrightarrow{b})\)
+                        </div>
+
+                        <div class="formula proof">
+                            <strong>Chứng minh công thức diện tích:</strong> \(S_{ABC} =
+                            \dfrac{1}{2}|\overrightarrow{AB} \times \overrightarrow{AC}|\)
+                            <hr style="margin:8px 0; border-color:#6ee7b7">
+                            <p>1. Diện tích tam giác: \(S = \dfrac{1}{2} AB \cdot AC \cdot \sin A\)</p>
+                            <p>2. Theo tính chất 2: \(|\overrightarrow{AB} \times \overrightarrow{AC}| = AB \cdot AC
+                                \cdot \sin(\overrightarrow{AB}, \overrightarrow{AC})\)</p>
+                            <p>3. Vì góc \((\overrightarrow{AB}, \overrightarrow{AC}) = \widehat{A}\) (hoặc bù nhau thì
+                                sin vẫn bằng nhau)</p>
+                            <p>⇒ \(S = \dfrac{1}{2} |\overrightarrow{AB} \times \overrightarrow{AC}|\) (đpcm)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📌 3. Tích Hỗn Hợp & Thể Tích</h2>
+
+                <div class="flex-row">
+                    <div class="flex-1">
+                        <div class="formula main">
+                            \[V_{\text{hộp}} = |[\overrightarrow{a}, \overrightarrow{b}, \overrightarrow{c}]| =
+                            |(\overrightarrow{a} \times \overrightarrow{b}) \cdot \overrightarrow{c}|\]
+                        </div>
+
+                        <div class="formula proof">
+                            <strong>Chứng minh ý nghĩa hình học:</strong>
+                            <hr style="margin:8px 0; border-color:#6ee7b7">
+                            <p>1. \(V = S_{\text{đáy}} \cdot h\)</p>
+                            <p>2. Đáy là hình bình hành tạo bởi \(\overrightarrow{a}, \overrightarrow{b}\) ⇒
+                                \(S_{\text{đáy}} = |\overrightarrow{a} \times \overrightarrow{b}|\)</p>
+                            <p>3. Gọi \(\overrightarrow{n} = \overrightarrow{a} \times \overrightarrow{b}\). Chiều cao
+                                \(h\) là trị tuyệt đối hình chiếu của \(\overrightarrow{c}\) lên \(\overrightarrow{n}\).
+                            </p>
+                            <p>4. \(h = \dfrac{|\overrightarrow{c} \cdot \overrightarrow{n}|}{|\overrightarrow{n}|}\)
+                            </p>
+                            <p>5. \(V = |\overrightarrow{n}| \cdot \dfrac{|\overrightarrow{c} \cdot
+                                \overrightarrow{n}|}{|\overrightarrow{n}|} = |\overrightarrow{n} \cdot
+                                \overrightarrow{c}| = |(\overrightarrow{a} \times \overrightarrow{b}) \cdot
+                                \overrightarrow{c}|\)</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-img">
+                        <div class="img-box">
+                            <svg viewBox="0 0 300 220">
+                                <defs>
+                                    <linearGradient id="gradBox" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.2" />
+                                        <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.05" />
+                                    </linearGradient>
+                                </defs>
+
+                                <!-- Vectơ c -->
+                                <line x1="80" y1="150" x2="80" y2="60" stroke="#ef4444" stroke-width="2"
+                                    marker-end="url(#arrowRed)" />
+                                <g transform="translate(60, 80)">
+                                    <text x="0" y="0" fill="#ef4444" font-weight="bold">c</text>
+                                    <path d="M 0,-4 L 10,-4 M 7,-7 L 10,-4 L 7,-1" stroke="#ef4444" stroke-width="1.5"
+                                        fill="none" />
+                                </g>
+
+                                <!-- Hình hộp -->
+                                <path d="M 80,150 L 180,170 L 240,140 L 140,120 Z" fill="url(#gradBox)" stroke="#3b82f6"
+                                    stroke-width="1.5" /> <!-- Đáy dưới -->
+                                <path d="M 80,60 L 180,80 L 240,50 L 140,30 Z" fill="url(#gradBox)" stroke="#3b82f6"
+                                    stroke-width="1.5" /> <!-- Đáy trên -->
+                                <line x1="80" y1="150" x2="80" y2="60" stroke="#3b82f6" stroke-width="1.5" />
+                                <line x1="180" y1="170" x2="180" y2="80" stroke="#3b82f6" stroke-width="1.5" />
+                                <line x1="240" y1="140" x2="240" y2="50" stroke="#3b82f6" stroke-width="1.5" />
+                                <line x1="140" y1="120" x2="140" y2="30" stroke="#3b82f6" stroke-width="1.5"
+                                    stroke-dasharray="4,2" />
+
+                                <!-- Vectơ a, b -->
+                                <line x1="80" y1="150" x2="180" y2="170" stroke="#3b82f6" stroke-width="2"
+                                    marker-end="url(#arrowBlue)" />
+                                <g transform="translate(130, 180)">
+                                    <text x="0" y="0" fill="#3b82f6" font-weight="bold">a</text>
+                                    <path d="M 0,-4 L 10,-4 M 7,-7 L 10,-4 L 7,-1" stroke="#3b82f6" stroke-width="1.5"
+                                        fill="none" />
+                                </g>
+                                <line x1="80" y1="150" x2="140" y2="120" stroke="#22c55e" stroke-width="2"
+                                    marker-end="url(#arrowGreen)" />
+                                <g transform="translate(100, 130)">
+                                    <text x="0" y="0" fill="#22c55e" font-weight="bold">b</text>
+                                    <path d="M 0,-4 L 10,-4 M 7,-7 L 10,-4 L 7,-1" stroke="#22c55e" stroke-width="1.5"
+                                        fill="none" />
+                                </g>
+
+                                <!-- Vectơ n = a x b -->
+                                <line x1="80" y1="150" x2="80" y2="100" stroke="#7c3aed" stroke-width="2"
+                                    stroke-dasharray="4,2" />
+                                <g transform="translate(85, 110)">
+                                    <text x="0" y="0" fill="#7c3aed" font-size="12">n</text>
+                                    <path d="M 0,-4 L 8,-4 M 5,-6 L 8,-4 L 5,-2" stroke="#7c3aed" stroke-width="1.2"
+                                        fill="none" />
+                                </g>
+
+                                <!-- Chiều cao h -->
+                                <line x1="240" y1="50" x2="240" y2="140" stroke="#64748b" stroke-width="1"
+                                    stroke-dasharray="2,2" />
+                                <text x="245" y="100" fill="#64748b" font-size="12">h</text>
+                            </svg>
+                        </div>
+                        <p class="img-caption">Hình 2: Thể tích là tích vô hướng của c⃗ và (a⃗×b⃗)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DIỆN TÍCH -->
+        <div id="dientich" class="section">
+            <div class="card">
+                <h2>📐 Công Thức Diện Tích</h2>
+
+                <div class="formula main">
+                    <strong>Tam giác ABC:</strong> \(S_{ABC} = \dfrac{1}{2}|\overrightarrow{AB} \times
+                    \overrightarrow{AC}|\)
+                </div>
+                <div class="formula main">
+                    <strong>Hình bình hành ABCD:</strong> \(S_{ABCD} = |\overrightarrow{AB} \times
+                    \overrightarrow{AD}|\)
+                </div>
+                <div class="formula">
+                    <strong>Đường cao từ A:</strong> \(AH = \dfrac{2S_{ABC}}{BC} = \dfrac{|\overrightarrow{AB} \times
+                    \overrightarrow{AC}|}{|\overrightarrow{BC}|}\)
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📝 Ví Dụ Tính Diện Tích Tam Giác</h2>
+
+                <div class="exercise">
+                    <span class="exercise-num">VD 1 - Cơ bản</span>
+                    <div id="ex-area-tri"></div>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('area_tri')">🔄 Đổi đề mới</button>
+                    <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                    <div class="solution" id="sol-area-tri"></div>
+                </div>
+
+                <div class="exercise">
+                    <span class="exercise-num hard">VD 2 - Nâng cao</span>
+                    <div id="ex-area-tri-hard"></div>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('area_tri_hard')">🔄 Đổi đề
+                        mới</button>
+                    <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                    <div class="solution" id="sol-area-tri-hard"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📝 Ví Dụ Tính Đường Cao</h2>
+
+                <div class="exercise">
+                    <span class="exercise-num">VD 3</span>
+                    <div id="ex-height-tri"></div>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('height_tri')">🔄 Đổi đề mới</button>
+                    <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                    <div class="solution" id="sol-height-tri"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📝 Ví Dụ Diện Tích Hình Bình Hành</h2>
+
+                <div class="exercise">
+                    <span class="exercise-num">VD 4</span>
+                    <div id="ex-area-hbh"></div>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('area_hbh')">🔄 Đổi đề mới</button>
+                    <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                    <div class="solution" id="sol-area-hbh"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- THỂ TÍCH -->
+        <div id="thetich" class="section">
+            <div class="card">
+                <h2>📦 Công Thức Thể Tích</h2>
+
+                <div class="flex-row">
+                    <div class="flex-1">
+                        <div class="formula main">
+                            <strong>Tứ diện ABCD:</strong>
+                            \[V = \dfrac{1}{6}|(\overrightarrow{AB} \times \overrightarrow{AC}) \cdot
+                            \overrightarrow{AD}|\]
+                        </div>
+                        <div class="formula main">
+                            <strong>Hình hộp:</strong>
+                            \[V = |(\overrightarrow{a} \times \overrightarrow{b}) \cdot \overrightarrow{c}|\]
+                        </div>
+                        <div class="formula">
+                            <strong>Đường cao tứ diện:</strong>
+                            \[AH = \dfrac{3V}{S_{BCD}}\]
+                        </div>
+                    </div>
+
+                    <div class="flex-img">
+                        <div class="img-box">
+                            <svg viewBox="0 0 300 220">
+                                <defs>
+                                    <linearGradient id="gradTetra" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#f0fdf4;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#dcfce7;stop-opacity:0.8" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Tứ diện -->
+                                <polygon points="150,30 60,180 240,180" fill="url(#gradTetra)" stroke="#22c55e"
+                                    stroke-width="1.5" />
+                                <line x1="150" y1="30" x2="180" y2="130" stroke="#22c55e" stroke-width="1.5" />
+                                <line x1="60" y1="180" x2="180" y2="130" stroke="#22c55e" stroke-width="1.5"
+                                    stroke-dasharray="4,2" />
+                                <line x1="240" y1="180" x2="180" y2="130" stroke="#22c55e" stroke-width="1.5"
+                                    stroke-dasharray="4,2" />
+
+                                <!-- Đường cao -->
+                                <line x1="150" y1="30" x2="150" y2="150" stroke="#ef4444" stroke-width="2"
+                                    stroke-dasharray="5,2" />
+                                <circle cx="150" cy="150" r="3" fill="#ef4444" />
+                                <text x="155" y="100" fill="#ef4444" font-weight="bold">h</text>
+
+                                <!-- Labels -->
+                                <text x="145" y="25" fill="#1e293b" font-weight="bold">A</text>
+                                <text x="45" y="185" fill="#1e293b" font-weight="bold">B</text>
+                                <text x="250" y="185" fill="#1e293b" font-weight="bold">C</text>
+                                <text x="185" y="125" fill="#1e293b" font-weight="bold">D</text>
+                                <text x="155" y="160" fill="#64748b" font-size="12">H</text>
+                            </svg>
+                        </div>
+                        <p class="img-caption">Hình 3: Tứ diện và đường cao</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📝 Ví Dụ Thể Tích Tứ Diện</h2>
+
+                <div class="exercise">
+                    <span class="exercise-num">VD 1</span>
+                    <div id="ex-vol-tetra"></div>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('vol_tetra')">🔄 Đổi đề mới</button>
+                    <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                    <div class="solution" id="sol-vol-tetra"></div>
+                </div>
+
+                <div class="exercise">
+                    <span class="exercise-num hard">VD 2 - Đường cao</span>
+                    <div id="ex-height-tetra"></div>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('height_tetra')">🔄 Đổi đề
+                        mới</button>
+                    <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                    <div class="solution" id="sol-height-tetra"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ĐỒNG PHẲNG -->
+        <div id="dongphang" class="section">
+            <div class="card">
+                <h2>🔷 Điều Kiện Đồng Phẳng</h2>
+
+                <div class="formula main">
+                    <strong>3 vectơ đồng phẳng:</strong> \(\overrightarrow{a}, \overrightarrow{b}, \overrightarrow{c}\)
+                    đồng phẳng \(\Leftrightarrow [\overrightarrow{a}, \overrightarrow{b}]. \overrightarrow{c} = 0\)
+                </div>
+                <div class="formula main">
+                    <strong>4 điểm đồng phẳng:</strong> \(A, B, C, D\) đồng phẳng \(\Leftrightarrow
+                    [\overrightarrow{AB}, \overrightarrow{AC}].\overrightarrow{AD} = 0\)
+                </div>
+
+                <div class="note">
+                    \([\overrightarrow{a}, \overrightarrow{b}, \overrightarrow{c}] = (\overrightarrow{a} \times
+                    \overrightarrow{b}) \cdot \overrightarrow{c}\). Nếu tích này bằng 0 thì đồng phẳng.
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📝 Ví Dụ Đồng Phẳng</h2>
+
+                <div class="exercise">
+                    <span class="exercise-num find">VD - Tìm m</span>
+                    <div id="ex-coplanar-vectors"></div>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('coplanar_vectors')">🔄 Đổi đề
+                        mới</button>
+                    <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                    <div class="solution" id="sol-coplanar-vectors"></div>
+                </div>
+
+                <div class="exercise">
+                    <span class="exercise-num find">VD - Tìm m (4 điểm)</span>
+                    <div id="ex-coplanar-points"></div>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('coplanar_points')">🔄 Đổi đề
+                        mới</button>
+                    <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                    <div class="solution" id="sol-coplanar-points"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BÀI TOÁN TÌM -->
+        <div id="timkiem" class="section">
+            <div class="card">
+                <h2>🔍 Bài Toán Tìm Điểm Trên Trục Tọa Độ</h2>
+
+                <div class="exercise">
+                    <span class="exercise-num find">VD 1 - Điểm trên Ox</span>
+                    <div id="ex-find-ox"></div>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('find_ox')">🔄 Đổi đề mới</button>
+                    <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                    <div class="solution" id="sol-find-ox"></div>
+                </div>
+
+                <div class="exercise">
+                    <span class="exercise-num find">VD 2 - Điểm trên Oz</span>
+                    <div id="ex-find-oz"></div>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('find_oz')">🔄 Đổi đề mới</button>
+                    <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                    <div class="solution" id="sol-find-oz"></div>
+                </div>
+
+                <div class="exercise">
+                    <span class="exercise-num find">VD 3 - Điểm trên trục Oy</span>
+                    <div id="ex-find-oxy"></div>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('find_oxy')">🔄 Đổi đề mới</button>
+                    <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                    <div class="solution" id="sol-find-oxy"></div>
+                </div>
+
+                <div class="exercise">
+                    <span class="exercise-num find">VD 4 - Tìm ngược diện tích</span>
+                    <div id="ex-find-reverse"></div>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('find_reverse')">🔄 Đổi đề
+                        mới</button>
+                    <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                    <div class="solution" id="sol-find-reverse"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TRẮC NGHIỆM -->
+        <div id="exercises" class="section">
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-value" id="score">0</div>
+                    <div class="stat-label">Điểm</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="correct">0</div>
+                    <div class="stat-label">Đúng</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="total">0/10</div>
+                    <div class="stat-label">Hoàn thành</div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress" style="width:0%"></div>
+            </div>
+            <div id="quiz-container"></div>
+            <button class="btn btn-primary" onclick="resetQuiz()" style="margin-top:15px">🔄 Đổi đề trắc nghiệm & Làm
+                lại</button>
+        </div>
+    </div>
+
+    <script>
+        const ProblemGenerator = {
+            randomInt: (min, max) => Math.floor(Math.random() * (max - min + 1)) + min,
+
+            genPoint: () => {
+                const r = ProblemGenerator.randomInt;
+                return { x: r(-2, 4), y: r(-2, 4), z: r(-2, 4) }; // Keep numbers small
+            },
+
+            formatVec: (v) => `(${v.x}; ${v.y}; ${v.z})`,
+            formatPoint: (p) => `(${p.x}; ${p.y}; ${p.z})`,
+
+            crossProduct: (a, b) => ({
+                x: a.y * b.z - a.z * b.y,
+                y: a.z * b.x - a.x * b.z,
+                z: a.x * b.y - a.y * b.x
+            }),
+
+            dotProduct: (a, b) => a.x * b.x + a.y * b.y + a.z * b.z,
+
+            magnitude: (v) => Math.sqrt(v.x * v.x + v.y * v.y + v.z * v.z),
+
+            vec: (A, B) => ({ x: B.x - A.x, y: B.y - A.y, z: B.z - A.z }),
+
+            renderMath: () => {
+                if (window.MathJax) MathJax.typesetPromise();
+            },
+
+            new: (type) => {
+                const gen = ProblemGenerator;
+                let htmlQ = '', htmlS = '';
+
+                try {
+                    // --- 1. Triangle Area ---
+                    if (type === 'area_tri') {
+                        const A = gen.genPoint(), B = gen.genPoint(), C = gen.genPoint();
+                        const AB = gen.vec(A, B), AC = gen.vec(A, C);
+                        const cp = gen.crossProduct(AB, AC);
+                        const mag2 = cp.x * cp.x + cp.y * cp.y + cp.z * cp.z;
+                        if (mag2 === 0) return gen.new(type); // Collinear
+
+                        htmlQ = `<p>Cho \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\), \\(C${gen.formatPoint(C)}\\). Tính \\(S_{ABC}\\).</p>`;
+                        htmlS = `<h4>Lời giải:</h4>
+                             Các vectơ: \\[ \\overrightarrow{AB} = ${gen.formatVec(AB)}; \\quad \\overrightarrow{AC} = ${gen.formatVec(AC)} \\]
+                             Tích có hướng: \\[ \\overrightarrow{AB} \\times \\overrightarrow{AC} = ${gen.formatVec(cp)} \\]
+                             Độ dài tích có hướng: \\[ |\\overrightarrow{AB} \\times \\overrightarrow{AC}| = \\sqrt{${cp.x}^2 + (${cp.y})^2 + ${cp.z}^2} = \\sqrt{${mag2}} \\]
+                             Diện tích tam giác: \\[ \\boxed{S_{ABC} = \\dfrac{\\sqrt{${mag2}}}{2}} \\]`;
+
+                        document.getElementById('ex-area-tri').innerHTML = htmlQ;
+                        document.getElementById('sol-area-tri').innerHTML = htmlS;
+                    }
+
+                    // --- 2. Triangle Area Hard (M on BC) ---
+                    else if (type === 'area_tri_hard') {
+                        const num = gen.randomInt(1, 2);
+                        const den = gen.randomInt(num + 1, 3);
+                        const sum = num + den;
+                        const B = gen.genPoint();
+                        const delta = { x: gen.randomInt(-1, 1), y: gen.randomInt(-1, 1), z: gen.randomInt(-1, 1) };
+                        if (delta.x === 0 && delta.y === 0 && delta.z === 0) delta.x = 1;
+
+                        const C = {
+                            x: B.x + sum * delta.x,
+                            y: B.y + sum * delta.y,
+                            z: B.z + sum * delta.z
+                        };
+                        const A = gen.genPoint();
+                        if (A.x === B.x) A.x += 1;
+
+                        const M = {
+                            x: (den * B.x + num * C.x) / sum,
+                            y: (den * B.y + num * C.y) / sum,
+                            z: (den * B.z + num * C.z) / sum
+                        };
+
+                        const ratioStr = (den === 1) ? num : `\\dfrac{${num}}{${den}}`;
+
+                        htmlQ = `<p>Cho \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\), \\(C${gen.formatPoint(C)}\\). 
+                                Tìm M thuộc đoạn BC sao cho \\(S_{ABM} = ${ratioStr} S_{AMC}\\).</p>`;
+
+                        htmlS = `<h4>Lời giải:</h4>
+                            Tỉ số diện tích: \\[ \\dfrac{S_{ABM}}{S_{AMC}} = \\dfrac{BM}{MC} = ${ratioStr} \\Rightarrow \\overrightarrow{BM} = \\dfrac{${num}}{${num}+${den}} \\overrightarrow{BC} \\]
+                            Suy ra: \\[ \\overrightarrow{BM} = \\dfrac{${num}}{${sum}} \\overrightarrow{BC} \\]
+                            Với \\[ \\overrightarrow{BC} = ${gen.formatVec(gen.vec(B, C))} \\]
+                            Tọa độ M là: \\[ M = B + \\dfrac{${num}}{${sum}}\\overrightarrow{BC} = ${gen.formatPoint(B)} + \\dfrac{${num}}{${sum}}${gen.formatVec(gen.vec(B, C))} \\]
+                            Kết quả: \\[ \\boxed{M${gen.formatPoint(M)}} \\]`;
+
+                        document.getElementById('ex-area-tri-hard').innerHTML = htmlQ;
+                        document.getElementById('sol-area-tri-hard').innerHTML = htmlS;
+                    }
+
+                    // --- 3. Triangle Height ---
+                    else if (type === 'height_tri') {
+                        const A = gen.genPoint(), B = gen.genPoint(), C = gen.genPoint();
+                        const AB = gen.vec(A, B), AC = gen.vec(A, C), BC = gen.vec(B, C);
+                        const cp = gen.crossProduct(AB, AC);
+                        const magCP2 = cp.x * cp.x + cp.y * cp.y + cp.z * cp.z;
+                        const magBC2 = BC.x * BC.x + BC.y * BC.y + BC.z * BC.z;
+                        if (magBC2 === 0 || magCP2 === 0) return gen.new(type);
+
+                        htmlQ = `<p>Cho \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\), \\(C${gen.formatPoint(C)}\\). Tính đường cao AH.</p>`;
+                        htmlS = `Tính tích có hướng: \\[ \\overrightarrow{AB} \\times \\overrightarrow{AC} = ${gen.formatVec(cp)} \\Rightarrow |[\\overrightarrow{AB}, \\overrightarrow{AC}]| = \\sqrt{${magCP2}} \\]
+                                 Tính cạnh đáy: \\[ BC = \\sqrt{${magBC2}} \\]
+                                 Đường cao: \\[ \\boxed{AH = \\dfrac{\\sqrt{${magCP2}}}{\\sqrt{${magBC2}}} = \\sqrt{\\dfrac{${magCP2}}{${magBC2}}}} \\]`;
+                        document.getElementById('ex-height-tri').innerHTML = htmlQ;
+                        document.getElementById('sol-height-tri').innerHTML = htmlS;
+                    }
+
+                    // --- 4. Parallelogram Area ---
+                    else if (type === 'area_hbh') {
+                        const A = gen.genPoint(), B = gen.genPoint(), D = gen.genPoint();
+                        const AB = gen.vec(A, B), AD = gen.vec(A, D);
+                        const cp = gen.crossProduct(AB, AD);
+                        const S_sq = cp.x ** 2 + cp.y ** 2 + cp.z ** 2;
+                        if (S_sq === 0) return gen.new(type);
+
+                        htmlQ = `<p>Cho HBH ABCD với \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\), \\(D${gen.formatPoint(D)}\\). Tính diện tích.</p>`;
+                        htmlS = `Tính các vectơ: \\[ \\overrightarrow{AB}=${gen.formatVec(AB)}; \\quad \\overrightarrow{AD}=${gen.formatVec(AD)} \\]
+                                 Tích có hướng: \\[ \\overrightarrow{AB} \\times \\overrightarrow{AD} = ${gen.formatVec(cp)} \\]
+                                 Diện tích: \\[ \\boxed{S = |\\overrightarrow{AB} \\times \\overrightarrow{AD}| = \\sqrt{${S_sq}}} \\]`;
+                        document.getElementById('ex-area-hbh').innerHTML = htmlQ;
+                        document.getElementById('sol-area-hbh').innerHTML = htmlS;
+                    }
+
+                    // --- 5. Tetrahedron Volume ---
+                    else if (type === 'vol_tetra') {
+                        const A = gen.genPoint(), B = gen.genPoint(), C = gen.genPoint(), D = gen.genPoint();
+                        const AB = gen.vec(A, B), AC = gen.vec(A, C), AD = gen.vec(A, D);
+                        const cp = gen.crossProduct(AB, AC);
+                        const dot = Math.abs(gen.dotProduct(cp, AD));
+                        if (dot === 0) return gen.new(type);
+
+                        htmlQ = `<p>Tính V tứ diện ABCD: \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\), \\(C${gen.formatPoint(C)}\\), \\(D${gen.formatPoint(D)}\\).</p>`;
+                        htmlS = `Tích hỗn tạp: \\[ [\\overrightarrow{AB}, \\overrightarrow{AC}, \\overrightarrow{AD}] = |${gen.formatVec(cp)} \\cdot ${gen.formatVec(AD)}| = |${gen.dotProduct(cp, AD)}| = ${dot} \\]
+                                 Thể tích: \\[ \\boxed{V = \\dfrac{1}{6} \\cdot ${dot} = \\dfrac{${dot}}{6}} \\]`;
+                        document.getElementById('ex-vol-tetra').innerHTML = htmlQ;
+                        document.getElementById('sol-vol-tetra').innerHTML = htmlS;
+                    }
+
+                    // --- 6. Tetrahedron Height ---
+                    else if (type === 'height_tetra') {
+                        const A = gen.genPoint(), B = gen.genPoint(), C = gen.genPoint(), D = gen.genPoint();
+                        const AB = gen.vec(A, B), AC = gen.vec(A, C), AD = gen.vec(A, D);
+                        const cpABC = gen.crossProduct(AB, AC);
+                        const vol6 = Math.abs(gen.dotProduct(cpABC, AD));
+
+                        const BC = gen.vec(B, C), BD = gen.vec(B, D);
+                        const cpBCD = gen.crossProduct(BC, BD);
+                        const areaBCD2 = cpBCD.x ** 2 + cpBCD.y ** 2 + cpBCD.z ** 2;
+
+                        if (vol6 === 0 || areaBCD2 === 0) return gen.new(type);
+
+                        htmlQ = `<p>Tính đường cao từ A của tứ diện ABCD với \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\), \\(C${gen.formatPoint(C)}\\), \\(D${gen.formatPoint(D)}\\).</p>`;
+                        htmlS = `Ta có: \\[ 6V = ${vol6}; \\quad 2S_{BCD} = \\sqrt{${areaBCD2}} \\]
+                                 Đường cao: \\[ AH = \\dfrac{3V}{S_{BCD}} = \\dfrac{6V}{2S_{BCD}} = \\dfrac{${vol6}}{\\sqrt{${areaBCD2}}} \\]`;
+                        document.getElementById('ex-height-tetra').innerHTML = htmlQ;
+                        document.getElementById('sol-height-tetra').innerHTML = htmlS;
+                    }
+
+                    // --- 7. Coplanar Vectors ---
+                    else if (type === 'coplanar_vectors') {
+                        const b1 = gen.randomInt(1, 3), b2 = gen.randomInt(-2, 2), b3 = gen.randomInt(1, 3);
+                        const c1 = gen.randomInt(-2, 2), c2 = gen.randomInt(1, 3), c3 = gen.randomInt(-1, 2);
+
+                        const term1 = 2 * b3;
+                        const term1_m = b2;
+                        const term2 = -b3;
+                        const term2_m = -b1;
+                        const term3 = b2 - 2 * b1;
+
+                        const constant = term1 * c1 + term2 * c2 + term3 * c3;
+                        const m_coeff = (-term1_m * c1) + (-term2_m * c2);
+
+                        if (m_coeff === 0) return gen.new('coplanar_vectors');
+
+                        const ansNum = -constant;
+                        const ansDen = m_coeff;
+
+                        const isInt = (ansNum % ansDen === 0);
+                        const ansStr = isInt ? (ansNum / ansDen) : `\\dfrac{${ansNum}}{${ansDen}}`;
+                        if (!isInt && Math.abs(ansDen) > 10) return gen.new(type);
+
+                        const term1_calc_part = `${term1} ${term1_m < 0 ? '+' + (-term1_m) : '-' + term1_m}m`;
+                        const term2_calc_part = `${term2_m < 0 ? '-' + (-term2_m) : '+' + term2_m}m ${term2 < 0 ? '-' + (-term2) : '+' + term2}`;
+                        const term3_calc_part = `${term3}`;
+
+                        htmlQ = `<p>Tìm m để \\(\\overrightarrow{u}=(1; 2; m)\\), \\(\\overrightarrow{v}=(${b1}; ${b2}; ${b3})\\), \\(\\overrightarrow{w}=(${c1}; ${c2}; ${c3})\\) đồng phẳng.</p>`;
+                        htmlS = `Điều kiện đồng phẳng: \\[ [\\overrightarrow{u}, \\overrightarrow{v}, \\overrightarrow{w}] = 0 \\Leftrightarrow (\\overrightarrow{u} \\times \\overrightarrow{v}) \\cdot \\overrightarrow{w} = 0 \\]
+                                 Ta có: \\[ \\overrightarrow{u} \\times \\overrightarrow{v} = (${term1_calc_part}; \\; ${term2_calc_part}; \\; ${term3_calc_part}) \\]
+                                 Rút gọn: \\[ \\Rightarrow (${term1} - ${term1_m}m; \\; ${term2} - ${term2_m}m; \\; ${term3}) \\]
+                                 Tích vô hướng với vector w: \\[ (${term1} - ${term1_m}m)\\cdot${c1} + (${term2} - ${term2_m}m)\\cdot${c2} + ${term3}\\cdot${c3} = 0 \\]
+                                 Phương trình: \\[ \\Leftrightarrow ${constant} + ${m_coeff}m = 0 \\Rightarrow m = ${ansStr} \\]`;
+
+                        document.getElementById('ex-coplanar-vectors').innerHTML = htmlQ;
+                        document.getElementById('sol-coplanar-vectors').innerHTML = htmlS;
+                    }
+
+                    // --- 8. Coplanar Points ---
+                    else if (type === 'coplanar_points') {
+                        const A = gen.genPoint();
+                        const B = gen.genPoint(), C = gen.genPoint();
+                        if (B.x === A.x && B.y === A.y && B.z === A.z) return gen.new(type);
+
+                        const AB = gen.vec(A, B);
+                        const AC = gen.vec(A, C);
+                        const cp = gen.crossProduct(AB, AC);
+                        const m_coeff = cp.z;
+                        if (m_coeff === 0) return gen.new(type);
+
+                        const dx = 1 - A.x;
+                        const dy = 2 - A.y;
+                        const constant = cp.x * dx + cp.y * dy - cp.z * A.z;
+
+                        const ansNum = -constant;
+                        const ansDen = m_coeff;
+                        const isInt = (ansNum % ansDen === 0);
+                        const ansStr = isInt ? (ansNum / ansDen) : `\\dfrac{${ansNum}}{${ansDen}}`;
+
+                        htmlQ = `<p>Tìm m để 4 điểm \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\), \\(C${gen.formatPoint(C)}\\), \\(D(1; 2; m)\\) đồng phẳng.</p>`;
+                        htmlS = `Các vectơ: \\[ \\overrightarrow{AB}=${gen.formatVec(AB)}, \\quad \\overrightarrow{AC}=${gen.formatVec(AC)} \\]
+                                  Vectơ pháp tuyến: \\[ \\overrightarrow{n} = [\\overrightarrow{AB}, \\overrightarrow{AC}] = ${gen.formatVec(cp)} \\]
+                                  Vectơ AD: \\[ \\overrightarrow{AD} = (1-${A.x}; 2-${A.y}; m-${A.z}) = (${dx}; ${dy}; m${A.z < 0 ? '+' + (-A.z) : '-' + A.z}) \\]
+                                  Điều kiện đồng phẳng: \\[ \\overrightarrow{n} \\cdot \\overrightarrow{AD} = 0 \\Leftrightarrow ${cp.x}(${dx}) + ${cp.y}(${dy}) + ${cp.z}(m${A.z < 0 ? '+' + (-A.z) : '-' + A.z}) = 0 \\]
+                                  Giải phương trình: \\[ ${constant} + ${m_coeff}m = 0 \\Rightarrow m = ${ansStr} \\]`;
+
+                        document.getElementById('ex-coplanar-points').innerHTML = htmlQ;
+                        document.getElementById('sol-coplanar-points').innerHTML = htmlS;
+                    }
+
+                    // --- 9. Find Ox ---
+                    else if (type === 'find_ox') {
+                        const A = gen.genPoint(), B = gen.genPoint(), C = gen.genPoint();
+                        const AB = gen.vec(A, B), AC = gen.vec(A, C);
+                        const cp = gen.crossProduct(AB, AC);
+                        const mag = cp.x ** 2 + cp.y ** 2 + cp.z ** 2; // Target squared area * 4
+                        if (mag === 0) return gen.new(type);
+
+                        // M(m, 0, 0). AM = (m - Ax, -Ay, -Az).
+                        // AB = (bx, by, bz)
+                        // AB x AM = 
+                        // x: by(-Az) - bz(-Ay) = -by*Az + bz*Ay = SAME AS cp.x IF M was Origin? No.
+                        // Let's recompute components.
+                        // AB = (ABx, ABy, ABz)
+                        // AM = (m - Ax, -Ay, -Az)
+                        // cpM_x = ABy*(-Az) - ABz*(-Ay) = -ABy*Az + ABz*Ay. (Constant, let's call it C1)
+                        // cpM_y = ABz*(m - Ax) - ABx*(-Az) = ABz*m - ABz*Ax + ABx*Az. (Linear: ABz*m + C2)
+                        // cpM_z = ABx*(-Ay) - ABy*(m - Ax) = -ABx*Ay - ABy*m + ABy*Ax. (Linear: -ABy*m + C3)
+
+                        const C1 = -AB.y * A.z + AB.z * A.y;
+                        const Coeff_y = AB.z;
+                        const C2 = -AB.z * A.x + AB.x * A.z;
+                        const Coeff_z = -AB.y;
+                        const C3 = -AB.x * A.y + AB.y * A.x;
+
+                        // |AB x AM|^2 = C1^2 + (Coeff_y*m + C2)^2 + (Coeff_z*m + C3)^2 = mag
+                        // A_q * m^2 + B_q * m + C_q = 0
+                        // (Coeff_y*m)^2 + 2*Coeff_y*m*C2 + C2^2
+                        // (Coeff_z*m)^2 + 2*Coeff_z*m*C3 + C3^2
+
+                        const A_q = Coeff_y ** 2 + Coeff_z ** 2;
+                        if (A_q === 0) return gen.new(type); // Should not happen if A,B distinct x-coord usually
+
+                        const B_q = 2 * (Coeff_y * C2 + Coeff_z * C3);
+                        const C_q = C1 ** 2 + C2 ** 2 + C3 ** 2 - mag;
+
+                        const delta = B_q ** 2 - 4 * A_q * C_q;
+
+                        // We want real solutions usually? Or just display the equation.
+                        // Let's try to regenerate if Delta < 0 to avoid "vô nghiệm" too often for examples.
+                        if (delta < 0) return gen.new(type);
+
+                        const m1 = (-B_q - Math.sqrt(delta)) / (2 * A_q);
+                        const m2 = (-B_q + Math.sqrt(delta)) / (2 * A_q);
+
+                        // Format numbers nicely
+                        const fmt = (n) => Number.isInteger(n) ? n : n.toFixed(2);
+
+                        htmlQ = `<p>Cho \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\), \\(C${gen.formatPoint(C)}\\). 
+                                 Tìm \\(M \\in Ox\\) sao cho \\(S_{ABM} = S_{ABC}\\).</p>`;
+
+                        htmlS = `Sử dụng công thức diện tích: \\[ S_{ABM} = S_{ABC} \\Leftrightarrow |[\\overrightarrow{AB}, \\overrightarrow{AM}]| = |[\\overrightarrow{AB}, \\overrightarrow{AC}]| \\]
+                                 Tính vế phải: \\[ |[\\overrightarrow{AB}, \\overrightarrow{AC}]|^2 = ${mag} \\]
+                                 Với \\(M(m;0;0)\\), ta tính: \\[ [\\overrightarrow{AB}, \\overrightarrow{AM}] = (${C1}; \\; ${Coeff_y !== 0 ? Coeff_y + 'm' : ''} ${C2 >= 0 ? '+' : ''}${C2}; \\; ${Coeff_z !== 0 ? Coeff_z + 'm' : ''} ${C3 >= 0 ? '+' : ''}${C3}) \\]
+                                 Phương trình hoành độ (bình phương độ dài):
+                                 \\[ ${C1 ** 2} + (${Coeff_y}m + ${C2})^2 + (${Coeff_z}m + ${C3})^2 = ${mag} \\]
+                                 Rút gọn phương trình bậc 2: \\[ ${A_q}m^2 ${B_q >= 0 ? '+' : ''}${B_q}m ${C_q >= 0 ? '+' : ''}${C_q} = 0 \\]
+                                 Giải phương trình ta được: \\[ \\Delta = ${B_q}^2 - 4(${A_q})(${C_q}) = ${delta.toFixed(0)} \\]
+                                 \\[ \\Rightarrow m_1 \\approx ${fmt(m1)}; \\quad m_2 \\approx ${fmt(m2)} \\]
+                                 Vậy: \\[ \\boxed{M(${fmt(m1)}; 0; 0) \\text{ hoặc } M(${fmt(m2)}; 0; 0)} \\]`;
+
+                        document.getElementById('ex-find-ox').innerHTML = htmlQ;
+                        document.getElementById('sol-find-ox').innerHTML = htmlS;
+                    }
+
+                    // --- 10. Find Oz ---
+                    else if (type === 'find_oz') {
+                        const A = { x: gen.randomInt(1, 3), y: gen.randomInt(1, 3), z: 0 };
+                        const B = { x: gen.randomInt(0, 1), y: gen.randomInt(2, 4), z: 0 };
+                        const OA = A, OB = B;
+                        const cp = gen.crossProduct(OA, OB);
+                        if (cp.z === 0) return gen.new(type);
+
+                        const targetV = gen.randomInt(1, 5);
+                        const val = (6 * targetV) / Math.abs(cp.z);
+                        const ansStr = Number.isInteger(val) ? `\\pm ${val}` : `\\pm \\dfrac{${6 * targetV}}{${Math.abs(cp.z)}}`;
+
+                        htmlQ = `<p>Tìm \\(M \\in Oz\\) sao cho \\(V_{OABM} = ${targetV}\\) với \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\).</p>`;
+                        htmlS = `Tính tích có hướng: \\[ \\overrightarrow{OA}\\times\\overrightarrow{OB} = ${gen.formatVec(cp)} \\] 
+                                  Với \\( \\overrightarrow{OM}=(0;0;m) \\), ta có: \\[ V = \\dfrac{1}{6}|[\\overrightarrow{OA}, \\overrightarrow{OB}] \\cdot \\overrightarrow{OM}| = \\dfrac{1}{6}|${cp.z}m| = ${targetV} \\]
+                                  Suy ra: \\[ |m| = \\dfrac{6\\cdot${targetV}}{|${cp.z}|} \\Rightarrow m = ${ansStr} \\]`;
+                        document.getElementById('ex-find-oz').innerHTML = htmlQ;
+                        document.getElementById('sol-find-oz').innerHTML = htmlS;
+                    }
+
+                    // --- 11. Find Oy ---
+                    else if (type === 'find_oxy') { // Reusing ID 'find_oxy' but logic is for Oy to keep HTML simple
+                        const A = { x: gen.randomInt(1, 3), y: gen.randomInt(1, 3), z: 0 };
+                        const B = { x: gen.randomInt(2, 4), y: gen.randomInt(0, 1), z: 0 };
+                        // OA A(x,y,0), OB B(x,y,0). They are in Oxy plane.
+                        // Wait, if A, B in Oxy, then OA x OB is along Oz.
+                        // Let's use A, B in Oyz or Oxz to make M on Oy meaningful for volume? 
+                        // Or S_OAM?
+                        // Let's copy find_oz logic but for Oy. M on Oy => M(0, m, 0).
+
+                        // Let A, B be such that their cross product has non-zero Y component.
+                        // A = (x, 0, z), B = (x, 0, z). Then A, B in Oxz. OA x OB is along Oy.
+                        // Then Volume OABM involves M(0,m,0). dot product with y-axis.
+
+                        const A_ = { x: gen.randomInt(1, 3), y: 0, z: gen.randomInt(1, 3) };
+                        const B_ = { x: gen.randomInt(1, 3), y: 0, z: gen.randomInt(-2, 0) };
+                        const cp = gen.crossProduct(A_, B_); // (0, y, 0) ideally.
+                        // cp x = A.y*B.z - A.z*B.y = 0 - 0 = 0.
+                        // cp y = A.z*B.x - A.x*B.z = non-zero.
+                        // cp z = A.x*B.y - A.y*B.x = 0.
+
+                        if (cp.y === 0) return gen.new(type);
+
+                        const targetV = gen.randomInt(1, 5);
+                        // V = 1/6 |cp.y * m| = targetV
+                        // |m| = 6V / |cp.y|
+                        const val = (6 * targetV) / Math.abs(cp.y);
+                        const ansStr = Number.isInteger(val) ? `\\pm ${val}` : `\\pm \\dfrac{${6 * targetV}}{${Math.abs(cp.y)}}`;
+
+                        htmlQ = `<p>Tìm \\(M \\in Oy\\) sao cho \\(V_{OABM} = ${targetV}\\) với \\(A${gen.formatPoint(A_)}\\), \\(B${gen.formatPoint(B_)}\\).</p>`;
+                        htmlS = `Tính tích có hướng: \\[ \\overrightarrow{OA}\\times\\overrightarrow{OB} = ${gen.formatVec(cp)} \\]
+                                 Với \\( \\overrightarrow{OM}=(0;m;0) \\), ta có: \\[ V = \\dfrac{1}{6}|[\\overrightarrow{OA}, \\overrightarrow{OB}] \\cdot \\overrightarrow{OM}| = \\dfrac{1}{6}|${cp.y}m| = ${targetV} \\]
+                                 Suy ra: \\[ |m| = \\dfrac{6\\cdot${targetV}}{|${cp.y}|} \\Rightarrow m = ${ansStr} \\]`;
+
+                        document.getElementById('ex-find-oxy').innerHTML = htmlQ;
+                        document.getElementById('sol-find-oxy').innerHTML = htmlS;
+                    }
+
+                    // --- 12. Find Reverse ---
+                    else if (type === 'find_reverse') {
+                        const A = { x: gen.randomInt(1, 3), y: 0, z: 0 };
+                        const B = { x: 0, y: gen.randomInt(1, 3), z: 0 };
+                        // OA x OB = (0, 0, Ax*By). Area OAB = 1/2 |Ax*By|.
+                        const area2_OAB = Math.abs(A.x * B.y);
+                        const c_val = Math.abs(A.x);
+
+                        htmlQ = `<p>Cho \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\). Tìm \\(C \\in Oz\\) sao cho \\(S_{OAB} = S_{OBC}\\).</p>`;
+                        htmlS = `Diện tích OAB: \\[ S_{OAB} = \\dfrac{1}{2}|xy| = \\dfrac{1}{2}|${A.x}\\cdot${B.y}| = ${area2_OAB / 2} \\]
+                                 Diện tích OBC: \\[ S_{OBC} = \\dfrac{1}{2}|y\\cdot z| = \\dfrac{1}{2}|${B.y}\\cdot c| \\]
+                                 Điều kiện: \\[ |${B.y}c| = ${area2_OAB} \\Rightarrow |c| = ${c_val} \\]
+                                 Vậy: \\[ \\boxed{C(0;0;${c_val}) \\text{ hoặc } C(0;0;-${c_val})} \\]`;
+                        document.getElementById('ex-find-reverse').innerHTML = htmlQ;
+                        document.getElementById('sol-find-reverse').innerHTML = htmlS;
+                    }
+
+                    gen.renderMath();
+                } catch (e) {
+                    console.error(e);
+                }
+            },
+
+            generateQuiz: () => {
+                const gen = ProblemGenerator;
+                const questions = [];
+                const r = gen.randomInt;
+
+                // Helper to shuffle array
+                const shuffle = (arr) => arr.sort(() => Math.random() - 0.5);
+
+                // Helper to generate distractors for vector
+                const genDistractorsVec = (correctVec) => {
+                    const ans = [correctVec];
+                    while (ans.length < 4) {
+                        let v = {
+                            x: correctVec.x + r(-2, 2) * (Math.random() > 0.5 ? 1 : 0),
+                            y: correctVec.y + r(-2, 2) * (Math.random() > 0.5 ? 1 : 0),
+                            z: correctVec.z + r(-2, 2) * (Math.random() > 0.5 ? 1 : 0)
+                        };
+                        if (v.x === correctVec.x && v.y === correctVec.y && v.z === correctVec.z) continue;
+                        if (ans.some(av => av.x === v.x && av.y === v.y && av.z === v.z)) continue;
+                        ans.push(v);
+                    }
+                    return shuffle(ans).map(v => ({ val: v, str: `\\(${gen.formatVec(v)}\\)` }));
+                };
+
+                // Helper for scalar
+                const genDistractorsScalar = (correctVal) => {
+                    const ans = [correctVal];
+                    while (ans.length < 4) {
+                        let v = correctVal + r(-3, 3);
+                        if (v === correctVal || v <= 0) continue;
+                        if (ans.includes(v)) continue;
+                        ans.push(v);
+                    }
+                    return shuffle(ans).map(v => ({ val: v, str: `\\(${v}\\)` }));
+                };
+
+                // --- 1 & 2. TÍCH CÓ HƯỚNG (2 câu) ---
+                for (let i = 0; i < 2; i++) {
+                    const u = gen.genPoint(), v = gen.genPoint();
+                    const correct = gen.crossProduct(u, v);
+                    const choices = genDistractorsVec(correct);
+                    const correctChoice = choices.map(c => c.val).findIndex(c => c.x === correct.x && c.y === correct.y && c.z === correct.z);
+
+                    questions.push({
+                        q: `Cho \\(\\overrightarrow{a}=${gen.formatVec(u)}\\), \\(\\overrightarrow{b}=${gen.formatVec(v)}\\). Tính \\([\\overrightarrow{a}, \\overrightarrow{b}]\\)?`,
+                        c: choices.map(c => c.str),
+                        a: correctChoice,
+                        s: `Ta có hệ phương trình tọa độ: \\[ \\begin{cases} x = ${u.y}\\cdot${v.z} - ${u.z}\\cdot${v.y} = ${correct.x} \\\\ y = ${u.z}\\cdot${v.x} - ${u.x}\\cdot${v.z} = ${correct.y} \\\\ z = ${u.x}\\cdot${v.y} - ${u.y}\\cdot${v.x} = ${correct.z} \\end{cases} \\] <br> Vậy: \\[ [\\overrightarrow{a}, \\overrightarrow{b}] = ${gen.formatVec(correct)} \\]`
+                    });
+                }
+
+                // --- 3 & 4. DIỆN TÍCH (2 câu) ---
+                for (let i = 0; i < 2; i++) {
+                    // Tam giác OAB cho đơn giản tính toán hoặc ABC
+                    const type = i === 0 ? 'OAB' : 'ABC';
+                    let A, B, C;
+                    let qText, sText, S;
+
+                    if (type === 'OAB') {
+                        A = { x: r(1, 4), y: 0, z: 0 }; B = { x: 0, y: r(1, 4), z: 0 }; C = { x: 0, y: 0, z: 0 }; // C is Origin
+                        // OA = (xA, 0, 0), OB = (0, yB, 0). OA x OB = (0, 0, xA*yB). Len = xA*yB. S = 1/2 len.
+                        // Let's ensure integer Area. xA*yB even.
+                        if ((A.x * B.y) % 2 !== 0) A.x += 1;
+                        const AB = gen.crossProduct(gen.vec(C, A), gen.vec(C, B)); // OA x OB
+                        const len = Math.sqrt(AB.x ** 2 + AB.y ** 2 + AB.z ** 2);
+                        S = len / 2;
+
+                        qText = `Tính diện tích tam giác OAB với \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\)`;
+                        sText = `Tính các vectơ: \\[ \\overrightarrow{OA}=${gen.formatVec(A)}; \\quad \\overrightarrow{OB}=${gen.formatVec(B)} \\] Tính tích có hướng: \\[ [\\overrightarrow{OA}, \\overrightarrow{OB}] = (0; 0; ${len}) \\] Diện tích tam giác: \\[ S = \\dfrac{1}{2}|[\\overrightarrow{OA}, \\overrightarrow{OB}]| = \\dfrac{1}{2}\\sqrt{0^2+0^2+${len}^2} = ${S} \\]`;
+                    } else {
+                        // Parallelogram or Triangle? Let's do Parallelogram for variety.
+                        // A = { x: 1, y: 1, z: 0 }; B = { x: 2, y: 1, z: 1 }; D = { x: 0, y: 2, z: 0 }; // ABCD hbh
+                        // AB = (1, 0, 1). AD = (-1, 1, 0).
+                        // AB x AD = (-1, -1, 1). len = sqrt(3).
+                        // Let's maximize chance of integer
+                        // Just stick to Triangle ABC with specific coords.
+                        // A = { x: 1, y: 0, z: 0 }; B = { x: 0, y: 1, z: 0 }; C = { x: 0, y: 0, z: 1 }; // S = sqrt(3)/2.
+                        // Use randomized but verify int. Hard.
+                        // Let's do another OAB type but HBH.
+                        A = { x: r(1, 3), y: 0, z: 0 }; B = { x: 0, y: r(1, 3), z: 0 };
+                        // HBH Area = |OA x OB| = xA*yB.
+                        S = A.x * B.y;
+                        // Simplify question text
+                        qText = `Tính diện tích hình bình hành dựng bởi hai vectơ \\(\\overrightarrow{u}=${gen.formatVec(A)}\\) và \\(\\overrightarrow{v}=${gen.formatVec(B)}\\)`;
+                        sText = `Tích có hướng: \\[ [\\overrightarrow{u}, \\overrightarrow{v}] = (0; 0; ${S}) \\] Diện tích hình bình hành: \\[ S_{HBH} = |[\\overrightarrow{u}, \\overrightarrow{v}]| = \\sqrt{0^2+0^2+${S}^2} = ${S} \\]`;
+                    }
+
+                    const choices = genDistractorsScalar(S);
+                    const correctChoice = choices.map(c => c.val).findIndex(c => c === S);
+                    questions.push({
+                        q: qText,
+                        c: choices.map(c => c.str),
+                        a: correctChoice,
+                        s: sText
+                    });
+                }
+
+                // --- 5 & 6. THỂ TÍCH (2 câu) ---
+                for (let i = 0; i < 2; i++) {
+                    const isTetra = i === 0;
+                    // Box: simple cube-like. A(a,0,0), B(0,b,0), C(0,0,c). Vol = abc.
+                    const a = r(1, 3), b = r(1, 3), c = r(1, 3);
+                    const V = a * b * c;
+                    const u = { x: a, y: 0, z: 0 }, v = { x: 0, y: b, z: 0 }, w = { x: 0, y: 0, z: c };
+
+                    let qText, sText, ans;
+                    if (isTetra) {
+                        // ans = (V / 6); // usually fraction.
+                        // Force V to be divisible by 6 for nice integer?
+                        // a*b*c divisible by 6. e.g. 1, 2, 3. V=6. S=1.
+                        // Let's try to find integers.
+                        let aa = 1, bb = 2, cc = 3;
+                        while ((aa * bb * cc) % 6 !== 0) { cc++; }
+                        u.x = aa; v.y = bb; w.z = cc;
+                        ans = (aa * bb * cc) / 6;
+
+                        qText = `Tính thể tích tứ diện OABC với \\(A(${aa};0;0)\\), \\(B(0;${bb};0)\\), \\(C(0;0;${cc})\\).`;
+                        sText = `Công thức: \\[ V = \\dfrac{1}{6} |[\\overrightarrow{OA}, \\overrightarrow{OB}] \\cdot \\overrightarrow{OC}| \\] Tính tích có hướng: \\[ [\\overrightarrow{OA}, \\overrightarrow{OB}] = (0;0;${aa * bb}) \\] Tích vô hướng: \\[ [\\overrightarrow{OA}, \\overrightarrow{OB}] \\cdot \\overrightarrow{OC} = 0.0 + 0.0 + ${aa * bb}.${cc} = ${aa * bb * cc} \\] Suy ra: \\[ V = \\dfrac{1}{6} |${aa * bb * cc}| = ${ans} \\]`;
+                    } else {
+                        // Box
+                        ans = V;
+                        qText = `Tính thể tích hình hộp dựng bởi 3 vectơ \\(\\overrightarrow{a}=${gen.formatVec(u)}\\), \\(\\overrightarrow{b}=${gen.formatVec(v)}\\), \\(\\overrightarrow{c}=${gen.formatVec(w)}\\).`;
+                        sText = `Công thức: \\[ V = |[\\overrightarrow{a}, \\overrightarrow{b}] \\cdot \\overrightarrow{c}| \\] Với 3 vectơ đôi một vuông góc, ta có: \\[ V = |${a} \\cdot ${b} \\cdot ${c}| = ${ans} \\]`;
+                    }
+
+                    const choices = genDistractorsScalar(ans);
+                    const correctChoice = choices.map(c => c.val).findIndex(c => c === ans);
+                    questions.push({
+                        q: qText,
+                        c: choices.map(c => c.str),
+                        a: correctChoice,
+                        s: sText
+                    });
+                }
+
+                // --- 7 & 8. TÌM m (ĐỒNG PHẲNG) (2 câu) ---
+                for (let i = 0; i < 2; i++) {
+                    // u(1, 1, m), v(1, 0, 1), w(0, 1, 1).
+                    // u = (1, 1, m).
+                    // const mCorrect = r(1, 4);
+                    // const u = { x: 1, y: 1, z: mCorrect };
+                    // const v = { x: 1, y: 0, z: 1 };
+                    // const w = { x: 0, y: 1, z: 1 };
+
+                    // u x v = (1, m-1, -1).
+                    // dot w = (m-1) - 1 = m - 2.
+                    // Coplanar <=> m - 2 = 0 <=> m = 2.
+                    // Wait, u(1,1,m) x v(1,0,1)
+                    // x = 1*1 - m*0 = 1.
+                    // y = m*1 - 1*1 = m-1.
+                    // z = 1*0 - 1*1 = -1.
+                    // dot w(0,1,1) = 1*0 + (m-1)*1 + (-1)*1 = m - 2.
+                    // m = 2. consistent.
+                    // Let's vary u.x to be 'k'.
+                    const k = r(1, 4);
+                    // u.x = k;
+                    // u(k, 1, m). v(1, 0, 1).
+                    // x = 1. y = m-k. z = -1.
+                    // dot w(0,1,1) = m - k - 1 = 0 => m = k + 1.
+                    const ans = k + 1;
+                    const u = { x: k, y: 1, z: 'm' }, v = { x: 1, y: 0, z: 1 }, w = { x: 0, y: 1, z: 1 };
+
+                    const choices = shuffle([ans, ans + 1, ans - 1, ans + 2].map(x => `\\(m=${x}\\)`));
+                    const correctChoice = choices.indexOf(`\\(m=${ans}\\)`);
+
+                    questions.push({
+                        q: `Tìm m để \\(\\overrightarrow{u}=(${k}; 1; m)\\), \\(\\overrightarrow{v}=(1; 0; 1)\\), \\(\\overrightarrow{w}=(0; 1; 1)\\) đồng phẳng.`,
+                        c: choices,
+                        a: correctChoice,
+                        s: `Điều kiện đồng phẳng: \\[ [\\overrightarrow{u}, \\overrightarrow{v}] \\cdot \\overrightarrow{w} = 0 \\] Tính tích có hướng: \\[ [\\overrightarrow{v}, \\overrightarrow{w}] = (-1; -1; 1) \\] Tích vô hướng: \\[ \\overrightarrow{u} \\cdot [\\overrightarrow{v}, \\overrightarrow{w}] = ${k}.(-1) + 1.(-1) + m.1 = -${k} - 1 + m \\] Giải phương trình: \\[ m - ${k + 1} = 0 \\Leftrightarrow m = ${ans} \\]`
+                    });
+                }
+
+                // --- 9 & 10. TÌM ĐIỂM TRÊN TRỤC (2 câu) ---
+                for (let i = 0; i < 2; i++) {
+                    // Find M on Oz such that Volume OABM = V_given
+                    // A(1, 0, 0), B(0, 2, 0). M(0, 0, z).
+                    // Vol = 1/6 * |xA * yB * zM|.
+                    // Vol = 1/6 * 2 * |z|. = |z|/3.
+                    // Given V = 1 -> |z| = 3 -> z = +/-3.
+                    // const z = r(2, 5);
+                    // const A = { x: 1, y: 0, z: 0 };
+                    // const B = { x: 0, y: r(1, 3) * 2, z: 0 }; // ensure even yB
+                    // Vol formula for trihedron OABM? V = 1/6 * OA * OB * OM (since orthogonal axes).
+                    // const V = (A.x * B.y * z) / 6;
+                    // Ensure V is integer?
+                    // A.x=1. B.y must be multiple of 6/z? No.
+                    // Let's just fix V = something nice. z = ?
+                    // Fix A(3,0,0), B(0,4,0). V=2.
+                    // 1/6 * 3 * 4 * z = 2z. Vol=2z => Vol given = 4 => z=2.
+
+                    // Let's construct backward.
+                    const zVal = r(2, 5);
+                    const Vol = zVal; // V = zVal.
+                    // 1/6 * xA * yB * zVal = zVal => xA*yB = 6.
+                    // A(2,0,0), B(0,3,0).
+                    // const AA = { x: 2, y: 0, z: 0 }, BB = { x: 0, y: 3, z: 0 };
+
+                    const choices = shuffle([
+                        `\\(M(0;0;${zVal})\\)`,
+                        `\\(M(0;0;\\pm${zVal})\\)`,
+                        `\\(M(0;0;${zVal * 2})\\)`,
+                        `\\(M(0;0;\\pm${zVal * 2})\\)`
+                    ]);
+                    const correctChoice = choices.indexOf(`\\(M(0;0;\\pm${zVal})\\)`);
+
+                    questions.push({
+                        q: `Tìm điểm M trên trục Oz sao cho thể tích tứ diện OABM nhận giá trị bằng ${Vol}, biết \\(A(2;0;0)\\), \\(B(0;3;0)\\).`,
+                        c: choices,
+                        a: correctChoice,
+                        s: `Vì \\(M \\in Oz\\) nên \\(M(0;0;z)\\). <br> Tứ diện OABM vuông tại O nên: \\[ V = \\dfrac{1}{6} OA.OB.OM = \\dfrac{1}{6} . 2 . 3 . |z| = |z| \\] Theo đề bài: \\[ V = ${Vol} \\Leftrightarrow |z| = ${Vol} \\Leftrightarrow z = \\pm ${Vol} \\] Vậy: \\[ M(0;0;\\pm${Vol}) \\]`
+                    });
+                }
+
+                return shuffle(questions);
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const types = [
+                'area_tri', 'area_tri_hard', 'height_tri', 'area_hbh',
+                'vol_tetra', 'height_tetra', 'coplanar_vectors', 'coplanar_points',
+                'find_ox', 'find_oz', 'find_oxy', 'find_reverse'
+            ];
+            types.forEach(t => ProblemGenerator.new(t));
+        });
+
+        let quizData = [];
+        let userAnswers = [];
+        let score = 0;
+
+        function initQuiz() {
+            // Generate new quiz data if empty or requested
+            if (quizData.length === 0) {
+                quizData = ProblemGenerator.generateQuiz();
+            }
+
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = '';
+            userAnswers = new Array(quizData.length).fill(null);
+
+            quizData.forEach((item, index) => {
+                const qDiv = document.createElement('div');
+                qDiv.className = 'exercise';
+                qDiv.innerHTML = `
+                    <span class="exercise-num">Câu ${index + 1}</span>
+                    <p>${item.q}</p>
+                    <div class="choices">
+                        ${item.c.map((choice, i) => `
+                            <div class="choice" onclick="selectChoice(${index}, ${i}, this)">
+                                <span class="choice-label">${String.fromCharCode(65 + i)}</span> <span>${choice}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div id="feedback-${index}" class="feedback"></div>
+                `;
+                container.appendChild(qDiv);
+            });
+            updateStats();
+            MathJax.typesetPromise();
+        }
+
+        function selectChoice(qIndex, cIndex, element) {
+            if (userAnswers[qIndex] !== null) return; // Prevent changing answer
+
+            userAnswers[qIndex] = cIndex;
+            const choices = element.parentElement.children;
+            const feedback = document.getElementById(`feedback-${qIndex}`);
+            const correctIndex = quizData[qIndex].a;
+
+            // Visual feedback for all choices
+            Array.from(choices).forEach((choice, i) => {
+                choice.style.pointerEvents = 'none'; // Disable further clicks
+                if (i === correctIndex) {
+                    choice.classList.add('correct');
+                } else if (i === cIndex && i !== correctIndex) {
+                    choice.classList.add('wrong');
+                }
+            });
+
+            if (cIndex === correctIndex) {
+                score++;
+                feedback.innerHTML = `<span style="color:var(--success)">Chính xác! 🎉</span>`;
+            } else {
+                feedback.innerHTML = `<span style="color:var(--danger)">Sai rồi! Đáp án đúng là ${String.fromCharCode(65 + correctIndex)}</span>`;
+            }
+
+            // Show detailed solution
+            if (quizData[qIndex].s) {
+                feedback.innerHTML += `
+                    <div class="solution-text" style="margin-top:10px; padding:10px; background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; text-align:left;">
+                        <strong style="color:var(--success)">📝 Lời giải chi tiết:</strong><br/>
+                        ${quizData[qIndex].s}
+                    </div>
+                `;
+                MathJax.typesetPromise([feedback]);
+            }
+
+            updateStats();
+        }
+
+        function updateStats() {
+            document.getElementById('score').innerText = (score * 10 / quizData.length).toFixed(1);
+            document.getElementById('correct').innerText = score;
+            const answered = userAnswers.filter(a => a !== null).length;
+            document.getElementById('total').innerText = `${answered}/${quizData.length}`;
+            document.getElementById('progress').style.width = `${(answered / quizData.length) * 100}%`;
+        }
+
+        function resetQuiz() {
+            score = 0;
+            // Generate new questions on reset
+            quizData = ProblemGenerator.generateQuiz();
+            initQuiz();
+            // Scroll to quiz top
+            document.getElementById('exercises').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', () => {
+            // ... existing init code (ProblemGenerator.new calls) is already in previous script block. 
+            // We need to call initQuiz here? 
+            // Wait, there are two DOMContentLoaded listeners now. That's fine.
+            initQuiz();
+        });
+        function showSection(id) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            event.target.classList.add('active');
+            if (id === 'exercises') initQuiz();
+        }
+
+        function toggleSolution(btn) {
+            const s = btn.nextElementSibling;
+            s.classList.toggle('show');
+            btn.textContent = s.classList.contains('show') ? 'Ẩn lời giải' : 'Xem lời giải';
+        }
+
+        document.addEventListener('DOMContentLoaded', initQuiz);
+    </script>
+</body>
+
+</html>

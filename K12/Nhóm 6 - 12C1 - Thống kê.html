@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tổng hợp kiến thức Thống kê - Nhóm 6</title>
+
+<!-- MathJax -->
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+<style>
+:root {
+  --ocean-dark: #0a2e5c;
+  --ocean-teal: #2a9d8f;
+  --paper: #f8f3e6;
+  --paper-dark: #e8e0d0;
+  --gold: #c6a961;
+  --text: #2c2518;
+  --text-light: #4a4232;
+  --border: #a8c6d4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html { font-size: 19px; }
+
+body {
+  margin: 0;
+  background: var(--ocean-dark);
+  color: var(--text);
+  line-height: 1.6;
+  font-family:"Times New Roman";
+}
+
+/* Nền: giấy cổ với gợn sóng đại dương */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background:
+    /* texture giấy cổ */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect fill='%23f8f3e6' width='200' height='200'/%3E%3Cpath fill='none' stroke='%23e0d5b5' stroke-width='0.5' d='M0,20 Q50,-10 100,20 T200,20 M0,60 Q50,30 100,60 T200,60 M0,100 Q50,70 100,100 T200,100 M0,140 Q50,110 100,140 T200,140 M0,180 Q50,150 100,180 T200,180'/%3E%3C/svg%3E"),
+    /* lớp xanh đại dương mờ */
+    radial-gradient(circle at 30% 20%, rgba(42, 157, 143, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 70% 80%, rgba(10, 46, 92, 0.3) 0%, transparent 70%);
+  z-index: -1;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 18px;
+}
+
+/* Header: như con dấu học viện hàng hải */
+header {
+  text-align: center;
+  padding: 36px 20px;
+  background: var(--paper);
+  color: var(--ocean-dark);
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin: 0 12px;
+  border-radius: 14px;
+  position: relative;
+  border: 2px solid var(--border);
+  box-shadow: 0 6px 20px rgba(10, 46, 92, 0.25);
+  letter-spacing: 0.5px;
+}
+
+header::before {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.8rem;
+  z-index: 2;
+}
+
+/* Card: như trang giấy trong sổ hàng hải */
+.card {
+  background: var(--paper);
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 22px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ocean-teal);
+  opacity: 0.6;
+}
+
+.accordion {
+  width: 100%;
+  background: linear-gradient(to right, var(--ocean-dark), var(--ocean-teal));
+  color: white;
+  cursor: pointer;
+  padding: 16px 22px;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Times new roman";
+  transition: transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 2px 6px rgba(10, 46, 92, 0.2);
+}
+
+.accordion:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(10, 46, 92, 0.3);
+}
+
+.panel {
+  display: none;
+  padding: 22px;
+  margin-top: 16px;
+  background: var(--paper-dark);
+  border-left: 4px solid var(--ocean-teal);
+  border-radius: 10px;
+  font-family: "Times New Roman";
+}
+
+h3 {
+  margin: 18px 0 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--ocean-dark);
+  font-family: "Times new roman";
+}
+
+.formula {
+  padding: 14px;
+  background: #f0e9d2;
+  border-radius: 10px;
+  border: 1px dashed var(--ocean-teal);
+  font-family: "Times new roman";
+  font-size: 1.5rem;
+  margin: 14px 0;
+  color: var(--ocean-dark);
+  box-shadow: inset 0 0 8px rgba(42, 157, 143, 0.1);
+}
+
+.note {
+  font-size: 0.95rem;
+  color: var(0000);
+  background: rgba(240, 233, 210, 0.6);
+  border-left: 4px solid var(--gold);
+  padding: 10px 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  font-style: italic;
+  border: 1px solid rgba(198, 169, 97, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 28px;
+  color: var(--paper-dark);
+  font-size: 0.95rem;
+  background: rgba(10, 46, 92, 0.7);
+  margin-top: 20px;
+  border-radius: 12px;
+  color: #d0e6f5;
+  font-family: "Times new roman";
+}
+</style>
+</head>
+
+<body>
+<!-- Hiệu ứng Galaxy -->
+<div class="shooting-star" style="animation-delay: 0s;"></div>
+<div class="shooting-star" style="top: 20%; left: 30%; animation-delay: 2.5s; animation-duration: 7s;"></div>
+<div class="shooting-star" style="top: 60%; left: 70%; animation-delay: 5s; animation-duration: 8s;"></div>
+
+<div class="planet" id="p1"></div>
+<div class="planet" id="p2"></div>
+<div class="planet" id="p3"></div>
+
+<header>📊 Tổng hợp kiến thức Thống kê THPT — Nhóm 6</header>
+
+<div class="container">
+
+<!-- GIỚI THIỆU -->
+<div class="card">
+<button class="accordion">👩‍🏫 Giới thiệu Nhóm 6</button>
+<div class="panel">
+<ul>
+<li>Trần Phương Linh – Trưởng nhóm</li>
+<li>Nguyễn Thái Hà An – Thiết kế</li>
+<li>Huỳnh Hải Huyền – Kiểm tra công thức</li>
+<li>Đồng Phước Khang – Tìm tài liệu</li>
+<li>Nguyễn Nhật Hào – Tổng hợp nội dung</li>
+<li>Đặng Huỳnh Thanh Long – Style & Hiệu chỉnh</li>
+</ul>
+</div>
+</div>
+
+<!-- LỚP 10 -->
+<div class="card">
+<button class="accordion">📘 Lớp 10</button>
+<div class="panel">
+
+<table border="1" style="border-collapse: collapse; width: 100%;">
+  <caption>Bảng thống kê </caption>
+  <tr>
+    <th>Giá Trị</th>
+    <td>\[x_{1}\]</td>
+    <td>\[x_{2}\]</td>
+    <td>\[x_{3}\]</td>
+    <td>\[...\]</td>
+    <td>\[x_{k}\]</td>
+  </tr>
+  <tr>
+    <th>Tần Số</th>
+    <td>\[n_{1}\]</td>
+    <td>\[n_{2}\]</td>
+    <td>\[n_{3}\]</td>
+    <td>\[...\]</td>
+    <td>\[n_{k}\]</td>
+  </tr>
+</table>
+
+<h3>Sai số tuyệt đối</h3>
+<p>Sai số tuyệt đối là giá trị tuyệt đối của hiệu giữa giá trị đo được và giá trị thực tế của đại lượng đo.</p>
+<div class="formula">\[\Delta_a = |\bar{a} - a|\]</div>
+<div class="note">Trong đó: \(\bar{a}\) là giá trị thực, \(a\) là giá trị đo được  của đại lượng.</div>
+
+<h3>Sai số tương đối</h3>
+<p>Sai số tương đối là tỷ số giữa sai số tuyệt đối và giá trị thực tế của đại lượng đo, thường được biểu diễn dưới dạng phần trăm.</p>
+<div class="formula">\[\delta_a = \frac{\Delta_a}{|a|}\]</div>
+<div class="note">Trong đó: \(\Delta_a\) là sai số tuyệt đối, \(a\) là giá trị đo được của đại lượng.</div>
+
+<h3>Số trung bình (MSLGN)</h3>
+<div class="formula">\[
+\overline{x} = \frac{n_1x_1 + n_2x_2 + n_3x_3 + \dots + n_kx_k}{n_1 + n_2 + n_3 + \dots + n_k}
+\]</div>
+<div class="note">Trong đó: \(n_1\) là tần số lớp thứ \(1\); \(x_1\) là giá trị lớp thứ \(1\); \(k\) là số lớp; \(\overline{x}\) là số trung bình.</div>
+
+<h3>Tần số tương đối</h3>
+<p>Tần số tương đối \(f_k\) (%) của một giá trị \(x_k\) trong mẫu số liệu nhóm là tỷ lệ giữa tần số \(n_k\) của giá trị đó và cỡ mẫu \(n\).</p>
+<div class="formula">\[f_k = \frac{n_k}{n} \times 100\]</div>
+<div class="note">Trong đó: \(n_k\) là tần số của giá trị \(x_k\); \(n\) là tổng số quan sát.</div>
+
+<h3>Trung vị</h3>
+<p>Trung vị của mẫu là Me, giá trị nằm chính giữa dãy</p>
+<div class="formula">\[\text{n lẻ: } M_e = x_{\left(\frac{n+1}{2}\right)}, \quad \text{n chẵn: } M_e = \dfrac{x_{\left(\frac{n}{2}\right)} + x_{\left(\frac{n}{2}+1\right)}}{2}\]</div>
+<div class="note">Trong đó: \(n\) là số phần tử của mẫu; \(x_{(k)}\) là giá trị thứ \(k\) trong dãy đã sắp xếp.</div>
+
+<h3>Tứ phân vị</h3>
+<div class="formula" and front size=1.0rem>\[
+\text{ Q2: Tứ phân vị thứ 2, là trung vị  của mẫu}\]
+\[\text{Q1: tứ phân vị thứ 1, nằm chính giữa số liệu bên trái Q2}\]
+\[\text{(không bao gồm Q2 nếu n lẻ)}\] 
+\[\text{Q3: tứ phân vị thứ 3, nằm chính giữa số liệu bên phải Q2}\]
+\[\text{(không bao gồm Q2 nếu n lẻ)
+}\]</div>
+
+<h3>Mốt</h3>
+<div class="formula">\[\text{Mo: giá trị xuất hiện nhiều nhất}\]</div>
+<div class="note">Mốt là giá trị có tần số xuất hiện nhiều nhất trong mẫu.</div>
+
+<h3>Khoảng biến thiên</h3>
+<p>Khoảng biến thiên là hiệu giá trị lớn nhất và giá trị nhỏ nhất trong mẫu</p>
+<div class="formula">\[R = x_{\max} - x_{\min}\]</div>
+<div class="note">Trong đó: \(x_{\max}\) là giá trị lớn nhất, \(x_{\min}\) là giá trị nhỏ nhất.</div>
+
+<h3>Khoảng tứ phân vị</h3>
+<p>Khoảng tứ phân vị là hiệu giữa Q3 và Q1</p>
+<div class="formula">\[\Delta Q = Q_3 - Q_1\]</div>
+<div class="note">Trong đó: \(Q_1\) là tứ phân vị thứ nhất, \(Q_3\) là tứ phân vị thứ ba.</div>
+
+<h3>Phương sai</h3>
+<p>Phương sai được sử dụng để đánh giá mức độ phân tán của các số liệu thống kê (so với số trung bình).</p>
+<div class="formula">\[S^2 = \frac{1}{n}[(x_1 - \bar{x})^2 + \dots + (x_k - \bar{x})^2]\]</div>
+<div class="note">Trong đó: \(S^2\) là phương sai; \(x_k\) là giá trị quan sát; \(\bar{x}\) là số trung bình.</div>
+
+<h3>Độ lệch chuẩn</h3>
+<p>Độ lệch chuẩn (s) là căn bậc 2 phương sai</p>
+<div class="formula">\[s = \sqrt{s^2}\]</div>
+<div class="note">Trong đó: \(s\) là độ lệch chuẩn; \(s^2\) là phương sai.</div>
+
+<h3>Giá trị ngoại lệ</h3>
+<p>Giá trị ngoại lệ là những giá trị trong tập dữ liệu có sự khác biệt rõ rệt so với các giá trị còn lại.</p>
+<p>Một cách thường dùng để phát hiện giá trị ngoại lệ là:</p>
+<div class="formula">
+\[
+\begin{aligned}
+&x < Q_1 - 1{,}5 \cdot \Delta Q \text{ hoặc} \\
+&x > Q_3 + 1{,}5 \cdot \Delta Q
+\end{aligned}
+\]
+</div>
+<div class="note">Trong đó: \(Q_1\) là tứ phân vị thứ nhất, \(Q_3\) là tứ phân vị thứ ba, \(\Delta Q = Q_3 - Q_1\) là khoảng tứ phân vị.</div>
+
+</div>
+</div>
+
+<!-- LỚP 11 -->
+<div class="card">
+<button class="accordion">📗 Lớp 11</button>
+<div class="panel">
+<table border="1" style="border-collapse: collapse; width: 100%;">
+  <caption>Bảng thống kê </caption>
+  <tr>
+    <th>Giá Trị</th>
+    <td>\[[x_{1},x_{2})\]</td>
+    <td>\[[x_{2},x_{3})\]</td>
+    <td>\[[x_{3},x_{4})\]</td>
+    <td>\[...\]</td>
+    <td>\[[x_{k},x_{k+1})\]</td>
+  </tr>
+  <tr>
+    <th>Tần Số</th>
+    <td>\[n_{1}\]</td>
+    <td>\[n_{2}\]</td>
+    <td>\[n_{3}\]</td>
+    <td>\[...\]</td>
+    <td>\[n_{k}\]</td>
+  </tr>
+</table>
+<h3>Số trung bình (MSLGN)</h3>
+<div class="formula">\[
+\overline{x} = \frac{n_1c_1 + n_2c_2 + n_3c_3 + \dots + n_kc_k}{n_1 + n_2 + n_3 + \dots + n_k}
+\]</div>
+<div class="note">Trong đó: \(n_1\) là tần số lớp thứ \(1\); \(c_1\) là trung điểm lớp thứ \(1\); \(k\) là số lớp; \(\overline{x}\) là số trung bình.</div>
+
+<h3>Mốt (MSLGN)</h3>
+<div class="formula">\[M_0 = u_k + \frac{n_k - n_{k-1}}{(n_k - n_{k-1}) + (n_k - n_{k+1})}(u_{k+1} - u_k)\]</div>
+<div class="note">Trong đó: \(u_k\) là cận dưới lớp chứa mốt; \(n_k\) là tần số lớp đó; \(n_{k-1}, n_{k+1}\) là tần số lớp kề trước/sau.</div>
+
+<h3>Trung vị (MSLGN)</h3>
+<div class="formula">\[M_e = u_k + \frac{\frac{n}{2} - C}{n_k}(u_{k+1} - u_k)\]</div>
+<div class="note">Trong đó: \(u_k\) là cận dưới lớp trung vị; \(C\) là tần số tích lũy đến lớp trước; \(n_k\) là tần số lớp trung vị.</div>
+
+<h3>Tứ phân vị (MSLGN)</h3>
+<div class="formula">\[
+Q_1 = u_k + \frac{\frac{n}{4} - C}{n_k}(u_{k+1} - u_k), \quad
+Q_3 = u_k + \frac{\frac{3n}{4} - C}{n_k}(u_{k+1} - u_k)
+\]</div>
+<div class="note">Trong đó: \(u_k, u_k\) là cận dưới lớp chứa Q1, Q3; \(n_k, n_k\) là tần số lớp; \(C\) là tần số tích lũy đến lớp trước.</div>
+
+</div>
+</div>
+
+<!-- LỚP 12 -->
+<div class="card">
+<button class="accordion">📙 Lớp 12</button>
+<div class="panel">
+<table border="1" style="border-collapse: collapse; width: 100%;">
+  <caption>Bảng thống kê </caption>
+  <tr>
+    <th>Giá Trị</th>
+    <td>\[[x_{1},x_{2})\]</td>
+    <td>\[[x_{2},x_{3})\]</td>
+    <td>\[[x_{3},x_{4})\]</td>
+    <td>\[...\]</td>
+    <td>\[[x_{k},x_{k+1})\]</td>
+  </tr>
+  <tr>
+    <th>Tần Số</th>
+    <td>\[n_{1}\]</td>
+    <td>\[n_{2}\]</td>
+    <td>\[n_{3}\]</td>
+    <td>\[...\]</td>
+    <td>\[n_{k}\]</td>
+  </tr>
+</table>
+<h3>Khoảng biến thiên</h3>
+<div class="formula">\[R = u_{\max} - u_{\min}\]</div>
+<div class="note">Trong đó: \(u_{\min}\) và \(u_{\max}\) lần lượt là đầu mút trái và đầu mút phải của dãy.</div>
+
+<h3>Khoảng tứ phân vị</h3>
+<div class="formula">\[\Delta Q = Q_3 - Q_1\]</div>
+<div class="note">Trong đó: \(Q_1\) là tứ phân vị thứ nhất; \(Q_3\) là tứ phân vị thứ ba.</div>
+
+<h3>Số trung bình (MSLGN)</h3>
+<div class="formula">\[
+\overline{x} = \frac{n_1x_1 + n_2x_2 + n_3x_3 + \dots + n_kc_k}{n}
+\]</div>
+<div class="note">Trong đó: \(n_k\) là tần số lớp thứ \(k\); \(c_k\) là trung điểm lớp thứ \(k\); \(n\) là cỡ mẫu; \(\overline{x}\) là số trung bình; \(x\) là giá trị.</div>
+
+<h3>Phương sai (MSLGN)</h3>
+<div class="formula">\[
+S^2 = \frac{(c_1 - \overline{x})^2 n_1 + (c_2 - \overline{x})^2 n_2 + \dots + (c_k - \overline{x})^2 n_k}{n}
+\]</div>
+<div class="note">Trong đó: \(S^2\) là phương sai; \(c_k\) là trung điểm lớp; \(n\) là cỡ mẫu; \(\overline{x}\) là trung bình.</div>
+
+<h3>Độ lệch chuẩn</h3>
+<div class="formula">\[s = \sqrt{S^2}\]</div>
+<div class="note">Trong đó: \(s\) là độ lệch chuẩn; \(S^2\) là phương sai.</div>
+
+</div>
+</div>
+
+</div>
+
+<footer>© 2025 | Thiết kế bởi Nhóm 6</footer>
+
+<script>
+document.querySelectorAll(".accordion").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const panel = btn.nextElementSibling;
+    panel.style.display = panel.style.display==="block"?"none":"block";
+    MathJax.typesetPromise();
+  });
+});
+</script>
+
+</body>
+</html>

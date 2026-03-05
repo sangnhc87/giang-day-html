@@ -1,0 +1,877 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/bk12.clo))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/vntex/t5enc.def
+(/usr/local/texlive/2024/texmf-dist/tex/latex/vntex/t5enc.dfu))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/vntex/t5cmr.fd))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/babel/txtbabel.def)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/babel-vietnamese/vietnamese.ldf
+Loading definitions for the Vietnamese font encoding
+(/usr/local/texlive/2024/texmf-dist/tex/latex/vntex/t5enc.def)))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/vi/babel-vietnames
+e.tex) (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/lmodern.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/dvipsnam.def)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/svgnam.def)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/x11nam.def)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titletoc.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
+tered.code.tex))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def)))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex)))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex))
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/environ/environ.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.4.1'
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.4.1'
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.co
+de.tex))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.4.1'
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.4.1'
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.4.1'
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.4.1'
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.4.1'
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.te
+x
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.4.1'
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.4.1'
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.te
+x
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.4.1'
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.4.1'
+))) (/usr/local/texlive/2024/texmf-dist/tex/latex/listingsutf8/listingsutf8.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty))))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.4.1'
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.4.1'
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.4.1'
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfadings.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings
+.code.tex)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.4.1'
+))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/wrapfig/wrapfig.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lettrine/lettrine.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)))
+Loading lettrine.cfg
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lettrine/lettrine.cfg))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/afterpage.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/emptypage/emptypage.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+))) (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t5lmr.fd) (./main.aux)
+Runaway argument?
+{\contentsline {section}{\numberline {6.2}The Silent Support (Sá»± á»\ETC.
+! File ended while scanning use of \@writefile.
+<inserted text> 
+                \par 
+l.257 \begin{document}
+                      
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(./main.out)
+Runaway argument?
+{\376\377\000T\000h\000e\000\040\000F\000o\000o\000t\000p\000r\000i\0\ETC.
+! File ended while scanning use of \@@BOOKMARK.
+<inserted text> 
+                \par 
+l.257 \begin{document}
+                      
+(./main.out)
+Runaway argument?
+{\376\377\000T\000h\000e\000\040\000F\000o\000o\000t\000p\000r\000i\0\ETC.
+! File ended while scanning use of \@@BOOKMARK.
+<inserted text> 
+                \par 
+l.257 \begin{document}
+                      
+(./cover.tex (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+[1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/l
+ocal/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texli
+ve/2024/texmf-dist/fonts/enc/dvips/lm/lm-t5.enc}]) (./chapters/loitua.tex
+[2]) (./chapters/huong-dan.tex
+[3]
+[4] (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd)
+[5{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}])
+[6] (./main.toc)
+[7]
+[8] (./chapters/ch01-long-biet-on.tex
+Ch\uhorn \ohorn ng 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 16.23451pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.23451pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.23451pt}.
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+
+
+[7]) (./chapters/ch02-su-tu-tin.tex
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[8]
+Ch\uhorn \ohorn ng 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+
+Underfull \vbox (badness 2799) has occurred while \output is active
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+
+) (./chapters/ch03-long-dung-cam.tex
+[16]
+Ch\uhorn \ohorn ng 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+
+Underfull \vbox (badness 1320) has occurred while \output is active
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
+
+
+[24]) (./chapters/ch04-su-chia-se.tex
+[25]
+[26]
+Ch\uhorn \ohorn ng 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[35]
+[36]
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[37]) (./chapters/ch05-triet-ly-song.tex
+[38]
+Ch\uhorn \ohorn ng 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+
+[39]
+Underfull \vbox (badness 10000) has occurred while \output is active
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[40]
+Underfull \vbox (badness 10000) has occurred while \output is active
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[41]
+Underfull \vbox (badness 5771) has occurred while \output is active
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[42]
+Underfull \vbox (badness 10000) has occurred while \output is active
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[43]) (./chapters/ch06-tinh-ban-nghia-khi.tex
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[44]
+Ch\uhorn \ohorn ng 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+
+[45]
+Underfull \vbox (badness 10000) has occurred while \output is active
+[46]
+Underfull \vbox (badness 6157) has occurred while \output is active
+[47]
+[48]
+Underfull \vbox (badness 1303) has occurred while \output is active
+[49]) (./chapters/ch07-gia-dinh-tinh-thuong.tex
+[50]
+Ch\uhorn \ohorn ng 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+
+[51]
+[52]
+Underfull \vbox (badness 1484) has occurred while \output is active
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[53]
+[54]) (./chapters/ch08-kien-nhan-tu-lap.tex
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[55]
+[56]
+Ch\uhorn \ohorn ng 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+
+[57]
+Underfull \vbox (badness 10000) has occurred while \output is active
+[58]
+Underfull \vbox (badness 10000) has occurred while \output is active
+[59]
+Underfull \vbox (badness 10000) has occurred while \output is active
+[60]
+Underfull \vbox (badness 10000) has occurred while \output is active
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 16.23451pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.23451pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.23451pt}.
+
+[61]) (./chapters/ch09-the-gioi-quanh-ta.tex
+[62]
+Ch\uhorn \ohorn ng 9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+
+[63]
+Underfull \vbox (badness 2486) has occurred while \output is active
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[64]
+Underfull \vbox (badness 10000) has occurred while \output is active
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 16.23451pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.23451pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.23451pt}.
+
+[65]
+Underfull \vbox (badness 10000) has occurred while \output is active
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[66]
+Underfull \vbox (badness 10000) has occurred while \output is active
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[67]) (./chapters/ch10-tu-nhien-bai-hoc.tex
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[68]
+Ch\uhorn \ohorn ng 10.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+
+[69]
+Underfull \vbox (badness 10000) has occurred while \output is active
+[70]
+Underfull \vbox (badness 10000) has occurred while \output is active
+[71]
+Underfull \vbox (badness 6032) has occurred while \output is active
+[72]
+Underfull \vbox (badness 10000) has occurred while \output is active
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[73]) (./chapters/ch11-moi-ngay-mot-cau-chuyen.tex
+[74]
+Ch\uhorn \ohorn ng 11.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+
+[75]
+[76]
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+[77]
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+
+[78]
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[79]
+[80]
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+
+
+Underfull \vbox (badness 2213) has occurred while \output is active
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 16.23451pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.23451pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.23451pt}.
+
+[81]
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+
+
+[82]
+Underfull \hbox (badness 10000) in paragraph at lines 325--326
+
+
+[83]
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
+
+
+Underfull \vbox (badness 2913) has occurred while \output is active
+[84]
+[85]
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
+
+
+[86]
+[87]
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+[88])
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.56656pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.56656pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.56656pt}.
+
+[89]
+[90] (./chapters/phu-luc.tex [91]
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+[92]
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+[93])
+[94] (./main.aux)
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information)</usr/local/texlive/2024/te
+xmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/f
+onts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type
+1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/
+lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pf
+b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/loc
+al/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive
+/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texm
+f-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fon
+ts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (102 pages, 566592 bytes).
+Transcript written on main.log.

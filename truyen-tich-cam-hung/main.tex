@@ -1,0 +1,301 @@
+%============================================================
+%  SÁCH: ĐIỂN TÍCH & CHUYỆN KỂ TRUYỀN CẢM HỨNG
+%  Dùng cho giáo viên kể chuyện trên lớp mỗi ngày
+%  Tác giả: (Họ tên của bạn)
+%============================================================
+
+\documentclass[12pt, a4paper, twoside, openright]{book}
+
+%------------------------------------------------------------
+% GÓI TIẾNG VIỆT & MÃ HÓA
+%------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+
+%------------------------------------------------------------
+% FONT ĐẸP (pdflatex compatible)
+%------------------------------------------------------------
+\usepackage{lmodern}            % Latin Modern - font mặc định đẹp
+\usepackage{amssymb}            % ký hiệu toán: \bigstar, \clubsuit, ...
+\usepackage{microtype}          % Căn chỉnh font tốt hơn (khai báo sớm)
+% Gói libertine nếu muốn font đẹp hơn (cần cài gói texlive-fonts-extra)
+% \usepackage{libertine}
+% \usepackage[libertine]{newtxmath}
+
+%------------------------------------------------------------
+% TRANG & LƯỚI
+%------------------------------------------------------------
+\usepackage[
+  a4paper,
+  top=2.8cm, bottom=3cm,
+  inner=3cm, outer=2.5cm,
+  headsep=0.6cm,
+  footskip=1cm
+]{geometry}
+
+%------------------------------------------------------------
+% MÀU SẮC
+%------------------------------------------------------------
+\usepackage[dvipsnames, svgnames, x11names]{xcolor}
+\definecolor{truyenred}{HTML}{8B1A1A}    % đỏ cổ điển
+\definecolor{TRUYENRED}{HTML}{8B1A1A}
+\definecolor{truyengold}{HTML}{B8860B}   % vàng cổ điển
+\definecolor{TRUYENGOLD}{HTML}{B8860B}
+\definecolor{truyenblue}{HTML}{1F4E79}   % xanh sâu
+\definecolor{TRUYENBLUE}{HTML}{1F4E79}
+\definecolor{truyengreen}{HTML}{2D5016}  % xanh lá cổ
+\definecolor{TRUYENGREEN}{HTML}{2D5016}  % Workaround cho MakeUppercase
+\definecolor{boxbg}{HTML}{FFF8F0}        % nền kem nhạt
+\definecolor{boxborder}{HTML}{C8A96E}    % viền vàng nâu
+
+%------------------------------------------------------------
+% TIÊU ĐỀ CHƯƠNG - gói titlesec
+%------------------------------------------------------------
+\usepackage{titlesec}
+\usepackage{titletoc}
+
+% Định dạng tiêu đề CHAPTER
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{truyenred}}
+  {%
+    \vspace{-1cm}%
+    {\color{truyengold}\rule{\textwidth}{2pt}}\\[4pt]
+    \flushright\fontsize{11}{13}\selectfont\color{truyengold}
+    \MakeUppercase{\chaptertitlename}\space\thechapter
+  }
+  {4pt}
+  {\Huge\raggedright}
+  [\vspace{4pt}{\color{truyengold}\titlerule[1.5pt]}]
+
+% Section
+\colorlet{sectionrule}{truyenblue!40}
+\titleformat{\section}
+  {\large\bfseries\color{truyenblue}}
+  {\thesection.}{0.5em}{}[\vspace{-4pt}{\color{sectionrule}\rule{\linewidth}{0.4pt}}]
+
+% Subsection
+\titleformat{\subsection}
+  {\normalsize\bfseries\itshape\color{truyengreen}}
+  {\thesubsection.}{0.5em}{}
+
+%------------------------------------------------------------
+% ĐƯỜNG KẺ TRANG (header / footer)
+%------------------------------------------------------------
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}  % tránh cảnh báo fancyhdr
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\itshape\color{truyenblue}\leftmark}
+\fancyhead[RO]{\small\itshape\color{truyenblue}\rightmark}
+\fancyfoot[LE,RO]{\small\thepage}
+\fancyfoot[CE,CO]{\small\color{truyengold}\textit{Điển tích \& Chuyện kể truyền cảm hứng}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.2pt}
+
+% Trang đầu chương không có header
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[LE,RO]{\small\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+%------------------------------------------------------------
+% HỘP TRANG TRÍ (tcolorbox)
+%------------------------------------------------------------
+\usepackage[most]{tcolorbox}
+
+% Hộp câu chuyện chính
+\tcbset{
+  truyenstyle/.style={
+    enhanced,
+    breakable,
+    colback=boxbg,
+    colframe=boxborder,
+    fonttitle=\bfseries\color{truyenred},
+    title={#1},
+    arc=4pt,
+    boxrule=1pt,
+    leftrule=4pt,
+    top=6pt, bottom=6pt,
+    left=8pt, right=8pt,
+    attach boxed title to top left={yshift=-2mm, xshift=8mm},
+    boxed title style={colback=truyengold!20, colframe=truyengold, arc=3pt}
+  }
+}
+
+% Hộp bài học / ý nghĩa
+\tcbset{
+  baihocstyle/.style={
+    enhanced,
+    colback=truyenblue!5,
+    colframe=truyenblue!60,
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    title={#1},
+    arc=6pt,
+    boxrule=0.8pt,
+    top=5pt, bottom=5pt,
+  }
+}
+
+% Hộp danh ngôn / câu nói hay
+\tcbset{
+  quotestyle/.style={
+    enhanced,
+    colback=truyengold!8,
+    colframe=truyengold,
+    arc=0pt,
+    leftrule=5pt, toprule=0pt, bottomrule=0pt, rightrule=0pt,
+    top=5pt, bottom=5pt,
+    left=10pt, right=6pt,
+    fontupper=\itshape,
+  }
+}
+
+%------------------------------------------------------------
+% GÓI KHÁC
+%------------------------------------------------------------
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{lettrine}          % chữ hoa đầu đoạn
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{afterpage}         % dùng cho việc xóa màu nền sau trang bìa
+\usepackage{emptypage}         % trang trắng không có header/footer
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=truyenred,
+  urlcolor=truyenblue,
+  citecolor=truyengreen,
+  pdftitle={Dien tich \& Chuyen ke truyen cam hung},
+  pdfauthor={Giao vien},
+  pdfsubject={Tuyen tap dien tich truyen cam hung cho hoc sinh}
+}
+% Ngăn hyperref uppercase hóa lệnh \color khi tạo PDF bookmark
+\pdfstringdefDisableCommands{%
+  \let\color\@gobble
+  \let\bfseries\relax
+  \let\itshape\relax
+  \let\scshape\relax
+}
+
+%------------------------------------------------------------
+% LỆNH TIỆN ÍCH TỰ ĐỊNH NGHĨA
+%------------------------------------------------------------
+
+% Môi trường in câu chuyện
+% Dùng: \begin{truyen}{Tên câu chuyện}{Nguồn / xuất xứ}
+\newenvironment{truyen}[2]{%
+  \begin{tcolorbox}[truyenstyle={#1}]
+  \textit{\small\color{truyengold!80!black}Xuất xứ: #2}\\[6pt]
+}{%
+  \end{tcolorbox}\vspace{4pt}
+}
+
+% Hộp bài học
+\newenvironment{baihoc}[1][Bài học]{%
+  \begin{tcolorbox}[baihocstyle={#1}]
+}{%
+  \end{tcolorbox}\vspace{6pt}
+}
+
+% Hộp câu nói hay / danh ngôn
+\newenvironment{dangnon}[1][]{%
+  \begin{tcolorbox}[quotestyle]
+  \ifx&#1&\else\textbf{--- #1}\\[3pt]\fi
+}{%
+  \end{tcolorbox}\vspace{4pt}
+}
+
+% Chữ hoa trang trí đầu đoạn
+\newcommand{\chuhoa}[2]{\lettrine[lines=2, lhang=0.1, loversize=0.15]{\textcolor{truyenred}{#1}}{#2}}
+
+% Ngăn cách trang trí
+\newcommand{\ngancach}{%
+  \vspace{8pt}
+  \begin{center}
+    {\color{truyengold}%
+      \rule{2.5cm}{0.5pt}\quad%
+      {\large$\diamond\;\diamond\;\diamond$}\quad%
+      \rule{2.5cm}{0.5pt}%
+    }
+  \end{center}
+  \vspace{8pt}
+}
+
+% Nhãn ngày dạy
+\newcommand{\ngayDay}[1]{%
+  \vspace{-2pt}
+  \hfill{\small\color{gray}\textit{Ngày kể: \underline{\hspace{4cm}}\quad Lớp: \underline{\hspace{2.5cm}}}}
+  \vspace{4pt}
+}
+
+%------------------------------------------------------------
+% MỤC LỤC ĐẸP
+%------------------------------------------------------------
+\contentsmargin{0cm}
+\titlecontents{chapter}[1.5cm]
+  {\addvspace{8pt}\bfseries\color{truyenred}}
+  {\contentslabel[\thecontentslabel]{1.5cm}}
+  {\hspace*{-1.5cm}}
+  {\hfill\contentspage}
+\titlecontents{section}[3.5cm]
+  {\addvspace{2pt}\small\color{truyenblue}}
+  {\contentslabel[\thecontentslabel]{2cm}}
+  {}
+  {\titlerule*[5pt]{.}\contentspage}
+
+%============================================================
+\begin{document}
+%============================================================
+
+\frontmatter
+
+%------------------------------------------------------------
+% TRANG BÌA
+%------------------------------------------------------------
+\input{cover}
+
+%------------------------------------------------------------
+% LỜI TỰA
+%------------------------------------------------------------
+\input{chapters/loitua}
+
+%------------------------------------------------------------
+% HƯỚNG DẪN SỬ DỤNG
+%------------------------------------------------------------
+\input{chapters/huong-dan}
+
+\tableofcontents
+\clearpage
+
+%------------------------------------------------------------
+\mainmatter
+%------------------------------------------------------------
+
+\input{chapters/ch01-long-biet-on}
+\input{chapters/ch02-su-tu-tin}
+\input{chapters/ch03-long-dung-cam}
+\input{chapters/ch04-su-chia-se}
+\input{chapters/ch05-triet-ly-song}
+\input{chapters/ch06-tinh-ban-nghia-khi}
+\input{chapters/ch07-gia-dinh-tinh-thuong}
+\input{chapters/ch08-kien-nhan-tu-lap}
+\input{chapters/ch09-the-gioi-quanh-ta}
+\input{chapters/ch10-tu-nhien-bai-hoc}
+\input{chapters/ch11-moi-ngay-mot-cau-chuyen}
+
+%------------------------------------------------------------
+\backmatter
+%------------------------------------------------------------
+\input{chapters/phu-luc}
+
+\end{document}

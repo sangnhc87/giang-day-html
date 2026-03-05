@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đường thẳng và Mặt cầu - Hình Học 12</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-light: #818cf8;
+            --secondary: #ec4899;
+            --accent: #0891b2;
+            --bg-main: linear-gradient(135deg, #f0f9ff 0%, #fdf4ff 50%, #f0fdf4 100%);
+            --bg-card: #ffffff;
+            --bg-card-hover: #f8fafc;
+            --bg-tabs: rgba(255, 255, 255, 0.95);
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --text-light: #94a3b8;
+            --success: #10b981;
+            --error: #ef4444;
+            --warning: #f59e0b;
+            --border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-main);
+            background-attachment: fixed;
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            color: white;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            position: relative;
+        }
+
+        /* Navigation Tabs */
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin: 30px 0;
+            position: sticky;
+            top: 0;
+            background: var(--bg-tabs);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            z-index: 100;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .tab-btn {
+            padding: 12px 24px;
+            background: #f1f5f9;
+            border: 2px solid transparent;
+            border-radius: 12px;
+            color: var(--text);
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn:hover {
+            background: #e2e8f0;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Content Sections */
+        .section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card h2 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin: 20px 0 15px;
+            font-size: 1.2rem;
+        }
+
+        /* Formula Box */
+        .formula-box {
+            background: linear-gradient(135deg, #ede9fe 0%, #fce7f3 100%);
+            border-left: 4px solid var(--primary);
+            padding: 20px 25px;
+            margin: 20px 0;
+            border-radius: 0 16px 16px 0;
+            font-size: 1.1rem;
+            color: #1e1b4b;
+        }
+
+        .formula-box.important {
+            background: linear-gradient(135deg, #ccfbf1 0%, #d1fae5 100%);
+            border-left-color: var(--accent);
+            color: #134e4a;
+        }
+
+        /* Example Box */
+        .example {
+            background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%);
+            border: 1px solid #93c5fd;
+            border-radius: 16px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .example-title {
+            color: #1d4ed8;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        /* Exercise */
+        .exercise {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 20px;
+            margin: 15px 0;
+            border: 1px solid var(--border);
+        }
+
+        .exercise-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .exercise-num {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .difficulty {
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .difficulty.easy {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .difficulty.medium {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .difficulty.hard {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        /* Choices */
+        .choices {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin: 15px 0;
+        }
+
+        @media (max-width: 600px) {
+            .choices {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .choice {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 18px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 2px solid var(--border);
+            border-radius: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+        }
+
+        .choice:hover {
+            background: linear-gradient(135deg, #eef2ff 0%, #fdf4ff 100%);
+            border-color: var(--primary-light);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(102, 126, 234, 0.15);
+        }
+
+        .choice.selected {
+            border-color: var(--primary);
+            background: #eef2ff;
+        }
+
+        .choice.correct {
+            border-color: var(--success);
+            background: #d1fae5;
+        }
+
+        .choice.wrong {
+            border-color: var(--error);
+            background: #fee2e2;
+        }
+
+        .choice-label {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f1f5f9;
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: #e2e8f0;
+        }
+
+        .btn-success {
+            background: var(--success);
+            color: white;
+        }
+
+        /* Solution */
+        .solution {
+            display: none;
+            background: linear-gradient(135deg, #ecfdf5 0%, #f0fdfa 100%);
+            border: 1px solid #6ee7b7;
+            border-radius: 16px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        .solution.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .solution h4 {
+            color: #047857;
+            margin-bottom: 10px;
+        }
+
+        /* Note Box */
+        .note {
+            background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%);
+            border: 1px solid #fbbf24;
+            border-radius: 16px;
+            padding: 15px 20px;
+            margin: 15px 0;
+            color: #92400e;
+        }
+
+        .note::before {
+            content: '💡 ';
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th,
+        td {
+            padding: 14px 18px;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        tr:hover {
+            background: #eef2ff;
+        }
+
+        /* Progress */
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: #e2e8f0;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+            border-radius: 5px;
+            transition: width 0.5s ease;
+        }
+
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            padding: 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .tabs {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .tab-btn {
+                text-align: center;
+            }
+        }
+
+        /* Interactive 3D Canvas */
+        .canvas-container {
+            position: relative;
+            background: linear-gradient(135deg, #f0f9ff 0%, #fdf4ff 50%, #f0fdf4 100%);
+            border-radius: 16px;
+            padding: 15px;
+            border: 1px solid var(--border);
+        }
+
+        .canvas-3d {
+            width: 100%;
+            height: 300px;
+            cursor: grab;
+            border-radius: 12px;
+        }
+
+        .canvas-3d:active {
+            cursor: grabbing;
+        }
+
+        .canvas-controls {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .canvas-btn {
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .canvas-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        .slider-container label {
+            font-size: 0.9rem;
+            font-weight: 500;
+            min-width: 80px;
+        }
+
+        .slider-container input[type="range"] {
+            flex: 1;
+            height: 6px;
+            border-radius: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            outline: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        .slider-container input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            background: white;
+            border: 3px solid #667eea;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .slider-value {
+            min-width: 50px;
+            text-align: center;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        /* Animated SVG */
+        @keyframes pulseVector {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes dashMove {
+            0% {
+                stroke-dashoffset: 0;
+            }
+
+            100% {
+                stroke-dashoffset: 20;
+            }
+        }
+
+        .animated-vector {
+            animation: pulseVector 2s ease-in-out infinite;
+            transform-origin: center bottom;
+        }
+
+        .animated-dash {
+            animation: dashMove 1s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🎯 Đường thẳng và Mặt cầu</h1>
+        <p>Hình học Không gian với Hệ tọa độ - Lớp 12</p>
+    </header>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showSection('theory')">📚 Lý Thuyết</button>
+            <button class="tab-btn" onclick="showSection('examples')">📝 Ví Dụ Minh Họa</button>
+            <button class="tab-btn" onclick="showSection('exercises')">✍️ Bài Tập Trắc Nghiệm</button>
+            <button class="tab-btn" onclick="showSection('advanced')">🚀 Bài Tập Tự Luận</button>
+            <button class="tab-btn" onclick="showSection('practice')">🎯 Luyện Tập</button>
+        </div>
+
+        <!-- LÝ THUYẾT -->
+        <div id="theory" class="section active">
+            <div class="card">
+                <h2>📌 1. Vị trí tương đối của Đường thẳng và Mặt cầu</h2>
+
+                <p>Cho mặt cầu \((S)\) tâm \(I\), bán kính \(R\) và đường thẳng \(d\). Đặt \(d = d(I, d)\) là khoảng
+                    cách từ tâm đến đường thẳng.</p>
+
+                <table>
+                    <tr>
+                        <th>Điều kiện</th>
+                        <th>Vị trí tương đối</th>
+                        <th>Số điểm chung</th>
+                    </tr>
+                    <tr>
+                        <td>\(d > R\)</td>
+                        <td>\(d\) không cắt \((S)\)</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>\(d = R\)</td>
+                        <td>\(d\) tiếp xúc \((S)\)</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>\(d < R\)</td>
+                        <td>\(d\) cắt \((S)\)</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+
+                <div class="formula-box important">
+                    <strong>Độ dài dây cung:</strong> Khi \(d < R\), đường thẳng cắt mặt cầu tại 2 điểm \(A, B\): \[
+                        AB=2\sqrt{R^2 - d^2} \] </div>
+                </div>
+
+                <div class="card">
+                    <h2>📌 2. Đường thẳng Tiếp xúc Mặt cầu</h2>
+
+                    <p>Đường thẳng \(d\) tiếp xúc mặt cầu \((S)\) tâm \(I\), bán kính \(R\) khi và chỉ khi:</p>
+
+                    <div class="formula-box important">
+                        \[ d(I, d) = R \]
+                    </div>
+
+                    <div class="note">
+                        Tại điểm tiếp xúc \(M_0\), vectơ \(\overrightarrow{IM_0}\) vuông góc với đường thẳng \(d\).
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>📌 3. Tìm Điểm Tiếp xúc</h2>
+
+                    <div class="formula-box important">
+                        <strong>Các bước tìm điểm tiếp xúc:</strong>
+                        <ol>
+                            <li>Xác định điểm \(M_0\) trên \(d\) sao cho \(\overrightarrow{IM_0} \perp
+                                \overrightarrow{u_d}\)</li>
+                            <li>Điểm \(M_0\) chính là hình chiếu của \(I\) lên \(d\)</li>
+                            <li>Kiểm tra: nếu \(IM_0 = R\) thì \(M_0\) là điểm tiếp xúc</li>
+                        </ol>
+                    </div>
+
+                    <div class="example">
+                        <p class="example-title">Ví dụ:</p>
+                        <p>Cho mặt cầu \((S)\) tâm \(I(1; 2; 3)\), bán kính \(R = 3\). Tìm điểm tiếp xúc với đường thẳng
+                            \(d\) tiếp xúc \((S)\).</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>📌 4. Điểm thuộc Đường thẳng có Khoảng cách đến Tâm nhỏ nhất</h2>
+
+                    <p>Cho điểm \(I\) và đường thẳng \(d\). Điểm \(M \in d\) có khoảng cách đến \(I\) nhỏ nhất chính là
+                        hình chiếu của \(I\) lên \(d\).</p>
+
+                    <div class="formula-box">
+                        \[ \min_{M \in d} IM = d(I, d) \]
+                    </div>
+
+                    <table>
+                        <tr>
+                            <th>Bài toán</th>
+                            <th>Kết quả</th>
+                        </tr>
+                        <tr>
+                            <td>Khoảng cách nhỏ nhất từ \(I\) đến đường thẳng \(d\)</td>
+                            <td>\(d(I, d)\)</td>
+                        </tr>
+                        <tr>
+                            <td>Điểm \(M \in d\) gần \(I\) nhất</td>
+                            <td>Hình chiếu của \(I\) lên \(d\)</td>
+                        </tr>
+                        <tr>
+                            <td>Đường thẳng tiếp xúc mặt cầu</td>
+                            <td>\(d(I, d) = R\)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- VÍ DỤ -->
+            <div id="examples" class="section">
+                <div class="card">
+                    <h2>📝 Ví Dụ 1: Tìm VTPT của mặt phẳng</h2>
+                    <div class="exercise">
+                        <span class="exercise-num">VD 1</span>
+                        <div id="ex-normal"></div>
+                        <div class="btn-group">
+                            <button class="btn btn-primary" onclick="ProblemGenerator.new('normal')">🔄 Đổi đề
+                                mới</button>
+                            <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                        </div>
+                        <div class="solution" id="sol-normal"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>📝 Ví Dụ 2: Viết PTMP qua điểm và có VTPT</h2>
+                    <div class="exercise">
+                        <span class="exercise-num">VD 2</span>
+                        <div id="ex-point-normal"></div>
+                        <div class="btn-group">
+                            <button class="btn btn-primary" onclick="ProblemGenerator.new('point_normal')">🔄 Đổi đề
+                                mới</button>
+                            <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                        </div>
+                        <div class="solution" id="sol-point-normal"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>📝 Ví Dụ 3: Viết PTMP đi qua 3 điểm</h2>
+                    <div class="exercise">
+                        <span class="exercise-num">VD 3</span>
+                        <div id="ex-3points"></div>
+                        <div class="btn-group">
+                            <button class="btn btn-primary" onclick="ProblemGenerator.new('3points')">🔄 Đổi đề
+                                mới</button>
+                            <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                        </div>
+                        <div class="solution" id="sol-3points"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>📝 Ví Dụ 4: Viết PTMP trung trực của đoạn thẳng</h2>
+                    <div class="exercise">
+                        <span class="exercise-num">VD 4</span>
+                        <div id="ex-bisector"></div>
+                        <div class="btn-group">
+                            <button class="btn btn-primary" onclick="ProblemGenerator.new('bisector')">🔄 Đổi đề
+                                mới</button>
+                            <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                        </div>
+                        <div class="solution" id="sol-bisector"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BÀI TẬP TRẮC NGHIỆM -->
+            <div id="exercises" class="section">
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-value" id="score">0</div>
+                        <div class="stat-label">Điểm</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="correct">0</div>
+                        <div class="stat-label">Đúng</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="total">0/10</div>
+                        <div class="stat-label">Hoàn thành</div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress" style="width: 0%"></div>
+                </div>
+
+                <div id="quiz-container"></div>
+                <button class="btn btn-primary" onclick="resetQuiz()" style="margin-top: 20px;">🔄 Làm Lại</button>
+            </div>
+
+            <!-- BÀI TẬP NÂNG CAO -->
+            <div id="advanced" class="section">
+                <div class="card">
+                    <h2>🚀 Nâng Cao: Mặt phẳng song song & cách đều</h2>
+                    <div class="exercise">
+                        <span class="exercise-num">NC 1</span>
+                        <div id="ex-parallel-dist"></div>
+                        <div class="btn-group">
+                            <button class="btn btn-primary" onclick="ProblemGenerator.new('parallel_dist')">🔄 Đổi
+                                đề
+                                mới</button>
+                            <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+                        </div>
+                        <div class="solution" id="sol-parallel-dist"></div>
+                    </div>
+                </div>
+            </div>
+            <p><strong>Bài 2:</strong> Viết PTMP \((\alpha)\) song song và cách đều hai mp: \(x + 2y - 2z + 1 =
+                0\) và \(x + 2y - 2z + 7 = 0\).</p>
+            <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+            <div class="solution">
+                <h4>Lời giải:</h4>
+                <p>\((\alpha): x + 2y - 2z + m = 0\) (song song nên cùng hệ số \(A, B, C\))</p>
+                <p>Điều kiện cách đều: \(\dfrac{|m - 1|}{3} = \dfrac{|m - 7|}{3}\)</p>
+                <p>\(\Rightarrow |m - 1| = |m - 7| \Rightarrow m = 4\)</p>
+                <p><strong>Kết quả:</strong> \(x + 2y - 2z + 4 = 0\)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🚀 Dạng 3: Tìm điểm đối xứng qua mặt phẳng</h2>
+        <div class="exercise">
+            <p><strong>Bài 3:</strong> Tìm điểm \(A'\) đối xứng của \(A(1; 2; 3)\) qua mp \((\alpha): x + y + z
+                - 3 = 0\).</p>
+            <button class="btn btn-secondary" onclick="toggleSolution(this)">Xem lời giải</button>
+            <div class="solution">
+                <h4>Lời giải:</h4>
+                <p>Đường thẳng qua \(A\), vuông góc với \((\alpha)\):</p>
+                <p>\(d: \dfrac{x-1}{1} = \dfrac{y-2}{1} = \dfrac{z-3}{1} = t\)</p>
+                <p>Giao điểm \(H = d \cap (\alpha)\): \((1+t) + (2+t) + (3+t) - 3 = 0 \Rightarrow t = -1\)</p>
+                <p>\(H(0; 1; 2)\) là trung điểm \(AA'\)</p>
+                <p><strong>Kết quả:</strong> \(A'(-1; 0; 1)\)</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- LUYỆN TẬP -->
+    <div id="practice" class="section">
+        <div class="card">
+            <h2>🎯 Bài Tập Tự Luyện</h2>
+            <div class="note">Hãy tự giải các bài sau trước khi xem đáp án!</div>
+
+            <div class="exercise">
+                <div class="exercise-header">
+                    <span class="exercise-num">Bài 1</span>
+                    <span class="difficulty easy">Cơ bản</span>
+                </div>
+                <p>Cho mp \((\alpha): 2x - 3y + z - 5 = 0\). VTPT của \((\alpha)\) là?</p>
+                <button class="btn btn-secondary" onclick="toggleSolution(this)">Đáp án</button>
+                <div class="solution">\(\vec{n} = (2; -3; 1)\)</div>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-header">
+                    <span class="exercise-num">Bài 2</span>
+                    <span class="difficulty medium">Trung bình</span>
+                </div>
+                <p>Viết PTMP song song với \(x - 2y + 3z + 1 = 0\) và đi qua \(A(1; 1; 1)\).</p>
+                <button class="btn btn-secondary" onclick="toggleSolution(this)">Đáp án</button>
+                <div class="solution">\(x - 2y + 3z = 0\) (thay \(A\) vào: \(1 - 2 + 3 + D = 0 \Rightarrow D =
+                    -2\))<br>\(\boxed{x - 2y + 3z - 2 = 0}\)</div>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-header">
+                    <span class="exercise-num">Bài 3</span>
+                    <span class="difficulty hard">Nâng cao</span>
+                </div>
+                <p>Viết PTMP \((\alpha)\) vuông góc với mp \(2x - y + 3z = 0\), chứa đường thẳng \(\dfrac{x}{1} =
+                    \dfrac{y-1}{2} = \dfrac{z+1}{1}\).</p>
+                <button class="btn btn-secondary" onclick="toggleSolution(this)">Đáp án</button>
+                <div class="solution">
+                    <p>VTCP của \(d\): \(\vec{u} = (1; 2; 1)\)</p>
+                    <p>VTPT của mp cho trước: \(\vec{n_1} = (2; -1; 3)\)</p>
+                    <p>\(\vec{n} = [\vec{u}, \vec{n_1}] = (7; -1; -5)\)</p>
+                    <p>MP qua \(O(0; 1; -1)\): \(\boxed{7x - y - 5z - 6 = 0}\)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        // ============ PROBLEM GENERATOR ============
+        const ProblemGenerator = {
+            randomInt: (min, max) => Math.floor(Math.random() * (max - min + 1)) + min,
+
+            getGCD: (a, b) => {
+                a = Math.abs(a); b = Math.abs(b);
+                while (b) { var t = b; b = a % b; a = t; }
+                return a;
+            },
+
+            simplifyVector: (x, y, z) => {
+                let gcd = ProblemGenerator.getGCD(x, ProblemGenerator.getGCD(y, z));
+                return { x: x / gcd, y: y / gcd, z: z / gcd, gcd: gcd };
+            },
+
+            formatterm: (coeff, variable, isFirst = false) => {
+                if (coeff === 0) return "";
+                let str = "";
+                if (!isFirst) {
+                    str += coeff > 0 ? " + " : " - ";
+                } else {
+                    if (coeff < 0) str += "-";
+                }
+                const absCoeff = Math.abs(coeff);
+                if (absCoeff !== 1 || variable === "") {
+                    str += absCoeff;
+                }
+                str += variable;
+                return str;
+            },
+
+            formatPlane: (A, B, C, D) => {
+                let str = "";
+                str += ProblemGenerator.formatterm(A, "x", true);
+                str += ProblemGenerator.formatterm(B, "y", str === "");
+                str += ProblemGenerator.formatterm(C, "z", str === "");
+                str += ProblemGenerator.formatterm(D, "", str === "");
+                if (str === "") str = "0";
+                return str + " = 0";
+            },
+
+            formatVec: (v) => `(${v.x}; ${v.y}; ${v.z})`,
+            formatPoint: (p) => `(${p.x}; ${p.y}; ${p.z})`,
+
+            crossProduct: (a, b) => ({
+                x: a.y * b.z - a.z * b.y,
+                y: a.z * b.x - a.x * b.z,
+                z: a.x * b.y - a.y * b.x
+            }),
+            dotProduct: (a, b) => a.x * b.x + a.y * b.y + a.z * b.z,
+
+            vec: (A, B) => ({ x: B.x - A.x, y: B.y - A.y, z: B.z - A.z }),
+
+            createSVG: (type, data) => {
+                const w = 300, h = 200;
+                let s = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="background:#f8fafc; border-radius:8px; margin: 10px auto; display:block;">
+                        <defs>
+                            <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+                                <path d="M0,0 L0,6 L9,3 z" fill="#ef4444" />
+                            </marker>
+                            <marker id="dot" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+                                <circle cx="4" cy="4" r="3" fill="#3b82f6" />
+                            </marker>
+                        </defs>`;
+
+                // Helper to project 3D roughly to 2D
+                // Simple oblique: x_2d = x + z*0.5, y_2d = -y + z*0.5 (y up is negative SVG)
+                // But we are drawing generic diagrams, not exact coordinates usually.
+                // Except for 'bisector' where exact logic adds realism? 
+                // No, just symbolic is better and robust.
+
+                const planePath = (x, y, w, h, color = "#e2e8f0") =>
+                    `<path d="M${x},${y} l${w - 40},-20 l40,${h} l-${w - 40},20 z" fill="${color}" stroke="#cbd5e1" stroke-width="2" />`;
+
+                if (type === 'normal' || type === 'point_normal') {
+                    // Draw Plane
+                    s += planePath(50, 100, 200, 60);
+                    // Draw Point M
+                    if (type === 'point_normal') {
+                        s += `<circle cx="150" cy="120" r="3" fill="#3b82f6"/>
+                              <text x="155" y="120" font-size="12" fill="#3b82f6">M</text>`;
+                    }
+                    // Draw Normal Vector n (from center or M)
+                    const mx = 150, my = 120; // Approx center of plane visually
+                    s += `<line x1="${mx}" y1="${my}" x2="${mx}" y2="${my - 60}" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow)"/>
+                          <text x="${mx + 5}" y="${my - 40}" font-size="12" fill="#ef4444">n</text>`;
+                    if (type === 'normal') {
+                        s += `<text x="70" y="140" font-size="14" fill="#64748b">(&alpha;)</text>`;
+                    }
+                }
+                else if (type === '3points') {
+                    s += planePath(50, 100, 200, 60);
+                    // Points A, B, C
+                    s += `<circle cx="120" cy="110" r="3" fill="#3b82f6"/><text x="110" y="110" font-size="12" fill="#3b82f6">A</text>`;
+                    s += `<circle cx="180" cy="100" r="3" fill="#3b82f6"/><text x="185" y="100" font-size="12" fill="#3b82f6">B</text>`;
+                    s += `<circle cx="150" cy="140" r="3" fill="#3b82f6"/><text x="155" y="145" font-size="12" fill="#3b82f6">C</text>`;
+                    // Triangle
+                    s += `<path d="M120,110 L180,100 L150,140 z" fill="rgba(59, 130, 246, 0.2)" stroke="#3b82f6" stroke-dasharray="2,2"/>`;
+                }
+                else if (type === 'bisector') {
+                    // Segment AB vertical-ish
+                    s += `<line x1="150" y1="50" x2="150" y2="150" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4,4"/>`;
+                    s += `<circle cx="150" cy="50" r="3" fill="#3b82f6"/><text x="160" y="55" font-size="12" fill="#3b82f6">A</text>`;
+                    s += `<circle cx="150" cy="150" r="3" fill="#3b82f6"/><text x="160" y="155" font-size="12" fill="#3b82f6">B</text>`;
+                    // Plane at Mid
+                    s += planePath(50, 90, 200, 40, "rgba(226, 232, 240, 0.8)");
+                    s += `<circle cx="150" cy="100" r="3" fill="#ef4444"/><text x="160" y="95" font-size="12" fill="#ef4444">I</text>`;
+                }
+                else if (type === 'parallel_dist') {
+                    // Plane Alpha
+                    s += planePath(50, 120, 200, 50, "#e2e8f0");
+                    s += `<text x="70" y="160" font-size="12" fill="#64748b">(&alpha;)</text>`;
+                    // Plane Beta (above)
+                    s += planePath(50, 60, 200, 50, "rgba(226, 232, 240, 0.8)");
+                    s += `<text x="70" y="100" font-size="12" fill="#64748b">(&beta;)</text>`;
+                    // Distance arrow
+                    s += `<line x1="220" y1="130" x2="220" y2="70" stroke="#8b5cf6" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+                          <text x="230" y="100" font-size="12" fill="#8b5cf6">d</text>`;
+                }
+
+                s += `</svg>`;
+                return s;
+            },
+
+            new: (type) => {
+                const gen = ProblemGenerator;
+                const r = gen.randomInt;
+                let htmlQ = "", htmlS = "";
+                let svg = "";
+
+                try {
+                    // 1. Normal Vector Example
+                    if (type === 'normal') {
+                        const A = r(-5, 5) || 1, B = r(-5, 5) || 2, C = r(-5, 5) || -1, D = r(-9, 9);
+                        htmlQ = `<p>Tìm VTPT của mặt phẳng \\((\\alpha): ${gen.formatPlane(A, B, C, D)}\\).</p>`;
+                        svg = gen.createSVG('normal');
+                        htmlS = `Hệ số của \\(x, y, z\\) lần lượt là \\(${A}, ${B}, ${C}\\). <br>
+                                 Vậy \\(\\vec{n} = (${A}; ${B}; ${C})\\).`;
+                        document.getElementById('ex-normal').innerHTML = htmlQ + svg;
+                        document.getElementById('sol-normal').innerHTML = htmlS;
+                    }
+                    // 2. Point & Normal Example
+                    else if (type === 'point_normal') {
+                        const M = { x: r(-3, 3), y: r(-3, 3), z: r(-3, 3) };
+                        const n = { x: r(-3, 3) || 1, y: r(-3, 3) || 2, z: r(-3, 3) || -2 };
+                        const D = -(n.x * M.x + n.y * M.y + n.z * M.z);
+                        htmlQ = `<p>Viết PTMP đi qua \\(M${gen.formatPoint(M)}\\) và có VTPT \\(\\vec{n} = ${gen.formatVec(n)}\\).</p>`;
+                        svg = gen.createSVG('point_normal');
+                        htmlS = `Công thức: \\[ A(x - x_0) + B(y - y_0) + C(z - z_0) = 0 \\]
+                                  Thay số: \\[ ${n.x}(x - (${M.x})) + ${n.y}(y - (${M.y})) + ${n.z}(z - (${M.z})) = 0 \\]
+                                  Rút gọn: \\[ ${gen.formatPlane(n.x, n.y, n.z, D)} \\]`;
+                        document.getElementById('ex-point-normal').innerHTML = htmlQ + svg;
+                        document.getElementById('sol-point-normal').innerHTML = htmlS;
+                    }
+                    // 3. Three Points Example
+                    else if (type === '3points') {
+                        const A = { x: r(1, 4), y: 0, z: 0 };
+                        const B = { x: 0, y: r(1, 4), z: 0 };
+                        const C = { x: 0, y: 0, z: r(1, 4) };
+                        // Intercept form
+                        htmlQ = `<p>Viết PTMP đi qua \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\), \\(C${gen.formatPoint(C)}\\).</p>`;
+                        svg = gen.createSVG('3points');
+
+                        // Calculate standard form
+                        const n = { x: B.y * C.z, y: A.x * C.z, z: A.x * B.y };
+                        const D = -(n.x * A.x);
+                        const simp = gen.simplifyVector(n.x, n.y, n.z);
+                        let fA = simp.x, fB = simp.y, fC = simp.z;
+                        let fD = D / simp.gcd;
+
+                        htmlS = `Sử dụng phương trình đoạn chắn: \\[ \\dfrac{x}{${A.x}} + \\dfrac{y}{${B.y}} + \\dfrac{z}{${C.z}} = 1 \\]
+                                  Quy đồng khử mẫu: \\[ ${gen.formatPlane(fA, fB, fC, fD)} \\]`;
+                        document.getElementById('ex-3points').innerHTML = htmlQ + svg;
+                        document.getElementById('sol-3points').innerHTML = htmlS;
+                    }
+                    // 4. Bisector Example
+                    else if (type === 'bisector') {
+                        const A = { x: r(-2, 2), y: r(-2, 2), z: r(-2, 2) };
+                        const B = { x: r(3, 5), y: r(-2, 2), z: r(3, 5) }; // Ensure distinct
+                        const Mid = { x: (A.x + B.x) / 2, y: (A.y + B.y) / 2, z: (A.z + B.z) / 2 };
+                        const n = gen.vec(A, B);
+                        if (n.x === 0 && n.y === 0 && n.z === 0) { // Added check for distinct points
+                            // If A and B are the same, regenerate or handle error
+                            // For now, just return to avoid division by zero or incorrect problem
+                            console.warn("A and B are the same, regenerating bisector problem.");
+                            return gen.new('bisector');
+                        }
+                        // D = -n.I
+                        const D_val = -(n.x * Mid.x + n.y * Mid.y + n.z * Mid.z);
+                        // Integers check
+                        let fA = n.x, fB = n.y, fC = n.z, fD = D_val;
+                        if (!Number.isInteger(fD)) { fA *= 2; fB *= 2; fC *= 2; fD *= 2; }
+
+                        htmlQ = `<p>Viết PTMP trung trực của đoạn \\(AB\\) với \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\).</p>`;
+                        svg = gen.createSVG('bisector');
+                        htmlS = `Trung điểm \\(I${gen.formatPoint(Mid)}\\). VTPT \\(\\vec{n} = \\overrightarrow{AB} = ${gen.formatVec(n)}\\). <br>
+                                  PT: \\[ ${n.x}(x - ${Mid.x}) + ... = 0 \\] <br>
+                                  Kết quả: \\[ ${gen.formatPlane(fA, fB, fC, fD)} \\]`; // Simplification might visually differ but correct
+                        document.getElementById('ex-bisector').innerHTML = htmlQ + svg;
+                        document.getElementById('sol-bisector').innerHTML = htmlS;
+                    }
+                    // 5. Parallel Distance Example (Advanced)
+                    else if (type === 'parallel_dist') {
+                        // Find plane parallel to P at distance d
+                        const A = r(1, 3), B = r(1, 3), C = r(1, 3), D1 = r(-5, 5);
+                        const dist = r(1, 5);
+                        const len = Math.sqrt(A * A + B * B + C * C); // Want integer? Rare.
+                        // Just display formula.
+                        htmlQ = `<p>Viết PTMP \\((\\beta)\\) song song với \\((\\alpha): ${gen.formatPlane(A, B, C, D1)}\\) và cách \\((\\alpha)\\) một khoảng bằng ${dist}.</p>`;
+                        svg = gen.createSVG('parallel_dist');
+                        htmlS = `\\((\\beta)\\) song song nên có dạng: \\[ ${gen.formatterm(A, 'x', true)}${gen.formatterm(B, 'y')}${gen.formatterm(C, 'z')} + m = 0 \\]
+                                 Khoảng cách giữa 2 mp song song: \\[ d = \\dfrac{|m - (${D1})|}{\\sqrt{${A}^2+${B}^2+${C}^2}} = ${dist} \\]
+                                 \\[ \\Rightarrow |m - (${D1})| = ${dist}\\sqrt{${A * A + B * B + C * C}} \\approx ${(dist * len).toFixed(1)} \\]
+                                 Giải ra 2 giá trị của m.`;
+                        document.getElementById('ex-parallel-dist').innerHTML = htmlQ + svg;
+                        document.getElementById('sol-parallel-dist').innerHTML = htmlS;
+                    }
+
+                    MathJax.typesetPromise();
+                } catch (e) { console.error(e); }
+            },
+
+
+            generateQuiz: () => {
+                const gen = ProblemGenerator;
+                const r = gen.randomInt;
+                const questions = [];
+
+                // Helper: Shuffle array
+                const shuffle = (arr) => arr.sort(() => Math.random() - 0.5);
+
+                // --- 1. TÌM VTPT CỦA MẶT PHẲNG (2 questions) ---
+                for (let i = 0; i < 2; i++) {
+                    const A = r(-5, 5) || 1;
+                    const B = r(-5, 5);
+                    const C = r(-5, 5) || 1;
+                    const D = r(-9, 9);
+
+                    const planeEq = gen.formatPlane(A, B, C, D);
+                    const correctN = { x: A, y: B, z: C };
+
+                    // Distractors
+                    const distractors = [];
+                    // Distractor 1: Swap signs
+                    distractors.push({ x: -A, y: -B, z: C });
+                    // Distractor 2: Swap coords
+                    distractors.push({ x: B, y: A, z: C });
+                    // Distractor 3: Random
+                    distractors.push({ x: r(-5, 5), y: r(-5, 5), z: r(-5, 5) });
+
+                    // Filter duplicates and correct
+                    const choices = [{ ...correctN, isCorrect: true }];
+                    distractors.forEach(d => {
+                        if (!choices.some(c => c.x === d.x && c.y === d.y && c.z === d.z) &&
+                            !(d.x === A && d.y === B && d.z === C)) {
+                            choices.push({ ...d, isCorrect: false });
+                        }
+                    });
+
+                    // Fill up to 4
+                    while (choices.length < 4) {
+                        const d = { x: r(-5, 5), y: r(-5, 5), z: r(-5, 5) };
+                        if (!choices.some(c => c.x === d.x && c.y === d.y && c.z === d.z)) {
+                            choices.push({ ...d, isCorrect: false });
+                        }
+                    }
+
+                    const shuffledChoices = shuffle(choices);
+                    const correctIndex = shuffledChoices.findIndex(c => c.isCorrect);
+
+                    questions.push({
+                        q: `Vectơ pháp tuyến của mặt phẳng \\((\\alpha): ${planeEq}\\) là?`,
+                        c: shuffledChoices.map(c => `\\(\\vec{n} = ${gen.formatVec(c)}\\)`),
+                        a: correctIndex,
+                        s: `Phương trình mặt phẳng tổng quát: \\[ Ax + By + Cz + D = 0 \\Rightarrow \\vec{n} = (A; B; C) \\] <br>
+                            Đối chiếu với phương trình \\(${planeEq}\\), ta có: \\[ A=${A}, \\; B=${B}, \\; C=${C} \\] <br>
+                            Vậy \\(\\vec{n} = ${gen.formatVec(correctN)}\\) (hoặc cùng phương).`
+                    });
+                }
+
+                // --- 2. VIẾT PTMP QUA ĐIỂM VÀ CÓ VTPT (2 questions) ---
+                for (let i = 0; i < 2; i++) {
+                    const M = { x: r(-3, 3), y: r(-3, 3), z: r(-3, 3) };
+                    const n = { x: r(-3, 3) || 1, y: r(-3, 3) || 1, z: r(-3, 3) };
+
+                    // A(x - x0) + B(y - y0) + C(z - z0) = 0
+                    // Ax + By + Cz - (Ax0 + By0 + Cz0) = 0
+                    const D = -(n.x * M.x + n.y * M.y + n.z * M.z);
+                    const correctEq = gen.formatPlane(n.x, n.y, n.z, D);
+
+                    // Distractors
+                    const distractors = [correctEq];
+                    // Wrong D
+                    distractors.push(gen.formatPlane(n.x, n.y, n.z, -D));
+                    distractors.push(gen.formatPlane(n.x, n.y, n.z, D + r(1, 4) * (Math.random() > 0.5 ? 1 : -1)));
+                    // Wrong normal
+                    distractors.push(gen.formatPlane(n.y, n.x, n.z, D));
+
+                    const finalChoices = Array.from(new Set(distractors)).slice(0, 4);
+                    while (finalChoices.length < 4) {
+                        finalChoices.push(gen.formatPlane(n.x, n.y, n.z, r(-10, 10)));
+                    }
+
+                    const shuffledEq = shuffle(finalChoices.map(eq => ({ eq, isCorrect: eq === correctEq })));
+                    const correctIdx = shuffledEq.findIndex(item => item.isCorrect);
+
+                    questions.push({
+                        q: `Viết phương trình mặt phẳng đi qua \\(M${gen.formatPoint(M)}\\) và có VTPT \\(\\vec{n} = ${gen.formatVec(n)}\\).`,
+                        c: shuffledEq.map(item => `\\(${item.eq}\\)`),
+                        a: correctIdx,
+                        s: `Công thức: \\[ A(x - x_0) + B(y - y_0) + C(z - z_0) = 0 \\] <br>
+                            Thay số: \\[ ${n.x}(x - (${M.x})) + ${n.y}(y - (${M.y})) + ${n.z}(z - (${M.z})) = 0 \\] <br>
+                            \\[ \\Leftrightarrow ${n.x}x ${n.x * -M.x >= 0 ? '+' : ''}${n.x * -M.x} ${n.y}y ${n.y * -M.y >= 0 ? '+' : ''}${n.y * -M.y} ${n.z}z ${n.z * -M.z >= 0 ? '+' : ''}${n.z * -M.z} = 0 \\] <br>
+                            \\[ \\Leftrightarrow ${correctEq} \\]`
+                    });
+                }
+
+                // --- 3. VIẾT PTMP QUA 3 ĐIỂM (1 question) ---
+                {
+                    const A = { x: r(1, 3), y: 0, z: 0 };
+                    const B = { x: 0, y: r(1, 3), z: 0 };
+                    const C = { x: 0, y: 0, z: r(1, 3) };
+                    // PT doan chan: x/a + y/b + z/c = 1 => bc x + ac y + ab z - abc = 0
+                    const n = { x: B.y * C.z, y: A.x * C.z, z: A.x * B.y };
+                    const D = -(n.x * A.x); // or -A.x * B.y * C.z
+
+                    // Simplify
+                    const simp = gen.simplifyVector(n.x, n.y, n.z);
+                    const div = simp.gcd;
+                    const simpleN = { x: simp.x, y: simp.y, z: simp.z };
+                    const simpleD = D / div;
+
+                    const correctEq = gen.formatPlane(simpleN.x, simpleN.y, simpleN.z, simpleD);
+
+                    // Distractors: wrong signs, wrong coeffs based on 1/a
+                    const choices = [correctEq];
+                    // Wrong sign D
+                    choices.push(gen.formatPlane(simpleN.x, simpleN.y, simpleN.z, -simpleD));
+                    // 1/a type mistake: x/a + y/b + z/c = 0
+                    choices.push(gen.formatPlane(simpleN.x, simpleN.y, simpleN.z, 0));
+                    // Random
+                    choices.push(gen.formatPlane(simpleN.x, simpleN.y, simpleN.z, simpleD + 1));
+
+                    const shuffled = shuffle(Array.from(new Set(choices))).slice(0, 4);
+                    // Ensure 4 choices
+                    while (shuffled.length < 4) shuffled.push(gen.formatPlane(simpleN.x, simpleN.y, simpleN.z, r(-10, 10)));
+
+                    const shuffledObj = shuffle(shuffled.map(eq => ({ eq, isCorrect: eq === correctEq })));
+
+                    questions.push({
+                        q: `Viết phương trình mặt phẳng đi qua 3 điểm \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\), \\(C${gen.formatPoint(C)}\\).`,
+                        c: shuffledObj.map(i => `\\(${i.eq}\\)`),
+                        a: shuffledObj.findIndex(i => i.isCorrect),
+                        s: `Sử dụng phương trình đoạn chắn: \\[ \\dfrac{x}{a} + \\dfrac{y}{b} + \\dfrac{z}{c} = 1 \\] <br>
+                            Thay số: \\[ \\dfrac{x}{${A.x}} + \\dfrac{y}{${B.y}} + \\dfrac{z}{${C.z}} = 1 \\] <br>
+                            Quy đồng: \\[ ${simpleN.x}x + ${simpleN.y}y + ${simpleN.z}z = ${-simpleD > 0 ? -simpleD : -(-simpleD)} \\] <br>
+                            Chuyển vế: \\[ ${correctEq} \\]`
+                    });
+                }
+
+                // --- 4. VIẾT PTMP SONG SONG VỚI MP KHÁC (1 question) ---
+                {
+                    const A = r(-3, 3) || 1, B = r(-3, 3), C = r(-3, 3) || 1, D = r(-9, 9);
+                    const M = { x: r(-2, 2), y: r(-2, 2), z: r(-2, 2) };
+
+                    const srcPlane = gen.formatPlane(A, B, C, D);
+                    // Parallel => same normal (A, B, C). New D' = -(Ax + By + Cz)
+                    const D_new = -(A * M.x + B * M.y + C * M.z);
+                    const correctEq = gen.formatPlane(A, B, C, D_new);
+
+                    if (D_new === D) {
+                        // If fortuitously the same, then they are coincident. 
+                        // Just change M slightly to avoid this logic edge case for "parallel" strict definition
+                        // Loop or just add 1 to D_new to make it distinct? 
+                        // But M must lie on it with D_new. 
+                        // It implies M was already on original plane.
+                        // Standard math: Coincident planes are parallel? Usually questions say "Parallel and distinct".
+                        // I'll ignore for now or retry check.
+                    }
+
+                    const distractors = [correctEq];
+                    // Distractor: same D
+                    distractors.push(gen.formatPlane(A, B, C, D));
+                    // Distractor: wrong sign D
+                    distractors.push(gen.formatPlane(A, B, C, -D_new));
+                    // Distractor: normal vector shuffled
+                    distractors.push(gen.formatPlane(B, A, C, D_new));
+
+                    const choices = shuffle(Array.from(new Set(distractors))).slice(0, 4);
+                    const choicesObj = shuffle(choices.map(c => ({ c, isCorrect: c === correctEq })));
+
+                    questions.push({
+                        q: `Viết phương trình mặt phẳng đi qua \\(M${gen.formatPoint(M)}\\) và song song với mặt phẳng \\((\\alpha): ${srcPlane}\\).`,
+                        c: choicesObj.map(i => `\\(${i.c}\\)`),
+                        a: choicesObj.findIndex(i => i.isCorrect),
+                        s: `Mặt phẳng cần tìm song song với \\((\\alpha)\\) nên có VTPT \\(\\vec{n} = (${A}; ${B}; ${C})\\). <br>
+                             Phương trình có dạng: \\[ ${gen.formatterm(A, 'x', true)}${gen.formatterm(B, 'y')}${gen.formatterm(C, 'z')} + D' = 0 \\] <br>
+                             Thay \\(M${gen.formatPoint(M)}\\) vào: \\[ ${A}(${M.x}) + ${B}(${M.y}) + ${C}(${M.z}) + D' = 0 \\Rightarrow D' = ${D_new} \\] <br>
+                             Vậy PT là: \\[ ${correctEq} \\]`
+                    });
+                }
+
+                // --- 5. VIẾT PTMP TRUNG TRỰC CỦA ĐOẠN THẲNG (1 question) ---
+                {
+                    const A = { x: r(-3, 3), y: r(-3, 3), z: r(-3, 3) };
+                    const B = { x: r(-3, 3), y: r(-3, 3), z: r(-3, 3) };
+
+                    // Normal n = AB
+                    const n = gen.vec(A, B);
+                    if (n.x === 0 && n.y === 0 && n.z === 0) return gen.generateQuiz(); // Should not happen often
+
+                    // Midpoint I
+                    const I = { x: (A.x + B.x) / 2, y: (A.y + B.y) / 2, z: (A.z + B.z) / 2 };
+
+                    // Equation: n.x(x - I.x) + n.y(...) = 0
+                    // n.x*x + n.y*y + n.z*z - (n.x*I.x + ...)/2 = 0
+                    // D = -(n.x*I.x + ...). Note I coordinates might be .5
+                    const D_val = -(n.x * I.x + n.y * I.y + n.z * I.z);
+
+                    // To ensure integer coefficients for display, multiply everything by 2 if needed?
+                    // n components are integers. D_val involves /2. So if we multiply eq by 2...
+                    // Or keep D as is. But vector simplification handles common factors.
+                    // Let's multiply by 2 if D_val has .5 to make it look nice.
+                    // Actually, n.x = B.x - A.x.
+                    // It's (B-A) dot (B+A)/2 = (|B|^2 - |A|^2) / 2.
+                    // So D_val is half-integer potentially.
+
+                    // Let's format nicely.
+                    let FA = n.x, FB = n.y, FC = n.z, FD = D_val;
+                    if (!Number.isInteger(FD)) {
+                        FA *= 2; FB *= 2; FC *= 2; FD *= 2;
+                    }
+
+                    // Simplify
+                    const simp = gen.simplifyVector(FA, FB, FC);
+                    // Also divide FD by gcd if possible?
+                    // simplifyVector returns gcd of A,B,C. Check if FD divisible.
+                    let finalA = simp.x, finalB = simp.y, finalC = simp.z;
+                    let finalD = FD / simp.gcd;
+
+                    if (!Number.isInteger(finalD)) {
+                        // If FD not divisible by gcd of ABC, we can't simplify D fully with that factor.
+                        // But usually we just want integer coefficients.
+                        // Let's just use FA, FB, FC, FD which are integers.
+                        finalA = FA; finalB = FB; finalC = FC; finalD = FD;
+                        // Try simplifying again including D
+                        const gcdAll = gen.getGCD(Math.abs(finalA), gen.getGCD(Math.abs(finalB), gen.getGCD(Math.abs(finalC), Math.abs(finalD))));
+                        finalA /= gcdAll; finalB /= gcdAll; finalC /= gcdAll; finalD /= gcdAll;
+                    }
+
+                    const correctEq = gen.formatPlane(finalA, finalB, finalC, finalD);
+
+                    const choicesArr = [correctEq];
+                    choicesArr.push(gen.formatPlane(finalA, finalB, finalC, -finalD));
+                    choicesArr.push(gen.formatPlane(finalA, finalB, finalC, 0));
+                    choicesArr.push(gen.formatPlane(finalB, finalA, finalC, finalD));
+
+                    const choicesObj = shuffle(Array.from(new Set(choicesArr)).slice(0, 4).map(c => ({ c, isCorrect: c === correctEq })));
+
+                    questions.push({
+                        q: `Viết phương trình mặt phẳng trung trực của đoạn thẳng \\(AB\\) với \\(A${gen.formatPoint(A)}\\), \\(B${gen.formatPoint(B)}\\).`,
+                        c: choicesObj.map(i => `\\(${i.c}\\)`),
+                        a: choicesObj.findIndex(i => i.isCorrect),
+                        s: `Mặt phẳng trung trực đi qua trung điểm \\(I\\) của đoạn \\(AB\\) và nhận \\(\\overrightarrow{AB}\\) làm VTPT. <br>
+                            \\(I = \\left(\\dfrac{${A.x}+${B.x}}{2}; \\dfrac{${A.y}+${B.y}}{2}; \\dfrac{${A.z}+${B.z}}{2}\\right) = ${gen.formatPoint(I)} \\) <br>
+                            \\(\\overrightarrow{n} = \\overrightarrow{AB} = ${gen.formatVec(n)}\\) <br>
+                            Phương trình: \\[ ${n.x}(x - ${I.x >= 0 ? I.x : '(' + I.x + ')'}) ${n.y >= 0 ? '+' : ''}${n.y}(y - ${I.y >= 0 ? I.y : '(' + I.y + ')'}) ${n.z >= 0 ? '+' : ''}${n.z}(z - ${I.z >= 0 ? I.z : '(' + I.z + ')'}) = 0 \\] <br>
+                            Rút gọn: \\[ ${correctEq} \\]`
+                    });
+                }
+
+
+                // --- 6. TÍNH KHOẢNG CÁCH (1 question) ---
+                {
+                    // Pick normal vector with nice integer length if possible: (1,2,2) len 3; (2,3,6) len 7; (1,4,8) len 9; (4,4,7) len 9.
+                    const niceVecs = [
+                        { x: 1, y: 2, z: 2, l: 3 }, { x: 2, y: 3, z: 6, l: 7 }, { x: 2, y: 1, z: 2, l: 3 },
+                        { x: 4, y: 4, z: 7, l: 9 }, { x: 4, y: 3, z: 0, l: 5 }, { x: 8, y: 6, z: 0, l: 10 }
+                    ];
+                    const vec = niceVecs[r(0, niceVecs.length - 1)];
+                    // Randomize signs
+                    vec.x *= r(0, 1) ? 1 : -1; vec.y *= r(0, 1) ? 1 : -1; vec.z *= r(0, 1) ? 1 : -1;
+
+                    const M = { x: r(-5, 5), y: r(-5, 5), z: r(-5, 5) };
+                    const D = r(-10, 10);
+
+                    const val = Math.abs(vec.x * M.x + vec.y * M.y + vec.z * M.z + D);
+                    // To get integer distance, we ideally want val divisible by vec.l
+                    // But it's random. Let's just output fraction or simplified.
+
+                    const dist = val / vec.l;
+                    const isInt = Number.isInteger(dist);
+                    const ansStr = isInt ? `${dist}` : `\\dfrac{${val}}{${vec.l}}`;
+
+                    const correctAns = ansStr;
+                    const distractors = [correctAns];
+
+                    // Distractors: val/l^2, val+1 / l, etc
+                    distractors.push(isInt ? `${dist + 1}` : `\\dfrac{${val + vec.l}}{${vec.l}}`);
+                    distractors.push(isInt ? `${Math.abs(dist - 1)}` : `\\dfrac{${Math.abs(val - vec.l)}}{${vec.l}}`);
+                    distractors.push(isInt ? `${dist + 2}` : `\\dfrac{${val + 2 * vec.l}}{${vec.l}}`);
+
+                    const choicesObj = shuffle(Array.from(new Set(distractors)).slice(0, 4).map(c => ({ c, isCorrect: c === correctAns })));
+
+                    questions.push({
+                        q: `Tính khoảng cách từ điểm \\(M${gen.formatPoint(M)}\\) đến mặt phẳng \\((\\alpha): ${gen.formatPlane(vec.x, vec.y, vec.z, D)}\\).`,
+                        c: choicesObj.map(i => `\\(${i.c}\\)`),
+                        a: choicesObj.findIndex(i => i.isCorrect),
+                        s: `Công thức: \\[ d(M, (\\alpha)) = \\dfrac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A^2 + B^2 + C^2}} \\] <br>
+                            Thay số: \\[ d = \\dfrac{|${vec.x}\\cdot(${M.x}) + ${vec.y}\\cdot(${M.y}) + ${vec.z}\\cdot(${M.z}) + (${D})|}{\\sqrt{${vec.x}^2 + ${vec.y}^2 + ${vec.z}^2}} \\] <br>
+                            \\[ d = \\dfrac{|${vec.x * M.x + vec.y * M.y + vec.z * M.z + D}|}{\\sqrt{${vec.l * vec.l}}} = \\dfrac{${val}}{${vec.l}} ${isInt ? '= ' + dist : ''} \\]`
+                    });
+                }
+
+                // --- 7. KIỂM TRA ĐIỂM THUỘC MP (1 question) ---
+                {
+                    const A = r(-2, 2) || 1, B = r(-2, 2) || 1, C = r(-2, 2) || 1, D = r(-5, 5);
+                    const planeEq = gen.formatPlane(A, B, C, D);
+
+                    // Generate correct point
+                    // Pick x, y random, solve z? 
+                    // To ensure integer z, pick A, B as 0 or careful construction
+                    // Easier: Construct point first, then calculate D to match.
+                    const P = { x: r(-2, 2), y: r(-2, 2), z: r(-2, 2) };
+                    const D_corr = -(A * P.x + B * P.y + C * P.z);
+                    const planeEqCorr = gen.formatPlane(A, B, C, D_corr);
+
+                    // Wrong points
+                    const wrongPoints = [];
+                    while (wrongPoints.length < 3) {
+                        const wp = { x: r(-3, 3), y: r(-3, 3), z: r(-3, 3) };
+                        if (A * wp.x + B * wp.y + C * wp.z + D_corr !== 0) {
+                            wrongPoints.push(wp);
+                        }
+                    }
+
+                    const points = shuffle([{ p: P, isCorrect: true }, ...wrongPoints.map(p => ({ p, isCorrect: false }))]);
+
+                    questions.push({
+                        q: `Điểm nào sau đây thuộc mặt phẳng \\( ${planeEqCorr} \\)?`,
+                        c: points.map(i => `\\(M${gen.formatPoint(i.p)}\\)`),
+                        a: points.findIndex(i => i.isCorrect),
+                        s: `Thay tọa độ điểm đúng \\(M${gen.formatPoint(P)}\\) vào phương trình: <br>
+                            \\[ ${A}\\cdot(${P.x}) + ${B}\\cdot(${P.y}) + ${C}\\cdot(${P.z}) + (${D_corr}) = ${A * P.x + B * P.y + C * P.z + D_corr} = 0 \\] (Thỏa mãn)`
+                    });
+                }
+
+                // --- 8. VỊ TRÍ TƯƠNG ĐỐI HAI MP (1 question) ---
+                {
+                    const typeProb = Math.random();
+                    let A1, B1, C1, A2, B2, C2, relStr, explain;
+
+                    if (typeProb < 0.33) {
+                        // Parallel
+                        A1 = r(1, 4); B1 = r(1, 4); C1 = r(1, 4);
+                        const k = r(2, 3) * (Math.random() > 0.5 ? 1 : -1);
+                        A2 = A1 * k; B2 = B1 * k; C2 = C1 * k;
+                        relStr = "Song song";
+                        explain = `Ta có: \\(\\dfrac{${A2}}{${A1}} = \\dfrac{${B2}}{${B1}} = \\dfrac{${C2}}{${C1}} = ${k}\\) và hai hệ số tự do khác nhau (nếu được giả định). <br> VTPT cùng phương nên song song.`;
+                    } else if (typeProb < 0.66) {
+                        // Perpendicular
+                        A1 = r(1, 3); B1 = r(1, 3);
+                        // A1*A2 + B1*B2 + C1*C2 = 0
+                        // Pick A2, B2 random. Solve C2.
+                        A2 = r(-2, 2); B2 = r(-2, 2);
+                        // simple case: (1,1,0) and (1,-1,5) -> 1-1=0.
+                        // Let's force simple dot product 0.
+                        const v1 = { x: 1, y: 1, z: 0 }, v2 = { x: 1, y: -1, z: r(1, 5) };
+                        A1 = v1.x; B1 = v1.y; C1 = v1.z; A2 = v2.x; B2 = v2.y; C2 = v2.z;
+                        // Or rotation?
+                        // Let's rely on standard pair.
+                        // (A, B, C) dot (B, -A, 0) = 0
+                        A1 = r(1, 3); B1 = r(1, 3); C1 = r(1, 3);
+                        A2 = B1; B2 = -A1; C2 = 0;
+                        relStr = "Vuông góc";
+                        explain = `Tích vô hướng hai VTPT: \\[ \\vec{n_1} \\cdot \\vec{n_2} = ${A1}\\cdot${A2} + ${B1}\\cdot${B2} + ${C1}\\cdot${C2} = 0 \\] <br> Nên hai mặt phẳng vuông góc.`;
+                    } else {
+                        // Cutting not perp
+                        A1 = 1; B1 = 1; C1 = 1;
+                        A2 = 1; B2 = 2; C2 = 3;
+                        relStr = "Cắt nhau (không vuông góc)";
+                        explain = `Hai VTPT không cùng phương và tích vô hướng khác 0.`;
+                    }
+
+                    const D1 = r(-5, 5), D2 = r(-5, 5);
+                    const mp1 = gen.formatPlane(A1, B1, C1, D1);
+                    const mp2 = gen.formatPlane(A2, B2, C2, D2);
+
+                    const answers = ["Song song", "Vuông góc", "Cắt nhau (không vuông góc)", "Trùng nhau"];
+                    // Find correct index
+                    let correctTxt = relStr;
+                    // Simplify mapping
+                    // Logic above was simplified. Let's ensure distractors are consistent.
+                    // If generated "Cắt nhau", that implies also not perp?
+
+                    const choicesObj = shuffle(answers.map(txt => ({ txt, isCorrect: txt === correctTxt })));
+
+                    questions.push({
+                        q: `Vị trí tương đối của hai mặt phẳng \\((\\alpha): ${mp1}\\) và \\((\\beta): ${mp2}\\) là?`,
+                        c: choicesObj.map(i => i.txt),
+                        a: choicesObj.findIndex(i => i.isCorrect),
+                        s: explain
+                    });
+                }
+
+                return questions;
+            }
+        };
+
+        let quizData = [];
+        let userAnswers = [];
+        let answered = 0;
+
+        function initQuiz() {
+            if (quizData.length === 0) {
+                quizData = ProblemGenerator.generateQuiz();
+            }
+
+            const container = document.getElementById('quiz-container');
+            userAnswers = new Array(quizData.length).fill(undefined);
+            answered = 0;
+            updateStats();
+
+            container.innerHTML = quizData.map((q, i) => `
+                <div class="exercise" id="q${i}">
+                    <div class="exercise-header">
+                        <span class="exercise-num">Câu ${i + 1}</span>
+                    </div>
+                    <p>${q.q}</p>
+                    <div class="choices">
+                        ${q.c.map((c, j) => `
+                            <div class="choice" onclick="selectAnswer(${i}, ${j})">
+                                <span class="choice-label">${String.fromCharCode(65 + j)}</span>
+                                <span>${c}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="solution" id="sol${i}">
+                        <h4>Lời giải:</h4>
+                        <p>${q.s}</p>
+                    </div>
+                </div>
+            `).join('');
+            MathJax.typesetPromise();
+        }
+
+        function selectAnswer(qIndex, aIndex) {
+            if (userAnswers[qIndex] !== undefined) return;
+
+            userAnswers[qIndex] = aIndex;
+            answered++;
+
+            const choices = document.querySelectorAll(`#q${qIndex} .choice`);
+            choices.forEach((c, i) => {
+                if (i === quizData[qIndex].a) c.classList.add('correct');
+                else if (i === aIndex) c.classList.add('wrong');
+            });
+
+            document.getElementById(`sol${qIndex}`).classList.add('show');
+            updateStats();
+        }
+
+        function updateStats() {
+            const correct = userAnswers.filter((a, i) => a === quizData[i].a).length;
+            document.getElementById('score').textContent = correct * 10;
+            document.getElementById('correct').textContent = correct;
+            document.getElementById('total').textContent = `${answered}/${quizData.length}`;
+            const pct = quizData.length > 0 ? (answered / quizData.length) * 100 : 0;
+            document.getElementById('progress').style.width = `${pct}%`;
+        }
+
+        function resetQuiz() {
+            quizData = ProblemGenerator.generateQuiz();
+            initQuiz();
+            // Scroll to top of exercises
+            document.getElementById('exercises').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showSection(id) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            event.target.classList.add('active');
+            if (id === 'exercises' && quizData.length === 0) initQuiz();
+        }
+
+        function toggleSolution(btn) {
+            const sol = btn.nextElementSibling;
+            sol.classList.toggle('show');
+            btn.textContent = sol.classList.contains('show') ? 'Ẩn lời giải' : 'Xem lời giải';
+        }
+
+        // Init
+        document.addEventListener('DOMContentLoaded', () => {
+            initQuiz();
+            // Init Examples
+            ProblemGenerator.new('normal');
+            ProblemGenerator.new('point_normal');
+            ProblemGenerator.new('3points');
+            ProblemGenerator.new('bisector');
+            ProblemGenerator.new('parallel_dist');
+        });
+
+
+        // ============ CANVAS 3D TƯƠNG TÁC CHO VTPT ============
+        let vtptAngle = 30;
+        let autoRotate = false;
+        let animationId = null;
+
+        function drawVTPTCanvas() {
+            const canvas = document.getElementById('vtptCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const w = canvas.width, h = canvas.height;
+            const cx = w / 2, cy = h / 2 + 30;
+
+            ctx.clearRect(0, 0, w, h);
+
+            const angle = vtptAngle * Math.PI / 180;
+            const cos = Math.cos(angle), sin = Math.sin(angle);
+
+            // Hàm chiếu 3D -> 2D
+            function project(x, y, z) {
+                const scale = 0.7;
+                const px = cx + (x * cos - y * sin) * scale;
+                const py = cy - z * scale * 0.8 + (x * sin + y * cos) * 0.3 * scale;
+                return [px, py];
+            }
+
+            // Vẽ mặt phẳng
+            const planeSize = 100;
+            const p1 = project(-planeSize, -planeSize, 0);
+            const p2 = project(planeSize, -planeSize, 0);
+            const p3 = project(planeSize, planeSize, 0);
+            const p4 = project(-planeSize, planeSize, 0);
+
+            const gradient = ctx.createLinearGradient(p1[0], p1[1], p3[0], p3[1]);
+            gradient.addColorStop(0, 'rgba(129, 140, 248, 0.6)');
+            gradient.addColorStop(1, 'rgba(192, 132, 252, 0.6)');
+
+            ctx.beginPath();
+            ctx.moveTo(p1[0], p1[1]);
+            ctx.lineTo(p2[0], p2[1]);
+            ctx.lineTo(p3[0], p3[1]);
+            ctx.lineTo(p4[0], p4[1]);
+            ctx.closePath();
+            ctx.fillStyle = gradient;
+            ctx.fill();
+            ctx.strokeStyle = '#667eea';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            // Điểm M (tâm)
+            const pM = project(0, 0, 0);
+            ctx.beginPath();
+            ctx.arc(pM[0], pM[1], 6, 0, Math.PI * 2);
+            ctx.fillStyle = '#ef4444';
+            ctx.fill();
+            ctx.fillStyle = '#ef4444';
+            ctx.font = 'bold 14px Inter';
+            ctx.fillText('M', pM[0] + 10, pM[1] + 5);
+
+            // Vectơ n (vuông góc với mp, hướng lên)
+            const nLen = 100;
+            const pN = project(0, 0, nLen);
+            ctx.beginPath();
+            ctx.moveTo(pM[0], pM[1]);
+            ctx.lineTo(pN[0], pN[1]);
+            ctx.strokeStyle = '#22c55e';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            // Mũi tên n
+            const arrowSize = 10;
+            ctx.beginPath();
+            ctx.moveTo(pN[0], pN[1]);
+            ctx.lineTo(pN[0] - arrowSize / 2, pN[1] + arrowSize);
+            ctx.lineTo(pN[0] + arrowSize / 2, pN[1] + arrowSize);
+            ctx.closePath();
+            ctx.fillStyle = '#22c55e';
+            ctx.fill();
+            ctx.font = 'bold 16px Inter';
+            ctx.fillStyle = '#22c55e';
+            ctx.fillText('n⃗', pN[0] + 10, pN[1] + 5);
+
+            // Vectơ u (trên mặt phẳng)
+            const pU = project(70, 20, 0);
+            ctx.beginPath();
+            ctx.moveTo(pM[0], pM[1]);
+            ctx.lineTo(pU[0], pU[1]);
+            ctx.strokeStyle = '#f59e0b';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            ctx.font = 'bold 12px Inter';
+            ctx.fillStyle = '#f59e0b';
+            ctx.fillText('u⃗', pU[0] + 5, pU[1] - 5);
+
+            // Vectơ v (trên mặt phẳng)
+            const pV = project(-20, 60, 0);
+            ctx.beginPath();
+            ctx.moveTo(pM[0], pM[1]);
+            ctx.lineTo(pV[0], pV[1]);
+            ctx.strokeStyle = '#ec4899';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            ctx.font = 'bold 12px Inter';
+            ctx.fillStyle = '#ec4899';
+            ctx.fillText('v⃗', pV[0] - 15, pV[1]);
+
+            // Góc vuông
+            const sqSize = 12;
+            const sq1 = project(0, 0, sqSize);
+            const sq2 = project(sqSize * 0.7, 0, sqSize);
+            const sq3 = project(sqSize * 0.7, 0, 0);
+            ctx.beginPath();
+            ctx.moveTo(sq1[0], sq1[1]);
+            ctx.lineTo(sq2[0], sq2[1]);
+            ctx.lineTo(sq3[0], sq3[1]);
+            ctx.strokeStyle = '#22c55e';
+            ctx.lineWidth = 1.5;
+            ctx.stroke();
+
+            // Label (α)
+            ctx.font = '12px Inter';
+            ctx.fillStyle = '#64748b';
+            ctx.fillText('(α)', p3[0] - 30, p3[1] + 15);
+        }
+
+        function resetVTPTView() {
+            vtptAngle = 30;
+            document.getElementById('rotateSlider').value = 30;
+            document.getElementById('rotateValue').textContent = '30°';
+            drawVTPTCanvas();
+        }
+
+        function toggleAutoRotate() {
+            autoRotate = !autoRotate;
+            if (autoRotate) {
+                function animate() {
+                    vtptAngle = (vtptAngle + 1) % 360;
+                    document.getElementById('rotateSlider').value = vtptAngle;
+                    document.getElementById('rotateValue').textContent = vtptAngle + '°';
+                    drawVTPTCanvas();
+                    if (autoRotate) animationId = requestAnimationFrame(animate);
+                }
+                animate();
+            } else {
+                cancelAnimationFrame(animationId);
+            }
+        }
+
+        // Slider event
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = document.getElementById('rotateSlider');
+            if (slider) {
+                slider.addEventListener('input', function () {
+                    vtptAngle = parseInt(this.value);
+                    document.getElementById('rotateValue').textContent = vtptAngle + '°';
+                    drawVTPTCanvas();
+                });
+            }
+            drawVTPTCanvas();
+
+            // Mouse drag để xoay
+            const canvas = document.getElementById('vtptCanvas');
+            if (canvas) {
+                let isDragging = false;
+                let lastX = 0;
+
+                canvas.addEventListener('mousedown', (e) => {
+                    isDragging = true;
+                    lastX = e.clientX;
+                    autoRotate = false;
+                    cancelAnimationFrame(animationId);
+                });
+
+                canvas.addEventListener('mousemove', (e) => {
+                    if (!isDragging) return;
+                    const dx = e.clientX - lastX;
+                    vtptAngle = (vtptAngle + dx) % 360;
+                    if (vtptAngle < 0) vtptAngle += 360;
+                    document.getElementById('rotateSlider').value = vtptAngle;
+                    document.getElementById('rotateValue').textContent = Math.round(vtptAngle) + '°';
+                    drawVTPTCanvas();
+                    lastX = e.clientX;
+                });
+
+                canvas.addEventListener('mouseup', () => isDragging = false);
+                canvas.addEventListener('mouseleave', () => isDragging = false);
+            }
+
+            // ============ CANVAS KHOẢNG CÁCH 2 MP SONG SONG ============
+            drawDistanceCanvas();
+
+            const distSlider = document.getElementById('distanceSlider');
+            const dist2DAngle = document.getElementById('dist2DAngle');
+
+            if (distSlider) {
+                distSlider.addEventListener('input', function () {
+                    document.getElementById('distanceValue').textContent = 'd = ' + this.value;
+                    drawDistanceCanvas();
+                });
+            }
+            if (dist2DAngle) {
+                dist2DAngle.addEventListener('input', function () {
+                    document.getElementById('dist2DAngleValue').textContent = this.value + '°';
+                    drawDistanceCanvas();
+                });
+            }
+        });
+
+        function drawDistanceCanvas() {
+            const canvas = document.getElementById('distanceCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const w = canvas.width, h = canvas.height;
+            const cx = w / 2, cy = h / 2;
+
+            ctx.clearRect(0, 0, w, h);
+
+            const dist = parseInt(document.getElementById('distanceSlider')?.value || 60);
+            const angleVal = parseInt(document.getElementById('dist2DAngle')?.value || 20);
+            const angle = angleVal * Math.PI / 180;
+            const cos = Math.cos(angle), sin = Math.sin(angle);
+
+            function project(x, y, z) {
+                const scale = 0.7;
+                const px = cx + (x * cos - y * sin) * scale;
+                const py = cy - z * scale + (x * sin + y * cos) * 0.25 * scale;
+                return [px, py];
+            }
+
+            const planeSize = 90;
+            const alphaZ = dist / 2;
+            const betaZ = -dist / 2;
+
+            // Vẽ mp (β) trước (phía dưới)
+            const b1 = project(-planeSize, -planeSize, betaZ);
+            const b2 = project(planeSize, -planeSize, betaZ);
+            const b3 = project(planeSize, planeSize, betaZ);
+            const b4 = project(-planeSize, planeSize, betaZ);
+
+            const gradBeta = ctx.createLinearGradient(b1[0], b1[1], b3[0], b3[1]);
+            gradBeta.addColorStop(0, 'rgba(103, 232, 249, 0.6)');
+            gradBeta.addColorStop(1, 'rgba(34, 211, 238, 0.6)');
+
+            ctx.beginPath();
+            ctx.moveTo(b1[0], b1[1]); ctx.lineTo(b2[0], b2[1]);
+            ctx.lineTo(b3[0], b3[1]); ctx.lineTo(b4[0], b4[1]);
+            ctx.closePath();
+            ctx.fillStyle = gradBeta;
+            ctx.fill();
+            ctx.strokeStyle = '#0891b2';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            ctx.font = 'bold 12px Inter';
+            ctx.fillStyle = '#0e7490';
+            ctx.fillText('(β)', b3[0] - 25, b3[1] + 12);
+
+            // Vẽ mp (α) (phía trên)
+            const a1 = project(-planeSize, -planeSize, alphaZ);
+            const a2 = project(planeSize, -planeSize, alphaZ);
+            const a3 = project(planeSize, planeSize, alphaZ);
+            const a4 = project(-planeSize, planeSize, alphaZ);
+
+            const gradAlpha = ctx.createLinearGradient(a1[0], a1[1], a3[0], a3[1]);
+            gradAlpha.addColorStop(0, 'rgba(167, 243, 208, 0.6)');
+            gradAlpha.addColorStop(1, 'rgba(110, 231, 183, 0.6)');
+
+            ctx.beginPath();
+            ctx.moveTo(a1[0], a1[1]); ctx.lineTo(a2[0], a2[1]);
+            ctx.lineTo(a3[0], a3[1]); ctx.lineTo(a4[0], a4[1]);
+            ctx.closePath();
+            ctx.fillStyle = gradAlpha;
+            ctx.fill();
+            ctx.strokeStyle = '#10b981';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            ctx.font = 'bold 12px Inter';
+            ctx.fillStyle = '#047857';
+            ctx.fillText('(α)', a3[0] - 25, a3[1] + 12);
+
+            // Điểm M trên (α)
+            const pM = project(0, 0, alphaZ);
+            ctx.beginPath();
+            ctx.arc(pM[0], pM[1], 5, 0, Math.PI * 2);
+            ctx.fillStyle = '#ef4444';
+            ctx.fill();
+            ctx.font = 'bold 12px Inter';
+            ctx.fillStyle = '#ef4444';
+            ctx.fillText('M', pM[0] + 8, pM[1] - 5);
+
+            // Điểm H trên (β)
+            const pH = project(0, 0, betaZ);
+            ctx.beginPath();
+            ctx.arc(pH[0], pH[1], 5, 0, Math.PI * 2);
+            ctx.fillStyle = '#3b82f6';
+            ctx.fill();
+            ctx.font = 'bold 12px Inter';
+            ctx.fillStyle = '#3b82f6';
+            ctx.fillText('H', pH[0] + 8, pH[1] + 15);
+
+            // Đường khoảng cách d (nét đứt động)
+            ctx.beginPath();
+            ctx.moveTo(pM[0], pM[1]);
+            ctx.lineTo(pH[0], pH[1]);
+            ctx.strokeStyle = '#dc2626';
+            ctx.lineWidth = 2.5;
+            ctx.setLineDash([6, 4]);
+            ctx.stroke();
+            ctx.setLineDash([]);
+
+            // Label d với giá trị
+            const midY = (pM[1] + pH[1]) / 2;
+            ctx.font = 'bold 14px Inter';
+            ctx.fillStyle = '#dc2626';
+            ctx.fillText('d = ' + dist, pM[0] + 15, midY);
+
+            // Góc vuông tại H
+            const sqSize = 10;
+            ctx.beginPath();
+            ctx.moveTo(pH[0], pH[1] - sqSize);
+            ctx.lineTo(pH[0] + sqSize, pH[1] - sqSize);
+            ctx.lineTo(pH[0] + sqSize, pH[1]);
+            ctx.strokeStyle = '#3b82f6';
+            ctx.lineWidth = 1.5;
+            ctx.stroke();
+
+            // Ký hiệu song song
+            ctx.font = '18px Inter';
+            ctx.fillStyle = '#64748b';
+            ctx.fillText('∥', w - 30, 30);
+        }
+    </script>
+</body>
+
+</html>

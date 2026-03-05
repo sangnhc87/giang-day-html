@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📊 Thống kê THPT - Nhóm 6 | 12C1</title>
+
+    <!-- MathJax -->
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+    <style>
+        :root {
+            --primary: #667eea;
+            --primary-dark: #5a67d8;
+            --secondary: #48bb78;
+            --accent: #ed8936;
+            --bg-dark: #1a202c;
+            --bg-card: #2d3748;
+            --text-light: #f7fafc;
+            --text-muted: #a0aec0;
+            --success: #48bb78;
+            --error: #fc8181;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            --gradient-3: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-4: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-light);
+            min-height: 100vh;
+            line-height: 1.7;
+        }
+
+        /* Animated Background */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(72, 187, 120, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(237, 137, 54, 0.08) 0%, transparent 50%);
+            z-index: -1;
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            background: rgba(26, 32, 44, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-tab {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: var(--bg-card);
+            color: var(--text-muted);
+        }
+
+        .nav-tab:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .nav-tab.active {
+            background: var(--gradient-1);
+            color: white;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Tab Content */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-title span {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Formula Box */
+        .formula-box {
+            background: rgba(102, 126, 234, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        /* Note */
+        .note {
+            background: rgba(72, 187, 120, 0.1);
+            border-left: 4px solid var(--secondary);
+            padding: 15px 20px;
+            border-radius: 0 15px 15px 0;
+            margin: 15px 0;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* Accordion */
+        .accordion-btn {
+            width: 100%;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            color: var(--text-light);
+            padding: 18px 25px;
+            text-align: left;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-btn:hover {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%);
+            transform: translateX(5px);
+        }
+
+        .accordion-btn::after {
+            content: "▼";
+            font-size: 0.8rem;
+            transition: transform 0.3s;
+        }
+
+        .accordion-btn.open::after {
+            transform: rotate(180deg);
+        }
+
+        .accordion-panel {
+            display: none;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0 0 15px 15px;
+            margin-top: -10px;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                max-height: 0;
+            }
+
+            to {
+                opacity: 1;
+                max-height: 2000px;
+            }
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        th {
+            background: var(--gradient-1);
+            font-weight: 600;
+        }
+
+        td {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Quiz Section */
+        .quiz-controls {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .quiz-btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .quiz-btn.primary {
+            background: var(--gradient-2);
+            color: white;
+        }
+
+        .quiz-btn.secondary {
+            background: var(--gradient-3);
+            color: white;
+        }
+
+        .quiz-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        #quiz-container {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            min-height: 300px;
+        }
+
+        .question-text {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 15px;
+            line-height: 1.8;
+        }
+
+        .answer-input {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .answer-input input {
+            flex: 1;
+            min-width: 200px;
+            padding: 15px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .answer-input input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .check-btn {
+            padding: 15px 35px;
+            background: var(--gradient-4);
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .check-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .result-box {
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .result-box.correct {
+            background: rgba(72, 187, 120, 0.2);
+            border: 2px solid var(--success);
+            color: var(--success);
+        }
+
+        .result-box.wrong {
+            background: rgba(252, 129, 129, 0.2);
+            border: 2px solid var(--error);
+            color: var(--error);
+        }
+
+        .solution-box {
+            background: rgba(237, 137, 54, 0.1);
+            border: 1px solid var(--accent);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .solution-box h4 {
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        /* Score Display */
+        .score-display {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .score-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .score-item .number {
+            font-size: 2rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .score-item .label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Grade Selector */
+        .grade-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .grade-btn {
+            padding: 10px 25px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            background: transparent;
+            color: var(--text-light);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .grade-btn.active {
+            background: var(--gradient-1);
+            border-color: transparent;
+        }
+
+        /* Team Info */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .team-member {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            background: rgba(102, 126, 234, 0.2);
+        }
+
+        .team-member .avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 1.5rem;
+        }
+
+        .team-member .name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .team-member .role {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .nav-tab {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            .formula-box {
+                font-size: 1.1rem;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav-tabs">
+        <button class="nav-tab active" onclick="showTab('theory')">📚 Lý Thuyết</button>
+        <button class="nav-tab" onclick="showTab('practice')">✏️ Ôn Luyện</button>
+        <button class="nav-tab" onclick="showTab('team')">👥 Nhóm 6</button>
+    </nav>
+
+    <header>
+        <h1>📊 Thống Kê THPT</h1>
+        <p>Tổng hợp kiến thức Lớp 10, 11, 12 — Nhóm 6 | 12C1</p>
+    </header>
+
+    <div class="container">
+
+        <!-- TAB: LÝ THUYẾT -->
+        <div id="theory" class="tab-content active">
+
+            <!-- LỚP 10 -->
+            <div class="card">
+                <div class="card-title">📘 <span>Thống Kê Lớp 10</span></div>
+
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    📊 Bảng Thống Kê & Tần Số
+                </button>
+                <div class="accordion-panel">
+                    <table>
+                        <tr>
+                            <th>Giá trị</th>
+                            <td>\(x_1\)</td>
+                            <td>\(x_2\)</td>
+                            <td>\(x_3\)</td>
+                            <td>...</td>
+                            <td>\(x_k\)</td>
+                        </tr>
+                        <tr>
+                            <th>Tần số</th>
+                            <td>\(n_1\)</td>
+                            <td>\(n_2\)</td>
+                            <td>\(n_3\)</td>
+                            <td>...</td>
+                            <td>\(n_k\)</td>
+                        </tr>
+                    </table>
+
+                    <h3 style="margin-top: 20px; color: var(--primary);">Tần số tương đối</h3>
+                    <div class="formula-box">\[f_k = \frac{n_k}{n} \times 100\%\]</div>
+                    <div class="note">
+                        <strong>Trong đó:</strong> \(n_k\) là tần số của giá trị \(x_k\); \(n\) là tổng số quan sát.
+                    </div>
+                </div>
+
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    📐 Số Trung Bình & Trung Vị
+                </button>
+                <div class="accordion-panel">
+                    <h3 style="color: var(--primary);">Số trung bình cộng</h3>
+                    <div class="formula-box">\[\overline{x} = \frac{n_1x_1 + n_2x_2 + \dots + n_kx_k}{n}\]</div>
+                    <div class="note">
+                        <strong>Trong đó:</strong> \(n_i\) là tần số, \(x_i\) là giá trị, \(n = n_1 + n_2 + \dots +
+                        n_k\).
+                    </div>
+
+                    <h3 style="color: var(--primary);">Trung vị (Median)</h3>
+                    <div class="formula-box">\[
+                        M_e = \begin{cases}
+                        x_{\frac{n+1}{2}} & \text{nếu } n \text{ lẻ}\\[8pt]
+                        \dfrac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2} & \text{nếu } n \text{ chẵn}
+                        \end{cases}
+                        \]</div>
+                    <div class="note">
+                        <strong>Lưu ý:</strong> Cần sắp xếp dữ liệu theo thứ tự tăng dần trước khi tìm trung vị.
+                    </div>
+                </div>
+
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    📈 Tứ Phân Vị & Mốt
+                </button>
+                <div class="accordion-panel">
+                    <h3 style="color: var(--primary);">Tứ phân vị</h3>
+                    <div class="formula-box">
+                        \(Q_1\): Trung vị nửa dưới &nbsp;|&nbsp; \(Q_2 = M_e\) &nbsp;|&nbsp; \(Q_3\): Trung vị nửa trên
+                    </div>
+                    <div class="note">
+                        <strong>Khoảng tứ phân vị:</strong> \(\Delta Q = Q_3 - Q_1\)
+                    </div>
+
+                    <h3 style="color: var(--primary);">Mốt (Mode)</h3>
+                    <div class="formula-box">\[M_o = \text{Giá trị có tần số xuất hiện lớn nhất}\]</div>
+                </div>
+
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    📉 Phương Sai & Độ Lệch Chuẩn
+                </button>
+                <div class="accordion-panel">
+                    <h3 style="color: var(--primary);">Phương sai</h3>
+                    <div class="formula-box">\[S^2 = \frac{1}{n}\sum_{i=1}^{k} n_i(x_i - \overline{x})^2\]</div>
+
+                    <h3 style="color: var(--primary);">Độ lệch chuẩn</h3>
+                    <div class="formula-box">\[S = \sqrt{S^2}\]</div>
+
+                    <h3 style="color: var(--primary);">Khoảng biến thiên</h3>
+                    <div class="formula-box">\[R = x_{\max} - x_{\min}\]</div>
+
+                    <h3 style="color: var(--primary);">Giá trị ngoại lệ</h3>
+                    <div class="formula-box">\[x < Q_1 - 1{,}5\Delta Q \quad \text{hoặc} \quad x> Q_3 + 1{,}5\Delta Q\]
+                    </div>
+                </div>
+
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    ⚠️ Sai Số
+                </button>
+                <div class="accordion-panel">
+                    <h3 style="color: var(--primary);">Sai số tuyệt đối</h3>
+                    <div class="formula-box">\[\Delta_a = |\bar{a} - a|\]</div>
+
+                    <h3 style="color: var(--primary);">Sai số tương đối</h3>
+                    <div class="formula-box">\[\delta_a = \frac{\Delta_a}{|a|} \times 100\%\]</div>
+                </div>
+            </div>
+
+            <!-- LỚP 11 -->
+            <div class="card">
+                <div class="card-title">📗 <span>Thống Kê Lớp 11 (Mẫu Số Liệu Ghép Nhóm)</span></div>
+
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    📊 Bảng Phân Bố Tần Số Ghép Nhóm
+                </button>
+                <div class="accordion-panel">
+                    <table>
+                        <tr>
+                            <th>Nhóm</th>
+                            <td>\([a_1, a_2)\)</td>
+                            <td>\([a_2, a_3)\)</td>
+                            <td>...</td>
+                            <td>\([a_k, a_{k+1})\)</td>
+                        </tr>
+                        <tr>
+                            <th>Tần số</th>
+                            <td>\(n_1\)</td>
+                            <td>\(n_2\)</td>
+                            <td>...</td>
+                            <td>\(n_k\)</td>
+                        </tr>
+                        <tr>
+                            <th>Trung điểm</th>
+                            <td>\(c_1\)</td>
+                            <td>\(c_2\)</td>
+                            <td>...</td>
+                            <td>\(c_k\)</td>
+                        </tr>
+                    </table>
+                    <div class="note">
+                        <strong>Trung điểm nhóm:</strong> \(c_i = \dfrac{a_i + a_{i+1}}{2}\)
+                    </div>
+                </div>
+
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    📐 Số Trung Bình (MSLGN)
+                </button>
+                <div class="accordion-panel">
+                    <div class="formula-box">\[\overline{x} = \frac{\sum_{i=1}^{k} n_i c_i}{n}\]</div>
+                    <div class="note">
+                        <strong>Trong đó:</strong> \(c_i\) là trung điểm nhóm thứ \(i\), \(n_i\) là tần số.
+                    </div>
+                </div>
+
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    📍 Trung Vị & Tứ Phân Vị (MSLGN)
+                </button>
+                <div class="accordion-panel">
+                    <h3 style="color: var(--primary);">Trung vị</h3>
+                    <div class="formula-box">\[M_e = u_m + \frac{\frac{n}{2} - C_{m-1}}{n_m} \cdot h\]</div>
+
+                    <h3 style="color: var(--primary);">Tứ phân vị</h3>
+                    <div class="formula-box">\[Q_1 = u_1 + \frac{\frac{n}{4} - C_0}{n_1} \cdot h \quad;\quad Q_3 = u_3 +
+                        \frac{\frac{3n}{4} - C_2}{n_3} \cdot h\]</div>
+
+                    <div class="note">
+                        <strong>Trong đó:</strong><br>
+                        • \(u_m\): Cận dưới của nhóm chứa trung vị/tứ phân vị<br>
+                        • \(h\): Độ rộng nhóm<br>
+                        • \(C_{m-1}\): Tần số tích lũy đến nhóm trước đó<br>
+                        • \(n_m\): Tần số của nhóm chứa trung vị
+                    </div>
+                </div>
+
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    🎯 Mốt (MSLGN)
+                </button>
+                <div class="accordion-panel">
+                    <div class="formula-box">\[M_o = u_m + \frac{n_m - n_{m-1}}{(n_m - n_{m-1}) + (n_m - n_{m+1})} \cdot
+                        h\]</div>
+                    <div class="note">
+                        <strong>Trong đó:</strong> \(u_m\) là cận dưới nhóm mốt (nhóm có tần số lớn nhất).
+                    </div>
+                </div>
+            </div>
+
+            <!-- LỚP 12 -->
+            <div class="card">
+                <div class="card-title">📙 <span>Thống Kê Lớp 12</span></div>
+
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    📉 Phương Sai & Độ Lệch Chuẩn (MSLGN)
+                </button>
+                <div class="accordion-panel">
+                    <h3 style="color: var(--primary);">Phương sai</h3>
+                    <div class="formula-box">\[S^2 = \frac{1}{n}\sum_{i=1}^{k} n_i(c_i - \overline{x})^2\]</div>
+
+                    <h3 style="color: var(--primary);">Độ lệch chuẩn</h3>
+                    <div class="formula-box">\[S = \sqrt{S^2}\]</div>
+
+                    <div class="note">
+                        <strong>Trong đó:</strong> \(c_i\) là trung điểm nhóm, \(\overline{x}\) là số trung bình.
+                    </div>
+                </div>
+
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    📏 Khoảng Biến Thiên & Tứ Phân Vị
+                </button>
+                <div class="accordion-panel">
+                    <h3 style="color: var(--primary);">Khoảng biến thiên</h3>
+                    <div class="formula-box">\[R = u_{\max} - u_{\min}\]</div>
+
+                    <h3 style="color: var(--primary);">Khoảng tứ phân vị</h3>
+                    <div class="formula-box">\[\Delta Q = Q_3 - Q_1\]</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB: ÔN LUYỆN -->
+        <div id="practice" class="tab-content">
+            <div class="card">
+                <div class="card-title">✏️ <span>Luyện Tập Thống Kê</span></div>
+
+                <div class="score-display">
+                    <div class="score-item">
+                        <div class="number" id="total-questions">0</div>
+                        <div class="label">Câu đã làm</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="number" id="correct-count">0</div>
+                        <div class="label">Đúng</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="number" id="wrong-count">0</div>
+                        <div class="label">Sai</div>
+                    </div>
+                </div>
+
+                <div class="grade-selector">
+                    <button class="grade-btn active" onclick="selectGrade(10, this)">Lớp 10</button>
+                    <button class="grade-btn" onclick="selectGrade(11, this)">Lớp 11</button>
+                    <button class="grade-btn" onclick="selectGrade(12, this)">Lớp 12</button>
+                </div>
+
+                <div class="quiz-controls">
+                    <button class="quiz-btn primary" onclick="generateQuestion()">🎲 Tạo bài mới</button>
+                    <button class="quiz-btn secondary" onclick="resetScore()">🔄 Reset điểm</button>
+                </div>
+
+                <div id="quiz-container">
+                    <p style="text-align: center; color: var(--text-muted); padding: 50px;">
+                        Nhấn <strong>"Tạo bài mới"</strong> để bắt đầu luyện tập!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB: NHÓM 6 -->
+        <div id="team" class="tab-content">
+            <div class="card">
+                <div class="card-title">👥 <span>Thành Viên Nhóm 6 — 12C1</span></div>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="avatar">👑</div>
+                        <div class="name">Trần Phương Linh</div>
+                        <div class="role">Trưởng nhóm</div>
+                    </div>
+                    <div class="team-member">
+                        <div class="avatar">🎨</div>
+                        <div class="name">Nguyễn Thái Hà An</div>
+                        <div class="role">Thiết kế</div>
+                    </div>
+                    <div class="team-member">
+                        <div class="avatar">✅</div>
+                        <div class="name">Huỳnh Hải Huyền</div>
+                        <div class="role">Kiểm tra công thức</div>
+                    </div>
+                    <div class="team-member">
+                        <div class="avatar">📚</div>
+                        <div class="name">Đồng Phước Khang</div>
+                        <div class="role">Tìm tài liệu</div>
+                    </div>
+                    <div class="team-member">
+                        <div class="avatar">📝</div>
+                        <div class="name">Nguyễn Nhật Hào</div>
+                        <div class="role">Tổng hợp nội dung</div>
+                    </div>
+                    <div class="team-member">
+                        <div class="avatar">💻</div>
+                        <div class="name">Đặng Huỳnh Thanh Long</div>
+                        <div class="role">Style & Hiệu chỉnh</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2025 | Thiết kế bởi <strong>Nhóm 6 — 12C1</strong></p>
+        <p style="margin-top: 10px; font-size: 0.85rem;">Tổng hợp kiến thức Thống kê THPT</p>
+    </footer>
+
+    <script>
+        // Tab switching
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Accordion
+        function toggleAccordion(btn) {
+            btn.classList.toggle('open');
+            const panel = btn.nextElementSibling;
+            panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+            MathJax.typesetPromise();
+        }
+
+        // Quiz System
+        let selectedGrade = 10;
+        let totalQuestions = 0;
+        let correctCount = 0;
+        let wrongCount = 0;
+        let currentAnswer = 0;
+        let currentQuestion = null;
+
+        function selectGrade(grade, btn) {
+            selectedGrade = grade;
+            document.querySelectorAll('.grade-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+
+        function resetScore() {
+            totalQuestions = 0;
+            correctCount = 0;
+            wrongCount = 0;
+            updateScore();
+            document.getElementById('quiz-container').innerHTML = `
+    <p style="text-align: center; color: var(--text-muted); padding: 50px;">
+      Đã reset! Nhấn <strong>"Tạo bài mới"</strong> để bắt đầu luyện tập!
+    </p>
+  `;
+        }
+
+        function updateScore() {
+            document.getElementById('total-questions').textContent = totalQuestions;
+            document.getElementById('correct-count').textContent = correctCount;
+            document.getElementById('wrong-count').textContent = wrongCount;
+        }
+
+        // Random number helpers
+        function randInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function round(num, decimals = 2) {
+            return Math.round(num * Math.pow(10, decimals)) / Math.pow(10, decimals);
+        }
+
+        function shuffle(arr) {
+            return arr.sort(() => Math.random() - 0.5);
+        }
+
+        // Question Generators
+        function generateMeanQuestion() {
+            const n = randInt(4, 7);
+            let data = [];
+            for (let i = 0; i < n; i++) {
+                data.push(randInt(1, 20));
+            }
+            const sum = data.reduce((a, b) => a + b, 0);
+            const mean = round(sum / n, 2);
+
+            return {
+                question: `Cho dãy số liệu: \\(${data.join("; ")}\\). Tính số trung bình cộng của dãy số liệu trên.`,
+                answer: mean,
+                solution: `<strong>Lời giải:</strong><br>
+      \\[\\overline{x} = \\frac{${data.join(" + ")}}{${n}} = \\frac{${sum}}{${n}} = ${mean}\\]`
+            };
+        }
+
+        function generateMedianQuestion() {
+            const n = randInt(5, 9);
+            let data = [];
+            for (let i = 0; i < n; i++) {
+                data.push(randInt(1, 30));
+            }
+            const sorted = [...data].sort((a, b) => a - b);
+            let median;
+            if (n % 2 === 1) {
+                median = sorted[Math.floor(n / 2)];
+            } else {
+                median = (sorted[n / 2 - 1] + sorted[n / 2]) / 2;
+            }
+
+            return {
+                question: `Cho dãy số liệu: \\(${data.join("; ")}\\). Tìm trung vị của dãy số liệu trên.`,
+                answer: median,
+                solution: `<strong>Lời giải:</strong><br>
+      Sắp xếp dãy: \\(${sorted.join("; ")}\\)<br>
+      Số phần tử n = ${n} (${n % 2 === 1 ? 'lẻ' : 'chẵn'})<br>
+      \\[M_e = ${median}\\]`
+            };
+        }
+
+        function generateModeQuestion() {
+            const n = randInt(6, 10);
+            let data = [];
+            const mode = randInt(5, 15);
+            const modeCount = randInt(3, 4);
+
+            for (let i = 0; i < modeCount; i++) {
+                data.push(mode);
+            }
+            for (let i = modeCount; i < n; i++) {
+                let val;
+                do {
+                    val = randInt(1, 20);
+                } while (data.filter(x => x === val).length >= modeCount - 1 || val === mode);
+                data.push(val);
+            }
+            data = shuffle(data);
+
+            return {
+                question: `Cho dãy số liệu: \\(${data.join("; ")}\\). Tìm mốt của dãy số liệu trên.`,
+                answer: mode,
+                solution: `<strong>Lời giải:</strong><br>
+      Giá trị ${mode} xuất hiện ${modeCount} lần (nhiều nhất).<br>
+      \\[M_o = ${mode}\\]`
+            };
+        }
+
+        function generateVarianceQuestion() {
+            const n = randInt(4, 6);
+            let data = [];
+            for (let i = 0; i < n; i++) {
+                data.push(randInt(1, 10));
+            }
+            const sum = data.reduce((a, b) => a + b, 0);
+            const mean = sum / n;
+            const variance = round(data.reduce((acc, x) => acc + Math.pow(x - mean, 2), 0) / n, 2);
+
+            return {
+                question: `Cho dãy số liệu: \\(${data.join("; ")}\\). Tính phương sai của dãy số liệu trên (làm tròn 2 chữ số thập phân).`,
+                answer: variance,
+                solution: `<strong>Lời giải:</strong><br>
+      \\[\\overline{x} = \\frac{${sum}}{${n}} = ${round(mean, 2)}\\]
+      \\[S^2 = \\frac{1}{${n}}\\sum(x_i - \\overline{x})^2 = ${variance}\\]`
+            };
+        }
+
+        function generateRangeQuestion() {
+            const n = randInt(5, 8);
+            let data = [];
+            for (let i = 0; i < n; i++) {
+                data.push(randInt(1, 50));
+            }
+            const max = Math.max(...data);
+            const min = Math.min(...data);
+            const range = max - min;
+
+            return {
+                question: `Cho dãy số liệu: \\(${data.join("; ")}\\). Tính khoảng biến thiên của dãy số liệu.`,
+                answer: range,
+                solution: `<strong>Lời giải:</strong><br>
+      \\[x_{\\max} = ${max}, \\quad x_{\\min} = ${min}\\]
+      \\[R = x_{\\max} - x_{\\min} = ${max} - ${min} = ${range}\\]`
+            };
+        }
+
+        function generateQuartileQuestion() {
+            let data = [];
+            for (let i = 0; i < 8; i++) {
+                data.push(randInt(1, 30));
+            }
+            const sorted = [...data].sort((a, b) => a - b);
+            const q1 = (sorted[1] + sorted[2]) / 2;
+            const q3 = (sorted[5] + sorted[6]) / 2;
+            const iqr = q3 - q1;
+
+            return {
+                question: `Cho dãy số liệu: \\(${data.join("; ")}\\). Tính khoảng tứ phân vị \\(\\Delta Q = Q_3 - Q_1\\).`,
+                answer: iqr,
+                solution: `<strong>Lời giải:</strong><br>
+      Sắp xếp: \\(${sorted.join("; ")}\\)<br>
+      \\[Q_1 = \\frac{${sorted[1]} + ${sorted[2]}}{2} = ${q1}\\]
+      \\[Q_3 = \\frac{${sorted[5]} + ${sorted[6]}}{2} = ${q3}\\]
+      \\[\\Delta Q = Q_3 - Q_1 = ${q3} - ${q1} = ${iqr}\\]`
+            };
+        }
+
+        function generateFrequencyMeanQuestion() {
+            const values = [2, 4, 6, 8, 10];
+            const freqs = values.map(() => randInt(1, 5));
+            const n = freqs.reduce((a, b) => a + b, 0);
+            const sum = values.reduce((acc, v, i) => acc + v * freqs[i], 0);
+            const mean = round(sum / n, 2);
+
+            let tableHTML = `<table style="margin: 15px 0; width: 100%;">
+    <tr><th>Giá trị</th>${values.map(v => `<td>${v}</td>`).join('')}</tr>
+    <tr><th>Tần số</th>${freqs.map(f => `<td>${f}</td>`).join('')}</tr>
+  </table>`;
+
+            return {
+                question: `Cho bảng phân bố tần số sau:<br>${tableHTML}Tính số trung bình cộng.`,
+                answer: mean,
+                solution: `<strong>Lời giải:</strong><br>
+      \\[\\overline{x} = \\frac{${values.map((v, i) => `${v} \\cdot ${freqs[i]}`).join(' + ')}}{${n}} = \\frac{${sum}}{${n}} = ${mean}\\]`
+            };
+        }
+
+        // Grade 11 Questions
+        function generateGroupedMeanQuestion() {
+            const groups = [[10, 20], [20, 30], [30, 40], [40, 50]];
+            const midpoints = groups.map(g => (g[0] + g[1]) / 2);
+            const freqs = groups.map(() => randInt(2, 8));
+            const n = freqs.reduce((a, b) => a + b, 0);
+            const sum = midpoints.reduce((acc, c, i) => acc + c * freqs[i], 0);
+            const mean = round(sum / n, 2);
+
+            let tableHTML = `<table style="margin: 15px 0; width: 100%;">
+    <tr><th>Nhóm</th>${groups.map(g => `<td>[${g[0]}; ${g[1]})</td>`).join('')}</tr>
+    <tr><th>Tần số</th>${freqs.map(f => `<td>${f}</td>`).join('')}</tr>
+  </table>`;
+
+            return {
+                question: `Cho bảng phân bố tần số ghép nhóm:<br>${tableHTML}Tính số trung bình (làm tròn 2 chữ số thập phân).`,
+                answer: mean,
+                solution: `<strong>Lời giải:</strong><br>
+      Trung điểm các nhóm: \\(${midpoints.join("; ")}\\)<br>
+      \\[\\overline{x} = \\frac{${midpoints.map((c, i) => `${c} \\cdot ${freqs[i]}`).join(' + ')}}{${n}} = \\frac{${sum}}{${n}} = ${mean}\\]`
+            };
+        }
+
+        function generateGroupedMedianQuestion() {
+            const groups = [[0, 10], [10, 20], [20, 30], [30, 40]];
+            const h = 10;
+            const freqs = [randInt(2, 5), randInt(5, 10), randInt(5, 10), randInt(2, 5)];
+            const n = freqs.reduce((a, b) => a + b, 0);
+
+            let cumFreq = 0;
+            let medianGroup = 0;
+            for (let i = 0; i < freqs.length; i++) {
+                if (cumFreq + freqs[i] >= n / 2) {
+                    medianGroup = i;
+                    break;
+                }
+                cumFreq += freqs[i];
+            }
+
+            const um = groups[medianGroup][0];
+            const nm = freqs[medianGroup];
+            const median = round(um + ((n / 2 - cumFreq) / nm) * h, 2);
+
+            let tableHTML = `<table style="margin: 15px 0; width: 100%;">
+    <tr><th>Nhóm</th>${groups.map(g => `<td>[${g[0]}; ${g[1]})</td>`).join('')}</tr>
+    <tr><th>Tần số</th>${freqs.map(f => `<td>${f}</td>`).join('')}</tr>
+  </table>`;
+
+            return {
+                question: `Cho bảng phân bố tần số ghép nhóm:<br>${tableHTML}Tính trung vị (làm tròn 2 chữ số thập phân).`,
+                answer: median,
+                solution: `<strong>Lời giải:</strong><br>
+      Tổng tần số n = ${n}, n/2 = ${n / 2}<br>
+      Nhóm trung vị: [${groups[medianGroup][0]}; ${groups[medianGroup][1]})<br>
+      \\[M_e = ${um} + \\frac{${n / 2} - ${cumFreq}}{${nm}} \\cdot ${h} = ${median}\\]`
+            };
+        }
+
+        // Grade 12 Questions
+        function generateGroupedVarianceQuestion() {
+            const groups = [[5, 10], [10, 15], [15, 20], [20, 25]];
+            const midpoints = groups.map(g => (g[0] + g[1]) / 2);
+            const freqs = groups.map(() => randInt(3, 8));
+            const n = freqs.reduce((a, b) => a + b, 0);
+            const sum = midpoints.reduce((acc, c, i) => acc + c * freqs[i], 0);
+            const mean = sum / n;
+            const variance = round(midpoints.reduce((acc, c, i) => acc + freqs[i] * Math.pow(c - mean, 2), 0) / n, 2);
+
+            let tableHTML = `<table style="margin: 15px 0; width: 100%;">
+    <tr><th>Nhóm</th>${groups.map(g => `<td>[${g[0]}; ${g[1]})</td>`).join('')}</tr>
+    <tr><th>Tần số</th>${freqs.map(f => `<td>${f}</td>`).join('')}</tr>
+  </table>`;
+
+            return {
+                question: `Cho bảng phân bố tần số ghép nhóm:<br>${tableHTML}Tính phương sai (làm tròn 2 chữ số thập phân).`,
+                answer: variance,
+                solution: `<strong>Lời giải:</strong><br>
+      Trung điểm: \\(${midpoints.join("; ")}\\)<br>
+      \\[\\overline{x} = \\frac{${round(sum, 2)}}{${n}} = ${round(mean, 2)}\\]
+      \\[S^2 = \\frac{1}{${n}}\\sum n_i(c_i - \\overline{x})^2 = ${variance}\\]`
+            };
+        }
+
+        function generateStdDevQuestion() {
+            const groups = [[0, 5], [5, 10], [10, 15], [15, 20]];
+            const midpoints = groups.map(g => (g[0] + g[1]) / 2);
+            const freqs = groups.map(() => randInt(2, 6));
+            const n = freqs.reduce((a, b) => a + b, 0);
+            const sum = midpoints.reduce((acc, c, i) => acc + c * freqs[i], 0);
+            const mean = sum / n;
+            const variance = midpoints.reduce((acc, c, i) => acc + freqs[i] * Math.pow(c - mean, 2), 0) / n;
+            const stdDev = round(Math.sqrt(variance), 2);
+
+            let tableHTML = `<table style="margin: 15px 0; width: 100%;">
+    <tr><th>Nhóm</th>${groups.map(g => `<td>[${g[0]}; ${g[1]})</td>`).join('')}</tr>
+    <tr><th>Tần số</th>${freqs.map(f => `<td>${f}</td>`).join('')}</tr>
+  </table>`;
+
+            return {
+                question: `Cho bảng phân bố tần số ghép nhóm:<br>${tableHTML}Tính độ lệch chuẩn (làm tròn 2 chữ số thập phân).`,
+                answer: stdDev,
+                solution: `<strong>Lời giải:</strong><br>
+      \\[\\overline{x} = ${round(mean, 2)}\\]
+      \\[S^2 = ${round(variance, 2)}\\]
+      \\[S = \\sqrt{${round(variance, 2)}} = ${stdDev}\\]`
+            };
+        }
+
+        // Main question generator
+        function generateQuestion() {
+            let questionFuncs;
+
+            if (selectedGrade === 10) {
+                questionFuncs = [
+                    generateMeanQuestion,
+                    generateMedianQuestion,
+                    generateModeQuestion,
+                    generateVarianceQuestion,
+                    generateRangeQuestion,
+                    generateQuartileQuestion,
+                    generateFrequencyMeanQuestion
+                ];
+            } else if (selectedGrade === 11) {
+                questionFuncs = [
+                    generateGroupedMeanQuestion,
+                    generateGroupedMedianQuestion,
+                    generateMeanQuestion,
+                    generateMedianQuestion,
+                    generateFrequencyMeanQuestion
+                ];
+            } else {
+                questionFuncs = [
+                    generateGroupedVarianceQuestion,
+                    generateStdDevQuestion,
+                    generateGroupedMeanQuestion,
+                    generateGroupedMedianQuestion
+                ];
+            }
+
+            const randomFunc = questionFuncs[Math.floor(Math.random() * questionFuncs.length)];
+            currentQuestion = randomFunc();
+            currentAnswer = currentQuestion.answer;
+
+            document.getElementById('quiz-container').innerHTML = `
+    <div class="question-text">
+      <strong>📝 Câu hỏi (Lớp ${selectedGrade}):</strong><br><br>
+      ${currentQuestion.question}
+    </div>
+    <div class="answer-input">
+      <input type="number" step="0.01" id="user-answer" placeholder="Nhập đáp án..." onkeypress="if(event.key==='Enter')checkAnswer()">
+      <button class="check-btn" onclick="checkAnswer()">✔️ Kiểm tra</button>
+    </div>
+    <div id="result-area"></div>
+  `;
+
+            MathJax.typesetPromise();
+            document.getElementById('user-answer').focus();
+        }
+
+        function checkAnswer() {
+            const userAnswer = parseFloat(document.getElementById('user-answer').value);
+            const resultArea = document.getElementById('result-area');
+
+            if (isNaN(userAnswer)) {
+                resultArea.innerHTML = `<div class="result-box wrong">⚠️ Vui lòng nhập một số!</div>`;
+                return;
+            }
+
+            totalQuestions++;
+
+            const tolerance = 0.05;
+            const isCorrect = Math.abs(userAnswer - currentAnswer) <= tolerance;
+
+            if (isCorrect) {
+                correctCount++;
+                resultArea.innerHTML = `
+      <div class="result-box correct">✅ Chính xác! Đáp án: ${currentAnswer}</div>
+      <div class="solution-box">
+        ${currentQuestion.solution}
+      </div>
+    `;
+            } else {
+                wrongCount++;
+                resultArea.innerHTML = `
+      <div class="result-box wrong">❌ Sai rồi! Đáp án đúng: ${currentAnswer}</div>
+      <div class="solution-box">
+        ${currentQuestion.solution}
+      </div>
+    `;
+            }
+
+            updateScore();
+            MathJax.typesetPromise();
+        }
+    </script>
+
+</body>
+
+</html>

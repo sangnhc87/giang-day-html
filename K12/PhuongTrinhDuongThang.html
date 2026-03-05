@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương Trình Đường Thẳng - Hình Học 12</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-light: #818cf8;
+            --secondary: #ec4899;
+            --accent: #0891b2;
+            --bg-main: linear-gradient(135deg, #f0f9ff 0%, #fdf4ff 50%, #f0fdf4 100%);
+            --bg-card: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --success: #10b981;
+            --error: #ef4444;
+            --border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-main);
+            background-attachment: fixed;
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            color: white;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            position: relative;
+        }
+
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin: 30px 0;
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            z-index: 100;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .tab-btn {
+            padding: 12px 24px;
+            background: #f1f5f9;
+            border: 2px solid transparent;
+            border-radius: 12px;
+            color: var(--text);
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn:hover {
+            background: #e2e8f0;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card h2 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin: 20px 0 15px;
+            font-size: 1.2rem;
+        }
+
+        .formula-box {
+            background: linear-gradient(135deg, #ede9fe 0%, #fce7f3 100%);
+            border-left: 4px solid var(--primary);
+            padding: 20px 25px;
+            margin: 20px 0;
+            border-radius: 0 16px 16px 0;
+            font-size: 1.1rem;
+            color: #1e1b4b;
+        }
+
+        .formula-box.important {
+            background: linear-gradient(135deg, #ccfbf1 0%, #d1fae5 100%);
+            border-left-color: var(--accent);
+            color: #134e4a;
+        }
+
+        .example {
+            background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%);
+            border: 1px solid #93c5fd;
+            border-radius: 16px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .example-title {
+            color: #1d4ed8;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .choices {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin: 15px 0;
+        }
+
+        @media (max-width: 600px) {
+            .choices {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .choice {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 18px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 2px solid var(--border);
+            border-radius: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .choice:hover {
+            background: linear-gradient(135deg, #eef2ff 0%, #fdf4ff 100%);
+            border-color: var(--primary-light);
+            transform: translateY(-3px);
+        }
+
+        .choice.selected {
+            border-color: var(--primary);
+            background: #eef2ff;
+        }
+
+        .choice.correct {
+            border-color: var(--success);
+            background: #d1fae5;
+        }
+
+        .choice.wrong {
+            border-color: var(--error);
+            background: #fee2e2;
+        }
+
+        .choice-label {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f1f5f9;
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: #e2e8f0;
+        }
+
+        .solution {
+            display: none;
+            background: linear-gradient(135deg, #ecfdf5 0%, #f0fdfa 100%);
+            border: 1px solid #6ee7b7;
+            border-radius: 16px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        .solution.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .solution h4 {
+            color: #047857;
+            margin-bottom: 10px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            padding: 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .canvas-container {
+            position: relative;
+            background: #1e293b;
+            border-radius: 16px;
+            padding: 15px;
+            border: 1px solid var(--border);
+            height: 400px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .tabs {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .tab-btn {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>📐 Phương Trình Đường Thẳng</h1>
+        <p>Hình Học Không Gian Oxyz - Lớp 12</p>
+    </header>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showSection('theory')">📚 Lý Thuyết</button>
+            <button class="tab-btn" onclick="showSection('examples')">📝 Ví Dụ Mẫu</button>
+            <button class="tab-btn" onclick="showSection('quiz')">✍️ Trắc Nghiệm</button>
+            <button class="tab-btn" onclick="showSection('practice')">🎯 Luyện Tập</button>
+        </div>
+
+        <!-- LÝ THUYẾT -->
+        <div id="theory" class="section active">
+            <div class="card">
+                <h2>📌 1. Vectơ Chỉ Phương (VTCP)</h2>
+                <p>Vectơ \(\vec{u} \neq \vec{0}\) được gọi là <b>Vectơ chỉ phương</b> của đường thẳng \(\Delta\) nếu giá
+                    của nó song song hoặc trùng với \(\Delta\).</p>
+                <div class="formula-box">
+                    Nếu \(\vec{u}\) là VTCP của \(\Delta\) thì \(k\vec{u}\) (\(k \neq 0\)) cũng là VTCP của \(\Delta\).
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📌 2. Phương Trình Tham Số</h2>
+                <p>Đường thẳng \(\Delta\) đi qua điểm \(M_0(x_0; y_0; z_0)\) và có VTCP \(\vec{u} = (a; b; c)\):</p>
+                <div class="formula-box important">
+                    \[ \Delta: \begin{cases} x = x_0 + at \\ y = y_0 + bt \\ z = z_0 + ct \end{cases} \quad (t \in
+                    \mathbb{R}) \]
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📌 3. Phương Trình Chính Tắc</h2>
+                <p>Nếu \(a, b, c \neq 0\), phương trình chính tắc của \(\Delta\) là:</p>
+                <div class="formula-box">
+                    \[ \dfrac{x - x_0}{a} = \dfrac{y - y_0}{b} = \dfrac{z - z_0}{c} \]
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📌 4. Vị Trí Tương Đối</h2>
+                <h3>Đường thẳng và Mặt phẳng</h3>
+                <p>Cho \(\Delta\) có VTCP \(\vec{u}\) và \((\alpha)\) có VTPT \(\vec{n}\):</p>
+                <ul>
+                    <li>\(\Delta \parallel (\alpha) \Leftrightarrow \vec{u} \perp \vec{n}\) và \(M_0 \notin (\alpha)\)
+                    </li>
+                    <li>\(\Delta \perp (\alpha) \Leftrightarrow \vec{u} \parallel \vec{n}\)</li>
+                    <li>\(\Delta \subset (\alpha) \Leftrightarrow \vec{u} \perp \vec{n}\) và \(M_0 \in (\alpha)\)</li>
+                </ul>
+
+                <h3>Hai đường thẳng</h3>
+                <p>Cho \(d_1\) có VTCP \(\vec{u_1}\), \(d_2\) có VTCP \(\vec{u_2}\):</p>
+                <ul>
+                    <li>\(d_1 \parallel d_2 \Leftrightarrow \vec{u_1} \parallel \vec{u_2}\)</li>
+                    <li>\(d_1 \perp d_2 \Leftrightarrow \vec{u_1} \cdot \vec{u_2} = 0\)</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>📌 5. Khoảng Cách</h2>
+                <div class="formula-box">
+                    Khoảng cách từ điểm \(M\) đến đường thẳng \(\Delta\) qua \(M_0\), VTCP \(\vec{u}\):
+                    \[ d(M, \Delta) = \dfrac{|\overrightarrow{M_0M} \times \vec{u}|}{|\vec{u}|} \]
+                </div>
+            </div>
+        </div>
+
+        <!-- VÍ DỤ -->
+        <div id="examples" class="section">
+            <div class="card" id="ex-card-1">
+                <h2>Ví dụ 1: Viết PT từ Điểm và VTCP</h2>
+                <div id="ex-basic"></div>
+                <div class="solution" id="sol-basic"></div>
+                <div style="margin-top:15px;">
+                    <button class="btn btn-secondary" onclick="toggleSolution('sol-basic')">💡 Xem lời giải</button>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('basic')">🔄 Đổi đề mới</button>
+                </div>
+            </div>
+
+            <div class="card" id="ex-card-2">
+                <h2>Ví dụ 2: Viết PT qua 2 điểm</h2>
+                <div id="ex-2points"></div>
+                <div class="solution" id="sol-2points"></div>
+                <div style="margin-top:15px;">
+                    <button class="btn btn-secondary" onclick="toggleSolution('sol-2points')">💡 Xem lời giải</button>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('2points')">🔄 Đổi đề mới</button>
+                </div>
+            </div>
+
+            <div class="card" id="ex-card-3">
+                <h2>Ví dụ 3: Đường thẳng Vuông góc với Mặt phẳng</h2>
+                <div id="ex-perp-plane"></div>
+                <div class="solution" id="sol-perp-plane"></div>
+                <div style="margin-top:15px;">
+                    <button class="btn btn-secondary" onclick="toggleSolution('sol-perp-plane')">💡 Xem lời
+                        giải</button>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('perp_plane')">🔄 Đổi đề mới</button>
+                </div>
+            </div>
+
+            <div class="card" id="ex-card-4">
+                <h2>Ví dụ 4: Đường thẳng Song song với Đường thẳng khác</h2>
+                <div id="ex-parallel"></div>
+                <div class="solution" id="sol-parallel"></div>
+                <div style="margin-top:15px;">
+                    <button class="btn btn-secondary" onclick="toggleSolution('sol-parallel')">💡 Xem lời giải</button>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('parallel')">🔄 Đổi đề mới</button>
+                </div>
+            </div>
+
+            <div class="card" id="ex-card-5">
+                <h2>⭐ Ví dụ 5: Khoảng cách từ Điểm đến Đường thẳng</h2>
+                <div id="ex-distance"></div>
+                <div class="solution" id="sol-distance"></div>
+                <div style="margin-top:15px;">
+                    <button class="btn btn-secondary" onclick="toggleSolution('sol-distance')">💡 Xem lời giải</button>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('distance')">🔄 Đổi đề mới</button>
+                </div>
+            </div>
+
+            <div class="card" id="ex-card-6">
+                <h2>⭐ Ví dụ 6: Giao điểm của Đường thẳng và Mặt phẳng</h2>
+                <div id="ex-intersection"></div>
+                <div class="solution" id="sol-intersection"></div>
+                <div style="margin-top:15px;">
+                    <button class="btn btn-secondary" onclick="toggleSolution('sol-intersection')">💡 Xem lời
+                        giải</button>
+                    <button class="btn btn-primary" onclick="ProblemGenerator.new('intersection')">🔄 Đổi đề
+                        mới</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- TRẮC NGHIỆM -->
+        <div id="quiz" class="section">
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-value" id="score">0</div>
+                    <div class="stat-label">Điểm</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="progress">0/10</div>
+                    <div class="stat-label">Tiến độ</div>
+                </div>
+            </div>
+
+            <div id="quiz-container"></div>
+
+            <div style="text-align:center; margin-top:20px;">
+                <button class="btn btn-primary" onclick="initQuiz()">🔄 Đổi đề trắc nghiệm</button>
+            </div>
+        </div>
+
+        <!-- LUYỆN TẬP -->
+        <div id="practice" class="section">
+            <div class="card">
+                <h2>🌐 Minh họa 3D</h2>
+                <div class="canvas-container" id="canvas3d"></div>
+                <p style="margin-top:15px; color: var(--text-muted); font-size:0.9rem;">🖱️ Kéo để xoay, lăn chuột để
+                    phóng to thu nhỏ.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab System
+        function showSection(id) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            document.querySelector(`[onclick="showSection('${id}')"]`).classList.add('active');
+            if (id === 'practice') init3D();
+        }
+
+        function toggleSolution(id) {
+            document.getElementById(id).classList.toggle('show');
+        }
+
+        // ======================= PROBLEM GENERATOR =======================
+        const ProblemGenerator = {
+            randomInt: (min, max) => Math.floor(Math.random() * (max - min + 1)) + min,
+
+            getGCD: function (a, b) {
+                a = Math.abs(a); b = Math.abs(b);
+                while (b) { const t = b; b = a % b; a = t; }
+                return a || 1;
+            },
+
+            formatVec: (v) => `(${v.x}; ${v.y}; ${v.z})`,
+            formatPoint: (p) => `(${p.x}; ${p.y}; ${p.z})`,
+            vec: (A, B) => ({ x: B.x - A.x, y: B.y - A.y, z: B.z - A.z }),
+
+            formatterm: (coeff, variable, isFirst = false) => {
+                if (coeff === 0) return "";
+                let str = "";
+                if (!isFirst) { str += coeff > 0 ? " + " : " - "; }
+                else { if (coeff < 0) str += "-"; }
+                const abs = Math.abs(coeff);
+                if (abs !== 1 || variable === "") str += abs;
+                str += variable;
+                return str;
+            },
+
+            formatLine: (M, u) => {
+                return `\\begin{cases} x = ${M.x} ${u.x >= 0 ? '+' : '-'} ${Math.abs(u.x)}t \\\\ y = ${M.y} ${u.y >= 0 ? '+' : '-'} ${Math.abs(u.y)}t \\\\ z = ${M.z} ${u.z >= 0 ? '+' : '-'} ${Math.abs(u.z)}t \\end{cases}`;
+            },
+
+            formatCanonical: (M, u) => {
+                return `\\dfrac{x - (${M.x})}{${u.x}} = \\dfrac{y - (${M.y})}{${u.y}} = \\dfrac{z - (${M.z})}{${u.z}}`;
+            },
+
+            createSVG: (type) => {
+                const w = 320, h = 200;
+                let s = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="background:linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%); border-radius:12px; margin:10px auto; display:block; border:1px solid #e2e8f0;">
+                        <defs>
+                            <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                <path d="M0,0 L0,6 L9,3 z" fill="#ef4444" />
+                            </marker>
+                            <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                <path d="M0,0 L0,6 L9,3 z" fill="#3b82f6" />
+                            </marker>
+                            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Coordinate axes -->
+                        <line x1="30" y1="170" x2="150" y2="170" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+                        <text x="155" y="175" font-size="11" fill="#64748b">x</text>
+                        <line x1="30" y1="170" x2="30" y2="50" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+                        <text x="25" y="45" font-size="11" fill="#64748b">y</text>
+                        <line x1="30" y1="170" x2="100" y2="130" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+                        <text x="105" y="125" font-size="11" fill="#64748b">z</text>
+                        <text x="20" y="180" font-size="11" fill="#64748b">O</text>`;
+
+                if (type === 'basic' || type === '2points' || type === 'parallel' || type === 'distance') {
+                    // Main line with gradient
+                    s += `<line x1="80" y1="150" x2="280" y2="50" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round"/>`;
+                    s += `<text x="285" y="50" font-size="12" fill="#4f46e5" font-weight="600">d</text>`;
+                    // Point M
+                    s += `<circle cx="180" cy="100" r="5" fill="#ef4444" stroke="#fff" stroke-width="2"/>`;
+                    s += `<text x="188" y="95" font-size="12" fill="#ef4444" font-weight="600">M₀</text>`;
+                    // Direction vector
+                    s += `<line x1="140" y1="120" x2="220" y2="80" stroke="#10b981" stroke-width="2.5" marker-end="url(#arrow)"/>`;
+                    s += `<text x="225" y="78" font-size="12" fill="#10b981" font-weight="600">→u</text>`;
+                    if (type === '2points') {
+                        s += `<circle cx="120" cy="130" r="4" fill="#3b82f6" stroke="#fff" stroke-width="2"/><text x="105" y="128" font-size="11" fill="#3b82f6" font-weight="600">A</text>`;
+                        s += `<circle cx="240" cy="70" r="4" fill="#3b82f6" stroke="#fff" stroke-width="2"/><text x="245" y="68" font-size="11" fill="#3b82f6" font-weight="600">B</text>`;
+                    }
+                    if (type === 'distance') {
+                        s += `<circle cx="220" cy="140" r="4" fill="#f59e0b" stroke="#fff" stroke-width="2"/><text x="228" y="145" font-size="11" fill="#f59e0b" font-weight="600">P</text>`;
+                        s += `<line x1="220" y1="140" x2="200" y2="92" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,3"/>`;
+                        s += `<text x="230" y="115" font-size="10" fill="#f59e0b">d(P,d)</text>`;
+                    }
+                } else if (type === 'perp_plane') {
+                    // 3D Plane with perspective
+                    s += `<path d="M60,130 L180,130 L240,90 L120,90 z" fill="rgba(79, 70, 229, 0.15)" stroke="#4f46e5" stroke-width="1.5"/>`;
+                    s += `<text x="130" y="120" font-size="12" fill="#4f46e5" font-weight="600">(α)</text>`;
+                    // Perpendicular line
+                    s += `<line x1="160" y1="40" x2="160" y2="110" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round"/>`;
+                    s += `<line x1="160" y1="110" x2="160" y2="150" stroke="#667eea" stroke-width="2" stroke-dasharray="4,3"/>`;
+                    s += `<circle cx="160" cy="110" r="5" fill="#ef4444" stroke="#fff" stroke-width="2"/>`;
+                    s += `<text x="168" y="105" font-size="12" fill="#ef4444" font-weight="600">M</text>`;
+                    // Right angle indicator
+                    s += `<path d="M160,110 L170,110 L170,100" fill="none" stroke="#64748b" stroke-width="1"/>`;
+                } else if (type === 'intersection') {
+                    // Plane
+                    s += `<path d="M50,140 L200,140 L260,100 L110,100 z" fill="rgba(79, 70, 229, 0.12)" stroke="#4f46e5" stroke-width="1"/>`;
+                    s += `<text x="100" y="130" font-size="11" fill="#4f46e5">(α)</text>`;
+                    // Line intersecting plane
+                    s += `<line x1="120" y1="50" x2="200" y2="170" stroke="url(#lineGrad)" stroke-width="3"/>`;
+                    s += `<circle cx="160" cy="110" r="5" fill="#f59e0b" stroke="#fff" stroke-width="2"/>`;
+                    s += `<text x="168" y="105" font-size="11" fill="#f59e0b" font-weight="600">I</text>`;
+                    s += `<text x="205" y="175" font-size="11" fill="#667eea" font-weight="600">d</text>`;
+                }
+
+                s += `</svg>`;
+                return s;
+            },
+
+            new: (type) => {
+                const gen = ProblemGenerator;
+                const r = gen.randomInt;
+                let htmlQ = "", htmlS = "", svg = "";
+
+                if (type === 'basic') {
+                    const M = { x: r(-5, 5), y: r(-5, 5), z: r(-5, 5) };
+                    const u = { x: r(-4, 4) || 1, y: r(-4, 4) || 2, z: r(-4, 4) || -1 };
+                    svg = gen.createSVG('basic');
+                    htmlQ = `<p>Viết phương trình tham số và chính tắc của đường thẳng \\(d\\) đi qua \\(M${gen.formatPoint(M)}\\) và có VTCP \\(\\overrightarrow{u} = ${gen.formatVec(u)}\\).</p>` + svg;
+                    htmlS = `<h4>Lời giải:</h4>
+                             <p>PT Tham số: \\[ ${gen.formatLine(M, u)} \\]</p>
+                             <p>PT Chính tắc: \\[ ${gen.formatCanonical(M, u)} \\]</p>`;
+                    document.getElementById('ex-basic').innerHTML = htmlQ;
+                    document.getElementById('sol-basic').innerHTML = htmlS;
+                }
+                else if (type === '2points') {
+                    const A = { x: r(-2, 2), y: r(-2, 2), z: r(-2, 2) };
+                    const B = { x: r(3, 6), y: r(3, 6), z: r(3, 6) };
+                    const u = gen.vec(A, B);
+                    svg = gen.createSVG('2points');
+                    htmlQ = `<p>Viết phương trình tham số của đường thẳng \\(d\\) đi qua hai điểm \\(A${gen.formatPoint(A)}\\) và \\(B${gen.formatPoint(B)}\\).</p>` + svg;
+                    htmlS = `<h4>Lời giải:</h4>
+                             <p>VTCP: \\(\\overrightarrow{u} = \\overrightarrow{AB} = ${gen.formatVec(u)}\\)</p>
+                             <p>Chọn điểm \\(A\\), PT tham số: \\[ ${gen.formatLine(A, u)} \\]</p>`;
+                    document.getElementById('ex-2points').innerHTML = htmlQ;
+                    document.getElementById('sol-2points').innerHTML = htmlS;
+                }
+                else if (type === 'perp_plane') {
+                    const M = { x: r(-3, 3), y: r(-3, 3), z: r(-3, 3) };
+                    const n = { x: r(-4, 4) || 1, y: r(-4, 4) || 2, z: r(-4, 4) || -1 };
+                    const D = r(-9, 9);
+                    svg = gen.createSVG('perp_plane');
+                    htmlQ = `<p>Viết phương trình tham số của đường thẳng \\(d\\) đi qua \\(M${gen.formatPoint(M)}\\) và vuông góc với mặt phẳng \\((\\alpha): ${n.x}x ${n.y >= 0 ? '+' : '-'} ${Math.abs(n.y)}y ${n.z >= 0 ? '+' : '-'} ${Math.abs(n.z)}z + ${D} = 0\\).</p>` + svg;
+                    htmlS = `<h4>Lời giải:</h4>
+                             <p>Đường thẳng vuông góc với mặt phẳng nên VTCP của đường thẳng là VTPT của mặt phẳng: \\(\\overrightarrow{u} = \\overrightarrow{n_\\alpha} = ${gen.formatVec(n)}\\)</p>
+                             <p>PT tham số: \\[ ${gen.formatLine(M, n)} \\]</p>`;
+                    document.getElementById('ex-perp-plane').innerHTML = htmlQ;
+                    document.getElementById('sol-perp-plane').innerHTML = htmlS;
+                }
+                else if (type === 'parallel') {
+                    const M = { x: r(-2, 2), y: r(-2, 2), z: r(-2, 2) };
+                    const u = { x: r(1, 4), y: r(-4, -1), z: r(1, 4) };
+                    const M0 = { x: r(1, 3), y: r(-2, 2), z: r(1, 3) };
+                    svg = gen.createSVG('parallel');
+                    htmlQ = `<p>Viết phương trình chính tắc của đường thẳng \\(d\\) đi qua \\(M${gen.formatPoint(M)}\\) và song song với đường thẳng \\(\\Delta: \\dfrac{x - ${M0.x}}{${u.x}} = \\dfrac{y - ${M0.y}}{${u.y}} = \\dfrac{z - ${M0.z}}{${u.z}}\\).</p>` + svg;
+                    htmlS = `<h4>Lời giải:</h4>
+                             <p>Đường thẳng song song với \\(\\Delta\\) nên có cùng VTCP: \\(\\overrightarrow{u} = ${gen.formatVec(u)}\\)</p>
+                             <p>PT chính tắc: \\[ ${gen.formatCanonical(M, u)} \\]</p>`;
+                    document.getElementById('ex-parallel').innerHTML = htmlQ;
+                    document.getElementById('sol-parallel').innerHTML = htmlS;
+                }
+                else if (type === 'distance') {
+                    const M0 = { x: r(-3, 3), y: r(-3, 3), z: r(-3, 3) };
+                    const u = { x: r(1, 3), y: r(1, 3), z: r(1, 3) };
+                    const P = { x: r(-5, 5), y: r(-5, 5), z: r(-5, 5) };
+                    // M0P vector
+                    const M0P = { x: P.x - M0.x, y: P.y - M0.y, z: P.z - M0.z };
+                    // Cross product M0P x u
+                    const cross = {
+                        x: M0P.y * u.z - M0P.z * u.y,
+                        y: M0P.z * u.x - M0P.x * u.z,
+                        z: M0P.x * u.y - M0P.y * u.x
+                    };
+                    const crossMag = Math.sqrt(cross.x ** 2 + cross.y ** 2 + cross.z ** 2);
+                    const uMag = Math.sqrt(u.x ** 2 + u.y ** 2 + u.z ** 2);
+                    const dist = (crossMag / uMag).toFixed(2);
+                    svg = gen.createSVG('distance');
+                    htmlQ = `<p>Tính khoảng cách từ điểm \\(P${gen.formatPoint(P)}\\) đến đường thẳng \\(d\\) đi qua \\(M_0${gen.formatPoint(M0)}\\) và có VTCP \\(\\overrightarrow{u} = ${gen.formatVec(u)}\\).</p>` + svg;
+                    htmlS = `<h4>Lời giải:</h4>
+                             <p>\\(\\overrightarrow{M_0P} = ${gen.formatVec(M0P)}\\)</p>
+                             <p>\\([\\overrightarrow{M_0P}, \\overrightarrow{u}] = ${gen.formatVec(cross)}\\)</p>
+                             <p>\\(|[\\overrightarrow{M_0P}, \\overrightarrow{u}]| = \\sqrt{${cross.x}^2 + ${cross.y}^2 + ${cross.z}^2} = ${crossMag.toFixed(2)}\\)</p>
+                             <p>\\(|\\overrightarrow{u}| = ${uMag.toFixed(2)}\\)</p>
+                             <p>\\[ d(P, d) = \\dfrac{|[\\overrightarrow{M_0P}, \\overrightarrow{u}]|}{|\\overrightarrow{u}|} = \\boxed{${dist}} \\]</p>`;
+                    document.getElementById('ex-distance').innerHTML = htmlQ;
+                    document.getElementById('sol-distance').innerHTML = htmlS;
+                }
+                else if (type === 'intersection') {
+                    const M0 = { x: r(-2, 2), y: r(-2, 2), z: r(-2, 2) };
+                    const u = { x: r(1, 3), y: r(1, 3), z: r(1, 3) };
+                    const A = r(1, 3), B = r(-3, -1), C = r(1, 3), D = r(-5, 5);
+                    // Substitute parametric into plane: A(x0+ut) + B(y0+vt) + C(z0+wt) + D = 0
+                    // (Au + Bv + Cw)t = -(Ax0 + By0 + Cz0 + D)
+                    const denom = A * u.x + B * u.y + C * u.z;
+                    const numer = -(A * M0.x + B * M0.y + C * M0.z + D);
+                    let tVal, I;
+                    if (denom !== 0) {
+                        tVal = numer / denom;
+                        I = { x: (M0.x + u.x * tVal).toFixed(2), y: (M0.y + u.y * tVal).toFixed(2), z: (M0.z + u.z * tVal).toFixed(2) };
+                    } else {
+                        tVal = "không xác định (song song)";
+                        I = { x: "–", y: "–", z: "–" };
+                    }
+                    svg = gen.createSVG('intersection');
+                    htmlQ = `<p>Tìm giao điểm của đường thẳng \\(d: ${gen.formatLine(M0, u)}\\) và mặt phẳng \\((\\alpha): ${A}x ${B >= 0 ? '+' : '-'} ${Math.abs(B)}y + ${C}z + ${D} = 0\\).</p>` + svg;
+                    htmlS = `<h4>Lời giải:</h4>
+                             <p>Thay PT tham số vào PT mặt phẳng:</p>
+                             <p>\\[ ${A}(${M0.x} + ${u.x}t) ${B >= 0 ? '+' : '-'} ${Math.abs(B)}(${M0.y} + ${u.y}t) + ${C}(${M0.z} + ${u.z}t) + ${D} = 0 \\]</p>
+                             <p>\\[ (${A}\\cdot${u.x} ${B >= 0 ? '+' : '-'} ${Math.abs(B)}\\cdot${u.y} + ${C}\\cdot${u.z})t = ${numer} \\]</p>
+                             <p>\\[ t = ${typeof tVal === 'number' ? tVal.toFixed(2) : tVal} \\]</p>
+                             <p>Giao điểm: \\(\\boxed{I(${I.x}; ${I.y}; ${I.z})}\\)</p>`;
+                    document.getElementById('ex-intersection').innerHTML = htmlQ;
+                    document.getElementById('sol-intersection').innerHTML = htmlS;
+                }
+
+                MathJax.typesetPromise();
+            },
+
+            generateQuiz: () => {
+                const gen = ProblemGenerator;
+                const r = gen.randomInt;
+                const questions = [];
+                const shuffle = (arr) => arr.sort(() => Math.random() - 0.5);
+
+                // --- 1. TÌM VTCP (2 câu) ---
+                for (let i = 0; i < 2; i++) {
+                    const M = { x: r(-5, 5), y: r(-5, 5), z: r(-5, 5) };
+                    const u = { x: r(-4, 4) || 1, y: r(-4, 4) || 1, z: r(-4, 4) || 1 };
+                    const correct = gen.formatVec(u);
+                    const distractors = [
+                        gen.formatVec({ x: -u.y, y: u.x, z: u.z }),
+                        gen.formatVec(M),
+                        gen.formatVec({ x: u.x, y: u.y, z: 0 })
+                    ];
+                    const choices = shuffle([{ txt: correct, isCorrect: true }, ...distractors.map(d => ({ txt: d, isCorrect: false }))]);
+                    questions.push({
+                        q: `Tìm VTCP của đường thẳng \\(d: \\begin{cases} x = ${M.x} + ${u.x}t \\\\ y = ${M.y} + ${u.y}t \\\\ z = ${M.z} + ${u.z}t \\end{cases}\\)`,
+                        c: choices.map(c => `\\(\\overrightarrow{u} = ${c.txt}\\)`),
+                        a: choices.findIndex(c => c.isCorrect),
+                        s: `Dựa vào hệ số của \\(t\\) trong PT tham số, ta có VTCP \\(\\overrightarrow{u} = ${correct}\\).`
+                    });
+                }
+
+                // --- 2. ĐIỂM THUỘC ĐƯỜNG THẲNG (2 câu) ---
+                for (let i = 0; i < 2; i++) {
+                    const M = { x: r(-3, 3), y: r(-3, 3), z: r(-3, 3) };
+                    const u = { x: r(1, 3), y: r(1, 3), z: r(1, 3) };
+                    const t = r(1, 2);
+                    const P = { x: M.x + u.x * t, y: M.y + u.y * t, z: M.z + u.z * t };
+                    const wrong = [
+                        { x: P.x + 1, y: P.y, z: P.z },
+                        u,
+                        { x: 0, y: 0, z: 0 }
+                    ];
+                    const choices = shuffle([{ p: P, isCorrect: true }, ...wrong.map(p => ({ p, isCorrect: false }))]);
+                    questions.push({
+                        q: `Điểm nào thuộc đường thẳng \\(\\Delta: \\dfrac{x - ${M.x}}{${u.x}} = \\dfrac{y - ${M.y}}{${u.y}} = \\dfrac{z - ${M.z}}{${u.z}}\\)?`,
+                        c: choices.map(c => `\\(M${gen.formatPoint(c.p)}\\)`),
+                        a: choices.findIndex(c => c.isCorrect),
+                        s: `Thay điểm \\(M${gen.formatPoint(P)}\\) vào PT: \\[ \\dfrac{${P.x} - ${M.x}}{${u.x}} = \\dfrac{${P.y} - ${M.y}}{${u.y}} = \\dfrac{${P.z} - ${M.z}}{${u.z}} = ${t} \\] (Thỏa mãn)`
+                    });
+                }
+
+                // --- 3. VIẾT PT ĐƯỜNG THẲNG QUA ĐIỂM VÀ VTCP (2 câu) ---
+                for (let i = 0; i < 2; i++) {
+                    const M = { x: r(-3, 3), y: r(-3, 3), z: r(-3, 3) };
+                    const u = { x: r(-4, 4) || 1, y: r(-4, 4) || 2, z: r(-4, 4) || -1 };
+                    const correctLine = gen.formatLine(M, u);
+                    const wrongLines = [
+                        gen.formatLine(u, M),
+                        gen.formatLine({ x: M.x + 1, y: M.y, z: M.z }, u),
+                        gen.formatLine(M, { x: -u.x, y: -u.y, z: u.z })
+                    ];
+                    const choices = shuffle([{ eq: correctLine, isCorrect: true }, ...wrongLines.map(eq => ({ eq, isCorrect: false }))]);
+                    questions.push({
+                        q: `Viết PT tham số của đường thẳng \\(d\\) qua \\(M${gen.formatPoint(M)}\\), VTCP \\(\\overrightarrow{u} = ${gen.formatVec(u)}\\).`,
+                        c: choices.map(c => `\\(${c.eq}\\)`),
+                        a: choices.findIndex(c => c.isCorrect),
+                        s: `Áp dụng công thức PT tham số: \\[ ${correctLine} \\]`
+                    });
+                }
+
+                // --- 4. ĐƯỜNG THẲNG VUÔNG GÓC MẶT PHẲNG (2 câu) ---
+                for (let i = 0; i < 2; i++) {
+                    const M = { x: r(-2, 2), y: r(-2, 2), z: r(-2, 2) };
+                    const n = { x: r(1, 4), y: r(-4, -1), z: r(1, 4) };
+                    const D = r(-5, 5);
+                    const correctLine = gen.formatLine(M, n);
+                    const wrongLines = [
+                        gen.formatLine(n, M),
+                        gen.formatLine(M, { x: n.y, y: -n.x, z: n.z }),
+                        gen.formatLine({ x: 0, y: 0, z: 0 }, n)
+                    ];
+                    const choices = shuffle([{ eq: correctLine, isCorrect: true }, ...wrongLines.map(eq => ({ eq, isCorrect: false }))]);
+                    questions.push({
+                        q: `Viết PT tham số của đường thẳng qua \\(M${gen.formatPoint(M)}\\) và vuông góc với \\((\\alpha): ${n.x}x ${n.y >= 0 ? '+' : '-'} ${Math.abs(n.y)}y + ${n.z}z + ${D} = 0\\).`,
+                        c: choices.map(c => `\\(${c.eq}\\)`),
+                        a: choices.findIndex(c => c.isCorrect),
+                        s: `Đường thẳng vuông góc với mặt phẳng nên VTCP = VTPT: \\(\\overrightarrow{u} = ${gen.formatVec(n)}\\). <br> PT: \\[ ${correctLine} \\]`
+                    });
+                }
+
+                // --- 5. VỊ TRÍ TƯƠNG ĐỐI (2 câu) ---
+                for (let i = 0; i < 2; i++) {
+                    const typeProb = Math.random();
+                    let u1, u2, relation, explain;
+                    if (typeProb < 0.5) {
+                        // Song song
+                        u1 = { x: r(1, 3), y: r(1, 3), z: r(1, 3) };
+                        const k = r(2, 3);
+                        u2 = { x: u1.x * k, y: u1.y * k, z: u1.z * k };
+                        relation = "Song song";
+                        explain = `VTCP cùng phương: \\(\\overrightarrow{u_2} = ${k}\\overrightarrow{u_1}\\).`;
+                    } else {
+                        // Vuông góc
+                        u1 = { x: 1, y: 1, z: 0 };
+                        u2 = { x: 1, y: -1, z: r(1, 5) };
+                        relation = "Vuông góc";
+                        explain = `Tích vô hướng: \\(\\overrightarrow{u_1} \\cdot \\overrightarrow{u_2} = ${u1.x * u2.x + u1.y * u2.y + u1.z * u2.z} = 0\\).`;
+                    }
+                    const answers = ["Song song", "Vuông góc", "Cắt nhau (không vuông góc)", "Chéo nhau"];
+                    const choices = shuffle(answers.map(txt => ({ txt, isCorrect: txt === relation })));
+                    questions.push({
+                        q: `Xác định vị trí tương đối của hai đường thẳng có VTCP lần lượt là \\(\\overrightarrow{u_1} = ${gen.formatVec(u1)}\\) và \\(\\overrightarrow{u_2} = ${gen.formatVec(u2)}\\).`,
+                        c: choices.map(c => c.txt),
+                        a: choices.findIndex(c => c.isCorrect),
+                        s: explain
+                    });
+                }
+
+                return questions;
+            }
+        };
+
+        // ======================= QUIZ UI =======================
+        let quizData = [];
+        let userAnswers = [];
+        let answered = 0;
+
+        function initQuiz() {
+            quizData = ProblemGenerator.generateQuiz();
+            userAnswers = new Array(quizData.length).fill(undefined);
+            answered = 0;
+            updateStats();
+
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = quizData.map((q, i) => `
+                <div class="card" id="q-${i}">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                        <span style="background:linear-gradient(135deg, #667eea, #764ba2); color:white; padding:5px 15px; border-radius:20px; font-weight:600;">Câu ${i + 1}</span>
+                    </div>
+                    <p style="margin-bottom:15px;">${q.q}</p>
+                    <div class="choices">
+                        ${q.c.map((c, ci) => `
+                            <div class="choice" onclick="selectAnswer(${i}, ${ci})" id="choice-${i}-${ci}">
+                                <div class="choice-label">${String.fromCharCode(65 + ci)}</div>
+                                <span>${c}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="solution" id="sol-${i}">
+                        <h4>✅ Lời giải chi tiết:</h4>
+                        <p>${q.s}</p>
+                    </div>
+                </div>
+            `).join('');
+            MathJax.typesetPromise();
+        }
+
+        function selectAnswer(qIdx, cIdx) {
+            if (userAnswers[qIdx] !== undefined) return;
+            userAnswers[qIdx] = cIdx;
+            answered++;
+
+            const q = quizData[qIdx];
+            const choices = document.querySelectorAll(`#q-${qIdx} .choice`);
+
+            choices[cIdx].classList.add('selected');
+            if (cIdx === q.a) {
+                choices[cIdx].classList.add('correct');
+            } else {
+                choices[cIdx].classList.add('wrong');
+                choices[q.a].classList.add('correct');
+            }
+
+            document.getElementById(`sol-${qIdx}`).classList.add('show');
+            updateStats();
+            MathJax.typesetPromise();
+        }
+
+        function updateStats() {
+            const correct = quizData.filter((q, i) => userAnswers[i] === q.a).length;
+            document.getElementById('score').innerText = correct;
+            document.getElementById('progress').innerText = `${answered}/${quizData.length}`;
+        }
+
+        // ======================= 3D VISUALIZATION =======================
+        function init3D() {
+            const container = document.getElementById('canvas3d');
+            container.innerHTML = '<canvas id="three-canvas" style="width:100%; height:100%;"></canvas>';
+            const canvas = document.getElementById('three-canvas');
+            const ctx = canvas.getContext('2d');
+
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+
+            let angleX = 0.5, angleY = 0.5;
+
+            function project(x, y, z) {
+                const cosX = Math.cos(angleX), sinX = Math.sin(angleX);
+                const cosY = Math.cos(angleY), sinY = Math.sin(angleY);
+                let x1 = x * cosY - z * sinY;
+                let z1 = x * sinY + z * cosY;
+                let y2 = y * cosX - z1 * sinX;
+                let z2 = y * sinX + z1 * cosX;
+                const factor = 400 / (z2 + 600);
+                return { x: x1 * factor + canvas.width / 2, y: -y2 * factor + canvas.height / 2 };
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                const origin = project(0, 0, 0);
+
+                // Draw Axes
+                ['#ef4444', '#10b981', '#3b82f6'].forEach((color, i) => {
+                    const p = project(...[[200, 0, 0], [0, 200, 0], [0, 0, 200]][i]);
+                    ctx.beginPath();
+                    ctx.moveTo(origin.x, origin.y);
+                    ctx.lineTo(p.x, p.y);
+                    ctx.strokeStyle = color;
+                    ctx.lineWidth = 2;
+                    ctx.stroke();
+                    ctx.fillStyle = color;
+                    ctx.font = '14px Inter';
+                    ctx.fillText(['x', 'y', 'z'][i], p.x + 5, p.y);
+                });
+
+                // Draw Line
+                const M0 = { x: 50, y: 50, z: 50 };
+                const u = { x: 100, y: 100, z: 100 };
+                const p1 = project(M0.x - u.x, M0.y - u.y, M0.z - u.z);
+                const p2 = project(M0.x + u.x, M0.y + u.y, M0.z + u.z);
+                ctx.beginPath();
+                ctx.moveTo(p1.x, p1.y);
+                ctx.lineTo(p2.x, p2.y);
+                ctx.strokeStyle = '#ec4899';
+                ctx.lineWidth = 3;
+                ctx.stroke();
+
+                // Draw Point M
+                const pm = project(M0.x, M0.y, M0.z);
+                ctx.beginPath();
+                ctx.arc(pm.x, pm.y, 5, 0, Math.PI * 2);
+                ctx.fillStyle = '#f59e0b';
+                ctx.fill();
+
+                requestAnimationFrame(draw);
+            }
+
+            let isDown = false, lastX, lastY;
+            canvas.onmousedown = (e) => { isDown = true; lastX = e.clientX; lastY = e.clientY; };
+            window.onmouseup = () => isDown = false;
+            window.onmousemove = (e) => {
+                if (!isDown) return;
+                angleY += (e.clientX - lastX) * 0.01;
+                angleX += (e.clientY - lastY) * 0.01;
+                lastX = e.clientX; lastY = e.clientY;
+            };
+
+            draw();
+        }
+
+        // ======================= INIT =======================
+        document.addEventListener('DOMContentLoaded', () => {
+            initQuiz();
+            ProblemGenerator.new('basic');
+            ProblemGenerator.new('2points');
+            ProblemGenerator.new('perp_plane');
+            ProblemGenerator.new('parallel');
+            ProblemGenerator.new('distance');
+            ProblemGenerator.new('intersection');
+        });
+    </script>
+</body>
+
+</html>

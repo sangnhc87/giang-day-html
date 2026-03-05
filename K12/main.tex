@@ -1,0 +1,277 @@
+\documentclass[12pt,a4paper]{report}
+
+% =========================================================
+%      1. KHAI BÁO CÁC GÓI (PACKAGES)
+% =========================================================
+\usepackage[T5]{fontenc}      
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+
+\usepackage{amsmath,amssymb,mathtools,bm}
+
+% --- CẤU HÌNH KHỔ GIẤY ---
+\usepackage[
+    top=2cm, bottom=2cm, left=2cm, right=2cm, 
+    headheight=35pt, 
+    headsep=15pt,    
+    footskip=30pt    
+]{geometry}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr} 
+\usepackage{hyperref} 
+\usepackage{chngcntr} 
+\usepackage{multicol} 
+
+% --- GÓI HỖ TRỢ TRẮC NGHIỆM ---
+\usepackage{tabularx} 
+\usepackage{calc}     
+\usepackage{pifont}   
+\usepackage{colortbl} 
+\usepackage{array}    
+
+% --- GÓI MÀU & TRANG TRÍ ---
+\usepackage[dvipsnames, svgnames, x11names]{xcolor}
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins, breakable, raster, theorems} 
+\usepackage[explicit]{titlesec} 
+\usepackage{titletoc} 
+
+% --- GÓI VẼ HÌNH ---
+\usepackage{tikz}
+\usepackage{tkz-tab}
+\usetikzlibrary{trees, shapes, arrows, positioning, calc, shadows, backgrounds}
+\usepackage{pgfkeys}
+
+
+% =========================================================
+%      2. CẤU HÌNH HỆ THỐNG
+% =========================================================
+\newif\ifhienloigiai
+\hienloigiaitrue    % true: Hiện lời giải | false: Ẩn
+
+\newif\ifhiendapan
+\hiendapantrue      % true: Hiện đáp án (Tô nền xanh) | false: Ẩn
+
+\newcommand{\defaultlines}{5} 
+\newwrite\fileans
+\immediate\openout\fileans=\jobname.ans
+
+% =========================================================
+%      3. HEADER & FOOTER
+% =========================================================
+\pagestyle{fancy}
+\fancyhf{} 
+
+% --- 3.1 CẤU HÌNH CHUNG ---
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+% Header
+\fancyhead[L]{%
+    \begin{tikzpicture}[overlay, remember picture]
+        \fill[teal!80!black] ([xshift=0.5cm, yshift=-0.5cm]current page.north west) rectangle ++(0.6cm, -2cm);
+        \node[anchor=west, text=teal!80!black, font=\bfseries\small] 
+            at ([xshift=1.5cm, yshift=-1.25cm]current page.north west) 
+            {TOÁN HỌC HIỆN ĐẠI};
+    \end{tikzpicture}
+}
+\fancyhead[R]{%
+    \parbox[b]{0.7\textwidth}{\flushright \small \itshape \color{gray!60!black} \leftmark \quad $\blacktriangleright$ \quad \rightmark}
+}
+
+% Footer
+\fancyfoot[L]{\footnotesize \bfseries \color{teal!80!black} GV: Nguyễn Văn Sang}
+\fancyfoot[C]{\small \bfseries Trang \thepage}
+\fancyfoot[R]{\footnotesize \color{gray} 0389.821.115}
+
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt} 
+
+% --- 3.2 CẤU HÌNH RIÊNG CHO TRANG ĐẦU CHƯƠNG ---
+\fancypagestyle{plain}{%
+  \fancyhf{} 
+  \fancyfoot[L]{\footnotesize \bfseries \color{teal!80!black} GV: Nguyễn Văn Sang}
+  \fancyfoot[C]{\small \bfseries Trang \thepage} 
+  \fancyfoot[R]{\footnotesize \color{gray} 09xx.xxx.xxx}
+  \renewcommand{\headrulewidth}{0pt} 
+  \renewcommand{\footrulewidth}{0.4pt}
+}
+
+% =========================================================
+%      4. XỬ LÝ STYLE TIÊU ĐỀ
+% =========================================================
+\newcommand{\veSoChuong}{%
+    \begin{tikzpicture}
+      \node[fill=teal!80!black, rounded corners=5pt, text=white, font=\fontsize{60}{60}\selectfont\bfseries, inner sep=12pt, drop shadow={opacity=0.25, shadow xshift=3pt, shadow yshift=-3pt}] (num) {\thechapter};
+      \node[left=10pt of num, text=teal!80!black, font=\Large\sffamily\bfseries\scshape, anchor=east] {CHƯƠNG};
+    \end{tikzpicture}%
+}
+\titleformat{\chapter}[display]{\normalfont\bfseries\huge\color{teal!80!black}}{\hfill \veSoChuong}{-1ex}{\filleft\titlerule[2pt]\vspace{1.5ex}\filleft\MakeUppercase{#1}}[\vspace{1ex}\titlerule]
+
+\titleformat{\section}{\normalfont\Large\bfseries\color{NavyBlue}}{\tikz[baseline=(char.base)]{\node[shape=circle,fill=NavyBlue,inner sep=2pt,text=white,font=\bfseries] (char) {\thesection};}\enskip}{0em}{#1}[\vspace{-0.5ex}\color{NavyBlue}\rule{\textwidth}{1pt}]
+
+\titleformat{\subsection}{\normalfont\large\bfseries\color{orange!80!black}}{\thesubsection.}{0.5em}{#1}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{gray!50!black}}{\ding{224}}{0.5em}{#1}
+
+% =========================================================
+%      5. MỤC LỤC & MÔI TRƯỜNG
+% =========================================================
+\titlecontents{chapter}[0em]{\addvspace{1pc}\bfseries\color{teal!80!black}}{\scshape\chaptername\ \thecontentslabel\quad}{}{\hfill\bfseries\thecontentspage}[\addvspace{2pt}{\titlerule[0.5pt]}\addvspace{5pt}] 
+\titlecontents{section}[2em]{\addvspace{2pt}\color{NavyBlue}}{\contentslabel{2.3em}}{}{\titlerule*[0.7pc]{.}\thecontentspage} 
+\titlecontents{subsection}[5em]{\small\color{gray!40!black}}{\contentslabel{3em}}{}{\titlerule*[1pc]{.}\thecontentspage}
+
+\tcbset{thStyle/.style={enhanced, breakable, colback=white, colframe=#1, attach boxed title to top left={yshift=-2mm, xshift=2mm}, boxed title style={colback=#1, rounded corners, frame hidden}, fonttitle=\bfseries, coltitle=white, arc=3pt, boxrule=1pt, separator sign={\enskip $\blacktriangleright$}, before skip=0.5cm, after skip=0.5cm}}
+\newtcbtheorem[number within=chapter]{dn}{Định nghĩa}{thStyle=teal!80!black}{dn}
+\newtcbtheorem[number within=chapter]{dl}{Định lý}{thStyle=NavyBlue!80!black}{dl}
+\newtcbtheorem[number within=chapter]{tc}{Tính chất}{thStyle=VioletRed4}{tc}
+\newtcbtheorem[number within=chapter]{dang}{Dạng}{thStyle=orange!85!black}{dang}
+
+\newtcolorbox{luuy}[1][Lưu ý]{enhanced, breakable, colback=red!5!white, colframe=red!75!black, leftrule=4pt, rightrule=0pt, toprule=0pt, bottomrule=0pt, arc=0pt, outer arc=0pt, title={\textbf{\ding{45} #1}}, coltitle=red!75!black, colbacktitle=red!10!white, fonttitle=\bfseries, attach boxed title to top left={xshift=0mm, yshift=0mm}, boxed title style={frame hidden, size=small, sharp corners}, top=4mm, bottom=2mm}
+\newenvironment{note}{\begin{luuy}[Ghi nhớ]}{\end{luuy}}
+
+% =========================================================
+%      6. CÔNG CỤ BÀI TẬP
+% =========================================================
+\newsavebox{\boxHinh}
+\newcommand{\immini}[2]{\sbox{\boxHinh}{#2}\par\vspace{0.2cm}\noindent\begin{minipage}[t]{\dimexpr\linewidth - \wd\boxHinh - 0.5cm\relax}\vspace{0pt} #1\end{minipage}\hfill\begin{minipage}[t]{\wd\boxHinh}\vspace{0pt} \usebox{\boxHinh}\end{minipage}\par\vspace{0.2cm}}
+
+\newcommand{\exID}{} \newcommand{\exStars}{0} \newcommand{\exLines}{\defaultlines}
+\pgfkeys{/sangex/.is family, /sangex, id/.store in=\exID, stars/.store in=\exStars, lines/.store in=\exLines}
+\newcommand{\printstars}[1]{\ifcase#1\or\textcolor{yellow!90!black}{$\bigstar$}\or\textcolor{yellow!90!black}{$\bigstar\bigstar$}\or\textcolor{yellow!90!black}{$\bigstar\bigstar\bigstar$}\or\textcolor{yellow!90!black}{$\bigstar\bigstar\bigstar\bigstar$}\or\textcolor{yellow!90!black}{$\bigstar\bigstar\bigstar\bigstar\bigstar$}\fi}
+\newcommand{\showID}{\ifx\exID\empty\else\tikz[baseline=(char.base)]{\node[shape=rectangle, draw=gray!50, fill=gray!10, inner sep=2pt, rounded corners=2pt, text=gray!60!black, font=\ttfamily\scriptsize](char){ID: \exID};}\fi}
+
+\newcounter{excount}[chapter] \renewcommand{\theexcount}{\thechapter.\arabic{excount}}
+\newtcolorbox[use counter=excount]{ex}[1][]{ 
+	enhanced, breakable, code={\pgfkeys{/sangex, id={}, stars=0, lines=\defaultlines, #1}},
+	colback=white, colframe=teal!60!black, 
+	title={\textbf{Câu \theexcount.} \enskip \showID \hfill \footnotesize \printstars{\exStars}}, 
+	fonttitle=\bfseries, coltitle=white,
+	attach boxed title to top left={yshift=-2mm, xshift=2mm},
+	boxed title style={colback=teal!60!black, rounded corners, frame hidden},
+	separator sign=, before skip=0.5cm
+}
+
+% =========================================================
+%      7. XỬ LÝ ĐÁP ÁN (SQUARE FILL)
+% =========================================================
+\newif\ifcircledchoice \circledchoicefalse 
+\newcommand{\SetChoiceStyle}[1]{\ifnum\pdfstrcmp{#1}{circle}=0 \circledchoicetrue \else \circledchoicefalse \fi}
+\newcommand{\True}{\ifhiendapan\color{red}\bfseries\fi}
+
+% --- Lệnh vẽ nhãn (VUÔNG BO GÓC - TÔ NỀN KHI ĐÚNG) ---
+\newcommand{\printLabel}[2]{% #1: Nhãn (A), #2: Đáp án đúng
+   \ifcircledchoice
+      \tikz[baseline=(char.base)]{
+         % Mặc định: Vuông bo góc, viền xám, nền trắng
+         \node[shape=rectangle, rounded corners=3pt, draw=gray!50, fill=white, inner sep=2pt, minimum size=1.4em, line width=1pt, font=\bfseries\footnotesize] (char) {#1};
+         
+         \ifx#1#2 
+             \ifhiendapan 
+                % ĐÚNG: Tô nền Teal đậm, Chữ Trắng, Không viền
+                \node[shape=rectangle, rounded corners=3pt, draw=none, fill=teal!80!black, inner sep=2pt, minimum size=1.4em, line width=1pt, font=\bfseries\footnotesize, text=white] (char) {#1};
+             \fi
+         \fi
+      }%
+   \else
+      \textbf{\ifx#1#2\ifhiendapan\color{red}\fi\fi#1.}%
+   \fi
+}
+
+\newlength{\lenA}\newlength{\lenB}\newlength{\lenC}\newlength{\lenD}\newlength{\lenMax}
+\newcommand{\choice}[4]{
+	\def\myAns{} \setbox0=\hbox{\def\True{\global\def\myAns{A}}#1} \ifx\myAns\empty \setbox0=\hbox{\def\True{\global\def\myAns{B}}#2} \fi \ifx\myAns\empty \setbox0=\hbox{\def\True{\global\def\myAns{C}}#3} \fi \ifx\myAns\empty \setbox0=\hbox{\def\True{\global\def\myAns{D}}#4} \fi
+	\ifx\myAns\empty\else \immediate\write\fileans{\string\ansitem{\theexcount}{\myAns}} \fi
+	\settowidth{\lenA}{\printLabel{A}{\myAns} #1}\settowidth{\lenB}{\printLabel{B}{\myAns} #2}\settowidth{\lenC}{\printLabel{C}{\myAns} #3}\settowidth{\lenD}{\printLabel{D}{\myAns} #4}
+	\setlength{\lenMax}{\lenA}\ifdim\lenB>\lenMax \setlength{\lenMax}{\lenB} \fi \ifdim\lenC>\lenMax \setlength{\lenMax}{\lenC} \fi \ifdim\lenD>\lenMax \setlength{\lenMax}{\lenD} \fi
+	\par\noindent \ifdim\lenMax<0.22\linewidth \begin{tabular*}{\linewidth}{@{}p{0.24\linewidth}p{0.24\linewidth}p{0.24\linewidth}p{0.24\linewidth}@{}}\printLabel{A}{\myAns} #1 & \printLabel{B}{\myAns} #2 & \printLabel{C}{\myAns} #3 & \printLabel{D}{\myAns} #4\end{tabular*} \else \ifdim\lenMax<0.46\linewidth \begin{tabular*}{\linewidth}{@{}p{0.48\linewidth}p{0.48\linewidth}@{}}\printLabel{A}{\myAns} #1 & \printLabel{B}{\myAns} #2 \\ \printLabel{C}{\myAns} #3 & \printLabel{D}{\myAns} #4\end{tabular*} \else \begin{tabular*}{\linewidth}{@{}p{\linewidth}@{}}\printLabel{A}{\myAns} #1 \\ \printLabel{B}{\myAns} #2 \\ \printLabel{C}{\myAns} #3 \\ \printLabel{D}{\myAns} #4\end{tabular*} \fi \fi
+}
+\newcommand{\shortans}[2][]{
+	\immediate\write\fileans{\string\ansitem{\theexcount}{#2}}
+	\ifhiendapan \par\vspace{0.2cm} \begin{tcolorbox}[enhanced, hbox, colback=yellow!10, colframe=orange!80!black, boxrule=0.5pt, arc=3pt, left=2mm, right=2mm, top=1mm, bottom=1mm] \textbf{\color{red}$\bm{\diamondsuit}$ Đáp số:} #2 \end{tcolorbox}
+	\else \par\vspace{0.2cm} \def\opt{#1} \def\oly{oly} \ifx\opt\oly \noindent \begin{tikzpicture}[baseline=(current bounding box.center)] \node[anchor=east, font=\bfseries\small] at (0, 0.4) {Trả lời:}; \foreach \i in {0,1,2,3} { \draw[thick, orange!80!black] (\i*0.85 + 0.2, 0) rectangle ++(0.85, 0.85); } \end{tikzpicture} \else \begin{tcolorbox}[width=0.6\linewidth, colback=white, colframe=black, boxrule=0.5pt, arc=0pt, height=0.8cm, valign=center] \textbf{Điền KQ:} ................................... \end{tcolorbox} \fi \fi
+}
+\newcommand{\cmark}{\ifhiendapan\textcolor{teal}{\ding{51}}\fi} \newcommand{\xmark}{\ifhiendapan\textcolor{red}{\ding{55}}\fi} 
+\newif\ifTFA \newif\ifTFB \newif\ifTFC \newif\ifTFD
+\newcommand{\choiceTF}[4]{
+	\global\TFAfalse \setbox0=\hbox{\def\True{\global\TFAtrue}#1} \global\TFBfalse \setbox0=\hbox{\def\True{\global\TFBtrue}#2} \global\TFCfalse \setbox0=\hbox{\def\True{\global\TFCtrue}#3} \global\TFDfalse \setbox0=\hbox{\def\True{\global\TFDtrue}#4}
+	\def\ansString{} \ifTFA \xdef\ansString{Đ} \else \xdef\ansString{S} \fi \ifTFB \xdef\ansString{\ansString{} - Đ} \else \xdef\ansString{\ansString{} - S} \fi \ifTFC \xdef\ansString{\ansString{} - Đ} \else \xdef\ansString{\ansString{} - S} \fi \ifTFD \xdef\ansString{\ansString{} - Đ} \else \xdef\ansString{\ansString{} - S} \fi
+	\immediate\write\fileans{\string\ansitem{\theexcount}{\ansString}}
+	\par\vspace{0.2cm}\noindent { \renewcommand{\tabularxcolumn}[1]{m{##1}} \renewcommand{\arraystretch}{1.4} \begin{tabularx}{\linewidth}{|c|X|c|c|} \hline \rowcolor{gray!15} \textbf{Ý} & \centering \textbf{Mệnh đề} & \textbf{Đ} & \textbf{S} \\ \hline a) & #1 & \centering \ifTFA\cmark\fi & \centering \ifTFA\else\cmark\fi \tabularnewline \hline b) & #2 & \centering \ifTFB\cmark\fi & \centering \ifTFB\else\cmark\fi \tabularnewline \hline c) & #3 & \centering \ifTFC\cmark\fi & \centering \ifTFC\else\cmark\fi \tabularnewline \hline d) & #4 & \centering \ifTFD\cmark\fi & \centering \ifTFD\else\cmark\fi \tabularnewline \hline \end{tabularx} }
+}
+\newcommand{\loigiai}[1]{ \ifhienloigiai \par\noindent \begin{tcolorbox}[enhanced, breakable, colback=gray!5, colframe=gray!50, leftrule=2pt, rightrule=0pt, toprule=0pt, bottomrule=0pt, arc=0pt, outer arc=0pt, title={\textit{Lời giải chi tiết:}}, coltitle=black, colbacktitle=gray!15, fonttitle=\bfseries\small, attach boxed title to top left={xshift=0mm}, boxed title style={frame hidden, size=small, sharp corners}, top=2mm] #1 \end{tcolorbox} \else \par\vspace{-0.1cm} \noindent\textbf{\textit{Bài làm:}} \par \foreach \i in {1,...,\exLines}{\noindent\makebox[\linewidth]{\rule{0pt}{1.2em}\dotfill}\par} \fi }
+\newcommand{\ansitem}[2]{\tcbitem[colback=white, colframe=teal!30!white, halign=center, valign=center, fontupper=\small\bfseries, title={Câu #1}, coltitle=teal!80!black, colbacktitle=teal!10!white, fonttitle=\scriptsize\bfseries, attach boxed title to top center={yshift=-2mm}, boxed title style={frame hidden, size=small, rounded corners}] #2}
+\newcommand{\printanswerkey}{\immediate\closeout\fileans \newpage \section*{Bảng đáp án tra cứu} \begin{tcbitemize}[raster columns=5, raster equal height=rows, raster column skip=2mm, raster row skip=2mm, enhanced, boxrule=0.5pt, arc=2pt] \input{\jobname.ans} \end{tcbitemize}}
+
+% =========================================================
+%      8. NỘI DUNG CHÍNH
+% =========================================================
+\begin{document}
+	\pagenumbering{gobble} 
+	\begin{titlepage}
+		\centering \vspace*{3cm}
+		\begin{tcolorbox}[enhanced, colframe=teal!80!black, colback=white, arc=10pt, boxrule=2pt, drop shadow]
+			\centering \vspace{1cm}
+			{\Huge \bfseries TUYỂN TẬP CÁC CHUYÊN ĐỀ\\[0.5cm] TOÁN HỌC HIỆN ĐẠI \par}
+			\vspace{0.5cm} {\Large \textit{Biên soạn: Thầy Nguyễn Văn Sang} \par} \vspace{1cm}
+		\end{tcolorbox}
+	\end{titlepage}
+	
+	\newpage \pagenumbering{roman} { \hypersetup{linkcolor=black} \tableofcontents }
+	\newpage \pagenumbering{arabic} \setcounter{page}{1}
+	
+	% --- BẬT CHẾ ĐỘ Ô VUÔNG TÔ MÀU ---
+	\SetChoiceStyle{circle} 
+	
+	% ================= CHƯƠNG 1 =================
+	\chapter{ĐẠI SỐ TỔ HỢP}
+	
+	\section{Quy tắc đếm cơ bản}
+	
+	\subsection{Lý thuyết trọng tâm}
+	
+	\begin{dn}{Quy tắc cộng}{def1}
+		Giả sử một công việc có thể được thực hiện theo phương án $A$ hoặc phương án $B$...
+	\end{dn}
+	
+	\begin{luuy}
+		Nếu các phương án $A$ và $B$ không rời nhau, ta phải áp dụng công thức bù trừ.
+	\end{luuy}
+	
+	\subsection{Các dạng toán thường gặp}
+	
+	\begin{dang}{Bài toán đếm số}{dang1}
+		Phương pháp chung:
+		\begin{enumerate}
+			\item Gọi số cần tìm là $\overline{a_1a_2...a_n}$.
+			\item Chọn từng chữ số dựa trên điều kiện bài toán.
+		\end{enumerate}
+	\end{dang}
+	
+	\begin{ex}[id=QTC01, stars=2]
+		Có bao nhiêu số tự nhiên có 3 chữ số khác nhau lập từ tập $A=\{1,2,3,4,5\}$?
+		\choice{12}{\True 60}{125}{10}
+		\loigiai{Số cách chọn là $A_5^3 = 60$.}
+	\end{ex}
+	
+	\begin{ex}
+		\immini
+		{
+			Cho đồ thị hàm số $y=f(x)$ như hình bên. Hàm số đồng biến trên khoảng nào?
+			\choice{$(0;1)$}{\True $(1;+\infty)$}{$(-\infty;1)$}{$(0;2)$}
+		}
+		{
+			\begin{tikzpicture}[scale=0.6]
+				\draw[->] (-1,0) -- (4,0) node[below]{$x$};
+				\draw[->] (0,-1) -- (0,4) node[left]{$y$};
+				\draw[smooth, domain=-0.5:3.5] plot (\x, {(\x-1)^2});
+			\end{tikzpicture}
+		}
+		\loigiai{Dựa vào đồ thị ta thấy hàm số đi lên từ $x=1$ đến $+\infty$.}
+	\end{ex}
+	
+	``Thử Nghiệm'', \lq\lq Thử Nghiệm\rq\rq\, và "Thử Nghiệm"
+
+	\printanswerkey
+\end{document}

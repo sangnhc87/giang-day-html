@@ -1,0 +1,85 @@
+%============================================================
+% TRANG BÌA QUYỂN IV
+%============================================================
+\begin{titlepage}
+\thispagestyle{empty}
+\pagecolor{truyenred!8}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[white, opacity=0.5, rounded corners=20pt]
+    ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
+    ($(current page.south east)+(-1.5cm,1.5cm)$);
+
+  \draw[truyengold!80!black, line width=3pt, rounded corners=15pt]
+    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
+    ($(current page.south east)+(-1.8cm,1.8cm)$);
+
+  \draw[truyengold, line width=1pt, rounded corners=12pt]
+    ($(current page.north west)+(2cm,-2cm)$) rectangle
+    ($(current page.south east)+(-2cm,2cm)$);
+
+  \foreach \x/\xsign/\ysign in {
+    north west/1/-1,
+    north east/-1/-1,
+    south west/1/1,
+    south east/-1/1%
+  } {
+    \draw[truyengold!80!black, line width=1.5pt]
+      ($(current page.\x) + (\xsign*0.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*0.8cm)$);
+    \fill[truyengold!60!white]
+      ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
+  }
+\end{tikzpicture}
+
+\vspace*{1.8cm}
+
+\begin{center}
+  {\color{truyengold!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
+  {\fontsize{13}{16}\selectfont\color{truyenblue!80!black}\scshape
+   \textbf{Triết Lý Nhân Sinh \& Đối Nhân Xử Thế}}\\[1.3cm]
+
+  \begin{tcolorbox}[
+    width=6.5cm,
+    colback=truyengold!25,
+    colframe=truyengold!80!black,
+    arc=4pt,
+    boxrule=1.5pt,
+    halign=center
+  ]
+    {\fontsize{18}{22}\selectfont\bfseries\color{truyenred!80!black}
+     QUYỂN IV}
+  \end{tcolorbox}
+  \vspace{0.8cm}
+
+  {\fontsize{42}{50}\selectfont\bfseries\color{truyenred!80!black}
+    Điển Tích \&}\\[0.4cm]
+  {\fontsize{38}{45}\selectfont\bfseries\color{truyenred!80!black}
+    Chuyện Kể}\\[0.8cm]
+
+  {\fontsize{16}{20}\selectfont\color{truyengold!90!black}\itshape
+    Từ Cổ Chí Kim --- Những Bài Học Làm Người}\\[1cm]
+
+  {\color{truyenblue!60}\rule{6cm}{1pt}}\\[5pt]
+  {\color{truyengold!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
+  {\color{truyenblue!60}\rule{6cm}{1pt}}\\[1.5cm]
+
+  {\normalsize\itshape\color{truyenblue!90!black}
+   ``Người ta không học được gì từ lịch sử,\\
+   \textit{(People learn nothing from history,)}\\[0.2cm]
+   ngoại trừ những ai chịu lắng nghe lịch sử.''\\
+   \textit{(except those who choose to truly listen to it.)}\\[0.5cm]
+   --- \textit{Georg Hegel} ---}
+
+  \vfill
+
+  {\fontsize{16}{20}\selectfont\bfseries\color{truyenblue!90!black}
+    Sưu tầm \& Tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
+  {\small\color{truyenred!70!black}\itshape
+    (Bộ sách đang tiếp tục được hoàn thiện)}\\[0.2cm]
+  {\small\color{gray} Bản mềm phát hành --- Năm 2026}\\[0.5cm]
+\end{center}
+
+\afterpage{\nopagecolor}
+\end{titlepage}

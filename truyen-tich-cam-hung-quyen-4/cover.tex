@@ -1,0 +1,92 @@
+%============================================================
+% TRANG BÌA QUYỂN IV
+%============================================================
+\begin{titlepage}
+\thispagestyle{empty}
+\pagecolor{truyenblue!8}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[white, opacity=0.55, rounded corners=20pt]
+    ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
+    ($(current page.south east)+(-1.5cm,1.5cm)$);
+
+  \draw[truyengold!80!black, line width=3pt, rounded corners=15pt]
+    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
+    ($(current page.south east)+(-1.8cm,1.8cm)$);
+
+  \draw[truyengold, line width=1pt, rounded corners=12pt]
+    ($(current page.north west)+(2cm,-2cm)$) rectangle
+    ($(current page.south east)+(-2cm,2cm)$);
+
+  \foreach \x/\xsign/\ysign in {
+    north west/1/-1,
+    north east/-1/-1,
+    south west/1/1,
+    south east/-1/1%
+  } {
+    \draw[truyengold!80!black, line width=1.5pt]
+      ($(current page.\x) + (\xsign*0.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*0.8cm)$);
+    \fill[truyengold!60!white]
+      ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
+  }
+
+  \node[anchor=center] at ($(current page.center)-(0, 2cm)$) {
+    \begin{tikzpicture}
+      \draw[truyenblue!20, line width=0.5pt] (0,0) circle (5cm);
+      \draw[truyengold!40, line width=1pt] (0,0) circle (4.8cm);
+    \end{tikzpicture}
+  };
+\end{tikzpicture}
+
+\vspace*{2cm}
+
+\begin{center}
+  {\color{truyengold!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
+  {\fontsize{14}{16}\selectfont\color{truyenblue!80!black}\scshape
+   \textbf{Triết Lý Nhân Sinh \& Đối Nhân Xử Thế}}\\[1.5cm]
+
+  \begin{tcolorbox}[
+    width=6.5cm,
+    colback=truyengold!20,
+    colframe=truyengold!80!black,
+    arc=4pt,
+    boxrule=1.5pt,
+    halign=center
+  ]
+    {\fontsize{18}{22}\selectfont\bfseries\color{truyenred!80!black}
+     QUYỂN IV}
+  \end{tcolorbox}
+  \vspace{0.8cm}
+
+  {\fontsize{42}{50}\selectfont\bfseries\color{truyenred!80!black}
+    Điển Tích \&}\\[0.4cm]
+  {\fontsize{38}{45}\selectfont\bfseries\color{truyenred!80!black}
+    Chuyện Kể}\\[0.8cm]
+
+  {\fontsize{18}{22}\selectfont\color{truyengold!90!black}\itshape
+    Câu Chuyện Từ Cổ Chí Kim Đến Hiện Đại}\\[1cm]
+
+  {\color{truyenblue!60}\rule{6cm}{1pt}}\\[5pt]
+  {\color{truyengold!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
+  {\color{truyenblue!60}\rule{6cm}{1pt}}\\[1.5cm]
+
+  {\normalsize\itshape\color{truyenblue!90!black}
+   ``Sống không phải là để tồn tại mà để ý nghĩa ---\\
+   \textit{(Life is not to merely exist but to be meaningful ---)}\\[0.2cm]
+   Mỗi câu chuyện là một ngọn đèn soi đường.''\\
+   \textit{(Each story is a lamp lighting the way.)}''%
+  }
+
+  \vfill
+
+  {\fontsize{16}{20}\selectfont\bfseries\color{truyenblue!90!black}
+    Sưu tầm \& Tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
+  {\small\color{truyenred!70!black}\itshape
+    (Bộ sách đang tiếp tục được hoàn thiện)}\\[0.2cm]
+  {\small\color{gray} Bản mềm phát hành --- Năm 2026}\\[0.5cm]
+\end{center}
+
+\afterpage{\nopagecolor}
+\end{titlepage}

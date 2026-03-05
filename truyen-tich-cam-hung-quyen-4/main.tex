@@ -1,0 +1,143 @@
+%============================================================
+% TRUYỆN TÍCH CẢM HỨNG QUYỂN 4
+% Triết Lý Nhân Sinh và Đối Nhân Xử Thế
+% Câu chuyện thực tế từ Cổ Chí Kim đến Hiện Đại
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+
+\geometry{
+  a4paper,
+  left=2.5cm,
+  right=2.5cm,
+  top=3cm,
+  bottom=3cm,
+  headheight=15pt
+}
+
+%------------------------------------------------------------
+% MÀU SẮC
+%------------------------------------------------------------
+\definecolor{truyenblue}{RGB}{20, 55, 100}
+\definecolor{truyenred}{RGB}{130, 20, 30}
+\colorlet{TRUYENRED}{truyenred}
+\definecolor{truyengold}{RGB}{175, 130, 20}
+\definecolor{boxbg}{RGB}{252, 248, 240}
+
+%------------------------------------------------------------
+% HEADER/FOOTER
+%------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{truyenblue}\itshape\small Quyển IV: Triết Lý Nhân Sinh \& Đối Nhân Xử Thế}
+\fancyhead[RE,LO]{\color{truyenred}\itshape\small \leftmark}
+\fancyfoot[C]{\color{truyengold}\textbf{-- \thepage\ --}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{truyengold}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+%------------------------------------------------------------
+% TIÊU ĐỀ CHƯƠNG
+%------------------------------------------------------------
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{truyenred}\centering}
+  {\large\itshape Chương \thechapter}
+  {1ex}
+  {\Huge\scshape}[\vspace{1ex}{\color{truyengold}\rule{0.5\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\color{truyenblue}\Large\bfseries}
+  {\thesection.}
+  {1em}
+  {}
+\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+
+%------------------------------------------------------------
+% HỘP TRUYỆN VÀ BÀI HỌC
+%------------------------------------------------------------
+\newtcolorbox{truyen}[2]{
+  colback=boxbg,
+  colframe=truyenblue,
+  coltitle=white,
+  fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},
+  arc=5pt,
+  boxrule=1.2pt,
+  breakable,
+  enhanced,
+  drop shadow=black!15
+}
+
+\newtcolorbox{baihoc}{
+  colback=truyenred!5,
+  colframe=truyenred,
+  title={\bfseries BÀI HỌC RÚT RA (Lesson Learned)},
+  fonttitle=\bfseries,
+  coltitle=white,
+  arc=3pt,
+  boxrule=1pt,
+  left=10pt, right=10pt, top=10pt, bottom=10pt,
+  breakable
+}
+
+\newcommand{\ngancach}{
+  \vspace{0.4cm}
+  \begin{center}
+    {\color{truyengold}\rule{4cm}{0.5pt} \small $\diamond$ \rule{4cm}{0.5pt}}
+  \end{center}
+  \vspace{0.4cm}
+}
+
+\newcommand{\chuhoa}[2]{%
+  \lettrine[lines=2, lhang=0.1, nindent=0em, findent=0.5em]%
+  {\color{truyenred}\textbf{#1}}{#2}%
+}
+
+%------------------------------------------------------------
+% TÀI LIỆU
+%------------------------------------------------------------
+\begin{document}
+
+\include{cover}
+
+\cleardoublepage
+\begingroup
+  \renewcommand{\contentsname}{\centering\color{truyenred}Mục Lục}
+  \tableofcontents
+\endgroup
+
+\cleardoublepage
+
+\include{chapters/ch01-nhan-qua}
+\include{chapters/ch02-khiem-ton-tri-tue}
+\include{chapters/ch03-long-biet-on}
+\include{chapters/ch04-kien-nhan-thanh-cong}
+\include{chapters/ch05-doi-nhan-xu-the}
+\include{chapters/ch06-su-tha-thu}
+\include{chapters/ch07-long-tot-nhan-tu}
+\include{chapters/ch08-trach-nhiem-danh-du}
+\include{chapters/ch09-y-nghia-cuoc-song}
+\include{chapters/ch10-tri-tue-thuc-hanh}
+
+\end{document}

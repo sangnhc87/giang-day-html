@@ -1,111 +1,111 @@
 \babel@toc {vietnamese}{}\relax 
-\contentsline {chapter}{\numberline {1}Bai Hoc: Khoan Dung --- Suc Manh Cua Su Tha Thu (Forgiveness --- The Greatest Power)}{9}{}%
-\contentsline {section}{\numberline {1.1}Lincoln Va Ke Thu Chinh Tri}{9}{}%
-\contentsline {section}{\numberline {1.2}Mandela Ra Tu Khong Cam Thu}{10}{}%
-\contentsline {section}{\numberline {1.3}Khong Tu Tha Hoc Tro Phan Boi}{11}{}%
-\contentsline {section}{\numberline {1.4}Vua Ly Thai To Tha Ke Thu Cu}{12}{}%
-\contentsline {section}{\numberline {1.5}Corrie Ten Boom Tha Ten Linh Duc}{13}{}%
-\contentsline {section}{\numberline {1.6}Gandhi Va Nguoi Linh Bao Hanh}{14}{}%
-\contentsline {section}{\numberline {1.7}Tong Tu Truong --- Chi Mot Noi Lan}{15}{}%
-\contentsline {section}{\numberline {1.8}Archbishop Tutu Va Uy Ban Hoa Giai}{16}{}%
-\contentsline {section}{\numberline {1.9}Hoang De Minh --- Dai An Xa Cho Sinh Linh}{17}{}%
-\contentsline {section}{\numberline {1.10}Vo Nguyen Giap Tha Tu Binh Phap}{18}{}%
-\contentsline {chapter}{\numberline {2}Bai Hoc: Biet Lang Nghe --- Nghe De Hieu, Khong Chi Nghe De Tra Loi (Listening to Understand, Not to Reply)}{21}{}%
-\contentsline {section}{\numberline {2.1}Socrates Va Nghe Thuat Dat Cau Hoi}{21}{}%
-\contentsline {section}{\numberline {2.2}Lincoln Nghe Dan Truoc Khi Quyet Dinh}{22}{}%
-\contentsline {section}{\numberline {2.3}Khong Tu Hoc Tu Bo Con}{23}{}%
-\contentsline {section}{\numberline {2.4}Theodore Roosevelt Nho Ten Tat Ca Moi Nguoi}{24}{}%
-\contentsline {section}{\numberline {2.5}Bac Ho Nghe Dan Khieu Kien}{25}{}%
-\contentsline {section}{\numberline {2.6}Kofi Annan Va Nghe Thuat Hoa Giai}{26}{}%
-\contentsline {section}{\numberline {2.7}Bac Si William Osler Va Kien Nhan Voi Benh Nhan}{27}{}%
-\contentsline {section}{\numberline {2.8}Diogenes Cha Biet Nhung Nguoi Noi Nhieu}{28}{}%
-\contentsline {section}{\numberline {2.9}Florence Nightingale Va Suc Manh Cua Hoi Tham}{29}{}%
-\contentsline {section}{\numberline {2.10}Teng Wen-Kung Hoi Khong Tu Ve Lam Nguoi}{30}{}%
-\contentsline {chapter}{\numberline {3}Bai Hoc: Loi Noi Va Hanh Dong --- Hanh Dong Noi To Hon Loi Noi (Actions Speak Louder Than Words)}{33}{}%
-\contentsline {section}{\numberline {3.1}Gandhi --- Hay La Su Thay Doi Ban Muon Thay}{33}{}%
-\contentsline {section}{\numberline {3.2}Lincoln Va Buc Thu Khong Gui}{34}{}%
-\contentsline {section}{\numberline {3.3}Socrates Va Tam Cai Ro Cua Tin Tuc}{35}{}%
-\contentsline {section}{\numberline {3.4}Thomas Edison --- Lam Duc Ket Qua Bai Hoc}{36}{}%
-\contentsline {section}{\numberline {3.5}Nguyen Trai --- Tu La Trung Va Nghia Quan}{37}{}%
-\contentsline {section}{\numberline {3.6}Marcus Aurelius --- De Quoc Rung Manh Nhung Tam Long Binh Than}{38}{}%
-\contentsline {section}{\numberline {3.7}Churchill --- Loi Noi Cuu Nuoc Anh}{39}{}%
-\contentsline {section}{\numberline {3.8}Mark Twain --- Noi Dieu Ban tin, Khong Noi Dieu Ban Muon}{40}{}%
-\contentsline {section}{\numberline {3.9}Ho Xuan Huong --- Tho La Chien Luoc Xa Hoi}{41}{}%
-\contentsline {section}{\numberline {3.10}Bertrand Russell --- Hanh Dong Theo Nhung Gi Ban Tin}{42}{}%
-\contentsline {chapter}{\numberline {4}Bai Hoc: Ban Be Tri Ky --- Nguoi Hieu Ta La Vo Gia (True Friendship --- A Priceless Understanding)}{45}{}%
-\contentsline {section}{\numberline {4.1}Ba Ya Va Tu Ky --- Am Nhac Tri Am}{45}{}%
-\contentsline {section}{\numberline {4.2}Orville Va Wilbur Wright --- Anh Em Cung Uoc Mo}{46}{}%
-\contentsline {section}{\numberline {4.3}Marie Curie Va Nguoi Ban Gay Dung Su Nghiep}{47}{}%
-\contentsline {section}{\numberline {4.4}Luu Binh Va Duong Le --- Hung Co Biet Chia Sot Kho}{48}{}%
-\contentsline {section}{\numberline {4.5}Alexander Dai De Va Hephaestion}{49}{}%
-\contentsline {section}{\numberline {4.6}Abraham Lincoln Va Joshua Speed}{50}{}%
-\contentsline {section}{\numberline {4.7}Nguyen Du Va Tinh Tri Am Qua He Thong Chuyen}{51}{}%
-\contentsline {section}{\numberline {4.8}David Va Jonatan --- Tinh Ban Vuot Quyen Loi}{52}{}%
-\contentsline {section}{\numberline {4.9}Goethe Va Schiller --- Doi Ban Biet Nhau Qua Trang Giay}{53}{}%
-\contentsline {section}{\numberline {4.10}Franklin Roosevelt Va Louis Howe}{54}{}%
-\contentsline {chapter}{\numberline {5}Bai Hoc: Nhan Qua --- Nhung Gi Ban Gieo, Ban Se Gat (Karma --- What You Sow, You Reap)}{57}{}%
-\contentsline {section}{\numberline {5.1}Nguoi Nong Dan Cuu Fleming Cuu Churchill}{57}{}%
-\contentsline {section}{\numberline {5.2}Nguoi Trong Cay Bong Mat Cho Doi Sau}{58}{}%
-\contentsline {section}{\numberline {5.3}Andrew Carnegie Va Nguon Goc Cua Long Tu Thien}{59}{}%
-\contentsline {section}{\numberline {5.4}Khong Tu Va Vu Khi Vo Hinh}{60}{}%
-\contentsline {section}{\numberline {5.5}Thien Si Nhat Ban Ci Matsutaro Shoriki}{62}{}%
-\contentsline {section}{\numberline {5.6}Nguoi Tho Ren Va Ke Trom}{63}{}%
-\contentsline {section}{\numberline {5.7}Martin Luther King Va Nhan Qua Bat Bao Luc}{64}{}%
-\contentsline {section}{\numberline {5.8}Nguoi Dan Ba Trung Quoc Va Bao Gio Cung Tra On}{65}{}%
-\contentsline {section}{\numberline {5.9}Hanh Dong Vo Tu Cua Nguoi Xay Gieng}{66}{}%
-\contentsline {section}{\numberline {5.10}Nguoi Dau Bep Va Cach Tra On Cuoc Song}{66}{}%
-\contentsline {chapter}{\numberline {6}Bai Hoc: Vuot Qua Nghich Canh --- Su Gap Kho La Giao Vien Tot Nhat (Overcoming Adversity --- Hardship Is the Greatest Teacher)}{69}{}%
-\contentsline {section}{\numberline {6.1}Helen Keller --- Dem Toi Khong The Dap Tat Anh Sang}{70}{}%
-\contentsline {section}{\numberline {6.2}Beethoven Diec Ma Van Sang Tac}{71}{}%
-\contentsline {section}{\numberline {6.3}J.K. Rowling --- 12 Lan Bi Tu Choi}{72}{}%
-\contentsline {section}{\numberline {6.4}Abraham Lincoln --- Dong Thoi Gian Lon Nhat Ve That Bai}{73}{}%
-\contentsline {section}{\numberline {6.5}Nick Vujicic --- Khong Tay Khong Chan Nhung Co Hi Vong}{74}{}%
-\contentsline {section}{\numberline {6.6}Stephen Hawking --- Vat Ly Hoc Tu Xe Lan}{75}{}%
-\contentsline {section}{\numberline {6.7}Malala Yousafzai --- Tien Vao Truong Hoc Bat Chap Dan}{76}{}%
-\contentsline {section}{\numberline {6.8}Thomas Edison --- 10.000 Thu Nghiem Truoc Den Dien}{77}{}%
-\contentsline {section}{\numberline {6.9}Nguyen Ngoc Ky --- Viet Bang Chan}{78}{}%
-\contentsline {section}{\numberline {6.10}Florence Nightingale Chong Lai He Thong Y Te}{79}{}%
-\contentsline {chapter}{\numberline {7}Bai Hoc: Tu Biet Minh --- Tri Tue Bat Dau Tu Su Khiem Ton (Self-Knowledge --- Wisdom Begins with Humility)}{81}{}%
-\contentsline {section}{\numberline {7.1}Socrates --- Ta Biet Ta Khong Biet Gi}{81}{}%
-\contentsline {section}{\numberline {7.2}Benjamin Franklin Va Nhat Ky Tu Hoan Thien}{82}{}%
-\contentsline {section}{\numberline {7.3}Marcus Aurelius --- Hoang De Tu Van Minh}{83}{}%
-\contentsline {section}{\numberline {7.4}Confucius --- Moi Ngay Tu Kiem Ba Dieu}{84}{}%
-\contentsline {section}{\numberline {7.5}Gandhi --- Tu Thuong Luong Voi Ban Than}{85}{}%
-\contentsline {section}{\numberline {7.6}Albert Einstein --- Biet Dieu Minh Khong Gioi}{86}{}%
-\contentsline {section}{\numberline {7.7}Tolstoy --- Nha Van Xet Xu Chinh Minh}{87}{}%
-\contentsline {section}{\numberline {7.8}King Le Thanh Tong --- Vua Hoc Cung Dan}{88}{}%
-\contentsline {section}{\numberline {7.9}Confucius --- 70 Tuoi Moi Theo Long Muon}{89}{}%
-\contentsline {section}{\numberline {7.10}Diogenes --- Nguoi Tim Nguoi Trung Thuc}{90}{}%
-\contentsline {chapter}{\numberline {8}Bai Hoc: Thien Luong --- Tam Long Tot Lanh La Tai San Quy Nhat (Goodness of Heart --- The Most Precious Wealth)}{93}{}%
-\contentsline {section}{\numberline {8.1}Mother Teresa --- Phuc Vu Nguoi Ngheo La Phuc Vu Chua}{94}{}%
-\contentsline {section}{\numberline {8.2}Albert Schweitzer --- Bac Si Rung Xanh Chau Phi}{95}{}%
-\contentsline {section}{\numberline {8.3}Dr. Norman Bethune --- Bac Si Quoc Te O Mat Tran Trung Quoc}{96}{}%
-\contentsline {section}{\numberline {8.4}Miep Gies --- Nguoi Giau An No Co Anne Frank}{97}{}%
-\contentsline {section}{\numberline {8.5}Nicholas Winton --- Nguoi Cu'u 669 Tre Em Khoi Phat Xit}{98}{}%
-\contentsline {section}{\numberline {8.6}Clara Barton --- Nu Than Ho Nuoc My}{99}{}%
-\contentsline {section}{\numberline {8.7}Raoul Wallenberg --- Nha Ngoai Giao Cuu 100.000 Nguoi Do Thai}{100}{}%
-\contentsline {section}{\numberline {8.8}Nguyen Trai --- Minh Oan Cho Dan Trong Thu Yen Be}{101}{}%
-\contentsline {section}{\numberline {8.9}Su Tich An Toan Tre Em --- Eglantyne Jebb}{102}{}%
-\contentsline {section}{\numberline {8.10}Phanh Boi Chau --- Long yeu Nuoc La Su Thien Luong Cao Ca}{103}{}%
-\contentsline {chapter}{\numberline {9}Bai Hoc: Tri Tue Co Nhan --- Kho Tang Muon Doi Khong Can (Ancient Wisdom --- Timeless Treasure)}{105}{}%
-\contentsline {section}{\numberline {9.1}Ton Tu --- Biet Nguoi Biet Ta Tram Tran Tram Thang}{105}{}%
-\contentsline {section}{\numberline {9.2}Lao Tu --- Nuoc Mem Thang Da Cung}{106}{}%
-\contentsline {section}{\numberline {9.3}Khong Tu --- Truoc Het Hay Lam Giang}{107}{}%
-\contentsline {section}{\numberline {9.4}Trang Tu --- Chuyen Bay Cua Con Buo'm}{108}{}%
-\contentsline {section}{\numberline {9.5}Manh Tu --- Tinh Nguoi Von Thien}{109}{}%
-\contentsline {section}{\numberline {9.6}Han Phi Tu --- Phap Tri La Nen Tang Cua Nuoc Manh}{110}{}%
-\contentsline {section}{\numberline {9.7}Aristotle --- Hanh Dong La Tap Quen, Khong Phai Ta Tu Nhien}{111}{}%
-\contentsline {section}{\numberline {9.8}Ibn Sina --- Bac Si Va Triet Gia Cu'u Nhiet}{112}{}%
-\contentsline {section}{\numberline {9.9}Plato --- Hang Dong Va Su That}{113}{}%
-\contentsline {section}{\numberline {9.10}Nguyen Binh Khiem --- Tinh Toan Cu'a Thanh Nhan}{114}{}%
-\contentsline {chapter}{\numberline {10}Bai Hoc: Kien Tao Cuoc Doi --- Ban La Kien Truc Su Cua Chinh Minh (Building One's Life --- You Are Your Own Architect)}{117}{}%
-\contentsline {section}{\numberline {10.1}Steve Jobs --- Stay Hungry, Stay Foolish}{118}{}%
-\contentsline {section}{\numberline {10.2}Walt Disney --- Bi Sa Thai Roi Tro Thanh Bieu Tuong}{119}{}%
-\contentsline {section}{\numberline {10.3}Oprah Winfrey --- Tu Ngheo Kho Den Bieu Tuong TG}{120}{}%
-\contentsline {section}{\numberline {10.4}Thomas Edison --- Kho Tang Cua Su Kien Nhan}{121}{}%
-\contentsline {section}{\numberline {10.5}J.K. Rowling --- Viet Trong Quan Ca Phe}{122}{}%
-\contentsline {section}{\numberline {10.6}Elon Musk --- Ho Tho Cuoi Cung Truoc Boc Cua}{123}{}%
-\contentsline {section}{\numberline {10.7}Warren Buffett --- Kien Nhan La Vo Khi Bi Mat}{124}{}%
-\contentsline {section}{\numberline {10.8}Ho Chi Minh --- Hanh Trinh 30 Nam Tim Duong Cuu Nuoc}{125}{}%
-\contentsline {section}{\numberline {10.9}Marie Curie --- Hai Giai Nobel, Mot Nguoi Phu Nu}{126}{}%
-\contentsline {section}{\numberline {10.10}Nguyen Truong To --- Nha Cai Cach Viet Nam TK 19}{127}{}%
+\contentsline {chapter}{\numberline {1}Bài Học: Khoan Dung --- Sức Mạnh Của Sự Tha Thứ (Forgiveness --- The Greatest Power)}{9}{}%
+\contentsline {section}{\numberline {1.1}Lincoln Và Kẻ Thù Chính Trị}{9}{}%
+\contentsline {section}{\numberline {1.2}Mandela Ra Tù Không Căm Thù}{10}{}%
+\contentsline {section}{\numberline {1.3}Khổng Tử Tha Học Trò Phản Bội}{11}{}%
+\contentsline {section}{\numberline {1.4}Vua Lý Thái Tổ Ân Xá Kẻ Thù}{12}{}%
+\contentsline {section}{\numberline {1.5}Corrie Ten Boom Tha Tên Lính Đức}{13}{}%
+\contentsline {section}{\numberline {1.6}Gandhi Và Người Quan Toà Anh Quốc}{14}{}%
+\contentsline {section}{\numberline {1.7}Tống Tử Trường Tha Kẻ Vu Cáo}{15}{}%
+\contentsline {section}{\numberline {1.8}Archbishop Tutu Và Uỷ Ban Hoà Giải}{16}{}%
+\contentsline {section}{\numberline {1.9}Minh Thái Tổ Ân Xá Quân Địch}{17}{}%
+\contentsline {section}{\numberline {1.10}Võ Nguyên Giáp Đối Xử Nhân Đạo Với Tù Binh}{18}{}%
+\contentsline {chapter}{\numberline {2}Bài Học: Biết Lắng Nghe --- Nghe Để Hiểu, Không Chỉ Nghe Để Trả Lời (Listening to Understand, Not to Reply)}{21}{}%
+\contentsline {section}{\numberline {2.1}Socrates Và Nghệ Thuật Đặt Câu Hỏi}{21}{}%
+\contentsline {section}{\numberline {2.2}Lincoln Lắng Nghe Dân Trước Khi Quyết Định}{22}{}%
+\contentsline {section}{\numberline {2.3}Khổng Tử Học Bài Từ Một Đứa Trẻ}{23}{}%
+\contentsline {section}{\numberline {2.4}Theodore Roosevelt Nhớ Tên Mọi Người}{24}{}%
+\contentsline {section}{\numberline {2.5}Bác Hồ Lắng Nghe Nỗi Oan Của Người Dân}{25}{}%
+\contentsline {section}{\numberline {2.6}Kofi Annan Và Nghệ Thuật Hoà Giải Quốc Tế}{26}{}%
+\contentsline {section}{\numberline {2.7}Bác Sĩ Osler Và Bệnh Nhân Không Bị Ngắt Lời}{27}{}%
+\contentsline {section}{\numberline {2.8}Diogenes Và Bài Học Im Lặng Trước Khi Hiểu}{28}{}%
+\contentsline {section}{\numberline {2.9}Florence Nightingale Và Sức Mạnh Của Sự Hỏi Thăm}{29}{}%
+\contentsline {section}{\numberline {2.10}Thái Tử Đằng Văn Công Học Cách Lắng Nghe}{30}{}%
+\contentsline {chapter}{\numberline {3}Bài Học: Lời Nói Và Hành Động --- Hành Động Nói To Hơn Lời Nói (Actions Speak Louder Than Words)}{33}{}%
+\contentsline {section}{\numberline {3.1}Gandhi --- Hãy Là Sự Thay Đổi Bạn Muốn Thấy}{33}{}%
+\contentsline {section}{\numberline {3.2}Lincoln Và Những Bức Thư Không Bao Giờ Gửi}{34}{}%
+\contentsline {section}{\numberline {3.3}Socrates Và Ba Cái Rổ Lọc Lời Nói}{35}{}%
+\contentsline {section}{\numberline {3.4}Thomas Edison --- Thất Bại Chỉ Là Bài Học Chưa Hoàn Chỉnh}{36}{}%
+\contentsline {section}{\numberline {3.5}Nguyễn Trãi --- Nhân Nghĩa Là Nền Tảng Của Sức Mạnh}{37}{}%
+\contentsline {section}{\numberline {3.6}Marcus Aurelius --- Triết Học Gặp Chiến Trường}{38}{}%
+\contentsline {section}{\numberline {3.7}Churchill --- Lời Nói Cứu Nước Anh}{39}{}%
+\contentsline {section}{\numberline {3.8}Mark Twain --- Một Từ Đúng Thay Đổi Cả Câu Chuyện}{40}{}%
+\contentsline {section}{\numberline {3.9}Hồ Xuân Hương --- Thơ Ca Là Vũ Khí Xã Hội}{41}{}%
+\contentsline {section}{\numberline {3.10}Bertrand Russell --- Hành Động Theo Lương Tâm Dù Bị Cô Lập}{42}{}%
+\contentsline {chapter}{\numberline {4}Bài Học: Bạn Bè Tri Kỷ --- Người Hiểu Ta Là Vô Giá (True Friends --- Those Who Truly Know You)}{45}{}%
+\contentsline {section}{\numberline {4.1}Bá Nha Và Tử Kỳ --- Đôi Bạn Tri Âm Muôn Đời}{45}{}%
+\contentsline {section}{\numberline {4.2}Anh Em Nhà Wright --- Cùng Bay Lên Trời}{46}{}%
+\contentsline {section}{\numberline {4.3}Marie Curie Và Tình Bạn Khoa Học Với Chồng}{47}{}%
+\contentsline {section}{\numberline {4.4}Lưu Bình Và Dương Lễ --- Tình Bạn Thử Lửa}{48}{}%
+\contentsline {section}{\numberline {4.5}Alexander Đại Đế Và Hephaestion --- Tình Huynh Đệ Chiến Trận}{49}{}%
+\contentsline {section}{\numberline {4.6}Lincoln Và Joshua Speed --- Bạn Thân Giữa Khủng Hoảng}{50}{}%
+\contentsline {section}{\numberline {4.7}Nguyễn Du Và Nhà Thơ Nguyễn Hành --- Tri Kỷ Trong Văn Chương}{51}{}%
+\contentsline {section}{\numberline {4.8}David Và Jonathan --- Tình Bạn Vượt Qua Lòng Ghen Ghét}{52}{}%
+\contentsline {section}{\numberline {4.9}Goethe Và Schiller --- Tình Bạn Văn Học Vĩ Đại}{53}{}%
+\contentsline {section}{\numberline {4.10}Roosevelt Và Louis Howe --- Người Bạn Nói Thật}{54}{}%
+\contentsline {chapter}{\numberline {5}Bài Học: Nhân Quả --- Những Gì Bạn Gieo, Bạn Sẽ Gặt (Cause and Effect --- You Reap What You Sow)}{57}{}%
+\contentsline {section}{\numberline {5.1}Fleming Và Churchill --- Nhân Quả Xuyên Thế Hệ}{58}{}%
+\contentsline {section}{\numberline {5.2}Cụ Già Và Cây Hồ Đào --- Trồng Cây Cho Đời Sau}{59}{}%
+\contentsline {section}{\numberline {5.3}Andrew Carnegie Và Thư Viện Miễn Phí}{60}{}%
+\contentsline {section}{\numberline {5.4}Khổng Tử Và Học Trò Nghèo Nàn Nhất}{61}{}%
+\contentsline {section}{\numberline {5.5}Matsutaro Shoriki Và Báo Yomiuri}{62}{}%
+\contentsline {section}{\numberline {5.6}Người Thợ Rèn La Mã Và Lưỡi Kiếm}{63}{}%
+\contentsline {section}{\numberline {5.7}Martin Luther King Jr. Và Hạt Giống Bình Đẳng}{64}{}%
+\contentsline {section}{\numberline {5.8}Người Phụ Nữ Và Bát Cơm Cứu Người}{65}{}%
+\contentsline {section}{\numberline {5.9}Người Đào Giếng Và Làng Khát Nước}{66}{}%
+\contentsline {section}{\numberline {5.10}Người Đầu Bếp Nhật Và Sự Kiên Định Về Chất Lượng}{67}{}%
+\contentsline {chapter}{\numberline {6}Bài Học: Vượt Qua Nghịch Cảnh --- Lửa Thử Vàng, Gian Nan Thử Sức (Overcoming Adversity --- Fire Tests Gold, Hardship Tests Character)}{69}{}%
+\contentsline {section}{\numberline {6.1}Helen Keller --- Ánh Sáng Từ Bóng Tối}{70}{}%
+\contentsline {section}{\numberline {6.2}Beethoven --- Bản Nhạc Của Người Điếc}{71}{}%
+\contentsline {section}{\numberline {6.3}J.K. Rowling --- Từ Nghèo Khổ Đến Harry Potter}{72}{}%
+\contentsline {section}{\numberline {6.4}Abraham Lincoln --- Danh Sách Thất Bại Vẫn Đứng Dậy}{73}{}%
+\contentsline {section}{\numberline {6.5}Nick Vujicic --- Không Tay Không Chân Không Giới Hạn}{74}{}%
+\contentsline {section}{\numberline {6.6}Stephen Hawking --- Trí Tuệ Vẫn Bay Trong Thân Xác Bị Giam Lỏng}{75}{}%
+\contentsline {section}{\numberline {6.7}Malala Yousafzai --- Đứng Dậy Sau Viên Đạn}{76}{}%
+\contentsline {section}{\numberline {6.8}Edison --- Nhà Máy Bị Cháy Không Tắt Được Tinh Thần}{77}{}%
+\contentsline {section}{\numberline {6.9}Nguyễn Ngọc Ký --- Viết Bằng Chân, Sống Bằng Ý Chí}{78}{}%
+\contentsline {section}{\numberline {6.10}Florence Nightingale Và Sức Kháng Cự Của Tổ Chức}{79}{}%
+\contentsline {chapter}{\numberline {7}Bài Học: Tự Biết Mình --- Trí Tuệ Bắt Đầu Từ Sự Khiêm Tốn (Know Thyself --- Wisdom Begins with Humility)}{81}{}%
+\contentsline {section}{\numberline {7.1}Socrates --- Tôi Chỉ Biết Rằng Tôi Không Biết Gì}{81}{}%
+\contentsline {section}{\numberline {7.2}Benjamin Franklin Và Danh Sách Đức Hạnh}{82}{}%
+\contentsline {section}{\numberline {7.3}Marcus Aurelius --- Hoàng Đế Triết Học}{83}{}%
+\contentsline {section}{\numberline {7.4}Tăng Sâm Và Ba Câu Hỏi Mỗi Ngày}{84}{}%
+\contentsline {section}{\numberline {7.5}Gandhi --- Thí Nghiệm Sự Thật}{85}{}%
+\contentsline {section}{\numberline {7.6}Einstein --- Tưởng Tượng Quan Trọng Hơn Kiến Thức}{86}{}%
+\contentsline {section}{\numberline {7.7}Tolstoy --- Mảnh Gương Tự Phản Chiếu Trong Tác Phẩm}{87}{}%
+\contentsline {section}{\numberline {7.8}Lê Thánh Tông --- Vua Tự Kiểm Để Trị Nước}{88}{}%
+\contentsline {section}{\numberline {7.9}Diogenes --- Đốt Đuốc Giữa Ban Ngày Tìm Người Thật}{89}{}%
+\contentsline {section}{\numberline {7.10}Khổng Tử Ở Tuổi Bảy Mươi --- Hành Trình Cả Đời Tự Hoàn Thiện}{90}{}%
+\contentsline {chapter}{\numberline {8}Bài Học: Thiện Lương --- Tâm Lòng Tốt Lành Là Sức Mạnh Thầm Lặng (Goodness of Heart --- The Silent Power)}{93}{}%
+\contentsline {section}{\numberline {8.1}Mẹ Teresa Và Người Hấp Hối Trên Đường Phố}{94}{}%
+\contentsline {section}{\numberline {8.2}Albert Schweitzer Và Bệnh Viện Trong Rừng Châu Phi}{95}{}%
+\contentsline {section}{\numberline {8.3}Bác Sĩ Norman Bethune Và Máu Trong Chiến Tranh}{96}{}%
+\contentsline {section}{\numberline {8.4}Miep Gies Và Gia Đình Frank}{97}{}%
+\contentsline {section}{\numberline {8.5}Nicholas Winton Và Chuyến Tàu Cứu Trẻ Em Do Thái}{98}{}%
+\contentsline {section}{\numberline {8.6}Clara Barton Và Nền Tảng Của Hội Chữ Thập Đỏ Mỹ}{99}{}%
+\contentsline {section}{\numberline {8.7}Raoul Wallenberg Và Hộ Chiếu Cứu Mạng}{100}{}%
+\contentsline {section}{\numberline {8.8}Nguyễn Trãi --- Nhân Nghĩa Là Nền Tảng Của Sức Mạnh}{101}{}%
+\contentsline {section}{\numberline {8.9}Eglantyne Jebb Và Tổ Chức Cứu Trợ Trẻ Em}{102}{}%
+\contentsline {section}{\numberline {8.10}Phan Bội Châu --- Lòng Yêu Nước Là Phẩm Chất Thiện Lương Cao Nhất}{103}{}%
+\contentsline {chapter}{\numberline {9}Bài Học: Trí Tuệ Cổ Nhân --- Kho Tàng Muôn Đời (Ancient Wisdom --- Timeless Treasure)}{105}{}%
+\contentsline {section}{\numberline {9.1}Tôn Tử Và Nghệ Thuật Chiến Tranh}{105}{}%
+\contentsline {section}{\numberline {9.2}Lão Tử Và Đạo Đức Kinh}{106}{}%
+\contentsline {section}{\numberline {9.3}Khổng Tử Và Năm Đức Hạnh Của Người Quân Tử}{107}{}%
+\contentsline {section}{\numberline {9.4}Trang Tử Và Bướm Bay Trong Giấc Mơ}{108}{}%
+\contentsline {section}{\numberline {9.5}Mạnh Tử Và Bản Tính Thiện Của Con Người}{109}{}%
+\contentsline {section}{\numberline {9.6}Hàn Phi Tử Và Nghệ Thuật Quản Trị}{110}{}%
+\contentsline {section}{\numberline {9.7}Aristotle Và Nghệ Thuật Sống Hạnh Phúc}{111}{}%
+\contentsline {section}{\numberline {9.8}Ibn Sina Và Bộ Bách Khoa Toàn Thư Y Học}{112}{}%
+\contentsline {section}{\numberline {9.9}Plato Và Cái Hang Huyền Thoại}{113}{}%
+\contentsline {section}{\numberline {9.10}Nguyễn Bỉnh Khiêm Và Triết Học Nhàn Cư}{114}{}%
+\contentsline {chapter}{\numberline {10}Bài Học: Kiến Tạo Cuộc Đời --- Bạn Là Kiến Trúc Sư Của Chính Mình (Building Your Life --- You Are Your Own Architect)}{117}{}%
+\contentsline {section}{\numberline {10.1}Steve Jobs Và Nghệ Thuật Kết Nối Những Dấu Chấm}{118}{}%
+\contentsline {section}{\numberline {10.2}Walt Disney --- Bảy Lần Phá Sản, Một Lần Đế Chế}{119}{}%
+\contentsline {section}{\numberline {10.3}Oprah Winfrey --- Từ Nghèo Khổ Đến Ảnh Hưởng}{120}{}%
+\contentsline {section}{\numberline {10.4}Thomas Edison Và Một Nghìn Bước Tới Thành Công}{121}{}%
+\contentsline {section}{\numberline {10.5}J.K. Rowling --- Hành Trình Từ Vô Danh Đến Huyền Thoại}{122}{}%
+\contentsline {section}{\numberline {10.6}Elon Musk Và Những Canh Bạc Không Ai Dám Làm}{123}{}%
+\contentsline {section}{\numberline {10.7}Warren Buffett Và Triết Học Đầu Tư Dài Hạn}{124}{}%
+\contentsline {section}{\numberline {10.8}Hồ Chí Minh Và Ý Chí Kiến Tạo Đất Nước}{125}{}%
+\contentsline {section}{\numberline {10.9}Marie Curie Và Sự Kiên Trì Trong Khoa Học}{126}{}%
+\contentsline {section}{\numberline {10.10}Nguyễn Trường Tộ Và Giấc Mơ Canh Tân Dang Dở}{127}{}%

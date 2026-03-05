@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  5 MAR 2026 19:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  5 MAR 2026 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1111,20 +1111,6 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 [3]
-
-
-! Package xcolor Error: Undefined color `TRUYENRED'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.61 ...Dong Thoi Gian Lon Nhat Ve That Bai}{73}{}
-                                                  %
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1136,7 +1122,21 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91 ...Nguoi Biet Ta Tram Tran Tram Thang}{105}{}
+l.58 ...ler --- √Ånh S√°ng T·ª´ B√≥ng T·ªëi}{70}{}
+                                                  %
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[4]
+
+
+! Package xcolor Error: Undefined color `TRUYENRED'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 ...ient Wisdom --- Timeless Treasure)}{105}{}
                                                   %
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1178,7 +1178,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.2 \chapter
-            {Bai Hoc: Khoan Dung --- Suc Manh Cua Su Tha Thu (Forgiveness --...
+            {B√†i H·ªçc: Khoan Dung --- S·ª©c M·∫°nh C·ªßa S·ª± Tha Th·ª© (F...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1196,7 +1196,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.2 \chapter
-            {Bai Hoc: Khoan Dung --- Suc Manh Cua Su Tha Thu (Forgiveness --...
+            {B√†i H·ªçc: Khoan Dung --- S·ª©c M·∫°nh C·ªßa S·ª± Tha Th·ª© (F...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1224,6 +1224,14 @@ bf {S});
 (lettrine.sty)             reported on input line 35.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
+
 [10]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -1232,6 +1240,14 @@ bf {M});
 (lettrine.sty)             reported on input line 58.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
+
 [11]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -1239,9 +1255,14 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {K});
 (lettrine.sty)             reported on input line 81.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
 
 [12]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1250,9 +1271,14 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {S});
 (lettrine.sty)             reported on input line 104.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
 
 [13]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1262,12 +1288,34 @@ bf {N});
 (lettrine.sty)             reported on input line 127.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
+
 [14]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
 bf {T});
 (lettrine.sty)             reported on input line 150.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
+
+[15]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
@@ -1280,22 +1328,44 @@ on
  []
 
 
-Underfull \vbox (badness 4378) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[15]
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
+
+[16]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
 bf {S});
 (lettrine.sty)             reported on input line 196.
 
+Underfull \hbox (badness 1320) in paragraph at lines 199--201
+\T5/lmr/m/it/14.4 (+20) (They pressed him to exterminate the entire clans of Mo
+ngol
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[16]
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
+
+[17]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
@@ -1306,9 +1376,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[17])
 
-[18]
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
+
+[18])
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
+
+[19]
 \openout2 = `chapters/ch02-lang-nghe.aux'.
 
  (./chapters/ch02-lang-nghe.tex
@@ -1319,13 +1405,17 @@ Overfull \hbox (200.52711pt too wide) in paragraph at lines 1--2
 
 
 
-[19
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-
-]
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
 
 [20
+
+
 
 ]
 Ch\uhorn \ohorn ng 2.
@@ -1336,13 +1426,27 @@ bf {S});
 (lettrine.sty)             reported on input line 12.
 
 
-[21]
+[21
+
+]
+Overfull \hbox (6.90508pt too wide) in paragraph at lines 33--33
+|[]\T5/lmr/bx/n/20.74 (-20) Lincoln L≠ng Nghe D•n Tr˜Óc Khi Quy∏t
+ []
+
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
 bf {M});
 (lettrine.sty)             reported on input line 35.
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [22]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1352,13 +1456,33 @@ bf {M});
 (lettrine.sty)             reported on input line 58.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
+
 [23]
+Overfull \hbox (0.83267pt too wide) in paragraph at lines 79--79
+|[]\T5/lmr/bx/n/20.74 (-20) Theodore Roosevelt NhÓ T∂n MÂi Ng˜Ìi| 
+ []
+
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
 bf {K});
 (lettrine.sty)             reported on input line 81.
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [24]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1368,6 +1492,14 @@ bf {H});
 (lettrine.sty)             reported on input line 104.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
+
 [25]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -1375,9 +1507,14 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {K});
 (lettrine.sty)             reported on input line 127.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [26]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1386,9 +1523,14 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {B});
 (lettrine.sty)             reported on input line 150.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [27]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1397,9 +1539,14 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {D});
 (lettrine.sty)             reported on input line 173.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [28]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1408,9 +1555,14 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {T});
 (lettrine.sty)             reported on input line 196.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [29]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1419,11 +1571,24 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {T});
 (lettrine.sty)             reported on input line 219.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [30])
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [31]
 \openout2 = `chapters/ch03-loi-noi-hanh-dong.aux'.
@@ -1435,6 +1600,14 @@ Overfull \hbox (200.52711pt too wide) in paragraph at lines 1--2
  []
 
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [32
 
@@ -1458,6 +1631,20 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {K});
 (lettrine.sty)             reported on input line 35.
 
+Underfull \hbox (badness 2318) in paragraph at lines 35--37
+\T5/lmr/m/it/14.4 (+20) (Whenever someone angered Lincoln, he had a special hab
+it:
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 41.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{41.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.87198pt}.
 
 [34]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1467,6 +1654,14 @@ bf {M});
 (lettrine.sty)             reported on input line 58.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 41.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{41.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.87198pt}.
+
 [35]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -1474,6 +1669,14 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {S});
 (lettrine.sty)             reported on input line 81.
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 41.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{41.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.87198pt}.
 
 [36]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1483,9 +1686,17 @@ bf {K});
 (lettrine.sty)             reported on input line 104.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 41.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{41.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.87198pt}.
+
 [37]
-Overfull \hbox (8.74466pt too wide) in paragraph at lines 125--125
-|[]\T5/lmr/bx/n/20.74 (-20) Marcus Aurelius --- De Quoc Rung Manh
+Overfull \hbox (6.15152pt too wide) in paragraph at lines 125--125
+|[]\T5/lmr/bx/n/20.74 (-20) Marcus Aurelius --- Tri∏t HÂc G∞p Chi∏n
  []
 
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1495,6 +1706,14 @@ bf {N});
 (lettrine.sty)             reported on input line 127.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 41.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{41.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.87198pt}.
+
 [38]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -1502,24 +1721,30 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {T});
 (lettrine.sty)             reported on input line 150.
 
-Underfull \vbox (badness 3579) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 41.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{41.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.87198pt}.
 
 [39]
-Overfull \hbox (0.97702pt too wide) in paragraph at lines 171--171
-|[]\T5/lmr/bx/n/20.74 (-20) Mark Twain --- Noi Dieu Ban tin, Khong
- []
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
 bf {M});
 (lettrine.sty)             reported on input line 173.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 41.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{41.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.87198pt}.
 
 [40]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1528,9 +1753,14 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {H});
 (lettrine.sty)             reported on input line 196.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 41.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{41.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.87198pt}.
 
 [41]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1539,11 +1769,24 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {B});
 (lettrine.sty)             reported on input line 219.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 41.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{41.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.87198pt}.
 
 [42])
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 41.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{41.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.87198pt}.
 
 [43]
 \openout2 = `chapters/ch04-ban-be-tri-ky.aux'.
@@ -1555,6 +1798,14 @@ Overfull \hbox (200.52711pt too wide) in paragraph at lines 1--2
  []
 
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 41.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{41.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.87198pt}.
 
 [44
 
@@ -1579,13 +1830,29 @@ bf {O});
 (lettrine.sty)             reported on input line 35.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [46]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {K});
+bf {M});
 (lettrine.sty)             reported on input line 58.
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [47]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1595,6 +1862,14 @@ bf {L});
 (lettrine.sty)             reported on input line 81.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [48]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -1602,17 +1877,36 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {A});
 (lettrine.sty)             reported on input line 104.
 
+Underfull \hbox (badness 3439) in paragraph at lines 107--109
+\T5/lmr/m/it/14.4 (+20) (Throughout the great conquests, Hephaestion was always
+ at
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [49]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {K});
+bf {N});
 (lettrine.sty)             reported on input line 127.
 
-Underfull \vbox (badness 4569) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [50]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1621,65 +1915,72 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {N});
 (lettrine.sty)             reported on input line 150.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [51]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {J});
+bf {D});
 (lettrine.sty)             reported on input line 173.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [52]
-! Misplaced alignment tab character &.
-\kvtcb@title ...ay \hfill \small \itshape Goethe &
-                                                   Schiller --- Duc 1794
-l.195 ...ang Giay}{Goethe & Schiller --- Duc 1794}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {G});
+bf {J});
 (lettrine.sty)             reported on input line 196.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [53]
-! Misplaced alignment tab character &.
-\kvtcb@title ... Howe \hfill \small \itshape FDR &
-                                                   Louis Howe --- Hoa Ky 1910
-l.218 ...s Howe}{FDR & Louis Howe --- Hoa Ky 1910}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {K});
+bf {N});
 (lettrine.sty)             reported on input line 219.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [54])
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [55]
 \openout2 = `chapters/ch05-nhan-qua.aux'.
@@ -1692,6 +1993,14 @@ Overfull \hbox (200.52711pt too wide) in paragraph at lines 1--2
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [56
 
 
@@ -1699,8 +2008,8 @@ Overfull \hbox (200.52711pt too wide) in paragraph at lines 1--2
 ]
 Ch\uhorn \ohorn ng 5.
 
-Overfull \hbox (46.50972pt too wide) in paragraph at lines 10--10
-|[]\T5/lmr/bx/n/20.74 (-20) Nguoi Nong Dan Cuu Fleming Cuu Churchill| 
+Overfull \hbox (17.2997pt too wide) in paragraph at lines 10--10
+|[]\T5/lmr/bx/n/20.74 (-20) Fleming V† Churchill --- Nh•n Qu£ Xuy∂n
  []
 
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1709,10 +2018,7 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {M});
 (lettrine.sty)             reported on input line 12.
 
-Underfull \hbox (badness 1675) in paragraph at lines 24--26
-\T5/lmr/m/it/14.4 (+20) (The farmer's son became Alexander Fleming, who discove
-red
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -1725,6 +2031,17 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {M});
 (lettrine.sty)             reported on input line 35.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
 
 [58]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1733,90 +2050,160 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {A});
 (lettrine.sty)             reported on input line 58.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
 
 [59]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {M});
+bf {T});
 (lettrine.sty)             reported on input line 81.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[60]
-Overfull \hbox (1.32146pt too wide) in paragraph at lines 102--102
-|[]\T5/lmr/bx/n/20.74 (-20) Thien Si Nhat Ban Ci Matsutaro Shoriki| 
- []
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
+
+[60]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {K});
+bf {M});
 (lettrine.sty)             reported on input line 104.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
+
 [61]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {M});
+bf {T});
 (lettrine.sty)             reported on input line 127.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
+
 [62]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {K});
+bf {M});
 (lettrine.sty)             reported on input line 150.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
+
 [63]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {M});
+bf {T});
 (lettrine.sty)             reported on input line 173.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[64]
-Overfull \hbox (0.41551pt too wide) in paragraph at lines 194--194
-|[]\T5/lmr/bx/n/20.74 (-20) Hanh Dong Vo Tu Cua Nguoi Xay Gieng| 
- []
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
+
+[64]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {M});
+bf {N});
 (lettrine.sty)             reported on input line 196.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
+
 [65]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {M});
+bf {C});
 (lettrine.sty)             reported on input line 219.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
 
 [66])
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
 
 [67]
 \openout2 = `chapters/ch06-vuot-nghich-canh.aux'.
@@ -1828,6 +2215,14 @@ Overfull \hbox (200.52711pt too wide) in paragraph at lines 1--2
  []
 
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
 
 [68
 
@@ -1851,7 +2246,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {K});
+bf {L});
 (lettrine.sty)             reported on input line 35.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1860,17 +2255,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (41.0pt): 
-(fancyhdr)                Make it at least 54.18pt, for example:
-(fancyhdr)                \setlength{\headheight}{54.18pt}.
+(fancyhdr)                Make it at least 57.8053pt, for example:
+(fancyhdr)                \setlength{\headheight}{57.8053pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-13.18pt}.
+(fancyhdr)                \addtolength{\topmargin}{-16.8053pt}.
 
 [70]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {N});
+bf {J});
 (lettrine.sty)             reported on input line 58.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1879,17 +2274,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (41.0pt): 
-(fancyhdr)                Make it at least 54.18pt, for example:
-(fancyhdr)                \setlength{\headheight}{54.18pt}.
+(fancyhdr)                Make it at least 57.8053pt, for example:
+(fancyhdr)                \setlength{\headheight}{57.8053pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-13.18pt}.
+(fancyhdr)                \addtolength{\topmargin}{-16.8053pt}.
 
 [71]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {N});
+bf {A});
 (lettrine.sty)             reported on input line 81.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1898,11 +2293,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (41.0pt): 
-(fancyhdr)                Make it at least 54.18pt, for example:
-(fancyhdr)                \setlength{\headheight}{54.18pt}.
+(fancyhdr)                Make it at least 57.8053pt, for example:
+(fancyhdr)                \setlength{\headheight}{57.8053pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-13.18pt}.
+(fancyhdr)                \addtolength{\topmargin}{-16.8053pt}.
 
 [72]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1917,17 +2312,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (41.0pt): 
-(fancyhdr)                Make it at least 54.18pt, for example:
-(fancyhdr)                \setlength{\headheight}{54.18pt}.
+(fancyhdr)                Make it at least 57.8053pt, for example:
+(fancyhdr)                \setlength{\headheight}{57.8053pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-13.18pt}.
+(fancyhdr)                \addtolength{\topmargin}{-16.8053pt}.
 
 [73]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {O});
+bf {S});
 (lettrine.sty)             reported on input line 127.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1936,11 +2331,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (41.0pt): 
-(fancyhdr)                Make it at least 54.18pt, for example:
-(fancyhdr)                \setlength{\headheight}{54.18pt}.
+(fancyhdr)                Make it at least 57.8053pt, for example:
+(fancyhdr)                \setlength{\headheight}{57.8053pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-13.18pt}.
+(fancyhdr)                \addtolength{\topmargin}{-16.8053pt}.
 
 [74]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1955,17 +2350,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (41.0pt): 
-(fancyhdr)                Make it at least 54.18pt, for example:
-(fancyhdr)                \setlength{\headheight}{54.18pt}.
+(fancyhdr)                Make it at least 57.8053pt, for example:
+(fancyhdr)                \setlength{\headheight}{57.8053pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-13.18pt}.
+(fancyhdr)                \addtolength{\topmargin}{-16.8053pt}.
 
 [75]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {T});
+bf {N});
 (lettrine.sty)             reported on input line 173.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1974,11 +2369,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (41.0pt): 
-(fancyhdr)                Make it at least 54.18pt, for example:
-(fancyhdr)                \setlength{\headheight}{54.18pt}.
+(fancyhdr)                Make it at least 57.8053pt, for example:
+(fancyhdr)                \setlength{\headheight}{57.8053pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-13.18pt}.
+(fancyhdr)                \addtolength{\topmargin}{-16.8053pt}.
 
 [76]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -1993,17 +2388,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (41.0pt): 
-(fancyhdr)                Make it at least 54.18pt, for example:
-(fancyhdr)                \setlength{\headheight}{54.18pt}.
+(fancyhdr)                Make it at least 57.8053pt, for example:
+(fancyhdr)                \setlength{\headheight}{57.8053pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-13.18pt}.
+(fancyhdr)                \addtolength{\topmargin}{-16.8053pt}.
 
 [77]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {T});
+bf {K});
 (lettrine.sty)             reported on input line 219.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2012,21 +2407,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (41.0pt): 
-(fancyhdr)                Make it at least 54.18pt, for example:
-(fancyhdr)                \setlength{\headheight}{54.18pt}.
+(fancyhdr)                Make it at least 57.8053pt, for example:
+(fancyhdr)                \setlength{\headheight}{57.8053pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-13.18pt}.
+(fancyhdr)                \addtolength{\topmargin}{-16.8053pt}.
 
 [78])
 
 
 Package fancyhdr Warning: \headheight is too small (41.0pt): 
-(fancyhdr)                Make it at least 54.18pt, for example:
-(fancyhdr)                \setlength{\headheight}{54.18pt}.
+(fancyhdr)                Make it at least 57.8053pt, for example:
+(fancyhdr)                \setlength{\headheight}{57.8053pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-13.18pt}.
+(fancyhdr)                \addtolength{\topmargin}{-16.8053pt}.
 
 [79]
 \openout2 = `chapters/ch07-tu-biet-minh.aux'.
@@ -2041,11 +2436,11 @@ Overfull \hbox (200.52711pt too wide) in paragraph at lines 1--2
 
 
 Package fancyhdr Warning: \headheight is too small (41.0pt): 
-(fancyhdr)                Make it at least 54.18pt, for example:
-(fancyhdr)                \setlength{\headheight}{54.18pt}.
+(fancyhdr)                Make it at least 57.8053pt, for example:
+(fancyhdr)                \setlength{\headheight}{57.8053pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-13.18pt}.
+(fancyhdr)                \addtolength{\topmargin}{-16.8053pt}.
 
 [80
 
@@ -2053,26 +2448,35 @@ Package fancyhdr Warning: \headheight is too small (41.0pt):
 
 ]
 Ch\uhorn \ohorn ng 7.
+
+Overfull \hbox (6.76009pt too wide) in paragraph at lines 10--10
+|[]\T5/lmr/bx/n/20.74 (-20) Socrates --- TÊi Chø Bi∏t R¨ng TÊi KhÊng
+ []
+
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {N});
+bf {K});
 (lettrine.sty)             reported on input line 12.
 
 
 [81
 
 ]
-Overfull \hbox (0.94472pt too wide) in paragraph at lines 33--33
-|[]\T5/lmr/bx/n/20.74 (-20) Benjamin Franklin Va Nhat Ky Tu Hoan
- []
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {O});
+bf {N});
 (lettrine.sty)             reported on input line 35.
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [82]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -2082,33 +2486,66 @@ bf {M});
 (lettrine.sty)             reported on input line 58.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
+
 [83]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {C});
+bf {T});
 (lettrine.sty)             reported on input line 81.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
+
 [84]
-Package lettrine.sty Info: Targeted height = 24.30318pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {G});
-(lettrine.sty)             reported on input line 104.
-
-
-[85]
-Overfull \hbox (14.02577pt too wide) in paragraph at lines 125--125
-|[]\T5/lmr/bx/n/20.74 (-20) Albert Einstein --- Biet Dieu Minh Khong
+Underfull \hbox (badness 3895) in paragraph at lines 98--100
+\T5/lmr/m/it/14.4 (+20) character-building method --- for they prevent mistakes
+ from
  []
 
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {E});
+bf {T});
+(lettrine.sty)             reported on input line 104.
+
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
+
+[85]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {A});
 (lettrine.sty)             reported on input line 127.
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [86]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -2117,9 +2554,14 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {L});
 (lettrine.sty)             reported on input line 150.
 
-Underfull \vbox (badness 3826) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [87]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -2128,33 +2570,56 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {V});
 (lettrine.sty)             reported on input line 173.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [88]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {K});
+bf {D});
 (lettrine.sty)             reported on input line 196.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [89]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {D});
+bf {K});
 (lettrine.sty)             reported on input line 219.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [90])
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
 
 [91]
 \openout2 = `chapters/ch08-thien-luong.aux'.
@@ -2167,12 +2632,25 @@ Overfull \hbox (200.52711pt too wide) in paragraph at lines 1--2
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 46.19328pt, for example:
+(fancyhdr)                \setlength{\headheight}{46.19328pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.19328pt}.
+
 [92
 
 
 
 ]
 Ch\uhorn \ohorn ng 8.
+
+Overfull \hbox (12.91661pt too wide) in paragraph at lines 10--10
+|[]\T5/lmr/bx/n/20.74 (-20) Mµ Teresa V† Ng˜Ìi Hßp HËi Tr∂n ^^^˜Ìng
+ []
+
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
@@ -2196,16 +2674,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [94]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {D});
+bf {N});
 (lettrine.sty)             reported on input line 58.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [95]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -2218,27 +2712,51 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [96]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {I});
+bf {N});
 (lettrine.sty)             reported on input line 104.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [97]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {T});
+bf {C});
 (lettrine.sty)             reported on input line 127.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [98]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -2251,6 +2769,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [99]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -2258,9 +2784,17 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {N});
 (lettrine.sty)             reported on input line 173.
 
-Underfull \vbox (badness 6461) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [100]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -2269,9 +2803,17 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {E});
 (lettrine.sty)             reported on input line 196.
 
-Underfull \vbox (badness 7133) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [101]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -2280,11 +2822,24 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {P});
 (lettrine.sty)             reported on input line 219.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [102])
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [103]
 \openout2 = `chapters/ch09-tri-tue-co-nhan.aux'.
@@ -2296,6 +2851,14 @@ Overfull \hbox (200.52711pt too wide) in paragraph at lines 1--2
  []
 
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [104
 
@@ -2320,25 +2883,49 @@ bf {L});
 (lettrine.sty)             reported on input line 35.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [106]
-Package lettrine.sty Info: Targeted height = 24.30318pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {T});
-(lettrine.sty)             reported on input line 58.
-
-
-[107]
-Overfull \hbox (10.15591pt too wide) in paragraph at lines 79--79
-|[]\T5/lmr/bx/n/20.74 (-20) Trang Tu --- Chuyen Bay Cua Con Buo'm| 
+Overfull \hbox (4.85246pt too wide) in paragraph at lines 56--56
+|[]\T5/lmr/bx/n/20.74 (-20) KhÍng T˚ V† N´m ^^^˘c H§nh Cıa Ng˜Ìi
  []
 
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {M});
+bf {K});
+(lettrine.sty)             reported on input line 58.
+
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
+[107]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
 (lettrine.sty)             reported on input line 81.
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [108]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -2348,6 +2935,14 @@ bf {M});
 (lettrine.sty)             reported on input line 104.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [109]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -2356,13 +2951,29 @@ bf {H});
 (lettrine.sty)             reported on input line 127.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [110]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {C});
+bf {A});
 (lettrine.sty)             reported on input line 150.
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [111]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -2372,6 +2983,14 @@ bf {I});
 (lettrine.sty)             reported on input line 173.
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [112]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -2379,28 +2998,44 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {P});
 (lettrine.sty)             reported on input line 196.
 
-Underfull \hbox (badness 1715) in paragraph at lines 205--207
-\T5/lmr/m/it/14.4 (+20) (Plato's message: genuine wisdom is always resisted by 
-those
- []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [113]
+Overfull \hbox (8.12157pt too wide) in paragraph at lines 217--217
+|[]\T5/lmr/bx/n/20.74 (-20) Nguyπn Bønh Khi∂m V† Tri∏t HÂc Nh†n
+ []
+
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
 bf {N});
 (lettrine.sty)             reported on input line 219.
 
-Underfull \vbox (badness 6001) has occurred while \output is active []
 
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [114])
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [115]
 \openout2 = `chapters/ch10-kien-tao-cuoc-doi.aux'.
@@ -2413,21 +3048,24 @@ Overfull \hbox (200.52711pt too wide) in paragraph at lines 1--2
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [116
 
 
 
 ]
 Ch\uhorn \ohorn ng 10.
-
-Overfull \hbox (8.03725pt too wide) in paragraph at lines 10--10
-|[]\T5/lmr/bx/n/20.74 (-20) Steve Jobs --- Stay Hungry, Stay Foolish| 
- []
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {N});
+bf {S});
 (lettrine.sty)             reported on input line 12.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2440,12 +3078,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {N});
+bf {W});
 (lettrine.sty)             reported on input line 35.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [118]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -2458,6 +3104,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [119]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -2469,31 +3123,51 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [120]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {S});
+bf {J});
 (lettrine.sty)             reported on input line 104.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[121]
-Overfull \hbox (4.13763pt too wide) in paragraph at lines 125--125
-|[]\T5/lmr/bx/n/20.74 (-20) Elon Musk --- Ho Tho Cuoi Cung Truoc
- []
 
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
+[121]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
-bf {N});
+bf {E});
 (lettrine.sty)             reported on input line 127.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7064) has occurred while \output is active []
 
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [122]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -2506,6 +3180,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [123]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -2513,9 +3195,23 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 bf {N});
 (lettrine.sty)             reported on input line 173.
 
+Underfull \hbox (badness 2035) in paragraph at lines 173--175
+\T5/lmr/m/it/14.4 (+20) --- beginning with a quote from the American Declaratio
+n of
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
 
 [124]
 Package lettrine.sty Info: Targeted height = 24.30318pt
@@ -2528,22 +3224,50 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
 [125]
-Underfull \vbox (badness 1057) has occurred while \output is active []
-
-
-
-[126]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
 bf {N});
 (lettrine.sty)             reported on input line 219.
 
+Underfull \hbox (badness 2020) in paragraph at lines 225--227
+\T5/lmr/m/it/14.4 (+20) (He proposed education reform, learning Western science
+ and
+ []
 
-[127])
 
-[128] (./main.aux (./cover.aux) (./chapters/ch01-khoan-dung.aux)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
+[126])
+
+
+Package fancyhdr Warning: \headheight is too small (41.0pt): 
+(fancyhdr)                Make it at least 43.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.564pt}.
+
+[127] (./main.aux (./cover.aux) (./chapters/ch01-khoan-dung.aux)
 (./chapters/ch02-lang-nghe.aux) (./chapters/ch03-loi-noi-hanh-dong.aux)
 (./chapters/ch04-ban-be-tri-ky.aux) (./chapters/ch05-nhan-qua.aux)
 (./chapters/ch06-vuot-nghich-canh.aux) (./chapters/ch07-tu-biet-minh.aux)
@@ -2559,23 +3283,24 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 24575 strings out of 473362
- 507961 string characters out of 5720983
- 950278 words of memory out of 5000000
- 46786 multiletter control sequences out of 15000+600000
- 777206 words of font info for 307 fonts, out of 8000000 for 9000
+ 24643 strings out of 473362
+ 508891 string characters out of 5720983
+ 951278 words of memory out of 5000000
+ 46798 multiletter control sequences out of 15000+600000
+ 779294 words of font info for 335 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,13n,101p,1193b,1062s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
 cal/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texli
-ve/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2024/te
-xmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fo
-nts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/
-public/lm/lmsy10.pfb>
-Output written on main.pdf (128 pages, 478166 bytes).
+ve/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/t
+exmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2024/texmf-dist/
+fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1
+/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm
+/lmsy10.pfb>
+Output written on main.pdf (127 pages, 543837 bytes).
 PDF statistics:
- 454 PDF objects out of 1000 (max. 8388607)
- 308 compressed objects within 4 object streams
+ 456 PDF objects out of 1000 (max. 8388607)
+ 309 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  79885 words of extra memory for PDF output out of 89155 (max. 10000000)
 

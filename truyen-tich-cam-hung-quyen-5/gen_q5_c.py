@@ -28,6 +28,7 @@ def story(title, source, first_letter, pairs_body, lesson_vn, lesson_en):
 
 def fix(text):
     text = re.sub(r'(?<!\\)%', r'\\%', text)
+    text = re.sub(r'(?<!\\)&', r'\\&', text)
     return unicodedata.normalize("NFC", text)
 
 def chapter(chap_vn, chap_en, quote_vn, quote_en, stories):

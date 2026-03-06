@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  6 MAR 2026 08:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  6 MAR 2026 08:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -926,8 +926,22 @@ LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (./main.aux
+(./cover.aux)
+LaTeX Font Info:    Trying to load font information for T5+lmr on input line 6.
+
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t5lmr.fd
+File: t5lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-No file main.aux.
+(./chapters/ch01-phuc-trong-hoa.aux)
+(./chapters/ch02-thanh-cong-trong-that-bai.aux)
+(./chapters/ch03-ban-trong-thu.aux) (./chapters/ch04-yeu-trong-ghet.aux)
+(./chapters/ch05-khang-dinh-trong-phu-dinh.aux)
+(./chapters/ch06-that-trong-gia.aux) (./chapters/ch07-manh-trong-yeu.aux)
+(./chapters/ch08-bat-dau-trong-ket-thuc.aux)
+(./chapters/ch09-cho-trong-nhan.aux) (./chapters/ch10-tu-do-trong-ky-luat.aux)
+(./chapters/ch11-cu-the-trong-tong-quat.aux)
+(./chapters/ch12-don-gian-trong-phuc-tap.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
@@ -947,16 +961,12 @@ LaTeX Font Info:    ... okay on input line 103.
 LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 103.
 LaTeX Font Info:    Trying to load font information for T5+cmr on input line 10
 3.
+
 (/usr/local/texlive/2024/texmf-dist/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Trying to load font information for T5+lmr on input line 10
-3.
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t5lmr.fd
-File: t5lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count324
@@ -1097,19 +1107,36 @@ st/fonts/enc/dvips/lm/lm-mathsy.enc}])
 
 
 
-]
-No file main.toc.
+] (./main.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 2.
+
+Overfull \hbox (25.11418pt too wide) in paragraph at lines 2--2
+ [][] []\T5/lmr/bx/n/14.4 (-20) B†i HÂc: PhÛc Trong HÂa, HÂa Trong PhÛc (Every 
+Misfortune 
+ []
+
+
+
+[1]
+Overfull \hbox (21.55911pt too wide) in paragraph at lines 46--46
+ \T5/lmr/bx/n/14.4 (-20) KhØng ^^^‡nh (Affirmation in Negation, Negation in Aff
+irmation) []  
+ []
+
+
+
+[2]
+
+[3])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
 
 
-[1]
-
-[2
-
-
-]
+[4]
 \openout2 = `chapters/ch01-phuc-trong-hoa.aux'.
 
  (./chapters/ch01-phuc-trong-hoa.tex
@@ -1122,16 +1149,14 @@ Overfull \hbox (200.52711pt too wide) in paragraph at lines 1--2
 
 [1
 
+
+
 ]
 
 [2
 
 ]
 Ch\uhorn \ohorn ng 1.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 8.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 8.
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -2967,18 +2992,6 @@ Package fancyhdr Warning: \headheight is too small (41.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.736pt}.
 
 [113]
-! Misplaced alignment tab character &.
-\kvtcb@title ...©o \hfill \small \itshape Thi ca &
-                                                   ƒê·ªùi s·ªëng --- Ph∆∞∆°n...
-l.51 ...hi ca & ƒê·ªùi s·ªëng --- Ph∆∞∆°ng ƒê√¥ng}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -3250,18 +3263,6 @@ Package fancyhdr Warning: \headheight is too small (41.0pt):
 
 ]
 Ch\uhorn \ohorn ng 12.
-! Misplaced alignment tab character &.
-\kvtcb@title ...hfill \small \itshape Steve Jobs &
-                                                   iPhone --- Apple, 2007
-l.11 ...·∫Øt}{Steve Jobs & iPhone --- Apple, 2007}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -3327,16 +3328,13 @@ L3 programming layer <2024-11-02>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 24646 strings out of 473362
- 511194 string characters out of 5720983
- 945291 words of memory out of 5000000
- 46825 multiletter control sequences out of 15000+600000
- 776640 words of font info for 325 fonts, out of 8000000 for 9000
+ 24699 strings out of 473362
+ 512707 string characters out of 5720983
+ 950882 words of memory out of 5000000
+ 46840 multiletter control sequences out of 15000+600000
+ 776943 words of font info for 329 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,13n,101p,1522b,1063s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
@@ -3348,10 +3346,10 @@ fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1
 lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
 .pfb>
-Output written on main.pdf (138 pages, 613716 bytes).
+Output written on main.pdf (140 pages, 622828 bytes).
 PDF statistics:
- 500 PDF objects out of 1000 (max. 8388607)
- 338 compressed objects within 4 object streams
+ 507 PDF objects out of 1000 (max. 8388607)
+ 343 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  77837 words of extra memory for PDF output out of 89155 (max. 10000000)
 

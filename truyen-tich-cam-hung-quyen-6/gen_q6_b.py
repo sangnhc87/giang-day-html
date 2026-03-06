@@ -24,6 +24,7 @@ def make_chapter(filename, chapter_num, vn_title, en_title, stories):
         pairs = story['pairs']
         lesson_vn = story['lesson_vn']
         lesson_en = story['lesson_en']
+        lines.append(r'\section{' + fix(story_vn_title) + r'}')
         lines.append(r'\begin{truyen}{' + fix(story_vn_title) + r'}{' + fix(story_en_title) + r'}')
         first = True
         for (vn, en) in pairs:

@@ -1,0 +1,91 @@
+%============================================================
+% TRANG BÌA QUYỂN VI
+%============================================================
+\begin{titlepage}
+\thispagestyle{empty}
+\pagecolor{truyenblue!5}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[white, opacity=0.5, rounded corners=20pt]
+    ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
+    ($(current page.south east)+(-1.5cm,1.5cm)$);
+
+  \draw[truyengold!80!black, line width=3pt, rounded corners=15pt]
+    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
+    ($(current page.south east)+(-1.8cm,1.8cm)$);
+
+  \draw[truyengold, line width=1pt, rounded corners=12pt]
+    ($(current page.north west)+(2cm,-2cm)$) rectangle
+    ($(current page.south east)+(-2cm,2cm)$);
+
+  \foreach \x/\xsign/\ysign in {
+    north west/1/-1,
+    north east/-1/-1,
+    south west/1/1,
+    south east/-1/1%
+  } {
+    \draw[truyengold!80!black, line width=1.5pt]
+      ($(current page.\x) + (\xsign*0.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*0.8cm)$);
+    \fill[truyengold!60!white]
+      ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
+  }
+\end{tikzpicture}
+
+\vspace*{1.8cm}
+
+\begin{center}
+  {\color{truyengold!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
+  {\fontsize{13}{16}\selectfont\color{truyenblue!80!black}\scshape
+   \textbf{Nhân Quả --- Bản Sắc --- Buông Bỏ --- Người Thầy Vô Hình}}\\[1.3cm]
+
+  \begin{tcolorbox}[
+    width=6.5cm,
+    colback=truyengold!25,
+    colframe=truyengold!80!black,
+    arc=4pt,
+    boxrule=1.5pt,
+    halign=center
+  ]
+    {\fontsize{18}{22}\selectfont\bfseries\color{truyenred!80!black}
+     QUYỂN VI}
+  \end{tcolorbox}
+  \vspace{0.8cm}
+
+  {\fontsize{38}{46}\selectfont\bfseries\color{truyenred!80!black}
+    Điển Tích \&}\\[0.4cm]
+  {\fontsize{34}{42}\selectfont\bfseries\color{truyenred!80!black}
+    Chuyện Kể}\\[0.8cm]
+
+  {\fontsize{20}{26}\selectfont\bfseries\color{truyenblue}
+    Vòng Quay Cuộc Đời}\\[0.5cm]
+
+  {\color{truyengold!80!black}\large$\diamond\;\diamond\;\diamond$}\\[1.5cm]
+
+  \begin{tcolorbox}[
+    width=10cm,
+    colback=truyenblue!8,
+    colframe=truyenblue!50,
+    arc=6pt,
+    boxrule=1pt,
+    halign=center
+  ]
+    {\fontsize{11}{15}\selectfont\itshape\color{truyenblue!80!black}
+     ``Gieo suy nghĩ, gặt hành động.\\
+     Gieo hành động, gặt thói quen.\\
+     Gieo thói quen, gặt tính cách.\\
+     Gieo tính cách, gặt số phận.''}\\[6pt]
+    {\small --- William James}
+  \end{tcolorbox}
+
+  \vspace{1.5cm}
+  {\color{truyenblue!70}\large$\heartsuit$}\\[0.4cm]
+  {\fontsize{11}{14}\selectfont\color{truyenblue!80!black}
+    12 Chương $\cdot$ 120 Câu Chuyện Song Ngữ}\\[0.3cm]
+  {\fontsize{10}{13}\selectfont\color{truyenblue!60!black}\itshape
+    Dành tặng các học sinh yêu thích học hỏi từ cuộc đời}
+
+\end{center}
+\afterpage{\nopagecolor}
+\end{titlepage}

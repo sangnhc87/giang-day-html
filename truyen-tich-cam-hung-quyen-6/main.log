@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  6 MAR 2026 11:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  6 MAR 2026 12:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -926,8 +926,23 @@ LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (./main.aux
+(./cover.aux)
+LaTeX Font Info:    Trying to load font information for T5+lmr on input line 6.
+
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t5lmr.fd
+File: t5lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-No file main.aux.
+(./chapters/ch01-giao-dieu-tot-gap-dieu-tot.aux)
+(./chapters/ch02-hanh-dong-nho-hau-qua-lon.aux)
+(./chapters/ch03-thoi-quen-tao-so-phan.aux)
+(./chapters/ch04-toi-la-con-nguoi-toi-chon.aux)
+(./chapters/ch05-vai-dien-va-con-nguoi-that.aux)
+(./chapters/ch06-ap-luc-dam-dong-va-tu-nga.aux)
+(./chapters/ch07-mat-cua-cai-giu-pham-gia.aux)
+(./chapters/ch08-mat-di-tim-lai-ban-than.aux)
+(./chapters/ch09-thien-nhien-day-gi.aux) (./chapters/ch10-ke-thu-day-gi.aux)
+(./chapters/ch11-tre-em-day-gi.aux) (./chapters/ch12-that-bai-day-gi.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
@@ -947,16 +962,12 @@ LaTeX Font Info:    ... okay on input line 103.
 LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 103.
 LaTeX Font Info:    Trying to load font information for T5+cmr on input line 10
 3.
+
 (/usr/local/texlive/2024/texmf-dist/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Trying to load font information for T5+lmr on input line 10
-3.
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t5lmr.fd
-File: t5lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count324
@@ -1110,19 +1121,20 @@ st/fonts/enc/dvips/lm/lm-ts1.enc}])
 
 
 
-]
-No file main.toc.
+] (./main.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 2.
+
+
+[1])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
 
 
-[1]
-
-[2
-
-
-]
+[2]
 \openout2 = `chapters/ch01-giao-dieu-tot-gap-dieu-tot.aux'.
 
  (./chapters/ch01-giao-dieu-tot-gap-dieu-tot.tex
@@ -1132,10 +1144,6 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
 {N}) loversize=0.1;
 (lettrine.sty)             reported on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 28.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 28.
 
 Underfull \vbox (badness 7256) has occurred while \output is active []
 
@@ -1144,35 +1152,14 @@ Underfull \vbox (badness 7256) has occurred while \output is active []
 [1
 
 
+
+
 ]
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
 {C}) loversize=0.1;
 (lettrine.sty)             reported on input line 35.
-
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.59 ...�iều tốt nhỏ mà không ai biết."}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.59 ...�iều tốt nhỏ mà không ai biết."}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -1290,28 +1277,6 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 
 
 [12]
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.158 ...c tiến vĩ đại của nhân loại."}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.158 ...c tiến vĩ đại của nhân loại."}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -1355,28 +1320,6 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 
 ]
 Ch\uhorn \ohorn ng 3.
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.5 ...thế nào để trở nên xuất sắc?"}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.5 ...thế nào để trở nên xuất sắc?"}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -1398,28 +1341,6 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 
 
 [18]
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.83 ...ó sẽ nguội lại thành dạng cũ."}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.83 ...ó sẽ nguội lại thành dạng cũ."}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -1529,28 +1450,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [28]
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.170 ...�m, nhà nghèo, không ai giúp đỡ."}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.170 ...�m, nhà nghèo, không ai giúp đỡ."}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -1575,29 +1474,6 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
 {C}) loversize=0.1;
 (lettrine.sty)             reported on input line 224.
-
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.251 ...��y mỗi ngày mà không sụp đổ?"}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.251 ...��y mỗi ngày mà không sụp đổ?"}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -1633,28 +1509,6 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 
 
 ]
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.56 ...�y con người thật của con là ai?"}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.56 ...�y con người thật của con là ai?"}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -1677,28 +1531,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [35]
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.107 ...i gặp anh và hỏi: "Anh thế nào?"}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.107 ...i gặp anh và hỏi: "Anh thế nào?"}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -1739,28 +1571,6 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 
 
 [38]
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.239 ...kỳ vọng, và thấy trống rỗng."}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.239 ...kỳ vọng, và thấy trống rỗng."}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -1810,33 +1620,8 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 {M}) loversize=0.1;
 (lettrine.sty)             reported on input line 86.
 
-Underfull \vbox (badness 2376) has occurred while \output is active []
-
-
 
 [43]
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.113 ...ng về khí hậu cho trường học."}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.113 ...ng về khí hậu cho trường học."}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -1872,55 +1657,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [46]
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.221 ...dài, quá chậm và quá khó hiểu."}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.221 ...dài, quá chậm và quá khó hiểu."}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
 {N}) loversize=0.1;
 (lettrine.sty)             reported on input line 221.
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.248 ... hỏi con cá khác: "Nước là gì?"}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.248 ... hỏi con cá khác: "Nước là gì?"}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -2001,12 +1742,6 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
 {D}) loversize=0.1;
 (lettrine.sty)             reported on input line 191.
-
-Underfull \hbox (badness 3657) in paragraph at lines 200--202
-[]\T5/lmr/m/n/14.4 (+20) Alexander c��i: "N�u ta kh�ng ph�i l� Alexander, ta mu
-�n l�
- []
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -2050,28 +1785,6 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 
 
 ]
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.59 ... vì lạc đường thẳng đã mất."}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.59 ... vì lạc đường thẳng đã mất."}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -2125,28 +1838,6 @@ Package lettrine.sty Info: Targeted height = 24.30318pt
 
 
 [62]
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.245 ...t lá thư cho "Amira của năm tới."}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.245 ...t lá thư cho "Amira của năm tới."}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 Package lettrine.sty Info: Targeted height = 24.30318pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.73375pt (\textcolor {truyenred}
@@ -2621,16 +2312,13 @@ L3 programming layer <2024-11-02>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 24668 strings out of 473362
- 513276 string characters out of 5720983
- 949305 words of memory out of 5000000
- 46919 multiletter control sequences out of 15000+600000
- 733001 words of font info for 293 fonts, out of 8000000 for 9000
+ 24656 strings out of 473362
+ 513816 string characters out of 5720983
+ 955885 words of memory out of 5000000
+ 46881 multiletter control sequences out of 15000+600000
+ 732851 words of font info for 291 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,12n,101p,1193b,1062s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
@@ -2641,7 +2329,7 @@ onts/type1/public/lm/lmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/
 public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/
 lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msam10.pfb>
-Output written on main.pdf (114 pages, 596490 bytes).
+Output written on main.pdf (114 pages, 600671 bytes).
 PDF statistics:
  421 PDF objects out of 1000 (max. 8388607)
  285 compressed objects within 3 object streams

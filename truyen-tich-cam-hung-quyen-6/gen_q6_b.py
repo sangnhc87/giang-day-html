@@ -8,6 +8,9 @@ os.makedirs(CHAPTERS_DIR, exist_ok=True)
 def fix(s):
     s = s.replace('%', r'\%')
     s = s.replace('&', r'\&')
+    # Convert straight double quotes to LaTeX curly quotes
+    import re
+    s = re.sub(r'"([^"\n]*)"', r"``\1''", s)
     return s
 
 def make_chapter(filename, chapter_num, vn_title, en_title, stories):

@@ -1,0 +1,97 @@
+%============================================================
+% TRANG BÌA QUYỂN VI
+%============================================================
+\begin{titlepage}
+\thispagestyle{empty}
+\pagecolor{truyenblue!6}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[white, opacity=0.5, rounded corners=20pt]
+    ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
+    ($(current page.south east)+(-1.5cm,1.5cm)$);
+
+  \draw[truyengold!80!black, line width=3pt, rounded corners=15pt]
+    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
+    ($(current page.south east)+(-1.8cm,1.8cm)$);
+
+  \draw[truyengold, line width=1pt, rounded corners=12pt]
+    ($(current page.north west)+(2cm,-2cm)$) rectangle
+    ($(current page.south east)+(-2cm,2cm)$);
+
+  \foreach \x/\xsign/\ysign in {
+    north west/1/-1,
+    north east/-1/-1,
+    south west/1/1,
+    south east/-1/1%
+  } {
+    \draw[truyengold!80!black, line width=1.5pt]
+      ($(current page.\x) + (\xsign*0.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*0.8cm)$);
+    \fill[truyengold!60!white]
+      ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
+  }
+\end{tikzpicture}
+
+\vspace*{1.8cm}
+
+\begin{center}
+  {\color{truyengold!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
+  {\fontsize{13}{16}\selectfont\color{truyenblue!80!black}\scshape
+   \textbf{Tinh Hoa Năm Quyển --- Trọn Vẹn Nhân Sinh}}\\[1.3cm]
+
+  \begin{tcolorbox}[
+    width=6.5cm,
+    colback=truyengold!25,
+    colframe=truyengold!80!black,
+    arc=4pt,
+    boxrule=1.5pt,
+    halign=center
+  ]
+    {\fontsize{18}{22}\selectfont\bfseries\color{truyenred!80!black}
+     QUYỂN VI}
+  \end{tcolorbox}
+  \vspace{0.8cm}
+
+  {\fontsize{38}{46}\selectfont\bfseries\color{truyenred!80!black}
+    Điển Tích \&}\\[0.4cm]
+  {\fontsize{34}{42}\selectfont\bfseries\color{truyenred!80!black}
+    Chuyện Kể}\\[0.8cm]
+
+  {\fontsize{20}{26}\selectfont\bfseries\color{truyenblue}
+    Trọn Vẹn Nhân Sinh}\\[0.5cm]
+
+  {\color{truyengold!80!black}\large$\diamond\;\diamond\;\diamond$}\\[1.2cm]
+
+  \begin{tcolorbox}[
+    width=11cm,
+    colback=truyenblue!10,
+    colframe=truyenblue!60,
+    arc=6pt,
+    boxrule=1pt,
+    halign=center
+  ]
+    {\fontsize{11}{15}\selectfont\itshape\color{truyenblue!80!black}
+     ``Đọc một câu chuyện là sống thêm một cuộc đời.\\
+     Ngàn câu chuyện --- ngàn hạt giống trí tuệ.\\
+     Quyển VI: Kết tinh toàn bộ hành trình.''}\\[6pt]
+    {\small --- Tuyển tập Điển Tích \& Chuyện Kể ---}
+  \end{tcolorbox}
+
+  \vspace{1.2cm}
+  {\color{truyengold!80!black}\large$\star\;\star\;\star$}\\[0.5cm]
+
+  {\fontsize{11}{14}\selectfont\color{truyenblue!70!black}
+    \textbf{120 Câu Chuyện Song Ngữ Việt -- Anh}\\[4pt]
+    12 Chủ Đề Tinh Hoa --- Kết Hợp Đạo Làm Người, Triết Lý Nhân Sinh,\\[2pt]
+    Biện Chứng Âm Dương \& Bài Học Từ Thiên Nhiên}
+
+  \vfill
+  {\fontsize{14}{18}\selectfont\bfseries\color{truyenblue!90!black}
+    Sưu tầm \& Tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.3cm]
+  {\small\color{truyenred!70!black}\itshape (Bộ sách đang tiếp tục được hoàn thiện)}\\[0.2cm]
+  {\small\color{gray} Bản mềm phát hành --- Năm 2026}\\[0.4cm]
+\end{center}
+
+\end{titlepage}
+\afterpage{\nopagecolor}

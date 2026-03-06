@@ -1,0 +1,22 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.blg
+*.bbl
+*.idx
+*.ilg
+*.ind
+*.lot
+*.lof
+*.nav
+*.snm
+*.vrb
+texput.log
+
+# macOS
+.DS_Store

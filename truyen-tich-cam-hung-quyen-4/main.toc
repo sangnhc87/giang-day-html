@@ -44,27 +44,27 @@
 \contentsline {section}{\numberline {4.9}Goethe Và Schiller --- Tình Bạn Văn Học Vĩ Đại}{53}{}%
 \contentsline {section}{\numberline {4.10}Roosevelt Và Louis Howe --- Người Bạn Nói Thật}{54}{}%
 \contentsline {chapter}{\numberline {5}Bài Học: Nhân Quả --- Những Gì Bạn Gieo, Bạn Sẽ Gặt (Cause and Effect --- You Reap What You Sow)}{57}{}%
-\contentsline {section}{\numberline {5.1}Fleming Và Churchill --- Nhân Quả Xuyên Thế Hệ}{58}{}%
-\contentsline {section}{\numberline {5.2}Cụ Già Và Cây Hồ Đào --- Trồng Cây Cho Đời Sau}{59}{}%
-\contentsline {section}{\numberline {5.3}Andrew Carnegie Và Thư Viện Miễn Phí}{60}{}%
-\contentsline {section}{\numberline {5.4}Khổng Tử Và Học Trò Nghèo Nàn Nhất}{61}{}%
-\contentsline {section}{\numberline {5.5}Matsutaro Shoriki Và Báo Yomiuri}{62}{}%
-\contentsline {section}{\numberline {5.6}Người Thợ Rèn La Mã Và Lưỡi Kiếm}{63}{}%
-\contentsline {section}{\numberline {5.7}Martin Luther King Jr. Và Hạt Giống Bình Đẳng}{64}{}%
-\contentsline {section}{\numberline {5.8}Người Phụ Nữ Và Bát Cơm Cứu Người}{65}{}%
-\contentsline {section}{\numberline {5.9}Người Đào Giếng Và Làng Khát Nước}{66}{}%
-\contentsline {section}{\numberline {5.10}Người Đầu Bếp Nhật Và Sự Kiên Định Về Chất Lượng}{67}{}%
+\contentsline {section}{\numberline {5.1}Fleming Và Churchill --- Nhân Quả Xuyên Thế Hệ}{57}{}%
+\contentsline {section}{\numberline {5.2}Cụ Già Và Cây Hồ Đào --- Trồng Cây Cho Đời Sau}{58}{}%
+\contentsline {section}{\numberline {5.3}Andrew Carnegie Và Thư Viện Miễn Phí}{59}{}%
+\contentsline {section}{\numberline {5.4}Khổng Tử Và Học Trò Nghèo Nàn Nhất}{60}{}%
+\contentsline {section}{\numberline {5.5}Matsutaro Shoriki Và Báo Yomiuri}{61}{}%
+\contentsline {section}{\numberline {5.6}Người Thợ Rèn La Mã Và Lưỡi Kiếm}{62}{}%
+\contentsline {section}{\numberline {5.7}Martin Luther King Jr. Và Hạt Giống Bình Đẳng}{63}{}%
+\contentsline {section}{\numberline {5.8}Người Phụ Nữ Và Bát Cơm Cứu Người}{64}{}%
+\contentsline {section}{\numberline {5.9}Người Đào Giếng Và Làng Khát Nước}{65}{}%
+\contentsline {section}{\numberline {5.10}Người Đầu Bếp Nhật Và Sự Kiên Định Về Chất Lượng}{66}{}%
 \contentsline {chapter}{\numberline {6}Bài Học: Vượt Qua Nghịch Cảnh --- Lửa Thử Vàng, Gian Nan Thử Sức (Overcoming Adversity --- Fire Tests Gold, Hardship Tests Character)}{69}{}%
-\contentsline {section}{\numberline {6.1}Helen Keller --- Ánh Sáng Từ Bóng Tối}{70}{}%
-\contentsline {section}{\numberline {6.2}Beethoven --- Bản Nhạc Của Người Điếc}{71}{}%
-\contentsline {section}{\numberline {6.3}J.K. Rowling --- Từ Nghèo Khổ Đến Harry Potter}{72}{}%
-\contentsline {section}{\numberline {6.4}Abraham Lincoln --- Danh Sách Thất Bại Vẫn Đứng Dậy}{73}{}%
-\contentsline {section}{\numberline {6.5}Nick Vujicic --- Không Tay Không Chân Không Giới Hạn}{74}{}%
-\contentsline {section}{\numberline {6.6}Stephen Hawking --- Trí Tuệ Vẫn Bay Trong Thân Xác Bị Giam Lỏng}{75}{}%
-\contentsline {section}{\numberline {6.7}Malala Yousafzai --- Đứng Dậy Sau Viên Đạn}{76}{}%
-\contentsline {section}{\numberline {6.8}Edison --- Nhà Máy Bị Cháy Không Tắt Được Tinh Thần}{77}{}%
-\contentsline {section}{\numberline {6.9}Nguyễn Ngọc Ký --- Viết Bằng Chân, Sống Bằng Ý Chí}{78}{}%
-\contentsline {section}{\numberline {6.10}Florence Nightingale Và Sức Kháng Cự Của Tổ Chức}{79}{}%
+\contentsline {section}{\numberline {6.1}Helen Keller --- Ánh Sáng Từ Bóng Tối}{69}{}%
+\contentsline {section}{\numberline {6.2}Beethoven --- Bản Nhạc Của Người Điếc}{70}{}%
+\contentsline {section}{\numberline {6.3}J.K. Rowling --- Từ Nghèo Khổ Đến Harry Potter}{71}{}%
+\contentsline {section}{\numberline {6.4}Abraham Lincoln --- Danh Sách Thất Bại Vẫn Đứng Dậy}{72}{}%
+\contentsline {section}{\numberline {6.5}Nick Vujicic --- Không Tay Không Chân Không Giới Hạn}{73}{}%
+\contentsline {section}{\numberline {6.6}Stephen Hawking --- Trí Tuệ Vẫn Bay Trong Thân Xác Bị Giam Lỏng}{74}{}%
+\contentsline {section}{\numberline {6.7}Malala Yousafzai --- Đứng Dậy Sau Viên Đạn}{75}{}%
+\contentsline {section}{\numberline {6.8}Edison --- Nhà Máy Bị Cháy Không Tắt Được Tinh Thần}{76}{}%
+\contentsline {section}{\numberline {6.9}Nguyễn Ngọc Ký --- Viết Bằng Chân, Sống Bằng Ý Chí}{77}{}%
+\contentsline {section}{\numberline {6.10}Florence Nightingale Và Sức Kháng Cự Của Tổ Chức}{78}{}%
 \contentsline {chapter}{\numberline {7}Bài Học: Tự Biết Mình --- Trí Tuệ Bắt Đầu Từ Sự Khiêm Tốn (Know Thyself --- Wisdom Begins with Humility)}{81}{}%
 \contentsline {section}{\numberline {7.1}Socrates --- Tôi Chỉ Biết Rằng Tôi Không Biết Gì}{81}{}%
 \contentsline {section}{\numberline {7.2}Benjamin Franklin Và Danh Sách Đức Hạnh}{82}{}%
@@ -77,16 +77,16 @@
 \contentsline {section}{\numberline {7.9}Diogenes --- Đốt Đuốc Giữa Ban Ngày Tìm Người Thật}{89}{}%
 \contentsline {section}{\numberline {7.10}Khổng Tử Ở Tuổi Bảy Mươi --- Hành Trình Cả Đời Tự Hoàn Thiện}{90}{}%
 \contentsline {chapter}{\numberline {8}Bài Học: Thiện Lương --- Tâm Lòng Tốt Lành Là Sức Mạnh Thầm Lặng (Goodness of Heart --- The Silent Power)}{93}{}%
-\contentsline {section}{\numberline {8.1}Mẹ Teresa Và Người Hấp Hối Trên Đường Phố}{94}{}%
-\contentsline {section}{\numberline {8.2}Albert Schweitzer Và Bệnh Viện Trong Rừng Châu Phi}{95}{}%
-\contentsline {section}{\numberline {8.3}Bác Sĩ Norman Bethune Và Máu Trong Chiến Tranh}{96}{}%
-\contentsline {section}{\numberline {8.4}Miep Gies Và Gia Đình Frank}{97}{}%
-\contentsline {section}{\numberline {8.5}Nicholas Winton Và Chuyến Tàu Cứu Trẻ Em Do Thái}{98}{}%
-\contentsline {section}{\numberline {8.6}Clara Barton Và Nền Tảng Của Hội Chữ Thập Đỏ Mỹ}{99}{}%
-\contentsline {section}{\numberline {8.7}Raoul Wallenberg Và Hộ Chiếu Cứu Mạng}{100}{}%
-\contentsline {section}{\numberline {8.8}Nguyễn Trãi --- Nhân Nghĩa Là Nền Tảng Của Sức Mạnh}{101}{}%
-\contentsline {section}{\numberline {8.9}Eglantyne Jebb Và Tổ Chức Cứu Trợ Trẻ Em}{102}{}%
-\contentsline {section}{\numberline {8.10}Phan Bội Châu --- Lòng Yêu Nước Là Phẩm Chất Thiện Lương Cao Nhất}{103}{}%
+\contentsline {section}{\numberline {8.1}Mẹ Teresa Và Người Hấp Hối Trên Đường Phố}{93}{}%
+\contentsline {section}{\numberline {8.2}Albert Schweitzer Và Bệnh Viện Trong Rừng Châu Phi}{94}{}%
+\contentsline {section}{\numberline {8.3}Bác Sĩ Norman Bethune Và Máu Trong Chiến Tranh}{95}{}%
+\contentsline {section}{\numberline {8.4}Miep Gies Và Gia Đình Frank}{96}{}%
+\contentsline {section}{\numberline {8.5}Nicholas Winton Và Chuyến Tàu Cứu Trẻ Em Do Thái}{97}{}%
+\contentsline {section}{\numberline {8.6}Clara Barton Và Nền Tảng Của Hội Chữ Thập Đỏ Mỹ}{98}{}%
+\contentsline {section}{\numberline {8.7}Raoul Wallenberg Và Hộ Chiếu Cứu Mạng}{99}{}%
+\contentsline {section}{\numberline {8.8}Nguyễn Trãi --- Nhân Nghĩa Là Nền Tảng Của Sức Mạnh}{100}{}%
+\contentsline {section}{\numberline {8.9}Eglantyne Jebb Và Tổ Chức Cứu Trợ Trẻ Em}{101}{}%
+\contentsline {section}{\numberline {8.10}Phan Bội Châu --- Lòng Yêu Nước Là Phẩm Chất Thiện Lương Cao Nhất}{102}{}%
 \contentsline {chapter}{\numberline {9}Bài Học: Trí Tuệ Cổ Nhân --- Kho Tàng Muôn Đời (Ancient Wisdom --- Timeless Treasure)}{105}{}%
 \contentsline {section}{\numberline {9.1}Tôn Tử Và Nghệ Thuật Chiến Tranh}{105}{}%
 \contentsline {section}{\numberline {9.2}Lão Tử Và Đạo Đức Kinh}{106}{}%
@@ -99,13 +99,13 @@
 \contentsline {section}{\numberline {9.9}Plato Và Cái Hang Huyền Thoại}{113}{}%
 \contentsline {section}{\numberline {9.10}Nguyễn Bỉnh Khiêm Và Triết Học Nhàn Cư}{114}{}%
 \contentsline {chapter}{\numberline {10}Bài Học: Kiến Tạo Cuộc Đời --- Bạn Là Kiến Trúc Sư Của Chính Mình (Building Your Life --- You Are Your Own Architect)}{117}{}%
-\contentsline {section}{\numberline {10.1}Steve Jobs Và Nghệ Thuật Kết Nối Những Dấu Chấm}{118}{}%
-\contentsline {section}{\numberline {10.2}Walt Disney --- Bảy Lần Phá Sản, Một Lần Đế Chế}{119}{}%
-\contentsline {section}{\numberline {10.3}Oprah Winfrey --- Từ Nghèo Khổ Đến Ảnh Hưởng}{120}{}%
-\contentsline {section}{\numberline {10.4}Thomas Edison Và Một Nghìn Bước Tới Thành Công}{121}{}%
-\contentsline {section}{\numberline {10.5}J.K. Rowling --- Hành Trình Từ Vô Danh Đến Huyền Thoại}{122}{}%
-\contentsline {section}{\numberline {10.6}Elon Musk Và Những Canh Bạc Không Ai Dám Làm}{123}{}%
-\contentsline {section}{\numberline {10.7}Warren Buffett Và Triết Học Đầu Tư Dài Hạn}{124}{}%
-\contentsline {section}{\numberline {10.8}Hồ Chí Minh Và Ý Chí Kiến Tạo Đất Nước}{125}{}%
-\contentsline {section}{\numberline {10.9}Marie Curie Và Sự Kiên Trì Trong Khoa Học}{126}{}%
-\contentsline {section}{\numberline {10.10}Nguyễn Trường Tộ Và Giấc Mơ Canh Tân Dang Dở}{127}{}%
+\contentsline {section}{\numberline {10.1}Steve Jobs Và Nghệ Thuật Kết Nối Những Dấu Chấm}{117}{}%
+\contentsline {section}{\numberline {10.2}Walt Disney --- Bảy Lần Phá Sản, Một Lần Đế Chế}{118}{}%
+\contentsline {section}{\numberline {10.3}Oprah Winfrey --- Từ Nghèo Khổ Đến Ảnh Hưởng}{119}{}%
+\contentsline {section}{\numberline {10.4}Thomas Edison Và Một Nghìn Bước Tới Thành Công}{120}{}%
+\contentsline {section}{\numberline {10.5}J.K. Rowling --- Hành Trình Từ Vô Danh Đến Huyền Thoại}{121}{}%
+\contentsline {section}{\numberline {10.6}Elon Musk Và Những Canh Bạc Không Ai Dám Làm}{122}{}%
+\contentsline {section}{\numberline {10.7}Warren Buffett Và Triết Học Đầu Tư Dài Hạn}{123}{}%
+\contentsline {section}{\numberline {10.8}Hồ Chí Minh Và Ý Chí Kiến Tạo Đất Nước}{124}{}%
+\contentsline {section}{\numberline {10.9}Marie Curie Và Sự Kiên Trì Trong Khoa Học}{125}{}%
+\contentsline {section}{\numberline {10.10}Nguyễn Trường Tộ Và Giấc Mơ Canh Tân Dang Dở}{126}{}%

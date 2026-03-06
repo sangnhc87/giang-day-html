@@ -1,0 +1,127 @@
+%============================================================
+% TRUYỆN SONG NGỮ QUYỂN 5 - HAI MẶT CỦA MỘT ĐỒNG XU
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+
+\geometry{
+  a4paper,
+  left=2.5cm,
+  right=2.5cm,
+  top=3cm,
+  bottom=3cm,
+  headheight=41pt
+}
+
+% Bảng màu Quyển V: Tím Xanh & Bạc Hoàng Gia
+\definecolor{truyenblue}{RGB}{45, 50, 110}
+\definecolor{truyenred}{RGB}{70, 30, 100}
+\definecolor{truyengold}{RGB}{160, 130, 200}
+\definecolor{boxbg}{RGB}{248, 246, 255}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{truyenblue}\itshape\small Quyển V: Hai Mặt Của Một Đồng Xu}
+\fancyhead[RE,LO]{\color{truyenred}\itshape\small \leftmark}
+\fancyfoot[C]{\color{truyengold}\textbf{-- \thepage\ --}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{truyengold}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{truyenred}\centering}
+  {\large\itshape Chương \thechapter}
+  {1ex}
+  {\Huge\scshape}[\vspace{1ex}{\color{truyengold}\rule{0.5\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\color{truyenblue}\Large\bfseries}
+  {\thesection.}
+  {1em}
+  {}
+\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+
+\newtcolorbox{truyen}[2]{
+  colback=boxbg,
+  colframe=truyenblue,
+  coltitle=white,
+  fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},
+  arc=5pt,
+  boxrule=1.2pt,
+  breakable,
+  enhanced,
+  drop shadow=black!15
+}
+
+\newtcolorbox{baihoc}{
+  colback=truyenred!8,
+  colframe=truyenred,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={$\bigstar$ Bài Học Rút Ra},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newcommand{\chuhoa}[2]{%
+  \lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{truyenred}{#1}}{#2}%
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+    \textcolor{truyengold}{\rule{0.3\textwidth}{0.5pt}%
+    \hspace{6pt}$\diamond$\hspace{6pt}%
+    \rule{0.3\textwidth}{0.5pt}}
+  \end{center}
+  \vspace{6pt}
+}
+
+\begin{document}
+
+\include{cover}
+
+\frontmatter
+\tableofcontents
+\clearpage
+
+\mainmatter
+
+\include{chapters/ch01-phuc-trong-hoa}
+\include{chapters/ch02-thanh-cong-trong-that-bai}
+\include{chapters/ch03-ban-trong-thu}
+\include{chapters/ch04-yeu-trong-ghet}
+\include{chapters/ch05-khang-dinh-trong-phu-dinh}
+\include{chapters/ch06-that-trong-gia}
+\include{chapters/ch07-manh-trong-yeu}
+\include{chapters/ch08-bat-dau-trong-ket-thuc}
+\include{chapters/ch09-cho-trong-nhan}
+\include{chapters/ch10-tu-do-trong-ky-luat}
+\include{chapters/ch11-cu-the-trong-tong-quat}
+\include{chapters/ch12-don-gian-trong-phuc-tap}
+
+\backmatter
+\end{document}

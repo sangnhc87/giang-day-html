@@ -1,0 +1,113 @@
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+  % Background
+  \fill[truyenblue] (current page.north west) rectangle (current page.south east);
+  \fill[truyenblue!80!black]
+    (current page.north west) --
+    ([xshift=0pt,yshift=-13cm]current page.north east) --
+    (current page.south east) --
+    (current page.south west) -- cycle;
+
+  % Top gold bar
+  \fill[truyengold] ([yshift=-3.5cm]current page.north west)
+    rectangle ([yshift=-3.7cm]current page.north east);
+
+  % Bottom gold bar
+  \fill[truyengold!70] ([yshift=2.8cm]current page.south west)
+    rectangle ([yshift=2.6cm]current page.south east);
+
+  % Series name
+  \node[anchor=north, text=white, font=\large\itshape] at
+    ([yshift=-1.2cm]current page.north) {%
+      \textbf{Truyện Tích Cảm Hứng Song Ngữ}%
+    };
+
+  % Volume badge
+  \node[
+    fill=truyengold, text=truyenblue,
+    font=\large\bfseries,
+    minimum width=3.2cm, minimum height=1.1cm,
+    rounded corners=6pt
+  ] at ([yshift=-3.1cm]current page.north) {QUYỂN VII};
+
+  % Decorative yin-yang inspired line
+  \draw[truyengold!60, line width=1.5pt]
+    ([xshift=-6cm,yshift=3.5cm]current page.center) --
+    ([xshift=6cm,yshift=3.5cm]current page.center);
+
+  % Main title
+  \node[
+    anchor=center,
+    text=white,
+    font=\fontsize{46}{50}\selectfont\bfseries\scshape
+  ] at ([yshift=2.3cm]current page.center) {Lời Dạy Của};
+
+  \node[
+    anchor=center,
+    text=truyengold,
+    font=\fontsize{46}{50}\selectfont\bfseries\scshape
+  ] at ([yshift=0.4cm]current page.center) {Bậc Hiền Nhân};
+
+  % Divider
+  \draw[truyengold, line width=2pt]
+    ([xshift=-5cm,yshift=-0.8cm]current page.center) --
+    ([xshift=5cm,yshift=-0.8cm]current page.center);
+
+  % Subtitle
+  \node[
+    anchor=center,
+    text=white,
+    font=\large\itshape
+  ] at ([yshift=-1.6cm]current page.center) {%
+    Đạo Gia $\cdot$ Nho Gia $\cdot$ Triết Học Hy Lạp $\cdot$ Khắc Kỷ%
+  };
+
+  % Decorative diamonds
+  \node[text=truyengold, font=\Huge] at ([xshift=-6cm,yshift=2.3cm]current page.center) {$\lozenge$};
+  \node[text=truyengold, font=\Huge] at ([xshift=6cm,yshift=2.3cm]current page.center) {$\lozenge$};
+
+  % Philosopher names ring
+  \node[
+    anchor=center,
+    text=truyengold!70,
+    font=\normalsize\itshape
+  ] at ([yshift=-2.8cm]current page.center) {%
+    Lão Tử · Khổng Tử · Mạnh Tử · Trang Tử · Tuân Tử%
+  };
+  \node[
+    anchor=center,
+    text=truyengold!70,
+    font=\normalsize\itshape
+  ] at ([yshift=-3.4cm]current page.center) {%
+    Socrates · Plato · Aristotle · Marcus Aurelius · Epicurus%
+  };
+
+  % Quote box
+  \node[
+    anchor=center,
+    fill=white!10!truyenblue,
+    text=white,
+    draw=truyengold,
+    line width=1pt,
+    rounded corners=5pt,
+    text width=13cm,
+    align=center,
+    inner sep=12pt,
+    font=\itshape\large
+  ] at ([yshift=-5.2cm]current page.center) {%
+    ``Người biết người khác là khôn. Người biết mình là sáng.\\
+    Người thắng người khác là có sức. Người thắng chính mình là mạnh.''\\[6pt]
+    \normalfont\small\textcolor{truyengold}{--- Lão Tử, Đạo Đức Kinh}%
+  };
+
+  % Bottom tag
+  \node[
+    anchor=south,
+    text=truyengold,
+    font=\normalsize\bfseries
+  ] at ([yshift=2.7cm]current page.south) {120 Truyện Song Ngữ · 12 Chương · Việt -- English};
+
+\end{tikzpicture}
+\end{titlepage}
+\clearpage

@@ -1,0 +1,150 @@
+%============================================================
+% TRUYỆN SONG NGỮ QUYỂN 11 - NHỮNG CÁI BẪY NGƯỜI TRẺ TỰ BƯỚC VÀO
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+
+\geometry{
+  a4paper,
+  left=1.8cm,
+  right=1.8cm,
+  top=2cm,
+  bottom=2cm,
+  headheight=41pt
+}
+
+% Bảng màu Quyển XI: Nâu Đất & Xanh Rêu
+\definecolor{trapgreen}{RGB}{44, 68, 54}
+\definecolor{trapbrown}{RGB}{112, 71, 49}
+\definecolor{trapgold}{RGB}{189, 149, 84}
+\definecolor{boxbg}{RGB}{248, 244, 239}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{trapgreen}\itshape\small Quyển XI: Những Cái Bẫy Người Trẻ Tự Bước Vào}
+\fancyhead[RE,LO]{\color{trapbrown}\itshape\small \leftmark}
+\fancyfoot[C]{\color{trapgold}\textbf{-- \thepage\ --}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{trapgold}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{trapbrown}\centering}
+  {\large\itshape Chương \thechapter}
+  {1ex}
+  {\Huge\scshape}[\vspace{1ex}{\color{trapgold}\rule{0.5\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\color{trapgreen}\Large\bfseries}
+  {\thesection.}
+  {1em}
+  {}
+\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+
+\newtcolorbox{truyen}[2]{
+  colback=boxbg,
+  colframe=trapgreen,
+  coltitle=white,
+  fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},
+  arc=5pt,
+  boxrule=1.2pt,
+  breakable,
+  enhanced,
+  drop shadow=black!15
+}
+
+\newtcolorbox{baihoc}{
+  colback=trapbrown!8,
+  colframe=trapbrown,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={$\bigstar$ Bài Học Rút Ra},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{ghinhoanh}{
+  colback=trapgreen!6,
+  colframe=trapgreen,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Easy English},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{tuhocnhanh}{
+  colback=trapgold!10,
+  colframe=trapgold!70!black,
+  coltitle=black,
+  fonttitle=\bfseries,
+  title={Tự Học Nhanh},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newcommand{\chuhoa}[2]{%
+  \lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{trapbrown}{#1}}{#2}%
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+    \textcolor{trapgold}{\rule{0.3\textwidth}{0.5pt}%
+    \hspace{6pt}$\diamond$\hspace{6pt}%
+    \rule{0.3\textwidth}{0.5pt}}
+  \end{center}
+  \vspace{6pt}
+}
+
+\begin{document}
+
+\include{cover}
+
+\frontmatter
+\tableofcontents
+\clearpage
+
+\mainmatter
+\include{chapters/ch01-bay-cua-vo-boc}
+\include{chapters/ch02-bay-cua-viec-lam-hai-long}
+\include{chapters/ch03-bay-tien-nhanh}
+\include{chapters/ch04-bay-cong-viec-de}
+\include{chapters/ch05-bay-tu-te-khong-ranh-gioi}
+\include{chapters/ch06-bay-tinh-cam-mu-quang}
+\include{chapters/ch07-bay-ban-be-va-so-sanh}
+\include{chapters/ch08-bay-tri-hoan-tien-nghi}
+\include{chapters/ch09-bay-ao-danh-va-pho-dien}
+\include{chapters/ch10-bay-tu-ai-va-si-dien}
+\include{chapters/ch11-bay-moi-truong-sai}
+\include{chapters/ch12-bay-tu-lua-minh}
+
+\backmatter
+\end{document}

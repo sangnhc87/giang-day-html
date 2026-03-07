@@ -1,0 +1,90 @@
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[nightblue] (current page.north west) rectangle (current page.south east);
+  \fill[lamporange!18] ([xshift=-0.7cm,yshift=-2.2cm]current page.north east) circle (6.4cm);
+  \fill[white!8] ([xshift=1.2cm,yshift=2.0cm]current page.south west) circle (5.0cm);
+
+  \draw[lamporange!80, line width=1.4pt]
+    ([xshift=1.1cm,yshift=-1.1cm]current page.north west)
+    rectangle
+    ([xshift=-1.1cm,yshift=1.1cm]current page.south east);
+
+  \node[
+    anchor=north west,
+    fill=lamporange,
+    text=nightblue,
+    font=\bfseries\large,
+    rounded corners=4pt,
+    inner xsep=10pt,
+    inner ysep=6pt
+  ] at ([xshift=1.6cm,yshift=-1.5cm]current page.north west) {QUYỂN XIII};
+
+  \node[
+    anchor=north,
+    text=white,
+    font=\large\itshape
+  ] at ([yshift=-1.7cm]current page.north) {Truyện Tích Cảm Hứng Song Ngữ};
+
+  \node[
+    anchor=west,
+    text=white,
+    font=\fontsize{24}{28}\selectfont\bfseries
+  ] at ([xshift=1.8cm,yshift=4.0cm]current page.center) {NHỮNG CÂU HỎI};
+
+  \node[
+    anchor=west,
+    text=lamporange,
+    font=\fontsize{24}{28}\selectfont\bfseries
+  ] at ([xshift=1.8cm,yshift=2.1cm]current page.center) {HỌC TRÒ};
+
+  \node[
+    anchor=west,
+    text=white,
+    font=\fontsize{24}{28}\selectfont\bfseries
+  ] at ([xshift=1.8cm,yshift=0.2cm]current page.center) {KHÔNG NÓI THẲNG};
+
+  \draw[lamporange, line width=2pt]
+    ([xshift=1.8cm,yshift=-1.1cm]current page.center) --
+    ([xshift=10.0cm,yshift=-1.1cm]current page.center);
+
+  \node[
+    anchor=west,
+    text=white,
+    font=\large
+  ] at ([xshift=1.8cm,yshift=-2.2cm]current page.center) {Một quyển đi từ những câu học sinh không dám hỏi ra thành lời};
+
+  \node[
+    anchor=north west,
+    fill=white,
+    text=black,
+    rounded corners=8pt,
+    text width=11.7cm,
+    inner sep=14pt,
+    align=left,
+    font=\normalsize
+  ] at ([xshift=1.9cm,yshift=-14.9cm]current page.north west) {%
+    \textbf{Tinh thần quyển này:} không trả lời như sách giáo huấn. Mỗi mẩu chuyện chỉ cố nghe ra câu hỏi chìm dưới thái độ, điểm số, im lặng, chống đối, và nỗi mệt của học trò.\\[6pt]
+    \textbf{Cách dùng:} đọc để hiểu học sinh sâu hơn, học tiếng Anh qua câu ngắn, và lấy chất liệu thật để nói chuyện kỹ năng sống với lớp.\\[6pt]
+    \textbf{Điểm tựa:} ngắn, rõ, thật, gần tâm lý tuổi học trò và gần những va chạm rất hàng ngày.
+  };
+
+  \node[
+    anchor=south,
+    text=lamporange,
+    font=\large\itshape,
+    align=center
+  ] at ([yshift=2.1cm]current page.south) {%
+    ``Có những đứa trẻ không hỏi: `Thầy cô có hiểu em không?'\\
+    Nhưng gần như mọi hành vi của chúng đều đang hỏi câu đó.''%
+  };
+
+  \node[
+    anchor=south,
+    text=white!85,
+    font=\normalsize,
+    align=center
+  ] at ([yshift=1.1cm]current page.south) {Dành cho người dạy học, người làm cha mẹ, và người không muốn nghe học sinh quá muộn};
+\end{tikzpicture}
+\end{titlepage}
+\clearpage

@@ -1,0 +1,112 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {chapter}{Lời Mở Đầu}{v}{}%
+\contentsline {chapter}{\numberline {1}Những Điều Về Việc Học}{1}{}%
+\contentsline {section}{\numberline {1.1}Học Không Phải Chỉ Để Thi}{1}{}%
+\contentsline {section}{\numberline {1.2}Điểm Số Không Phải Tất Cả}{2}{}%
+\contentsline {section}{\numberline {1.3}Học Chậm Không Phải Là Dốt}{3}{}%
+\contentsline {section}{\numberline {1.4}Sai Lầm Là Cách Học Nhanh Nhất}{4}{}%
+\contentsline {section}{\numberline {1.5}Đừng Sợ Hỏi}{5}{}%
+\contentsline {section}{\numberline {1.6}Kiên Nhẫn Quan Trọng Hơn Thông Minh}{6}{}%
+\contentsline {section}{\numberline {1.7}Học Là Việc Lâu Dài}{7}{}%
+\contentsline {section}{\numberline {1.8}Đừng So Sánh Mình Với Người Khác}{8}{}%
+\contentsline {section}{\numberline {1.9}Một Chút Tiến Bộ Mỗi Ngày}{9}{}%
+\contentsline {section}{\numberline {1.10}Người Không Bỏ Cuộc Thường Thắng}{10}{}%
+\contentsline {chapter}{\numberline {2}Những Điều Về Suy Nghĩ}{11}{}%
+\contentsline {section}{\numberline {2.1}Đừng Nghĩ Mình Kém}{11}{}%
+\contentsline {section}{\numberline {2.2}Tự Tin Có Thể Học Được}{12}{}%
+\contentsline {section}{\numberline {2.3}Ai Cũng Có Điểm Mạnh}{13}{}%
+\contentsline {section}{\numberline {2.4}Suy Nghĩ Tích Cực Giúp Học Tốt Hơn}{14}{}%
+\contentsline {section}{\numberline {2.5}Đừng Sợ Bắt Đầu Lại}{15}{}%
+\contentsline {section}{\numberline {2.6}Mỗi Người Học Khác Nhau}{16}{}%
+\contentsline {section}{\numberline {2.7}Hiểu Quan Trọng Hơn Nhớ}{17}{}%
+\contentsline {section}{\numberline {2.8}Câu Hỏi Tốt Rất Quý}{18}{}%
+\contentsline {section}{\numberline {2.9}Hãy Tò Mò}{19}{}%
+\contentsline {section}{\numberline {2.10}Đừng Ngại Sai}{20}{}%
+\contentsline {chapter}{\numberline {3}Những Điều Về Thói Quen}{21}{}%
+\contentsline {section}{\numberline {3.1}Dậy Sớm Một Chút}{21}{}%
+\contentsline {section}{\numberline {3.2}Đọc Sách Mỗi Ngày}{22}{}%
+\contentsline {section}{\numberline {3.3}Ghi Chép Cẩn Thận}{23}{}%
+\contentsline {section}{\numberline {3.4}Làm Bài Tập Đầy Đủ}{24}{}%
+\contentsline {section}{\numberline {3.5}Tập Trung Khi Học}{25}{}%
+\contentsline {section}{\numberline {3.6}Nghỉ Ngơi Đúng Lúc}{26}{}%
+\contentsline {section}{\numberline {3.7}Giữ Bàn Học Gọn Gàng}{27}{}%
+\contentsline {section}{\numberline {3.8}Tắt Điện Thoại Khi Học}{28}{}%
+\contentsline {section}{\numberline {3.9}Luyện Tập Thường Xuyên}{29}{}%
+\contentsline {section}{\numberline {3.10}Kiên Trì Với Thói Quen Tốt}{30}{}%
+\contentsline {chapter}{\numberline {4}Những Điều Về Tính Cách}{31}{}%
+\contentsline {section}{\numberline {4.1}Trung Thực Trong Học Tập}{31}{}%
+\contentsline {section}{\numberline {4.2}Tôn Trọng Thầy Cô}{32}{}%
+\contentsline {section}{\numberline {4.3}Giúp Đỡ Bạn Bè}{33}{}%
+\contentsline {section}{\numberline {4.4}Biết Xin Lỗi}{34}{}%
+\contentsline {section}{\numberline {4.5}Biết Cảm Ơn}{35}{}%
+\contentsline {section}{\numberline {4.6}Giữ Lời Hứa}{36}{}%
+\contentsline {section}{\numberline {4.7}Không Cười Khi Bạn Sai}{37}{}%
+\contentsline {section}{\numberline {4.8}Học Cách Lắng Nghe}{37}{}%
+\contentsline {section}{\numberline {4.9}Giữ Bình Tĩnh}{38}{}%
+\contentsline {section}{\numberline {4.10}Khiêm Tốn}{39}{}%
+\contentsline {chapter}{\numberline {5}Những Điều Về Thất Bại}{41}{}%
+\contentsline {section}{\numberline {5.1}Ai Cũng Từng Thất Bại}{41}{}%
+\contentsline {section}{\numberline {5.2}Sai Không Đáng Xấu Hổ}{42}{}%
+\contentsline {section}{\numberline {5.3}Thất Bại Giúp Mình Mạnh Hơn}{43}{}%
+\contentsline {section}{\numberline {5.4}Đừng Bỏ Cuộc Sau Một Lần Sai}{44}{}%
+\contentsline {section}{\numberline {5.5}Người Thành Công Từng Thất Bại Nhiều Lần}{45}{}%
+\contentsline {section}{\numberline {5.6}Thất Bại Dạy Điều Sách Không Dạy}{46}{}%
+\contentsline {section}{\numberline {5.7}Học Từ Lỗi Sai}{47}{}%
+\contentsline {section}{\numberline {5.8}Sai Hôm Nay, Giỏi Ngày Mai}{48}{}%
+\contentsline {section}{\numberline {5.9}Đừng Sợ Thử Lại}{49}{}%
+\contentsline {section}{\numberline {5.10}Thất Bại Là Một Bài Học}{50}{}%
+\contentsline {chapter}{\numberline {6}Những Điều Về Nỗ Lực}{51}{}%
+\contentsline {section}{\numberline {6.1}Cố Gắng Mỗi Ngày}{51}{}%
+\contentsline {section}{\numberline {6.2}Nỗ Lực Nhỏ Tạo Nên Kết Quả Lớn}{52}{}%
+\contentsline {section}{\numberline {6.3}Chăm Chỉ Quan Trọng Hơn Tài Năng}{53}{}%
+\contentsline {section}{\numberline {6.4}Không Có Con Đường Tắt}{54}{}%
+\contentsline {section}{\numberline {6.5}Luyện Tập Tạo Nên Kỹ Năng}{54}{}%
+\contentsline {section}{\numberline {6.6}Học Là Hành Trình Dài}{55}{}%
+\contentsline {section}{\numberline {6.7}Bền Bỉ Là Sức Mạnh}{56}{}%
+\contentsline {section}{\numberline {6.8}Đừng Bỏ Cuộc Giữa Đường}{57}{}%
+\contentsline {section}{\numberline {6.9}Thành Công Cần Thời Gian}{58}{}%
+\contentsline {section}{\numberline {6.10}Người Cố Gắng Luôn Tiến Bộ}{59}{}%
+\contentsline {chapter}{\numberline {7}Những Điều Về Bạn Bè}{61}{}%
+\contentsline {section}{\numberline {7.1}Chọn Bạn Tốt}{61}{}%
+\contentsline {section}{\numberline {7.2}Bạn Tốt Giúp Mình Tiến Bộ}{62}{}%
+\contentsline {section}{\numberline {7.3}Đừng Cười Khi Bạn Sai}{63}{}%
+\contentsline {section}{\numberline {7.4}Giúp Bạn Khi Họ Cần}{64}{}%
+\contentsline {section}{\numberline {7.5}Không Nói Xấu Sau Lưng}{65}{}%
+\contentsline {section}{\numberline {7.6}Tôn Trọng Sự Khác Biệt}{66}{}%
+\contentsline {section}{\numberline {7.7}Học Từ Bạn Bè}{67}{}%
+\contentsline {section}{\numberline {7.8}Cạnh Tranh Lành Mạnh}{68}{}%
+\contentsline {section}{\numberline {7.9}Đừng Ganh Tị}{69}{}%
+\contentsline {section}{\numberline {7.10}Bạn Bè Là Một Phần Của Trường Học}{69}{}%
+\contentsline {chapter}{\numberline {8}Những Điều Về Cuộc Sống}{71}{}%
+\contentsline {section}{\numberline {8.1}Thời Gian Rất Quý}{71}{}%
+\contentsline {section}{\numberline {8.2}Sức Khỏe Quan Trọng}{72}{}%
+\contentsline {section}{\numberline {8.3}Kiến Thức Là Tài Sản}{73}{}%
+\contentsline {section}{\numberline {8.4}Đọc Sách Mở Rộng Thế Giới}{73}{}%
+\contentsline {section}{\numberline {8.5}Học Suốt Đời}{74}{}%
+\contentsline {section}{\numberline {8.6}Cuộc Đời Không Dễ Dàng}{75}{}%
+\contentsline {section}{\numberline {8.7}Người Tốt Luôn Cần Thiết}{76}{}%
+\contentsline {section}{\numberline {8.8}Kiên Nhẫn Giúp Mình Đi Xa}{77}{}%
+\contentsline {section}{\numberline {8.9}Sự Tử Tế Rất Mạnh}{78}{}%
+\contentsline {section}{\numberline {8.10}Học Để Hiểu Cuộc Sống}{79}{}%
+\contentsline {chapter}{\numberline {9}Những Điều Về Tương Lai}{81}{}%
+\contentsline {section}{\numberline {9.1}Ai Cũng Có Con Đường Riêng}{81}{}%
+\contentsline {section}{\numberline {9.2}Không Cần Giống Người Khác}{82}{}%
+\contentsline {section}{\numberline {9.3}Hãy Tìm Điều Mình Thật Sự Thích}{83}{}%
+\contentsline {section}{\numberline {9.4}Cũng Cần Biết Điều Mình Làm Tốt}{84}{}%
+\contentsline {section}{\numberline {9.5}Mọi Hành Trình Đều Bắt Đầu Từ Việc Nhỏ}{85}{}%
+\contentsline {section}{\numberline {9.6}Học Là Để Mở Cơ Hội}{86}{}%
+\contentsline {section}{\numberline {9.7}Chuẩn Bị Cho Tương Lai Từ Bây Giờ}{87}{}%
+\contentsline {section}{\numberline {9.8}Không Ai Biết Hết Tương Lai}{88}{}%
+\contentsline {section}{\numberline {9.9}Kiên Trì Với Mục Tiêu}{89}{}%
+\contentsline {section}{\numberline {9.10}Tương Lai Bắt Đầu Từ Hôm Nay}{89}{}%
+\contentsline {chapter}{\numberline {10}Lời Thầy Gửi Học Sinh}{91}{}%
+\contentsline {section}{\numberline {10.1}Hãy Tin Mình Có Thể Tiến Bộ}{91}{}%
+\contentsline {section}{\numberline {10.2}Đừng Tự Xem Thường Mình}{92}{}%
+\contentsline {section}{\numberline {10.3}Hãy Sống Trung Thực}{93}{}%
+\contentsline {section}{\numberline {10.4}Hãy Biết Cảm Ơn}{94}{}%
+\contentsline {section}{\numberline {10.5}Đừng Sợ Làm Lại}{94}{}%
+\contentsline {section}{\numberline {10.6}Hãy Giữ Lòng Tử Tế}{95}{}%
+\contentsline {section}{\numberline {10.7}Hãy Quý Gia Đình Và Người Thương Em}{96}{}%
+\contentsline {section}{\numberline {10.8}Học Không Chỉ Vì Điểm Số}{97}{}%
+\contentsline {section}{\numberline {10.9}Thầy Mong Em Sống Thành Người Đàng Hoàng}{98}{}%
+\contentsline {section}{\numberline {10.10}Thầy Tin Em Sẽ Lớn Lên Tốt Đẹp}{99}{}%

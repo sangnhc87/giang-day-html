@@ -1,0 +1,98 @@
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[truyenblue] (current page.north west) rectangle (current page.south east);
+  \fill[truyenred!18]
+    ([xshift=-2cm,yshift=-2cm]current page.north east) circle (6.5cm);
+  \fill[white!5]
+    ([xshift=1cm,yshift=3cm]current page.south west) circle (5.2cm);
+
+  \draw[truyengold!70, line width=1.4pt]
+    ([xshift=1.1cm,yshift=-1.1cm]current page.north west)
+    rectangle
+    ([xshift=-1.1cm,yshift=1.1cm]current page.south east);
+
+  \node[
+    anchor=north west,
+    fill=truyengold,
+    text=truyenblue,
+    font=\bfseries\large,
+    rounded corners=4pt,
+    inner xsep=10pt,
+    inner ysep=6pt
+  ] at ([xshift=1.6cm,yshift=-1.5cm]current page.north west) {QUYỂN VIII};
+
+  \node[
+    anchor=north,
+    text=white,
+    font=\large\itshape
+  ] at ([yshift=-1.6cm]current page.north) {Truyện Tích Cảm Hứng Song Ngữ};
+
+  \node[
+    anchor=west,
+    text=white,
+    font=\fontsize{38}{42}\selectfont\bfseries
+  ] at ([xshift=2.1cm,yshift=3.4cm]current page.center) {THÔ};
+
+  \node[
+    anchor=west,
+    text=truyengold,
+    font=\fontsize{38}{42}\selectfont\bfseries
+  ] at ([xshift=2.1cm,yshift=1.7cm]current page.center) {NHƯNG};
+
+  \node[
+    anchor=west,
+    text=white,
+    font=\fontsize{38}{42}\selectfont\bfseries
+  ] at ([xshift=2.1cm,yshift=0cm]current page.center) {THẬT};
+
+  \draw[truyengold, line width=2pt]
+    ([xshift=2.1cm,yshift=-1.1cm]current page.center) --
+    ([xshift=8.7cm,yshift=-1.1cm]current page.center);
+
+  \node[
+    anchor=west,
+    text=white,
+    font=\fontsize{22}{26}\selectfont\bfseries
+  ] at ([xshift=2.1cm,yshift=-2.0cm]current page.center) {CHUYỆN HỌC SINH};
+
+  \node[
+    anchor=west,
+    text=white,
+    font=\large
+  ] at ([xshift=2.1cm,yshift=-3.2cm]current page.center) {Ban song ngữ, câu ngắn, dễ học tiếng Anh};
+
+  \node[
+    anchor=north west,
+    fill=white,
+    text=black,
+    rounded corners=8pt,
+    text width=11.5cm,
+    inner sep=14pt,
+    align=left,
+    font=\normalsize
+  ] at ([xshift=2.0cm,yshift=-15.4cm]current page.north west) {%
+    \textbf{Cho học sinh THPT:} điểm số, áp lực gia đình, so sánh, thất bại, bắt nạt, mạng xã hội, sức khỏe tâm thần, cô đơn, ranh giới, đứng dậy.\\[6pt]
+    \textbf{Cách viết:} thẳng, thật, ngắn câu, dễ đối chiếu Việt - Anh.\\[6pt]
+    \textbf{Tinh thần:} không tô hồng, không dọa nạt, chỉ nói thật để học sinh đỡ lạc hơn.
+  };
+
+  \node[
+    anchor=south,
+    text=truyengold,
+    font=\large\itshape,
+    align=center
+  ] at ([yshift=2.2cm]current page.south) {%
+    ``Thất bại không có nghĩa là em hỏng.\\
+    Nó chỉ có nghĩa là em phải học cách đứng dậy cho đúng.''%
+  };
+
+  \node[
+    anchor=south,
+    text=white!85,
+    font=\normalsize
+  ] at ([yshift=1.2cm]current page.south) {Dành cho học sinh và người trẻ đang tập lớn lên cho tử tế};
+
+\end{tikzpicture}
+\end{titlepage}
+\clearpage

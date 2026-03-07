@@ -1,0 +1,151 @@
+%============================================================
+% TRUYỆN SONG NGỮ QUYỂN 9 - RA ĐỜI KHÔNG CÓ BẢN NHÁP
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+
+\geometry{
+  a4paper,
+  left=1.8cm,
+  right=1.8cm,
+  top=2cm,
+  bottom=2cm,
+  headheight=41pt
+}
+
+% Bảng màu Quyển IX: Xanh Than & Đồng Sẫm
+\definecolor{truyenblue}{RGB}{24, 47, 68}
+\definecolor{truyenred}{RGB}{153, 76, 42}
+\definecolor{truyengold}{RGB}{201, 153, 84}
+\definecolor{boxbg}{RGB}{247, 246, 242}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{truyenblue}\itshape\small Quyển IX: Ra Đời Không Có Bản Nháp}
+\fancyhead[RE,LO]{\color{truyenred}\itshape\small \leftmark}
+\fancyfoot[C]{\color{truyengold}\textbf{-- \thepage\ --}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{truyengold}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{truyenred}\centering}
+  {\large\itshape Chương \thechapter}
+  {1ex}
+  {\Huge\scshape}[\vspace{1ex}{\color{truyengold}\rule{0.5\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\color{truyenblue}\Large\bfseries}
+  {\thesection.}
+  {1em}
+  {}
+\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+
+\newtcolorbox{truyen}[2]{
+  colback=boxbg,
+  colframe=truyenblue,
+  coltitle=white,
+  fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},
+  arc=5pt,
+  boxrule=1.2pt,
+  breakable,
+  enhanced,
+  drop shadow=black!15
+}
+
+\newtcolorbox{baihoc}{
+  colback=truyenred!8,
+  colframe=truyenred,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={$\bigstar$ Bài Học Rút Ra},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{ghinhoanh}{
+  colback=truyenblue!6,
+  colframe=truyenblue,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Easy English},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{tuhocnhanh}{
+  colback=truyengold!10,
+  colframe=truyengold!70!black,
+  coltitle=black,
+  fonttitle=\bfseries,
+  title={Tự Học Nhanh},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newcommand{\chuhoa}[2]{%
+  \lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{truyenred}{#1}}{#2}%
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+    \textcolor{truyengold}{\rule{0.3\textwidth}{0.5pt}%
+    \hspace{6pt}$\diamond$\hspace{6pt}%
+    \rule{0.3\textwidth}{0.5pt}}
+  \end{center}
+  \vspace{6pt}
+}
+
+\begin{document}
+
+\include{cover}
+
+\frontmatter
+\tableofcontents
+\clearpage
+
+\mainmatter
+
+\include{chapters/ch01-roi-ghe-nha-truong}
+\include{chapters/ch02-cong-viec-dau-tien}
+\include{chapters/ch03-tien-tu-do-sai-lam}
+\include{chapters/ch04-khong-ai-no-em-cho-dung}
+\include{chapters/ch05-bi-tu-choi-bi-thay-the}
+\include{chapters/ch06-song-xa-nha}
+\include{chapters/ch07-ban-be-ra-re}
+\include{chapters/ch08-tinh-yeu-tuoi-tre}
+\include{chapters/ch09-tu-te-nhung-dung-de-bi-dung}
+\include{chapters/ch10-gioi-khong-dong-nghia-co-viec}
+\include{chapters/ch11-ky-luat-cuu-nguoi}
+\include{chapters/ch12-truong-thanh-la-chiu-trach-nhiem}
+
+\backmatter
+\end{document}

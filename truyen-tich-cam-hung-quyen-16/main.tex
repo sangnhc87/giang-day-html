@@ -1,0 +1,149 @@
+%============================================================
+% TRUYỆN SONG NGỮ QUYỂN 16 - NHỮNG BÀI HỌC NHỎ TRONG LỚP HỌC
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+
+\geometry{
+  a4paper,
+  left=1.8cm,
+  right=1.8cm,
+  top=2cm,
+  bottom=2cm,
+  headheight=41pt
+}
+
+% Bảng màu Quyển XVI: Đỏ gạch & Xám xanh
+\definecolor{brickred}{RGB}{141, 68, 55}
+\definecolor{dustgold}{RGB}{196, 163, 102}
+\definecolor{slateink}{RGB}{63, 73, 86}
+\definecolor{boxbg}{RGB}{248, 244, 240}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{brickred}\itshape\small Quyển XVI: Những Bài Học Nhỏ Trong Lớp Học}
+\fancyhead[RE,LO]{\color{slateink}\itshape\small \leftmark}
+\fancyfoot[C]{\color{dustgold}\textbf{-- \thepage\ --}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{dustgold}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{slateink}\centering}
+  {\large\itshape Chương \thechapter}
+  {1ex}
+  {\Huge\scshape}[\vspace{1ex}{\color{dustgold}\rule{0.5\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\color{brickred}\Large\bfseries}
+  {\thesection.}
+  {1em}
+  {}
+\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+
+\newtcolorbox{truyen}[2]{
+  colback=boxbg,
+  colframe=brickred,
+  coltitle=white,
+  fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},
+  arc=5pt,
+  boxrule=1.2pt,
+  breakable,
+  enhanced,
+  drop shadow=black!15
+}
+
+\newtcolorbox{baihoc}{
+  colback=slateink!8,
+  colframe=slateink,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={$\bigstar$ Điều Cần Giữ Lại},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{ghinhoanh}{
+  colback=brickred!6,
+  colframe=brickred,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Easy English},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{tuhocnhanh}{
+  colback=dustgold!12,
+  colframe=dustgold!70!black,
+  coltitle=black,
+  fonttitle=\bfseries,
+  title={Gợi Ý Để Tự Nghĩ Và Tự Học},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newcommand{\chuhoa}[2]{%
+  \lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{slateink}{#1}}{#2}%
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+    \textcolor{dustgold}{\rule{0.3\textwidth}{0.5pt}%
+    \hspace{6pt}$\diamond$\hspace{6pt}%
+    \rule{0.3\textwidth}{0.5pt}}
+  \end{center}
+  \vspace{6pt}
+}
+
+\begin{document}
+
+\include{cover}
+
+\frontmatter
+\tableofcontents
+\clearpage
+\include{loi-mo-dau}
+
+\mainmatter
+\include{chapters/ch01-nhung-cau-noi-cua-hoc-sinh}
+\include{chapters/ch02-khi-hoc-sinh-mac-loi}
+\include{chapters/ch03-nhung-khoanh-khac-dang-nho}
+\include{chapters/ch04-khi-hoc-sinh-khong-hieu-bai}
+\include{chapters/ch05-khi-hoc-sinh-co-gang}
+\include{chapters/ch06-nhung-loi-sai-thu-vi-trong-toan}
+\include{chapters/ch07-nhung-dieu-hoc-sinh-lam-dung}
+\include{chapters/ch08-nhung-dieu-thay-hoc-tu-hoc-sinh}
+\include{chapters/ch09-nhung-bai-hoc-ve-cach-hoc}
+\include{chapters/ch10-nhung-bai-hoc-cuoi-gio-hoc}
+
+\backmatter
+\end{document}

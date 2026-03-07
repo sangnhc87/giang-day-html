@@ -1,0 +1,149 @@
+%============================================================
+% TRUYỆN SONG NGỮ QUYỂN 15 - NHỮNG ĐIỀU THẦY MUỐN NÓI VỚI HỌC SINH
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+
+\geometry{
+  a4paper,
+  left=1.8cm,
+  right=1.8cm,
+  top=2cm,
+  bottom=2cm,
+  headheight=41pt
+}
+
+% Bảng màu Quyển XV: Xanh than & Đồng sáng
+\definecolor{deepblue}{RGB}{40, 58, 83}
+\definecolor{softcopper}{RGB}{188, 142, 88}
+\definecolor{earthink}{RGB}{102, 78, 63}
+\definecolor{boxbg}{RGB}{247, 244, 238}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{deepblue}\itshape\small Quyển XV: Những Điều Thầy Muốn Nói Với Học Sinh}
+\fancyhead[RE,LO]{\color{earthink}\itshape\small \leftmark}
+\fancyfoot[C]{\color{softcopper}\textbf{-- \thepage\ --}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{softcopper}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{earthink}\centering}
+  {\large\itshape Chương \thechapter}
+  {1ex}
+  {\Huge\scshape}[\vspace{1ex}{\color{softcopper}\rule{0.5\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\color{deepblue}\Large\bfseries}
+  {\thesection.}
+  {1em}
+  {}
+\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+
+\newtcolorbox{truyen}[2]{
+  colback=boxbg,
+  colframe=deepblue,
+  coltitle=white,
+  fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},
+  arc=5pt,
+  boxrule=1.2pt,
+  breakable,
+  enhanced,
+  drop shadow=black!15
+}
+
+\newtcolorbox{baihoc}{
+  colback=earthink!8,
+  colframe=earthink,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={$\bigstar$ Điều Thầy Muốn Giữ Lại},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{ghinhoanh}{
+  colback=deepblue!6,
+  colframe=deepblue,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Easy English},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{tuhocnhanh}{
+  colback=softcopper!10,
+  colframe=softcopper!70!black,
+  coltitle=black,
+  fonttitle=\bfseries,
+  title={Gợi Ý Để Tự Nghĩ Và Tự Học},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newcommand{\chuhoa}[2]{%
+  \lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{earthink}{#1}}{#2}%
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+    \textcolor{softcopper}{\rule{0.3\textwidth}{0.5pt}%
+    \hspace{6pt}$\diamond$\hspace{6pt}%
+    \rule{0.3\textwidth}{0.5pt}}
+  \end{center}
+  \vspace{6pt}
+}
+
+\begin{document}
+
+\include{cover}
+
+\frontmatter
+\tableofcontents
+\clearpage
+\include{loi-mo-dau}
+
+\mainmatter
+\include{chapters/ch01-nhung-dieu-ve-viec-hoc}
+\include{chapters/ch02-nhung-dieu-ve-suy-nghi}
+\include{chapters/ch03-nhung-dieu-ve-thoi-quen}
+\include{chapters/ch04-nhung-dieu-ve-tinh-cach}
+\include{chapters/ch05-nhung-dieu-ve-that-bai}
+\include{chapters/ch06-nhung-dieu-ve-no-luc}
+\include{chapters/ch07-nhung-dieu-ve-ban-be}
+\include{chapters/ch08-nhung-dieu-ve-cuoc-song}
+\include{chapters/ch09-nhung-dieu-ve-tuong-lai}
+\include{chapters/ch10-loi-thay-gui-hoc-sinh}
+
+\backmatter
+\end{document}

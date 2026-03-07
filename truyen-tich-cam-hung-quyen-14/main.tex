@@ -1,0 +1,149 @@
+%============================================================
+% TRUYỆN SONG NGỮ QUYỂN 14 - 100 CÂU HỎI HỌC TRÒ HAY HỎI VỀ CHUYỆN HỌC
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+
+\geometry{
+  a4paper,
+  left=1.8cm,
+  right=1.8cm,
+  top=2cm,
+  bottom=2cm,
+  headheight=41pt
+}
+
+% Bảng màu Quyển XIV: Xanh Rêu & Vàng Giấy
+\definecolor{oliveink}{RGB}{54, 72, 58}
+\definecolor{papergold}{RGB}{194, 154, 92}
+\definecolor{warmbrown}{RGB}{110, 80, 56}
+\definecolor{boxbg}{RGB}{248, 245, 239}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{oliveink}\itshape\small Quyển XIV: 100 Câu Hỏi Học Trò Hay Hỏi Về Chuyện Học}
+\fancyhead[RE,LO]{\color{warmbrown}\itshape\small \leftmark}
+\fancyfoot[C]{\color{papergold}\textbf{-- \thepage\ --}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{papergold}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{warmbrown}\centering}
+  {\large\itshape Chương \thechapter}
+  {1ex}
+  {\Huge\scshape}[\vspace{1ex}{\color{papergold}\rule{0.5\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\color{oliveink}\Large\bfseries}
+  {\thesection.}
+  {1em}
+  {}
+\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+
+\newtcolorbox{truyen}[2]{
+  colback=boxbg,
+  colframe=oliveink,
+  coltitle=white,
+  fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},
+  arc=5pt,
+  boxrule=1.2pt,
+  breakable,
+  enhanced,
+  drop shadow=black!15
+}
+
+\newtcolorbox{baihoc}{
+  colback=warmbrown!8,
+  colframe=warmbrown,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={$\bigstar$ Điều Cần Giữ Lại},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{ghinhoanh}{
+  colback=oliveink!6,
+  colframe=oliveink,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Easy English},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{tuhocnhanh}{
+  colback=papergold!10,
+  colframe=papergold!70!black,
+  coltitle=black,
+  fonttitle=\bfseries,
+  title={Gợi Ý Để Dạy Và Tự Nghĩ},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newcommand{\chuhoa}[2]{%
+  \lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{warmbrown}{#1}}{#2}%
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+    \textcolor{papergold}{\rule{0.3\textwidth}{0.5pt}%
+    \hspace{6pt}$\diamond$\hspace{6pt}%
+    \rule{0.3\textwidth}{0.5pt}}
+  \end{center}
+  \vspace{6pt}
+}
+
+\begin{document}
+
+\include{cover}
+
+\frontmatter
+\tableofcontents
+\clearpage
+\include{loi-mo-dau}
+
+\mainmatter
+\include{chapters/ch01-vi-sao-phai-hoc}
+\include{chapters/ch02-hoc-gioi-la-gi}
+\include{chapters/ch03-khi-hoc-sinh-nghi-ngo-ban-than}
+\include{chapters/ch04-nhung-so-sanh-hoc-sinh-hay-noi}
+\include{chapters/ch05-nhung-noi-so-cua-hoc-sinh}
+\include{chapters/ch06-nhung-thoi-quen-hoc-tap}
+\include{chapters/ch07-nhung-tinh-huong-trong-lop}
+\include{chapters/ch08-dong-luc-hoc-tap}
+\include{chapters/ch09-nhung-bai-hoc-ve-cuoc-song}
+\include{chapters/ch10-loi-nhan-cua-thay-giao}
+
+\backmatter
+\end{document}

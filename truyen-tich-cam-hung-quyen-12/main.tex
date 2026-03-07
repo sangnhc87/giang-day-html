@@ -1,0 +1,150 @@
+%============================================================
+% TRUYỆN SONG NGỮ QUYỂN 12 - NHỮNG ĐIỀU THẦY GIÁO NHÌN THẤY
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+
+\geometry{
+  a4paper,
+  left=1.8cm,
+  right=1.8cm,
+  top=2cm,
+  bottom=2cm,
+  headheight=41pt
+}
+
+% Bảng màu Quyển XII: Xanh Bảng & Vàng Phấn
+\definecolor{teacherblue}{RGB}{31, 66, 88}
+\definecolor{chalkgold}{RGB}{202, 166, 92}
+\definecolor{inkbrown}{RGB}{116, 79, 57}
+\definecolor{boxbg}{RGB}{247, 244, 238}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{teacherblue}\itshape\small Quyển XII: Những Điều Thầy Giáo Nhìn Thấy}
+\fancyhead[RE,LO]{\color{inkbrown}\itshape\small \leftmark}
+\fancyfoot[C]{\color{chalkgold}\textbf{-- \thepage\ --}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{chalkgold}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{inkbrown}\centering}
+  {\large\itshape Chương \thechapter}
+  {1ex}
+  {\Huge\scshape}[\vspace{1ex}{\color{chalkgold}\rule{0.5\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\color{teacherblue}\Large\bfseries}
+  {\thesection.}
+  {1em}
+  {}
+\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+
+\newtcolorbox{truyen}[2]{
+  colback=boxbg,
+  colframe=teacherblue,
+  coltitle=white,
+  fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},
+  arc=5pt,
+  boxrule=1.2pt,
+  breakable,
+  enhanced,
+  drop shadow=black!15
+}
+
+\newtcolorbox{baihoc}{
+  colback=inkbrown!8,
+  colframe=inkbrown,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={$\bigstar$ Điều Nhìn Ra},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{ghinhoanh}{
+  colback=teacherblue!6,
+  colframe=teacherblue,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Easy English},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{tuhocnhanh}{
+  colback=chalkgold!10,
+  colframe=chalkgold!70!black,
+  coltitle=black,
+  fonttitle=\bfseries,
+  title={Gợi Ý Để Dạy Và Tự Nghĩ},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newcommand{\chuhoa}[2]{%
+  \lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{inkbrown}{#1}}{#2}%
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+    \textcolor{chalkgold}{\rule{0.3\textwidth}{0.5pt}%
+    \hspace{6pt}$\diamond$\hspace{6pt}%
+    \rule{0.3\textwidth}{0.5pt}}
+  \end{center}
+  \vspace{6pt}
+}
+
+\begin{document}
+
+\include{cover}
+
+\frontmatter
+\tableofcontents
+\clearpage
+
+\mainmatter
+\include{chapters/ch01-dua-hoc-dot-chua-chac-ngu}
+\include{chapters/ch02-dua-hoc-gioi-chua-chac-yen}
+\include{chapters/ch03-nu-cuoi-khong-phai-luc-nao-cung-vui}
+\include{chapters/ch04-dua-pha-lop-khong-chi-la-phien}
+\include{chapters/ch05-im-lang-cung-la-mot-tin-hieu}
+\include{chapters/ch06-diem-so-khong-noi-het-con-nguoi}
+\include{chapters/ch07-nha-ngheo-khong-ngheo-y-chi}
+\include{chapters/ch08-co-nhung-met-moi-khong-ai-noi}
+\include{chapters/ch09-ban-be-o-tuoi-di-hoc}
+\include{chapters/ch10-cha-me-di-qua-cua-lop}
+\include{chapters/ch11-dieu-nguoi-lon-hay-lam-hoc-tro-dau}
+\include{chapters/ch12-nhung-dieu-thay-giao-cung-dang-hoc}
+
+\backmatter
+\end{document}

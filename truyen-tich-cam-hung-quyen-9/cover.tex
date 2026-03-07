@@ -1,0 +1,89 @@
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[truyenblue] (current page.north west) rectangle (current page.south east);
+  \fill[truyenred!18] ([xshift=-1cm,yshift=-2cm]current page.north east) circle (6.8cm);
+  \fill[white!6] ([xshift=1.4cm,yshift=2.6cm]current page.south west) circle (5.0cm);
+
+  \draw[truyengold!75, line width=1.4pt]
+    ([xshift=1.1cm,yshift=-1.1cm]current page.north west)
+    rectangle
+    ([xshift=-1.1cm,yshift=1.1cm]current page.south east);
+
+  \node[
+    anchor=north west,
+    fill=truyengold,
+    text=truyenblue,
+    font=\bfseries\large,
+    rounded corners=4pt,
+    inner xsep=10pt,
+    inner ysep=6pt
+  ] at ([xshift=1.6cm,yshift=-1.5cm]current page.north west) {QUYỂN IX};
+
+  \node[
+    anchor=north,
+    text=white,
+    font=\large\itshape
+  ] at ([yshift=-1.7cm]current page.north) {Truyện Tích Cảm Hứng Song Ngữ};
+
+  \node[
+    anchor=west,
+    text=white,
+    font=\fontsize{34}{38}\selectfont\bfseries
+  ] at ([xshift=2.0cm,yshift=3.2cm]current page.center) {RA ĐỜI};
+
+  \node[
+    anchor=west,
+    text=truyengold,
+    font=\fontsize{34}{38}\selectfont\bfseries
+  ] at ([xshift=2.0cm,yshift=1.5cm]current page.center) {KHÔNG CÓ};
+
+  \node[
+    anchor=west,
+    text=white,
+    font=\fontsize{34}{38}\selectfont\bfseries
+  ] at ([xshift=2.0cm,yshift=-0.2cm]current page.center) {BẢN NHÁP};
+
+  \draw[truyengold, line width=2pt]
+    ([xshift=2.0cm,yshift=-1.3cm]current page.center) --
+    ([xshift=8.8cm,yshift=-1.3cm]current page.center);
+
+  \node[
+    anchor=west,
+    text=white,
+    font=\large
+  ] at ([xshift=2.0cm,yshift=-2.4cm]current page.center) {Tập 1: đi vào đời không còn bản nháp};
+
+  \node[
+    anchor=north west,
+    fill=white,
+    text=black,
+    rounded corners=8pt,
+    text width=11.7cm,
+    inner sep=14pt,
+    align=left,
+    font=\normalsize
+  ] at ([xshift=1.9cm,yshift=-15.0cm]current page.north west) {%
+    \textbf{Tập 1 của cặp sách người trẻ:} công việc đầu tiên, tiền đầu tiên, bị từ chối, bị thay thế, sống xa nhà, bạn bè ra rẽ, tình yêu tuổi trẻ, kỷ luật, trách nhiệm.\\[6pt]
+    \textbf{Cách viết:} thẳng, ngắn, thật, dễ đối chiếu Việt - Anh.\\[6pt]
+    \textbf{Tinh thần:} không hù dọa, không tô hồng, chỉ giúp người trẻ đỡ ngây thơ khi bước vào đời.
+  };
+
+  \node[
+    anchor=south,
+    text=truyengold,
+    font=\large\itshape,
+    align=center
+  ] at ([yshift=2.2cm]current page.south) {%
+    ``Không ai phát cho em một bản nháp trước khi sống.\\
+    Vì vậy, tỉnh táo cũng là một kiểu tự cứu mình.''%
+  };
+
+  \node[
+    anchor=south,
+    text=white!85,
+    font=\normalsize
+  ] at ([yshift=1.2cm]current page.south) {Dành cho học sinh cuối cấp, sinh viên, và người trẻ mới bước vào đời};
+\end{tikzpicture}
+\end{titlepage}
+\clearpage

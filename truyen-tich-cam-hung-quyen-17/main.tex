@@ -1,0 +1,149 @@
+%============================================================
+% TRUYỆN SONG NGỮ QUYỂN 17 - NHỮNG ĐIỀU HỌC SINH NÊN HIỂU SỚM
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+
+\geometry{
+  a4paper,
+  left=1.8cm,
+  right=1.8cm,
+  top=2cm,
+  bottom=2cm,
+  headheight=41pt
+}
+
+% Bảng màu Quyển XVII: Xanh rêu & vàng nhạt
+\definecolor{mossgreen}{RGB}{71, 96, 84}
+\definecolor{warmgold}{RGB}{203, 170, 100}
+\definecolor{inkgray}{RGB}{70, 72, 76}
+\definecolor{boxbg}{RGB}{247, 245, 239}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{mossgreen}\itshape\small Quyển XVII: Những Điều Học Sinh Nên Hiểu Sớm}
+\fancyhead[RE,LO]{\color{inkgray}\itshape\small \leftmark}
+\fancyfoot[C]{\color{warmgold}\textbf{-- \thepage\ --}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{warmgold}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{inkgray}\centering}
+  {\large\itshape Chương \thechapter}
+  {1ex}
+  {\Huge\scshape}[\vspace{1ex}{\color{warmgold}\rule{0.5\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\color{mossgreen}\Large\bfseries}
+  {\thesection.}
+  {1em}
+  {}
+\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+
+\newtcolorbox{truyen}[2]{
+  colback=boxbg,
+  colframe=mossgreen,
+  coltitle=white,
+  fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},
+  arc=5pt,
+  boxrule=1.2pt,
+  breakable,
+  enhanced,
+  drop shadow=black!15
+}
+
+\newtcolorbox{baihoc}{
+  colback=inkgray!8,
+  colframe=inkgray,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={$\bigstar$ Điều Cần Hiểu Sớm},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{ghinhoanh}{
+  colback=mossgreen!6,
+  colframe=mossgreen,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Easy English},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{tuhocnhanh}{
+  colback=warmgold!12,
+  colframe=warmgold!70!black,
+  coltitle=black,
+  fonttitle=\bfseries,
+  title={Gợi Ý Để Nghĩ Thêm},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newcommand{\chuhoa}[2]{%
+  \lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{inkgray}{#1}}{#2}%
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+    \textcolor{warmgold}{\rule{0.3\textwidth}{0.5pt}%
+    \hspace{6pt}$\diamond$\hspace{6pt}%
+    \rule{0.3\textwidth}{0.5pt}}
+  \end{center}
+  \vspace{6pt}
+}
+
+\begin{document}
+
+\include{cover}
+
+\frontmatter
+\tableofcontents
+\clearpage
+\include{loi-mo-dau}
+
+\mainmatter
+\include{chapters/ch01-ve-ban-than}
+\include{chapters/ch02-ve-viec-hoc}
+\include{chapters/ch03-ve-suy-nghi}
+\include{chapters/ch04-ve-thoi-quen}
+\include{chapters/ch05-ve-that-bai}
+\include{chapters/ch06-ve-no-luc}
+\include{chapters/ch07-ve-ban-be}
+\include{chapters/ch08-ve-cuoc-song}
+\include{chapters/ch09-ve-tuong-lai}
+\include{chapters/ch10-nhung-dieu-quan-trong-nhat}
+
+\backmatter
+\end{document}

@@ -1,179 +1,165 @@
 % =====================================================
-% TRANG GIỚI THIỆU CÁC QUYỂN TRONG BỘ SÁCH
-% Truyện Tích Cảm Hứng Song Ngữ
+% BÌA SAU CHUNG TOÀN BỘ BỘ SÁCH 28 QUYỂN
+% TRUYỆN TÍCH CẢM HỨNG SONG NGỮ
 % =====================================================
-% Colors used in catalog (self-contained)
-\definecolor{catred}{HTML}{8B1A1A}
-\definecolor{catblue}{HTML}{1F4E79}
-\definecolor{catgold}{HTML}{B8860B}
+\definecolor{catalogtitle}{HTML}{213447}
+\definecolor{catalogaccent}{HTML}{B7791F}
+\definecolor{catalogline}{HTML}{DCC6A1}
+\definecolor{catalogbg}{HTML}{F7F2EA}
+\definecolor{catalogframe}{HTML}{C9A66B}
+\definecolor{catalogsoft}{HTML}{FBF8F3}
+\definecolor{catalogink}{HTML}{4A5568}
+
+\definecolor{vol01}{HTML}{B33A3A}
+\definecolor{vol02}{HTML}{2F6B8A}
+\definecolor{vol03}{HTML}{5B8C5A}
+\definecolor{vol04}{HTML}{8C5E3C}
+\definecolor{vol05}{HTML}{6C63A8}
+\definecolor{vol06}{HTML}{A86F3A}
+\definecolor{vol07}{HTML}{3B5F7A}
+\definecolor{vol08}{HTML}{C05B4D}
+\definecolor{vol09}{HTML}{8D6E63}
+\definecolor{vol10}{HTML}{7A4EAB}
+\definecolor{vol11}{HTML}{C44D58}
+\definecolor{vol12}{HTML}{4D7C8A}
+\definecolor{vol13}{HTML}{5A7D4D}
+\definecolor{vol14}{HTML}{D17A22}
+\definecolor{vol15}{HTML}{7B5E57}
+\definecolor{vol16}{HTML}{4C8C72}
+\definecolor{vol17}{HTML}{A75D5D}
+\definecolor{vol18}{HTML}{B08A3E}
+\definecolor{vol19}{HTML}{7B8794}
+\definecolor{vol20}{HTML}{2C7A7B}
+\definecolor{vol21}{HTML}{B58A2A}
+\definecolor{vol22}{HTML}{D69E2E}
+\definecolor{vol23}{HTML}{D27D9A}
+\definecolor{vol24}{HTML}{A67C52}
+\definecolor{vol25}{HTML}{C97D52}
+\definecolor{vol26}{HTML}{B56576}
+\definecolor{vol27}{HTML}{B08D57}
+\definecolor{vol28}{HTML}{8C6239}
+
+\newcommand{\posteritem}[3]{%
+  \noindent\textcolor{#1}{\rule{0.78em}{0.78em}}\hspace{0.45em}%
+  {\scriptsize\textbf{#2}}\hspace{0.25em}{\scriptsize #3}\par\vspace{2.5pt}%
+}
+
+\newcommand{\posterpanel}[3]{%
+\begin{tcolorbox}[
+  colback=white,
+  colframe=catalogframe,
+  boxrule=0.9pt,
+  arc=7pt,
+  left=8pt,
+  right=8pt,
+  top=8pt,
+  bottom=6pt,
+  title={#1},
+  colbacktitle=#2,
+  coltitle=white,
+  fonttitle=\bfseries,
+  enhanced
+]
+#3
+\end{tcolorbox}%
+}
+
 \clearpage
 \thispagestyle{empty}
 
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[catalogbg] (current page.north west) rectangle (current page.south east);
+  \fill[catalogaccent!10] ([xshift=-1.8cm,yshift=-1.6cm]current page.north east) circle (4.8cm);
+  \fill[catalogtitle!8] ([xshift=1.2cm,yshift=1.8cm]current page.south west) circle (5.4cm);
+  \draw[catalogframe, line width=1.5pt]
+    ([xshift=0.95cm,yshift=-0.95cm]current page.north west)
+    rectangle
+    ([xshift=-0.95cm,yshift=0.95cm]current page.south east);
+  \draw[catalogline, line width=0.7pt]
+    ([xshift=1.2cm,yshift=-1.2cm]current page.north west)
+    rectangle
+    ([xshift=-1.2cm,yshift=1.2cm]current page.south east);
+\end{tikzpicture}
+
 \begin{center}
-{\large\bfseries\color{catred} CÁC QUYỂN TRONG BỘ SÁCH}\\[4pt]
-{\normalsize\itshape\color{catblue} Truyện Tích Cảm Hứng Song Ngữ}\\[8pt]
-{\color{catgold}\rule{10cm}{1.5pt}}
+{\fontsize{20}{24}\selectfont\bfseries\color{catalogtitle} Tủ Sách Truyện Tích Cảm Hứng Song Ngữ}\\[5pt]
+{\normalsize\itshape\color{catalogaccent} 28 quyển song ngữ dành cho lớp học, gia đình và hành trình trưởng thành}\\[8pt]
+{\color{catalogline}\rule{0.78\textwidth}{1pt}}\\[8pt]
+
+\begin{tcolorbox}[
+  width=0.84\textwidth,
+  colback=catalogsoft,
+  colframe=catalogframe,
+  boxrule=1pt,
+  arc=8pt,
+  left=10pt,
+  right=10pt,
+  top=8pt,
+  bottom=8pt,
+  enhanced
+]
+{\small\itshape\color{catalogink}
+``Mỗi quyển là một gam màu, một nhịp kể chuyện, một lát cắt của lớp học và đời sống.\
+Đặt cạnh nhau, chúng tạo thành một poster của giáo dục, nhân cách và những bài học không cũ.''}
+\end{tcolorbox}
 \end{center}
+
+\vspace{4pt}
+
+\noindent
+\begin{minipage}[t]{0.485\textwidth}
+\posterpanel{Khởi Nguồn \& Nhân Cách}{catalogtitle}{
+\posteritem{vol01}{Quyển I:}{Điển Tích \& Chuyện Kể Truyền Cảm Hứng}
+\posteritem{vol02}{Quyển II:}{Điển Tích \& Chuyện Kể: Đạo Làm Người}
+\posteritem{vol03}{Quyển III:}{Điển Tích \& Chuyện Kể: Thiên Nhiên Quanh Ta}
+\posteritem{vol04}{Quyển IV:}{Điển Tích \& Chuyện Kể: Triết Lý Nhân Sinh}
+\posteritem{vol05}{Quyển V:}{Điển Tích \& Chuyện Kể: Hai Mặt Của Một Đồng Xu}
+\posteritem{vol06}{Quyển VI:}{Vòng Quay Cuộc Đời}
+\posteritem{vol07}{Quyển VII:}{Lời Dạy Của Bậc Hiền Nhân}
+}
 
 \vspace{6pt}
 
-% === 9 QUYỂN ĐẦU (hiển thị đầy đủ) ===
-\begin{tcolorbox}[
-  colback=catred!4,
-  colframe=catred!60,
-  title={\bfseries Bộ Điển Tích \& Chuyện Kể (Quyển I -- IX)},
-  coltitle=white,
-  fonttitle=\bfseries\large,
-  arc=6pt, boxrule=1pt,
-  left=10pt, right=10pt, top=8pt, bottom=8pt
-]
-\begin{enumerate}[leftmargin=1.4em, itemsep=4pt, parsep=0pt]
-  \item \textbf{Điển Tích \& Chuyện Kể Truyền Cảm Hứng} ---
-    \textit{Lòng biết ơn, can đảm, tình bạn nghĩa khí và ý chí vươn lên.}
-
-  \item \textbf{Điển Tích \& Chuyện Kể: Đạo Làm Người} ---
-    \textit{Đạo làm con, làm bạn, làm trò, làm thầy và đối nhân xử thế.}
-
-  \item \textbf{Điển Tích \& Chuyện Kể: Thiên Nhiên Quanh Ta} ---
-    \textit{Bài học từ thiên nhiên và muôn loài qua câu chuyện song ngữ.}
-
-  \item \textbf{Điển Tích \& Chuyện Kể: Triết Lý Nhân Sinh} ---
-    \textit{Triết lý nhân sinh và đối nhân xử thế từ cổ chí kim.}
-
-  \item \textbf{Điển Tích \& Chuyện Kể: Hai Mặt Của Một Đồng Xu} ---
-    \textit{Tư duy biện chứng, âm dương, mâu thuẫn và cân bằng.}
-
-  \item \textbf{Vòng Quay Cuộc Đời} ---
-    \textit{Nhân quả, bản sắc, buông bỏ và người thầy vô hình.}
-
-  \item \textbf{Lời Dạy Của Bậc Hiền Nhân} ---
-    \textit{Triết lý và lời dạy từ bậc thầy qua các thời đại Đông -- Tây.}
-
-  \item \textbf{Thô Nhưng Thật: Chuyện Học Sinh} ---
-    \textit{Điểm số, áp lực, so sánh, bắt nạt --- những chuyện học đường thật.}
-
-  \item \textbf{Ra Đời Không Có Bản Nháp} ---
-    \textit{Công việc đầu tiên, tiền đầu tiên, bị từ chối, sống xa nhà.}
-\end{enumerate}
-\end{tcolorbox}
-
-\vspace{8pt}
-
-% === 9 QUYỂN SAU (hiển thị nhỏ gọn) ===
-\begin{tcolorbox}[
-  colback=catblue!4,
-  colframe=catblue!50,
-  title={\bfseries Bộ Nâng Cao \& Cuốn Tổng Hợp (Quyển X -- XVII, Cuốn 1 -- 2)},
-  coltitle=white,
-  fonttitle=\bfseries,
-  arc=6pt, boxrule=1pt,
-  left=8pt, right=8pt, top=6pt, bottom=6pt,
-  fontupper=\small
-]
-\begin{enumerate}[leftmargin=1.4em, itemsep=2pt, parsep=0pt, start=10]
-  \item \textbf{Những Ảo Tưởng Của Tuổi Trẻ} --- \textit{Nhận ra và điều chỉnh ảo tưởng trước khi đặt cược cả cuộc đời vào đó.}
-  \item \textbf{Những Cái Bẫy Người Trẻ Tự Bước Vào} --- \textit{Tự mãn, cái tôi, so sánh, trì hoãn --- những bẫy ta tự giăng cho mình.}
-  \item \textbf{Những Điều Thầy Giáo Nhìn Thấy} --- \textit{Bục giảng nhìn thấy những gì học sinh chưa tự thấy ở mình.}
-  \item \textbf{Những Câu Hỏi Học Trò Không Nói Thẳng} --- \textit{Trả lời thẳng những câu hỏi bị giữ trong im lặng.}
-  \item \textbf{100 Câu Hỏi Học Trò Hay Hỏi Về Chuyện Học} --- \textit{Chuyện học, động lực, thói quen, áp lực và con đường tương lai.}
-  \item \textbf{Những Điều Thầy Muốn Nói Với Học Sinh} --- \textit{Thầy nói chuyện thẳng, gần và chậm về học tập, tính cách, đường đời.}
-  \item \textbf{Những Bài Học Nhỏ Trong Lớp Học} --- \textit{Bài học lớn từ tình huống nhỏ xảy ra mỗi ngày trên lớp.}
-  \item \textbf{Những Điều Học Sinh Nên Hiểu Sớm} --- \textit{Nền tảng quan trọng --- hiểu sớm thì đỡ vấp về sau.}
-\end{enumerate}
-
-\medskip
-\textbf{Cuốn 1:} \textit{Những Lời Thầy Nói Trong Lớp Học} --- 50 câu lời thầy, 100 câu im lặng suy nghĩ, 50 câu hài hước sâu sắc.\\[3pt]
-\textbf{Cuốn 2:} \textit{Giật Mình --- Đỉnh Cao --- Lời Cuối Năm} --- 30 câu giật mình, 50 câu đỉnh cao sư phạm, 50 câu cuối năm xúc động.
-\end{tcolorbox}
-
-\vspace{6pt}
-\begin{center}
-{\color{catgold}\rule{10cm}{1.5pt}}\\[4pt]
-{\small\itshape\color{catblue!70} Bộ sách song ngữ Việt -- Anh dành cho giáo viên và học sinh}
-\end{center}
-\clearpage
-\thispagestyle{empty}
-
-\begin{center}
-{\large\bfseries\color{earthink} CÁC QUYỂN TRONG BỘ SÁCH}\\[4pt]
-{\normalsize\itshape\color{deepblue} Truyện Tích Cảm Hứng Song Ngữ}\\[8pt]
-{\color{softcopper}\rule{10cm}{1.5pt}}
-\end{center}
+\posterpanel{Tuổi Trẻ \& Góc Nhìn Học Trò}{catalogaccent}{
+\posteritem{vol08}{Quyển VIII:}{Thơ Nhưng Thật: Chuyện Học Sinh}
+\posteritem{vol09}{Quyển IX:}{Ra Đời Không Có Bản Nháp}
+\posteritem{vol10}{Quyển X:}{Những Ảo Tưởng Của Tuổi Trẻ}
+\posteritem{vol11}{Quyển XI:}{Những Cái Bẫy Người Trẻ Tự Bước Vào}
+\posteritem{vol12}{Quyển XII:}{Những Điều Thầy Giáo Nhìn Thấy}
+\posteritem{vol13}{Quyển XIII:}{Những Câu Hỏi Học Trò Không Nói Thẳng}
+\posteritem{vol14}{Quyển XIV:}{100 Câu Hỏi Học Trò Hay Hỏi Về Chuyện Học}
+}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.485\textwidth}
+\posterpanel{Lớp Học \& Lời Thầy}{catalogink}{
+\posteritem{vol15}{Quyển XV:}{Những Điều Thầy Muốn Nói Với Học Sinh}
+\posteritem{vol16}{Quyển XVI:}{Những Bài Học Nhỏ Trong Lớp Học}
+\posteritem{vol17}{Quyển XVII:}{Những Điều Học Sinh Nên Hiểu Sớm}
+\posteritem{vol18}{Quyển XVIII:}{80 Lời Thầy Nói Trong Lớp Học}
+\posteritem{vol19}{Quyển XIX:}{100 Câu Nói Làm Học Sinh Im Lặng Suy Nghĩ}
+\posteritem{vol20}{Quyển XX:}{80 Câu Nói Hài Hước Nhưng Sâu Sắc}
+\posteritem{vol21}{Quyển XXI:}{60 Câu Nói Khiến Học Sinh Lười Học Phải Giật Mình}
+}
 
 \vspace{6pt}
 
-% === 9 QUYỂN ĐẦU (hiển thị đầy đủ) ===
-\begin{tcolorbox}[
-  colback=earthink!4,
-  colframe=earthink!60,
-  title={\bfseries Bộ Điển Tích \& Chuyện Kể (Quyển I -- IX)},
-  coltitle=white,
-  fonttitle=\bfseries\large,
-  arc=6pt, boxrule=1pt,
-  left=10pt, right=10pt, top=8pt, bottom=8pt
-]
-\begin{enumerate}[leftmargin=1.4em, itemsep=4pt, parsep=0pt]
-  \item \textbf{Điển Tích \& Chuyện Kể Truyền Cảm Hứng} ---
-    \textit{Lòng biết ơn, can đảm, tình bạn nghĩa khí và ý chí vươn lên.}
+\posterpanel{Nhân Sinh \& Gia Đình}{catalogtitle!85!black}{
+\posteritem{vol22}{Quyển XXII:}{100 Câu Nói Đỉnh Cao Sư Phạm Khi Học Sinh Nản Học}
+\posteritem{vol23}{Quyển XXIII:}{50 Câu Nói Thầy Nói Cuối Năm Học}
+\posteritem{vol24}{Quyển XXIV:}{Bí Quyết Nhân Sinh}
+\posteritem{vol25}{Quyển XXV:}{Lý Sự Cùn Của Học Sinh}
+\posteritem{vol26}{Quyển XXVI:}{Phụ Huynh Và Con Cái}
+\posteritem{vol27}{Quyển XXVII:}{Những Điều Ta Hiểu Khi Đã Muộn}
+\posteritem{vol28}{Quyển XXVIII:}{100 Nghịch Lý Nhân Sinh}
+}
+\end{minipage}
 
-  \item \textbf{Điển Tích \& Chuyện Kể: Đạo Làm Người} ---
-    \textit{Đạo làm con, làm bạn, làm trò, làm thầy và đối nhân xử thế.}
+\vfill
 
-  \item \textbf{Điển Tích \& Chuyện Kể: Thiên Nhiên Quanh Ta} ---
-    \textit{Bài học từ thiên nhiên và muôn loài qua câu chuyện song ngữ.}
-
-  \item \textbf{Điển Tích \& Chuyện Kể: Triết Lý Nhân Sinh} ---
-    \textit{Triết lý nhân sinh và đối nhân xử thế từ cổ chí kim.}
-
-  \item \textbf{Điển Tích \& Chuyện Kể: Hai Mặt Của Một Đồng Xu} ---
-    \textit{Tư duy biện chứng, âm dương, mâu thuẫn và cân bằng.}
-
-  \item \textbf{Vòng Quay Cuộc Đời} ---
-    \textit{Nhân quả, bản sắc, buông bỏ và người thầy vô hình.}
-
-  \item \textbf{Lời Dạy Của Bậc Hiền Nhân} ---
-    \textit{Triết lý và lời dạy từ bậc thầy qua các thời đại Đông -- Tây.}
-
-  \item \textbf{Thô Nhưng Thật: Chuyện Học Sinh} ---
-    \textit{Điểm số, áp lực, so sánh, bắt nạt --- những chuyện học đường thật.}
-
-  \item \textbf{Ra Đời Không Có Bản Nháp} ---
-    \textit{Công việc đầu tiên, tiền đầu tiên, bị từ chối, sống xa nhà.}
-\end{enumerate}
-\end{tcolorbox}
-
-\vspace{8pt}
-
-% === 9 QUYỂN SAU (hiển thị nhỏ gọn) ===
-\begin{tcolorbox}[
-  colback=deepblue!4,
-  colframe=deepblue!50,
-  title={\bfseries Bộ Nâng Cao \& Cuốn Tổng Hợp (Quyển X -- XVII, Cuốn 1 -- 2)},
-  coltitle=white,
-  fonttitle=\bfseries,
-  arc=6pt, boxrule=1pt,
-  left=8pt, right=8pt, top=6pt, bottom=6pt,
-  fontupper=\small
-]
-\begin{enumerate}[leftmargin=1.4em, itemsep=2pt, parsep=0pt, start=10]
-  \item \textbf{Những Ảo Tưởng Của Tuổi Trẻ} --- \textit{Nhận ra và điều chỉnh ảo tưởng trước khi đặt cược cả cuộc đời vào đó.}
-  \item \textbf{Những Cái Bẫy Người Trẻ Tự Bước Vào} --- \textit{Tự mãn, cái tôi, so sánh, trì hoãn --- những bẫy ta tự giăng cho mình.}
-  \item \textbf{Những Điều Thầy Giáo Nhìn Thấy} --- \textit{Bục giảng nhìn thấy những gì học sinh chưa tự thấy ở mình.}
-  \item \textbf{Những Câu Hỏi Học Trò Không Nói Thẳng} --- \textit{Trả lời thẳng những câu hỏi bị giữ trong im lặng.}
-  \item \textbf{100 Câu Hỏi Học Trò Hay Hỏi Về Chuyện Học} --- \textit{Chuyện học, động lực, thói quen, áp lực và con đường tương lai.}
-  \item \textbf{Những Điều Thầy Muốn Nói Với Học Sinh} --- \textit{Thầy nói chuyện thẳng, gần và chậm về học tập, tính cách, đường đời.}
-  \item \textbf{Những Bài Học Nhỏ Trong Lớp Học} --- \textit{Bài học lớn từ tình huống nhỏ xảy ra mỗi ngày trên lớp.}
-  \item \textbf{Những Điều Học Sinh Nên Hiểu Sớm} --- \textit{Nền tảng quan trọng --- hiểu sớm thì đỡ vấp về sau.}
-\end{enumerate}
-
-\medskip
-\textbf{Cuốn 1:} \textit{Những Lời Thầy Nói Trong Lớp Học} --- 50 câu lời thầy, 100 câu im lặng suy nghĩ, 50 câu hài hước sâu sắc.\\[3pt]
-\textbf{Cuốn 2:} \textit{Giật Mình --- Đỉnh Cao --- Lời Cuối Năm} --- 30 câu giật mình, 50 câu đỉnh cao sư phạm, 50 câu cuối năm xúc động.
-\end{tcolorbox}
-
-\vspace{6pt}
 \begin{center}
-{\color{softcopper}\rule{10cm}{1.5pt}}\\[4pt]
-{\small\itshape\color{deepblue!70} Bộ sách song ngữ Việt -- Anh dành cho giáo viên và học sinh}
+{\small\color{catalogink} Bản danh mục chung áp dụng cho toàn bộ bộ sách.}\\[3pt]
+{\footnotesize\itshape\color{catalogink!85} Ghi chú hiển thị: thư mục quyen-28 tương ứng Quyển XXVII; thư mục quyen-32 tương ứng Quyển XXVIII.}
 \end{center}
+
 \clearpage

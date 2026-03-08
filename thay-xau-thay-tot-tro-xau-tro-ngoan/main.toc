@@ -1,0 +1,16 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Loi tua}{i}{chapter*.1}%
+\contentsline {chapter}{Loi mo dau}{iii}{chapter*.2}%
+\contentsline {chapter}{Huong dan phat trien ban thao}{v}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Guong mat nguoi thay trong lop hoc}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Ky luat, cong bang va gioi han}{4}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Loi noi cua thay, tieng noi cua tro}{7}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Ban be, phe nhom va ap luc hoc duong}{10}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Luoi hoc, doi pho va quay cop}{13}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Long tu trong, xau ho va kha nang dung day}{16}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Phu huynh, gia dinh va cach day con}{19}{chapter.7}%
+\contentsline {chapter}{\numberline {8}That bai, ky luat va co hoi lam lai}{22}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Tu hoc, tu quan ly va truong thanh}{25}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Chon ban, chon moi truong, chon tuong lai}{28}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Nhan cach cua nguoi day, nhan cach cua nguoi hoc}{31}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Tu lop hoc ra cuoc doi}{34}{chapter.12}%

@@ -1,0 +1,94 @@
+\documentclass[14pt,oneside]{extbook}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T5,T1]{fontenc}
+\usepackage[vietnamese,english]{babel}
+\usepackage[a5paper,margin=1.7cm]{geometry}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{lmodern}
+
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=black}
+
+\definecolor{inkdark}{HTML}{213547}
+\definecolor{inkwarm}{HTML}{9C4F2F}
+\definecolor{goldline}{HTML}{C9A66B}
+\definecolor{pagewash}{HTML}{FBF7F0}
+\definecolor{storybg}{HTML}{FFFDF9}
+\definecolor{storyframe}{HTML}{D8C2A7}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\fancyhead[L]{\footnotesize Thay Xau - Thay Tot, Tro Xau - Tro Ngoan}
+\fancyhead[R]{\footnotesize Du thao 12 chuong - 120 tinh huong}
+\setlength{\headheight}{14pt}
+
+\titleformat{\chapter}[display]
+  {\bfseries\color{inkdark}}
+  {\filleft\Large\chaptername\ \thechapter}
+  {6pt}
+  {\Huge}
+
+\newtcolorbox{leadbox}{
+  colback=pagewash,
+  colframe=goldline,
+  boxrule=0.9pt,
+  arc=6pt,
+  left=10pt,
+  right=10pt,
+  top=8pt,
+  bottom=8pt
+}
+
+\newcommand{\storycard}[3]{%
+\begin{tcolorbox}[
+  colback=storybg,
+  colframe=storyframe,
+  boxrule=0.7pt,
+  arc=5pt,
+  left=8pt,
+  right=8pt,
+  top=6pt,
+  bottom=6pt
+]
+{\small\bfseries\color{inkwarm} #1}\\[-1pt]
+{\footnotesize\itshape #2}\\[3pt]
+{\small #3}
+\end{tcolorbox}
+}
+
+\begin{document}
+
+\input{cover}
+
+\frontmatter
+\input{chapters/loitua}
+\input{loi-mo-dau}
+\input{chapters/huong-dan}
+
+\tableofcontents
+
+\mainmatter
+\input{chapters/ch01}
+\input{chapters/ch02}
+\input{chapters/ch03}
+\input{chapters/ch04}
+\input{chapters/ch05}
+\input{chapters/ch06}
+\input{chapters/ch07}
+\input{chapters/ch08}
+\input{chapters/ch09}
+\input{chapters/ch10}
+\input{chapters/ch11}
+\input{chapters/ch12}
+
+\end{document}

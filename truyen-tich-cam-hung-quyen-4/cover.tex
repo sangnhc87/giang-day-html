@@ -1,15 +1,18 @@
 %============================================================
-% TRANG BÌA QUYỂN IV
+% TRANG BÌA SÁCH KHANG TRANG HƠN
 %============================================================
 \begin{titlepage}
 \thispagestyle{empty}
-\pagecolor{truyenred!8}
+\pagecolor{truyenred!5} % Màu nền nhẹ nhàng, thanh lịch hơn
 
+% Vẽ khung viền hoàng gia
 \begin{tikzpicture}[remember picture, overlay]
-  \fill[white, opacity=0.5, rounded corners=20pt]
+  % Khung nền lớn
+  \fill[white, opacity=0.6, rounded corners=20pt]
     ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
     ($(current page.south east)+(-1.5cm,1.5cm)$);
 
+  % Viền mạ vàng đậm (Double lines)
   \draw[truyengold!80!black, line width=3pt, rounded corners=15pt]
     ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
     ($(current page.south east)+(-1.8cm,1.8cm)$);
@@ -18,31 +21,41 @@
     ($(current page.north west)+(2cm,-2cm)$) rectangle
     ($(current page.south east)+(-2cm,2cm)$);
 
-  \foreach \x/\xsign/\ysign in {
-    north west/1/-1,
-    north east/-1/-1,
-    south west/1/1,
-    south east/-1/1%
+  % Hoa văn góc
+  \foreach \x/\y/\xsign/\ysign in {%
+    north west/1.8cm/1/-1,
+    north east/1.8cm/-1/-1,
+    south west/1.8cm/1/1,
+    south east/1.8cm/-1/1%
   } {
     \draw[truyengold!80!black, line width=1.5pt]
       ($(current page.\x) + (\xsign*0.8cm, \ysign*2.8cm)$) --
       ($(current page.\x) + (\xsign*2.8cm, \ysign*2.8cm)$) --
       ($(current page.\x) + (\xsign*2.8cm, \ysign*0.8cm)$);
-    \fill[truyengold!60!white]
-      ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
+
+    \fill[truyengold!60!white] ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
   }
+
+  % Khung phụ trang trí
+  \node[anchor=center] at ($(current page.center)-(0, 2cm)$) {
+    \begin{tikzpicture}
+      \draw[truyenblue!20, line width=0.5pt] (0,0) circle (5cm);
+      \draw[truyengold!40, line width=1pt] (0,0) circle (4.8cm);
+    \end{tikzpicture}
+  };
 \end{tikzpicture}
 
-\vspace*{1.8cm}
+\vspace*{2cm}
 
 \begin{center}
+  % Phần trên
   {\color{truyengold!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
-  {\fontsize{13}{16}\selectfont\color{truyenblue!80!black}\scshape
-   \textbf{Triết Lý Nhân Sinh \& Đối Nhân Xử Thế}}\\[1.3cm]
+  {\fontsize{14}{16}\selectfont\color{truyenblue!80!black}\scshape \textbf{Chuyện Xưa, Lẽ Sống Nay}}\\[1.5cm]
 
+  % Quyển
   \begin{tcolorbox}[
     width=6.5cm,
-    colback=truyengold!25,
+    colback=truyengold!20,
     colframe=truyengold!80!black,
     arc=4pt,
     boxrule=1.5pt,
@@ -53,31 +66,32 @@
   \end{tcolorbox}
   \vspace{0.8cm}
 
-  {\fontsize{42}{50}\selectfont\bfseries\color{truyenred!80!black}
-    Điển Tích \&}\\[0.4cm]
+  % Tiêu đề chính
   {\fontsize{38}{45}\selectfont\bfseries\color{truyenred!80!black}
-    Chuyện Kể}\\[0.8cm]
+    Điển Tích \&}\\[0.4cm]
+  {\fontsize{38}{45}\selectfont\bfseries\color{truyengold!80!black}
+    Chuyện Kể}\\[0.4cm]
 
+  % Tiêu đề phụ
   {\fontsize{16}{20}\selectfont\color{truyengold!90!black}\itshape
-    Từ Cổ Chí Kim --- Những Bài Học Làm Người}\\[1cm]
+    Triết Lý Nhân Sinh \& Đối Nhân Xử Thế}\\[1cm]
 
+  % Đường kẻ giữa
   {\color{truyenblue!60}\rule{6cm}{1pt}}\\[5pt]
   {\color{truyengold!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
   {\color{truyenblue!60}\rule{6cm}{1pt}}\\[1.5cm]
 
+  % Text giới thiệu
   {\normalsize\itshape\color{truyenblue!90!black}
-   ``Người ta không học được gì từ lịch sử,\\
-   \textit{(People learn nothing from history,)}\\[0.2cm]
-   ngoại trừ những ai chịu lắng nghe lịch sử.''\\
-   \textit{(except those who choose to truly listen to it.)}\\[0.5cm]
-   --- \textit{Georg Hegel} ---}
+   ``Từ những câu chuyện xưa, ta tìm thấy chính mình.\\
+   Người trí không chỉ học từ kinh nghiệm bản thân, mà còn học từ lịch sử.''}
 
   \vfill
 
+  % Tác giả
   {\fontsize{16}{20}\selectfont\bfseries\color{truyenblue!90!black}
     Sưu tầm \& Tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
-  {\small\color{truyenred!70!black}\itshape
-    (Bộ sách đang tiếp tục được hoàn thiện)}\\[0.2cm]
+
   {\small\color{gray} Bản mềm phát hành --- Năm 2026}\\[0.5cm]
 \end{center}
 

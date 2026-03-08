@@ -53,7 +53,7 @@ cover_tex = r"""%============================================================
 \begin{center}
   % Phần trên
   {\color{truyengold!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
-  {\fontsize{14}{16}\selectfont\color{truyenblue!80!black}\scshape \textbf{Tuyển Tập Cổ Học Tinh Hoa}}\\[1.5cm]
+  {\fontsize{14}{16}\selectfont\color{truyenblue!80!black}\scshape \textbf{Tủ Sách Song Ngữ Việt - Anh}}\\[1.5cm]
 
   % Quyển
   \begin{tcolorbox}[

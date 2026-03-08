@@ -1,0 +1,99 @@
+%============================================================
+% TRUYEN SONG NGU QUYEN 26 - PHU HUYNH VA CON CAI
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{\normalfont}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+
+\geometry{a4paper,left=1.8cm,right=1.8cm,top=2cm,bottom=2cm,headheight=41pt}
+
+% Bang mau Quyển XXVI: Xanh den diu va hong gach am
+\definecolor{deepsea}{RGB}{63, 96, 102}
+\definecolor{clayrose}{RGB}{188, 121, 104}
+\definecolor{inkdark}{RGB}{51, 58, 65}
+\definecolor{boxbg}{RGB}{248, 243, 239}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{deepsea}\itshape\small Quyển XXVI: Phụ Huynh Và Con Cái}
+\fancyhead[RE,LO]{\color{inkdark}\itshape\small \leftmark}
+\fancyfoot[C]{\color{clayrose}\textbf{-- \thepage\ --}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{clayrose}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{inkdark}\centering}
+  {\large\itshape Chương \thechapter}
+  {1ex}
+  {\Huge\scshape}[\vspace{1ex}{\color{clayrose}\rule{0.5\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\color{deepsea}\Large\bfseries}
+  {\thesection.}{1em}{}
+\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+
+\newtcolorbox{truyen}[2]{
+  colback=boxbg,colframe=deepsea,coltitle=white,fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},arc=5pt,boxrule=1.2pt,breakable,enhanced,drop shadow=black!15
+}
+\newtcolorbox{baihoc}{
+  colback=inkdark!8,colframe=inkdark,coltitle=white,fonttitle=\bfseries,
+  title={$\bigstar$ Điều còn lại trong nhà},arc=4pt,boxrule=1pt,breakable,enhanced
+}
+\newtcolorbox{ghinhoanh}{
+  colback=deepsea!6,colframe=deepsea,coltitle=white,fonttitle=\bfseries,
+  title={Easy English},arc=4pt,boxrule=1pt,breakable,enhanced
+}
+\newtcolorbox{tuhocnhanh}{
+  colback=clayrose!12,colframe=clayrose!70!black,coltitle=black,fonttitle=\bfseries,
+  title={Gợi Ý Cùng Nghĩ},arc=4pt,boxrule=1pt,breakable,enhanced
+}
+\newcommand{\chuhoa}[2]{\lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{inkdark}{#1}}{#2}}
+\newcommand{\ngancach}{%
+  \begin{center}\textcolor{clayrose}{\rule{0.3\textwidth}{0.5pt}\hspace{6pt}$\diamond$\hspace{6pt}\rule{0.3\textwidth}{0.5pt}}\end{center}\vspace{6pt}}
+
+\begin{document}
+\include{cover}
+\input{chapters/loitua}
+\input{chapters/huong-dan}
+\frontmatter
+\tableofcontents
+\clearpage
+\include{loi-mo-dau}
+
+\mainmatter
+\include{chapters/ch01-cha-me-va-viec-hoc}
+\include{chapters/ch02-ky-vong-va-so-sanh}
+\include{chapters/ch03-lang-nghe-va-hieu-con}
+\include{chapters/ch04-ky-luat-va-tu-do}
+\include{chapters/ch05-tien-bac-va-hy-sinh}
+\include{chapters/ch06-cam-xuc-va-vet-thuong}
+\include{chapters/ch07-con-lon-len-cha-me-phai-doi}
+\include{chapters/ch08-nhung-cau-noi-lam-dau-nha}
+\include{chapters/ch09-nhung-cau-hoi-cha-me-kho-tra-loi}
+\include{chapters/ch10-khong-co-gia-dinh-hoan-hao}
+
+\backmatter
+\end{document}

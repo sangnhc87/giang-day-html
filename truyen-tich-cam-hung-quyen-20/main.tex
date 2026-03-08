@@ -18,7 +18,9 @@
 \tcbuselibrary{skins,breakable}
 \usepackage{enumitem}
 \usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{\normalfont}
 \usepackage{parskip}
+\usepackage{afterpage}
 \usepackage{tikz}
 \usetikzlibrary{calc,shapes.geometric}
 
@@ -53,6 +55,16 @@
 
 \begin{document}
 \include{cover}
+
+%------------------------------------------------------------
+% LỜI TỰA
+%------------------------------------------------------------
+\input{chapters/loitua}
+
+%------------------------------------------------------------
+% HƯỚNG DẪN SỬ DỤNG
+%------------------------------------------------------------
+\input{chapters/huong-dan}
 \frontmatter
 \tableofcontents
 \clearpage

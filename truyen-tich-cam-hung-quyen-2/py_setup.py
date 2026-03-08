@@ -193,6 +193,6 @@ with open("chapters/ch01-dao-lam-con.tex", "w") as f: f.write(ch1_tex)
 
 with open("cover.tex", "r") as f: cover = f.read()
 cover = cover.replace("QUYỂN I", "QUYỂN II")
-cover = cover.replace("Tuyển Tập Cổ Học Tinh Hoa", "Đạo Làm Người & Đối Nhân Xử Thế")
+cover = cover.replace("Tủ Sách Song Ngữ Việt - Anh", "Đạo Làm Người & Đối Nhân Xử Thế")
 with open("cover.tex", "w") as f: f.write(cover)
 

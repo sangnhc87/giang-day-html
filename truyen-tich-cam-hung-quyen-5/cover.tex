@@ -1,15 +1,18 @@
 %============================================================
-% TRANG BÌA QUYỂN V
+% TRANG BÌA SÁCH KHANG TRANG HƠN
 %============================================================
 \begin{titlepage}
 \thispagestyle{empty}
-\pagecolor{truyenred!6}
+\pagecolor{truyenred!5} % Màu nền nhẹ nhàng, thanh lịch hơn
 
+% Vẽ khung viền hoàng gia
 \begin{tikzpicture}[remember picture, overlay]
-  \fill[white, opacity=0.5, rounded corners=20pt]
+  % Khung nền lớn
+  \fill[white, opacity=0.6, rounded corners=20pt]
     ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
     ($(current page.south east)+(-1.5cm,1.5cm)$);
 
+  % Viền mạ vàng đậm (Double lines)
   \draw[truyengold!80!black, line width=3pt, rounded corners=15pt]
     ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
     ($(current page.south east)+(-1.8cm,1.8cm)$);
@@ -18,31 +21,41 @@
     ($(current page.north west)+(2cm,-2cm)$) rectangle
     ($(current page.south east)+(-2cm,2cm)$);
 
-  \foreach \x/\xsign/\ysign in {
-    north west/1/-1,
-    north east/-1/-1,
-    south west/1/1,
-    south east/-1/1%
+  % Hoa văn góc
+  \foreach \x/\y/\xsign/\ysign in {%
+    north west/1.8cm/1/-1,
+    north east/1.8cm/-1/-1,
+    south west/1.8cm/1/1,
+    south east/1.8cm/-1/1%
   } {
     \draw[truyengold!80!black, line width=1.5pt]
       ($(current page.\x) + (\xsign*0.8cm, \ysign*2.8cm)$) --
       ($(current page.\x) + (\xsign*2.8cm, \ysign*2.8cm)$) --
       ($(current page.\x) + (\xsign*2.8cm, \ysign*0.8cm)$);
-    \fill[truyengold!60!white]
-      ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
+
+    \fill[truyengold!60!white] ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
   }
+
+  % Khung phụ trang trí
+  \node[anchor=center] at ($(current page.center)-(0, 2cm)$) {
+    \begin{tikzpicture}
+      \draw[truyenblue!20, line width=0.5pt] (0,0) circle (5cm);
+      \draw[truyengold!40, line width=1pt] (0,0) circle (4.8cm);
+    \end{tikzpicture}
+  };
 \end{tikzpicture}
 
-\vspace*{1.8cm}
+\vspace*{2cm}
 
 \begin{center}
+  % Phần trên
   {\color{truyengold!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
-  {\fontsize{13}{16}\selectfont\color{truyenblue!80!black}\scshape
-   \textbf{Biện Chứng Nhân Sinh --- Triết Lý Âm Dương}}\\[1.3cm]
+  {\fontsize{14}{16}\selectfont\color{truyenblue!80!black}\scshape \textbf{Nhìn Hai Mặt Cuộc Đời}}\\[1.5cm]
 
+  % Quyển
   \begin{tcolorbox}[
     width=6.5cm,
-    colback=truyengold!25,
+    colback=truyengold!20,
     colframe=truyengold!80!black,
     arc=4pt,
     boxrule=1.5pt,
@@ -53,41 +66,34 @@
   \end{tcolorbox}
   \vspace{0.8cm}
 
-  {\fontsize{38}{46}\selectfont\bfseries\color{truyenred!80!black}
-    Điển Tích \&}\\[0.4cm]
-  {\fontsize{34}{42}\selectfont\bfseries\color{truyenred!80!black}
-    Chuyện Kể}\\[0.8cm]
+  % Tiêu đề chính
+  {\fontsize{38}{45}\selectfont\bfseries\color{truyenred!80!black}
+    Hai Mặt Của}\\[0.4cm]
+  {\fontsize{38}{45}\selectfont\bfseries\color{truyengold!80!black}
+    Một Đồng Xu}\\[0.4cm]
 
-  {\fontsize{20}{26}\selectfont\bfseries\color{truyenblue}
-    Hai Mặt Của Một Đồng Xu}\\[0.5cm]
+  % Tiêu đề phụ
+  {\fontsize{16}{20}\selectfont\color{truyengold!90!black}\itshape
+    Tư Duy Biện Chứng~--- Âm Dương \& Cân Bằng}\\[1cm]
 
-  {\color{truyengold!80!black}\large$\diamond\;\diamond\;\diamond$}\\[1.5cm]
+  % Đường kẻ giữa
+  {\color{truyenblue!60}\rule{6cm}{1pt}}\\[5pt]
+  {\color{truyengold!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
+  {\color{truyenblue!60}\rule{6cm}{1pt}}\\[1.5cm]
 
-  \begin{tcolorbox}[
-    width=10cm,
-    colback=truyenblue!10,
-    colframe=truyenblue!60,
-    arc=6pt,
-    boxrule=1pt,
-    halign=center
-  ]
-    {\fontsize{11}{15}\selectfont\itshape\color{truyenblue!80!black}
-     ``Trong mỗi điều xấu đều ẩn chứa mầm tốt,\\
-     trong mỗi điều tốt đều tiềm ẩn mầm xấu.\\
-     Kẻ trí nhìn thấy cả hai.''}\\[6pt]
-    {\small --- Lão Tử}
-  \end{tcolorbox}
-
-  \vspace{1.5cm}
-  {\color{truyengold!80!black}\large$\star\;\star\;\star$}\\[0.6cm]
-
-  {\fontsize{11}{14}\selectfont\color{truyenblue!70!black}
-    \textbf{120 Câu Chuyện Song Ngữ Việt -- Anh}\\[4pt]
-    12 Chủ Đề Biện Chứng --- Giáo Dục Nhân Sinh Quan}
+  % Text giới thiệu
+  {\normalsize\itshape\color{truyenblue!90!black}
+   ``Kẻ trí nhìn thấy cả hai mặt của mỗi đồng xu.\\
+   Sự thật thường nằm ở giữa, không phải ở một phía.''}
 
   \vfill
-  {\small\color{truyenblue!60!black}
-    \textit{Dành cho học sinh --- Cải thiện nhân sinh quan \& tư duy biện chứng}}
+
+  % Tác giả
+  {\fontsize{16}{20}\selectfont\bfseries\color{truyenblue!90!black}
+    Sưu tầm \& Tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
+
+  {\small\color{gray} Bản mềm phát hành --- Năm 2026}\\[0.5cm]
 \end{center}
-\end{titlepage}
+
 \afterpage{\nopagecolor}
+\end{titlepage}

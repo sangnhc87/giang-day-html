@@ -1,5 +1,5 @@
 %============================================================
-% TRUYỆN SONG NGỮ QUYỂN 22 - 50 CÂU NÓI ĐỈNH CAO SƯ PHẠM KHI HỌC SINH NẢN HỌC
+% TRUYỆN SONG NGỮ QUYỂN 22 - 100 CÂU NÓI ĐỈNH CAO SƯ PHẠM KHI HỌC SINH NẢN HỌC
 %============================================================
 \documentclass[14pt,a4paper,twoside]{extbook}
 \usepackage{extsizes}
@@ -18,7 +18,9 @@
 \tcbuselibrary{skins,breakable}
 \usepackage{enumitem}
 \usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{\normalfont}
 \usepackage{parskip}
+\usepackage{afterpage}
 \usepackage{tikz}
 \usetikzlibrary{calc,shapes.geometric}
 
@@ -32,7 +34,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE,RO]{\color{deepviolet}\itshape\small Quyển XXII: 50 Câu Đỉnh Cao Sư Phạm Khi Nản Học}
+\fancyhead[LE,RO]{\color{deepviolet}\itshape\small Quyển XXII: 100 Câu Đỉnh Cao Sư Phạm Khi Nản Học}
 \fancyhead[RE,LO]{\color{inkdark}\itshape\small \leftmark}
 \fancyfoot[C]{\color{amber}\textbf{-- \thepage\ --}}
 \renewcommand{\headrulewidth}{0.6pt}
@@ -53,6 +55,16 @@
 
 \begin{document}
 \include{cover}
+
+%------------------------------------------------------------
+% LỜI TỰA
+%------------------------------------------------------------
+\input{chapters/loitua}
+
+%------------------------------------------------------------
+% HƯỚNG DẪN SỬ DỤNG
+%------------------------------------------------------------
+\input{chapters/huong-dan}
 \frontmatter
 \tableofcontents
 \clearpage
@@ -63,5 +75,10 @@
 \include{chapters/ch03}
 \include{chapters/ch04}
 \include{chapters/ch05}
+\include{chapters/ch06}
+\include{chapters/ch07}
+\include{chapters/ch08}
+\include{chapters/ch09}
+\include{chapters/ch10}
 \backmatter
 \end{document}

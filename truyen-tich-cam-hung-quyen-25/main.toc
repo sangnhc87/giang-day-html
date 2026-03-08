@@ -1,0 +1,114 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {chapter}{Lời Tựa}{3}{}%
+\contentsline {chapter}{Hướng Dẫn Sử Dụng Sách}{5}{}%
+\contentsline {chapter}{Lời Mở Đầu}{v}{}%
+\contentsline {chapter}{\numberline {1}Những câu hỏi lý sự về việc học}{1}{}%
+\contentsline {section}{\numberline {1.1}Vì sao phải học?}{1}{}%
+\contentsline {section}{\numberline {1.2}Người ta không học vẫn giàu}{2}{}%
+\contentsline {section}{\numberline {1.3}Học nhiều để làm gì?}{3}{}%
+\contentsline {section}{\numberline {1.4}Học chỉ để thi thôi}{4}{}%
+\contentsline {section}{\numberline {1.5}Học mà không vui}{4}{}%
+\contentsline {section}{\numberline {1.6}Học để làm người hay để kiếm tiền?}{5}{}%
+\contentsline {section}{\numberline {1.7}Nếu cha mẹ bắt học thì sao gọi là tự giác?}{6}{}%
+\contentsline {section}{\numberline {1.8}Em thấy học giỏi cũng chưa chắc vui}{7}{}%
+\contentsline {section}{\numberline {1.9}Có cần học khi nhà có điều kiện rồi?}{8}{}%
+\contentsline {section}{\numberline {1.10}Học có làm mình bớt khổ không?}{9}{}%
+\contentsline {chapter}{\numberline {2}Những câu hỏi về điểm số}{11}{}%
+\contentsline {section}{\numberline {2.1}Điểm thấp là do thầy khó}{11}{}%
+\contentsline {section}{\numberline {2.2}Em làm đúng ý em mà sao không có điểm?}{12}{}%
+\contentsline {section}{\numberline {2.3}Bạn kia học ít hơn mà điểm cao hơn}{13}{}%
+\contentsline {section}{\numberline {2.4}Một điểm số nói lên điều gì?}{13}{}%
+\contentsline {section}{\numberline {2.5}Nếu em cố mà vẫn thấp thì sao?}{14}{}%
+\contentsline {section}{\numberline {2.6}Điểm cao mà không hiểu thì có ích gì?}{15}{}%
+\contentsline {section}{\numberline {2.7}Bị so sánh điểm thì phải làm sao?}{16}{}%
+\contentsline {section}{\numberline {2.8}Em sợ xem điểm}{17}{}%
+\contentsline {section}{\numberline {2.9}Điểm có công bằng hoàn toàn không?}{18}{}%
+\contentsline {section}{\numberline {2.10}Áp lực điểm có xấu hết không?}{18}{}%
+\contentsline {chapter}{\numberline {3}Những câu hỏi về sự thông minh}{21}{}%
+\contentsline {section}{\numberline {3.1}Em không thông minh}{21}{}%
+\contentsline {section}{\numberline {3.2}Bạn kia giỏi sẵn rồi}{22}{}%
+\contentsline {section}{\numberline {3.3}Em học chậm}{23}{}%
+\contentsline {section}{\numberline {3.4}Sao em nhớ kém quá?}{23}{}%
+\contentsline {section}{\numberline {3.5}Có phải ai giỏi cũng tự tin?}{24}{}%
+\contentsline {section}{\numberline {3.6}Em không có năng khiếu}{25}{}%
+\contentsline {section}{\numberline {3.7}Thông minh mà lười có nguy hiểm không?}{26}{}%
+\contentsline {section}{\numberline {3.8}Em bình thường quá}{27}{}%
+\contentsline {section}{\numberline {3.9}Em cứ bị khớp trước người giỏi hơn}{27}{}%
+\contentsline {section}{\numberline {3.10}Có phải ai thông minh cũng học nhanh mọi thứ?}{28}{}%
+\contentsline {chapter}{\numberline {4}Những câu hỏi về nỗ lực}{31}{}%
+\contentsline {section}{\numberline {4.1}Sao phải làm bài tập?}{31}{}%
+\contentsline {section}{\numberline {4.2}Em chỉ cần nghe giảng là đủ}{32}{}%
+\contentsline {section}{\numberline {4.3}Học khuya mới là chăm}{32}{}%
+\contentsline {section}{\numberline {4.4}Cố mà chưa thấy kết quả}{33}{}%
+\contentsline {section}{\numberline {4.5}Có cần hỏi khi không hiểu?}{34}{}%
+\contentsline {section}{\numberline {4.6}Không có hứng thì học sao nổi?}{35}{}%
+\contentsline {section}{\numberline {4.7}Làm ít mà đều có hơn làm nhiều mà gãy không?}{36}{}%
+\contentsline {section}{\numberline {4.8}Sao thầy cứ nhắc hoài một lỗi?}{37}{}%
+\contentsline {section}{\numberline {4.9}Em muốn giỏi nhanh}{37}{}%
+\contentsline {section}{\numberline {4.10}Một ngày lười có phá hết công sức không?}{38}{}%
+\contentsline {chapter}{\numberline {5}Những câu hỏi về thất bại}{41}{}%
+\contentsline {section}{\numberline {5.1}Em sợ sai}{41}{}%
+\contentsline {section}{\numberline {5.2}Trượt một bài kiểm tra coi như xong?}{42}{}%
+\contentsline {section}{\numberline {5.3}Em thất bại vì xui}{42}{}%
+\contentsline {section}{\numberline {5.4}Bị cười một lần nên không dám phát biểu nữa}{43}{}%
+\contentsline {section}{\numberline {5.5}Nếu em từng lười thì còn cứu kịp không?}{44}{}%
+\contentsline {section}{\numberline {5.6}Thất bại có đáng xấu hổ không?}{45}{}%
+\contentsline {section}{\numberline {5.7}Em làm lại rồi mà vẫn sai}{46}{}%
+\contentsline {section}{\numberline {5.8}Ngã nhiều quá có lì không nổi}{47}{}%
+\contentsline {section}{\numberline {5.9}Thua bạn thân có đau hơn không?}{47}{}%
+\contentsline {section}{\numberline {5.10}Làm sao biết nên cố tiếp hay dừng lại?}{48}{}%
+\contentsline {chapter}{\numberline {6}Những câu hỏi về tương lai}{51}{}%
+\contentsline {section}{\numberline {6.1}AI làm hết rồi, học làm gì?}{51}{}%
+\contentsline {section}{\numberline {6.2}Sau này em chưa biết làm nghề gì}{52}{}%
+\contentsline {section}{\numberline {6.3}Nhà em không khá thì mơ lớn được không?}{53}{}%
+\contentsline {section}{\numberline {6.4}Học mấy môn này ngoài đời để làm gì?}{54}{}%
+\contentsline {section}{\numberline {6.5}Tương lai có chắc chắn không?}{54}{}%
+\contentsline {section}{\numberline {6.6}Nếu em chọn sai nghề thì sao?}{55}{}%
+\contentsline {section}{\numberline {6.7}Muốn giàu nhanh có sai không?}{56}{}%
+\contentsline {section}{\numberline {6.8}Em không có quan hệ thì sao?}{57}{}%
+\contentsline {section}{\numberline {6.9}Có cần ước mơ lớn không?}{58}{}%
+\contentsline {section}{\numberline {6.10}Nếu em chưa có ước mơ thì sao?}{59}{}%
+\contentsline {chapter}{\numberline {7}Những câu hỏi về kỷ luật}{61}{}%
+\contentsline {section}{\numberline {7.1}Tại sao phải đúng giờ?}{61}{}%
+\contentsline {section}{\numberline {7.2}Không làm bài một hôm có sao đâu}{62}{}%
+\contentsline {section}{\numberline {7.3}Đồng phục để làm gì?}{62}{}%
+\contentsline {section}{\numberline {7.4}Trong lớp sao phải im lặng?}{63}{}%
+\contentsline {section}{\numberline {7.5}Sao phải chép bài cẩn thận?}{64}{}%
+\contentsline {section}{\numberline {7.6}Sao phải xếp hàng, sao phải theo thứ tự?}{65}{}%
+\contentsline {section}{\numberline {7.7}Không ai thấy thì làm sai một chút có sao không?}{66}{}%
+\contentsline {section}{\numberline {7.8}Sao phải xin phép?}{67}{}%
+\contentsline {section}{\numberline {7.9}Em chỉ phạm lỗi nhỏ thôi}{68}{}%
+\contentsline {section}{\numberline {7.10}Kỷ luật có làm mất tự do không?}{68}{}%
+\contentsline {chapter}{\numberline {8}Những câu lý sự hài hước trong lớp}{71}{}%
+\contentsline {section}{\numberline {8.1}Em không nói chuyện, em đang trao đổi học thuật}{71}{}%
+\contentsline {section}{\numberline {8.2}Em ngủ nhưng vẫn nghe bài}{72}{}%
+\contentsline {section}{\numberline {8.3}Thầy nhìn em là em hiểu rồi}{73}{}%
+\contentsline {section}{\numberline {8.4}Em đi trễ vì đồng hồ thương em}{73}{}%
+\contentsline {section}{\numberline {8.5}Cả lớp làm thì sao gọi là quay bài?}{74}{}%
+\contentsline {section}{\numberline {8.6}Em không quay cóp, em chỉ tham khảo nhanh}{75}{}%
+\contentsline {section}{\numberline {8.7}Em không cãi, em đang bảo vệ quan điểm}{76}{}%
+\contentsline {section}{\numberline {8.8}Em không làm biếng, em đang dưỡng sức}{77}{}%
+\contentsline {section}{\numberline {8.9}Em không quên bài, em quên mang não}{77}{}%
+\contentsline {section}{\numberline {8.10}Em không hỗn, em đang thẳng tính}{78}{}%
+\contentsline {chapter}{\numberline {9}Những câu hỏi khiến thầy cũng phải suy nghĩ}{81}{}%
+\contentsline {section}{\numberline {9.1}Thầy có từng ghét đi học không?}{81}{}%
+\contentsline {section}{\numberline {9.2}Nếu người lớn cũng sai thì sao bắt tụi em đúng?}{82}{}%
+\contentsline {section}{\numberline {9.3}Có phải thầy cũng từng sợ điểm thấp?}{83}{}%
+\contentsline {section}{\numberline {9.4}Học sinh cần điểm hay cần được hiểu?}{84}{}%
+\contentsline {section}{\numberline {9.5}Khi nào nên nghiêm, khi nào nên mềm?}{84}{}%
+\contentsline {section}{\numberline {9.6}Có khi nào thầy bất lực với học sinh không?}{85}{}%
+\contentsline {section}{\numberline {9.7}Thầy có thương học sinh nào hơn không?}{86}{}%
+\contentsline {section}{\numberline {9.8}Tại sao thầy cô hay nhớ học sinh cá biệt?}{87}{}%
+\contentsline {section}{\numberline {9.9}Thầy cô có buồn khi bị hiểu lầm không?}{88}{}%
+\contentsline {section}{\numberline {9.10}Điều gì làm thầy vui nhất khi dạy?}{89}{}%
+\contentsline {chapter}{\numberline {10}Những câu hỏi không có đáp án hoàn hảo}{91}{}%
+\contentsline {section}{\numberline {10.1}Học để hạnh phúc hay để thành công?}{91}{}%
+\contentsline {section}{\numberline {10.2}Có nên tha thứ cho người làm mình tổn thương?}{92}{}%
+\contentsline {section}{\numberline {10.3}Khi cố gắng mà vẫn thua thì sao?}{93}{}%
+\contentsline {section}{\numberline {10.4}Thầy cô có luôn đúng không?}{93}{}%
+\contentsline {section}{\numberline {10.5}Làm người tốt có bị thiệt không?}{94}{}%
+\contentsline {section}{\numberline {10.6}Có nên luôn nói thật hết không?}{95}{}%
+\contentsline {section}{\numberline {10.7}Nên chọn điều mình thích hay điều an toàn?}{96}{}%
+\contentsline {section}{\numberline {10.8}Có cần ai cũng hiểu mình không?}{97}{}%
+\contentsline {section}{\numberline {10.9}Có nên hy sinh hết cho gia đình không?}{98}{}%
+\contentsline {section}{\numberline {10.10}Nếu không ai công nhận thì mình cố để làm gì?}{99}{}%

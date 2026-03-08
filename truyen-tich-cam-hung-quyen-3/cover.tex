@@ -1,15 +1,18 @@
 %============================================================
-% TRANG BÌA QUYỂN III
+% TRANG BÌA SÁCH KHANG TRANG HƠN
 %============================================================
 \begin{titlepage}
 \thispagestyle{empty}
-\pagecolor{truyenred!5}
+\pagecolor{truyenred!5} % Màu nền nhẹ nhàng, thanh lịch hơn
 
+% Vẽ khung viền hoàng gia
 \begin{tikzpicture}[remember picture, overlay]
+  % Khung nền lớn
   \fill[white, opacity=0.6, rounded corners=20pt]
     ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
     ($(current page.south east)+(-1.5cm,1.5cm)$);
 
+  % Viền mạ vàng đậm (Double lines)
   \draw[truyengold!80!black, line width=3pt, rounded corners=15pt]
     ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
     ($(current page.south east)+(-1.8cm,1.8cm)$);
@@ -18,20 +21,22 @@
     ($(current page.north west)+(2cm,-2cm)$) rectangle
     ($(current page.south east)+(-2cm,2cm)$);
 
-  \foreach \x/\xsign/\ysign in {
-    north west/1/-1,
-    north east/-1/-1,
-    south west/1/1,
-    south east/-1/1%
+  % Hoa văn góc
+  \foreach \x/\y/\xsign/\ysign in {%
+    north west/1.8cm/1/-1,
+    north east/1.8cm/-1/-1,
+    south west/1.8cm/1/1,
+    south east/1.8cm/-1/1%
   } {
     \draw[truyengold!80!black, line width=1.5pt]
       ($(current page.\x) + (\xsign*0.8cm, \ysign*2.8cm)$) --
       ($(current page.\x) + (\xsign*2.8cm, \ysign*2.8cm)$) --
       ($(current page.\x) + (\xsign*2.8cm, \ysign*0.8cm)$);
-    \fill[truyengold!60!white]
-      ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
+
+    \fill[truyengold!60!white] ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
   }
 
+  % Khung phụ trang trí
   \node[anchor=center] at ($(current page.center)-(0, 2cm)$) {
     \begin{tikzpicture}
       \draw[truyenblue!20, line width=0.5pt] (0,0) circle (5cm);
@@ -43,10 +48,11 @@
 \vspace*{2cm}
 
 \begin{center}
+  % Phần trên
   {\color{truyengold!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
-  {\fontsize{14}{16}\selectfont\color{truyenblue!80!black}\scshape
-   \textbf{Động Vật \& Thực Vật Quanh Ta}}\\[1.5cm]
+  {\fontsize{14}{16}\selectfont\color{truyenblue!80!black}\scshape \textbf{Muôn Loài Dạy Ta}}\\[1.5cm]
 
+  % Quyển
   \begin{tcolorbox}[
     width=6.5cm,
     colback=truyengold!20,
@@ -60,30 +66,32 @@
   \end{tcolorbox}
   \vspace{0.8cm}
 
-  {\fontsize{42}{50}\selectfont\bfseries\color{truyenred!80!black}
-    Điển Tích \&}\\[0.4cm]
+  % Tiêu đề chính
   {\fontsize{38}{45}\selectfont\bfseries\color{truyenred!80!black}
-    Chuyện Kể}\\[0.8cm]
+    Điển Tích \&}\\[0.4cm]
+  {\fontsize{38}{45}\selectfont\bfseries\color{truyengold!80!black}
+    Chuyện Kể}\\[0.4cm]
 
-  {\fontsize{18}{22}\selectfont\color{truyengold!90!black}\itshape
-    Bài Học Từ Thiên Nhiên Quanh Ta}\\[1cm]
+  % Tiêu đề phụ
+  {\fontsize{16}{20}\selectfont\color{truyengold!90!black}\itshape
+    Bài Học Từ Thiên Nhiên \& Muôn Loài}\\[1cm]
 
+  % Đường kẻ giữa
   {\color{truyenblue!60}\rule{6cm}{1pt}}\\[5pt]
   {\color{truyengold!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
   {\color{truyenblue!60}\rule{6cm}{1pt}}\\[1.5cm]
 
+  % Text giới thiệu
   {\normalsize\itshape\color{truyenblue!90!black}
-   ``Thiên nhiên là người thầy vĩ đại nhất ---\\
-   \textit{(Nature is the greatest teacher ---)}\\[0.2cm]
-   Lắng nghe và ta sẽ học được muôn điều.''\\
-   \textit{(Listen, and we shall learn ten thousand things.)}''}
+   ``Lắng nghe thiên nhiên, ta học được muôn điều.\\
+   Nhện chăng tơ, kiến tha hồ, nước chảy đá mòn~--- tất cả đều dạy.''}
 
   \vfill
 
+  % Tác giả
   {\fontsize{16}{20}\selectfont\bfseries\color{truyenblue!90!black}
     Sưu tầm \& Tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
-  {\small\color{truyenred!70!black}\itshape
-    (Bộ sách đang tiếp tục được hoàn thiện)}\\[0.2cm]
+
   {\small\color{gray} Bản mềm phát hành --- Năm 2026}\\[0.5cm]
 \end{center}
 

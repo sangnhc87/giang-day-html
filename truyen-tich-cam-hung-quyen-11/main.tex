@@ -19,6 +19,7 @@
 \tcbuselibrary{skins,breakable}
 \usepackage{enumitem}
 \usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{\normalfont}
 \usepackage{parskip}
 \usepackage{afterpage}
 \usepackage{tikz}
@@ -128,9 +129,20 @@
 
 \include{cover}
 
+%------------------------------------------------------------
+% LỜI TỰA
+%------------------------------------------------------------
+\input{chapters/loitua}
+
+%------------------------------------------------------------
+% HƯỚNG DẪN SỬ DỤNG
+%------------------------------------------------------------
+\input{chapters/huong-dan}
+
 \frontmatter
 \tableofcontents
 \clearpage
+\include{loi-mo-dau}
 
 \mainmatter
 \include{chapters/ch01-bay-cua-vo-boc}
@@ -147,4 +159,5 @@
 \include{chapters/ch12-bay-tu-lua-minh}
 
 \backmatter
+\input{series-catalog}
 \end{document}

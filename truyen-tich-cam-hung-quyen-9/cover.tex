@@ -1,89 +1,99 @@
+%============================================================
+% TRANG BÌA SÁCH KHANG TRANG HƠN
+%============================================================
 \begin{titlepage}
 \thispagestyle{empty}
+\pagecolor{truyenred!5} % Màu nền nhẹ nhàng, thanh lịch hơn
+
+% Vẽ khung viền hoàng gia
 \begin{tikzpicture}[remember picture, overlay]
-  \fill[truyenblue] (current page.north west) rectangle (current page.south east);
-  \fill[truyenred!18] ([xshift=-1cm,yshift=-2cm]current page.north east) circle (6.8cm);
-  \fill[white!6] ([xshift=1.4cm,yshift=2.6cm]current page.south west) circle (5.0cm);
+  % Khung nền lớn
+  \fill[white, opacity=0.6, rounded corners=20pt]
+    ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
+    ($(current page.south east)+(-1.5cm,1.5cm)$);
 
-  \draw[truyengold!75, line width=1.4pt]
-    ([xshift=1.1cm,yshift=-1.1cm]current page.north west)
-    rectangle
-    ([xshift=-1.1cm,yshift=1.1cm]current page.south east);
+  % Viền mạ vàng đậm (Double lines)
+  \draw[truyengold!80!black, line width=3pt, rounded corners=15pt]
+    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
+    ($(current page.south east)+(-1.8cm,1.8cm)$);
 
-  \node[
-    anchor=north west,
-    fill=truyengold,
-    text=truyenblue,
-    font=\bfseries\large,
-    rounded corners=4pt,
-    inner xsep=10pt,
-    inner ysep=6pt
-  ] at ([xshift=1.6cm,yshift=-1.5cm]current page.north west) {QUYỂN IX};
+  \draw[truyengold, line width=1pt, rounded corners=12pt]
+    ($(current page.north west)+(2cm,-2cm)$) rectangle
+    ($(current page.south east)+(-2cm,2cm)$);
 
-  \node[
-    anchor=north,
-    text=white,
-    font=\large\itshape
-  ] at ([yshift=-1.7cm]current page.north) {Truyện Tích Cảm Hứng Song Ngữ};
+  % Hoa văn góc
+  \foreach \x/\y/\xsign/\ysign in {%
+    north west/1.8cm/1/-1,
+    north east/1.8cm/-1/-1,
+    south west/1.8cm/1/1,
+    south east/1.8cm/-1/1%
+  } {
+    \draw[truyengold!80!black, line width=1.5pt]
+      ($(current page.\x) + (\xsign*0.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*0.8cm)$);
 
-  \node[
-    anchor=west,
-    text=white,
-    font=\fontsize{34}{38}\selectfont\bfseries
-  ] at ([xshift=2.0cm,yshift=3.2cm]current page.center) {RA ĐỜI};
+    \fill[truyengold!60!white] ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
+  }
 
-  \node[
-    anchor=west,
-    text=truyengold,
-    font=\fontsize{34}{38}\selectfont\bfseries
-  ] at ([xshift=2.0cm,yshift=1.5cm]current page.center) {KHÔNG CÓ};
-
-  \node[
-    anchor=west,
-    text=white,
-    font=\fontsize{34}{38}\selectfont\bfseries
-  ] at ([xshift=2.0cm,yshift=-0.2cm]current page.center) {BẢN NHÁP};
-
-  \draw[truyengold, line width=2pt]
-    ([xshift=2.0cm,yshift=-1.3cm]current page.center) --
-    ([xshift=8.8cm,yshift=-1.3cm]current page.center);
-
-  \node[
-    anchor=west,
-    text=white,
-    font=\large
-  ] at ([xshift=2.0cm,yshift=-2.4cm]current page.center) {Tập 1: đi vào đời không còn bản nháp};
-
-  \node[
-    anchor=north west,
-    fill=white,
-    text=black,
-    rounded corners=8pt,
-    text width=11.7cm,
-    inner sep=14pt,
-    align=left,
-    font=\normalsize
-  ] at ([xshift=1.9cm,yshift=-15.0cm]current page.north west) {%
-    \textbf{Tập 1 của cặp sách người trẻ:} công việc đầu tiên, tiền đầu tiên, bị từ chối, bị thay thế, sống xa nhà, bạn bè ra rẽ, tình yêu tuổi trẻ, kỷ luật, trách nhiệm.\\[6pt]
-    \textbf{Cách viết:} thẳng, ngắn, thật, dễ đối chiếu Việt - Anh.\\[6pt]
-    \textbf{Tinh thần:} không hù dọa, không tô hồng, chỉ giúp người trẻ đỡ ngây thơ khi bước vào đời.
+  % Khung phụ trang trí
+  \node[anchor=center] at ($(current page.center)-(0, 2cm)$) {
+    \begin{tikzpicture}
+      \draw[truyenblue!20, line width=0.5pt] (0,0) circle (5cm);
+      \draw[truyengold!40, line width=1pt] (0,0) circle (4.8cm);
+    \end{tikzpicture}
   };
-
-  \node[
-    anchor=south,
-    text=truyengold,
-    font=\large\itshape,
-    align=center
-  ] at ([yshift=2.2cm]current page.south) {%
-    ``Không ai phát cho em một bản nháp trước khi sống.\\
-    Vì vậy, tỉnh táo cũng là một kiểu tự cứu mình.''%
-  };
-
-  \node[
-    anchor=south,
-    text=white!85,
-    font=\normalsize
-  ] at ([yshift=1.2cm]current page.south) {Dành cho học sinh cuối cấp, sinh viên, và người trẻ mới bước vào đời};
 \end{tikzpicture}
+
+\vspace*{2cm}
+
+\begin{center}
+  % Phần trên
+  {\color{truyengold!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
+  {\fontsize{14}{16}\selectfont\color{truyenblue!80!black}\scshape \textbf{Bước Vào Đời Thật}}\\[1.5cm]
+
+  % Quyển
+  \begin{tcolorbox}[
+    width=6.5cm,
+    colback=truyengold!20,
+    colframe=truyengold!80!black,
+    arc=4pt,
+    boxrule=1.5pt,
+    halign=center
+  ]
+    {\fontsize{18}{22}\selectfont\bfseries\color{truyenred!80!black}
+     QUYỂN IX}
+  \end{tcolorbox}
+  \vspace{0.8cm}
+
+  % Tiêu đề chính
+  {\fontsize{38}{45}\selectfont\bfseries\color{truyenred!80!black}
+    Ra Đời Không}\\[0.4cm]
+  {\fontsize{38}{45}\selectfont\bfseries\color{truyengold!80!black}
+    Có Bản Nháp}\\[0.4cm]
+
+  % Tiêu đề phụ
+  {\fontsize{16}{20}\selectfont\color{truyengold!90!black}\itshape
+    Tập 1: Đi Vào Đời Không Còn Bản Nháp}\\[1cm]
+
+  % Đường kẻ giữa
+  {\color{truyenblue!60}\rule{6cm}{1pt}}\\[5pt]
+  {\color{truyengold!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
+  {\color{truyenblue!60}\rule{6cm}{1pt}}\\[1.5cm]
+
+  % Text giới thiệu
+  {\normalsize\itshape\color{truyenblue!90!black}
+   ``Không ai phát cho em một bản nháp trước khi sống.\\
+   Vì vậy, tỉnh táo cũng là một kiểu tự cứu mình.''}
+
+  \vfill
+
+  % Tác giả
+  {\fontsize{16}{20}\selectfont\bfseries\color{truyenblue!90!black}
+    Sưu tầm \& Tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
+
+  {\small\color{gray} Bản mềm phát hành --- Năm 2026}\\[0.5cm]
+\end{center}
+
+\afterpage{\nopagecolor}
 \end{titlepage}
-\clearpage

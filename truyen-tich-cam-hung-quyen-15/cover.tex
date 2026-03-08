@@ -1,90 +1,101 @@
+%============================================================
+% TRANG BÌA SÁCH KHANG TRANG HƠN
+%============================================================
 \begin{titlepage}
 \thispagestyle{empty}
+\pagecolor{deepblue!5} % Màu nền nhẹ nhàng, thanh lịch hơn
+
+% Vẽ khung viền hoàng gia
 \begin{tikzpicture}[remember picture, overlay]
-  \fill[deepblue] (current page.north west) rectangle (current page.south east);
-  \fill[softcopper!18] ([xshift=-0.7cm,yshift=-2.1cm]current page.north east) circle (6.5cm);
-  \fill[white!8] ([xshift=1.3cm,yshift=2.1cm]current page.south west) circle (5.0cm);
+  % Khung nền lớn
+  \fill[white, opacity=0.6, rounded corners=20pt]
+    ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
+    ($(current page.south east)+(-1.5cm,1.5cm)$);
 
-  \draw[softcopper!80, line width=1.4pt]
-    ([xshift=1.1cm,yshift=-1.1cm]current page.north west)
-    rectangle
-    ([xshift=-1.1cm,yshift=1.1cm]current page.south east);
+  % Viền mạ vàng đậm (Double lines)
+  \draw[softcopper!80!black, line width=3pt, rounded corners=15pt]
+    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
+    ($(current page.south east)+(-1.8cm,1.8cm)$);
 
-  \node[
-    anchor=north west,
-    fill=softcopper,
-    text=deepblue,
-    font=\bfseries\large,
-    rounded corners=4pt,
-    inner xsep=10pt,
-    inner ysep=6pt
-  ] at ([xshift=1.6cm,yshift=-1.5cm]current page.north west) {QUYỂN XV};
+  \draw[softcopper, line width=1pt, rounded corners=12pt]
+    ($(current page.north west)+(2cm,-2cm)$) rectangle
+    ($(current page.south east)+(-2cm,2cm)$);
 
-  \node[
-    anchor=north,
-    text=white,
-    font=\large\itshape
-  ] at ([yshift=-1.7cm]current page.north) {Truyện Tích Cảm Hứng Song Ngữ};
+  % Hoa văn góc
+  \foreach \x/\y/\xsign/\ysign in {%
+    north west/1.8cm/1/-1,
+    north east/1.8cm/-1/-1,
+    south west/1.8cm/1/1,
+    south east/1.8cm/-1/1%
+  } {
+    \draw[softcopper!80!black, line width=1.5pt]
+      ($(current page.\x) + (\xsign*0.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*0.8cm)$);
 
-  \node[
-    anchor=west,
-    text=white,
-    font=\fontsize{22}{26}\selectfont\bfseries
-  ] at ([xshift=1.8cm,yshift=4.2cm]current page.center) {NHỮNG ĐIỀU};
+    \fill[softcopper!60!white] ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
+  }
 
-  \node[
-    anchor=west,
-    text=softcopper,
-    font=\fontsize{22}{26}\selectfont\bfseries
-  ] at ([xshift=1.8cm,yshift=2.3cm]current page.center) {THẦY MUỐN NÓI};
-
-  \node[
-    anchor=west,
-    text=white,
-    font=\fontsize{22}{26}\selectfont\bfseries
-  ] at ([xshift=1.8cm,yshift=0.4cm]current page.center) {VỚI HỌC SINH};
-
-  \draw[softcopper, line width=2pt]
-    ([xshift=1.8cm,yshift=-1.0cm]current page.center) --
-    ([xshift=10.1cm,yshift=-1.0cm]current page.center);
-
-  \node[
-    anchor=west,
-    text=white,
-    font=\large
-  ] at ([xshift=1.8cm,yshift=-2.1cm]current page.center) {Một bộ sách thầy nói chuyện thẳng, gần và chậm với học sinh về học tập, tính cách và đường đời};
-
-  \node[
-    anchor=north west,
-    fill=white,
-    text=black,
-    rounded corners=8pt,
-    text width=11.7cm,
-    inner sep=14pt,
-    align=left,
-    font=\normalsize
-  ] at ([xshift=1.9cm,yshift=-14.9cm]current page.north west) {%
-    \textbf{Tinh thần quyển này:} không giảng đạo lý theo kiểu xa cách. Mỗi bài viết là một lời nói gần gũi, thẳng nhưng dịu, để học sinh thấy mình được nói chuyện chứ không chỉ bị dạy bảo.\\[6pt]
-    \textbf{Cách dùng:} đọc từng bài ngắn mỗi ngày, học thêm vài câu tiếng Anh đơn giản, và dùng để gợi mở giờ sinh hoạt, chủ nhiệm hoặc tự học.\\[6pt]
-    \textbf{Điểm tựa:} gần lớp học, gần tâm lý tuổi học trò, dễ đọc, dễ nhớ, và giữ nhịp đồng bộ với cả bộ sách.
+  % Khung phụ trang trí
+  \node[anchor=center] at ($(current page.center)-(0, 2cm)$) {
+    \begin{tikzpicture}
+      \draw[earthink!20, line width=0.5pt] (0,0) circle (5cm);
+      \draw[softcopper!40, line width=1pt] (0,0) circle (4.8cm);
+    \end{tikzpicture}
   };
-
-  \node[
-    anchor=south,
-    text=softcopper,
-    font=\large\itshape,
-    align=center
-  ] at ([yshift=2.1cm]current page.south) {%
-    ``Có những điều học sinh cần nghe không phải vì các em không biết,\\
-    mà vì các em cần một người nói lại bằng giọng đủ gần.''%
-  };
-
-  \node[
-    anchor=south,
-    text=white!85,
-    font=\normalsize,
-    align=center
-  ] at ([yshift=1.1cm]current page.south) {Dành cho học sinh, giáo viên và những ai muốn nói với người trẻ bằng một giọng bình tĩnh hơn};
 \end{tikzpicture}
+
+\vspace*{2cm}
+
+\begin{center}
+  % Phần trên
+  {\color{softcopper!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
+  {\fontsize{14}{16}\selectfont\color{earthink!80!black}\scshape \textbf{Lời Thầy Nói Thật}}\\[1.5cm]
+
+  % Quyển
+  \begin{tcolorbox}[
+    width=6.5cm,
+    colback=softcopper!20,
+    colframe=softcopper!80!black,
+    arc=4pt,
+    boxrule=1.5pt,
+    halign=center
+  ]
+    {\fontsize{18}{22}\selectfont\bfseries\color{deepblue!80!black}
+     QUYỂN XV}
+  \end{tcolorbox}
+  \vspace{0.8cm}
+
+  % Tiêu đề chính
+  {\fontsize{28}{34}\selectfont\bfseries\color{deepblue!80!black}
+    Những Điều}\\[0.4cm]
+  {\fontsize{28}{34}\selectfont\bfseries\color{softcopper!80!black}
+    Thầy Muốn Nói}\\[0.4cm]
+  {\fontsize{28}{34}\selectfont\bfseries\color{deepblue!80!black}
+    Với Học Sinh}\\[0.4cm]
+
+  % Tiêu đề phụ
+  {\fontsize{16}{20}\selectfont\color{softcopper!90!black}\itshape
+    Thầy Nói Chuyện Thẳng, Gần Và Chậm Về Học Tập \& Đường Đời}\\[1cm]
+
+  % Đường kẻ giữa
+  {\color{earthink!60}\rule{6cm}{1pt}}\\[5pt]
+  {\color{softcopper!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
+  {\color{earthink!60}\rule{6cm}{1pt}}\\[1.5cm]
+
+  % Text giới thiệu
+  {\normalsize\itshape\color{earthink!90!black}
+   ``Có những điều học sinh cần nghe không phải vì các em không biết,\\
+   mà vì nghe từ thầy thì mới chịu tin.''}
+
+  \vfill
+
+  % Tác giả
+  {\fontsize{16}{20}\selectfont\bfseries\color{earthink!90!black}
+    Sưu tầm \& Tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
+
+  {\small\color{gray} Bản mềm phát hành --- Năm 2026}\\[0.5cm]
+\end{center}
+
+\afterpage{\nopagecolor}
 \end{titlepage}
-\clearpage

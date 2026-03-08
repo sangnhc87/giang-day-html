@@ -19,6 +19,7 @@
 \tcbuselibrary{skins,breakable}
 \usepackage{enumitem}
 \usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{\normalfont}
 \usepackage{parskip}
 \usepackage{afterpage}
 \usepackage{tikz}
@@ -104,12 +105,23 @@
 
 \include{cover}
 
-\cleardoublepage
-\begingroup
-  \renewcommand{\contentsname}{\centering\color{truyenred}Mục Lục}
-  \tableofcontents
-\endgroup
+%------------------------------------------------------------
+% LỜI TỰA
+%------------------------------------------------------------
+\input{chapters/loitua}
 
+%------------------------------------------------------------
+% HƯỚNG DẪN SỬ DỤNG
+%------------------------------------------------------------
+\input{chapters/huong-dan}
+
+\cleardoublepage
+{\renewcommand{\cfttoctitlefont}{\hfil\color{truyenred}\normalfont\Large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfil}
+\tableofcontents}
+
+\cleardoublepage
+\include{loi-mo-dau}
 \cleardoublepage
 
 \include{chapters/ch01-doan-ket}
@@ -123,4 +135,5 @@
 \include{chapters/ch09-trach-nhiem}
 \include{chapters/ch10-hy-vong}
 
+\input{series-catalog}
 \end{document}

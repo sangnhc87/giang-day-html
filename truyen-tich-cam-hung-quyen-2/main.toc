@@ -1,155 +1,158 @@
 \babel@toc {vietnamese}{}\relax 
-\contentsline {chapter}{\numberline {1}Đạo Làm Con (Filial Piety)}{9}{}%
-\contentsline {section}{\numberline {1.1}Bát Cơm Nguội}{9}{}%
-\contentsline {section}{\numberline {1.2}Đôi Dép Mòn}{10}{}%
-\contentsline {section}{\numberline {1.3}Tờ Giấy Khen}{11}{}%
-\contentsline {section}{\numberline {1.4}Bức Ảnh Trên Ví}{11}{}%
-\contentsline {section}{\numberline {1.5}Tiếng Gọi Lúc Nửa Đêm}{12}{}%
-\contentsline {section}{\numberline {1.6}Chiếc Áo Cuối Năm}{13}{}%
-\contentsline {section}{\numberline {1.7}Người Cha Câm}{14}{}%
-\contentsline {section}{\numberline {1.8}Con Đường Về Quê}{14}{}%
-\contentsline {section}{\numberline {1.9}Thuốc Đắng}{15}{}%
-\contentsline {section}{\numberline {1.10}Nén Nhang Cuối Năm}{16}{}%
-\contentsline {chapter}{\numberline {2}Đạo Làm Bạn (The Way of Friendship)}{17}{}%
-\contentsline {section}{\numberline {2.1}Chiếc Ghế Trống}{17}{}%
-\contentsline {section}{\numberline {2.2}Sự Thật Khó Nghe}{18}{}%
-\contentsline {section}{\numberline {2.3}Mượn Tiền}{19}{}%
-\contentsline {section}{\numberline {2.4}Cái Ôm Không Nói Gì}{19}{}%
-\contentsline {section}{\numberline {2.5}Lá Thư Không Gửi}{20}{}%
-\contentsline {section}{\numberline {2.6}Người Giữ Bí Mật}{21}{}%
-\contentsline {section}{\numberline {2.7}Bộ Quần Áo Mượn}{21}{}%
-\contentsline {section}{\numberline {2.8}Người Duy Nhất Vỗ Tay}{22}{}%
-\contentsline {section}{\numberline {2.9}Chuyến Đi Không Có Ảnh}{23}{}%
-\contentsline {section}{\numberline {2.10}Tin Nhắn Hỏi Thăm}{24}{}%
-\contentsline {chapter}{\numberline {3}Đạo Làm Trò (Being a Good Student)}{25}{}%
-\contentsline {section}{\numberline {3.1}Câu Hỏi Cuối Giờ}{25}{}%
-\contentsline {section}{\numberline {3.2}Vở Ghi Mượn}{26}{}%
-\contentsline {section}{\numberline {3.3}Bài Kiểm Tra Làm Lại}{27}{}%
-\contentsline {section}{\numberline {3.4}Bài Học Từ Lỗi Sai}{27}{}%
-\contentsline {section}{\numberline {3.5}Cuốn Sách Cũ}{28}{}%
-\contentsline {section}{\numberline {3.6}Tiết Học Buồn Chán}{29}{}%
-\contentsline {section}{\numberline {3.7}Nghề Tương Lai}{30}{}%
-\contentsline {section}{\numberline {3.8}Tiền Học Phí}{30}{}%
-\contentsline {section}{\numberline {3.9}Hai Học Sinh Giỏi}{31}{}%
-\contentsline {section}{\numberline {3.10}Lời Xin Lỗi Muộn}{32}{}%
-\contentsline {chapter}{\numberline {4}Đạo Làm Thầy (Being a True Teacher)}{33}{}%
-\contentsline {section}{\numberline {4.1}Học Sinh Ngồi Cuối Lớp}{33}{}%
-\contentsline {section}{\numberline {4.2}Mảnh Giấy A Cộng}{34}{}%
-\contentsline {section}{\numberline {4.3}Bài Học Thực Địa}{35}{}%
-\contentsline {section}{\numberline {4.4}Bức Tranh Tình Cờ}{35}{}%
-\contentsline {section}{\numberline {4.5}Viên Đá Quý}{36}{}%
-\contentsline {section}{\numberline {4.6}Chiếc Bình Và Đá}{37}{}%
-\contentsline {section}{\numberline {4.7}Cơn Bão Mái Trường}{38}{}%
-\contentsline {section}{\numberline {4.8}Thư Gửi Kẻ Đạo Văn}{38}{}%
-\contentsline {section}{\numberline {4.9}Đôi Cánh Khác Biệt}{39}{}%
-\contentsline {section}{\numberline {4.10}Trường Học Ven Hoang Mạc}{40}{}%
-\contentsline {chapter}{\numberline {5}Đạo Làm Người (Being a Good Human)}{41}{}%
-\contentsline {section}{\numberline {5.1}Đồng Tiền Lăn}{41}{}%
-\contentsline {section}{\numberline {5.2}Người Đếm Sao}{42}{}%
-\contentsline {section}{\numberline {5.3}Người Trồng Cây}{43}{}%
-\contentsline {section}{\numberline {5.4}Tiếng Chuông Gió}{43}{}%
-\contentsline {section}{\numberline {5.5}Kẻ Không Tên}{44}{}%
-\contentsline {section}{\numberline {5.6}Người Đẩy Xe}{45}{}%
-\contentsline {section}{\numberline {5.7}Chỗ Ngồi Trên Tàu}{46}{}%
-\contentsline {section}{\numberline {5.8}Lọ Muối}{46}{}%
-\contentsline {section}{\numberline {5.9}Người Bán Hoa}{47}{}%
-\contentsline {section}{\numberline {5.10}Gương Không Phản Chiếu}{48}{}%
-\contentsline {chapter}{\numberline {6}Đạo Vợ Chồng (The Way of Spouses)}{49}{}%
-\contentsline {section}{\numberline {6.1}Bữa Cơm Không Muối}{49}{}%
-\contentsline {section}{\numberline {6.2}Tờ Giấy Ghi Lỗi}{50}{}%
-\contentsline {section}{\numberline {6.3}Chiếc Nhẫn Cũ}{51}{}%
-\contentsline {section}{\numberline {6.4}Bữa Sáng Mỗi Ngày}{52}{}%
-\contentsline {section}{\numberline {6.5}Căn Phòng Hai Chiếc Giường}{52}{}%
-\contentsline {section}{\numberline {6.6}Cuộc Tranh Luận Cuối}{53}{}%
-\contentsline {section}{\numberline {6.7}Áo Mưa}{54}{}%
-\contentsline {section}{\numberline {6.8}Bức Thư Không Gửi}{55}{}%
-\contentsline {section}{\numberline {6.9}Bát Phở Đêm Khuya}{55}{}%
-\contentsline {section}{\numberline {6.10}Giọng Nói Quen Thuộc}{56}{}%
-\contentsline {chapter}{\numberline {7}Đạo Lãnh Đạo (The Way of Leadership)}{59}{}%
-\contentsline {section}{\numberline {7.1}Ăn Sau Cùng}{59}{}%
-\contentsline {section}{\numberline {7.2}Lỗi Của Sếp}{60}{}%
-\contentsline {section}{\numberline {7.3}Cuộc Họp Không Có Ghế Đầu}{61}{}%
-\contentsline {section}{\numberline {7.4}Người Mang Dù}{62}{}%
-\contentsline {section}{\numberline {7.5}Câu Hỏi Của Người Mới}{62}{}%
-\contentsline {section}{\numberline {7.6}Quyết Định Lúc Nửa Đêm}{63}{}%
-\contentsline {section}{\numberline {7.7}Người Lau Bảng}{64}{}%
-\contentsline {section}{\numberline {7.8}Hai Người Xin Việc}{65}{}%
-\contentsline {section}{\numberline {7.9}Cuộc Chia Tay Của Trưởng Nhóm}{65}{}%
-\contentsline {section}{\numberline {7.10}Ghế Trống}{66}{}%
-\contentsline {chapter}{\numberline {8}Đạo Công Dân (The Way of a Good Citizen)}{69}{}%
-\contentsline {section}{\numberline {8.1}Chỗ Đỗ Xe}{69}{}%
-\contentsline {section}{\numberline {8.2}Cây Xanh Trước Nhà}{70}{}%
-\contentsline {section}{\numberline {8.3}Người Trả Lại Ví}{71}{}%
-\contentsline {section}{\numberline {8.4}Hàng Xếp Thứ Tự}{71}{}%
-\contentsline {section}{\numberline {8.5}Người Quét Rác Cuối Phố}{72}{}%
-\contentsline {section}{\numberline {8.6}Lá Phiếu Của Người Già}{73}{}%
-\contentsline {section}{\numberline {8.7}Đoạn Đường Không Tên}{74}{}%
-\contentsline {section}{\numberline {8.8}Người Cứu Đuối}{74}{}%
-\contentsline {section}{\numberline {8.9}Cuộc Gọi Báo Cháy}{75}{}%
-\contentsline {section}{\numberline {8.10}Tờ Đơn Kiến Nghị}{76}{}%
-\contentsline {chapter}{\numberline {9}Đạo Đối Nhân Xử Thế (The Way of Dealing with People)}{77}{}%
-\contentsline {section}{\numberline {9.1}Người Bồi Bàn}{77}{}%
-\contentsline {section}{\numberline {9.2}Lời Khen Chân Thật}{78}{}%
-\contentsline {section}{\numberline {9.3}Tin Nhắn Sai Địa Chỉ}{79}{}%
-\contentsline {section}{\numberline {9.4}Người Hỏi Đường}{80}{}%
-\contentsline {section}{\numberline {9.5}Lời Xin Lỗi Công Khai}{80}{}%
-\contentsline {section}{\numberline {9.6}Người Bán Hàng Rong}{81}{}%
-\contentsline {section}{\numberline {9.7}Cuộc Tranh Luận Trên Mạng}{82}{}%
-\contentsline {section}{\numberline {9.8}Ghế Ưu Tiên}{83}{}%
-\contentsline {section}{\numberline {9.9}Người Ghi Tên}{83}{}%
-\contentsline {section}{\numberline {9.10}Người Lạ Trong Bệnh Viện}{84}{}%
+\contentsline {chapter}{Lời Tựa}{3}{}%
+\contentsline {chapter}{Hướng Dẫn Sử Dụng Sách}{5}{}%
+\contentsline {chapter}{Lời Mở Đầu}{13}{}%
+\contentsline {chapter}{\numberline {1}Đạo Làm Con (Filial Piety)}{15}{}%
+\contentsline {section}{\numberline {1.1}Bát Cơm Nguội}{15}{}%
+\contentsline {section}{\numberline {1.2}Đôi Dép Mòn}{16}{}%
+\contentsline {section}{\numberline {1.3}Tờ Giấy Khen}{16}{}%
+\contentsline {section}{\numberline {1.4}Bức Ảnh Trên Ví}{17}{}%
+\contentsline {section}{\numberline {1.5}Tiếng Gọi Lúc Nửa Đêm}{18}{}%
+\contentsline {section}{\numberline {1.6}Chiếc Áo Cuối Năm}{18}{}%
+\contentsline {section}{\numberline {1.7}Người Cha Câm}{19}{}%
+\contentsline {section}{\numberline {1.8}Con Đường Về Quê}{20}{}%
+\contentsline {section}{\numberline {1.9}Thuốc Đắng}{20}{}%
+\contentsline {section}{\numberline {1.10}Nén Nhang Cuối Năm}{21}{}%
+\contentsline {chapter}{\numberline {2}Đạo Làm Bạn (The Way of Friendship)}{23}{}%
+\contentsline {section}{\numberline {2.1}Chiếc Ghế Trống}{23}{}%
+\contentsline {section}{\numberline {2.2}Sự Thật Khó Nghe}{24}{}%
+\contentsline {section}{\numberline {2.3}Mượn Tiền}{24}{}%
+\contentsline {section}{\numberline {2.4}Cái Ôm Không Nói Gì}{25}{}%
+\contentsline {section}{\numberline {2.5}Lá Thư Không Gửi}{26}{}%
+\contentsline {section}{\numberline {2.6}Người Giữ Bí Mật}{26}{}%
+\contentsline {section}{\numberline {2.7}Bộ Quần Áo Mượn}{27}{}%
+\contentsline {section}{\numberline {2.8}Người Duy Nhất Vỗ Tay}{28}{}%
+\contentsline {section}{\numberline {2.9}Chuyến Đi Không Có Ảnh}{28}{}%
+\contentsline {section}{\numberline {2.10}Tin Nhắn Hỏi Thăm}{29}{}%
+\contentsline {chapter}{\numberline {3}Đạo Làm Trò (Being a Good Student)}{31}{}%
+\contentsline {section}{\numberline {3.1}Câu Hỏi Cuối Giờ}{31}{}%
+\contentsline {section}{\numberline {3.2}Vở Ghi Mượn}{32}{}%
+\contentsline {section}{\numberline {3.3}Bài Kiểm Tra Làm Lại}{32}{}%
+\contentsline {section}{\numberline {3.4}Bài Học Từ Lỗi Sai}{33}{}%
+\contentsline {section}{\numberline {3.5}Cuốn Sách Cũ}{34}{}%
+\contentsline {section}{\numberline {3.6}Tiết Học Buồn Chán}{34}{}%
+\contentsline {section}{\numberline {3.7}Nghề Tương Lai}{35}{}%
+\contentsline {section}{\numberline {3.8}Tiền Học Phí}{35}{}%
+\contentsline {section}{\numberline {3.9}Hai Học Sinh Giỏi}{36}{}%
+\contentsline {section}{\numberline {3.10}Lời Xin Lỗi Muộn}{37}{}%
+\contentsline {chapter}{\numberline {4}Đạo Làm Thầy (Being a True Teacher)}{39}{}%
+\contentsline {section}{\numberline {4.1}Học Sinh Ngồi Cuối Lớp}{39}{}%
+\contentsline {section}{\numberline {4.2}Mảnh Giấy A Cộng}{40}{}%
+\contentsline {section}{\numberline {4.3}Bài Học Thực Địa}{40}{}%
+\contentsline {section}{\numberline {4.4}Bức Tranh Tình Cờ}{41}{}%
+\contentsline {section}{\numberline {4.5}Viên Đá Quý}{42}{}%
+\contentsline {section}{\numberline {4.6}Chiếc Bình Và Đá}{42}{}%
+\contentsline {section}{\numberline {4.7}Cơn Bão Mái Trường}{43}{}%
+\contentsline {section}{\numberline {4.8}Thư Gửi Kẻ Đạo Văn}{44}{}%
+\contentsline {section}{\numberline {4.9}Đôi Cánh Khác Biệt}{44}{}%
+\contentsline {section}{\numberline {4.10}Trường Học Ven Hoang Mạc}{45}{}%
+\contentsline {chapter}{\numberline {5}Đạo Làm Người (Being a Good Human)}{47}{}%
+\contentsline {section}{\numberline {5.1}Đồng Tiền Lăn}{47}{}%
+\contentsline {section}{\numberline {5.2}Người Đếm Sao}{48}{}%
+\contentsline {section}{\numberline {5.3}Người Trồng Cây}{48}{}%
+\contentsline {section}{\numberline {5.4}Tiếng Chuông Gió}{49}{}%
+\contentsline {section}{\numberline {5.5}Kẻ Không Tên}{50}{}%
+\contentsline {section}{\numberline {5.6}Người Đẩy Xe}{50}{}%
+\contentsline {section}{\numberline {5.7}Chỗ Ngồi Trên Tàu}{51}{}%
+\contentsline {section}{\numberline {5.8}Lọ Muối}{52}{}%
+\contentsline {section}{\numberline {5.9}Người Bán Hoa}{52}{}%
+\contentsline {section}{\numberline {5.10}Gương Không Phản Chiếu}{53}{}%
+\contentsline {chapter}{\numberline {6}Đạo Vợ Chồng (The Way of Spouses)}{55}{}%
+\contentsline {section}{\numberline {6.1}Bữa Cơm Không Muối}{55}{}%
+\contentsline {section}{\numberline {6.2}Tờ Giấy Ghi Lỗi}{56}{}%
+\contentsline {section}{\numberline {6.3}Chiếc Nhẫn Cũ}{57}{}%
+\contentsline {section}{\numberline {6.4}Bữa Sáng Mỗi Ngày}{57}{}%
+\contentsline {section}{\numberline {6.5}Căn Phòng Hai Chiếc Giường}{58}{}%
+\contentsline {section}{\numberline {6.6}Cuộc Tranh Luận Cuối}{59}{}%
+\contentsline {section}{\numberline {6.7}Áo Mưa}{59}{}%
+\contentsline {section}{\numberline {6.8}Bức Thư Không Gửi}{60}{}%
+\contentsline {section}{\numberline {6.9}Bát Phở Đêm Khuya}{61}{}%
+\contentsline {section}{\numberline {6.10}Giọng Nói Quen Thuộc}{61}{}%
+\contentsline {chapter}{\numberline {7}Đạo Lãnh Đạo (The Way of Leadership)}{63}{}%
+\contentsline {section}{\numberline {7.1}Ăn Sau Cùng}{63}{}%
+\contentsline {section}{\numberline {7.2}Lỗi Của Sếp}{64}{}%
+\contentsline {section}{\numberline {7.3}Cuộc Họp Không Có Ghế Đầu}{65}{}%
+\contentsline {section}{\numberline {7.4}Người Mang Dù}{65}{}%
+\contentsline {section}{\numberline {7.5}Câu Hỏi Của Người Mới}{66}{}%
+\contentsline {section}{\numberline {7.6}Quyết Định Lúc Nửa Đêm}{67}{}%
+\contentsline {section}{\numberline {7.7}Người Lau Bảng}{67}{}%
+\contentsline {section}{\numberline {7.8}Hai Người Xin Việc}{68}{}%
+\contentsline {section}{\numberline {7.9}Cuộc Chia Tay Của Trưởng Nhóm}{69}{}%
+\contentsline {section}{\numberline {7.10}Ghế Trống}{69}{}%
+\contentsline {chapter}{\numberline {8}Đạo Công Dân (The Way of a Good Citizen)}{71}{}%
+\contentsline {section}{\numberline {8.1}Chỗ Đỗ Xe}{71}{}%
+\contentsline {section}{\numberline {8.2}Cây Xanh Trước Nhà}{72}{}%
+\contentsline {section}{\numberline {8.3}Người Trả Lại Ví}{72}{}%
+\contentsline {section}{\numberline {8.4}Hàng Xếp Thứ Tự}{73}{}%
+\contentsline {section}{\numberline {8.5}Người Quét Rác Cuối Phố}{74}{}%
+\contentsline {section}{\numberline {8.6}Lá Phiếu Của Người Già}{74}{}%
+\contentsline {section}{\numberline {8.7}Đoạn Đường Không Tên}{75}{}%
+\contentsline {section}{\numberline {8.8}Người Cứu Đuối}{76}{}%
+\contentsline {section}{\numberline {8.9}Cuộc Gọi Báo Cháy}{76}{}%
+\contentsline {section}{\numberline {8.10}Tờ Đơn Kiến Nghị}{77}{}%
+\contentsline {chapter}{\numberline {9}Đạo Đối Nhân Xử Thế (The Way of Dealing with People)}{79}{}%
+\contentsline {section}{\numberline {9.1}Người Bồi Bàn}{79}{}%
+\contentsline {section}{\numberline {9.2}Lời Khen Chân Thật}{80}{}%
+\contentsline {section}{\numberline {9.3}Tin Nhắn Sai Địa Chỉ}{81}{}%
+\contentsline {section}{\numberline {9.4}Người Hỏi Đường}{82}{}%
+\contentsline {section}{\numberline {9.5}Lời Xin Lỗi Công Khai}{82}{}%
+\contentsline {section}{\numberline {9.6}Người Bán Hàng Rong}{83}{}%
+\contentsline {section}{\numberline {9.7}Cuộc Tranh Luận Trên Mạng}{84}{}%
+\contentsline {section}{\numberline {9.8}Ghế Ưu Tiên}{84}{}%
+\contentsline {section}{\numberline {9.9}Người Ghi Tên}{85}{}%
+\contentsline {section}{\numberline {9.10}Người Lạ Trong Bệnh Viện}{86}{}%
 \contentsline {chapter}{\numberline {10}Đạo Làm Cha Mẹ (The Way of Parenthood)}{87}{}%
 \contentsline {section}{\numberline {10.1}Đôi Giày Chật}{87}{}%
 \contentsline {section}{\numberline {10.2}Bản Thảo Cuốn Sách}{88}{}%
-\contentsline {section}{\numberline {10.3}Cuộc Điện Thoại Đêm Khuya}{89}{}%
-\contentsline {section}{\numberline {10.4}Buổi Tập Võ Cuối Cùng}{90}{}%
+\contentsline {section}{\numberline {10.3}Cuộc Điện Thoại Đêm Khuya}{88}{}%
+\contentsline {section}{\numberline {10.4}Buổi Tập Võ Cuối Cùng}{89}{}%
 \contentsline {section}{\numberline {10.5}Người Cha Không Biết Chữ}{90}{}%
 \contentsline {section}{\numberline {10.6}Hai Nửa Bánh Mì}{91}{}%
-\contentsline {section}{\numberline {10.7}Tin Nhắn Không Gửi}{92}{}%
-\contentsline {section}{\numberline {10.8}Lớp Học Của Bố}{93}{}%
-\contentsline {section}{\numberline {10.9}Bức Tranh Dán Tường}{94}{}%
-\contentsline {section}{\numberline {10.10}Người Mẹ Sau Cánh Gà}{94}{}%
-\contentsline {chapter}{\numberline {11}Đạo Tri Ân (The Way of Gratitude)}{97}{}%
-\contentsline {section}{\numberline {11.1}Mảnh Giấy Gấp Tư}{97}{}%
-\contentsline {section}{\numberline {11.2}Bữa Cơm Miễn Phí}{98}{}%
-\contentsline {section}{\numberline {11.3}Bức Thư Gửi Người Lạ}{99}{}%
-\contentsline {section}{\numberline {11.4}Người Tài Xế Taxi}{100}{}%
-\contentsline {section}{\numberline {11.5}Nhật Ký Biết Ơn}{100}{}%
-\contentsline {section}{\numberline {11.6}Chỗ Đậu Xe Nhường Lại}{101}{}%
-\contentsline {section}{\numberline {11.7}Cây Xương Rồng}{102}{}%
-\contentsline {section}{\numberline {11.8}Người Trông Coi Nghĩa Trang}{103}{}%
-\contentsline {section}{\numberline {11.9}Tách Cà Phê Thứ Hai}{103}{}%
-\contentsline {section}{\numberline {11.10}Lời Cảm Ơn Cuối Giờ}{104}{}%
-\contentsline {chapter}{\numberline {12}Đạo Vượt Khó (The Way of Resilience)}{107}{}%
-\contentsline {section}{\numberline {12.1}Hạt Giống Thứ Bảy}{107}{}%
-\contentsline {section}{\numberline {12.2}Cuộc Chạy Không Về Đích}{108}{}%
-\contentsline {section}{\numberline {12.3}Bản Nhạc Viết Lại Lần Thứ Chín}{109}{}%
-\contentsline {section}{\numberline {12.4}Người Đứng Dậy Sau Lũ}{109}{}%
-\contentsline {section}{\numberline {12.5}Thất Bại Đầu Tiên}{110}{}%
-\contentsline {section}{\numberline {12.6}Người Khiếm Thị Vẽ Tranh}{111}{}%
-\contentsline {section}{\numberline {12.7}Cây Thông Trên Vách Đá}{112}{}%
-\contentsline {section}{\numberline {12.8}Ba Năm Không Lương}{113}{}%
-\contentsline {section}{\numberline {12.9}Bức Tranh Ghép Mảnh}{113}{}%
-\contentsline {section}{\numberline {12.10}Bước Chân Đầu Tiên}{114}{}%
-\contentsline {chapter}{\numberline {13}Đạo Nghề Nghiệp (The Way of One's Craft)}{117}{}%
-\contentsline {section}{\numberline {13.1}Nghề Mài Dao}{117}{}%
-\contentsline {section}{\numberline {13.2}Người Làm Bánh Mỗi Sáng}{118}{}%
-\contentsline {section}{\numberline {13.3}Kỹ Sư Không Ký Tên}{119}{}%
-\contentsline {section}{\numberline {13.4}Người Thợ May Cuối Phố}{120}{}%
-\contentsline {section}{\numberline {13.5}Bác Sĩ Thú Y Vùng Xa}{120}{}%
-\contentsline {section}{\numberline {13.6}Người Thợ Hàn Và Cây Cầu}{121}{}%
-\contentsline {section}{\numberline {13.7}Giáo Viên Vùng Biên}{122}{}%
-\contentsline {section}{\numberline {13.8}Chuyên Gia Cây Kiểng}{123}{}%
-\contentsline {section}{\numberline {13.9}Đầu Bếp Và Bát Mì}{123}{}%
-\contentsline {section}{\numberline {13.10}Người Gác Đèn Biển}{124}{}%
-\contentsline {chapter}{\numberline {14}Đạo Tha Thứ (The Way of Forgiveness)}{127}{}%
-\contentsline {section}{\numberline {14.1}Bức Thư Không Gửi}{127}{}%
-\contentsline {section}{\numberline {14.2}Người Hàng Xóm Cũ}{128}{}%
-\contentsline {section}{\numberline {14.3}Người Tố Cáo Sai}{129}{}%
-\contentsline {section}{\numberline {14.4}Lá Thư Của Người Cha}{130}{}%
-\contentsline {section}{\numberline {14.5}Người Em Thua Kiện}{130}{}%
-\contentsline {section}{\numberline {14.6}Cô Giáo Và Học Sinh Cũ}{131}{}%
-\contentsline {section}{\numberline {14.7}Người Không Thể Tha}{132}{}%
-\contentsline {section}{\numberline {14.8}Bức Tranh Vết Nứt}{133}{}%
-\contentsline {section}{\numberline {14.9}Người Thắng Tranh Luận}{133}{}%
-\contentsline {section}{\numberline {14.10}Người Về Muộn}{134}{}%
+\contentsline {section}{\numberline {10.7}Tin Nhắn Không Gửi}{91}{}%
+\contentsline {section}{\numberline {10.8}Lớp Học Của Bố}{92}{}%
+\contentsline {section}{\numberline {10.9}Bức Tranh Dán Tường}{93}{}%
+\contentsline {section}{\numberline {10.10}Người Mẹ Sau Cánh Gà}{93}{}%
+\contentsline {chapter}{\numberline {11}Đạo Tri Ân (The Way of Gratitude)}{95}{}%
+\contentsline {section}{\numberline {11.1}Mảnh Giấy Gấp Tư}{95}{}%
+\contentsline {section}{\numberline {11.2}Bữa Cơm Miễn Phí}{96}{}%
+\contentsline {section}{\numberline {11.3}Bức Thư Gửi Người Lạ}{96}{}%
+\contentsline {section}{\numberline {11.4}Người Tài Xế Taxi}{97}{}%
+\contentsline {section}{\numberline {11.5}Nhật Ký Biết Ơn}{98}{}%
+\contentsline {section}{\numberline {11.6}Chỗ Đậu Xe Nhường Lại}{99}{}%
+\contentsline {section}{\numberline {11.7}Cây Xương Rồng}{99}{}%
+\contentsline {section}{\numberline {11.8}Người Trông Coi Nghĩa Trang}{100}{}%
+\contentsline {section}{\numberline {11.9}Tách Cà Phê Thứ Hai}{101}{}%
+\contentsline {section}{\numberline {11.10}Lời Cảm Ơn Cuối Giờ}{101}{}%
+\contentsline {chapter}{\numberline {12}Đạo Vượt Khó (The Way of Resilience)}{103}{}%
+\contentsline {section}{\numberline {12.1}Hạt Giống Thứ Bảy}{103}{}%
+\contentsline {section}{\numberline {12.2}Cuộc Chạy Không Về Đích}{104}{}%
+\contentsline {section}{\numberline {12.3}Bản Nhạc Viết Lại Lần Thứ Chín}{104}{}%
+\contentsline {section}{\numberline {12.4}Người Đứng Dậy Sau Lũ}{105}{}%
+\contentsline {section}{\numberline {12.5}Thất Bại Đầu Tiên}{106}{}%
+\contentsline {section}{\numberline {12.6}Người Khiếm Thị Vẽ Tranh}{107}{}%
+\contentsline {section}{\numberline {12.7}Cây Thông Trên Vách Đá}{107}{}%
+\contentsline {section}{\numberline {12.8}Ba Năm Không Lương}{108}{}%
+\contentsline {section}{\numberline {12.9}Bức Tranh Ghép Mảnh}{109}{}%
+\contentsline {section}{\numberline {12.10}Bước Chân Đầu Tiên}{109}{}%
+\contentsline {chapter}{\numberline {13}Đạo Nghề Nghiệp (The Way of One's Craft)}{111}{}%
+\contentsline {section}{\numberline {13.1}Nghề Mài Dao}{111}{}%
+\contentsline {section}{\numberline {13.2}Người Làm Bánh Mỗi Sáng}{112}{}%
+\contentsline {section}{\numberline {13.3}Kỹ Sư Không Ký Tên}{113}{}%
+\contentsline {section}{\numberline {13.4}Người Thợ May Cuối Phố}{113}{}%
+\contentsline {section}{\numberline {13.5}Bác Sĩ Thú Y Vùng Xa}{114}{}%
+\contentsline {section}{\numberline {13.6}Người Thợ Hàn Và Cây Cầu}{115}{}%
+\contentsline {section}{\numberline {13.7}Giáo Viên Vùng Biên}{115}{}%
+\contentsline {section}{\numberline {13.8}Chuyên Gia Cây Kiểng}{116}{}%
+\contentsline {section}{\numberline {13.9}Đầu Bếp Và Bát Mì}{117}{}%
+\contentsline {section}{\numberline {13.10}Người Gác Đèn Biển}{117}{}%
+\contentsline {chapter}{\numberline {14}Đạo Tha Thứ (The Way of Forgiveness)}{119}{}%
+\contentsline {section}{\numberline {14.1}Bức Thư Không Gửi}{119}{}%
+\contentsline {section}{\numberline {14.2}Người Hàng Xóm Cũ}{120}{}%
+\contentsline {section}{\numberline {14.3}Người Tố Cáo Sai}{121}{}%
+\contentsline {section}{\numberline {14.4}Lá Thư Của Người Cha}{121}{}%
+\contentsline {section}{\numberline {14.5}Người Em Thua Kiện}{122}{}%
+\contentsline {section}{\numberline {14.6}Cô Giáo Và Học Sinh Cũ}{123}{}%
+\contentsline {section}{\numberline {14.7}Người Không Thể Tha}{123}{}%
+\contentsline {section}{\numberline {14.8}Bức Tranh Vết Nứt}{124}{}%
+\contentsline {section}{\numberline {14.9}Người Thắng Tranh Luận}{125}{}%
+\contentsline {section}{\numberline {14.10}Người Về Muộn}{125}{}%

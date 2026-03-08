@@ -1,113 +1,99 @@
+%============================================================
+% TRANG BÌA SÁCH KHANG TRANG HƠN
+%============================================================
 \begin{titlepage}
 \thispagestyle{empty}
+\pagecolor{truyenred!5} % Màu nền nhẹ nhàng, thanh lịch hơn
+
+% Vẽ khung viền hoàng gia
 \begin{tikzpicture}[remember picture, overlay]
-  % Background
-  \fill[truyenblue] (current page.north west) rectangle (current page.south east);
-  \fill[truyenblue!80!black]
-    (current page.north west) --
-    ([xshift=0pt,yshift=-13cm]current page.north east) --
-    (current page.south east) --
-    (current page.south west) -- cycle;
+  % Khung nền lớn
+  \fill[white, opacity=0.6, rounded corners=20pt]
+    ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
+    ($(current page.south east)+(-1.5cm,1.5cm)$);
 
-  % Top gold bar
-  \fill[truyengold] ([yshift=-3.5cm]current page.north west)
-    rectangle ([yshift=-3.7cm]current page.north east);
+  % Viền mạ vàng đậm (Double lines)
+  \draw[truyengold!80!black, line width=3pt, rounded corners=15pt]
+    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
+    ($(current page.south east)+(-1.8cm,1.8cm)$);
 
-  % Bottom gold bar
-  \fill[truyengold!70] ([yshift=2.8cm]current page.south west)
-    rectangle ([yshift=2.6cm]current page.south east);
+  \draw[truyengold, line width=1pt, rounded corners=12pt]
+    ($(current page.north west)+(2cm,-2cm)$) rectangle
+    ($(current page.south east)+(-2cm,2cm)$);
 
-  % Series name
-  \node[anchor=north, text=white, font=\large\itshape] at
-    ([yshift=-1.2cm]current page.north) {%
-      \textbf{Truyện Tích Cảm Hứng Song Ngữ}%
-    };
+  % Hoa văn góc
+  \foreach \x/\y/\xsign/\ysign in {%
+    north west/1.8cm/1/-1,
+    north east/1.8cm/-1/-1,
+    south west/1.8cm/1/1,
+    south east/1.8cm/-1/1%
+  } {
+    \draw[truyengold!80!black, line width=1.5pt]
+      ($(current page.\x) + (\xsign*0.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*0.8cm)$);
 
-  % Volume badge
-  \node[
-    fill=truyengold, text=truyenblue,
-    font=\large\bfseries,
-    minimum width=3.2cm, minimum height=1.1cm,
-    rounded corners=6pt
-  ] at ([yshift=-3.1cm]current page.north) {QUYỂN VII};
+    \fill[truyengold!60!white] ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
+  }
 
-  % Decorative yin-yang inspired line
-  \draw[truyengold!60, line width=1.5pt]
-    ([xshift=-6cm,yshift=3.5cm]current page.center) --
-    ([xshift=6cm,yshift=3.5cm]current page.center);
-
-  % Main title
-  \node[
-    anchor=center,
-    text=white,
-    font=\fontsize{46}{50}\selectfont\bfseries\scshape
-  ] at ([yshift=2.3cm]current page.center) {Lời Dạy Của};
-
-  \node[
-    anchor=center,
-    text=truyengold,
-    font=\fontsize{46}{50}\selectfont\bfseries\scshape
-  ] at ([yshift=0.4cm]current page.center) {Bậc Hiền Nhân};
-
-  % Divider
-  \draw[truyengold, line width=2pt]
-    ([xshift=-5cm,yshift=-0.8cm]current page.center) --
-    ([xshift=5cm,yshift=-0.8cm]current page.center);
-
-  % Subtitle
-  \node[
-    anchor=center,
-    text=white,
-    font=\large\itshape
-  ] at ([yshift=-1.6cm]current page.center) {%
-    Đạo Gia $\cdot$ Nho Gia $\cdot$ Triết Học Hy Lạp $\cdot$ Khắc Kỷ%
+  % Khung phụ trang trí
+  \node[anchor=center] at ($(current page.center)-(0, 2cm)$) {
+    \begin{tikzpicture}
+      \draw[truyenblue!20, line width=0.5pt] (0,0) circle (5cm);
+      \draw[truyengold!40, line width=1pt] (0,0) circle (4.8cm);
+    \end{tikzpicture}
   };
-
-  % Decorative diamonds
-  \node[text=truyengold, font=\Huge] at ([xshift=-6cm,yshift=2.3cm]current page.center) {$\lozenge$};
-  \node[text=truyengold, font=\Huge] at ([xshift=6cm,yshift=2.3cm]current page.center) {$\lozenge$};
-
-  % Philosopher names ring
-  \node[
-    anchor=center,
-    text=truyengold!70,
-    font=\normalsize\itshape
-  ] at ([yshift=-2.8cm]current page.center) {%
-    Lão Tử · Khổng Tử · Mạnh Tử · Trang Tử · Tuân Tử%
-  };
-  \node[
-    anchor=center,
-    text=truyengold!70,
-    font=\normalsize\itshape
-  ] at ([yshift=-3.4cm]current page.center) {%
-    Socrates · Plato · Aristotle · Marcus Aurelius · Epicurus%
-  };
-
-  % Quote box
-  \node[
-    anchor=center,
-    fill=white!10!truyenblue,
-    text=white,
-    draw=truyengold,
-    line width=1pt,
-    rounded corners=5pt,
-    text width=13cm,
-    align=center,
-    inner sep=12pt,
-    font=\itshape\large
-  ] at ([yshift=-5.2cm]current page.center) {%
-    ``Người biết người khác là khôn. Người biết mình là sáng.\\
-    Người thắng người khác là có sức. Người thắng chính mình là mạnh.''\\[6pt]
-    \normalfont\small\textcolor{truyengold}{--- Lão Tử, Đạo Đức Kinh}%
-  };
-
-  % Bottom tag
-  \node[
-    anchor=south,
-    text=truyengold,
-    font=\normalsize\bfseries
-  ] at ([yshift=2.7cm]current page.south) {120 Truyện Song Ngữ · 12 Chương · Việt -- English};
-
 \end{tikzpicture}
+
+\vspace*{2cm}
+
+\begin{center}
+  % Phần trên
+  {\color{truyengold!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
+  {\fontsize{14}{16}\selectfont\color{truyenblue!80!black}\scshape \textbf{Nghe Người Xưa Dặn}}\\[1.5cm]
+
+  % Quyển
+  \begin{tcolorbox}[
+    width=6.5cm,
+    colback=truyengold!20,
+    colframe=truyengold!80!black,
+    arc=4pt,
+    boxrule=1.5pt,
+    halign=center
+  ]
+    {\fontsize{18}{22}\selectfont\bfseries\color{truyenred!80!black}
+     QUYỂN VII}
+  \end{tcolorbox}
+  \vspace{0.8cm}
+
+  % Tiêu đề chính
+  {\fontsize{38}{45}\selectfont\bfseries\color{truyenred!80!black}
+    Lời Dạy Của}\\[0.4cm]
+  {\fontsize{38}{45}\selectfont\bfseries\color{truyengold!80!black}
+    Bậc Hiền Nhân}\\[0.4cm]
+
+  % Tiêu đề phụ
+  {\fontsize{16}{20}\selectfont\color{truyengold!90!black}\itshape
+    Triết Lý \& Lời Dạy Từ Đông Sang Tây, Từ Xưa Đến Nay}\\[1cm]
+
+  % Đường kẻ giữa
+  {\color{truyenblue!60}\rule{6cm}{1pt}}\\[5pt]
+  {\color{truyengold!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
+  {\color{truyenblue!60}\rule{6cm}{1pt}}\\[1.5cm]
+
+  % Text giới thiệu
+  {\normalsize\itshape\color{truyenblue!90!black}
+   ``Lời dạy hay nhất là lời em tự đưa vào thực hành.\\
+   Học khôn từ người trước là con đường ngắn nhất đến sự trưởng thành.''}
+
+  \vfill
+
+  % Tác giả
+  {\fontsize{16}{20}\selectfont\bfseries\color{truyenblue!90!black}
+    Sưu tầm \& Tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
+
+  {\small\color{gray} Bản mềm phát hành --- Năm 2026}\\[0.5cm]
+\end{center}
+
+\afterpage{\nopagecolor}
 \end{titlepage}
-\clearpage

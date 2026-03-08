@@ -1,90 +1,101 @@
+%============================================================
+% TRANG BÌA SÁCH KHANG TRANG HƠN
+%============================================================
 \begin{titlepage}
 \thispagestyle{empty}
+\pagecolor{trapgreen!5} % Màu nền nhẹ nhàng, thanh lịch hơn
+
+% Vẽ khung viền hoàng gia
 \begin{tikzpicture}[remember picture, overlay]
-  \fill[trapgreen] (current page.north west) rectangle (current page.south east);
-  \fill[trapbrown!20] ([xshift=-0.5cm,yshift=-2.1cm]current page.north east) circle (6.6cm);
-  \fill[white!7] ([xshift=1.3cm,yshift=2.3cm]current page.south west) circle (5.2cm);
+  % Khung nền lớn
+  \fill[white, opacity=0.6, rounded corners=20pt]
+    ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
+    ($(current page.south east)+(-1.5cm,1.5cm)$);
 
-  \draw[trapgold!75, line width=1.4pt]
-    ([xshift=1.1cm,yshift=-1.1cm]current page.north west)
-    rectangle
-    ([xshift=-1.1cm,yshift=1.1cm]current page.south east);
+  % Viền mạ vàng đậm (Double lines)
+  \draw[trapgold!80!black, line width=3pt, rounded corners=15pt]
+    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
+    ($(current page.south east)+(-1.8cm,1.8cm)$);
 
-  \node[
-    anchor=north west,
-    fill=trapgold,
-    text=trapgreen,
-    font=\bfseries\large,
-    rounded corners=4pt,
-    inner xsep=10pt,
-    inner ysep=6pt
-  ] at ([xshift=1.6cm,yshift=-1.5cm]current page.north west) {QUYỂN XI};
+  \draw[trapgold, line width=1pt, rounded corners=12pt]
+    ($(current page.north west)+(2cm,-2cm)$) rectangle
+    ($(current page.south east)+(-2cm,2cm)$);
 
-  \node[
-    anchor=north,
-    text=white,
-    font=\large\itshape
-  ] at ([yshift=-1.7cm]current page.north) {Truyện Tích Cảm Hứng Song Ngữ};
+  % Hoa văn góc
+  \foreach \x/\y/\xsign/\ysign in {%
+    north west/1.8cm/1/-1,
+    north east/1.8cm/-1/-1,
+    south west/1.8cm/1/1,
+    south east/1.8cm/-1/1%
+  } {
+    \draw[trapgold!80!black, line width=1.5pt]
+      ($(current page.\x) + (\xsign*0.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*0.8cm)$);
 
-  \node[
-    anchor=west,
-    text=white,
-    font=\fontsize{28}{32}\selectfont\bfseries
-  ] at ([xshift=1.9cm,yshift=3.5cm]current page.center) {NHỮNG CÁI BẪY};
+    \fill[trapgold!60!white] ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
+  }
 
-  \node[
-    anchor=west,
-    text=trapgold,
-    font=\fontsize{28}{32}\selectfont\bfseries
-  ] at ([xshift=1.9cm,yshift=1.7cm]current page.center) {NGƯỜI TRẺ};
-
-  \node[
-    anchor=west,
-    text=white,
-    font=\fontsize{28}{32}\selectfont\bfseries
-  ] at ([xshift=1.9cm,yshift=-0.1cm]current page.center) {TỰ BƯỚC VÀO};
-
-  \draw[trapgold, line width=2pt]
-    ([xshift=1.9cm,yshift=-1.3cm]current page.center) --
-    ([xshift=9.3cm,yshift=-1.3cm]current page.center);
-
-  \node[
-    anchor=west,
-    text=white,
-    font=\large
-  ] at ([xshift=1.9cm,yshift=-2.4cm]current page.center) {Một quyển sách để tỉnh ra trước khi trả giá quá đắt};
-
-  \node[
-    anchor=north west,
-    fill=white,
-    text=black,
-    rounded corners=8pt,
-    text width=11.7cm,
-    inner sep=14pt,
-    align=left,
-    font=\normalsize
-  ] at ([xshift=1.9cm,yshift=-14.8cm]current page.north west) {%
-    \textbf{Tinh thần quyển này:} cảnh báo những cái bẫy nhìn giống cơ hội, nhìn giống yêu thương, nhìn giống tự do, nhưng thật ra âm thầm lấy đi thời gian, tiền bạc, phẩm giá và hướng đi của người trẻ.\\[6pt]
-    \textbf{Cách viết:} ngắn, thật, sát đời, dễ đối chiếu Việt - Anh.\\[6pt]
-    \textbf{Mục tiêu:} giúp học sinh, sinh viên và người mới đi làm nhìn sớm hơn để đỡ đau hơn.
+  % Khung phụ trang trí
+  \node[anchor=center] at ($(current page.center)-(0, 2cm)$) {
+    \begin{tikzpicture}
+      \draw[trapbrown!20, line width=0.5pt] (0,0) circle (5cm);
+      \draw[trapgold!40, line width=1pt] (0,0) circle (4.8cm);
+    \end{tikzpicture}
   };
-
-  \node[
-    anchor=south,
-    text=trapgold,
-    font=\large\itshape,
-    align=center
-  ] at ([yshift=2.15cm]current page.south) {%
-    ``Nhiều cái bẫy của tuổi trẻ không mang hình thù đáng sợ.\\
-    Nó mặc áo tử tế, cơ hội, tình yêu và lời khen.''%
-  };
-
-  \node[
-    anchor=south,
-    text=white!85,
-    font=\normalsize,
-    align=center
-  ] at ([yshift=1.1cm]current page.south) {Dành cho người trẻ muốn sống tỉnh, chắc và bớt tự làm khó mình};
 \end{tikzpicture}
+
+\vspace*{2cm}
+
+\begin{center}
+  % Phần trên
+  {\color{trapgold!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
+  {\fontsize{14}{16}\selectfont\color{trapbrown!80!black}\scshape \textbf{Minh Triết \& Tỉnh Thức}}\\[1.5cm]
+
+  % Quyển
+  \begin{tcolorbox}[
+    width=6.5cm,
+    colback=trapgold!20,
+    colframe=trapgold!80!black,
+    arc=4pt,
+    boxrule=1.5pt,
+    halign=center
+  ]
+    {\fontsize{18}{22}\selectfont\bfseries\color{trapgreen!80!black}
+     QUYỂN XI}
+  \end{tcolorbox}
+  \vspace{0.8cm}
+
+  % Tiêu đề chính
+  {\fontsize{28}{34}\selectfont\bfseries\color{trapgreen!80!black}
+    Những Cái Bẫy}\\[0.4cm]
+  {\fontsize{28}{34}\selectfont\bfseries\color{trapgold!80!black}
+    Người Trẻ}\\[0.4cm]
+  {\fontsize{28}{34}\selectfont\bfseries\color{trapgreen!80!black}
+    Tự Bước Vào}\\[0.4cm]
+
+  % Tiêu đề phụ
+  {\fontsize{16}{20}\selectfont\color{trapgold!90!black}\itshape
+    Tỉnh Ra Trước Khi Trả Giá Quá Đắt}\\[1cm]
+
+  % Đường kẻ giữa
+  {\color{trapbrown!60}\rule{6cm}{1pt}}\\[5pt]
+  {\color{trapgold!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
+  {\color{trapbrown!60}\rule{6cm}{1pt}}\\[1.5cm]
+
+  % Text giới thiệu
+  {\normalsize\itshape\color{trapbrown!90!black}
+   ``Nhiều cái bẫy của tuổi trẻ không mang hình thù đáng sợ.\\
+   Nó mặc áo tử tế, cơ hội, tình yêu và lời khen.''}
+
+  \vfill
+
+  % Tác giả
+  {\fontsize{16}{20}\selectfont\bfseries\color{trapbrown!90!black}
+    Sưu tầm \& Tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
+
+  {\small\color{gray} Bản mềm phát hành --- Năm 2026}\\[0.5cm]
+\end{center}
+
+\afterpage{\nopagecolor}
 \end{titlepage}
-\clearpage

@@ -1,4 +1,7 @@
 \babel@toc {vietnamese}{}\relax 
+\contentsline {chapter}{Lời Tựa}{3}{}%
+\contentsline {chapter}{Hướng Dẫn Sử Dụng Sách}{5}{}%
+\contentsline {chapter}{Lời Mở Đầu}{iii}{}%
 \contentsline {chapter}{\numberline {1}Điểm Số Không Phải Tất Cả}{1}{}%
 \contentsline {section}{\numberline {1.1}Điểm Cao Không Tự Động Biến Em Thành Người Giỏi}{1}{}%
 \contentsline {section}{\numberline {1.2}Điểm Thấp Không Có Nghĩa Em Vô Dụng}{2}{}%
@@ -19,8 +22,8 @@
 \contentsline {section}{\numberline {2.6}Gánh Kỳ Vọng Của Con Cả}{19}{}%
 \contentsline {section}{\numberline {2.7}Mẹ Bán Rau Và Bảng Điểm}{20}{}%
 \contentsline {section}{\numberline {2.8}Nhật Ký Không Dám Đưa Cho Mẹ}{21}{}%
-\contentsline {section}{\numberline {2.9}Cuộc Nói Chuyện Sau Bữa Cơm}{22}{}%
-\contentsline {section}{\numberline {2.10}Người Lớn Cũng Cần Học Cách Xin Lỗi}{23}{}%
+\contentsline {section}{\numberline {2.9}Cuộc Nói Chuyện Sau Bữa Cơm}{23}{}%
+\contentsline {section}{\numberline {2.10}Người Lớn Cũng Cần Học Cách Xin Lỗi}{24}{}%
 \contentsline {chapter}{\numberline {3}So Sánh Và Ganh Tị}{25}{}%
 \contentsline {section}{\numberline {3.1}Người Ta Chỉ Cho Em Thấy Thành Tích, Không Cho Em Thấy Cái Giá}{25}{}%
 \contentsline {section}{\numberline {3.2}Ghen Tị Không Làm Em Xấu, Nhưng Che Nó Đi Thì Nguy}{26}{}%

@@ -215,6 +215,30 @@
   \end{tcolorbox}\vspace{4pt}
 }
 
+\newtcolorbox{ghinhoanh}{
+  colback=truyenblue!6,
+  colframe=truyenblue,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Easy English},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{tuhocnhanh}{
+  colback=truyengold!10,
+  colframe=truyengold!70!black,
+  coltitle=black,
+  fonttitle=\bfseries,
+  title={Tự Học Nhanh},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
 % Chữ hoa trang trí đầu đoạn
 \newcommand{\chuhoa}[2]{\lettrine[lines=2, lhang=0.1, loversize=0.15]{\textcolor{truyenred}{#1}}{#2}}
 
@@ -276,6 +300,7 @@
 
 \tableofcontents
 \clearpage
+\input{loi-mo-dau}
 
 %------------------------------------------------------------
 \mainmatter
@@ -297,5 +322,6 @@
 \backmatter
 %------------------------------------------------------------
 \input{chapters/phu-luc}
+\input{series-catalog}
 
 \end{document}

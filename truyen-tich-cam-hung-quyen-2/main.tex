@@ -99,6 +99,28 @@
   {\color{truyenred}\textbf{#1}}{#2}%
 }
 
+\newtcolorbox{ghinhoanh}{
+  colback=truyenblue!6,
+  colframe=truyenblue,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Easy English},
+  arc=4pt,
+  boxrule=1pt,
+  breakable
+}
+
+\newtcolorbox{tuhocnhanh}{
+  colback=truyengold!10,
+  colframe=truyengold!70!black,
+  coltitle=black,
+  fonttitle=\bfseries,
+  title={Tự Học Nhanh},
+  arc=4pt,
+  boxrule=1pt,
+  breakable
+}
+
 \newcommand{\ngayDay}{
   \begin{flushright}
   \small\itshape\color{gray} Ngày \dots\dots tháng \dots\dots năm \dots\dots
@@ -110,12 +132,23 @@
 
 \include{cover}
 
-\cleardoublepage
-\begingroup
-  \renewcommand{\contentsname}{\centering\color{truyenred}Mục Lục}
-  \tableofcontents
-\endgroup
+%------------------------------------------------------------
+% LỜI TỰA
+%------------------------------------------------------------
+\input{chapters/loitua}
 
+%------------------------------------------------------------
+% HƯỚNG DẪN SỬ DỤNG
+%------------------------------------------------------------
+\input{chapters/huong-dan}
+
+\cleardoublepage
+{\renewcommand{\cfttoctitlefont}{\hfil\color{truyenred}\normalfont\Large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfil}
+\tableofcontents}
+
+\cleardoublepage
+\include{loi-mo-dau}
 \cleardoublepage
 
 \include{chapters/ch01-dao-lam-con}
@@ -133,4 +166,5 @@
 \include{chapters/ch13-dao-nghe-nghiep}
 \include{chapters/ch14-dao-tha-thu}
 
+\input{series-catalog}
 \end{document}

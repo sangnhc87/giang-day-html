@@ -1,11 +1,14 @@
 \babel@toc {vietnamese}{}\relax 
+\contentsline {chapter}{Lời Tựa}{3}{}%
+\contentsline {chapter}{Hướng Dẫn Sử Dụng Sách}{5}{}%
+\contentsline {chapter}{Lời Mở Đầu}{iii}{}%
 \contentsline {chapter}{\numberline {1}Lão Tử — Đạo, Vô Vi, Nước Chảy, Biết Đủ}{1}{}%
 \contentsline {section}{\numberline {1.1}Đạo Mà Nói Được Không Phải Đạo Thường}{1}{}%
 \contentsline {section}{\numberline {1.2}Vô Vi — Hành Động Không Gượng Ép}{2}{}%
 \contentsline {section}{\numberline {1.3}Thượng Thiện Nhược Thủy — Thiện Cao Nhất Như Nước}{3}{}%
 \contentsline {section}{\numberline {1.4}Tri Túc Giả Phú — Biết Đủ Là Giàu}{4}{}%
 \contentsline {section}{\numberline {1.5}Cứng Mạnh Thuộc Về Chết — Mềm Yếu Thuộc Về Sống}{5}{}%
-\contentsline {section}{\numberline {1.6}Thánh Nhân Không Tích Trữ}{6}{}%
+\contentsline {section}{\numberline {1.6}Thánh Nhân Không Tích Trữ}{5}{}%
 \contentsline {section}{\numberline {1.7}Cái Hữu Ích Của Cái Không}{6}{}%
 \contentsline {section}{\numberline {1.8}Biết Người Là Khôn, Biết Mình Là Sáng}{7}{}%
 \contentsline {section}{\numberline {1.9}Phục Mệnh Viết Thường — Trở Về Là Lẽ Thường}{8}{}%
@@ -18,7 +21,7 @@
 \contentsline {section}{\numberline {2.5}Kỷ Sở Bất Dục, Vật Thi Ư Nhân — Điều Mình Không Muốn, Đừng Làm Cho Người}{15}{}%
 \contentsline {section}{\numberline {2.6}Ba Lần Hỏi Tên Phụ Thân}{16}{}%
 \contentsline {section}{\numberline {2.7}Quân Tử Hòa Nhi Bất Đồng}{17}{}%
-\contentsline {section}{\numberline {2.8}Khổng Tử Khóc Người Học Trò}{18}{}%
+\contentsline {section}{\numberline {2.8}Khổng Tử Khóc Người Học Trò}{17}{}%
 \contentsline {section}{\numberline {2.9}Ngô Nhật Tam Tỉnh Ngô Thân}{18}{}%
 \contentsline {section}{\numberline {2.10}Người Không Nghĩ Xa, Tất Lo Gần}{19}{}%
 \contentsline {chapter}{\numberline {3}Mạnh Tử — Tính Thiện, Lòng Trắc Ẩn, Dân Vi Quý}{21}{}%
@@ -115,4 +118,4 @@
 \contentsline {section}{\numberline {12.3}Đức Hạnh Là Gì? Đông Và Tây Trả Lời}{103}{}%
 \contentsline {section}{\numberline {12.4}Khi Triết Học Gặp Thực Tế Cuộc Sống}{104}{}%
 \contentsline {section}{\numberline {12.5}Lời Cuối — Triết Học Không Kết Thúc}{105}{}%
-\contentsline {section}{\numberline {12.6}Người Đọc Và Các Bậc Thầy}{106}{}%
+\contentsline {section}{\numberline {12.6}Người Đọc Và Các Bậc Thầy}{105}{}%

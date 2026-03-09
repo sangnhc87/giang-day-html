@@ -1,81 +1,252 @@
-\documentclass[14pt,oneside]{extbook}
+\documentclass[12pt, a4paper, twoside, openright]{book}
 
 \usepackage[utf8]{inputenc}
-\usepackage[T5,T1]{fontenc}
+\usepackage[T5]{fontenc}
 \usepackage[vietnamese,english]{babel}
-\usepackage[a5paper,margin=1.7cm]{geometry}
-\usepackage{xcolor}
-\usepackage{tikz}
-\usepackage{tcolorbox}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{titlesec}
-\usepackage{fancyhdr}
-\usepackage{enumitem}
-\usepackage{parskip}
-\usepackage{microtype}
 \usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage[
+  a4paper,
+  top=2.8cm, bottom=2cm,
+  inner=3cm, outer=2.5cm,
+  headsep=0.6cm,
+  footskip=1cm
+]{geometry}
+\usepackage[dvipsnames, svgnames, x11names]{xcolor}
+\definecolor{truyenred}{HTML}{8B1A1A}
+\definecolor{truyengold}{HTML}{B8860B}
+\definecolor{truyenblue}{HTML}{1F4E79}
+\definecolor{truyengreen}{HTML}{2D5016}
+\definecolor{boxbg}{HTML}{FFF8F0}
+\definecolor{boxborder}{HTML}{C8A96E}
+\definecolor{chaptersoft}{HTML}{FAF4EA}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{lettrine}
+\usepackage{setspace}
+\usepackage{afterpage}
+\usepackage{emptypage}
+\usepackage{hyperref}
+\usepackage{parskip}
 
-\hypersetup{colorlinks=true,linkcolor=black,urlcolor=black}
-
-\definecolor{inkdark}{HTML}{213547}
-\definecolor{inkwarm}{HTML}{9C4F2F}
-\definecolor{goldline}{HTML}{C9A66B}
-\definecolor{pagewash}{HTML}{FBF7F0}
-\definecolor{storybg}{HTML}{FFFDF9}
-\definecolor{storyframe}{HTML}{D8C2A7}
-
-\pagestyle{fancy}
-\fancyhf{}
-\fancyfoot[C]{\thepage}
-\fancyhead[L]{\footnotesize Thay Xau - Thay Tot, Tro Xau - Tro Ngoan}
-\fancyhead[R]{\footnotesize Du thao 12 chuong - 120 tinh huong}
-\setlength{\headheight}{14pt}
+\onehalfspacing
+\hypersetup{
+  colorlinks=true,
+  linkcolor=truyenred,
+  urlcolor=truyenblue,
+  citecolor=truyengreen,
+  pdftitle={Thay Xau - Thay Tot, Tro Xau - Tro Ngoan},
+  pdfauthor={Ban bien soan},
+  pdfsubject={Tinh huong giao duc hoc duong va truong thanh}
+}
+\makeatletter
+\pdfstringdefDisableCommands{%
+  \let\color\@gobble
+  \let\bfseries\relax
+  \let\itshape\relax
+  \let\scshape\relax
+}
+\makeatother
 
 \titleformat{\chapter}[display]
-  {\bfseries\color{inkdark}}
-  {\filleft\Large\chaptername\ \thechapter}
-  {6pt}
-  {\Huge}
+  {\normalfont\bfseries\color{truyenred}}
+  {%
+    \vspace{-1cm}%
+    {\color{truyengold}\rule{\textwidth}{2pt}}\\[4pt]
+    \flushright\fontsize{11}{13}\selectfont\color{truyengold}
+    \MakeUppercase{\chaptertitlename}\space\thechapter
+  }
+  {4pt}
+  {\Huge\raggedright}
+  [\vspace{4pt}{\color{truyengold}\titlerule[1.5pt]}]
+
+\colorlet{sectionrule}{truyenblue!40}
+\titleformat{\section}
+  {\large\bfseries\color{truyenblue}}
+  {\thesection.}{0.5em}{}[\vspace{-4pt}{\color{sectionrule}\rule{\linewidth}{0.4pt}}]
+
+\titleformat{\subsection}
+  {\normalsize\bfseries\itshape\color{truyengreen}}
+  {\thesubsection.}{0.5em}{}
+
+\setlength{\headheight}{15.56656pt}
+\addtolength{\topmargin}{-0.56656pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\itshape\color{truyenblue}\leftmark}
+\fancyhead[RO]{\small\itshape\color{truyenblue}\rightmark}
+\fancyfoot[LE,RO]{\small\thepage}
+\fancyfoot[CE,CO]{\small\color{truyengold}\textit{Thầy Xấu - Thầy Tốt, Trò Xấu - Trò Ngoan}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.2pt}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[LE,RO]{\small\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+\tcbset{
+  truyenstyle/.style={
+    enhanced,
+    breakable,
+    colback=boxbg,
+    colframe=boxborder,
+    fonttitle=\bfseries\color{truyenred},
+    title={#1},
+    arc=4pt,
+    boxrule=1pt,
+    leftrule=4pt,
+    top=6pt, bottom=6pt,
+    left=8pt, right=8pt,
+    attach boxed title to top left={yshift=-2mm, xshift=8mm},
+    boxed title style={colback=truyengold!20, colframe=truyengold, arc=3pt}
+  }
+}
+
+\tcbset{
+  baihocstyle/.style={
+    enhanced,
+    colback=truyenblue!5,
+    colframe=truyenblue!60,
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    title={#1},
+    arc=6pt,
+    boxrule=0.8pt,
+    top=5pt, bottom=5pt,
+    breakable
+  }
+}
+
+\tcbset{
+  quotestyle/.style={
+    enhanced,
+    colback=truyengold!8,
+    colframe=truyengold,
+    arc=0pt,
+    leftrule=5pt, toprule=0pt, bottomrule=0pt, rightrule=0pt,
+    top=5pt, bottom=5pt,
+    left=10pt, right=6pt,
+    fontupper=\itshape,
+  }
+}
+
+\newenvironment{truyen}[2]{%
+  \begin{tcolorbox}[truyenstyle={#1}]
+  \textit{\small\color{truyengold!80!black}#2}\\[6pt]
+}{%
+  \end{tcolorbox}\vspace{4pt}
+}
+
+\newenvironment{baihoc}[1][Bài học]{%
+  \begin{tcolorbox}[baihocstyle={#1}]
+}{%
+  \end{tcolorbox}\vspace{6pt}
+}
+
+\newenvironment{dangnon}[1][]{%
+  \begin{tcolorbox}[quotestyle]
+  \ifx&#1&\else\textbf{--- #1}\\[3pt]\fi
+}{%
+  \end{tcolorbox}\vspace{4pt}
+}
+
+\newtcolorbox{ghinhoanh}{
+  colback=truyenblue!6,
+  colframe=truyenblue,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Easy English},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{tuhocnhanh}{
+  colback=truyengold!10,
+  colframe=truyengold!70!black,
+  coltitle=black,
+  fonttitle=\bfseries,
+  title={Tự Học Nhanh},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
 
 \newtcolorbox{leadbox}{
-  colback=pagewash,
-  colframe=goldline,
+  colback=chaptersoft,
+  colframe=boxborder,
   boxrule=0.9pt,
   arc=6pt,
   left=10pt,
   right=10pt,
   top=8pt,
-  bottom=8pt
+  bottom=8pt,
+  breakable,
+  enhanced
 }
 
 \newcommand{\storycard}[3]{%
-\begin{tcolorbox}[
-  colback=storybg,
-  colframe=storyframe,
-  boxrule=0.7pt,
-  arc=5pt,
-  left=8pt,
-  right=8pt,
-  top=6pt,
-  bottom=6pt
-]
-{\small\bfseries\color{inkwarm} #1}\\[-1pt]
-{\footnotesize\itshape #2}\\[3pt]
-{\small #3}
-\end{tcolorbox}
+  \begin{tcolorbox}[truyenstyle={#1}]
+  {\small\itshape\color{truyengold!80!black}#2}\\[4pt]
+  #3
+  \end{tcolorbox}\vspace{4pt}
 }
+
+\newcommand{\chuhoa}[2]{\lettrine[lines=2, lhang=0.1, loversize=0.15]{\textcolor{truyenred}{#1}}{#2}}
+
+\newcommand{\ngancach}{%
+  \vspace{8pt}
+  \begin{center}
+    {\color{truyengold}%
+      \rule{2.5cm}{0.5pt}\quad%
+      {\large$\diamond\;\diamond\;\diamond$}\quad%
+      \rule{2.5cm}{0.5pt}%
+    }
+  \end{center}
+  \vspace{8pt}
+}
+
+\newcommand{\ngayDay}[1]{%
+  \hfill{\small\color{gray}\textit{Ngày dùng: \underline{\hspace{4cm}}\quad Lớp/Nhóm: \underline{\hspace{2.5cm}}}}
+  \vspace{4pt}
+}
+
+\contentsmargin{0cm}
+\titlecontents{chapter}[1.5cm]
+  {\addvspace{8pt}\bfseries\color{truyenred}}
+  {\contentslabel[\thecontentslabel]{1.5cm}}
+  {\hspace*{-1.5cm}}
+  {\hfill\contentspage}
+\titlecontents{section}[3.5cm]
+  {\addvspace{2pt}\small\color{truyenblue}}
+  {\contentslabel[\thecontentslabel]{2cm}}
+  {}
+  {\titlerule*[5pt]{.}\contentspage}
 
 \begin{document}
 
-\input{cover}
-
 \frontmatter
+\input{cover}
 \input{chapters/loitua}
-\input{loi-mo-dau}
 \input{chapters/huong-dan}
-
 \tableofcontents
+\clearpage
+\input{loi-mo-dau}
 
 \mainmatter
 \input{chapters/ch01}
@@ -90,5 +261,9 @@
 \input{chapters/ch10}
 \input{chapters/ch11}
 \input{chapters/ch12}
+
+\backmatter
+\input{chapters/phu-luc}
+\input{series-catalog}
 
 \end{document}

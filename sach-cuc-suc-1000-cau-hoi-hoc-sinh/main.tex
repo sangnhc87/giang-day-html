@@ -1,0 +1,109 @@
+%============================================================
+% SACH CUC SUC - 1000 CAU HOI HOC SINH
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{\normalfont}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+
+\geometry{a4paper,left=1.8cm,right=1.8cm,top=2cm,bottom=2cm,headheight=41pt}
+
+% Bang mau Quyển XXV: Xanh bang lop va cam dat nung
+\definecolor{chalkgreen}{RGB}{67, 109, 96}
+\definecolor{sunclay}{RGB}{201, 142, 84}
+\definecolor{inkdark}{RGB}{49, 58, 67}
+\definecolor{boxbg}{RGB}{247, 244, 239}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{chalkgreen}\itshape\small 1000 Câu Hỏi Học Sinh - Chửi Duyên Của Giáo Viên}
+\fancyhead[RE,LO]{\color{inkdark}\itshape\small \leftmark}
+\fancyfoot[C]{\color{sunclay}\textbf{-- \thepage\ --}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{sunclay}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{inkdark}\centering}
+  {\large\itshape Chương \thechapter}
+  {1ex}
+  {\Huge\scshape}[\vspace{1ex}{\color{sunclay}\rule{0.5\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\color{chalkgreen}\Large\bfseries}
+  {\thesection.}{1em}{}
+\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+
+\newtcolorbox{truyen}[2]{
+  colback=boxbg,colframe=chalkgreen,coltitle=white,fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},arc=5pt,boxrule=1.2pt,breakable,enhanced,drop shadow=black!15
+}
+\newtcolorbox{baihoc}{
+  colback=inkdark!8,colframe=inkdark,coltitle=white,fonttitle=\bfseries,
+  title={$\bigstar$ Bài học cuối giờ},arc=4pt,boxrule=1pt,breakable,enhanced
+}
+\newtcolorbox{ghinhoanh}{
+  colback=chalkgreen!6,colframe=chalkgreen,coltitle=white,fonttitle=\bfseries,
+  title={Easy English},arc=4pt,boxrule=1pt,breakable,enhanced
+}
+\newtcolorbox{tuhocnhanh}{
+  colback=sunclay!12,colframe=sunclay!70!black,coltitle=black,fonttitle=\bfseries,
+  title={Gợi Ý Tự Nghĩ},arc=4pt,boxrule=1pt,breakable,enhanced
+}
+\newcommand{\chuhoa}[2]{\lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{inkdark}{#1}}{#2}}
+\newcommand{\hsqa}[2]{\textbf{HS:} ``#1''\\\textbf{Thầy:} ``#2''}
+\newcommand{\ngancach}{%
+  \begin{center}\textcolor{sunclay}{\rule{0.3\textwidth}{0.5pt}\hspace{6pt}$\diamond$\hspace{6pt}\rule{0.3\textwidth}{0.5pt}}\end{center}\vspace{6pt}}
+
+\begin{document}
+\include{cover-book}
+
+%------------------------------------------------------------
+% LOI TUA
+%------------------------------------------------------------
+\input{chapters/loitua-book}
+
+%------------------------------------------------------------
+% HUONG DAN SU DUNG
+%------------------------------------------------------------
+\input{chapters/huong-dan}
+\frontmatter
+\tableofcontents
+\clearpage
+\include{loi-mo-dau-book}
+
+\mainmatter
+\include{chapters/book-ch01-bai-tap-va-chua-hieu}
+\include{chapters/book-ch02-diem-so-va-xin-diem}
+\include{chapters/book-ch03-bi-goi-len-bang}
+\include{chapters/book-ch04-khong-lam-bai-va-quen-bai}
+\include{chapters/book-ch05-hoc-hanh-va-luoi-bieng}
+\include{chapters/book-ch06-thi-cu-va-on-thi}
+\include{chapters/book-ch07-bi-phat-va-noi-quy}
+\include{chapters/book-ch08-tuong-lai-va-nghe-nghiep}
+\include{chapters/book-ch09-ly-su-cun-kinh-dien}
+\include{chapters/book-ch10-khien-thay-tho-dai}
+
+\backmatter
+\input{series-catalog}
+\end{document}

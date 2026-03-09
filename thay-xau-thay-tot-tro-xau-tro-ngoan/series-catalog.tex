@@ -1,0 +1,165 @@
+% =====================================================
+% BÌA SAU CHUNG TOÀN BỘ BỘ SÁCH 28 QUYỂN
+% TRUYỆN TÍCH CẢM HỨNG SONG NGỮ
+% =====================================================
+\definecolor{catalogtitle}{HTML}{213447}
+\definecolor{catalogaccent}{HTML}{B7791F}
+\definecolor{catalogline}{HTML}{DCC6A1}
+\definecolor{catalogbg}{HTML}{F7F2EA}
+\definecolor{catalogframe}{HTML}{C9A66B}
+\definecolor{catalogsoft}{HTML}{FBF8F3}
+\definecolor{catalogink}{HTML}{4A5568}
+
+\definecolor{vol01}{HTML}{B33A3A}
+\definecolor{vol02}{HTML}{2F6B8A}
+\definecolor{vol03}{HTML}{5B8C5A}
+\definecolor{vol04}{HTML}{8C5E3C}
+\definecolor{vol05}{HTML}{6C63A8}
+\definecolor{vol06}{HTML}{A86F3A}
+\definecolor{vol07}{HTML}{3B5F7A}
+\definecolor{vol08}{HTML}{C05B4D}
+\definecolor{vol09}{HTML}{8D6E63}
+\definecolor{vol10}{HTML}{7A4EAB}
+\definecolor{vol11}{HTML}{C44D58}
+\definecolor{vol12}{HTML}{4D7C8A}
+\definecolor{vol13}{HTML}{5A7D4D}
+\definecolor{vol14}{HTML}{D17A22}
+\definecolor{vol15}{HTML}{7B5E57}
+\definecolor{vol16}{HTML}{4C8C72}
+\definecolor{vol17}{HTML}{A75D5D}
+\definecolor{vol18}{HTML}{B08A3E}
+\definecolor{vol19}{HTML}{7B8794}
+\definecolor{vol20}{HTML}{2C7A7B}
+\definecolor{vol21}{HTML}{B58A2A}
+\definecolor{vol22}{HTML}{D69E2E}
+\definecolor{vol23}{HTML}{D27D9A}
+\definecolor{vol24}{HTML}{A67C52}
+\definecolor{vol25}{HTML}{C97D52}
+\definecolor{vol26}{HTML}{B56576}
+\definecolor{vol27}{HTML}{B08D57}
+\definecolor{vol28}{HTML}{8C6239}
+
+\newcommand{\posteritem}[3]{%
+  \noindent\textcolor{#1}{\rule{0.78em}{0.78em}}\hspace{0.45em}%
+  {\scriptsize\textbf{#2}}\hspace{0.25em}{\scriptsize #3}\par\vspace{2.5pt}%
+}
+
+\newcommand{\posterpanel}[3]{%
+\begin{tcolorbox}[
+  colback=white,
+  colframe=catalogframe,
+  boxrule=0.9pt,
+  arc=7pt,
+  left=8pt,
+  right=8pt,
+  top=8pt,
+  bottom=6pt,
+  title={#1},
+  colbacktitle=#2,
+  coltitle=white,
+  fonttitle=\bfseries,
+  enhanced
+]
+#3
+\end{tcolorbox}%
+}
+
+\clearpage
+\thispagestyle{empty}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[catalogbg] (current page.north west) rectangle (current page.south east);
+  \fill[catalogaccent!10] ([xshift=-1.8cm,yshift=-1.6cm]current page.north east) circle (4.8cm);
+  \fill[catalogtitle!8] ([xshift=1.2cm,yshift=1.8cm]current page.south west) circle (5.4cm);
+  \draw[catalogframe, line width=1.5pt]
+    ([xshift=0.95cm,yshift=-0.95cm]current page.north west)
+    rectangle
+    ([xshift=-0.95cm,yshift=0.95cm]current page.south east);
+  \draw[catalogline, line width=0.7pt]
+    ([xshift=1.2cm,yshift=-1.2cm]current page.north west)
+    rectangle
+    ([xshift=-1.2cm,yshift=1.2cm]current page.south east);
+\end{tikzpicture}
+
+\begin{center}
+{\fontsize{20}{24}\selectfont\bfseries\color{catalogtitle} Tủ Sách Truyện Tích Cảm Hứng Song Ngữ}\\[5pt]
+{\normalsize\itshape\color{catalogaccent} 28 quyển song ngữ dành cho lớp học, gia đình và hành trình trưởng thành}\\[8pt]
+{\color{catalogline}\rule{0.78\textwidth}{1pt}}\\[8pt]
+
+\begin{tcolorbox}[
+  width=0.84\textwidth,
+  colback=catalogsoft,
+  colframe=catalogframe,
+  boxrule=1pt,
+  arc=8pt,
+  left=10pt,
+  right=10pt,
+  top=8pt,
+  bottom=8pt,
+  enhanced
+]
+{\small\itshape\color{catalogink}
+``Mỗi quyển là một gam màu, một nhịp kể chuyện, một lát cắt của lớp học và đời sống.\
+Đặt cạnh nhau, chúng tạo thành một poster của giáo dục, nhân cách và những bài học không cũ.''}
+\end{tcolorbox}
+\end{center}
+
+\vspace{4pt}
+
+\noindent
+\begin{minipage}[t]{0.485\textwidth}
+\posterpanel{Khởi Nguồn \& Nhân Cách}{catalogtitle}{
+\posteritem{vol01}{Quyển I:}{Điển Tích \& Chuyện Kể Truyền Cảm Hứng}
+\posteritem{vol02}{Quyển II:}{Điển Tích \& Chuyện Kể: Đạo Làm Người}
+\posteritem{vol03}{Quyển III:}{Điển Tích \& Chuyện Kể: Thiên Nhiên Quanh Ta}
+\posteritem{vol04}{Quyển IV:}{Điển Tích \& Chuyện Kể: Triết Lý Nhân Sinh}
+\posteritem{vol05}{Quyển V:}{Điển Tích \& Chuyện Kể: Hai Mặt Của Một Đồng Xu}
+\posteritem{vol06}{Quyển VI:}{Vòng Quay Cuộc Đời}
+\posteritem{vol07}{Quyển VII:}{Lời Dạy Của Bậc Hiền Nhân}
+}
+
+\vspace{6pt}
+
+\posterpanel{Tuổi Trẻ \& Góc Nhìn Học Trò}{catalogaccent}{
+\posteritem{vol08}{Quyển VIII:}{Thơ Nhưng Thật: Chuyện Học Sinh}
+\posteritem{vol09}{Quyển IX:}{Ra Đời Không Có Bản Nháp}
+\posteritem{vol10}{Quyển X:}{Những Ảo Tưởng Của Tuổi Trẻ}
+\posteritem{vol11}{Quyển XI:}{Những Cái Bẫy Người Trẻ Tự Bước Vào}
+\posteritem{vol12}{Quyển XII:}{Những Điều Thầy Giáo Nhìn Thấy}
+\posteritem{vol13}{Quyển XIII:}{Những Câu Hỏi Học Trò Không Nói Thẳng}
+\posteritem{vol14}{Quyển XIV:}{100 Câu Hỏi Học Trò Hay Hỏi Về Chuyện Học}
+}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.485\textwidth}
+\posterpanel{Lớp Học \& Lời Thầy}{catalogink}{
+\posteritem{vol15}{Quyển XV:}{Những Điều Thầy Muốn Nói Với Học Sinh}
+\posteritem{vol16}{Quyển XVI:}{Những Bài Học Nhỏ Trong Lớp Học}
+\posteritem{vol17}{Quyển XVII:}{Những Điều Học Sinh Nên Hiểu Sớm}
+\posteritem{vol18}{Quyển XVIII:}{80 Lời Thầy Nói Trong Lớp Học}
+\posteritem{vol19}{Quyển XIX:}{100 Câu Nói Làm Học Sinh Im Lặng Suy Nghĩ}
+\posteritem{vol20}{Quyển XX:}{80 Câu Nói Hài Hước Nhưng Sâu Sắc}
+\posteritem{vol21}{Quyển XXI:}{60 Câu Nói Khiến Học Sinh Lười Học Phải Giật Mình}
+}
+
+\vspace{6pt}
+
+\posterpanel{Nhân Sinh \& Gia Đình}{catalogtitle!85!black}{
+\posteritem{vol22}{Quyển XXII:}{100 Câu Nói Đỉnh Cao Sư Phạm Khi Học Sinh Nản Học}
+\posteritem{vol23}{Quyển XXIII:}{50 Câu Nói Thầy Nói Cuối Năm Học}
+\posteritem{vol24}{Quyển XXIV:}{Bí Quyết Nhân Sinh}
+\posteritem{vol25}{Quyển XXV:}{Lý Sự Cùn Của Học Sinh}
+\posteritem{vol26}{Quyển XXVI:}{Phụ Huynh Và Con Cái}
+\posteritem{vol27}{Quyển XXVII:}{Những Điều Ta Hiểu Khi Đã Muộn}
+\posteritem{vol28}{Quyển XXVIII:}{100 Nghịch Lý Nhân Sinh}
+}
+\end{minipage}
+
+\vfill
+
+\begin{center}
+{\small\color{catalogink} Bản danh mục chung áp dụng cho toàn bộ bộ sách.}\\[3pt]
+{\footnotesize\itshape\color{catalogink!85} Ghi chú hiển thị: thư mục quyen-28 tương ứng Quyển XXVII; thư mục quyen-32 tương ứng Quyển XXVIII.}
+\end{center}
+
+\clearpage

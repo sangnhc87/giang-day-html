@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build thay-xau-thay-tot-tro-xau-tro-ngoan",
+			"type": "shell",
+			"command": "pdflatex",
+			"args": [
+				"-interaction=nonstopmode",
+				"main.tex"
+			],
+			"isBackground": false
+		}
+	]
+}

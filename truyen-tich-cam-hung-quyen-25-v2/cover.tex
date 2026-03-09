@@ -1,0 +1,89 @@
+%============================================================
+% TRANG BIA - QUYEN XXV
+%============================================================
+\definecolor{seriesaccent}{HTML}{C97D52}
+\begin{titlepage}
+\thispagestyle{empty}
+\pagecolor{seriesaccent!7}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[white, opacity=0.62, rounded corners=20pt]
+    ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
+    ($(current page.south east)+(-1.5cm,1.5cm)$);
+
+  \draw[sunclay!80!black, line width=3pt, rounded corners=15pt]
+    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
+    ($(current page.south east)+(-1.8cm,1.8cm)$);
+
+  \draw[sunclay, line width=1pt, rounded corners=12pt]
+    ($(current page.north west)+(2cm,-2cm)$) rectangle
+    ($(current page.south east)+(-2cm,2cm)$);
+
+  \foreach \x/\y/\xsign/\ysign in {%
+    north west/1.8cm/1/-1,
+    north east/1.8cm/-1/-1,
+    south west/1.8cm/1/1,
+    south east/1.8cm/-1/1%
+  } {
+    \draw[sunclay!80!black, line width=1.5pt]
+      ($(current page.\x) + (\xsign*0.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*2.8cm)$) --
+      ($(current page.\x) + (\xsign*2.8cm, \ysign*0.8cm)$);
+
+    \fill[sunclay!60!white] ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
+  }
+
+  \node[anchor=center] at ($(current page.center)-(0, 2cm)$) {
+    \begin{tikzpicture}
+      \draw[chalkgreen!20, line width=0.5pt] (0,0) circle (5cm);
+      \draw[sunclay!45, line width=1pt] (0,0) circle (4.8cm);
+    \end{tikzpicture}
+  };
+\end{tikzpicture}
+
+\vspace*{2cm}
+
+\begin{center}
+  {\color{sunclay!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
+  {\fontsize{14}{16}\selectfont\color{chalkgreen!85!black}\scshape \textbf{Chuyện Đời Lớp Học Rất Thật}}\\[1.4cm]
+
+  \begin{tcolorbox}[
+    width=6.5cm,
+    colback=sunclay!20,
+    colframe=sunclay!80!black,
+    arc=4pt,
+    boxrule=1.5pt,
+    halign=center
+  ]
+    {\fontsize{18}{22}\selectfont\bfseries\color{inkdark!80!black}
+     QUYỂN XXV}
+  \end{tcolorbox}
+  \vspace{0.8cm}
+
+  {\fontsize{34}{40}\selectfont\bfseries\color{inkdark!80!black}
+    Lý Sự Cùn}\\[0.35cm]
+  {\fontsize{34}{40}\selectfont\bfseries\color{sunclay!85!black}
+    Của Học Sinh}\\[0.4cm]
+
+  {\fontsize{16}{20}\selectfont\color{sunclay!90!black}\itshape
+    100 màn đối đáp trò -- thầy trong lớp học\\
+    Hài hước, chân thật, và có điều để nhớ}\\[1cm]
+
+  {\color{chalkgreen!60}\rule{6cm}{1pt}}\\[5pt]
+  {\color{sunclay!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
+  {\color{chalkgreen!60}\rule{6cm}{1pt}}\\[1.5cm]
+
+  {\normalsize\itshape\color{chalkgreen!90!black}
+   ``Nhiều câu học sinh nói ra để chống chế.\\
+   Nhưng nếu nghe kỹ, đôi khi đó cũng là một lời kêu cứu.''}
+
+  \vfill
+
+  {\fontsize{16}{20}\selectfont\bfseries\color{chalkgreen!90!black}
+    Sưu tầm \& Tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
+
+  {\small\color{gray} Bản mềm phát hành --- Năm 2026}\\[0.5cm]
+\end{center}
+
+\afterpage{\nopagecolor}
+\end{titlepage}

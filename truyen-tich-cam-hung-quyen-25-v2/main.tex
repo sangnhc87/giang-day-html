@@ -1,0 +1,119 @@
+%============================================================
+% TRUYEN SONG NGU QUYEN 25 V2 - LY SU CUN RAT DOI
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{\normalfont}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+
+\geometry{a4paper,left=1.8cm,right=1.8cm,top=2cm,bottom=2cm,headheight=41pt}
+
+% Bang mau Quyển XXV: Xanh bang lop va cam dat nung
+\definecolor{chalkgreen}{RGB}{67, 109, 96}
+\definecolor{sunclay}{RGB}{201, 142, 84}
+\definecolor{inkdark}{RGB}{49, 58, 67}
+\definecolor{boxbg}{RGB}{247, 244, 239}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{chalkgreen}\itshape\small Quyển XXV V2: Lý Sự Cùn Rất Đời}
+\fancyhead[RE,LO]{\color{inkdark}\itshape\small \leftmark}
+\fancyfoot[C]{\color{sunclay}\textbf{-- \thepage\ --}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{sunclay}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{inkdark}\centering}
+  {\large\itshape Chương \thechapter}
+  {1ex}
+  {\Huge\scshape}[\vspace{1ex}{\color{sunclay}\rule{0.5\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\color{chalkgreen}\Large\bfseries}
+  {\thesection.}{1em}{}
+\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+
+\newtcolorbox{truyen}[2]{
+  colback=boxbg,colframe=chalkgreen,coltitle=white,fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},arc=5pt,boxrule=1.2pt,breakable,enhanced,drop shadow=black!15
+}
+\newtcolorbox{baihoc}{
+  colback=inkdark!8,colframe=inkdark,coltitle=white,fonttitle=\bfseries,
+  title={$\bigstar$ Bài học cuối giờ},arc=4pt,boxrule=1pt,breakable,enhanced
+}
+\newtcolorbox{ghinhoanh}{
+  colback=chalkgreen!6,colframe=chalkgreen,coltitle=white,fonttitle=\bfseries,
+  title={Easy English},arc=4pt,boxrule=1pt,breakable,enhanced
+}
+\newtcolorbox{tuhocnhanh}{
+  colback=sunclay!12,colframe=sunclay!70!black,coltitle=black,fonttitle=\bfseries,
+  title={Gợi Ý Tự Nghĩ},arc=4pt,boxrule=1pt,breakable,enhanced
+}
+\newcommand{\chuhoa}[2]{\lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{inkdark}{#1}}{#2}}
+\newcommand{\studentpair}[2]{\textbf{Học sinh:} ``#1''\\\textit{Student: ``#2''}\\[4pt]}
+\newcommand{\teacherpair}[2]{\textbf{Thầy:} ``#1''\\\textit{Teacher: ``#2''}\\[4pt]}
+\newcommand{\songnguitem}[2]{\item #1\\\textit{(#2)}}
+\newcommand{\ngancach}{%
+  \begin{center}\textcolor{sunclay}{\rule{0.3\textwidth}{0.5pt}\hspace{6pt}$\diamond$\hspace{6pt}\rule{0.3\textwidth}{0.5pt}}\end{center}\vspace{6pt}}
+
+\begin{document}
+\include{cover-v2}
+
+%------------------------------------------------------------
+% LOI TUA
+%------------------------------------------------------------
+\input{chapters/loitua-v2}
+
+%------------------------------------------------------------
+% HUONG DAN SU DUNG
+%------------------------------------------------------------
+\input{chapters/huong-dan}
+\frontmatter
+\tableofcontents
+\clearpage
+\include{loi-mo-dau-v2}
+
+\mainmatter
+\include{chapters/v2-ch01-hoc-de-lam-gi}
+\include{chapters/v2-ch02-diem-so-va-si-dien}
+\include{chapters/v2-ch03-khong-phai-dua-nao-cung-tu-tin}
+\include{chapters/v2-ch04-luoi-tri-hoan-va-ao-tuong}
+\include{chapters/v2-ch05-sai-que-va-cam-giac-thua}
+\include{chapters/v2-ch06-tien-nghe-va-tuong-lai-mo}
+\include{chapters/v2-ch07-ky-luat-nghe-kho-chiu}
+\include{chapters/v2-ch08-ly-su-cun-sat-lop}
+\include{chapters/v2-ch09-cau-hoi-lam-thay-khung-lai}
+\include{chapters/v2-ch10-khong-co-dap-an-sach-se}
+
+\part{Kho Cục Súc Mở Rộng}
+\include{chapters/v2-bonus-1000-cau-a}
+\include{chapters/v2-bonus-1000-cau-b}
+
+\part{Kho Viral Và Công Thức Bán Chạy}
+\include{chapters/v2-bonus-viral-100}
+\include{chapters/v2-bonus-cong-thuc-ban-chay}
+
+\backmatter
+\input{series-catalog}
+\end{document}

@@ -1,0 +1,2680 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  6 MAR 2026 08:55
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+(/usr/local/texlive/2024/texmf-dist/tex/latex/extsizes/extbook.cls
+Document Class: extbook 1999/01/07 v1.4a NON-Standard LaTeX document class
+(/usr/local/texlive/2024/texmf-dist/tex/latex/extsizes/size14.clo
+File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/exscale.sty
+Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen141
+)
+\c@part=\count196
+\c@chapter=\count197
+\c@section=\count198
+\c@subsection=\count199
+\c@subsubsection=\count266
+\c@paragraph=\count267
+\c@subparagraph=\count268
+\c@figure=\count269
+\c@table=\count270
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen142
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/extsizes/extsizes.sty
+Package: extsizes 1996/10/08 v1.0 Non Standard LaTeX Package
+
+Package ExtSizes Warning: It is better to use one of the extsizes classes,
+ if you can.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/extsizes/size14.clo
+File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2024/11/08 v24.13 The multilingual framework for pdfLaTeX, LuaLa
+TeX and XeLaTeX
+\babel@savecnt=\count271
+\U@D=\dimen143
+\l@unhyphenated=\language89
+(/usr/local/texlive/2024/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count272
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/babel-vietnamese/vietnamese.ldf
+Language: vietnamese 
+Loading definitions for the Vietnamese font encoding (/usr/local/texlive/2024/t
+exmf-dist/tex/latex/vntex/t5enc.def
+File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
+Now handling font encoding T5 ...
+... processing UTF-8 mapping file for font encoding T5
+(/usr/local/texlive/2024/texmf-dist/tex/latex/vntex/t5enc.dfu
+File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+01A0 (decimal 416)
+   defining Unicode char U+01A1 (decimal 417)
+   defining Unicode char U+01AF (decimal 431)
+   defining Unicode char U+01B0 (decimal 432)
+   defining Unicode char U+1EA0 (decimal 7840)
+   defining Unicode char U+1EA1 (decimal 7841)
+   defining Unicode char U+1EA2 (decimal 7842)
+   defining Unicode char U+1EA3 (decimal 7843)
+   defining Unicode char U+1EA4 (decimal 7844)
+   defining Unicode char U+1EA5 (decimal 7845)
+   defining Unicode char U+1EA6 (decimal 7846)
+   defining Unicode char U+1EA7 (decimal 7847)
+   defining Unicode char U+1EA8 (decimal 7848)
+   defining Unicode char U+1EA9 (decimal 7849)
+   defining Unicode char U+1EAA (decimal 7850)
+   defining Unicode char U+1EAB (decimal 7851)
+   defining Unicode char U+1EAC (decimal 7852)
+   defining Unicode char U+1EAD (decimal 7853)
+   defining Unicode char U+1EAE (decimal 7854)
+   defining Unicode char U+1EAF (decimal 7855)
+   defining Unicode char U+1EB0 (decimal 7856)
+   defining Unicode char U+1EB1 (decimal 7857)
+   defining Unicode char U+1EB2 (decimal 7858)
+   defining Unicode char U+1EB3 (decimal 7859)
+   defining Unicode char U+1EB4 (decimal 7860)
+   defining Unicode char U+1EB5 (decimal 7861)
+   defining Unicode char U+1EB6 (decimal 7862)
+   defining Unicode char U+1EB7 (decimal 7863)
+   defining Unicode char U+1EB8 (decimal 7864)
+   defining Unicode char U+1EB9 (decimal 7865)
+   defining Unicode char U+1EBA (decimal 7866)
+   defining Unicode char U+1EBB (decimal 7867)
+   defining Unicode char U+1EBC (decimal 7868)
+   defining Unicode char U+1EBD (decimal 7869)
+   defining Unicode char U+1EBE (decimal 7870)
+   defining Unicode char U+1EBF (decimal 7871)
+   defining Unicode char U+1EC0 (decimal 7872)
+   defining Unicode char U+1EC1 (decimal 7873)
+   defining Unicode char U+1EC2 (decimal 7874)
+   defining Unicode char U+1EC3 (decimal 7875)
+   defining Unicode char U+1EC4 (decimal 7876)
+   defining Unicode char U+1EC5 (decimal 7877)
+   defining Unicode char U+1EC6 (decimal 7878)
+   defining Unicode char U+1EC7 (decimal 7879)
+   defining Unicode char U+1EC8 (decimal 7880)
+   defining Unicode char U+1EC9 (decimal 7881)
+   defining Unicode char U+1ECA (decimal 7882)
+   defining Unicode char U+1ECB (decimal 7883)
+   defining Unicode char U+1ECC (decimal 7884)
+   defining Unicode char U+1ECD (decimal 7885)
+   defining Unicode char U+1ECE (decimal 7886)
+   defining Unicode char U+1ECF (decimal 7887)
+   defining Unicode char U+1ED0 (decimal 7888)
+   defining Unicode char U+1ED1 (decimal 7889)
+   defining Unicode char U+1ED2 (decimal 7890)
+   defining Unicode char U+1ED3 (decimal 7891)
+   defining Unicode char U+1ED4 (decimal 7892)
+   defining Unicode char U+1ED5 (decimal 7893)
+   defining Unicode char U+1ED6 (decimal 7894)
+   defining Unicode char U+1ED7 (decimal 7895)
+   defining Unicode char U+1ED8 (decimal 7896)
+   defining Unicode char U+1ED9 (decimal 7897)
+   defining Unicode char U+1EDA (decimal 7898)
+   defining Unicode char U+1EDB (decimal 7899)
+   defining Unicode char U+1EDC (decimal 7900)
+   defining Unicode char U+1EDD (decimal 7901)
+   defining Unicode char U+1EDE (decimal 7902)
+   defining Unicode char U+1EDF (decimal 7903)
+   defining Unicode char U+1EE0 (decimal 7904)
+   defining Unicode char U+1EE1 (decimal 7905)
+   defining Unicode char U+1EE2 (decimal 7906)
+   defining Unicode char U+1EE3 (decimal 7907)
+   defining Unicode char U+1EE4 (decimal 7908)
+   defining Unicode char U+1EE5 (decimal 7909)
+   defining Unicode char U+1EE6 (decimal 7910)
+   defining Unicode char U+1EE7 (decimal 7911)
+   defining Unicode char U+1EE8 (decimal 7912)
+   defining Unicode char U+1EE9 (decimal 7913)
+   defining Unicode char U+1EEA (decimal 7914)
+   defining Unicode char U+1EEB (decimal 7915)
+   defining Unicode char U+1EEC (decimal 7916)
+   defining Unicode char U+1EED (decimal 7917)
+   defining Unicode char U+1EEE (decimal 7918)
+   defining Unicode char U+1EEF (decimal 7919)
+   defining Unicode char U+1EF0 (decimal 7920)
+   defining Unicode char U+1EF1 (decimal 7921)
+   defining Unicode char U+1EF2 (decimal 7922)
+   defining Unicode char U+1EF3 (decimal 7923)
+   defining Unicode char U+1EF4 (decimal 7924)
+   defining Unicode char U+1EF5 (decimal 7925)
+   defining Unicode char U+1EF6 (decimal 7926)
+   defining Unicode char U+1EF7 (decimal 7927)
+   defining Unicode char U+1EF8 (decimal 7928)
+   defining Unicode char U+1EF9 (decimal 7929)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+))
+Package babel Info: Making " an active character on input line 147.
+))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/vi/babel-vietnames
+e.tex
+Package babel Info: Importing font and identification data for vietnamese
+(babel)             from babel-vi.ini. Reported on input line 11.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip51
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen144
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen145
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count273
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count274
+\leftroot@=\count275
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count276
+\DOTSCASE@=\count277
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen146
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count278
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count279
+\dotsspace@=\muskip17
+\c@parentequation=\count280
+\dspbrk@lvl=\count281
+\tag@help=\toks20
+\row@=\count282
+\column@=\count283
+\maxfields@=\count284
+\andhelp@=\toks21
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
+\@envbody=\toks22
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks24
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count285
+\Gm@cntv=\count286
+\c@Gm@tempcnt=\count287
+\Gm@bindingoffset=\dimen155
+\Gm@wd@mp=\dimen156
+\Gm@odd@mp=\dimen157
+\Gm@even@mp=\dimen158
+\Gm@layoutwidth=\dimen159
+\Gm@layoutheight=\dimen160
+\Gm@layouthoffset=\dimen161
+\Gm@layoutvoffset=\dimen162
+\Gm@dimlist=\toks25
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip54
+\f@nch@O@elh=\skip55
+\f@nch@O@erh=\skip56
+\f@nch@O@olh=\skip57
+\f@nch@O@orh=\skip58
+\f@nch@O@elf=\skip59
+\f@nch@O@erf=\skip60
+\f@nch@O@olf=\skip61
+\f@nch@O@orf=\skip62
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box54
+\beforetitleunit=\skip63
+\aftertitleunit=\skip64
+\ttl@plus=\dimen163
+\ttl@minus=\dimen164
+\ttl@toksa=\toks26
+\titlewidth=\dimen165
+\titlewidthlast=\dimen166
+\titlewidthfirst=\dimen167
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip65
+\cftbeforetoctitleskip=\skip66
+\cftaftertoctitleskip=\skip67
+\cftbeforepartskip=\skip68
+\cftpartnumwidth=\skip69
+\cftpartindent=\skip70
+\cftbeforechapskip=\skip71
+\cftchapindent=\skip72
+\cftchapnumwidth=\skip73
+\cftbeforesecskip=\skip74
+\cftsecindent=\skip75
+\cftsecnumwidth=\skip76
+\cftbeforesubsecskip=\skip77
+\cftsubsecindent=\skip78
+\cftsubsecnumwidth=\skip79
+\cftbeforesubsubsecskip=\skip80
+\cftsubsubsecindent=\skip81
+\cftsubsubsecnumwidth=\skip82
+\cftbeforeparaskip=\skip83
+\cftparaindent=\skip84
+\cftparanumwidth=\skip85
+\cftbeforesubparaskip=\skip86
+\cftsubparaindent=\skip87
+\cftsubparanumwidth=\skip88
+\cftbeforeloftitleskip=\skip89
+\cftafterloftitleskip=\skip90
+\cftbeforefigskip=\skip91
+\cftfigindent=\skip92
+\cftfignumwidth=\skip93
+\c@lofdepth=\count288
+\c@lotdepth=\count289
+\cftbeforelottitleskip=\skip94
+\cftafterlottitleskip=\skip95
+\cftbeforetabskip=\skip96
+\cfttabindent=\skip97
+\cfttabnumwidth=\skip98
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2024/03/29 v3.1b Micro-typographical refinements (RS)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count290
+)
+\MT@toks=\toks27
+\MT@tempbox=\box55
+\MT@count=\count291
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1061.
+LaTeX Info: Redefining \leftprotrusion on input line 1062.
+\MT@prot@toks=\toks28
+LaTeX Info: Redefining \rightprotrusion on input line 1081.
+LaTeX Info: Redefining \textls on input line 1392.
+\MT@outer@kern=\dimen168
+LaTeX Info: Redefining \textmicrotypecontext on input line 2013.
+\MT@listname@count=\count292
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2024/03/29 v3.1b Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 902.
+LaTeX Info: Redefining \lslig on input line 902.
+\MT@outer@space=\skip99
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2024/03/29 v3.1b microtype main configuration file (RS)
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/
+local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texl
+ive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen169
+\pgfutil@tempdimb=\dimen170
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box56
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/
+local/texlive/2024/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
+tered.code.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen171
+\pgf@y=\dimen172
+\pgf@xa=\dimen173
+\pgf@ya=\dimen174
+\pgf@xb=\dimen175
+\pgf@yb=\dimen176
+\pgf@xc=\dimen177
+\pgf@yc=\dimen178
+\pgf@xd=\dimen179
+\pgf@yd=\dimen180
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count293
+\c@pgf@countb=\count294
+\c@pgf@countc=\count295
+\c@pgf@countd=\count296
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count297
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count298
+\pgfsyssoftpath@bigbuffer@items=\count299
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr
+/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen181
+\pgfmath@count=\count300
+\pgfmath@box=\box57
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/mat
+h/pgfmathcalc.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/mat
+h/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count301
+)) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen182
+\pgf@picmaxx=\dimen183
+\pgf@picminy=\dimen184
+\pgf@picmaxy=\dimen185
+\pgf@pathminx=\dimen186
+\pgf@pathmaxx=\dimen187
+\pgf@pathminy=\dimen188
+\pgf@pathmaxy=\dimen189
+\pgf@xx=\dimen190
+\pgf@xy=\dimen191
+\pgf@yx=\dimen192
+\pgf@yy=\dimen193
+\pgf@zx=\dimen194
+\pgf@zy=\dimen195
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen196
+\pgf@path@lasty=\dimen197
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen198
+\pgf@shorten@start@additional=\dimen199
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count302
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen256
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen257
+\pgf@pt@y=\dimen258
+\pgf@pt@temp=\dimen259
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen260
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen261
+\pgf@sys@shading@range@num=\count303
+\pgf@shadingcount=\count304
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box61
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box62
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen262
+\pgf@nodesepend=\dimen263
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr
+/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/
+texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/loca
+l/texlive/2024/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/20
+24/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2024/
+texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen264
+\pgffor@skip=\dimen265
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
+))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count305
+\pgfplotmarksize=\dimen266
+)
+\tikz@lastx=\dimen267
+\tikz@lasty=\dimen268
+\tikz@lastxsaved=\dimen269
+\tikz@lastysaved=\dimen270
+\tikz@lastmovetox=\dimen271
+\tikz@lastmovetoy=\dimen272
+\tikzleveldistance=\dimen273
+\tikzsiblingdistance=\dimen274
+\tikz@figbox=\box63
+\tikz@figbox@bg=\box64
+\tikz@tempbox=\box65
+\tikz@tempbox@bg=\box66
+\tikztreelevel=\count306
+\tikznumberofchildren=\count307
+\tikznumberofcurrentchild=\count308
+\tikz@fig@count=\count309
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count310
+\pgfmatrixcurrentcolumn=\count311
+\pgf@matrix@numberofcolumns=\count312
+)
+\tikz@expandcount=\count313
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks41
+\verbatim@line=\toks42
+\verbatim@in@stream=\read4
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(/usr/local/texlive/2024/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box67
+\tcb@upperbox=\box68
+\tcb@lowerbox=\box69
+\tcb@phantombox=\box70
+\c@tcbbreakpart=\count314
+\c@tcblayer=\count315
+\c@tcolorbox@number=\count316
+\l__tcobox_tmpa_box=\box71
+\l__tcobox_tmpa_dim=\dimen275
+\tcb@temp=\box72
+\tcb@temp=\box73
+\tcb@temp=\box74
+\tcb@temp=\box75
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.4.1'
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.co
+de.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box76
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.4.1'
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.te
+x
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.4.1'
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+))
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box77
+\tcb@totalupperbox=\box78
+\tcb@totallowerbox=\box79
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip100
+\enit@outerparindent=\dimen276
+\enit@toks=\toks43
+\enit@inbox=\box80
+\enit@count@id=\count317
+\enitdp@description=\count318
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/lettrine/lettrine.sty
+File: lettrine.sty 2024-06-26 v2.61 (Daniel Flipo)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xfp/xfp.sty (/usr/loca
+l/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-11-02 L3 programming layer (loader) 
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count319
+\l__pdf_internal_box=\box81
+))
+Package: xfp 2024-08-16 L3 Floating point unit
+)
+\c@DefaultLines=\count320
+\c@DefaultDepth=\count321
+\DefaultFindent=\dimen277
+\DefaultNindent=\dimen278
+\DefaultSlope=\dimen279
+\DiscardVskip=\dimen280
+\L@lettrine=\box82
+\L@lbox=\box83
+\L@tbox=\box84
+\c@L@lines=\count322
+\c@L@depth=\count323
+\L@Pindent=\dimen281
+\L@Findent=\dimen282
+\L@Nindent=\dimen283
+\L@lraise=\dimen284
+\L@first=\dimen285
+\L@next=\dimen286
+\L@slope=\dimen287
+\L@height=\dimen288
+\L@novskip=\dimen289
+\L@ruleht=\dimen290
+\L@target@ht=\dimen291
+\L@target@dp=\dimen292
+\L@target@tht=\dimen293
+\LettrineWidth=\dimen294
+\LettrineHeight=\dimen295
+\LettrineDepth=\dimen296
+Loading lettrine.cfg
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lettrine/lettrine.cfg)
+\Llist@everypar=\toks44
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+(/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
+\AP@output=\toks45
+\AP@partial=\box85
+\AP@footins=\box86
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+03.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+No file main.aux.
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 103.
+LaTeX Font Info:    Trying to load font information for T5+cmr on input line 10
+3.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/vntex/t5cmr.fd
+File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Trying to load font information for T5+lmr on input line 10
+3.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t5lmr.fd
+File: t5lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count324
+\scratchdimen=\dimen297
+\scratchbox=\box87
+\nofMPsegments=\count325
+\nofMParguments=\count326
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count327
+\MPscratchDim=\dimen298
+\MPnumerator=\count328
+\makeMPintoPDFobject=\count329
+\everyMPtoPDFconversion=\toks47
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(51.21504pt, 495.07779pt, 51.21504pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=495.07779pt
+* \textheight=731.23584pt
+* \oddsidemargin=-21.05495pt
+* \evensidemargin=-21.05495pt
+* \topmargin=-55.36449pt
+* \headheight=15.0pt
+* \headsep=25.0pt
+* \topskip=14.0pt
+* \footskip=30.0pt
+* \marginparwidth=61.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \microtypecontext on input line 103.
+Package microtype Info: Applying patch `item' on input line 103.
+Package microtype Info: Applying patch `toc' on input line 103.
+Package microtype Info: Applying patch `eqnum' on input line 103.
+Package microtype Info: Applying patch `footnote' on input line 103.
+Package microtype Info: Applying patch `verbatim' on input line 103.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 103.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+\openout2 = `cover.aux'.
+
+(./cover.tex
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
+6.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+46.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+46.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 46.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 46.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+
+LaTeX Font Warning: Font shape `T5/lmr/bx/sc' undefined
+(Font)              using `T5/lmr/bx/n' instead on input line 48.
+
+
+
+[1
+
+
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive
+/2024/texmf-dist/fonts/enc/dvips/lm/lm-t5.enc}{/usr/local/texlive/2024/texmf-di
+st/fonts/enc/dvips/lm/lm-mathsy.enc}])
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[2
+
+
+
+]
+No file main.toc.
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+
+
+[3]
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[4
+
+]
+\openout2 = `chapters/ch01-doan-ket.aux'.
+
+(./chapters/ch01-doan-ket.tex
+Ch\uhorn \ohorn ng 1.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 8.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 12.
+
+Underfull \vbox (badness 1496) has occurred while \output is active []
+
+
+
+[5
+
+
+]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 35.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {H});
+(lettrine.sty)             reported on input line 58.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 29.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.564pt}.
+
+[6]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 81.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 29.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.564pt}.
+
+[7]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 104.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 127.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 29.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.564pt}.
+
+[8]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {Đ});
+(lettrine.sty)             reported on input line 150.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 29.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.564pt}.
+
+[9]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 173.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 29.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.564pt}.
+
+[10]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 196.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {H});
+(lettrine.sty)             reported on input line 219.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 29.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.564pt}.
+
+[11])
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 29.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.564pt}.
+
+[12]
+\openout2 = `chapters/ch02-kien-tri.aux'.
+
+(./chapters/ch02-kien-tri.tex
+Ch\uhorn \ohorn ng 2.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {H});
+(lettrine.sty)             reported on input line 12.
+
+
+[13
+
+
+
+
+]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 35.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-27.736pt}.
+
+[14]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {V});
+(lettrine.sty)             reported on input line 58.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {C});
+(lettrine.sty)             reported on input line 81.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-27.736pt}.
+
+[15]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 104.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-27.736pt}.
+
+[16]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {B});
+(lettrine.sty)             reported on input line 127.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {H});
+(lettrine.sty)             reported on input line 150.
+
+Underfull \vbox (badness 4595) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-27.736pt}.
+
+[17]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {C});
+(lettrine.sty)             reported on input line 173.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-27.736pt}.
+
+[18]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {N});
+(lettrine.sty)             reported on input line 196.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-27.736pt}.
+
+[19]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {G});
+(lettrine.sty)             reported on input line 219.
+)
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 42.736pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.736pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-27.736pt}.
+
+[20]
+\openout2 = `chapters/ch03-hy-sinh.aux'.
+
+(./chapters/ch03-hy-sinh.tex
+Ch\uhorn \ohorn ng 3.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {L});
+(lettrine.sty)             reported on input line 12.
+
+
+[21
+
+
+
+
+]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {S});
+(lettrine.sty)             reported on input line 35.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 58.
+
+Underfull \vbox (badness 5832) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.87198pt}.
+
+[22]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 81.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.87198pt}.
+
+[23]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 104.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.87198pt}.
+
+[24]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {H});
+(lettrine.sty)             reported on input line 127.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.87198pt}.
+
+[25]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 150.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {L});
+(lettrine.sty)             reported on input line 173.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.87198pt}.
+
+[26]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 196.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.87198pt}.
+
+[27]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 219.
+)
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.87198pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.87198pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.87198pt}.
+
+[28]
+\openout2 = `chapters/ch04-dung-cam.aux'.
+
+(./chapters/ch04-dung-cam.tex
+Ch\uhorn \ohorn ng 4.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {C});
+(lettrine.sty)             reported on input line 12.
+
+
+[29
+
+
+
+
+]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {N});
+(lettrine.sty)             reported on input line 35.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 29.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.564pt}.
+
+[30]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 58.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {H});
+(lettrine.sty)             reported on input line 81.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 29.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.564pt}.
+
+[31]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 104.
+
+Underfull \hbox (badness 2762) in paragraph at lines 110--112
+\T5/lmr/m/it/14.4 (+20) (The eagle struggles but cannot focus on both flying an
+d fighting
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 29.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.564pt}.
+
+[32]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 127.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 29.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.564pt}.
+
+[33]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 150.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {S});
+(lettrine.sty)             reported on input line 173.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 29.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.564pt}.
+
+[34]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {G});
+(lettrine.sty)             reported on input line 196.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 29.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.564pt}.
+
+[35]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 219.
+)
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 29.564pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.564pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.564pt}.
+
+[36]
+\openout2 = `chapters/ch05-thong-minh.aux'.
+
+(./chapters/ch05-thong-minh.tex
+Ch\uhorn \ohorn ng 5.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 12.
+
+
+[37
+
+
+
+
+]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 35.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[38]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {B});
+(lettrine.sty)             reported on input line 58.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {L});
+(lettrine.sty)             reported on input line 81.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[39]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {N});
+(lettrine.sty)             reported on input line 104.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[40]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {L});
+(lettrine.sty)             reported on input line 127.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[41]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 150.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {A});
+(lettrine.sty)             reported on input line 173.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[42]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 196.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[43]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 219.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[44])
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[45]
+\openout2 = `chapters/ch06-thich-nghi.aux'.
+
+(./chapters/ch06-thich-nghi.tex
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[46
+
+
+
+
+]
+Ch\uhorn \ohorn ng 6.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 12.
+
+
+[47]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 35.
+
+Underfull \hbox (badness 5490) in paragraph at lines 47--49
+\T5/lmr/m/it/14.4 (+20) (Adaptation is not changing yourself but naturally blen
+ding into
+ []
+
+
+Underfull \vbox (badness 5607) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[48]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {N});
+(lettrine.sty)             reported on input line 58.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 81.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[49]
+Underfull \hbox (badness 1264) in paragraph at lines 98--100
+\T5/lmr/m/it/14.4 (+20) (Change the schedule, change the territory, change the 
+tactics when
+ []
+
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {R});
+(lettrine.sty)             reported on input line 104.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[50]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {V});
+(lettrine.sty)             reported on input line 127.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[51]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 150.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {C});
+(lettrine.sty)             reported on input line 173.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[52]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 196.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[53]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {Q});
+(lettrine.sty)             reported on input line 219.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[54])
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[55]
+\openout2 = `chapters/ch07-biet-on.aux'.
+
+(./chapters/ch07-biet-on.tex
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[56
+
+
+
+
+]
+Ch\uhorn \ohorn ng 7.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {H});
+(lettrine.sty)             reported on input line 12.
+
+
+[57]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 35.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[58]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {N});
+(lettrine.sty)             reported on input line 58.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 81.
+
+Underfull \hbox (badness 1226) in paragraph at lines 87--89
+\T5/lmr/m/it/14.4 (+20) (The Japanese custom called urashima: gratitude must da
+re to take
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[59]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 104.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[60]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 127.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[61]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 150.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 173.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[62]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 196.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[63]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 219.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[64])
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[65]
+\openout2 = `chapters/ch08-khiem-ton.aux'.
+
+(./chapters/ch08-khiem-ton.tex
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[66
+
+
+
+
+]
+Ch\uhorn \ohorn ng 8.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {D});
+(lettrine.sty)             reported on input line 12.
+
+
+[67]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 35.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[68]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {C});
+(lettrine.sty)             reported on input line 58.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {C});
+(lettrine.sty)             reported on input line 81.
+
+Underfull \vbox (badness 8056) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[69]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {N});
+(lettrine.sty)             reported on input line 104.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[70]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 127.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[71]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 150.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 173.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[72]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 196.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[73]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 219.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[74])
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[75]
+\openout2 = `chapters/ch09-trach-nhiem.aux'.
+
+(./chapters/ch09-trach-nhiem.tex
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[76
+
+
+
+
+]
+Ch\uhorn \ohorn ng 9.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {B});
+(lettrine.sty)             reported on input line 12.
+
+
+[77]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {O});
+(lettrine.sty)             reported on input line 35.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[78]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {C});
+(lettrine.sty)             reported on input line 58.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 81.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[79]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {M});
+(lettrine.sty)             reported on input line 104.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[80]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 127.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[81]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {C});
+(lettrine.sty)             reported on input line 150.
+
+Underfull \vbox (badness 4416) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[82]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 173.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 196.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[83]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {N});
+(lettrine.sty)             reported on input line 219.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[84])
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[85]
+\openout2 = `chapters/ch10-hy-vong.aux'.
+
+(./chapters/ch10-hy-vong.tex
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.07399pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.07399pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.07399pt}.
+
+[86
+
+
+
+
+]
+Ch\uhorn \ohorn ng 10.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 12.
+
+
+[87]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {N});
+(lettrine.sty)             reported on input line 35.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[88]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {K});
+(lettrine.sty)             reported on input line 58.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 81.
+
+Underfull \vbox (badness 8056) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[89]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {T});
+(lettrine.sty)             reported on input line 104.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[90]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {L});
+(lettrine.sty)             reported on input line 127.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[91]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {N});
+(lettrine.sty)             reported on input line 150.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[92]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {N});
+(lettrine.sty)             reported on input line 173.
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {N});
+(lettrine.sty)             reported on input line 196.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[93]
+Package lettrine.sty Info: Targeted height = 24.30318pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.9323pt (\color {truyenred}\text
+bf {G});
+(lettrine.sty)             reported on input line 219.
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[94])
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 40.18pt, for example:
+(fancyhdr)                \setlength{\headheight}{40.18pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.18pt}.
+
+[95] (./main.aux (./cover.aux) (./chapters/ch01-doan-ket.aux) (./chapters/ch02-
+kien-tri.aux) (./chapters/ch03-hy-sinh.aux) (./chapters/ch04-dung-cam.aux) (./c
+hapters/ch05-thong-minh.aux) (./chapters/ch06-thich-nghi.aux) (./chapters/ch07-
+biet-on.aux) (./chapters/ch08-khiem-ton.aux) (./chapters/ch09-trach-nhiem.aux) 
+(./chapters/ch10-hy-vong.aux))
+ ***********
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+ ***********
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 24428 strings out of 473362
+ 504768 string characters out of 5720983
+ 945550 words of memory out of 5000000
+ 46768 multiletter control sequences out of 15000+600000
+ 767426 words of font info for 248 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 98i,13n,101p,1193b,1062s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
+cal/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texli
+ve/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2024/te
+xmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fo
+nts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/
+public/lm/lmsy10.pfb>
+Output written on main.pdf (95 pages, 417333 bytes).
+PDF statistics:
+ 347 PDF objects out of 1000 (max. 8388607)
+ 235 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 77837 words of extra memory for PDF output out of 89155 (max. 10000000)
+

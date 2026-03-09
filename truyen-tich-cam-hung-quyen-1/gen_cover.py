@@ -1,21 +1,6 @@
-%============================================================
-<<<<<<< .merge_file_nzYspN
-% TRANG BÌA ĐỒNG BỘ SERIES
-%============================================================
-\begin{titlepage}
-\thispagestyle{empty}
-\pagecolor{truyenred!5}
+import os
 
-\begin{tikzpicture}[remember picture, overlay]
-  \fill[white, opacity=0.6, rounded corners=20pt]
-    ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
-    ($(current page.south east)+(-1.5cm,1.5cm)$);
-
-  \draw[truyengold!80!black, line width=3pt, rounded corners=15pt]
-    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
-    ($(current page.south east)+(-1.8cm,1.8cm)$);
-
-=======
+cover_tex = r"""%============================================================
 % TRANG BÌA SÁCH KHANG TRANG HƠN
 %============================================================
 \begin{titlepage}
@@ -34,19 +19,10 @@
     ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
     ($(current page.south east)+(-1.8cm,1.8cm)$);
     
->>>>>>> .merge_file_ZUXr3Y
   \draw[truyengold, line width=1pt, rounded corners=12pt]
     ($(current page.north west)+(2cm,-2cm)$) rectangle
     ($(current page.south east)+(-2cm,2cm)$);
 
-<<<<<<< .merge_file_nzYspN
-  \foreach \x/\y/\xsign/\ysign in {%
-    north west/1.8cm/1/-1,
-    north east/1.8cm/-1/-1,
-    south west/1.8cm/1/1,
-    south east/1.8cm/-1/1%
-  } {
-=======
   % Hoa văn góc
   \foreach \x/\y/\xsign/\ysign in {
     north west/1.8cm/1/-1, 
@@ -55,23 +31,15 @@
     south east/1.8cm/-1/1%
   } {
     % Corner accents
->>>>>>> .merge_file_ZUXr3Y
     \draw[truyengold!80!black, line width=1.5pt]
       ($(current page.\x) + (\xsign*0.8cm, \ysign*2.8cm)$) --
       ($(current page.\x) + (\xsign*2.8cm, \ysign*2.8cm)$) --
       ($(current page.\x) + (\xsign*2.8cm, \ysign*0.8cm)$);
-<<<<<<< .merge_file_nzYspN
-
-    \fill[truyengold!60!white] ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
-  }
-
-=======
       
     \fill[truyengold!60!white] ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
   }
 
   % Khung phụ trang trí
->>>>>>> .merge_file_ZUXr3Y
   \node[anchor=center] at ($(current page.center)-(0, 2cm)$) {
     \begin{tikzpicture}
       \draw[truyenblue!20, line width=0.5pt] (0,0) circle (5cm);
@@ -83,17 +51,11 @@
 \vspace*{2cm}
 
 \begin{center}
-<<<<<<< .merge_file_nzYspN
-  {\color{truyengold!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
-  {\fontsize{14}{16}\selectfont\color{truyenblue!80!black}\scshape \textbf{Khởi Đầu Hành Trình}}\\[1.5cm]
-
-=======
   % Phần trên
   {\color{truyengold!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
   {\fontsize{14}{16}\selectfont\color{truyenblue!80!black}\scshape \textbf{Tuyển Tập Cổ Học Tinh Hoa}}\\[1.5cm]
 
   % Quyển
->>>>>>> .merge_file_ZUXr3Y
   \begin{tcolorbox}[
     width=6.5cm,
     colback=truyengold!20,
@@ -107,45 +69,25 @@
   \end{tcolorbox}
   \vspace{0.8cm}
 
-<<<<<<< .merge_file_nzYspN
-=======
   % Tiêu đề chính
->>>>>>> .merge_file_ZUXr3Y
   {\fontsize{42}{50}\selectfont\bfseries\color{truyenred!80!black}
     Điển Tích \&}\\[0.4cm]
   {\fontsize{38}{45}\selectfont\bfseries\color{truyenred!80!black}
     Chuyện Kể}\\[0.8cm]
 
-<<<<<<< .merge_file_nzYspN
-  {\fontsize{18}{22}\selectfont\color{truyengold!90!black}\itshape
-    Tuyển Tập Truyền Cảm Hứng Mở Đầu Cho Toàn Bộ Series}\\[1cm]
-
-=======
   % Tiêu đề phụ
   {\fontsize{18}{22}\selectfont\color{truyengold!90!black}\itshape
     Tuyển Tập Rèn Luyện Nhân Cách \& Trí Tuệ}\\[1cm]
 
   % Đường kẻ giữa
->>>>>>> .merge_file_ZUXr3Y
   {\color{truyenblue!60}\rule{6cm}{1pt}}\\[5pt]
   {\color{truyengold!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
   {\color{truyenblue!60}\rule{6cm}{1pt}}\\[1.5cm]
 
-<<<<<<< .merge_file_nzYspN
-  {\normalsize\itshape\color{truyenblue!90!black}
-   ``Mỗi câu chuyện là một hạt giống tốt gieo vào tâm trí.\\
-   Từ lòng biết ơn, dũng cảm đến nghĩa tình, mọi điều đẹp bắt đầu từ đây.''}
-
-  \vfill
-
-  {\fontsize{16}{20}\selectfont\bfseries\color{truyenblue!90!black}
-    Sưu tầm \& Tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
-
-=======
   % Text giới thiệu
   {\normalsize\itshape\color{truyenblue!90!black}
-   ``Một cuốn sách nhỏ, mở ra cả một chân trời.\\
-   Những câu chuyện ngắn, nuôi dưỡng ngàn ước mơ.''}
+   "Một cuốn sách nhỏ, mở ra cả một chân trời.\\
+   Những câu chuyện ngắn, nuôi dưỡng ngàn ước mơ."}
 
   \vfill
 
@@ -153,10 +95,13 @@
   {\fontsize{16}{20}\selectfont\bfseries\color{truyenblue!90!black}
     Sưu tầm \& Tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
   
-  {\small\color{truyenred!70!black} \itshape (Bộ sách đang tiếp tục được hoàn thiện)}\\[0.2cm]
->>>>>>> .merge_file_ZUXr3Y
   {\small\color{gray} Bản mềm phát hành --- Năm 2026}\\[0.5cm]
 \end{center}
 
 \afterpage{\nopagecolor}
 \end{titlepage}
+"""
+
+with open("cover.tex", "w", encoding="utf-8") as f:
+    f.write(cover_tex)
+

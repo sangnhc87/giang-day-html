@@ -1,0 +1,73 @@
+\definecolor{seriesaccent}{HTML}{D7B38A}
+\begin{titlepage}
+\thispagestyle{empty}
+\pagecolor{seriesaccent!10}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[white, opacity=0.66, rounded corners=20pt]
+    ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
+    ($(current page.south east)+(-1.5cm,1.5cm)$);
+
+  \draw[booksecondary!80!black, line width=3pt, rounded corners=15pt]
+    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
+    ($(current page.south east)+(-1.8cm,1.8cm)$);
+
+  \draw[booksecondary, line width=1pt, rounded corners=12pt]
+    ($(current page.north west)+(2cm,-2cm)$) rectangle
+    ($(current page.south east)+(-2cm,2cm)$);
+
+  \fill[bookprimary!10] ($(current page.center)+(0,1.4cm)$) circle (4.7cm);
+  \fill[booksecondary!10] ($(current page.center)+(0,-1.4cm)$) circle (4.1cm);
+
+  \foreach \x/\xsign in {north west/1,north east/-1,south west/1,south east/-1} {
+    \draw[booksecondary!80!black, line width=1.4pt]
+      ($(current page.\x)+(\xsign*0.8cm,-2.8cm)$) --
+      ($(current page.\x)+(\xsign*2.8cm,-2.8cm)$) --
+      ($(current page.\x)+(\xsign*2.8cm,-0.8cm)$);
+  }
+\end{tikzpicture}
+
+\vspace*{1.8cm}
+\begin{center}
+  {\color{booksecondary!90!black}\large$\star\;\star\;\star$}\\[0.35cm]
+  {\fontsize{14}{16}\selectfont\color{bookprimary!90!black}\scshape \textbf{Phiên Bản V4 Panorama Học Đường}}\\[1.2cm]
+
+  \begin{tcolorbox}[
+    width=7cm,
+    colback=booksecondary!14,
+    colframe=booksecondary!80!black,
+    arc=4pt,
+    boxrule=1.5pt,
+    halign=center
+  ]
+    {\fontsize{18}{22}\selectfont\bfseries\color{booktext!85!black}
+     QUYỂN XXXIII}
+  \end{tcolorbox}
+  \vspace{0.8cm}
+
+  {\fontsize{33}{39}\selectfont\bfseries\color{booktext!85!black}
+    Đa Giác}\\[0.3cm]
+  {\fontsize{33}{39}\selectfont\bfseries\color{booksecondary!88!black}
+    Học Đường}\\[0.45cm]
+
+  {\fontsize{15}{19}\selectfont\color{bookprimary!90!black}\itshape
+    Học sinh, giáo viên, phụ huynh và hệ tư tưởng Gen Z\\
+    va vào nhau trong cùng một lớp học}\\[0.95cm]
+
+  {\color{bookprimary!55}\rule{7cm}{1pt}}\\[5pt]
+  {\color{booksecondary!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
+  {\color{bookprimary!55}\rule{7cm}{1pt}}\\[1.3cm]
+
+  {\normalsize\itshape\color{bookprimary!90!black}
+   ``Lớp học không còn là nơi một người nói và bốn mươi người nghe.\\
+   Nó là nơi bốn mươi kiểu áp lực cùng chen vào một cuộc đối thoại.''}
+
+  \vfill
+
+  {\fontsize{16}{20}\selectfont\bfseries\color{bookprimary!90!black}
+    Sưu tầm và tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
+  {\small\color{gray} Bản V4 nội dung --- Năm 2026}\\[0.5cm]
+\end{center}
+
+\afterpage{\nopagecolor}
+\end{titlepage}

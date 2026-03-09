@@ -1,0 +1,11 @@
+{
+  "name": "giang-day-html",
+  "postCreateCommand": "bash scripts/install-latex-codespace.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "james-yu.latex-workshop"
+      ]
+    }
+  }
+}

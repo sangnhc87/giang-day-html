@@ -1,0 +1,127 @@
+\definecolor{catalogtitle}{HTML}{24424A}
+\definecolor{catalogaccent}{HTML}{B46A3C}
+\definecolor{catalogline}{HTML}{DEC8B3}
+\definecolor{catalogbg}{HTML}{FAF4ED}
+\definecolor{catalogframe}{HTML}{C99874}
+\definecolor{catalogsoft}{HTML}{FFFDFC}
+\definecolor{catalogink}{HTML}{4C5B64}
+
+\newcommand{\catalogitem}[2]{%
+  \noindent{\small\textbf{#1}}\\[-2pt]
+  {\footnotesize #2}\par\vspace{5pt}%
+}
+
+\clearpage
+\thispagestyle{empty}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[catalogbg] (current page.north west) rectangle (current page.south east);
+  \fill[catalogaccent!10] ([xshift=-1.7cm,yshift=-1.4cm]current page.north east) circle (4.5cm);
+  \fill[catalogtitle!8] ([xshift=1.1cm,yshift=1.6cm]current page.south west) circle (5.1cm);
+  \draw[catalogframe, line width=1.5pt]
+    ([xshift=0.95cm,yshift=-0.95cm]current page.north west)
+    rectangle
+    ([xshift=-0.95cm,yshift=0.95cm]current page.south east);
+  \draw[catalogline, line width=0.7pt]
+    ([xshift=1.2cm,yshift=-1.2cm]current page.north west)
+    rectangle
+    ([xshift=-1.2cm,yshift=1.2cm]current page.south east);
+\end{tikzpicture}
+
+\begin{center}
+{\fontsize{20}{24}\selectfont\bfseries\color{catalogtitle} Tủ Sách Truyện Tích Cảm Hứng Song Ngữ}\\[5pt]
+{\normalsize\itshape\color{catalogaccent} Dòng sách dành cho lớp học, gia đình và những cuộc đối thoại trưởng thành}\\[8pt]
+{\color{catalogline}\rule{0.78\textwidth}{1pt}}\\[10pt]
+\end{center}
+
+\noindent
+\begin{minipage}[t]{0.47\textwidth}
+\begin{tcolorbox}[
+  colback=white,
+  colframe=catalogframe,
+  boxrule=0.9pt,
+  arc=7pt,
+  title={Mạch Sách Học Đường},
+  colbacktitle=catalogtitle,
+  coltitle=white,
+  fonttitle=\bfseries,
+  enhanced
+]
+\catalogitem{Quyển XXV}{Lý Sự Cùn Của Học Sinh}
+\catalogitem{Quyển XXV V2}{Phiên bản tăng đô, bóc sâu hơn về sĩ diện và trì hoãn}
+\catalogitem{Quyển XXV V3}{Sát lớp thật, lời thoại ngắn và gai hơn}
+\catalogitem{Quyển XXXIII}{Đa Giác Học Đường: bản panorama của học sinh, giáo viên, phụ huynh và Gen Z}
+\end{tcolorbox}
+
+\vspace{8pt}
+
+\begin{tcolorbox}[
+  colback=catalogsoft,
+  colframe=catalogframe,
+  boxrule=0.9pt,
+  arc=7pt,
+  title={Bốn Trụ Cột Quyển XXXIII},
+  colbacktitle=catalogaccent,
+  coltitle=white,
+  fonttitle=\bfseries,
+  enhanced
+]
+\catalogitem{Phần 1}{Tâm lý chiến Gen Z}
+\catalogitem{Phần 2}{Lý sự xoay chiều}
+\catalogitem{Phần 3}{Cuộc chiến ba tròn}
+\catalogitem{Phần 4}{Ảo tưởng tương lai}
+\end{tcolorbox}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\begin{tcolorbox}[
+  colback=white,
+  colframe=catalogframe,
+  boxrule=0.9pt,
+  arc=7pt,
+  title={Dấu Ấn Của Quyển Này},
+  colbacktitle=catalogink,
+  coltitle=white,
+  fonttitle=\bfseries,
+  enhanced
+]
+{\small\itshape
+``Không chỉ học sinh có lý sự. Người lớn cũng có vùng mù, có định kiến, có những câu nói nghe rất đúng nhưng đôi khi đẩy người khác vào thế bí.''}
+
+\vspace{8pt}
+
+\textbf{Quyển XXXIII} được viết để dùng trong:
+
+\begin{itemize}[leftmargin=1.2em]
+\item Tiết sinh hoạt chủ nhiệm và giáo dục kỹ năng sống.
+\item Trao đổi phụ huynh về áp lực thành tích và tâm lý tuổi học trò.
+\item Thảo luận hướng nghiệp với học sinh cuối cấp.
+\item Đọc cá nhân như một tập đối thoại châm biếm nhưng có chiều sâu.
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{8pt}
+
+\begin{tcolorbox}[
+  colback=catalogaccent!6,
+  colframe=catalogaccent,
+  boxrule=1pt,
+  arc=7pt,
+  title={Thông Điệp Giữ Lại},
+  colbacktitle=catalogaccent!88!black,
+  coltitle=white,
+  fonttitle=\bfseries,
+  enhanced
+]
+{\small
+Muốn dạy tốt thời này, không thể chỉ thuộc bài. Cần hiểu thế hệ, hiểu gia đình, hiểu truyền thông, và hiểu cả những nỗi sợ mà học sinh giấu sau tiếng cười.}
+\end{tcolorbox}
+\end{minipage}
+
+\vfill
+
+\begin{center}
+{\footnotesize\itshape\color{catalogink!90} Quyển XXXIII tiếp nối mạch sách học đường bằng một góc nhìn rộng hơn: bớt một chiều, thêm đối thoại.}
+\end{center}
+
+\clearpage

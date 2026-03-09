@@ -1,0 +1,229 @@
+%============================================================
+% TRUYEN TICH CAM HUNG QUYEN 33 - DA GIAC HOC DUONG
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage[explicit]{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{\normalfont}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric,shadows}
+
+\geometry{a4paper,left=1.8cm,right=1.8cm,top=2.2cm,bottom=2.2cm,headheight=45pt}
+
+\definecolor{bookprimary}{HTML}{31525B}
+\definecolor{booksecondary}{HTML}{B46A3C}
+\definecolor{bookbg}{HTML}{FBF8F4}
+\definecolor{booktext}{HTML}{24323A}
+\definecolor{booksoft}{HTML}{E8D8C8}
+
+\colorlet{inkdark}{booktext}
+\colorlet{sunclay}{booksecondary}
+\colorlet{chalkgreen}{bookprimary}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{bookprimary}\itshape\small Quyển XXXIII: Đa Giác Học Đường}
+\fancyhead[RE,LO]{\color{bookprimary}\itshape\small \leftmark}
+\fancyfoot[C]{
+  \begin{tikzpicture}[remember picture,overlay]
+    \draw[booksecondary, line width=0.5pt] ($(current page.south west)+(1.8cm,2cm)$) -- ($(current page.south east)+(-1.8cm,2cm)$);
+  \end{tikzpicture}
+  \color{booksecondary}\textbf{-- \thepage\ --}
+}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[CO,CE]{
+  \begin{tikzpicture}[remember picture,overlay]
+    \draw[booksecondary, line width=1pt] ($(current page.north west)+(1.8cm,-2.1cm)$) -- ($(current page.north east)+(-1.8cm,-2.1cm)$);
+  \end{tikzpicture}
+}
+
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{bookprimary}\flushright}
+  {\fontsize{20}{24}\itshape\color{booksecondary} Chương \thechapter}
+  {10pt}
+  {\fontsize{34}{40}\scshape\bfseries #1}[\vspace{1ex}{\color{booksecondary}\hrule height 1.5pt}]
+\titlespacing*{\chapter}{0pt}{-20pt}{34pt}
+
+\titleformat{\section}
+  {\color{bookprimary}\Large\bfseries}
+  {\thesection.}{1em}{#1}[\vspace{0.3ex}{\color{bookprimary!30}\hrule height 1pt}]
+
+\titleformat{\part}[display]
+  {\normalfont\bfseries\centering\color{bookprimary}}
+  {}{0pt}
+  {\fontsize{24}{30}\selectfont #1}[\vspace{1ex}{\color{booksecondary}\rule{0.6\textwidth}{1pt}}]
+\titlespacing*{\part}{0pt}{10pt}{26pt}
+
+\newtcolorbox{truyen}[2]{
+  enhanced,
+  colback=bookbg,
+  colframe=bookprimary,
+  coltitle=bookprimary,
+  fonttitle=\bfseries\Large,
+  title={#1 \hfill \normalsize\itshape\color{bookprimary!70} #2},
+  arc=0pt,
+  outer arc=0pt,
+  boxrule=0pt,
+  leftrule=4pt,
+  breakable,
+  titlerule=0pt,
+  colbacktitle=bookbg,
+  bottomtitle=0pt,
+  top=1ex,
+}
+
+\newtcolorbox{baihoc}{
+  enhanced,
+  colback=booksecondary!6,
+  colframe=booksecondary,
+  coltitle=booksecondary,
+  fonttitle=\bfseries\large,
+  title={$\bigstar$ Điều Cần Giữ Lại},
+  arc=3pt,
+  boxrule=0pt,
+  leftrule=3pt,
+  breakable,
+  titlerule=0pt,
+  colbacktitle=booksecondary!6,
+  bottomtitle=0pt,
+  top=1ex,
+}
+
+\newtcolorbox{ghinhoanh}{
+  enhanced,
+  colback=bookprimary!5,
+  colframe=bookprimary,
+  coltitle=bookprimary,
+  fonttitle=\bfseries\large,
+  title={Easy English},
+  arc=3pt,
+  boxrule=0pt,
+  leftrule=3pt,
+  breakable,
+  titlerule=0pt,
+  colbacktitle=bookprimary!5,
+  bottomtitle=0pt,
+  top=1ex,
+}
+
+\newtcolorbox{tuhocnhanh}{
+  enhanced,
+  colback=booktext!5,
+  colframe=booktext,
+  coltitle=booktext,
+  fonttitle=\bfseries\large,
+  title={Gợi Ý Tự Nghĩ},
+  arc=3pt,
+  boxrule=0pt,
+  leftrule=3pt,
+  breakable,
+  titlerule=0pt,
+  colbacktitle=booktext!5,
+  bottomtitle=0pt,
+  top=1ex,
+}
+
+\newcommand{\chuhoa}[2]{\lettrine[lines=2,lhang=0.1,loversize=0.15]{\textcolor{booksecondary}{#1}}{#2}}
+
+\newcommand{\studentpair}[2]{
+  \noindent\textbf{\color{booktext}Học sinh:} ``#1''\\
+  \textit{\color{bookprimary!80}Student: ``#2''}\\[6pt]
+}
+
+\newcommand{\teacherpair}[2]{
+  \noindent\textbf{\color{booksecondary}Thầy/Cô:} ``#1''\\
+  \textit{\color{booksecondary!80}Teacher: ``#2''}\\[8pt]
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+    \begin{tikzpicture}
+      \draw[bookprimary!50, line width=0.5pt] (0,0) -- (1.5,0);
+      \node[color=booksecondary] at (2,0) {$\diamond$};
+      \draw[bookprimary!50, line width=0.5pt] (2.5,0) -- (4,0);
+    \end{tikzpicture}
+  \end{center}
+  \vspace{6pt}
+}
+
+\newcommand{\partintro}[2]{%
+  \begin{center}
+    \begin{minipage}{0.86\textwidth}
+    \begin{tcolorbox}[
+      colback=bookbg,
+      colframe=booksecondary,
+      boxrule=0.8pt,
+      arc=4pt,
+      enhanced,
+      left=8pt,right=8pt,top=8pt,bottom=8pt
+    ]
+    {\centering\bfseries\color{bookprimary}#1\par}
+    \vspace{5pt}
+    {\small #2}
+    \end{tcolorbox}
+    \end{minipage}
+  \end{center}
+  \vspace{8pt}
+}
+
+\begin{document}
+\include{cover}
+
+\input{chapters/loitua}
+\input{chapters/huong-dan}
+
+\frontmatter
+\tableofcontents
+\clearpage
+\include{loi-mo-dau}
+
+\mainmatter
+
+\part*{PHẦN 1: TÂM LÝ CHIẾN GEN Z\\\large Nghệ thuật thao túng lời nói}
+\addcontentsline{toc}{part}{PHẦN 1: TÂM LÝ CHIẾN GEN Z}
+\partintro{Ngôn ngữ mới, ngụy biện mới}{Phần này đi vào lớp vỏ hiện đại của những lời chống chế cũ: chữa lành, tần số, áp lực đồng trang. Vấn đề không nằm ở việc học sinh biết thêm từ mới, mà ở chỗ các em có thể dùng từ mới để che lại một nỗi yếu cũ: sợ khó, sợ thua, sợ bị tách khỏi đám đông.}
+\include{chapters/ch01-tram-cam-hay-luoi-bieng}
+\include{chapters/ch02-chua-lanh-doc-hai}
+\include{chapters/ch03-ap-luc-dong-trang}
+
+\part*{PHẦN 2: LÝ SỰ XOAY CHIỀU\\\large Khi thầy cô cũng bị bắt bài}
+\addcontentsline{toc}{part}{PHẦN 2: LÝ SỰ XOAY CHIỀU}
+\partintro{Khi bục giảng cũng bị soi lại}{Muốn công bằng thì không thể chỉ bắt học sinh soi mình. Phần này mở ngược ống kính về phía giáo viên: những lúc người lớn nói đúng nhưng chưa đủ hay, những lúc xin lỗi mà vẫn phải giữ chuẩn, và những lúc chính thầy cô cũng kẹt giữa nguyên tắc với thực tế trường lớp.}
+\include{chapters/ch04-thay-cung-quen}
+\include{chapters/ch05-quy-dinh-tren-troi}
+\include{chapters/ch06-khi-thay-co-xin-loi}
+
+\part*{PHẦN 3: CUỘC CHIẾN BA TRÒN\\\large Giữa hai làn đạn}
+\addcontentsline{toc}{part}{PHẦN 3: CUỘC CHIẾN BA TRÒN}
+\partintro{Từ lớp học nhìn về gia đình}{Điểm số chỉ là bề nổi. Phía dưới nó là sự bênh con, nỗi sợ thua kém, và những cuộc họp mà ai cũng nghĩ mình đang hy sinh nhiều nhất. Phần này không xử một phe nào cho hả giận; nó cố chỉ ra vì sao yêu thương thiếu tỉnh táo cũng có thể làm con trẻ mệt mỏi.}
+\include{chapters/ch07-anh-trang-lua-doi-cua-bo-me}
+\include{chapters/ch08-can-benh-con-nha-nguoi-ta}
+\include{chapters/ch09-hop-phu-huynh-bao-tap}
+
+\part*{PHẦN 4: ẢO TƯỞNG TƯƠNG LAI\\\large Đam mê hay ngộ nhận}
+\addcontentsline{toc}{part}{PHẦN 4: ẢO TƯỞNG TƯƠNG LAI}
+\partintro{Bước ra khỏi cổng trường}{Phần cuối khép lại bức tranh bằng câu hỏi hướng nghiệp. Giấc mơ là cần, nhưng thời đại mạng xã hội khiến nhiều em nhầm tưởng rằng chỉ cần dám nghĩ khác là đủ. Ở đây, cuốn sách kéo ảo tưởng trở về mặt đất: muốn bay xa thì trước hết phải có nền để đứng.}
+\include{chapters/ch10-giac-mong-rot-dai-hoc-van-thanh-ty-phu}
+\include{chapters/ch11-dam-me-trai-nghiem}
+\include{chapters/ch12-gen-z-di-lam-som}
+
+\backmatter
+\input{series-catalog}
+\end{document}

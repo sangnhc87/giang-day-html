@@ -1,0 +1,73 @@
+\definecolor{seriesaccent}{HTML}{7A8F76}
+\begin{titlepage}
+\thispagestyle{empty}
+\pagecolor{seriesaccent!10}
+
+\begin{tikzpicture}[remember picture, overlay]
+	\fill[white, opacity=0.66, rounded corners=20pt]
+		($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
+		($(current page.south east)+(-1.5cm,1.5cm)$);
+
+	\draw[bookprimary!85!black, line width=3pt, rounded corners=15pt]
+		($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
+		($(current page.south east)+(-1.8cm,1.8cm)$);
+
+	\draw[booksecondary!90!black, line width=1pt, rounded corners=12pt]
+		($(current page.north west)+(2cm,-2cm)$) rectangle
+		($(current page.south east)+(-2cm,2cm)$);
+
+	\fill[bookprimary!10] ($(current page.center)+(0,1.4cm)$) circle (4.7cm);
+	\fill[seriesaccent!18] ($(current page.center)+(0,-1.4cm)$) circle (4.1cm);
+
+	\foreach \x/\xsign in {north west/1,north east/-1,south west/1,south east/-1} {
+		\draw[bookprimary!80!black, line width=1.4pt]
+			($(current page.\x)+(\xsign*0.8cm,-2.8cm)$) --
+			($(current page.\x)+(\xsign*2.8cm,-2.8cm)$) --
+			($(current page.\x)+(\xsign*2.8cm,-0.8cm)$);
+	}
+\end{tikzpicture}
+
+\vspace*{1.8cm}
+\begin{center}
+	{\color{booksecondary!90!black}\large$\star\;\star\;\star$}\\[0.35cm]
+	{\fontsize{14}{16}\selectfont\color{bookprimary!90!black}\scshape \textbf{Phiên Bản Đồng Bộ Mới - Màu Xanh Rêu Thức Tỉnh}}\\[1.2cm]
+
+	\begin{tcolorbox}[
+		width=7cm,
+		colback=seriesaccent!18,
+		colframe=bookprimary!80!black,
+		arc=4pt,
+		boxrule=1.5pt,
+		halign=center
+	]
+		{\fontsize{18}{22}\selectfont\bfseries\color{booktext!85!black}
+		 QUYỂN XXXV}
+	\end{tcolorbox}
+	\vspace{0.8cm}
+
+	{\fontsize{31}{37}\selectfont\bfseries\color{booktext!85!black}
+		Cái Màn Hình}\\[0.25cm]
+	{\fontsize{31}{37}\selectfont\bfseries\color{booksecondary!88!black}
+		Nuốt Mất Đời Sống}\\[0.45cm]
+
+	{\fontsize{15}{19}\selectfont\color{bookprimary!90!black}\itshape
+		Học sinh, phụ huynh, giáo viên và người lớn\
+		cùng bị rút ruột sự chú ý bởi một công cụ rất hữu ích nhưng rất dễ vượt quyền}\\[0.95cm]
+
+	{\color{bookprimary!55}\rule{7cm}{1pt}}\\[5pt]
+	{\color{booksecondary!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
+	{\color{bookprimary!55}\rule{7cm}{1pt}}\\[1.3cm]
+
+	{\normalsize\itshape\color{bookprimary!90!black}
+	 ``Điện thoại không xấu theo kiểu đơn giản.\\
+	 Nhưng dùng sai, nó có thể ăn dần cả sự tập trung, sự hiện diện và phẩm chất sống của một con người.''}
+
+	\vfill
+
+	{\fontsize{16}{20}\selectfont\bfseries\color{bookprimary!90!black}
+		Sưu tầm và tổng hợp: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
+	{\small\color{gray} Bản mở rộng nội dung --- Năm 2026}\\[0.5cm]
+\end{center}
+
+\afterpage{\nopagecolor}
+\end{titlepage}

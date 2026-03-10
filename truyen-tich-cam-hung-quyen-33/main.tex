@@ -18,6 +18,7 @@
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,breakable}
 \usepackage{enumitem}
+\usepackage{multicol}
 \usepackage{lettrine}
 \renewcommand{\LettrineTextFont}{\normalfont}
 \usepackage{parskip}
@@ -140,6 +141,38 @@
   top=1ex,
 }
 
+\newtcolorbox{tongketchuong}{
+  enhanced,
+  colback=booksoft!45,
+  colframe=booksecondary,
+  coltitle=booksecondary,
+  fonttitle=\bfseries\large,
+  title={Tổng Kết Chương},
+  arc=4pt,
+  boxrule=0.6pt,
+  breakable,
+  left=8pt,
+  right=8pt,
+  top=1ex,
+  bottom=1ex,
+}
+
+\newtcolorbox{goigiaovien}{
+  enhanced,
+  colback=bookprimary!6,
+  colframe=bookprimary,
+  coltitle=bookprimary,
+  fonttitle=\bfseries\large,
+  title={Góc Dành Cho Giáo Viên},
+  arc=4pt,
+  boxrule=0.6pt,
+  breakable,
+  left=8pt,
+  right=8pt,
+  top=1ex,
+  bottom=1ex,
+}
+
 \newcommand{\chuhoa}[2]{\lettrine[lines=2,lhang=0.1,loversize=0.15]{\textcolor{booksecondary}{#1}}{#2}}
 
 \newcommand{\studentpair}[2]{
@@ -188,6 +221,7 @@
 
 \input{chapters/loitua}
 \input{chapters/huong-dan}
+\input{chapters/ban-do-doc-sach}
 
 \frontmatter
 \tableofcontents
@@ -221,9 +255,15 @@
 \addcontentsline{toc}{part}{PHẦN 4: ẢO TƯỞNG TƯƠNG LAI}
 \partintro{Bước ra khỏi cổng trường}{Phần cuối khép lại bức tranh bằng câu hỏi hướng nghiệp. Giấc mơ là cần, nhưng thời đại mạng xã hội khiến nhiều em nhầm tưởng rằng chỉ cần dám nghĩ khác là đủ. Ở đây, cuốn sách kéo ảo tưởng trở về mặt đất: muốn bay xa thì trước hết phải có nền để đứng.}
 \include{chapters/ch10-giac-mong-rot-dai-hoc-van-thanh-ty-phu}
+\include{chapters/ch11-su-that-phu-phang}
 \include{chapters/ch11-dam-me-trai-nghiem}
 \include{chapters/ch12-gen-z-di-lam-som}
 
 \backmatter
+\include{chapters/phu-luc}
+\input{chapters/so-tay-trien-khai-12-chuyen-de}
+\input{chapters/phieu-phan-tu-12-tuan}
+\input{chapters/ngan-hang-tinh-huong-thao-luan}
+\input{chapters/thu-gui-phu-huynh-va-giao-vien}
 \input{series-catalog}
 \end{document}

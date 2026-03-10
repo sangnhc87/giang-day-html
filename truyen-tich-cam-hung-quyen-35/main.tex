@@ -1,0 +1,293 @@
+%============================================================
+% TRUYEN TICH CAM HUNG QUYEN 35 - CAI MAN HINH NUOT MAT DOI SONG
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage[explicit]{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{\normalfont}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric,shadows}
+
+\geometry{a4paper,left=1.8cm,right=1.8cm,top=2.2cm,bottom=2.2cm,headheight=45pt}
+
+\definecolor{bookprimary}{HTML}{2F4951}
+\definecolor{booksecondary}{HTML}{A45D35}
+\definecolor{bookbg}{HTML}{FBF8F3}
+\definecolor{booktext}{HTML}{223137}
+\definecolor{booksoft}{HTML}{E9DCCF}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{bookprimary}\itshape\small Quyển XXXV: Cái Màn Hình Nuốt Mất Đời Sống}
+\fancyhead[RE,LO]{\color{bookprimary}\itshape\small \leftmark}
+\fancyfoot[C]{
+  \begin{tikzpicture}[remember picture,overlay]
+    \draw[booksecondary, line width=0.5pt] ($(current page.south west)+(1.8cm,2cm)$) -- ($(current page.south east)+(-1.8cm,2cm)$);
+  \end{tikzpicture}
+  \color{booksecondary}\textbf{-- \thepage\ --}
+}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[CO,CE]{
+  \begin{tikzpicture}[remember picture,overlay]
+    \draw[booksecondary, line width=1pt] ($(current page.north west)+(1.8cm,-2.1cm)$) -- ($(current page.north east)+(-1.8cm,-2.1cm)$);
+  \end{tikzpicture}
+}
+
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{bookprimary}\flushright}
+  {\fontsize{20}{24}\itshape\color{booksecondary} Chương \thechapter}
+  {10pt}
+  {\fontsize{32}{38}\scshape\bfseries #1}[\vspace{1ex}{\color{booksecondary}\hrule height 1.5pt}]
+\titlespacing*{\chapter}{0pt}{-20pt}{34pt}
+
+\titleformat{\section}
+  {\color{bookprimary}\Large\bfseries}
+  {\thesection.}{1em}{#1}[\vspace{0.3ex}{\color{bookprimary!30}\hrule height 1pt}]
+
+\titleformat{\part}[display]
+  {\normalfont\bfseries\centering\color{bookprimary}}
+  {}{0pt}
+  {\fontsize{24}{30}\selectfont #1}[\vspace{1ex}{\color{booksecondary}\rule{0.6\textwidth}{1pt}}]
+\titlespacing*{\part}{0pt}{10pt}{26pt}
+
+\newtcolorbox{truyen}[2]{
+  enhanced,
+  colback=bookbg,
+  colframe=bookprimary,
+  coltitle=bookprimary,
+  fonttitle=\bfseries\Large,
+  title={#1 \hfill \normalsize\itshape\color{bookprimary!70} #2},
+  arc=0pt,
+  outer arc=0pt,
+  boxrule=0pt,
+  leftrule=4pt,
+  breakable,
+  titlerule=0pt,
+  colbacktitle=bookbg,
+  bottomtitle=0pt,
+  top=1ex,
+}
+
+\newtcolorbox{baihoc}{
+  enhanced,
+  colback=booksecondary!6,
+  colframe=booksecondary,
+  coltitle=booksecondary,
+  fonttitle=\bfseries\large,
+  title={$\bigstar$ Điều Cần Giữ Lại},
+  arc=3pt,
+  boxrule=0pt,
+  leftrule=3pt,
+  breakable,
+  titlerule=0pt,
+  colbacktitle=booksecondary!6,
+  bottomtitle=0pt,
+  top=1ex,
+}
+
+\newtcolorbox{ghinhoanh}{
+  enhanced,
+  colback=bookprimary!5,
+  colframe=bookprimary,
+  coltitle=bookprimary,
+  fonttitle=\bfseries\large,
+  title={Easy English},
+  arc=3pt,
+  boxrule=0pt,
+  leftrule=3pt,
+  breakable,
+  titlerule=0pt,
+  colbacktitle=bookprimary!5,
+  bottomtitle=0pt,
+  top=1ex,
+}
+
+\newtcolorbox{tuhocnhanh}{
+  enhanced,
+  colback=booktext!5,
+  colframe=booktext,
+  coltitle=booktext,
+  fonttitle=\bfseries\large,
+  title={Gợi Ý Tự Nghĩ},
+  arc=3pt,
+  boxrule=0pt,
+  leftrule=3pt,
+  breakable,
+  titlerule=0pt,
+  colbacktitle=booktext!5,
+  bottomtitle=0pt,
+  top=1ex,
+}
+
+\newtcolorbox{tongketchuong}{
+  enhanced,
+  colback=booksoft!45,
+  colframe=booksecondary,
+  coltitle=booksecondary,
+  fonttitle=\bfseries\large,
+  title={Tổng Kết Chương},
+  arc=4pt,
+  boxrule=0.6pt,
+  breakable,
+  left=8pt,
+  right=8pt,
+  top=1ex,
+  bottom=1ex,
+}
+
+\newtcolorbox{goigiaovien}{
+  enhanced,
+  colback=bookprimary!6,
+  colframe=bookprimary,
+  coltitle=bookprimary,
+  fonttitle=\bfseries\large,
+  title={Góc Dành Cho Giáo Viên Và Người Lớn},
+  arc=4pt,
+  boxrule=0.6pt,
+  breakable,
+  left=8pt,
+  right=8pt,
+  top=1ex,
+  bottom=1ex,
+}
+
+\newcommand{\chuhoa}[2]{\lettrine[lines=2,lhang=0.1,loversize=0.15]{\textcolor{booksecondary}{#1}}{#2}}
+
+\newcommand{\teacherpair}[2]{
+  \noindent\textbf{\color{booksecondary}Thầy/Cô:} ``#1''\\
+  \textit{\color{booksecondary!80}Teacher: ``#2''}\\[8pt]
+}
+
+\newcommand{\adultpair}[2]{
+  \noindent\textbf{\color{booktext}Người lớn:} ``#1''\\
+  \textit{\color{bookprimary!80}Adult: ``#2''}\\[8pt]
+}
+
+\newcommand{\latcat}[3]{%
+  \begin{tcolorbox}[
+    colback=white,
+    colframe=booksecondary!55,
+    coltitle=booksecondary!90!black,
+    fonttitle=\bfseries,
+    title={#1},
+    arc=3pt,
+    boxrule=0.6pt,
+    enhanced,
+    breakable,
+    left=8pt,right=8pt,top=6pt,bottom=6pt
+  ]
+  #2
+
+  \textit{(#3)}
+  \end{tcolorbox}
+  \vspace{0.35cm}
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+    \begin{tikzpicture}
+      \draw[bookprimary!50, line width=0.5pt] (0,0) -- (1.5,0);
+      \node[color=booksecondary] at (2,0) {$\diamond$};
+      \draw[bookprimary!50, line width=0.5pt] (2.5,0) -- (4,0);
+    \end{tikzpicture}
+  \end{center}
+  \vspace{6pt}
+}
+
+\newcommand{\partintro}[2]{%
+  \begin{center}
+    \begin{minipage}{0.86\textwidth}
+    \begin{tcolorbox}[
+      colback=bookbg,
+      colframe=booksecondary,
+      boxrule=0.8pt,
+      arc=4pt,
+      enhanced,
+      left=8pt,right=8pt,top=8pt,bottom=8pt
+    ]
+    {\centering\bfseries\color{bookprimary}#1\par}
+    \vspace{5pt}
+    {\small #2}
+    \end{tcolorbox}
+    \end{minipage}
+  \end{center}
+  \vspace{8pt}
+}
+
+\begin{document}
+\include{cover}
+
+\input{chapters/loitua}
+\input{chapters/huong-dan}
+
+\frontmatter
+\tableofcontents
+\clearpage
+\include{loi-mo-dau}
+
+\mainmatter
+
+\part*{PHẦN 1: NHÌN CHO CÔNG BẰNG\\\large Ưu điểm có thật, nhưng không đủ để bào chữa}
+\addcontentsline{toc}{part}{PHẦN 1: NHÌN CHO CÔNG BẰNG}
+\partintro{Không phiến diện, nhưng cũng không tự lừa mình}{Phần đầu không ngu đến mức chửi điện thoại như một thứ hoàn toàn vô ích. Nó nhìn thẳng rằng điện thoại có lợi thật: liên lạc, học tập, tra cứu, an toàn, sáng tạo. Nhưng rồi nó cũng bóc trần điều khó nghe hơn: rất nhiều người đang dùng chút lợi đó để bào chữa cho một khối thói quen làm mình rỗng đầu, mỏng quan hệ và yếu ý chí.}
+\include{chapters/ch00-dien-thoai-khong-co-toi}
+\include{chapters/ch00-uu-diem-co-that-nhung-khong-cuu-noi-cach-dung-te}
+\include{chapters/ch00-tri-thuc-trong-tui-nhung-dau-oc-van-rong}
+\include{chapters/ch00-ket-noi-nhieu-hon-gap-nhau-it-hon}
+\include{chapters/ch09-muoi-lat-cat-nhin-cho-cong-bang}
+
+\part*{PHẦN 2: HỌC SINH VÀ CÁI MÀN HÌNH\\\large Khi sự chú ý bị rút ruột}
+\addcontentsline{toc}{part}{PHẦN 2: HỌC SINH VÀ CÁI MÀN HÌNH}
+\partintro{Điện thoại không chỉ lấy thời gian}{Nó lấy từng mảnh chú ý nhỏ, từng khoảng trống ngắn, rồi dần biến một con người thành kẻ không chịu nổi sự yên. Phần này đi thẳng vào cách học sinh sống cùng điện thoại trong lớp, trong bữa ăn, trên giường, trong toilet và cả lúc đáng lẽ phải để đầu óc được thở.}
+\include{chapters/ch01-khong-con-khoang-trong}
+\include{chapters/ch02-trong-lop-mat-em-o-dau}
+\include{chapters/ch03-an-cung-xem}
+\include{chapters/ch04-song-cung-man-hinh-moi-noi}
+\include{chapters/ch10-muoi-lat-cat-hoc-sinh-va-man-hinh}
+
+\part*{PHẦN 3: HỌC THÊM, THÀNH TÍCH VÀ ĐỨA TRẺ KIỆT SỨC\\\large Học nhiều chưa chắc học đúng}
+\addcontentsline{toc}{part}{PHẦN 3: HỌC THÊM, THÀNH TÍCH VÀ ĐỨA TRẺ KIỆT SỨC}
+\partintro{Thêm giờ chưa chắc thêm chất}{Phần này kéo cuốn sách đi sâu vào một vùng rất quen: học thêm, lịch học kín, áp lực thành tích, và kiểu mệt mỏi được người lớn khen là cố gắng. Nó không phủ nhận học thêm có ích trong vài hoàn cảnh. Nhưng nó hỏi thẳng hơn: bao nhiêu lớp đang thật sự giúp trẻ mạnh lên, và bao nhiêu lớp chỉ đang che một đời sống học tập lệch nền, thiếu ngủ, thiếu tự học và đầy lo âu?}
+\include{chapters/ch04b-hoc-them-khong-cuu-noi-su-phan-tan}
+\include{chapters/ch04c-lich-hoc-day-kin-nhung-doi-song-rong-dan}
+\include{chapters/ch13-muoi-mau-truyen-ve-hoc-them-va-thanh-tich}
+
+\part*{PHẦN 4: NGƯỜI LỚN CŨNG ĐANG BỊ NUỐT\\\large Không thể dạy bằng sự bất nhất}
+\addcontentsline{toc}{part}{PHẦN 4: NGƯỜI LỚN CŨNG ĐANG BỊ NUỐT}
+\partintro{Muốn nhắc học sinh thì người lớn cũng phải tự soi}{Nhiều phụ huynh và giáo viên đang mắng con em vì nghiện điện thoại trong khi chính mình cũng ăn cùng màn hình, đi cùng màn hình, và sống nửa vời với những người ở cạnh mình. Phần này không chỉ chê học sinh; nó kéo người lớn ra đứng chung dưới ánh đèn.}
+\include{chapters/ch05-chay-xe-cung-khong-buong}
+\include{chapters/ch06-phu-huynh-cam-con-nhung-khong-cam-minh}
+\include{chapters/ch07-nguoi-lon-day-tap-trung-bang-mot-tay-cam-dien-thoai}
+\include{chapters/ch11-muoi-lat-cat-nguoi-lon-bi-nuot}
+
+\part*{PHẦN 5: LẤY LẠI CON NGƯỜI THẬT\\\large Tắt bớt màn hình để sống lại}
+\addcontentsline{toc}{part}{PHẦN 5: LẤY LẠI CON NGƯỜI THẬT}
+\partintro{Cắt bớt không phải để khổ hơn}{Đó là để nhìn lại khuôn mặt người đối diện, để nghe tiếng đời thật, để tập trung đủ lâu cho một công việc, và để chính mình không còn sống như một cái ngón tay biết lướt. Phần cuối kéo cuốn sách về chỗ thực hành.}
+\include{chapters/ch08-tat-bot-man-hinh-de-song-lai}
+\include{chapters/ch12-muoi-lat-cat-lay-lai-doi-song}
+
+\backmatter
+\include{chapters/phu-luc}
+\input{chapters/phieu-tinh-ngo}
+\input{chapters/bon-muoi-cau-hoi-dam-thang}
+\include{chapters/khung-mau-truyen-tu-doi-song-hoc-duong}
+\input{chapters/cam-ket-7-ngay-khong-bi-man-hinh-nuot}
+\input{series-catalog}
+\end{document}

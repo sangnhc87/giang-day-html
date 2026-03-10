@@ -1,0 +1,102 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {chapter}{Lời Tựa}{3}{}%
+\contentsline {chapter}{Hướng Dẫn Sử Dụng Sách}{5}{}%
+\contentsline {chapter}{Lời Mở Đầu}{v}{}%
+\contentsline {part}{PHẦN 1: NHÌN CHO CÔNG BẰNG\\\relax \fontsize {17.28}{22}\selectfont Ưu điểm có thật, nhưng không đủ để bào chữa}{1}{}%
+\contentsline {part}{PHẦN 1: NHÌN CHO CÔNG BẰNG}{3}{}%
+\contentsline {chapter}{\numberline {1}Điện Thoại Không Có Tội}{5}{}%
+\contentsline {section}{\numberline {1.1}Đừng Ngu Theo Kiểu Ghét Hết}{5}{}%
+\contentsline {section}{\numberline {1.2}Gọi Người Nhà Lúc Cần}{6}{}%
+\contentsline {section}{\numberline {1.3}Bản Đồ Trong Túi}{7}{}%
+\contentsline {section}{\numberline {1.4}Chụp Lại Điều Cần Nhớ}{7}{}%
+\contentsline {section}{\numberline {1.5}Gửi Bài Trong Một Phút}{8}{}%
+\contentsline {section}{\numberline {1.6}Học Nhóm Từ Xa}{8}{}%
+\contentsline {section}{\numberline {1.7}Tin Khẩn Và Tin Rác}{9}{}%
+\contentsline {section}{\numberline {1.8}Máy Ảnh Hay Móc Câu Chú Ý}{9}{}%
+\contentsline {section}{\numberline {1.9}Cứu Nguy Nhưng Cũng Gây Nguy}{10}{}%
+\contentsline {section}{\numberline {1.10}Công Cụ Không Có Đạo Đức}{10}{}%
+\contentsline {chapter}{\numberline {2}Ưu Điểm Có Thật, Nhưng Không Cứu Nổi Cách Dùng Tệ}{13}{}%
+\contentsline {section}{\numberline {2.1}Một Chút Lợi Không Rửa Sạch Một Đống Hại}{14}{}%
+\contentsline {section}{\numberline {2.2}Năm Phút Học, Năm Mươi Phút Lướt}{15}{}%
+\contentsline {section}{\numberline {2.3}Một Bài Giảng Không Cứu Nổi Một Đêm Rác}{15}{}%
+\contentsline {section}{\numberline {2.4}Ngụy Biện Bằng Tiếng Anh}{16}{}%
+\contentsline {section}{\numberline {2.5}Nói Làm Việc Nhưng Toàn Chuyển Cảnh}{16}{}%
+\contentsline {section}{\numberline {2.6}Một Cuộc Gọi Tử Tế Không Cứu Nổi Cả Ngày Cáu Bẳn}{17}{}%
+\contentsline {section}{\numberline {2.7}Cái Tiện Làm Hỏng Nhiều Thói Quen Khó}{17}{}%
+\contentsline {section}{\numberline {2.8}Càng Hữu Ích Càng Phải Giữ Giới Hạn}{18}{}%
+\contentsline {section}{\numberline {2.9}Tỷ Lệ Mới Là Bản Án}{18}{}%
+\contentsline {section}{\numberline {2.10}Tỉnh Ngộ Không Bắt Đầu Từ Việc Vứt Máy}{19}{}%
+\contentsline {chapter}{\numberline {3}Tri Thức Trong Túi, Nhưng Đầu Óc Vẫn Rỗng}{21}{}%
+\contentsline {section}{\numberline {3.1}Biết Chỗ Tìm Không Có Nghĩa Là Đã Hiểu}{21}{}%
+\contentsline {section}{\numberline {3.2}Biết Chỗ Tìm Không Thay Được Biết Cách Nghĩ}{22}{}%
+\contentsline {section}{\numberline {3.3}Đọc Lướt Làm Não Tưởng Mình Đã Học}{22}{}%
+\contentsline {section}{\numberline {3.4}Bộ Nhớ Bị Thuê Ngoài}{23}{}%
+\contentsline {section}{\numberline {3.5}Lưu Nhiều Không Có Nghĩa Là Sở Hữu Nhiều}{23}{}%
+\contentsline {section}{\numberline {3.6}Câu Trả Lời Có Sẵn Làm Mất Cơ Hội Vật Lộn}{24}{}%
+\contentsline {section}{\numberline {3.7}Biết Tin Nhiều Nhưng Ý Nghĩ Mỏng}{25}{}%
+\contentsline {section}{\numberline {3.8}Trí Thức Cần Sự Im Lặng}{25}{}%
+\contentsline {section}{\numberline {3.9}Cầm Cả Thế Giới Nhưng Không Nói Tròn Một Ý}{26}{}%
+\contentsline {section}{\numberline {3.10}Muốn Đỡ Rỗng, Phải Học Chậm Lại}{26}{}%
+\contentsline {chapter}{\numberline {4}Kết Nối Nhiều Hơn, Gặp Nhau Ít Hơn}{29}{}%
+\contentsline {section}{\numberline {4.1}Nói Chuyện Nhiều Nhưng Không Thật Gặp}{29}{}%
+\contentsline {section}{\numberline {4.2}Nhắn Nhiều Không Có Nghĩa Là Hiểu Nhau}{30}{}%
+\contentsline {section}{\numberline {4.3}Gia Đình Chung Mái Nhưng Mỗi Người Một Màn Hình}{31}{}%
+\contentsline {section}{\numberline {4.4}Bạn Bè Đông Nhưng Cô Đơn Không Giảm}{31}{}%
+\contentsline {section}{\numberline {4.5}Thăm Hỏi Bằng Thói Quen}{32}{}%
+\contentsline {section}{\numberline {4.6}Mạng Xã Hội Làm Gặp Gỡ Thành Phông Nền}{32}{}%
+\contentsline {section}{\numberline {4.7}Gọi Video Nhưng Không Nhìn Nhau}{33}{}%
+\contentsline {section}{\numberline {4.8}Nói Chuyện Liên Tục Làm Mất Sự Mong Nhớ}{33}{}%
+\contentsline {section}{\numberline {4.9}Kết Nối Nhanh Nhưng Đứt Cũng Nhanh}{34}{}%
+\contentsline {section}{\numberline {4.10}Muốn Gần Thật, Phải Đỡ Sống Thay Bằng Tín Hiệu}{34}{}%
+\contentsline {chapter}{\numberline {5}Mười Lát Cắt Nhìn Cho Công Bằng}{37}{}%
+\contentsline {part}{PHẦN 2: HỌC SINH VÀ CÁI MÀN HÌNH\\\relax \fontsize {17.28}{22}\selectfont Khi sự chú ý bị rút ruột}{41}{}%
+\contentsline {part}{PHẦN 2: HỌC SINH VÀ CÁI MÀN HÌNH}{43}{}%
+\contentsline {chapter}{\numberline {6}Không Còn Một Khoảng Trống Nào}{45}{}%
+\contentsline {section}{\numberline {6.1}Rút Điện Thoại Ra Như Một Phản Xạ}{45}{}%
+\contentsline {chapter}{\numberline {7}Trong Lớp, Mắt Em Ở Đâu?}{49}{}%
+\contentsline {section}{\numberline {7.1}Nghe Giảng Nửa Vời}{49}{}%
+\contentsline {chapter}{\numberline {8}Ăn Cũng Xem}{53}{}%
+\contentsline {section}{\numberline {8.1}Bữa Cơm Có Đủ Người Nhưng Thiếu Nhau}{53}{}%
+\contentsline {chapter}{\numberline {9}Sống Cùng Màn Hình Mọi Nơi}{57}{}%
+\contentsline {section}{\numberline {9.1}Ngay Cả Lúc Cơ Thể Đang Cần Thở}{57}{}%
+\contentsline {chapter}{\numberline {10}Mười Lát Cắt Học Sinh Và Màn Hình}{59}{}%
+\contentsline {part}{PHẦN 3: HỌC THÊM, THÀNH TÍCH VÀ ĐỨA TRẺ KIỆT SỨC\\\relax \fontsize {17.28}{22}\selectfont Học nhiều chưa chắc học đúng}{63}{}%
+\contentsline {part}{PHẦN 3: HỌC THÊM, THÀNH TÍCH VÀ ĐỨA TRẺ KIỆT SỨC}{65}{}%
+\contentsline {chapter}{\numberline {11}Học Thêm Không Cứu Nổi Sự Phân Tán}{67}{}%
+\contentsline {section}{\numberline {11.1}Lịch Kín Làm Người Lớn Yên Tâm}{67}{}%
+\contentsline {section}{\numberline {11.2}Đi Học Thêm Nhưng Trong Đầu Vẫn Lướt}{68}{}%
+\contentsline {section}{\numberline {11.3}Thêm Thầy Không Thay Được Tự Học}{68}{}%
+\contentsline {section}{\numberline {11.4}Học Để Đỡ Sợ, Không Phải Để Hiểu}{69}{}%
+\contentsline {section}{\numberline {11.5}Lớp Thêm Thành Nơi Chuyền Mẹo}{69}{}%
+\contentsline {section}{\numberline {11.6}Một Ngày Học Quá Dày Làm Não Bội Thực}{70}{}%
+\contentsline {section}{\numberline {11.7}Con Đi Học Thêm Hay Đi Gánh Kỳ Vọng}{71}{}%
+\contentsline {section}{\numberline {11.8}Muốn Học Thêm Có Ích, Phải Cắt Rác Trước}{71}{}%
+\contentsline {chapter}{\numberline {12}Lịch Học Dày Kín, Nhưng Đời Sống Rỗng Dần}{73}{}%
+\contentsline {section}{\numberline {12.1}Kín Lịch Nhưng Không Còn Thời Gian Thở}{73}{}%
+\contentsline {section}{\numberline {12.2}Điểm Có Thể Tăng, Tâm Trạng Có Thể Gãy}{74}{}%
+\contentsline {section}{\numberline {12.3}Học Sinh Thành Người Chạy Sô}{74}{}%
+\contentsline {section}{\numberline {12.4}Ăn Cũng Vội, Ngủ Cũng Thiếu}{75}{}%
+\contentsline {section}{\numberline {12.5}Không Còn Chỗ Cho Sở Thích Tử Tế}{75}{}%
+\contentsline {section}{\numberline {12.6}Cha Mẹ Cũng Dễ Nghiện Cảm Giác Đang Lo Cho Con}{76}{}%
+\contentsline {section}{\numberline {12.7}Khoảng Trống Cũng Là Một Phần Giáo Dục}{76}{}%
+\contentsline {section}{\numberline {12.8}Muốn Con Mạnh, Đừng Chỉ Chất Thêm Giờ}{77}{}%
+\contentsline {chapter}{\numberline {13}Mười Mẫu Truyện Về Học Thêm, Thành Tích Và Sự Mệt Mỏi Được Khen}{79}{}%
+\contentsline {part}{PHẦN 4: NGƯỜI LỚN CŨNG ĐANG BỊ NUỐT\\\relax \fontsize {17.28}{22}\selectfont Không thể dạy bằng sự bất nhất}{83}{}%
+\contentsline {part}{PHẦN 4: NGƯỜI LỚN CŨNG ĐANG BỊ NUỐT}{85}{}%
+\contentsline {chapter}{\numberline {14}Chạy Xe Cũng Không Buông}{87}{}%
+\contentsline {section}{\numberline {14.1}Một Tin Nhắn Không Đáng Mạng Người}{87}{}%
+\contentsline {chapter}{\numberline {15}Phụ Huynh Cấm Con Nhưng Không Cấm Mình}{89}{}%
+\contentsline {section}{\numberline {15.1}Bài Giảng Tắt Ở Ngón Tay Người Lớn}{89}{}%
+\contentsline {chapter}{\numberline {16}Người Lớn Dạy Tập Trung Bằng Một Tay Cầm Điện Thoại}{91}{}%
+\contentsline {section}{\numberline {16.1}Nhắc Học Sinh Nghe, Nhưng Mình Lại Liếc}{91}{}%
+\contentsline {chapter}{\numberline {17}Mười Lát Cắt Người Lớn Bị Nuốt}{95}{}%
+\contentsline {part}{PHẦN 5: LẤY LẠI CON NGƯỜI THẬT\\\relax \fontsize {17.28}{22}\selectfont Tắt bớt màn hình để sống lại}{99}{}%
+\contentsline {part}{PHẦN 5: LẤY LẠI CON NGƯỜI THẬT}{101}{}%
+\contentsline {chapter}{\numberline {18}Tắt Bớt Màn Hình Để Sống Lại}{103}{}%
+\contentsline {section}{\numberline {18.1}Một Kỷ Luật Nhỏ Nhưng Cứu Được Rất Nhiều}{103}{}%
+\contentsline {chapter}{\numberline {19}Mười Lát Cắt Lấy Lại Đời Sống}{107}{}%
+\contentsline {chapter}{Phụ Lục}{111}{}%
+\contentsline {chapter}{Phiếu Tỉnh Ngộ}{113}{}%
+\contentsline {chapter}{40 Câu Hỏi Đâm Thẳng}{117}{}%
+\contentsline {chapter}{Khung Mẫu Truyện Từ Đời Sống Học Đường Và Học Thêm}{119}{}%
+\contentsline {chapter}{Cam Kết 7 Ngày Không Bị Màn Hình Nuốt}{125}{}%

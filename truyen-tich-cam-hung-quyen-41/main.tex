@@ -1,0 +1,143 @@
+\documentclass[11pt,a5paper,oneside,openany]{book}
+
+\usepackage[T5]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage[explicit]{titlesec}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage[unicode,hidelinks]{hyperref}
+\usepackage{bookmark}
+
+\microtypesetup{expansion=false}
+\geometry{top=1.45cm,bottom=1.65cm,left=1.35cm,right=1.35cm,headheight=14pt,footskip=18pt}
+\setstretch{1.12}
+\setlength{\parindent}{0pt}
+\setcounter{tocdepth}{1}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.28em,topsep=0.35em}
+
+\definecolor{titlecolor}{HTML}{0F5A55}
+\definecolor{softline}{HTML}{BFE3DC}
+\definecolor{chapterline}{HTML}{16827A}
+\definecolor{boxbg}{HTML}{F7FFFD}
+\definecolor{boxframe}{HTML}{7AC7BA}
+\definecolor{noteink}{HTML}{365450}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{5 Phút Khởi Động Cả Lớp}}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.2pt}
+
+\titleformat{\chapter}[display]
+  {\centering}
+  {\large\bfseries\color{chapterline} Chương \thechapter}
+  {0.45em}
+  {\LARGE\bfseries\color{titlecolor}#1}
+  [\vspace{0.8em}{\color{softline}\rule{0.76\linewidth}{0.9pt}}]
+\titlespacing*{\chapter}{0pt}{0.2em}{1.25em}
+
+\titleformat{\section}
+  {\large\bfseries\color{titlecolor}}
+  {}
+  {0em}
+  {#1}
+\titlespacing*{\section}{0pt}{0.35em}{0.2em}
+
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftchapfont}{\small\bfseries}
+\renewcommand{\cftchappagefont}{\small\bfseries}
+\renewcommand{\cftsecfont}{\footnotesize}
+\renewcommand{\cftsecpagefont}{\footnotesize}
+
+\newtcolorbox{khoidongbox}[1]{
+  colback=boxbg,
+  colframe=boxframe,
+  title={#1},
+  coltitle=titlecolor,
+  fonttitle=\bfseries,
+  arc=2mm,
+  boxrule=0.6pt,
+  left=2.2mm,
+  right=2.2mm,
+  top=1.3mm,
+  bottom=1.2mm
+}
+
+\newtcolorbox{visaohieuqua}{
+  colback=titlecolor!4,
+  colframe=titlecolor!55,
+  title={Vì sao mở lớp theo cách này hiệu quả},
+  coltitle=titlecolor,
+  fonttitle=\bfseries,
+  arc=2mm,
+  boxrule=0.5pt,
+  left=2.2mm,
+  right=2.2mm,
+  top=1.1mm,
+  bottom=1.1mm
+}
+
+\newtcolorbox{cachlam5phut}{
+  colback=chapterline!6,
+  colframe=chapterline!55,
+  title={Cách dùng trong 5 phút},
+  coltitle=titlecolor,
+  fonttitle=\bfseries,
+  arc=2mm,
+  boxrule=0.5pt,
+  left=2.2mm,
+  right=2.2mm,
+  top=1.1mm,
+  bottom=1.1mm
+}
+
+\newcommand{\chapterintro}[2]{%
+\begin{center}
+\begin{minipage}{0.92\linewidth}
+\centering
+{\normalsize\bfseries\color{titlecolor} #1\par}
+\vspace{0.32em}
+{\footnotesize\color{noteink} #2\par}
+\end{minipage}
+\end{center}
+\vspace{0.45em}
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+  {\color{softline}\rule{0.52\linewidth}{0.6pt}}
+  \end{center}
+  \vspace{0.15em}
+}
+
+\begin{document}
+
+\frontmatter
+\input{cover.tex}
+\input{loi-mo-dau.tex}
+\input{series-catalog.tex}
+\tableofcontents
+\clearpage
+
+\mainmatter
+\input{chapters/ch01-khoi-dong-bang-ba-muoi-giay.tex}
+\input{chapters/ch02-mo-tiet-bang-cu-chi.tex}
+\input{chapters/ch03-khoi-dong-bang-cau-noi-vui.tex}
+\input{chapters/ch04-keo-ca-lop-dung-day.tex}
+\input{chapters/ch05-khoi-dong-sau-gio-ra-choi.tex}
+\input{chapters/ch06-khoi-dong-sau-gio-kiem-tra.tex}
+\input{chapters/ch07-mo-bai-bang-cap-doi.tex}
+\input{chapters/ch08-khoi-dong-cho-gio-chu-nhiem.tex}
+\input{chapters/ch09-nhap-bai-khong-can-dao-cu.tex}
+\input{chapters/ch10-nam-phut-mo-duong-cho-ca-tiet.tex}
+
+\end{document}

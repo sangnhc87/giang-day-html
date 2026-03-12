@@ -1,0 +1,63 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {chapter}{Lời mở đầu}{i}{chapter*.1}%
+\contentsline {chapter}{Series Catalog Chung}{ii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Khởi Động Bằng Ba Mươi Giây}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Ba tiếng gọi đồng loạt}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Chọn một con số để vào tiết}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Một câu dự báo cho bài học}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Giơ tay theo mức tỉnh}{2}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Nói nối một từ}{3}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Mở Tiết Bằng Cử Chỉ}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Đứng nếu đã sẵn sàng}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Chỉ tay vào góc chọn đáp án}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Vẽ biểu tượng bằng tay}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Giơ ngón tay chọn mức hiểu}{5}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Cú xoay người đổi trạng thái}{6}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Khởi Động Bằng Câu Nói Vui}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Thân vào lớp rồi, não vào chưa?}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Hôm nay ai mở tiết giúp thầy cô?}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Bài này nhìn hiền hay nhìn khó?}{8}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Nếu tiết học này có nhạc nền, đó là gì?}{8}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Một câu chào khác thường}{9}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Kéo Cả Lớp Đứng Dậy}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Đứng lên đổi chỗ mười giây}{10}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Đứng theo phe đồng ý hay phân vân}{10}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Bàn nào đứng chốt trước}{11}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Đổi người nói khi đang đứng}{11}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Một vòng đứng cảm ơn ngắn}{12}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Khởi Động Sau Giờ Ra Chơi}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Một câu khóa từ sân vào lớp}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Hít thở hai nhịp rồi vào bài}{13}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Một từ bỏ ngoài cửa}{14}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Giữ lại điều gì từ giờ chơi?}{14}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Mở bài bằng chuyện vừa cười}{15}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Khởi Động Sau Giờ Kiểm Tra}{16}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Một từ xả áp}{16}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Tách kiểm tra khỏi bài mới}{16}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Một câu thắng nhỏ đầu tiên}{17}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Chọn bài mới theo kiểu nhẹ hay nhanh}{17}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Đặt tên cho tâm trạng sau kiểm tra}{18}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Mở Bài Bằng Cặp Đôi}{19}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Quay sang bên cạnh nói một câu}{19}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Hỏi bạn điều còn nhớ}{19}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Cặp đôi đoán ý chính}{20}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Mỗi cặp tạo một ví dụ}{20}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Đổi bạn chốt cho nhau}{21}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Khởi Động Cho Giờ Chủ Nhiệm}{22}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Một điều lớp tự hào trước đã}{22}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Một điều lớp muốn bớt}{22}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Chọn mood cho tuần mới}{23}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Lời hứa một dòng}{23}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Một câu cảm ơn trong lớp}{24}{section.8.5}%
+\contentsline {chapter}{\numberline {9}Nhập Bài Không Cần Đạo Cụ}{25}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Ba từ trên bảng}{25}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Bàn tay làm sơ đồ}{25}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Vỗ tay chia nhịp}{26}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Lấy ngay thứ trong lớp làm ví dụ}{26}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Dùng chỗ ngồi làm dữ liệu mở bài}{27}{section.9.5}%
+\contentsline {chapter}{\numberline {10}Năm Phút Mở Đường Cho Cả Tiết}{28}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Nêu mục tiêu bằng một câu}{28}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Cho lớp chọn đường vào bài}{28}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Mời một em mở bằng ngôn ngữ của lớp}{29}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Câu hỏi chờ cả tiết}{29}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Chốt mốc đầu tiết}{30}{section.10.5}%

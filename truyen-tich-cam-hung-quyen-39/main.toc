@@ -1,0 +1,63 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {chapter}{Lời mở đầu}{i}{chapter*.1}%
+\contentsline {chapter}{Series Catalog Chung}{ii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Mở Tiết Bắt Lớp}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Hôm nay ai định học tử tế?}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Lớp mình tỉnh chưa hay còn đang loading?}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Ai nói chuyện tiếp là phải nói luôn ý chính của bài}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Hôm nay lớp muốn được gọi là lớp tỉnh hay lớp cần cứu?}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Ai đang tới lớp bằng thân người nhưng não còn ở ngoài sân?}{3}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Đối Đáp Với Học Trò Lì}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Em quên vở rồi ạ}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Em chưa làm bài vì tối qua bận}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Bạn kia cũng chưa làm mà}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Em chưa hiểu nên chưa làm ạ}{5}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Em làm rồi nhưng mất tờ giấy đó ạ}{6}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Gõ Nhẹ Mà Trúng}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Em thông minh lắm, giờ dùng vào bài giùm thầy cô}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Nói nhỏ thôi, ý em không nhỏ đâu}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Em đang vui, nhưng cho bài học vui ké với}{8}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Em nhanh quá rồi, chờ lớp một nhịp giùm thầy cô}{8}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Câu đùa này giữ lại cho giờ ra chơi nhé}{9}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Chủ Nhiệm Và Không Khí}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Tuần này lớp mình đáng khen ở điểm nào trước?}{10}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Ai có lỗi nhỏ mà muốn sửa lớn?}{10}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Lớp mình cần bớt điều gì để vui hơn?}{11}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Cuối tháng này lớp muốn tự hào vì điều gì?}{11}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Lớp mình cần thêm một thói quen nhỏ nào?}{12}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Đi Học Muộn, Nói Sao Cho Duyên}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Em đến đúng lúc lớp đang nhớ em đấy}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Đi muộn thì đừng muộn luôn cả sự tập trung}{13}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Em nợ lớp một lý do ngắn thôi}{14}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Hôm nay em vào lớp kiểu chạy deadline à?}{14}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Trễ rồi, mình đừng trễ luôn phần học nữa nhé}{15}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Khi Lớp Quá Ồn}{16}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Lớp mình đông tiếng quá, nhường cho ý nào quan trọng nhất thôi}{16}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Ai nói tiếp thì phải nối ý bạn trước}{17}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Giờ mình thử nói ít mà trúng}{17}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Mình hạ âm lượng chứ không hạ ý kiến nhé}{18}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Lớp thử im đúng 5 giây để xem còn nghe được gì}{18}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Lý Do Bá Đạo Và Cách Đáp}{19}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Em không làm bài vì hôm qua em buồn}{19}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Em tưởng hôm nay không kiểm tra bài cũ}{19}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Em làm rồi nhưng quên mang}{20}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Em quên bài vì tối qua em ngủ quên ạ}{20}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Em đang nộp lý do hay nộp giải pháp?}{21}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Nói Với Lớp Trưởng, Cán Sự}{22}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Em không cần làm thay cả lớp}{22}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Em nhắc lớp bằng giọng bạn học trước, chưa cần giọng quản lý}{23}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Giữ lớp không phải là quát to hơn lớp}{23}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Em giữ nhịp thôi, đừng giữ hết việc}{24}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Nhắc lớp xong nhớ cảm ơn lớp một câu}{24}{section.8.5}%
+\contentsline {chapter}{\numberline {9}Đối Đáp Trong Giờ Sinh Hoạt}{25}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Tuần này lớp mình đỡ nhất ở điểm nào?}{25}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Lớp mình đang cần bớt drama hay bớt lười?}{25}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Ai thấy mình cần sửa ít nhất một điều thì giơ tay thật}{26}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Tuần này lớp muốn được nhớ vì điều gì?}{26}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Lớp hứa với nhau một điều ít thôi, nhưng làm thật}{27}{section.9.5}%
+\contentsline {chapter}{\numberline {10}Những Câu Chốt Có Duyên}{28}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Thầy cô nói đến đây, phần còn lại để lớp làm cho đẹp}{28}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Hôm nay lớp làm được, vậy mai đừng làm như chưa từng làm được}{29}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Thầy cô cần lớp tốt lên, không cần lớp diễn ngoan}{29}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Thầy cô nhắc một lần, phần còn lại là uy tín của lớp}{30}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Mình khép chuyện ở đây, đừng kéo theo ngày mai nhé}{30}{section.10.5}%

@@ -1,0 +1,43 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {chapter}{Lời mở đầu}{i}{chapter*.1}%
+\contentsline {chapter}{Series Catalog Chung}{ii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Mở Lại Không Khí}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Ba từ kéo cả lớp ngẩng lên}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Đố nhanh một câu không cần đúng}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Đổi vai trong 30 giây}{2}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Giữ Nhịp Giữa Tiết}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Khi năm bạn bắt đầu nhìn ra cửa}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Cả lớp đứng lên chọn góc}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Hỏi ngược thay vì giảng tiếp}{5}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Cứu Lúc Lớp Trầm}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Cứu tiết sau giờ thể dục}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Lớp mệt vì bài dài}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Hai phe tranh nhau nói}{8}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Chốt Tiết Có Dư Vị}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Một câu chốt cả lớp nhớ}{10}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Phiếu ra cửa bằng miệng}{11}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Điều em mang về hôm nay}{11}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Đổi Giờ, Không Đổi Bài}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Đổi người nói trong một phút}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Đổi tốc độ, không đổi mục tiêu}{14}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Đổi cách ghi bài}{14}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Gọi Cả Lớp Cùng Làm}{15}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Mỗi dãy một ý}{15}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Một câu cho mỗi bàn}{16}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Ai chưa nói sẽ nói trước}{16}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Cứu Sau Giờ Kiểm Tra}{18}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Xả một câu rồi học tiếp}{18}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Đừng mở bài mới bằng giọng cũ}{19}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Một ý vui để tháo mặt nặng}{19}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Kéo Lại Năng Lượng Cuối Buổi}{20}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Đứng lên trả lời ngắn}{20}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Một tiếng cười trước khi chốt bài}{21}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Chốt bằng việc gần nhất}{21}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Ice-Breaker Không Lố}{22}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Giơ tay theo cảm giác}{22}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Một lựa chọn vui}{23}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Nói nối tiếp 3 từ}{23}{section.9.3}%
+\contentsline {chapter}{\numberline {10}Giữ Tiết Học Có Hậu Vị}{24}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Cuối tiết, cho lớp tự đặt tiêu đề}{24}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Một tiếng cười cuối giờ}{25}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Để lại hẹn nhỏ cho tiết sau}{25}{section.10.3}%

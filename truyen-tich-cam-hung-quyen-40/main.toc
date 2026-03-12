@@ -1,0 +1,43 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {chapter}{Lời mở đầu}{i}{chapter*.1}%
+\contentsline {chapter}{Series Catalog Chung}{ii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Phá Băng Bật Nói}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Nếu tiết học này là một món ăn, nó sẽ là món gì?}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Ai có một câu trả lời kỳ cục nhưng hợp lý?}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Nếu em được đặt tên mới cho bài hôm nay, em đặt là gì?}{2}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Kéo Nói Vào Bài}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Trong bài này, chỗ nào dễ hiểu nhất trước?}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Nếu phải giải thích cho bạn học chậm hơn em, em sẽ nói câu nào trước?}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Nếu bài này có một lỗi học sinh hay mắc, em đoán là lỗi gì?}{4}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Hỏi Để Tự Nhìn Lại}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Em hay bỏ cuộc ở phút nào nhất?}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Em muốn thầy cô bớt làm điều gì để em học tốt hơn?}{5}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Điều gì ở em tốt hơn tuần trước một chút?}{6}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Chốt Tiết, Chốt Tuần}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Hôm nay em mang về một câu hay một ý?}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Nếu cho tiết học này một điểm vì độ hữu ích, em cho mấy điểm?}{7}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Tuần này lớp mình nên giữ lại điều gì và bỏ bớt điều gì?}{8}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Hỏi Khi Lớp Đang Ngủ}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Nếu bây giờ em phải nói đúng 3 từ về trạng thái của mình, em nói gì?}{9}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Nếu cho tiết này một nút bấm để tỉnh lại, em bấm gì?}{9}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Điều gì khiến em thức dậy trong một tiết học?}{10}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Hỏi Để Làm Việc Nhóm}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Nếu nhóm chỉ được giữ lại một ý, ý nào sống sót?}{11}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Ai trong nhóm nên nói trước và vì sao?}{11}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Nhóm mình đang thiếu ý hay thiếu nghe nhau?}{12}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Hỏi Khi Kiểm Tra Bài Cũ}{13}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Trong phần cũ, điều gì em nhớ mà không cần nhìn vở?}{13}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Nếu bạn quên bài, em sẽ nhắc bạn bằng câu nào?}{13}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Phần nào của bài cũ đáng nhớ nhất chứ không chỉ đáng thuộc?}{14}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Hỏi Để Giải Tỏa Căng Thẳng}{15}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Nếu mô tả tuần này bằng một từ, em chọn từ nào?}{15}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Điều gì làm em thấy đỡ nhất trong một ngày học nhiều việc?}{15}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Nếu được bớt một thứ cho lớp mình hôm nay, em bớt gì?}{16}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Hỏi Cho Giờ Chủ Nhiệm}{17}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Tuần này lớp mình nên tự khen điều gì trước?}{17}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Nếu lớp mình chỉ sửa được một điều trong tuần tới, nên sửa điều gì?}{17}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Lớp mình cần thêm điều gì để thấy vui khi đi học hơn?}{18}{section.9.3}%
+\contentsline {chapter}{\numberline {10}Hỏi Để Kết Thúc Một Ngày}{19}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Hôm nay em muốn giữ lại điều gì nhất?}{19}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Ngày hôm nay làm em mệt ở chỗ nào và mạnh hơn ở chỗ nào?}{19}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Nếu ngày mai bắt đầu lại, em muốn bắt đầu khác ở điểm nào?}{20}{section.10.3}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.9)  12 MAR 2026 03:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.9)  12 MAR 2026 04:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1047,7 +1047,7 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 163.
 
-Underfull \vbox (badness 2065) has occurred while \output is active []
+Underfull \vbox (badness 2096) has occurred while \output is active []
 
  [15]
 Package lettrine.sty Info: Targeted height = 23.2pt
@@ -1078,61 +1078,65 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 7.
+[21]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 33.
-
-Underfull \vbox (badness 3460) has occurred while \output is active []
-
- [21]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 59.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [22]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 85.
+ [23]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 111.
 
-Underfull \vbox (badness 4266) has occurred while \output is active []
+Underfull \vbox (badness 2237) has occurred while \output is active []
 
- [23]
-Package lettrine.sty Info: Targeted height = 23.2pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
-(lettrine.sty)             reported on input line 137.
  [24]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
+(lettrine.sty)             reported on input line 137.
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 163.
+ [25]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 189.
 
-Underfull \vbox (badness 1052) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25]
-Package lettrine.sty Info: Targeted height = 23.2pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
-(lettrine.sty)             reported on input line 215.
  [26]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
+(lettrine.sty)             reported on input line 215.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 241.
-) [27]
+ [28]) [29]
 \openout2 = `chapters/ch04.aux'.
 
- (./chapters/ch04.tex [28
+ (./chapters/ch04.tex [30
 
 
 
@@ -1143,36 +1147,34 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 7.
+[31]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 33.
-
-Underfull \vbox (badness 2707) has occurred while \output is active []
-
- [29]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 59.
- [30]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 85.
+ [33]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 111.
-
-Underfull \vbox (badness 1270) has occurred while \output is active []
-
- [31]
+ [34]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 137.
- [32]
+ [35]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
@@ -1182,22 +1184,25 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 189.
 
-Underfull \vbox (badness 1448) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
+ [36]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 215.
- [34]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 241.
-) [35]
+ [38]) [39]
 \openout2 = `chapters/ch05.aux'.
 
- (./chapters/ch05.tex [36
+ (./chapters/ch05.tex [40
 
 
 
@@ -1212,54 +1217,61 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 33.
-
-Underfull \vbox (badness 7796) has occurred while \output is active []
-
- [37]
+[41]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 59.
- [38]
-Package lettrine.sty Info: Targeted height = 23.2pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
-(lettrine.sty)             reported on input line 85.
-Package lettrine.sty Info: Targeted height = 23.2pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
-(lettrine.sty)             reported on input line 111.
- [39]
-Package lettrine.sty Info: Targeted height = 23.2pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
-(lettrine.sty)             reported on input line 137.
- [40]
-Package lettrine.sty Info: Targeted height = 23.2pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
-(lettrine.sty)             reported on input line 163.
-Package lettrine.sty Info: Targeted height = 23.2pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
-(lettrine.sty)             reported on input line 189.
 
-Underfull \vbox (badness 1009) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41]
-Package lettrine.sty Info: Targeted height = 23.2pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
-(lettrine.sty)             reported on input line 215.
  [42]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
+(lettrine.sty)             reported on input line 85.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
+(lettrine.sty)             reported on input line 111.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
+(lettrine.sty)             reported on input line 137.
+ [45]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
+(lettrine.sty)             reported on input line 163.
+ [46]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
+(lettrine.sty)             reported on input line 189.
+ [47]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
+(lettrine.sty)             reported on input line 215.
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 241.
-) [43]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]) [49]
 \openout2 = `chapters/ch06.aux'.
 
- (./chapters/ch06.tex [44
+ (./chapters/ch06.tex [50
 
 
 
@@ -1270,61 +1282,62 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 7.
+[51]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 33.
-
-Underfull \vbox (badness 2503) has occurred while \output is active []
-
- [45]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 59.
- [46]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 85.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 111.
-
-Underfull \vbox (badness 1502) has occurred while \output is active []
-
- [47]
+ [54]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 137.
- [48]
+ [55]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 163.
+ [56]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 189.
-
-Underfull \vbox (badness 1708) has occurred while \output is active []
-
- [49]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 215.
- [50]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 241.
-) [51]
+ [58]) [59]
 \openout2 = `chapters/ch07.aux'.
 
- (./chapters/ch07.tex [52
+ (./chapters/ch07.tex [60
 
 
 
@@ -1342,7 +1355,7 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 
 Underfull \vbox (badness 1688) has occurred while \output is active []
 
- [53]
+ [61]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
@@ -1350,12 +1363,12 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 
 Underfull \vbox (badness 5260) has occurred while \output is active []
 
- [54]
+ [62]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 85.
- [55]
+ [63]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
@@ -1364,12 +1377,12 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 137.
- [56]
+ [64]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 163.
- [57]
+ [65]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
@@ -1378,12 +1391,12 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 215.
- [58]
+ [66]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 241.
- [59]) [60]
+ [67]) [68]
 \openout2 = `chapters/ch08.aux'.
 
  (./chapters/ch08.tex
@@ -1399,7 +1412,7 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 
 Underfull \vbox (badness 2503) has occurred while \output is active []
 
- [61
+ [69
 
 
 
@@ -1409,7 +1422,7 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 59.
- [62]
+ [70]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
@@ -1421,12 +1434,12 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 
 Underfull \vbox (badness 1270) has occurred while \output is active []
 
- [63]
+ [71]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 137.
- [64]
+ [72]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
@@ -1438,12 +1451,12 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 
 Underfull \vbox (badness 1270) has occurred while \output is active []
 
- [65]
+ [73]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 215.
- [66]
+ [74]
 Overfull \hbox (3.9923pt too wide) in paragraph at lines 239--239
 |[]\T5/lmr/bx/n/20.74 (-20) Suy ngh¾ s¥u th÷íng b­t ^^_¦u tø mët kho£nh
  []
@@ -1452,10 +1465,10 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 241.
-) [67]
+) [75]
 \openout2 = `chapters/ch09.aux'.
 
- (./chapters/ch09.tex [68
+ (./chapters/ch09.tex [76
 
 
 
@@ -1473,12 +1486,12 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 
 Underfull \vbox (badness 2772) has occurred while \output is active []
 
- [69]
+ [77]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 59.
- [70]
+ [78]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
@@ -1490,12 +1503,12 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 
 Underfull \vbox (badness 1533) has occurred while \output is active []
 
- [71]
+ [79]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 137.
- [72]
+ [80]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
@@ -1507,20 +1520,20 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
- [73]
+ [81]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 215.
- [74]
+ [82]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 241.
-) [75]
+) [83]
 \openout2 = `chapters/ch10.aux'.
 
- (./chapters/ch10.tex [76
+ (./chapters/ch10.tex [84
 
 
 
@@ -1538,12 +1551,12 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [77]
+ [85]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 59.
- [78]
+ [86]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
@@ -1555,12 +1568,12 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 
 Underfull \vbox (badness 1502) has occurred while \output is active []
 
- [79]
+ [87]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 137.
- [80]
+ [88]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
@@ -1569,21 +1582,21 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 189.
- [81]
+ [89]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 215.
- [82]
+ [90]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
 (lettrine.sty)             reported on input line 241.
-) [83] [84
+) [91] [92
 
 
 
-] (./series-catalog.tex [85
+] (./series-catalog.tex [93
 
 ]) (./main.aux (./cover.aux) (./loi-mo-dau.aux) (./chapters/ch01.aux) (./chapters/ch02.aux) (./chapters/ch03.aux) (./chapters/ch04.aux) (./chapters/ch05.aux) (./chapters/ch06.aux) (./chapters/ch07.aux) (./chapters/ch08.aux) (./chapters/ch09.aux) (./chapters/ch10.aux))
  ***********
@@ -1596,18 +1609,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 24799 strings out of 475670
- 506619 string characters out of 5784922
+ 24852 strings out of 475670
+ 507276 string characters out of 5784922
  1944975 words of memory out of 5000000
- 46063 multiletter control sequences out of 15000+600000
- 785374 words of font info for 288 fonts, out of 8000000 for 9000
+ 46072 multiletter control sequences out of 15000+600000
+ 787635 words of font info for 310 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  83i,13n,93p,1246b,1045s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (97 pages, 521660 bytes).
+Output written on main.pdf (105 pages, 558781 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
+ 404 PDF objects out of 1000 (max. 8388607)
+ 272 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  81933 words of extra memory for PDF output out of 89155 (max. 10000000)
 

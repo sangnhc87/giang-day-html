@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.9)  10 MAR 2026 02:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.9)  10 MAR 2026 03:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -930,25 +930,31 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             reported on input line 7.
  [5
 
-]) [6] (./main.toc [1
+]) [6] (./main.toc
+Underfull \vbox (badness 1077) has occurred while \output is active []
 
-])
+ [1
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [2]
+ [3]
 \openout2 = `loi-mo-dau-v4.aux'.
 
- (./loi-mo-dau-v4.tex
+ (./loi-mo-dau-v4.tex [4
+
+
+
+]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{C}) loversize=0.15;
 (lettrine.sty)             reported on input line 6.
-) [3
-
-
-
-] [4
+) [5] [6
 
 
 
@@ -998,15 +1004,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-[4]) [5]
+[4]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
+(lettrine.sty)             reported on input line 36.
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
+(lettrine.sty)             reported on input line 44.
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+[5]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
+(lettrine.sty)             reported on input line 57.
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
+(lettrine.sty)             reported on input line 65.
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
+(lettrine.sty)             reported on input line 73.
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+[7]) [8]
 \openout2 = `chapters/v4-ch02-he-tu-tuong-chua-lanh.aux'.
 
- (./chapters/v4-ch02-he-tu-tuong-chua-lanh.tex [6
-
-
-
-
-]
+ (./chapters/v4-ch02-he-tu-tuong-chua-lanh.tex
 Ch\uhorn \ohorn ng 2.
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -1026,7 +1083,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[7]
+[9
+
+
+
+
+]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
@@ -1036,15 +1098,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[8]) [9]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
+(lettrine.sty)             reported on input line 30.
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+[10]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
+(lettrine.sty)             reported on input line 38.
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
+(lettrine.sty)             reported on input line 46.
+
+Underfull \hbox (badness 1062) in paragraph at lines 49--50
+[]\T5/lmr/m/it/14.4 (+20) Teacher: ````Sometimes what drains you is not bad energy but truth
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
+(lettrine.sty)             reported on input line 54.
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+[12]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
+(lettrine.sty)             reported on input line 62.
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+[13]) [14]
 \openout2 = `chapters/v4-ch03-ap-luc-dong-trang-lua.aux'.
 
- (./chapters/v4-ch03-ap-luc-dong-trang-lua.tex [10
-
-
-
-
-]
+ (./chapters/v4-ch03-ap-luc-dong-trang-lua.tex
 Ch\uhorn \ohorn ng 3.
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -1064,7 +1177,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[11]
+[15
+
+
+
+
+]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
@@ -1077,11 +1195,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 Underfull \vbox (badness 2027) has occurred while \output is active []
 
- [12]) [13] [14
+ [16]) [17] [18
 
 
 
-] [15] [16]
+] [19] [20]
 \openout2 = `chapters/v4-ch04-thay-cung-quen-huong-ghi-tro.aux'.
 
  (./chapters/v4-ch04-thay-cung-quen-huong-ghi-tro.tex
@@ -1104,7 +1222,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[17
+[21
 
 
 ]
@@ -1117,7 +1235,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-) [18]
+) [22]
 \openout2 = `chapters/v4-ch05-nhung-quy-dinh-tren-troi.aux'.
 
  (./chapters/v4-ch05-nhung-quy-dinh-tren-troi.tex
@@ -1140,7 +1258,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[19
+[23
 
 
 
@@ -1155,10 +1273,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[20]) [21]
+[24]) [25]
 \openout2 = `chapters/v4-ch06-khi-thay-co-xin-loi.aux'.
 
- (./chapters/v4-ch06-khi-thay-co-xin-loi.tex [22
+ (./chapters/v4-ch06-khi-thay-co-xin-loi.tex [26
 
 
 
@@ -1183,7 +1301,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[23]
+[27]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
@@ -1193,11 +1311,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[24]) [25] [26
+[28]) [29] [30
 
 
 
-] [27] [28]
+] [31] [32]
 \openout2 = `chapters/v4-ch07-anh-trang-lua-doi-cua-bo-me.aux'.
 
  (./chapters/v4-ch07-anh-trang-lua-doi-cua-bo-me.tex
@@ -1220,7 +1338,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[29
+[33
 
 
 ]
@@ -1236,10 +1354,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]) [31]
+ [34]) [35]
 \openout2 = `chapters/v4-ch08-can-benh-con-nha-nguoi-ta.aux'.
 
- (./chapters/v4-ch08-can-benh-con-nha-nguoi-ta.tex [32
+ (./chapters/v4-ch08-can-benh-con-nha-nguoi-ta.tex [36
 
 
 
@@ -1269,7 +1387,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[33]
+[37]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
@@ -1279,10 +1397,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[34]) [35]
+[38]) [39]
 \openout2 = `chapters/v4-ch09-hop-phu-huynh-bao-tap.aux'.
 
- (./chapters/v4-ch09-hop-phu-huynh-bao-tap.tex [36
+ (./chapters/v4-ch09-hop-phu-huynh-bao-tap.tex [40
 
 
 
@@ -1312,7 +1430,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[37]
+[41]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
@@ -1325,11 +1443,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 Underfull \vbox (badness 3977) has occurred while \output is active []
 
- [38]) [39] [40
+ [42]) [43] [44
 
 
 
-] [41] [42]
+] [45] [46]
 \openout2 = `chapters/v4-ch10-giac-mong-rot-dai-hoc-van-thanh-ty-phu.aux'.
 
  (./chapters/v4-ch10-giac-mong-rot-dai-hoc-van-thanh-ty-phu.tex
@@ -1352,7 +1470,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[43
+[47
 
 
 ]
@@ -1365,10 +1483,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[44]) [45]
+[48]) [49]
 \openout2 = `chapters/v4-ch11-dam-me-trai-nghiem.aux'.
 
- (./chapters/v4-ch11-dam-me-trai-nghiem.tex [46
+ (./chapters/v4-ch11-dam-me-trai-nghiem.tex [50
 
 
 
@@ -1398,7 +1516,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[47]
+[51]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
@@ -1411,10 +1529,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 Underfull \vbox (badness 6741) has occurred while \output is active []
 
- [48]) [49]
+ [52]) [53]
 \openout2 = `chapters/v4-ch12-gen-z-di-lam-som.aux'.
 
- (./chapters/v4-ch12-gen-z-di-lam-som.tex [50
+ (./chapters/v4-ch12-gen-z-di-lam-som.tex [54
 
 
 
@@ -1439,7 +1557,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[51]
+[55]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 26.67995pt (\textcolor {v3secondary}{H}) loversize=0.15;
@@ -1452,7 +1570,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 Underfull \vbox (badness 6332) has occurred while \output is active []
 
- [52]) [53] [54
+ [56]) [57] [58
 
 
 
@@ -1467,18 +1585,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 24693 strings out of 475670
- 516504 string characters out of 5784922
+ 24753 strings out of 475670
+ 517543 string characters out of 5784922
  1942975 words of memory out of 5000000
- 45971 multiletter control sequences out of 15000+600000
- 757156 words of font info for 268 fonts, out of 8000000 for 9000
+ 46011 multiletter control sequences out of 15000+600000
+ 758135 words of font info for 278 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 83i,13n,93p,1249b,1052s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,14n,93p,1249b,1052s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (64 pages, 317065 bytes).
+Output written on main.pdf (70 pages, 337228 bytes).
 PDF statistics:
- 286 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
+ 305 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  71789 words of extra memory for PDF output out of 74296 (max. 10000000)
 

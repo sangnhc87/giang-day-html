@@ -1,0 +1,2924 @@
+\chapter{Thơ Tứ Tuyệt Chửi Duyên — Thất Ngôn}
+\markboth{Thơ Tứ Tuyệt Chửi Duyên}{Thơ Tứ Tuyệt Chửi Duyên}
+
+\begin{truyen}{230 bài thơ thất ngôn tứ tuyệt}{230 seven-character quatrains in witty-scolding style}
+\chuhoa{N}{gười xưa dùng thơ Đường để gửi nỗi lòng; người thầy hôm nay dùng thơ để gửi những điều không nỡ nói thẳng. Mỗi bài bốn câu, mỗi câu bảy chữ --- nhưng ý tứ bên trong thì nhiều hơn bảy lần bảy. Đọc xong nếu thấy mình trong đó, hãy đọc lại lần nữa chậm hơn.}
+\textit{(The ancients used Tang quatrains to carry feeling; today's teacher uses verse to deliver what is too fond to say plainly. Four lines, seven characters each --- but the meaning inside is more than seven times seven. If you find yourself in them, read once more, more slowly.)}
+\end{truyen}
+
+%------------------------------------------------------------
+% MACRO TRANG TRI THO
+%------------------------------------------------------------
+\newcounter{baitho}
+
+\newcommand{\poemtitle}[1]{%
+	\IfSubStr{#1}{ — }{%
+		\StrBehind{#1}{ — }[\poemtitlestripped]%
+		\poemtitlestripped
+	}{#1}%
+}
+
+\newcommand{\baitho}[3]{%
+	\refstepcounter{baitho}%
+  \begin{tcolorbox}[
+    enhanced,
+		breakable,
+    colback=v3bg,
+		colframe=v3primary!70!black,
+		arc=4pt,
+		boxrule=0.5pt,
+		left=8pt,
+		right=8pt,
+		top=10pt,
+		bottom=8pt,
+		borderline west={2.5pt}{0pt}{v3secondary},
+		attach boxed title to top left={xshift=8pt,yshift=-2.5mm},
+		boxed title style={
+			colback=v3secondary,
+			colframe=v3secondary,
+			arc=2pt,
+			boxrule=0pt,
+			left=6pt,
+			right=6pt,
+			top=4pt,
+			bottom=4pt,
+		},
+		title={\strut\small\bfseries\color{white} Bài \thebaitho},
+  ]
+		{\raggedright\Large\bfseries\color{v3text}\poemtitle{#1}\par}
+	\vspace{3pt}
+	{\color{v3secondary!55!black}\rule{\linewidth}{0.45pt}\par}
+	\vspace{6pt}
+	\begin{center}
+	\setlength{\parskip}{2pt}
+	{\large\bfseries\color{v3text} #2}\\[7pt]
+	{\small\itshape\color{v3primary!85!black} #3}
+	\end{center}
+  \end{tcolorbox}
+  \vspace{4pt}
+}
+
+%------------------------------------------------------------
+\section{Bộ I — Lớp Học Và Những Điều Không Ai Dạy (Bài 1–10)}
+%------------------------------------------------------------
+
+\baitho{Bài 1 — Thần Ngủ Trong Lớp}{%
+Hễ học là em ngủ tới trưa,\\
+Thầy khan cả giọng vẫn như xưa,\\
+Chuông reo mắt vẫn chưa thèm mở,\\
+Bạn gọi ba lần mới dạ thưa.
+}{%
+\textit{The class falls quiet as the teacher speaks,}\\
+\textit{His voice falls soft as summer rain on peaks,}\\
+\textit{Your eyelids slowly, gently fold themselves---}\\
+\textit{You sleep so well from morning till noon peaks.}
+}
+
+\baitho{Bài 2 — Cuốn Vở Vô Nhiễm}{%
+Vở mới đầu năm trắng tựa mây,\\
+Thầy xem từng lá ngỡ còn ngây,\\
+Mực nằm nguyên ống chưa hề đụng,\\
+Công phu giữ vở sạch đôi tay.
+}{%
+\textit{The semester notebook white as cloud,}\\
+\textit{Teacher turns each blank page aloud,}\\
+\textit{``Why isn't a single word written here?''}\\
+\textit{``I wrote it in my heart---no hand allowed.''}
+}
+
+\baitho{Bài 3 — Bài Tập Vắng Mặt}{%
+Chiều xuống bài kia vẫn để bàn,\\
+Sáng vào thầy hỏi cứ than van,\\
+Miệng rằng tối trước bèn lo ngủ,\\
+Tay không mà nói chuyện chăm ngoan.
+}{%
+\textit{Homework once again left undone overnight,}\\
+\textit{To class next morning, casual and bright,}\\
+\textit{Teacher asks: ``Where is it? Show me now.''}\\
+\textit{``I forgot, teacher—it's beyond my might.''}
+}
+
+\baitho{Bài 4 — Chuyên Gia Đi Trễ}{%
+Cổng mở riêng em đến muộn hoài,\\
+Bạn đợi ghi tên mãi chán hoài,\\
+Cờ đỏ hôm nay vừa đứng đợi,\\
+Em cười xin lỗi chuyện như hoài.
+}{%
+\textit{Fifteen minutes late, you stroll in slow,}\\
+\textit{The whole class turns, teacher lets it show,}\\
+\textit{``Late again---what is your reason this time?''}\\
+\textit{``Bike broke, traffic---plus the rain, you know.''}
+}
+
+\baitho{Bài 5 — Nghệ Thuật Chép Bài}{%
+Mắt liếc bài bên chép rất nhanh,\\
+Tay run mà viết vẫn còn nhanh,\\
+Nào hay bạn cũng lo khoanh đại,\\
+Hai bài chung điểm đẹp như tranh.
+}{%
+\textit{Exam time---eyes dart quickly to the right,}\\
+\textit{Neighbor's paper copied in plain sight,}\\
+\textit{Paper returned: subject failed outright---}\\
+\textit{Turns out the neighbor was in the same plight.}
+}
+
+\baitho{Bài 6 — Đoán Mò Chuyên Nghiệp}{%
+Đề khó em ngồi đoán vận may,\\
+Ba lần khoanh bậy vẫn mong may,\\
+Thầy chấm mới hay toàn lệch hướng,\\
+Mà em vẫn tưởng số mình hay.
+}{%
+\textit{Staring at the paper, clueless still,}\\
+\textit{Circle C and walk out with a thrill,}\\
+\textit{Lucky today---three questions right:}\\
+\textit{``You see, I'm clever and I test with skill.''}
+}
+
+\baitho{Bài 7 — Muôn Kiểu Lý Do}{%
+Thầy hỏi vì sao chưa nộp bài,\\
+Em thưa mưa gió suốt canh dài,\\
+Rồi thêm chó cắn cùng xe hỏng,\\
+Lý do chồng chất kín trang khai.
+}{%
+\textit{Homework undone, teacher digs for truth,}\\
+\textit{Student stands up: ``Sir, the rain---forsooth,}\\
+\textit{Power cut, bike broke, and the dog bit me---''}\\
+\textit{Teacher marks zero. No further sleuth.}
+}
+
+\baitho{Bài 8 — Sự Tự Tin Bất Bại}{%
+Mặt sáng em lên đáp tỉnh bơ,\\
+Sai từ đầu cuối vẫn như mơ,\\
+Thầy hỏi có cần xem lại chứ,\\
+Em rằng con chắc đến không ngờ.
+}{%
+\textit{Stand up to answer, face all bright and clear,}\\
+\textit{Every word wrong from there to here,}\\
+\textit{Teacher: ``Are you sure about all this?''}\\
+\textit{``Yes sir, completely sure---have no fear.''}
+}
+
+\baitho{Bài 9 — Xin Ra Ngoài Giữa Giờ Thi}{%
+Giữa buổi em xin bước vội ra,\\
+Thầy ngờ ngoài ấy lắm chiêu ma,\\
+Hỏi kỹ mới hay cần xem lại,\\
+Bài còn chưa kín nửa trang ra.
+}{%
+\textit{Mid-exam, requesting leave to step out,}\\
+\textit{Teacher studies your face with a doubt,}\\
+\textit{``Finish the test first---then you may go---''}\\
+\textit{``I need to review something, just a sprout.''}
+}
+
+\baitho{Bài 10 — Điện Thoại Bạn Tâm Giao}{%
+Trong lớp tay em lướt mãi thôi,\\
+Lời thầy bay nhẹ phía xa thôi,\\
+Bạn gọi trả bài em mới ngẩng,\\
+Màn hình tri kỷ thế là thôi.
+}{%
+\textit{In class the phone is swiped along and long,}\\
+\textit{Teacher lectures up front; student types a song,}\\
+\textit{The teacher's voice drifts faint as passing wind,}\\
+\textit{But the phone stays closer than where you belong.}
+}
+
+%------------------------------------------------------------
+\section{Bộ II — Điểm Số, Kỳ Thi Và Những Sự Thật Không Vui (Bài 11–18)}
+%------------------------------------------------------------
+
+\baitho{Bài 11 — Đêm Trước Kỳ Thi}{%
+Khuya xuống em khui sách vội ra,\\
+Năm trang chưa hết lệch canh qua,\\
+Sáng tới phòng thi đành khoanh bừa,\\
+Ra về an ủi cũng tà tà.
+}{%
+\textit{The night before the test, books flung wide,}\\
+\textit{Five minutes reading---then asleep inside,}\\
+\textit{Morning: exam hall, guessing all around---}\\
+\textit{Two point five. A long and sorry ride.}
+}
+
+\baitho{Bài 12 — Bảng Điểm Học Kỳ}{%
+Bảng điểm đưa về lạnh cả tay,\\
+Mẹ xem một lượt mắt sa ngay,\\
+Lời phê cố gắng nghe quen quá,\\
+Hóa ra tai họa kín trang này.
+}{%
+\textit{The semester report arrives at home,}\\
+\textit{Mom takes one look---face turns to stone,}\\
+\textit{Teacher's note: ``Must try harder next time''---}\\
+\textit{Translation: ``A disaster fully grown.''}
+}
+
+\baitho{Bài 13 — Giơ Tay Không Hay}{%
+Vừa hỏi em giơ thẳng cánh tay,\\
+Cả bàn quay ngó tưởng em hay,\\
+Đến lượt mở lời bèn bí mặt,\\
+Miệng cười xin lỗi, lỡ tay này.
+}{%
+\textit{Teacher asks the class---who knows this one?}\\
+\textit{Your hand shoots up, tall under the sun,}\\
+\textit{``Go ahead then---what is your answer?''}\\
+\textit{``I... don't know, sir. Sorry. It's done.''}
+}
+
+\baitho{Bài 14 — Sức Chịu Đựng Của Thầy}{%
+Ba chục năm thầy đứng bục đây,\\
+Gặp em mới biết nản là đây,\\
+Bao điều giảng dạy đều trao hết,\\
+Em đem nguyên vẹn trả thầy đây.
+}{%
+\textit{Thirty years of teaching at the board,}\\
+\textit{Never imagined such reward,}\\
+\textit{All the knowledge passed and handed down---}\\
+\textit{You've handed every bit back, fully stored.}
+}
+
+\baitho{Bài 15 — Phóng Ra Khi Tan Học}{%
+Trống mới vừa rung cửa đã nhanh,\\
+Em lao như gió xuống sân nhanh,\\
+Giá mà giờ học nhanh như thế,\\
+Tên trường phen ấy hẳn vang danh.
+}{%
+\textit{The bell has barely finished its last ring,}\\
+\textit{You've shot through the door in a flash of wing,}\\
+\textit{If that speed applied to your studying---}\\
+\textit{This school would find fame is a certain thing.}
+}
+
+\baitho{Bài 16 — Cảm Nhận Siêu Tốc}{%
+Sách mới chưa xem đã viết liền,\\
+Văn tuôn như suối tưởng thần tiên,\\
+Hỏi đến chi tiết thì im tiếng,\\
+Thầy xem mới biết tưởng thôi miên.
+}{%
+\textit{The literary response submitted right on time,}\\
+\textit{The source book's pages never crossed your mind,}\\
+\textit{Imagination filling every line---}\\
+\textit{Grade: three. Teacher's note: ``Please climb.''}
+}
+
+\baitho{Bài 17 — Logic Đặc Biệt}{%
+Thầy hỏi hai ba cộng mấy đây,\\
+Em ngồi cân nhắc đáp liều ngay,\\
+Sáu với tám nghe đều hợp lý,\\
+Thầy nghe muốn hỏi trí nơi này.
+}{%
+\textit{``What does two plus three equal?'' teacher says,}\\
+\textit{You pause, then answer in a haze:}\\
+\textit{``Six, sir---or maybe eight?'' you guess,}\\
+\textit{Teacher breathes deep and meets your gaze.}
+}
+
+\baitho{Bài 18 — Điểm Sàn Sống Còn}{%
+Toán có ba rưỡi quý hơn vàng,\\
+Văn chừng bốn điểm vẫn huy hoàng,\\
+Tính kỹ vừa qua bờ tối thiểu,\\
+Em cười: qua ải cũng huy hoàng.
+}{%
+\textit{Math score: three point five, round and neat,}\\
+\textit{Literature: four---just shy of complete,}\\
+\textit{Average calculated: barely through---}\\
+\textit{``I know exactly where to plant my feet.''}
+}
+
+%------------------------------------------------------------
+\section{Bộ III — Tương Lai, Lời Hứa Và Những Điều Thầy Chỉ Giảm Nói (Bài 19–25)}
+%------------------------------------------------------------
+
+\baitho{Bài 19 — Ước Mơ Và Điểm Sinh}{%
+Hỏi chuyện mai sau mắt sáng ghê,\\
+Em thưa mai mốt chữa người mê,\\
+Mà Sinh cùng Hóa đều hơi thấp,\\
+Thầy ngồi nghe ước cũng đê mê.
+}{%
+\textit{Teacher asks: ``What future do you see?''}\\
+\textit{``I want to be a doctor,'' says he,}\\
+\textit{Biology three, Chemistry four---}\\
+\textit{Teacher sits. Stares. Says nothing. Quietly.}
+}
+
+\baitho{Bài 20 — Lời Hứa Xuyên Học Kỳ}{%
+Cuối khóa em thưa sẽ đổi ngay,\\
+Sang kỳ sau nữa sẽ chăm ngay,\\
+Câu này thầy đã nghe ba khóa,\\
+Thầy nghe rồi gật cũng cho ngay.
+}{%
+\textit{End of year student pledges aloud,}\\
+\textit{``Next term I'll study---I'll be proud,''}\\
+\textit{Teacher's heard this three years running now---}\\
+\textit{This time just nods: ``Good. A fine vow.''}
+}
+
+\baitho{Bài 21 — Triết Lý Học Đường}{%
+Đến lớp cốt cho được thảnh thơi,\\
+Ghế êm bạn đủ để vui chơi,\\
+Kiến thức bỗng thành phần tự chọn,\\
+Thầy nghe triết lý cũng buông lơi.
+}{%
+\textit{Coming to school is really for the rest,}\\
+\textit{The chairs are cozy, friends at their best,}\\
+\textit{Knowledge is an optional add-on---}\\
+\textit{Teacher knows---and gives a weary breath.}
+}
+
+\baitho{Bài 22 — Sau Khi Thi Xong}{%
+Ra cửa em cười bảo dễ ghê,\\
+Làm xong hết sạch thật ngon ghê,\\
+Ba bữa nhận bài bèn tái mặt,\\
+Im như cất tiếng trốn đâu ghê.
+}{%
+\textit{Leaving the exam hall grinning wide,}\\
+\textit{``Easy paper---I did every side,''}\\
+\textit{Three days later: grade two point zero---}\\
+\textit{Student's face went pale. Nothing replied.}
+}
+
+\baitho{Bài 23 — Màu Mực Đỏ}{%
+Bút đỏ thầy cầm gạch nát câu,\\
+Mỗi dòng thêm một vết hằn sâu,\\
+Nhìn kỹ cứ như tranh trận mạc,\\
+Học trò ôm vở cúi thêm sầu.
+}{%
+\textit{Teacher takes the red pen, marks each line,}\\
+\textit{Each answer crossed with strokes divine,}\\
+\textit{When finished the page is entirely red---}\\
+\textit{Looks like a fallen battlefield's sign.}
+}
+
+\baitho{Bài 24 — Thầy Cất Sổ Điểm}{%
+Cuối khóa thầy xem cuốn sổ dày,\\
+Tên em chen kín tựa mây bay,\\
+Chẳng phải vì chăm nên được nhớ,\\
+Điểm nào sa thấp cũng ghi đầy.
+}{%
+\textit{Year's end---the grade book full and clear,}\\
+\textit{Your name appears on every tier,}\\
+\textit{Not because of excellence, but because I note---}\\
+\textit{``Low marks get recorded---so they don't disappear.''}
+}
+
+\baitho{Bài 25 — Lời Chia Tay Của Thầy}{%
+Cuối buổi em lên nhận lời chào,\\
+Thầy nhìn mà dạ chợt nao nao,\\
+Ra đời nhớ bớt trò ngơ ngác,\\
+Ngoài kia đâu dễ có ai chào.
+}{%
+\textit{Year's end---student comes up for the diploma,}\\
+\textit{Teacher looks on with a pathos comma,}\\
+\textit{``Remember: out there life is different---}\\
+\textit{No one will have my patience. Not one iota.''}
+}
+
+%------------------------------------------------------------
+\section{Bộ IV — Chân Dung Gen Z Giữa Giờ Học (Bài 26–44)}
+%------------------------------------------------------------
+
+\baitho{Bài 26 — Nhà Khí Tượng Học Tương Lai}{%
+Mắt em dán chặt phía trời mây,\\
+Gió đổi chim nghiêng biết đủ ngay,\\
+Đạo hàm trên bảng vừa sang bước,\\
+Riêng em còn mải đo tầng bay.
+}{%
+\textit{Your eyes stay fixed upon the sky,}\\
+\textit{You track the wind and birds that fly,}\\
+\textit{The derivative has moved three steps ahead,}\\
+\textit{But you are still measuring cloud height nearby.}
+}
+
+\baitho{Bài 27 — Bức Tượng Điêu Khắc Đương Đại}{%
+Tay em giữ bút vững như bàn,\\
+Mắt nhìn trang giấy rất đàng hoàng,\\
+Suốt tiết không thêm dòng mực mới,\\
+Tượng này trưng bày thật huy hoàng.
+}{%
+\textit{Your hand holds fast the pen in place,}\\
+\textit{Your gaze upon the page with grace,}\\
+\textit{Yet through the hour no ink appears,}\\
+\textit{A modern statue fit for display space.}
+}
+
+\baitho{Bài 28 — Chuyên Gia Kiểm Định Mặt Bàn}{%
+Má em áp xuống mặt bàn đây,\\
+Đo độ nhẵn mịn rất hăng say,\\
+Nhịp thở điều hòa như máy chạy,\\
+Cả lớp nhờ em thấy yên ngay.
+}{%
+\textit{Your cheek rests on the desk so flat,}\\
+\textit{Inspecting smoothness where it sat,}\\
+\textit{Your breathing hums like measured gears,}\\
+\textit{The whole room calms because of that.}
+}
+
+\baitho{Bài 29 — Bậc Thầy Mật Mã Học}{%
+Chữ em bay múa tựa rồng quanh,\\
+Người xem nhìn kỹ vẫn chưa rành,\\
+Cả máy lẫn thầy cùng bó trí,\\
+Bài này giải mã thật mong manh.
+}{%
+\textit{Your script goes flying, curling wide,}\\
+\textit{The reader stares and still can't decide,}\\
+\textit{Both machine and teacher lose their way,}\\
+\textit{This code resists all minds applied.}
+}
+
+\baitho{Bài 30 — Camera Chạy Bằng Niềm Tin}{%
+Bảng đầy công thức vẫn ngồi yên,\\
+Em tin đầu nhớ hết như in,\\
+Vở bút xem ra là đồ phụ,\\
+Đến lúc kiểm tra mới lộ pin.
+}{%
+\textit{The board is full, yet still you stay,}\\
+\textit{Believing memory saves the day,}\\
+\textit{Notebook and pen seem low-tech tools,}\\
+\textit{Till test time shows the battery gave way.}
+}
+
+\baitho{Bài 31 — Thiền Sư Đắc Đạo}{%
+Thân em còn ở hệ Oxyz,\\
+Hồn em trà sữa phía bên kia,\\
+Thầy đang gọi tới tên ba bận,\\
+Mặt em vẫn sáng vẻ từ bi.
+}{%
+\textit{Your body sits in XYZ space,}\\
+\textit{Your soul has left for milk-tea place,}\\
+\textit{I call your name a third full time,}\\
+\textit{Still mercy shines across your face.}
+}
+
+\baitho{Bài 32 — Hacker Bẻ Khóa Thời Gian}{%
+Mắt em liếc mãi mặt đồng hồ,\\
+Từng giây từng phút tính rất to,\\
+Chuông nghỉ tiệm cận gần vô hạn,\\
+Riêng bài trên lớp chẳng thèm đo.
+}{%
+\textit{Your eyes keep scanning every hand,}\\
+\textit{Each second timed as you had planned,}\\
+\textit{Recess asymptotically draws near,}\\
+\textit{But not the lesson you should understand.}
+}
+
+\baitho{Bài 33 — Đại Sứ Thiện Chí}{%
+Thầy giảng câu nào em gật ngay,\\
+Ánh nhìn rực rỡ đến mê say,\\
+Gọi lên bảng mới hay tín hiệu,\\
+Mất luôn kết nối giữa ban ngày.
+}{%
+\textit{Each line I teach receives your nod,}\\
+\textit{Your glowing eyes could honor God,}\\
+\textit{But at the board the signal drops,}\\
+\textit{Connection lost in daylight odd.}
+}
+
+\baitho{Bài 34 — Nhà Thám Hiểm Vĩ Đại}{%
+Xin phép ra ngoài bước rất nhanh,\\
+Ba vòng sân rộng vẫn loanh quanh,\\
+Tọa độ lớp xưa tìm chưa thấy,\\
+Đường về hóa khó tựa rừng xanh.
+}{%
+\textit{You leave the room with rapid feet,}\\
+\textit{Three laps around the yard complete,}\\
+\textit{Yet still the classroom coordinates hide,}\\
+\textit{As if the path home won't be neat.}
+}
+
+\baitho{Bài 35 — Thiên Sứ Ngây Thơ}{%
+Quay ngang quay dọc cổ nghiêng rồi,\\
+Tên em vừa nhắc mắt nai thôi,\\
+``Con có làm chi đâu hả thầy?''\\
+Oan này em giữ đến trọn đời.
+}{%
+\textit{Your neck turns left and right with ease,}\\
+\textit{One call and fawn-eyes aim to please,}\\
+\textit{`What did I do at all, dear sir?'}\\
+\textit{That innocence could outlive centuries.}
+}
+
+\baitho{Bài 36 — Tổ Buôn Xuyên Quốc Gia}{%
+Miệng em đàm phán rất chuyên cần,\\
+Âm thanh vừa đủ lọt tai gần,\\
+Quên mất giáo viên là trạm sóng,\\
+Bắt luôn tần số giữa bao lần.
+}{%
+\textit{Your lips negotiate with care,}\\
+\textit{A whisper tuned for just one ear,}\\
+\textit{Forgetting teachers are radar towers,}\\
+\textit{Receiving all your signals clear.}
+}
+
+\baitho{Bài 37 — Người Theo Chủ Nghĩa Tối Giản}{%
+Đến lớp tay không dáng rất sang,\\
+Một cười một thở đủ hành trang,\\
+Máy tính sách vở xin từ chối,\\
+Để não tự rèn giữa khó khăn.
+}{%
+\textit{You come to class with empty hands,}\\
+\textit{A smile alone as all your plans,}\\
+\textit{Calculator, books politely refused,}\\
+\textit{To train the brain through harsher lands.}
+}
+
+\baitho{Bài 38 — Ninja Tàng Hình}{%
+Giờ gọi bài em cúi góc vuông,\\
+Đầu chạm mặt bàn rất đúng đường,\\
+Tưởng thế thầy không còn thấy nữa,\\
+Ai ngờ radar quét như thường.
+}{%
+\textit{At question time you bend just right,}\\
+\textit{A perfect ninety-degree sight,}\\
+\textit{You think that makes you disappear,}\\
+\textit{Yet teacher-radar still locks bright.}
+}
+
+\baitho{Bài 39 — Nhà Ảo Thuật Thực Phẩm}{%
+Tay em giấu bánh lẹ hơn chớp,\\
+Môi nhai bình thản tựa hồ thu,\\
+Trong miệng cả ổ còn đông đúc,\\
+Ngoài mặt không ai thấy một xu.
+}{%
+\textit{Your snack vanishes fast as light,}\\
+\textit{Your chewing face stays calm and bright,}\\
+\textit{A whole small feast remains inside,}\\
+\textit{Outside, no motion comes in sight.}
+}
+
+\baitho{Bài 40 — Nhà Đầu Tư Mạo Hiểm}{%
+Điều em quan trọng chỉ là thi,\\
+Kiến thức sinh lời mới chịu ghi,\\
+Phần mở rộng xem như đầu lỗ,\\
+Thầy nghe kinh tế quá ly kỳ.
+}{%
+\textit{You only prize what may be tested,}\\
+\textit{Knowledge with profit gets invested,}\\
+\textit{All broader thought is marked a loss,}\\
+\textit{Your market logic is impressive, if contested.}
+}
+
+\baitho{Bài 41 — Chuyên Gia Kiểm Toán Độc Lập}{%
+Thầy vừa dứt ý, em quay ngang,\\
+Hỏi bạn kiểm tra lại rõ ràng,\\
+Dữ liệu phải qua khâu đối chiếu,\\
+Rồi em mới chịu tỏ an toàn.
+}{%
+\textit{The moment teacher's sentence ends,}\\
+\textit{You audit it through neighboring friends,}\\
+\textit{All data must be cross-checked twice,}\\
+\textit{Before your trust at last extends.}
+}
+
+\baitho{Bài 42 — Họa Sĩ Trường Phái Siêu Thực}{%
+Sách em không đọc, chỉ đem vẽ,\\
+Râu thêm cho tượng rất say mê,\\
+Hình chóp bên trang thành siêu nhân,\\
+Manga chen kín cả lời thề.
+}{%
+\textit{Your textbook is not read but drawn,}\\
+\textit{Great mustaches bloom on portraits worn,}\\
+\textit{A pyramid becomes a superhero,}\\
+\textit{And manga crowds each academic dawn.}
+}
+
+\baitho{Bài 43 — Nhà Vật Lý Học Thực Nghiệm}{%
+Cứ năm phút lại rớt cây bút,\\
+Newton nghe chắc cũng gật gù,\\
+Cúi xuống gầm bàn lâu hơn mức,\\
+Nhặt xong thêm được mấy tin thu.
+}{%
+\textit{Each five minutes a pen must fall,}\\
+\textit{Even Newton would approve it all,}\\
+\textit{You stay beneath the desk too long,}\\
+\textit{Returning with fresh texts from the crawl.}
+}
+
+\baitho{Bài 44 — Vận Động Viên Phút Tám Mươi Chín}{%
+Chuông sắp reo rồi mới chạy lên,\\
+Giấy thi tên tuổi viết cho bền,\\
+Thân thủ nộp bài nhanh như gió,\\
+Nội dung thì nhẹ tựa mây hiền.
+}{%
+\textit{The bell is near when you finally run,}\\
+\textit{Your name alone is fully done,}\\
+\textit{Submission speed arrives like wind,}\\
+\textit{While the content weighs less than the sun.}
+}
+
+%------------------------------------------------------------
+\section{Bộ V — Mơ Mộng, Cửa Sổ Và Hồn Lìa Khỏi Xác (Bài 45–56)}
+%------------------------------------------------------------
+
+\baitho{Bài 45 — Mắt Trôi Theo Áng Mây}{%
+Mắt em neo tận cuối trời mây,\\
+Thầy đưa đạo hàm lướt qua đây,\\
+Trang vở còn nguyên màu trắng mới,\\
+Tâm hồn thì đã đuổi chim bay.
+}{%
+\textit{Your eyes are anchored to the sky,}\\
+\textit{While derivatives drift softly by,}\\
+\textit{The notebook keeps its spotless white,}\\
+\textit{Your soul has chased the birds on high.}
+}
+
+\baitho{Bài 46 — Cửa Sổ Là Quê Hương}{%
+Cửa sổ là nơi mắt ở yên,\\
+Bảng đen đứng đó hóa vô duyên,\\
+Ngoài sân một lá rơi còn quý,\\
+Hơn cả lời thầy giảng triền miên.
+}{%
+\textit{The window is where your eyes stay home,}\\
+\textit{The blackboard fades into a distant dome,}\\
+\textit{One falling leaf outside seems dearer far,}\\
+\textit{Than all the lessons through which I roam.}
+}
+
+\baitho{Bài 47 — Linh Hồn Ở Quán Trà Sữa}{%
+Thân ngồi đúng ghế rất chăm chi,\\
+Hồn ở trà sữa tận hướng kia,\\
+Thầy gọi ba lần không trở lại,\\
+Chỉ còn ánh mắt rất từ bi.
+}{%
+\textit{Your body stays seated, proper and still,}\\
+\textit{Your soul is at milk tea beyond the hill,}\\
+\textit{I call you three times with no return,}\\
+\textit{Only a merciful gaze remains at will.}
+}
+
+\baitho{Bài 48 — Bài Giảng Đi Qua Như Gió}{%
+Lời thầy đi nhẹ tựa làn gió,\\
+Qua tai em khẽ chẳng lưu gì,\\
+Chỉ có khung trời ngoài ô kính,\\
+Ở lại trong đầu rất diệu kỳ.
+}{%
+\textit{My lesson passes like a breeze,}\\
+\textit{Through your ears with effortless ease,}\\
+\textit{Only the sky beyond the glass,}\\
+\textit{Stays in your mind with mysteries.}
+}
+
+\baitho{Bài 49 — Thầy Giảng, Em Xem Mây}{%
+Thầy giảng phương trình rất đủ đầy,\\
+Em nghe bằng mắt phía hàng cây,\\
+Mỗi cụm mây trôi là một chuyện,\\
+Còn x thì mất hút từ đây.
+}{%
+\textit{I teach equations line by line,}\\
+\textit{You listen through the trees outside,}\\
+\textit{Each cloud becomes another tale,}\\
+\textit{While x is nowhere to be found nearby.}
+}
+
+\baitho{Bài 50 — Chuông Chưa Reo Tâm Đã Đứng}{%
+Chuông chưa vang mà dạ đã bâng,\\
+Mắt em nhìn cửa hóa lâng lâng,\\
+Ví dụ thầy còn dang nửa bước,\\
+Riêng em tan học tự bao lần.
+}{%
+\textit{The bell is mute, yet your heart has flown,}\\
+\textit{Your eyes drift doorward on their own,}\\
+\textit{My example stands half-built on board,}\\
+\textit{But you have left class many times alone.}
+}
+
+\baitho{Bài 51 — Ngoài Kia Có Một Con Chim}{%
+Ngoài kia có chú chim vừa sang,\\
+Em theo quỹ đạo rất đàng hoàng,\\
+Trong lớp định lý đang rơi rụng,\\
+Mà em còn bận tính đôi cánh.
+}{%
+\textit{A small bird passes out of sight,}\\
+\textit{You track its pathway with delight,}\\
+\textit{Inside, the theorem falls apart,}\\
+\textit{While you still calculate its flight.}
+}
+
+\baitho{Bài 52 — Bảng Đen Thua Trời Xanh}{%
+Trời xanh một mảng quá nên thơ,\\
+Bảng đen bên cạnh bỗng bơ vơ,\\
+Phấn trắng thầy đi qua mấy lượt,\\
+Không bằng mây trắng phía bên bờ.
+}{%
+\textit{The blue sky forms a verse so wide,}\\
+\textit{The blackboard wilts there by its side,}\\
+\textit{My chalk moves over line on line,}\\
+\textit{Yet clouds still win your inward guide.}
+}
+
+\baitho{Bài 53 — Đạo Hàm Thua Một Cơn Gió}{%
+Đạo hàm vừa tới đoạn then chốt,\\
+Ngoài hiên cơn gió lướt qua mau,\\
+Em chọn theo chiều nghiêng lá nhỏ,\\
+Mặc thầy xoay đủ phép trước sau.
+}{%
+\textit{The derivative reaches its key turn,}\\
+\textit{A breeze outside begins to burn,}\\
+\textit{You choose the angle of one leaf,}\\
+\textit{While all my methods twist and churn.}
+}
+
+\baitho{Bài 54 — Oxyz Và Cõi Mộng}{%
+Thân em định vị ở bàn ba,\\
+Hồn em chưa chắc thuộc nơi ta,\\
+Trong hệ Oxyz còn đủ,\\
+Ngoài hệ thì em đã đi xa.
+}{%
+\textit{Your body maps to row three there,}\\
+\textit{Your soul belongs to who knows where,}\\
+\textit{In XYZ you still exist,}\\
+\textit{Beyond that frame you thin to air.}
+}
+
+\baitho{Bài 55 — Vừa Gật Vừa Bay Xa}{%
+Thầy nói câu nào em gật đây,\\
+Trông như hiểu hết chuyện hôm nay,\\
+Đến khi hỏi lại phần vừa giảng,\\
+Mới hay đầu óc ở trên mây.
+}{%
+\textit{You nod at every point I say,}\\
+\textit{As though you grasped the whole display,}\\
+\textit{Then one small question brings the truth:}\\
+\textit{Your mind has floated far away.}
+}
+
+\baitho{Bài 56 — Nghe Giảng Bằng Tâm Linh}{%
+Em nghe bài giảng rất mơ hồ,\\
+Như nghe qua sóng của hư vô,\\
+Hỏi ra mới biết điều em giữ,\\
+Là mùi nắng mới cạnh khung ô.
+}{%
+\textit{You hear the lesson dim and thin,}\\
+\textit{As if through waves of air and wind,}\\
+\textit{Asked what remained, you kept just this:}\\
+\textit{Fresh sunlight by the window frame within.}
+}
+
+%------------------------------------------------------------
+\section{Bộ VI — Lười Chép, Canh Chuông, Xin Ra Ngoài, Nói Chuyện Riêng (Bài 57–68)}
+%------------------------------------------------------------
+
+\baitho{Bài 57 — Lười Chép Bài}{%
+Thầy ghi kín bảng em ngồi yên,\\
+Mắt trông chăm chú vẻ như hiền,\\
+Đến khi thu vở toàn trang trắng,\\
+Công phu giữ giấy đẹp như tiên.
+}{%
+\textit{The board is full while you stay still,}\\
+\textit{Your face looks gentle, calm, and chill,}\\
+\textit{But when notebooks must be turned in,}\\
+\textit{Your page stays pure with saintly skill.}
+}
+
+\baitho{Bài 58 — Canh Đồng Hồ}{%
+Mắt em gửi trọn ở canh giờ,\\
+Từng phút trôi qua vẫn ngóng chờ,\\
+Bài trên bảng vẫn còn dang dở,\\
+Riêng lòng tan học đã từ giờ.
+}{%
+\textit{Your eyes belong to watching time,}\\
+\textit{Each minute passes like a chime,}\\
+\textit{The lesson on the board's half-done,}\\
+\textit{But in your heart class ends on time.}
+}
+
+\baitho{Bài 59 — Xin Ra Ngoài}{%
+Vừa làm hai chữ đã xin ra,\\
+Nói rằng cần gió mới tỉnh mà,\\
+Ngoài lớp ba vòng chưa thấy bóng,\\
+Tìm đường về lại khó sao ta.
+}{%
+\textit{Two words are written, then you leave,}\\
+\textit{Fresh air, you say, you must receive,}\\
+\textit{Three loops outside and still no sign,}\\
+\textit{As though returning were hard to achieve.}
+}
+
+\baitho{Bài 60 — Nói Chuyện Riêng}{%
+Miệng em đàm đạo rất chuyên cần,\\
+Âm lượng vừa đủ lọt tai gần,\\
+Thầy bước xuống hàng câu chưa dứt,\\
+Cả vùng im bặt rộng vô ngần.
+}{%
+\textit{Your lips conduct private debate,}\\
+\textit{At just the volume friendship rates,}\\
+\textit{One teacher step down the aisle arrives,}\\
+\textit{And silence fills a boundless state.}
+}
+
+\baitho{Bài 61 — Ghi Tiêu Đề Rồi Nghỉ}{%
+Tiêu đề em viết rất vuông ngay,\\
+Canh lề kẻ cột thẳng hàng ngay,\\
+Xong phần mở cửa cho tri thức,\\
+Rồi em khép bút nghỉ từ đây.
+}{%
+\textit{The title's neat and perfectly aligned,}\\
+\textit{Margins and columns sharply lined,}\\
+\textit{The door to knowledge has been opened,}\\
+\textit{Then you put down the pen, content in mind.}
+}
+
+\baitho{Bài 62 — Phần Này Có Thi Không}{%
+Thầy vừa mở rộng thêm đôi lời,\\
+Em hỏi thi không hỏi nữa thôi,\\
+Kiến thức nếu không ra đề thật,\\
+Trong tim đầu tư cũng lỏng rồi.
+}{%
+\textit{I start to broaden one idea,}\\
+\textit{You ask if it will still appear,}\\
+\textit{If no exam will test the point,}\\
+\textit{Your learning budget disappears.}
+}
+
+\baitho{Bài 63 — Chuông Reo Hồi Sinh}{%
+Nửa tiết em như kẻ ngủ quên,\\
+Chuông reo lập tức mắt bừng lên,\\
+Thầy đang kết luận câu quan trọng,\\
+Riêng em sinh khí dậy ngay liền.
+}{%
+\textit{Half the class you seem half-asleep,}\\
+\textit{One bell and life returns in leaps,}\\
+\textit{I am concluding the key point now,}\\
+\textit{While your whole spirit wakes from deep.}
+}
+
+\baitho{Bài 64 — Vở Mới Qua Tháng Chín}{%
+Tháng chín trang đầu vẫn mới nguyên,\\
+Thầy xem cứ ngỡ sách thần tiên,\\
+Bao mùa kiểm tra đi qua hết,\\
+Vở em thanh sạch đến vô biên.
+}{%
+\textit{September's page is fresh and white,}\\
+\textit{Teacher beholds a magic sight,}\\
+\textit{Though many tests have come and gone,}\\
+\textit{Your notebook stays in spotless light.}
+}
+
+\baitho{Bài 65 — Kiểm Toán Bạn Cùng Bàn}{%
+Thầy vừa dứt ý em quay ngang,\\
+Hỏi bạn xác minh thật rõ ràng,\\
+Lời giảng muốn qua khâu kiểm toán,\\
+Rồi em mới chịu chép đàng hoàng.
+}{%
+\textit{The moment teacher's sentence lands,}\\
+\textit{You audit it through nearby friends,}\\
+\textit{The lesson must survive review,}\\
+\textit{Before your note-taking truly begins.}
+}
+
+\baitho{Bài 66 — Tay Không Bắt Giặc}{%
+Tay không đến lớp dáng như mơ,\\
+Một cười một thở đủ ngây ngơ,\\
+Sách vở máy tính xin từ chối,\\
+Để đầu tự luyện giữa cơn mơ.
+}{%
+\textit{Empty-handed, dreamlike, in you glide,}\\
+\textit{With only smile and breath beside,}\\
+\textit{Books and calculators are declined,}\\
+\textit{So the brain may train through inner tide.}
+}
+
+\baitho{Bài 67 — Mượn Bút Để Ngắm}{%
+Vào lớp quên bút lẫn quên vở,\\
+Mượn bạn một vòng vẻ ngẩn ngơ,\\
+Đến lúc cầm xong thì chỉ ngắm,\\
+Dụng cụ về tay vẫn để chờ.
+}{%
+\textit{You enter having lost both pen and page,}\\
+\textit{Borrowing tools with puzzled stage,}\\
+\textit{Yet once they're yours, you merely stare,}\\
+\textit{As if the tools await a later age.}
+}
+
+\baitho{Bài 68 — Nộp Vở Cuối Giờ}{%
+Cuối tiết em đem vở nộp lên,\\
+Ngoài bìa ngay ngắn tựa thần tiên,\\
+Mở ra cả lớp nghe trang thở,\\
+Bên trong thanh sạch đến vô biên.
+}{%
+\textit{At period's end your notebook rises high,}\\
+\textit{Its cover neat enough to charm the eye,}\\
+\textit{Opened, the pages breathe out empty air,}\\
+\textit{Within, a spotless universe lies by.}
+}
+
+%------------------------------------------------------------
+\section{Bộ VII — Nhịp Lớp Học Theo Mẫu Luật Cố Định (Bài 69–80)}
+%------------------------------------------------------------
+
+\baitho{Bài 69 — Không Chép Mà Vẫn Tin}{%
+Thầy ghi kín bảng, bút nằm yên,\\
+Em tin trí nhớ mạnh vô biên,\\
+Hỏi sao trang vở trắng tinh vậy,\\
+Em cười: dữ liệu ngủ bình yên.
+}{%
+\textit{The board is filled; your pen stays still,}\\
+\textit{You trust your memory has the skill,}\\
+\textit{Asked why the page remains so white,}\\
+\textit{You smile: the data sleeps at will.}
+}
+
+\baitho{Bài 70 — Cửa Sổ Mời Gọi}{%
+Ngoài kia mây trắng kéo em bay,\\
+Trong lớp phương trình vẫn phủ đầy,\\
+Thầy xoay đủ phép tìm giao điểm,\\
+Riêng em còn đuổi cánh chim bay.
+}{%
+\textit{White clouds outside pull you away,}\\
+\textit{While equations cover class all day,}\\
+\textit{I turn through methods to find the point,}\\
+\textit{Yet you still chase the birds at play.}
+}
+
+\baitho{Bài 71 — Chuông Là Chân Lý}{%
+Mắt em canh chuông chẳng nghỉ ngơi,\\
+Thầy đưa ví dụ vẫn chưa vơi,\\
+Phấn trắng chưa dừng nơi kết luận,\\
+Riêng lòng tan học đến nơi rồi.
+}{%
+\textit{Your eyes keep watch and never rest,}\\
+\textit{Though my example is not finished yet,}\\
+\textit{The chalk has not reached its conclusion,}\\
+\textit{But in your heart dismissal has been set.}
+}
+
+\baitho{Bài 72 — Xin Ra Rồi Quên Lối}{%
+Xin phép ra ngoài bởi khát khô,\\
+Ba vòng sân rộng vẫn quanh co,\\
+Cửa lớp ngay đây sao chưa thấy,\\
+Hay em lạc giữa cõi học trò.
+}{%
+\textit{You ask to leave because you're dry,}\\
+\textit{Three loops around the yard go by,}\\
+\textit{The classroom door is somehow lost,}\\
+\textit{As if in student realms you lie.}
+}
+
+\baitho{Bài 73 — Hội Nghị Bàn Bên}{%
+Bàn bên hội họp thật râm ran,\\
+Khẩu hình em chạy suốt cung đàn,\\
+Thầy bước xuống hàng câu chưa dứt,\\
+Không gian bỗng hóa cõi im an.
+}{%
+\textit{The desk beside becomes a fair,}\\
+\textit{Your lips keep sending signals there,}\\
+\textit{One step I take down through the rows,}\\
+\textit{And peace falls wide across the air.}
+}
+
+\baitho{Bài 74 — Gật Đầu Rất Có Tâm}{%
+Thầy nói câu nào em gật đều,\\
+Ánh nhìn long lanh rất mỹ miều,\\
+Gọi tới bảng đen thì đứng lặng,\\
+Hóa ra tín hiệu mất từ chiều.
+}{%
+\textit{At every point you nod in tune,}\\
+\textit{Your shining eyes could light the room,}\\
+\textit{Then at the board you freeze outright,}\\
+\textit{The signal having died too soon.}
+}
+
+\baitho{Bài 75 — Vở Trắng Cuối Tuần}{%
+Cuối tuần thầy hỏi vở đâu em,\\
+Em mở nhẹ nhàng trắng dịu êm,\\
+Bao nhiêu bài cũ như chưa ghé,\\
+Một vùng thanh tịnh đến im êm.
+}{%
+\textit{Week's end, I ask to see your page,}\\
+\textit{You open it with tranquil grace,}\\
+\textit{Old lessons seem to never land,}\\
+\textit{A peaceful blankness fills the space.}
+}
+
+\baitho{Bài 76 — Điện Thoại Trong Ngăn}{%
+Ngăn bàn cất máy rất im hơi,\\
+Tay em thỉnh thoảng vẫn tìm chơi,\\
+Thầy hỏi công thức vừa đâu nhỉ,\\
+Màn hình trong bóng sáng hơn đời.
+}{%
+\textit{The phone lies hidden out of view,}\\
+\textit{Yet your hand visits it anew,}\\
+\textit{I ask what formula we just used,}\\
+\textit{The screen shines brighter than truth to you.}
+}
+
+\baitho{Bài 77 — Mượn Nước Ba Vòng Sân}{%
+Xin nước vừa xong đã bước ra,\\
+Sân trường bỗng hóa chốn bao la,\\
+Thầy điểm danh rồi em chưa tới,\\
+Ba vòng vẫn tưởng mới rời xa.
+}{%
+\textit{You leave for water, quick and light,}\\
+\textit{The schoolyard grows to endless sight,}\\
+\textit{Attendance passes, still no sign,}\\
+\textit{Three laps feel like the start of flight.}
+}
+
+\baitho{Bài 78 — Bảng Đen Và Mây Trắng}{%
+Bảng đen đứng đó phấn còn bay,\\
+Ngoài song mây trắng lại mời bay,\\
+Một phía là bài đang mở lối,\\
+Một phía là trời níu mắt bay.
+}{%
+\textit{The board stands there with drifting chalk,}\\
+\textit{Beyond the bars white clouds now talk,}\\
+\textit{One side is lesson opening paths,}\\
+\textit{One side is sky that stops your walk.}
+}
+
+\baitho{Bài 79 — Tiêu Đề Xong Là Mệt}{%
+Tiêu đề em viết thật ngay hàng,\\
+Gạch dưới cân phân rất đàng hoàng,\\
+Xong phần mở cửa cho tri thức,\\
+Bút nằm nghỉ khỏe suốt ba hàng.
+}{%
+\textit{The title sits in perfect line,}\\
+\textit{The underline is sharply fine,}\\
+\textit{Once knowledge has been let inside,}\\
+\textit{The pen retires in restful time.}
+}
+
+\baitho{Bài 80 — Thu Vở Nghe Gió Thở}{%
+Cuối tiết thu vở cả bàn im,\\
+Thầy mở trang ra thấy lặng im,\\
+Bao chữ hẳn đang còn tập kết,\\
+Bên trong gió mát thổi êm im.
+}{%
+\textit{At period's end the notebooks wait,}\\
+\textit{I open yours to silent state,}\\
+\textit{The words, perhaps, are still in queue,}\\
+\textit{While cool winds move through empty slate.}
+}
+
+%------------------------------------------------------------
+\section{Bộ VIII — Team Chill, Team Mơ, Team Làm Việc Riêng (Bài 81–90)}
+%------------------------------------------------------------
+
+\baitho{Bài 81 — Bậc Thầy Bảo Toàn Năng Lượng}{%
+Lưng em quyết giữ thế nằm yên,\\
+Má áp mặt bàn rất dịu hiền,\\
+Một nét cầm bút còn chưa phí,\\
+Giữ tròn calo tới vô biên.
+}{%
+\textit{Your back preserves a resting state,}\\
+\textit{Your cheek meets wood in mannered grace,}\\
+\textit{Not one pen stroke is spent in vain,}\\
+\textit{You save each calorie in place.}
+}
+
+\baitho{Bài 82 — Ngủ Đông Giữa Tiết Học}{%
+Lên lớp thân em chuyển ngủ đông,\\
+Chuông chưa reo vẫn thở đều không,\\
+Thầy giảng mồ hôi rơi mấy lượt,\\
+Riêng em tịnh dưỡng rất thong dong.
+}{%
+\textit{In class your body hibernates,}\\
+\textit{Before the bell your breathing waits,}\\
+\textit{I lecture through a sweat-filled hour,}\\
+\textit{While you recover at calm rates.}
+}
+
+\baitho{Bài 83 — Nhà Quy Hoạch Mây Trời}{%
+Em đo quỹ đạo của mây bay,\\
+Lá rơi chim lượn biết liền tay,\\
+Hàm số trên bảng còn chưa khảo,\\
+Mà trời ngoài cửa đã trong tay.
+}{%
+\textit{You map the cloud and sparrow flight,}\\
+\textit{Track falling leaves with keen delight,}\\
+\textit{The function on the board unscanned,}\\
+\textit{But all the sky is in your sight.}
+}
+
+\baitho{Bài 84 — Tâm Hồn Gánh Cả Thế Gian}{%
+Mắt em xa vắng rất ưu phiền,\\
+Như gánh hòa bình khắp mọi miền,\\
+Thầy ngỡ em lo đời nhân loại,\\
+Hóa ra đang bí một câu riêng.
+}{%
+\textit{Your distant eyes are full of care,}\\
+\textit{As if world peace weighed on you there,}\\
+\textit{I thought you bore humanity's fate,}\\
+\textit{You were just stuck on one small snare.}
+}
+
+\baitho{Bài 85 — Podcast Dưới Hạ Âm}{%
+Hai em phát sóng dưới hạ âm,\\
+Môi chu rất dẻo chuyện tri âm,\\
+Toán khó ngoài kia chưa ai cứu,\\
+Drama trong lớp lại quá thâm.
+}{%
+\textit{You two broadcast below all sound,}\\
+\textit{With supple lips and whispers round,}\\
+\textit{Hard math still waits for rescue here,}\\
+\textit{But schoolyard drama knows no bound.}
+}
+
+\baitho{Bài 86 — Kênh Riêng Không Quảng Cáo}{%
+Bạn ngồi cạnh đó chính đầu thu,\\
+Tin nóng chuyền qua chẳng phút chừ,\\
+Thầy đứng trên bục như ngoài sóng,\\
+Mà bàn hai đứa vẫn vi vu.
+}{%
+\textit{Your neighbor serves as receiver bright,}\\
+\textit{Hot news streams through without respite,}\\
+\textit{I stand up front outside your wave,}\\
+\textit{While your desk hums with pure delight.}
+}
+
+\baitho{Bài 87 — Họa Sĩ Gầm Bàn}{%
+Gầm bàn là chốn nở tài hoa,\\
+Mắt lác râu rồng vẽ rất xa,\\
+Đồ thị hình không gian còn khó,\\
+Mà tranh nháp kín tựa ngân hà.
+}{%
+\textit{Beneath the desk your talents bloom,}\\
+\textit{Cross-eyes and dragon mustaches loom,}\\
+\textit{The graph and solid still seem hard,}\\
+\textit{Yet draft-page galaxies fill the room.}
+}
+
+\baitho{Bài 88 — Triển Lãm Trong Sách Giáo Khoa}{%
+Vĩ nhân trong sách được thêm râu,\\
+Nụ cười bí hiểm kéo ngang đầu,\\
+Trang nháp hóa thành nơi triển lãm,\\
+Riêng phần bài giảng lại chìm sâu.
+}{%
+\textit{Great figures in the book wear beards,}\\
+\textit{Mysterious smiles stretch ear to ear,}\\
+\textit{The draft page turns museum-wide,}\\
+\textit{While lesson notes just disappear.}
+}
+
+\baitho{Bài 89 — Thiền Định Trong Server Lớp}{%
+Mắt em vẫn mở ngó lên trên,\\
+Thân ngồi bất động rất như thiền,\\
+Thầy cô bạn học đều online,\\
+Riêng hồn em đã logout yên.
+}{%
+\textit{Your eyes stay open toward the front,}\\
+\textit{Your body sits in stillness blunt,}\\
+\textit{Teacher and friends remain online,}\\
+\textit{Your soul logged out an hour upfront.}
+}
+
+\baitho{Bài 90 — Hiện Diện Mà Vô Dụng}{%
+Em ngồi vô hại suốt canh dài,\\
+Không gây ồn ã chẳng sai ai,\\
+Chỉ tiếc tri thức đi ngang mặt,\\
+Mà em để lọt mãi không hay.
+}{%
+\textit{You sit there harmless all class long,}\\
+\textit{No noise, no chaos, nothing wrong,}\\
+\textit{Except that knowledge passes by,}\\
+\textit{And keeps escaping all along.}
+}
+
+%------------------------------------------------------------
+\section{Bộ IX — Podcast, Drama, Yêu Thầm Và Mơ Mộng (Bài 91–100)}
+%------------------------------------------------------------
+
+\baitho{Bài 91 — Podcast Giờ Toán}{%
+Giờ Toán hai đứa vẫn lên tin,\\
+Drama đầu tuần kể nhiệt tình,\\
+Parabol trên bảng vừa mở miệng,\\
+Thì crush cuối lớp lại chen hình.
+}{%
+\textit{In math class two of you go live,}\\
+\textit{Monday's drama keeps the show alive,}\\
+\textit{The parabola just starts to speak,}\\
+\textit{When a back-row crush arrives on screen inside.}
+}
+
+\baitho{Bài 92 — Tần Số Hạ Âm}{%
+Môi em chúm chím nói không ngơi,\\
+Âm rơi dưới ngưỡng tưởng không lời,\\
+Thầy nghe không rõ từng câu một,\\
+Chỉ thấy bài trôi mất nửa đời.
+}{%
+\textit{Your lips keep moving without rest,}\\
+\textit{The sound falls low beneath all tests,}\\
+\textit{I may not catch each whispered line,}\\
+\textit{But half the lesson leaves the nest.}
+}
+
+\baitho{Bài 93 — Bản Tin Bàn Hai}{%
+Bàn hai phát sóng đủ chuyên đề,\\
+Từ chuyện sân trường đến chuyện quê,\\
+Thầy giảng giới hạn còn dang dở,\\
+Hai em tổng hợp đã tràn trề.
+}{%
+\textit{Desk two broadcasts a full report,}\\
+\textit{From schoolyard news to village sort,}\\
+\textit{I teach limits in unfinished form,}\\
+\textit{You've already wrapped the social court.}
+}
+
+\baitho{Bài 94 — Làm Việc Riêng Rất Chuyên}{%
+Thầy đang triển khai ý mới đây,\\
+Em lo hoàn tất việc riêng ngay,\\
+Nào gấp giấy nháp, nào ghi mật mã,\\
+Đa nhiệm như em hiếm lắm thay.
+}{%
+\textit{I launch a fresh idea just now,}\\
+\textit{You finish private business anyhow,}\\
+\textit{Folding notes and writing secret codes,}\\
+\textit{Such multitasking earns a solemn bow.}
+}
+
+\baitho{Bài 95 — Chuyên Viên Phân Tích Crush}{%
+Đề bài chưa hiểu đã quay ngang,\\
+Phân tích crush nọ rất đàng hoàng,\\
+Tâm lý học đường em nắm chắc,\\
+Riêng phần bài giảng lại mơ màng.
+}{%
+\textit{Before the prompt is understood,}\\
+\textit{You turn to analyze a crush quite good,}\\
+\textit{Schoolyard psychology you fully grasp,}\\
+\textit{While lessons drift away like wood.}
+}
+
+\baitho{Bài 96 — Nhìn Qua Một Góc Áo}{%
+Bạn kia vừa lướt cạnh hàng ba,\\
+Mắt em theo mãi đến tận xa,\\
+Thầy gọi công thức đang cần chép,\\
+Em còn giữ bóng của người ta.
+}{%
+\textit{Someone just passed by row number three,}\\
+\textit{Your eyes keep following tenderly,}\\
+\textit{I call the formula to be copied down,}\\
+\textit{You still hold that passing silhouette privately.}
+}
+
+\baitho{Bài 97 — Yêu Thầm Trong Hệ Trục}{%
+Hệ trục hôm nay đủ bốn chiều,\\
+Một chiều bài học, một chiều yêu,\\
+Hai chiều còn lại là ngơ ngẩn,\\
+Nên điểm tọa độ cứ phiêu diêu.
+}{%
+\textit{Today's coordinate frame has four,}\\
+\textit{One axis study, one axis adore,}\\
+\textit{The others drift in dreamy haze,}\\
+\textit{So every point floats off the floor.}
+}
+
+\baitho{Bài 98 — Bài Học Và Nụ Cười}{%
+Bạn kia vừa cười một thoáng thôi,\\
+Tim em đã lệch cả quỹ rồi,\\
+Thầy giảng định lý qua ba bước,\\
+Em còn tính lại nụ cười thôi.
+}{%
+\textit{That student smiled for just a breath,}\\
+\textit{Your orbit slipped and changed its path,}\\
+\textit{I taught the theorem through three steps,}\\
+\textit{You kept recalculating that laugh.}
+}
+
+\baitho{Bài 99 — Gửi Hồn Theo Sân Trường}{%
+Giờ học mà lòng ở ngoài sân,\\
+Theo tà áo trắng rất phân vân,\\
+Thầy đưa công thức lên hàng cuối,\\
+Em đem thương nhớ xếp vào ngăn.
+}{%
+\textit{In class your heart stays in the yard,}\\
+\textit{Following white áo dài from afar,}\\
+\textit{I raise formulas to the final line,}\\
+\textit{You file your longing like a hidden star.}
+}
+
+\baitho{Bài 100 — Mơ Mộng Đúng Giờ Kiểm Tra}{%
+Đến lúc kiểm tra lại nhớ ai,\\
+Tên người còn thuộc, bài không dài,\\
+Giấy thi trắng tựa lòng đang mở,\\
+Chỉ tương tư viết trên mặt giấy.
+}{%
+\textit{At test time someone fills your mind,}\\
+\textit{Their name stays clear, the answers hide,}\\
+\textit{The paper gleams as open as your heart,}\\
+\textit{Only longing writes itself with pride.}
+}
+
+%------------------------------------------------------------
+\section{Bộ X — Crush Học Đường, Nhìn Lén Và Tên Viết Ra Nháp (Bài 101–110)}
+%------------------------------------------------------------
+
+\baitho{Bài 101 — Tên Viết Ra Nháp}{%
+Trang nháp hôm nay chẳng viết bài,\\
+Chỉ toàn tên ấy lặp đi lặp lại,\\
+Thầy nhìn cứ ngỡ em chăm lắm,\\
+Hóa ra tương tư đã kín hoài.
+}{%
+\textit{Today's rough sheet contains no work,}\\
+\textit{Just one name looping line by line,}\\
+\textit{I almost thought you studied hard,}\\
+\textit{But longing filled each hidden sign.}
+}
+
+\baitho{Bài 102 — Nhìn Lén Qua Hàng Ghế}{%
+Người kia ngồi tít phía hàng ba,\\
+Mắt em cứ lén ghé sang qua,\\
+Thầy gọi công thức vừa lên bảng,\\
+Em còn đếm nhịp mái tóc xa.
+}{%
+\textit{That student sits in row number three,}\\
+\textit{Your glance keeps wandering secretly,}\\
+\textit{I call the formula on the board,}\\
+\textit{You count the rhythm of distant hair quietly.}
+}
+
+\baitho{Bài 103 — Tương Tư Giờ Hình}{%
+Thầy dựng tam giác, vẽ đường cao,\\
+Tim em lại lệch một phương nào,\\
+Hình học hôm nay chưa ra đáp,\\
+Vì mải nhìn ai ở phía sau.
+}{%
+\textit{I draw triangles and altitude lines,}\\
+\textit{Your heart shifts off all measured signs,}\\
+\textit{Geometry finds no answer yet,}\\
+\textit{Because you're watching someone from behind.}
+}
+
+\baitho{Bài 104 — Một Nụ Cười Là Sai Số}{%
+Bạn ấy vừa cười có một phen,\\
+Lòng em sai số vượt xa biên,\\
+Thầy đang xét nghiệm miền xác định,\\
+Em thì xét lại nụ cười duyên.
+}{%
+\textit{That one brief smile was softly cast,}\\
+\textit{Your error bound shot high and vast,}\\
+\textit{I was defining domains with care,}\\
+\textit{You redefined that smile instead at last.}
+}
+
+\baitho{Bài 105 — Áo Trắng Qua Sân}{%
+Ngoài sân áo trắng lướt qua ngang,\\
+Trong lớp thầy còn giảng dở dang,\\
+Một phía là bài chưa kịp chép,\\
+Một phía là tim đã rộn ràng.
+}{%
+\textit{A white shirt drifts across the yard,}\\
+\textit{While in class I lecture long and hard,}\\
+\textit{One side is notes not copied yet,}\\
+\textit{One side your heart is beating starred.}
+}
+
+\baitho{Bài 106 — Tên Ẩn Trong Lề Vở}{%
+Lề vở hôm nay lắm nét hoa,\\
+Giữa bao đường cong giấu một nhà,\\
+Nhìn kỹ mới hay tên người ấy,\\
+Nằm chen trong chữ rất kiêu sa.
+}{%
+\textit{Today's notebook margin blooms with art,}\\
+\textit{Curves and flourishes play their part,}\\
+\textit{Look closely and one hidden name,}\\
+\textit{Is woven through with careful heart.}
+}
+
+\baitho{Bài 107 — Mơ Người Trong Giờ Văn}{%
+Giờ Văn phân tích chuyện tương phùng,\\
+Em nghe mà dạ cứ mông lung,\\
+Nhân vật trong sách còn chưa nhớ,\\
+Chỉ nhớ bóng ai dưới nắng hừng.
+}{%
+\textit{In literature we study meeting and parting,}\\
+\textit{You listen with a drifting heart starting,}\\
+\textit{The book's own characters fade from mind,}\\
+\textit{One sunlit figure keeps on shining.}
+}
+
+\baitho{Bài 108 — Bài Toán Không Có Nghiệm}{%
+Thầy cho phương trình đủ vế hai,\\
+Em thay thương nhớ suốt vào hoài,\\
+Giải mãi vẫn ra toàn vô nghiệm,\\
+Vì người ta có biết gì ai.
+}{%
+\textit{I give an equation split in two,}\\
+\textit{You substitute longing through and through,}\\
+\textit{You solve and find no answer forms,}\\
+\textit{For they may never think of you.}
+}
+
+\baitho{Bài 109 — Chép Nhầm Tên Vào Bài}{%
+Thầy đọc công thức để em ghi,\\
+Tay em lại viết lệch tên kia,\\
+Đến lúc nhìn vào trang mới biết,\\
+Bài chưa xong, nhớ đã đi xa.
+}{%
+\textit{I read the formula for your pen,}\\
+\textit{Your hand writes someone else's name instead,}\\
+\textit{Then looking down you realize this:}\\
+\textit{The work's unfinished, but longing spread.}
+}
+
+\baitho{Bài 110 — Tương Tư Sau Cửa Kính}{%
+Cửa kính phản quang bóng một người,\\
+Em nhìn thêm chút đã xa xôi,\\
+Thầy cô bài vở còn nguyên đấy,\\
+Mà cả buổi chiều chỉ nhớ thôi.
+}{%
+\textit{The glass reflects one passing face,}\\
+\textit{You watch a moment, lost in space,}\\
+\textit{The lesson stays exactly there,}\\
+\textit{But all afternoon you keep that trace.}
+}
+
+%------------------------------------------------------------
+\section{Bộ XI — Thất Tình Học Đường, Crush Không Đáp Lại (Bài 111–120)}
+%------------------------------------------------------------
+
+\baitho{Bài 111 — Nhắn Rồi Không Được Xem}{%
+Tin nhắn hôm qua vẫn lặng thinh,\\
+Lên lớp lòng em hóa nặng trình,\\
+Thầy giảng công thức qua ba lượt,\\
+Em còn canh chữ chẳng hiện hình.
+}{%
+\textit{Last night's message still unread remains,}\\
+\textit{You bring to class a freight of pains,}\\
+\textit{I teach the formula through three rounds,}\\
+\textit{You wait for words that never gain.}
+}
+
+\baitho{Bài 112 — Người Ta Chỉ Xem Là Bạn}{%
+Người ta gọi nhẹ đúng tên em,\\
+Giọng nghe tử tế đến êm đềm,\\
+Em tưởng trong tim vừa có nắng,\\
+Nào ngờ chỉ xếp ở ngăn quen.
+}{%
+\textit{They call your name with gentle tone,}\\
+\textit{So kind it warms you to the bone,}\\
+\textit{You think a little sun has risen,}\\
+\textit{But you're filed under `friend' alone.}
+}
+
+\baitho{Bài 113 — Buồn Trong Giờ Đại Số}{%
+Đại số hôm nay lắm biến thiên,\\
+Lòng em cũng thế chẳng bình yên,\\
+Người kia đi với ai qua lớp,\\
+Nghiệm buồn xuất hiện rất tự nhiên.
+}{%
+\textit{Algebra today is full of change,}\\
+\textit{Your heart as well feels just as strange,}\\
+\textit{They walk past class beside someone else,}\\
+\textit{And sorrow solves itself in range.}
+}
+
+\baitho{Bài 114 — Nhìn Lưng Người Ta}{%
+Bạn ấy ngồi trên phía cuối hàng,\\
+Lưng áo quen quen cũng đủ mang,\\
+Thầy hỏi định lý vừa ghi xong,\\
+Em còn đuổi mắt suốt theo ngang.
+}{%
+\textit{They sit a few rows up ahead,}\\
+\textit{That familiar back fills all your head,}\\
+\textit{I ask about the theorem just written,}\\
+\textit{You still follow that silhouette instead.}
+}
+
+\baitho{Bài 115 — Không Rep Trong Giờ Học}{%
+Điện thoại nằm im dưới ngăn bàn,\\
+Lòng em chờ mãi vẫn hoang mang,\\
+Thầy đưa bài mới lên trang trắng,\\
+Em đợi rung lên một dịu dàng.
+}{%
+\textit{The phone lies silent in the desk,}\\
+\textit{Your waiting heart grows more grotesque,}\\
+\textit{I place new work upon the page,}\\
+\textit{You wait one gentle buzz at best.}
+}
+
+\baitho{Bài 116 — Mưa Nhẹ Trong Vở Nháp}{%
+Trang nháp hôm nay nét rất buồn,\\
+Tên ai viết nhẹ lại rồi tuôn,\\
+Chữ chưa thành dòng mà tim lệch,\\
+Một cõi tương tư ngập cuối buồn.
+}{%
+\textit{Today's rough page writes in a sigh,}\\
+\textit{One name appears, then multiplies,}\\
+\textit{Before the lines can settle straight,}\\
+\textit{Your heart has tipped and overflowed with skies.}
+}
+
+\baitho{Bài 117 — Người Ta Cười Với Người Ta}{%
+Bạn ấy hôm nay cười với ai,\\
+Mà em ngồi lặng suốt canh dài,\\
+Thầy giảng xác suất bao nhiêu ngả,\\
+Em biết riêng mình rớt khỏi vai.
+}{%
+\textit{They smile today at someone near,}\\
+\textit{You sit in silence, cold and clear,}\\
+\textit{I teach probability's many paths,}\\
+\textit{You know your chance has disappeared.}
+}
+
+\baitho{Bài 118 — Cửa Sổ Sau Một Mối Thầm}{%
+Cửa sổ hôm nay rộng quá chừng,\\
+Đủ cho mắt trú suốt lưng chừng,\\
+Người kia ở lớp mà xa ngái,\\
+Thầy cô đành giảng với hư không.
+}{%
+\textit{The window seems too wide today,}\\
+\textit{Enough to house your gaze halfway,}\\
+\textit{That person sits in class yet far,}\\
+\textit{So I must teach the empty air all day.}
+}
+
+\baitho{Bài 119 — Bài Kiểm Tra Sau Tan Vỡ}{%
+Giấy kiểm tra nằm trắng đến đau,\\
+Không vì em dốt cả từ đầu,\\
+Chỉ vì tim bận ôm câu hỏi,\\
+Sao người thương lại bước qua mau.
+}{%
+\textit{The test lies white enough to ache,}\\
+\textit{Not from a lack of skill you make,}\\
+\textit{But because your heart still holds one question:}\\
+\textit{Why did the one you loved leave so awake?}
+}
+
+\baitho{Bài 120 — Thất Tình Mà Vẫn Đi Học}{%
+Sáng nay em vẫn đến như thường,\\
+Mang theo tan vỡ giấu trong sương,\\
+Thầy khen nghị lực ngồi cho đủ,\\
+Chỉ tiếc hồn em nghỉ giữa đường.
+}{%
+\textit{This morning still you came to school,}\\
+\textit{With heartbreak hidden in the cool,}\\
+\textit{I praise the strength that kept you here,}\\
+\textit{Though halfway in, your soul withdrew.}
+}
+
+%------------------------------------------------------------
+\section{Bộ XII — Hàn Gắn, Quên Crush, Quay Lại Học Hành (Bài 121–130)}
+%------------------------------------------------------------
+
+\baitho{Bài 121 — Cất Tên Vào Ngăn Nháp}{%
+Hôm nay em gấp lại trang nháp,\\
+Tên cũ thôi không viết nữa nào,\\
+Thầy đưa bài mới lên đầu bảng,\\
+Em thử nhìn theo khỏi nghẹn rào.
+}{%
+\textit{Today you fold the rough page closed,}\\
+\textit{No old name written in those rows,}\\
+\textit{I place new work upon the board,}\\
+\textit{You try to follow, steady and composed.}
+}
+
+\baitho{Bài 122 — Tập Quên Bằng Đạo Hàm}{%
+Đạo hàm hôm nay lại cứu nguy,\\
+Cho tim bận rộn bớt sầu đi,\\
+Người kia thôi để ngoài trang vở,\\
+Em học biến thiên của chính mình.
+}{%
+\textit{Derivatives come to the rescue now,}\\
+\textit{Giving your heart a calmer brow,}\\
+\textit{That person stays outside the page,}\\
+\textit{You study your own changes now.}
+}
+
+\baitho{Bài 123 — Học Lại Từ Dòng Đầu}{%
+Bài cũ bỏ dở đã mấy hôm,\\
+Nay em chép lại từ đầu luôn,\\
+Thầy nhìn mà thấy lòng yên hẳn,\\
+Biết có người đang tự cứu buồn.
+}{%
+\textit{The old lesson lay half-undone,}\\
+\textit{Today you copy from line one,}\\
+\textit{I see it and my mind grows calm,}\\
+\textit{Knowing someone learns to outgrow sorrow.}
+}
+
+\baitho{Bài 124 — Cửa Sổ Không Còn Thắng}{%
+Cửa sổ hôm nay bỗng ít lời,\\
+Mây bay vẫn đó nhẹ như thôi,\\
+Thầy ghi công thức lên hàng cuối,\\
+Em nhìn bảng trước một lần rồi.
+}{%
+\textit{The window speaks much less today,}\\
+\textit{Clouds still drift soft and far away,}\\
+\textit{I write formulas across the board,}\\
+\textit{And you look front before they sway.}
+}
+
+\baitho{Bài 125 — Tim Rảnh Cho Toán Vào}{%
+Tim em vừa bớt một phần đau,\\
+Chừa chỗ cho Toán bước vào sau,\\
+Phương trình không còn nghe xa lạ,\\
+Vì nỗi tương tư đã nhạt màu.
+}{%
+\textit{Your heart has eased a little ache,}\\
+\textit{Leaving room for math to overtake,}\\
+\textit{Equations no longer sound strange,}\\
+\textit{Since longing starts to fade and break.}
+}
+
+\baitho{Bài 126 — Không Canh Điện Thoại Nữa}{%
+Điện thoại nằm yên dưới ngăn bàn,\\
+Em thôi ngóng đợi một tin sang,\\
+Thầy hỏi bài gì em còn nhớ,\\
+Lần này đáp lại rất đàng hoàng.
+}{%
+\textit{The phone rests quiet in the desk,}\\
+\textit{You stop awaiting texts grotesque,}\\
+\textit{I ask what lesson we just learned,}\\
+\textit{This time your answer comes correct.}
+}
+
+\baitho{Bài 127 — Trả Hồn Về Ghế Học}{%
+Hồn em trước lạc tận nơi đâu,\\
+Nay đã về ngồi cạnh bút màu,\\
+Thầy giảng một câu em ghi một ý,\\
+Lớp học bỗng gần biết mấy đâu.
+}{%
+\textit{Your soul once wandered far away,}\\
+\textit{Now it returns beside your page,}\\
+\textit{I teach one line, you note one thought,}\\
+\textit{And class feels nearer in a different way.}
+}
+
+\baitho{Bài 128 — Tên Mới Là Điểm Mười}{%
+Trang nháp hôm nay sạch bóng tên,\\
+Chỉ còn công thức viết cho bền,\\
+Thầy đùa nếu phải lòng ai nữa,\\
+Thì nên yêu thử một điểm mười.
+}{%
+\textit{Today's rough page holds no hidden name,}\\
+\textit{Only formulas written plain,}\\
+\textit{I joke: if you must fall for something,}\\
+\textit{Try loving a perfect score again.}
+}
+
+\baitho{Bài 129 — Quên Người Bằng Việc Học}{%
+Muốn quên đâu chỉ nói rồi thôi,\\
+Phải chép phải làm phải học thôi,\\
+Thầy giao bài khó em ngồi giải,\\
+Đến lúc xong rồi nhẹ mất rồi.
+}{%
+\textit{To move on takes more than saying so,}\\
+\textit{You write, you solve, you let work flow,}\\
+\textit{I give a hard task, you sit through it,}\\
+\textit{And when it's done, you breathe more slow.}
+}
+
+\baitho{Bài 130 — Từ Tương Tư Sang Tương Lai}{%
+Người cũ thôi đành giữ phía sau,\\
+Trang mới em nên viết bắt đầu,\\
+Thầy cô bài vở còn chờ sẵn,\\
+Tương lai phía trước rộng như nhau.
+}{%
+\textit{The old one stays behind your day,}\\
+\textit{A new page asks you now to stay,}\\
+\textit{Teachers, lessons, futures wait ahead,}\\
+\textit{And the road ahead is wide as day.}
+}
+
+%------------------------------------------------------------
+\section{Bộ XIII — Học Lại Tử Tế, Từ Lười Sang Quyết Tâm (Bài 131–140)}
+%------------------------------------------------------------
+
+\baitho{Bài 131 — Ngồi Thẳng Lại Từ Đầu}{%
+Sáng nay em bỗng ngồi ngay ngắn,\\
+Bút mở, bài ghi, chẳng lăng nhăng.\\
+Thầy ngỡ thiên tài đâu lạc bước,\\
+Hay là... nắng chiếu lệch đầu chăng?
+}{%
+\textit{Today you sit so straight and bright,}\\
+\textit{And start to study with your might.}\\
+\textit{I fear some genius took your seat,}\\
+\textit{Or maybe it's the summer heat?}
+}
+
+\baitho{Bài 132 — Chép Đủ Bốn Dòng}{%
+Thầy viết bốn dòng em chép ngay,\\
+Không còn để giấy trắng như mây,\\
+Bạn ngồi bên cạnh nhìn kinh ngạc,\\
+Tưởng phép màu nào ghé lớp đây.
+}{%
+\textit{I write four lines; you copy all,}\\
+\textit{No cloud-white page, no empty wall,}\\
+\textit{Your deskmate stares in honest shock,}\\
+\textit{As if a miracle touched the hall.}
+}
+
+\baitho{Bài 133 — Chuông Reo Mà Chưa Muốn Dậy}{%
+Chuông nghỉ vừa rung vẫn ngồi yên,\\
+Em còn làm nốt ý đang ghiền,\\
+Thầy nghe âm ấy mà mừng lắm,\\
+Biết chí chăm ngoan đã nối liền.
+}{%
+\textit{The recess bell rings out nearby,}\\
+\textit{Yet still you finish one more line,}\\
+\textit{I hear that sound and feel relief,}\\
+\textit{Your will to learn now starts to shine.}
+}
+
+\baitho{Bài 134 — Bỏ Cửa Sổ Nhìn Bảng Đen}{%
+Cửa sổ hôm nay kém hấp lời,\\
+Bảng đen thành chỗ mắt em rơi,\\
+Phấn đi tới đâu tay chép tới,\\
+Thầy còn hơi sợ mộng mình thôi.
+}{%
+\textit{Today the window charms you less,}\\
+\textit{The blackboard holds your gaze instead,}\\
+\textit{Where chalk moves on, your pen moves too,}\\
+\textit{I fear this may be dream, not fact.}
+}
+
+\baitho{Bài 135 — Tập Làm Bài Khó}{%
+Bài khó hôm nay chẳng né hoài,\\
+Em ngồi thử sức đến lần hai,\\
+Sai rồi lại sửa thêm đôi lượt,\\
+Thế mới là đường tiến bộ dài.
+}{%
+\textit{Today's hard problem meets no dodge,}\\
+\textit{You try again beyond first lodge,}\\
+\textit{Wrong once, then twice, then fixed with care,}\\
+\textit{That is the road where growth finds edge.}
+}
+
+\baitho{Bài 136 — Không Mượn Bài Bạn Nữa}{%
+Bạn bên còn đó rất thân tình,\\
+Nhưng em thôi chép chữ của mình,\\
+Tự làm tuy chậm mà lòng chắc,\\
+Điểm có ra sao vẫn đáng tin.
+}{%
+\textit{Your friend sits there as close as before,}\\
+\textit{Yet now you borrow answers no more,}\\
+\textit{Your pace is slow, your footing firm,}\\
+\textit{Whatever the score, the work is yours.}
+}
+
+\baitho{Bài 137 — Vở Không Còn Trắng}{%
+Từng trang vở cũ nay thêm dòng,\\
+Chữ tuy chưa đẹp vẫn thật lòng,\\
+Thầy xem mà thấy vui hơn điểm,\\
+Vì biết em đang đổi từ trong.
+}{%
+\textit{Old notebook pages gain new lines,}\\
+\textit{The script's not fair, but effort shines,}\\
+\textit{I value that above a score,}\\
+\textit{Because change has begun inside.}
+}
+
+\baitho{Bài 138 — Đến Sớm Hơn Mọi Hôm}{%
+Hôm nay em đến trước chuông vang,\\
+Cặp sách ngay ngắn bước hiên ngang,\\
+Thầy chưa vào lớp em mở vở,\\
+Cả buổi học sau sáng rỡ hẳn.
+}{%
+\textit{Today you come before the bell,}\\
+\textit{Your bag in order, posture well,}\\
+\textit{Before I enter, books are open,}\\
+\textit{And all the lesson glows more well.}
+}
+
+\baitho{Bài 139 — Quyết Tâm Sau Một Điểm Thấp}{%
+Điểm thấp lần kia vẫn nhói lòng,\\
+Nhưng em không để buồn trôi không,\\
+Mang về biến nó thành động lực,\\
+Ngày mai nhìn lại sẽ khác hẳn.
+}{%
+\textit{That low score still retains its sting,}\\
+\textit{Yet you won't waste the hurt it brings,}\\
+\textit{You turn it into fuel for work,}\\
+\textit{Tomorrow may become a different thing.}
+}
+
+\baitho{Bài 140 — Học Hành Như Một Cách Lớn}{%
+Không phải một ngày hóa giỏi ngay,\\
+Chỉ là hôm trước hơn hôm nay,\\
+Thầy nhìn em chép từng dòng nhỏ,\\
+Biết một con người đang lớn dần.
+}{%
+\textit{No one turns excellent in a day,}\\
+\textit{Only better than yesterday,}\\
+\textit{I watch you copy line by line,}\\
+\textit{And know a person grows that way.}
+}
+
+%------------------------------------------------------------
+\section{Bộ XIV — Quyết Tâm Rồi Nhưng Vẫn Tấu Hài (Bài 141–150)}
+%------------------------------------------------------------
+
+\baitho{Bài 141 — Chăm Được Hai Mươi Phút}{%
+Đầu giờ em học rất chăm ngay,\\
+Mắt dán bảng đen, bút chạy tay,\\
+Hai chục phút sau hồn đi bộ,\\
+Nhưng cũng hơn xưa được khối ngày.
+}{%
+\textit{At class start you are fully keen,}\\
+\textit{Eyes on the board, your pen runs clean,}\\
+\textit{Twenty minutes later your soul takes a walk,}\\
+\textit{Still, this beats how things once had been.}
+}
+
+\baitho{Bài 142 — Vở Có Chữ Nhưng Chưa Đều}{%
+Trang vở hôm nay đã có dòng,\\
+Dòng sâu dòng cạn vẫn còn không,\\
+Thầy nhìn mà thấy vui hơn trước,\\
+Vì ít ra em đã bớt trống.
+}{%
+\textit{Today's notebook at least has lines,}\\
+\textit{Some grow dense, some thin in signs,}\\
+\textit{I smile to see the uneven page,}\\
+\textit{For it is less blank than former times.}
+}
+
+\baitho{Bài 143 — Chăm Xong Lại Quên Bút}{%
+Hôm nay em tới sớm hơn thường,\\
+Tinh thần học tập khá phi thường,\\
+Chỉ tiếc mở cặp tìm ba lượt,\\
+Mới hay quên bút ở quê hương.
+}{%
+\textit{Today you came in early stride,}\\
+\textit{Your study spirit full of pride,}\\
+\textit{Then after searching through the bag,}\\
+\textit{You learned your pen stayed home inside.}
+}
+
+\baitho{Bài 144 — Quyết Tâm Nhưng Hay Ngó Ngang}{%
+Thầy giảng em chép thật miên man,\\
+Bỗng tiếng động nhỏ lại quay ngang,\\
+Rồi em quay lại và chép tiếp,\\
+Tiến bộ kiểu này cũng vẻ vang.
+}{%
+\textit{You write along with steady pace,}\\
+\textit{One little sound turns all your face,}\\
+\textit{Then back you come and write again,}\\
+\textit{Even this progress earns some grace.}
+}
+
+\baitho{Bài 145 — Học Bài Khó Mà Mặt Hài}{%
+Bài khó hôm nay em quyết làm,\\
+Nhăn mày méo miệng suốt âm thầm,\\
+Bạn nhìn cứ tưởng em đau bụng,\\
+Ai ngờ đang cố hiểu căn căn.
+}{%
+\textit{Today you vow to face the hard,}\\
+\textit{Your face twists up on every part,}\\
+\textit{Friends think your stomach must be hurt,}\\
+\textit{But no, you're wrestling with the chart.}
+}
+
+\baitho{Bài 146 — Chép Xong Thiếu Tiêu Đề}{%
+Bao nhiêu ý chính em chép liền,\\
+Thầy mừng chưa kịp đã ưu phiền,\\
+Đến khi so vở thì chợt thấy,\\
+Tiêu đề còn bỏ quên như tiên.
+}{%
+\textit{You copy every major thought,}\\
+\textit{I celebrate before I've caught,}\\
+\textit{Then checking notes I see at once,}\\
+\textit{The title's still forgotten, oddly not.}
+}
+
+\baitho{Bài 147 — Học Chăm Theo Hình Sin}{%
+Độ chăm của em tựa sóng sin,\\
+Lên cao rồi lại xuống im thin,\\
+Nhưng thầy còn mừng vì biên độ,\\
+Nay lớn hơn xưa một đoạn nhìn.
+}{%
+\textit{Your diligence behaves like sine,}\\
+\textit{It climbs, then falls in curving line,}\\
+\textit{Still I am glad the amplitude,}\\
+\textit{Is greater now than former time.}
+}
+
+\baitho{Bài 148 — Quyết Tâm Sau Giờ Ra Chơi}{%
+Ra chơi xong vẫn mở vở ra,\\
+Tay em còn dính vụn bánh đa,\\
+Nhưng giữa tiếng cười em chép tiếp,\\
+Thầy coi đó cũng quý như quà.
+}{%
+\textit{After recess you open wide,}\\
+\textit{Though snack crumbs still cling to your side,}\\
+\textit{Amid the laughter you resume,}\\
+\textit{And that, to me, is worth some pride.}
+}
+
+\baitho{Bài 149 — Có Cố Nhưng Còn Chậm}{%
+Bạn xong bài hết đã từ lâu,\\
+Em còn dò chữ tới hàng sau,\\
+Thầy không chê chậm, thầy chỉ nhắc,\\
+Đi đều còn hơn đứng phía sau.
+}{%
+\textit{The others finished long ago,}\\
+\textit{You still trace lines in patient flow,}\\
+\textit{I do not fault your slower pace,}\\
+\textit{To keep moving beats not to go.}
+}
+
+\baitho{Bài 150 — Hài Một Chút Nhưng Đang Tốt}{%
+Em học chưa đều, vẫn khá hài,\\
+Lúc quên lúc nhớ, lúc miệt mài,\\
+Nhưng thầy nhìn thấy trong cái vụng,\\
+Một người đang gắng thật lâu dài.
+}{%
+\textit{Your learning's mixed and sometimes comic still,}\\
+\textit{Now focused hard, now missing skill,}\\
+\textit{Yet in that clumsy earnest change,}\\
+\textit{I see a will that keeps its will.}
+}
+
+%------------------------------------------------------------
+\section{Bộ XV — Học Khá Lên Rồi Tự Tin Quá Đà (Bài 151–160)}
+%------------------------------------------------------------
+
+\baitho{Bài 151 — Mới Được Điểm Khá}{%
+Mới được điểm khá một lần thôi,\\
+Em đã nhìn đời khác hẳn rồi,\\
+Thầy giao bài mới vừa mở miệng,\\
+Em cười: chuyện nhỏ, để em xem.
+}{%
+\textit{One decent score and that was all,}\\
+\textit{Yet now you walk ten inches tall,}\\
+\textit{I start a fresh and harder task,}\\
+\textit{You grin: small thing, I'll take the call.}
+}
+
+\baitho{Bài 152 — Tưởng Mình Đã Thông}{%
+Hôm qua hiểu được một dạng bài,\\
+Hôm nay em tưởng hiểu hết rồi,\\
+Thầy đổi dữ kiện sang đôi chút,\\
+Lòng tin em rớt nhẹ như rơi.
+}{%
+\textit{Yesterday one type you understood,}\\
+\textit{Today you think you've mastered all for good,}\\
+\textit{I switch the data just a bit,}\\
+\textit{Your confidence falls faster than it should.}
+}
+
+\baitho{Bài 153 — Giơ Tay Quá Sớm}{%
+Thầy chưa hỏi hết em giơ tay,\\
+Ánh nhìn quyết thắng rực như lửa,\\
+Đến khi trả lời sang nửa chặng,\\
+Mới hay kiến thức rẽ đường mây.
+}{%
+\textit{Before I finish, up shoots your hand,}\\
+\textit{Your eyes declare complete command,}\\
+\textit{Halfway through the answer comes the truth,}\\
+\textit{The knowledge drifted off unmanned.}
+}
+
+\baitho{Bài 154 — Khỏi Cần Xem Lời Giải}{%
+Lời giải mẫu kia em lướt qua,\\
+Bảo rằng tự hiểu khỏi cần xem,\\
+Đến khi bài khó sang chương khác,\\
+Em lại tìm thầy với thiết tha.
+}{%
+\textit{The sample solution gets one glance,}\\
+\textit{You say you know it all at once,}\\
+\textit{Then when the harder chapter lands,}\\
+\textit{You seek me back with humble wants.}
+}
+
+\baitho{Bài 155 — Tự Tin Như Start-Up}{%
+Một chút tiến bộ đã làm nền,\\
+Em vẽ tương lai rất tự nhiên,\\
+Tưởng như tuần tới ôm bảng điểm,\\
+Rực vàng từ dưới tới trên liền.
+}{%
+\textit{A little growth becomes your seed,}\\
+\textit{You pitch your future at full speed,}\\
+\textit{As though next week the grade report,}\\
+\textit{Will turn to gold from base to peak.}
+}
+
+\baitho{Bài 156 — Mới Chăm Được Ba Hôm}{%
+Mới chăm được đúng chừng ba ngày,\\
+Em đã khuyên bạn phải đổi ngay,\\
+Giọng nghe như bậc thầy kinh nghiệm,\\
+Mà vở tuần trước vẫn trắng mây.
+}{%
+\textit{You've studied well for maybe three,}\\
+\textit{And now advise the company,}\\
+\textit{You sound like seasoned master sage,}\\
+\textit{Though last week's notes were cloud-white sea.}
+}
+
+\baitho{Bài 157 — Quên Mình Từng Lười}{%
+Hôm nay giải được một bài tròn,\\
+Em quên ngày cũ rất nhanh gọn,\\
+Nhìn bạn loay hoay em thở khẽ,\\
+Như mình chưa từng ở phía non.
+}{%
+\textit{One problem solved and neatly done,}\\
+\textit{You quickly forget the days you'd run,}\\
+\textit{You sigh at friends still working slow,}\\
+\textit{As if you'd never been that one.}
+}
+
+\baitho{Bài 158 — Độ Khó Chưa Kịp Báo}{%
+Bài dễ làm xong rất nhẹ nhàng,\\
+Em tưởng mọi chương cũng thế ngang,\\
+Thầy đưa bài khó lên thêm chút,\\
+Nụ cười em bỗng bớt huy hoàng.
+}{%
+\textit{The easy task went smooth and bright,}\\
+\textit{You thought all chapters matched that height,}\\
+\textit{Then I present one harder page,}\\
+\textit{And half your shining smile takes flight.}
+}
+
+\baitho{Bài 159 — Tự Chấm Mình Quá Sớm}{%
+Chưa thi em đã tính điểm cao,\\
+Trong đầu xếp hạng tự khi nào,\\
+Đến khi nhận giấy còn sai vặt,\\
+Em học thêm chữ gọi là chào.
+}{%
+\textit{Before the test you score yourself,}\\
+\textit{And rank your name on topmost shelf,}\\
+\textit{Then when the paper comes back marked,}\\
+\textit{You learn to greet the truth itself.}
+}
+
+\baitho{Bài 160 — Tự Tin Vừa Đủ Đẹp}{%
+Thầy mừng vì em đã khá lên,\\
+Chỉ mong tự tín vừa đặt bên,\\
+Học hành đường dài đâu một chốc,\\
+Đi đều còn đẹp hơn bay xa.
+}{%
+\textit{I am glad you've risen where you stand,}\\
+\textit{I only hope your pride stays planned,}\\
+\textit{Learning is long and not one leap,}\\
+\textit{Steady steps outshine flights unmanned.}
+}
+
+%------------------------------------------------------------
+\section{Bộ XVI — Tự Tin Quá Rồi Vấp, Rồi Học Cách Khiêm Tốn (Bài 161–170)}
+%------------------------------------------------------------
+
+\baitho{Bài 161 — Ngã Sau Một Lần Bay}{%
+Mới khá lên thôi đã muốn bay,\\
+Em bước hơi cao khỏi mặt này,\\
+Đến lúc bài khó nghiêng một chút,\\
+Mới hay chân vẫn chạm đất đây.
+}{%
+\textit{You rose a bit and sought the sky,}\\
+\textit{Your steps grew taller than nearby,}\\
+\textit{Then one hard problem tipped the ground,}\\
+\textit{And showed your feet were earthbound by.}
+}
+
+\baitho{Bài 162 — Tưởng Đâu Cũng Dễ}{%
+Một dạng làm quen thấy rất tròn,\\
+Em ngỡ muôn bài cũng thế luôn,\\
+Thầy đổi đề đi chừng nửa chữ,\\
+Nụ cười em bỗng bớt vuông tròn.
+}{%
+\textit{One familiar type went smooth and fair,}\\
+\textit{You thought all else would match it there,}\\
+\textit{I changed the prompt by half a line,}\\
+\textit{And part of your grin thinned to air.}
+}
+
+\baitho{Bài 163 — Sai Một Câu Mới Biết}{%
+Giơ tay rất sớm trước cả thầy,\\
+Đáp câu rất chắc tưởng hôm nay,\\
+Đến khi lớp lặng nhìn em mãi,\\
+Mới biết mình cần chậm lại đây.
+}{%
+\textit{You raised your hand before I spoke,}\\
+\textit{Your answer rang as if no joke,}\\
+\textit{Then silence held the room so long,}\\
+\textit{You learned to slow the confident stroke.}
+}
+
+\baitho{Bài 164 — Điểm Giấy Dạy Điều Nhỏ}{%
+Điểm giấy trả về chẳng thấp đâu,\\
+Nhưng chưa cao đến mức lên đầu,\\
+Em cầm nhìn kỹ rồi cười nhẹ,\\
+Biết còn nhiều nấc phải đi sâu.
+}{%
+\textit{The score returned was not too low,}\\
+\textit{But not so high as pride would show,}\\
+\textit{You held it, smiled a quieter smile,}\\
+\textit{And learned how far there is to go.}
+}
+
+\baitho{Bài 165 — Bạn Cũng Có Điều Hay}{%
+Hôm qua em tưởng nhất trong bàn,\\
+Hôm nay bạn giải gọn hơn hẳn,\\
+Em nhìn rồi bỗng thôi khoe nữa,\\
+Học được một điều quý vô vàn.
+}{%
+\textit{Yesterday you thought you led the row,}\\
+\textit{Today a friend solved it cleaner so,}\\
+\textit{You watched, then dropped the urge to boast,}\\
+\textit{And gained a wiser sort of glow.}
+}
+
+\baitho{Bài 166 — Cú Vấp Không Phải Thua}{%
+Một lần vấp ngã giữa bài thôi,\\
+Không biến công lao mất hết rồi,\\
+Em ngồi làm lại từ dòng ấy,\\
+Khiêm hơn một chút, vững hơn thôi.
+}{%
+\textit{One stumble in the work is small,}\\
+\textit{It does not wipe out labor all,}\\
+\textit{You sit and start again from there,}\\
+\textit{More humble now, and standing tall.}
+}
+
+\baitho{Bài 167 — Bớt Nói, Thêm Làm}{%
+Trước kia em nói rất rộn ràng,\\
+Nay em làm trước, nói sau sang,\\
+Thầy nhìn mà biết người khôn thật,\\
+Là biết cho bài tự tỏa quang.
+}{%
+\textit{Before, your talk would fill the room,}\\
+\textit{Now first you work, and words come soon,}\\
+\textit{I know a wiser student grows,}\\
+\textit{When effort speaks before the bloom.}
+}
+
+\baitho{Bài 168 — Cúi Xem Lời Giải}{%
+Lời giải mẫu nay em cúi nhìn,\\
+Không còn lướt vội vẻ thông minh,\\
+Từng bước đọc xong rồi mới thử,\\
+Khiêm tốn đôi khi lại cứu mình.
+}{%
+\textit{Now at the sample you bend low,}\\
+\textit{No hurried glance to seem to know,}\\
+\textit{You read each step and only then try,}\\
+\textit{And humility helps you grow.}
+}
+
+\baitho{Bài 169 — Biết Mình Còn Thiếu}{%
+Giỏi lên không có nghĩa xong đâu,\\
+Em nay đã hiểu chuyện từ lâu,\\
+Mỗi lần gặp chỗ chưa thông suốt,\\
+Là thêm một bậc để trèo cao.
+}{%
+\textit{To improve is not to finish all,}\\
+\textit{That truth now answers your old call,}\\
+\textit{Each place you meet and do not know,}\\
+\textit{Becomes the next step on the wall.}
+}
+
+\baitho{Bài 170 — Khiêm Tốn Mà Đi Xa}{%
+Thầy thích em nay khác thuở đầu,\\
+Tự tin còn đó, bớt cao đầu,\\
+Học hành vốn giống đường đi dài,\\
+Biết cúi nhìn sẽ bước dài lâu.
+}{%
+\textit{I like the way you've changed from first,}\\
+\textit{Confidence there, but pride less cursed,}\\
+\textit{Learning is long like any road,}\\
+\textit{Those who look down may travel farthest.}
+}
+
+%------------------------------------------------------------
+\section{Bộ XVII — Khiêm Tốn Rồi Tiến Bộ Thật, Bắt Đầu Kéo Bạn Cùng Tiến (Bài 171–180)}
+%------------------------------------------------------------
+
+\baitho{Bài 171 — Chép Xong Còn Chỉ Bạn}{%
+Em nay chép đủ cả bài rồi,\\
+Thấy bạn loay hoay bèn chỉ thôi,\\
+Một dòng em giảng thêm cho rõ,\\
+Thầy nghe còn ấm cả lòng người.
+}{%
+\textit{Today you've copied every line,}\\
+\textit{You see a friend still lag behind,}\\
+\textit{So you explain one extra step,}\\
+\textit{And warmth moves through the room in kind.}
+}
+
+\baitho{Bài 172 — Giỏi Hơn Không Khoe Nữa}{%
+Giờ đây làm được chẳng khoe vang,\\
+Em lặng ngồi xong mới nhẹ nhàng,\\
+Bạn hỏi em bèn đưa cách giải,\\
+Khá lên như thế mới đàng hoàng.
+}{%
+\textit{Now when you solve, you do not boast,}\\
+\textit{You finish first, then stay composed,}\\
+\textit{A friend asks how, you show the path,}\\
+\textit{That kind of growth matters the most.}
+}
+
+\baitho{Bài 173 — Nhớ Mình Từng Chậm}{%
+Vì nhớ mình xưa cũng rất chậm,\\
+Em nay không vội chê ai lầm,\\
+Thấy bạn lúng túng còn ngồi lại,\\
+Chỉ giúp đôi dòng thật âm thầm.
+}{%
+\textit{Remembering you once were slow,}\\
+\textit{You do not rush to judge and show,}\\
+\textit{You stay beside a struggling friend,}\\
+\textit{And guide a little, soft and low.}
+}
+
+\baitho{Bài 174 — Tổ Học Không Còn Ồn}{%
+Bàn em hôm trước chuyện râm ran,\\
+Nay lại quay sang học đàng hoàng,\\
+Có lúc cùng nhau bàn một ý,\\
+Mà nghe như gió mát ngang hàng.
+}{%
+\textit{Your desk once buzzed with constant noise,}\\
+\textit{Now turns toward work with steadier poise,}\\
+\textit{You still discuss, but now the thought,}\\
+\textit{Sounds like a calmer, wiser voice.}
+}
+
+\baitho{Bài 175 — Chia Bút Rồi Chia Cả Cách}{%
+Bạn quên cây bút như em xưa,\\
+Em cho mượn trước chẳng chờ thưa,\\
+Rồi còn bày cách ghi cho gọn,\\
+Một chút tử tế đủ đẩy đưa.
+}{%
+\textit{A friend forgets a pen like you once did,}\\
+\textit{You lend it first before they bid,}\\
+\textit{Then even show how notes stay neat,}\\
+\textit{A little kindness helps them live.}
+}
+
+\baitho{Bài 176 — Giải Được Rồi Biết Dạy}{%
+Bài này em giải được từ đầu,\\
+Nhưng chẳng giữ riêng lấy về sau,\\
+Bạn ngồi bên cạnh chưa ra hướng,\\
+Em giảng từng nhịp rất chậm sâu.
+}{%
+\textit{This problem now you solve alone,}\\
+\textit{Yet keep it not as private own,}\\
+\textit{Your neighbor has not found the path,}\\
+\textit{So step by step you set the stones.}
+}
+
+\baitho{Bài 177 — Tiến Bộ Có Bạn Chung}{%
+Một mình tiến bộ cũng vui thôi,\\
+Kéo được bạn lên quý gấp đôi,\\
+Thầy nhìn hai đứa cùng chăm chỉ,\\
+Thấy lớp học này sáng hẳn rồi.
+}{%
+\textit{To grow alone is good indeed,}\\
+\textit{To lift a friend is double seed,}\\
+\textit{I watch two students working hard,}\\
+\textit{And feel the whole room brighten with the deed.}
+}
+
+\baitho{Bài 178 — Bớt Giấu Bài Hơn Xưa}{%
+Xưa em che vở rất là nhanh,\\
+Sợ bạn nhìn qua mất phần mình,\\
+Nay biết học hành đâu phải đấu,\\
+Chia nhau ánh sáng mới lâu bền.
+}{%
+\textit{Before you shielded every page,}\\
+\textit{Afraid a friend might steal your stage,}\\
+\textit{Now learning seems less like a war,}\\
+\textit{And shared light lasts through every age.}
+}
+
+\baitho{Bài 179 — Hỏi Bạn Không Còn Để Chép}{%
+Nay hỏi bạn không phải chép theo,\\
+Mà là hỏi cách nghĩ ra điều,\\
+Rồi đem tự giải phần mình tiếp,\\
+Thầy nghe mà thấy đáng bao nhiêu.
+}{%
+\textit{Now when you ask, it's not to clone,}\\
+\textit{But learn the way the thought was grown,}\\
+\textit{Then you return to work your own,}\\
+\textit{And that is worth more than shown.}
+}
+
+\baitho{Bài 180 — Kéo Bạn Cùng Lên}{%
+Thầy quý nhất khi nhìn thấy em,\\
+Không chỉ lo mình khỏi thấp kém,\\
+Mà còn kéo bạn cùng đứng dậy,\\
+Học hành nhờ thế hóa êm đềm.
+}{%
+\textit{I value most the sight of you,}\\
+\textit{Not merely rising clean and true,}\\
+\textit{But helping others rise as well,}\\
+\textit{And making learning gentler too.}
+}
+
+%------------------------------------------------------------
+\section{Bộ XVIII — Học Tốt Hơn Rồi Biết Truyền Cảm Hứng Cho Cả Lớp (Bài 181–190)}
+%------------------------------------------------------------
+
+\baitho{Bài 181 — Người Mở Vở Trước}{%
+Trước kia chuông dứt mới ngồi yên,\\
+Nay em mở vở sớm bên hiên,\\
+Bạn nhìn theo đó rồi làm giống,\\
+Cả lớp vào bài bỗng dịu hiền.
+}{%
+\textit{Before, you'd settle only late,}\\
+\textit{Now books are open as you wait,}\\
+\textit{A friend sees that and does the same,}\\
+\textit{The whole class starts in calmer state.}
+}
+
+\baitho{Bài 182 — Không Khí Học Tập}{%
+Em chép đều tay chẳng nói nhiều,\\
+Thế mà lan khắp cả bao chiều,\\
+Bạn quanh cũng bớt lòng lơ đãng,\\
+Chỉ bởi chăm ngoan biết dìu nhau.
+}{%
+\textit{You write in peace and speak no boast,}\\
+\textit{Yet that spreads farther than words most,}\\
+\textit{Around you others drift less far,}\\
+\textit{For diligence can guide a host.}
+}
+
+\baitho{Bài 183 — Bạn Bàn Bên Bắt Đầu Học}{%
+Bạn ngồi bên cạnh vốn hay lơ,\\
+Thấy em làm thật bỗng bớt mơ,\\
+Hai đứa cùng ghi thêm một ý,\\
+Thầy nghe phấn trắng cũng vui cơ.
+}{%
+\textit{Your neighbor used to drift in haze,}\\
+\textit{Now seeing you, they steady gaze,}\\
+\textit{You both note down one extra thought,}\\
+\textit{Even the chalk seems glad these days.}
+}
+
+\baitho{Bài 184 — Chăm Chỉ Có Tính Lây}{%
+Thầy tưởng chăm ngoan chỉ việc mình,\\
+Ai ngờ lan được khắp quanh mình,\\
+Một người ngồi đúng thêm vài bữa,\\
+Cả tổ dần thôi chuyện linh tinh.
+}{%
+\textit{I thought good habits lived alone,}\\
+\textit{Yet they can spread by being shown,}\\
+\textit{One student steady for some days,}\\
+\textit{And idle chatter leaves the zone.}
+}
+
+\baitho{Bài 185 — Đưa Tay Chỉ Chỗ Sai}{%
+Bạn làm gần đúng đến hàng ba,\\
+Em nghiêng trang vở chỉ thật thà,\\
+Không cười, không chọc, không khoe giỏi,\\
+Chỉ giúp một đường thoát rối ra.
+}{%
+\textit{A friend is close by line three there,}\\
+\textit{You tilt the page with honest care,}\\
+\textit{No mocking grin, no boastful air,}\\
+\textit{Just one small path out of the snare.}
+}
+
+\baitho{Bài 186 — Học Đều Thành Nếp Tốt}{%
+Ngày một thêm chút chẳng bao nhiêu,\\
+Gộp lại thành ra nếp rất đều,\\
+Bạn nhìn quen mắt rồi bắt chước,\\
+Lớp học nhờ vậy đỡ hắt hiu.
+}{%
+\textit{A little more each day seems small,}\\
+\textit{But joined together changes all,}\\
+\textit{Friends get used to seeing that,}\\
+\textit{And classroom spirits rise from fall.}
+}
+
+\baitho{Bài 187 — Trả Bài Không Còn Sợ}{%
+Giờ trả bài đến chẳng ai run,\\
+Vì em làm trước thành gương sáng,\\
+Bạn khác thấy thế nên bớt ngại,\\
+Dám hỏi dám sai để lớn dần.
+}{%
+\textit{When papers come back, fear grows less,}\\
+\textit{Because your example eases stress,}\\
+\textit{Others now dare to ask and err,}\\
+\textit{And through that risk they grow no less.}
+}
+
+\baitho{Bài 188 — Bàn Cuối Cũng Sáng Dần}{%
+Bàn cuối năm xưa vốn dễ lơ,\\
+Nay nhờ em học bớt vu vơ,\\
+Một góc lớp từng hay lơ đãng,\\
+Đã thành nơi chép rất nên thơ.
+}{%
+\textit{The back row once was built to drift,}\\
+\textit{Now through your work it starts to lift,}\\
+\textit{A corner known for dreamy minds,}\\
+\textit{Turns into notes with quiet gift.}
+}
+
+\baitho{Bài 189 — Không Cần Hô Hào Lớn}{%
+Em chẳng cần nói phải chăm lên,\\
+Chỉ cứ ngồi làm việc ở bên,\\
+Thầy thấy bài em ngày một gọn,\\
+Bạn nhìn rồi cũng tự nhắc liền.
+}{%
+\textit{You never preach that others try,}\\
+\textit{You simply work with steady eye,}\\
+\textit{I see your pages sharpen daily,}\\
+\textit{And friends correct themselves nearby.}
+}
+
+\baitho{Bài 190 — Giỏi Hơn Làm Lớp Tốt Hơn}{%
+Thầy quý không riêng điểm của em,\\
+Mà còn vì lớp sáng lên thêm,\\
+Một người học tốt không đứng lẻ,\\
+Nếu biết kéo người khác bước êm.
+}{%
+\textit{I value not your grade alone,}\\
+\textit{But how the room itself has grown,}\\
+\textit{One student doing well means more,}\\
+\textit{When others rise beside that tone.}
+}
+
+%------------------------------------------------------------
+\section{Bộ XIX — Lớp Học Đổi Hẳn Không Khí, Cùng Nhau Học Thật (Bài 191–200)}
+%------------------------------------------------------------
+
+\baitho{Bài 191 — Cả Lớp Mở Vở Cùng Lúc}{%
+Chuông vừa dứt cả lớp mở trang,\\
+Tiếng giấy đồng thanh nhẹ rộn ràng,\\
+Thầy đứng nhìn thôi mà đã biết,\\
+Hôm nay giờ học khác xưa sang.
+}{%
+\textit{The bell just ends; all pages part,}\\
+\textit{Paper sounds rise with a steadier heart,}\\
+\textit{I only watch and already know,}\\
+\textit{Today this class makes a finer start.}
+}
+
+\baitho{Bài 192 — Bàn Cuối Không Còn Mơ}{%
+Bàn cuối hôm nay chép rất đều,\\
+Không còn chống cằm ngó mây phiêu,\\
+Một câu thầy hỏi liền tay giơ,\\
+Cả góc năm nào bỗng sáng đều.
+}{%
+\textit{The back row writes in even pace,}\\
+\textit{No more cloud-drifting on each face,}\\
+\textit{One question comes and hands rise up,}\\
+\textit{That once-dim corner brightens space.}
+}
+
+\baitho{Bài 193 — Hỏi Bài Thành Thói Quen}{%
+Bạn hỏi hôm nay đúng chỗ rồi,\\
+Người bên giảng lại rất êm trôi,\\
+Không còn mượn đáp về chép nữa,\\
+Hai đứa cùng thông một ý rồi.
+}{%
+\textit{A friend now asks in just the right way,}\\
+\textit{The answer comes back smooth and clear today,}\\
+\textit{No copying home of borrowed lines,}\\
+\textit{Two minds now meet along one way.}
+}
+
+\baitho{Bài 194 — Cả Lớp Chung Một Nhịp}{%
+Cả lớp hôm nay học rất chăm,\\
+Bàn trên bàn dưới cũng đều chăm,\\
+Có bạn còn chậm đôi ba bước,\\
+Mà ai cũng đợi bạn cùng chăm.
+}{%
+\textit{Today the whole class studies hard,}\\
+\textit{Front desks and back share equal guard,}\\
+\textit{Some friends still move a little slow,}\\
+\textit{Yet all still wait and pull them forward.}
+}
+
+\baitho{Bài 195 — Giờ Trả Bài Bớt Nặng}{%
+Giờ trả bài nay nhẹ hẳn lên,\\
+Bạn sai thì sửa chẳng ai phiền,\\
+Không cười trước lỗi người bên cạnh,\\
+Vì ai cũng biết học cần bền.
+}{%
+\textit{Return-day now feels less severe,}\\
+\textit{Mistakes are fixed without a sneer,}\\
+\textit{No one laughs at someone else's fault,}\\
+\textit{For all know learning takes some years.}
+}
+
+\baitho{Bài 196 — Người Giỏi Không Đi Một Mình}{%
+Người khá không còn bước một mình,\\
+Bạn bè nhờ đó học thông minh,\\
+Có điều chưa rõ cùng ngồi lại,\\
+Cả lớp vì nhau tiến thật nhanh.
+}{%
+\textit{The stronger one no longer walks alone,}\\
+\textit{Friends nearby learn and sharpen tone,}\\
+\textit{What stays unclear is worked through still,}\\
+\textit{And all advance more quickly grown.}
+}
+
+\baitho{Bài 197 — Tiếng Chép Bài Nghe Vui}{%
+Tiếng chép hôm nay rộn cả bàn,\\
+Bút chạy đều tay tựa nhịp đàn,\\
+Ngoài kia gió lướt qua ô cửa,\\
+Trong lớp chăm ngoan đã ngập tràn.
+}{%
+\textit{The sound of writing fills each desk,}\\
+\textit{Pens move in rhythm, clean and brisk,}\\
+\textit{Outside, the breeze goes past the frame,}\\
+\textit{Inside, good study overflows like bliss.}
+}
+
+\baitho{Bài 198 — Tổ Học Chung}{%
+Tổ học hôm nay bớt nói nhiều,\\
+Gặp câu khó lại hỏi bao điều,\\
+Không ai giữ kín riêng lời giải,\\
+Nên cả bàn sau hiểu thêm nhiều.
+}{%
+\textit{The study group speaks less today,}\\
+\textit{But asks more questions on the way,}\\
+\textit{No one keeps the answer for themselves,}\\
+\textit{So even the back desk learns to stay.}
+}
+
+\baitho{Bài 199 — Bài Khó Qua Cùng Nhau}{%
+Một bài khó dựng giữa hàng sau,\\
+Cả bàn chụm lại nghĩ cùng nhau,\\
+Có bạn sai rồi ai cũng sửa,\\
+Đến cuối cùng rồi cũng vượt mau.
+}{%
+\textit{A hard problem stands in the back row,}\\
+\textit{The whole desk leans in, thinking slow,}\\
+\textit{One friend goes wrong, the others help,}\\
+\textit{And in the end they all still grow.}
+}
+
+\baitho{Bài 200 — Một Lớp Học Rất Sáng}{%
+Giờ học hôm nay sáng cả phòng,\\
+Thầy nhìn mà nhẹ cả tấm lòng,\\
+Một người chăm chỉ lan ra lớp,\\
+Để cả trăm mơ hóa quyết lòng.
+}{%
+\textit{Today's lesson lights the whole room bright,}\\
+\textit{I watch and feel my spirit light,}\\
+\textit{One student's care spread through the class,}\\
+\textit{Till many drifting minds choose work outright.}
+}
+
+%------------------------------------------------------------
+\section{Bộ XX — Lớp Học Đã Vào Guồng, Học Thật Và Vui Thật (Bài 201--210)}
+%------------------------------------------------------------
+
+\baitho{Bài 201 — Chuông Vào Lớp Nghe Vui}{%
+Chuông vào lớp dứt cả phòng yên,\\
+Ghế bàn ngay ngắn, vở nằm bên,\\
+Thầy chưa kịp gọi ai trật tự,\\
+Mà lớp đã vào guồng rất êm.
+}{%
+\textit{The bell rings in and all grows still,}\\
+\textit{Books settle down with quiet will,}\\
+\textit{I need not ask for order first,}\\
+\textit{The class has found its rhythm and skill.}
+}
+
+\baitho{Bài 202 — Cười Nhưng Không Lạc Bài}{%
+Cả lớp hôm nay vẫn bật cười,\\
+Nhưng tay vẫn chép chẳng buông lơi,\\
+Hóa ra giờ học đâu khô cứng,\\
+Vui mà không lạc nhịp là vui.
+}{%
+\textit{The class still laughs at moments bright,}\\
+\textit{Yet pens keep moving left to right,}\\
+\textit{So learning need not turn to stone,}\\
+\textit{Joy with focus is joy done right.}
+}
+
+\baitho{Bài 203 — Hỏi Đúng Điều Cần Hỏi}{%
+Bạn nào chưa rõ bèn giơ tay,\\
+Không ngại sai đâu giữa lớp này,\\
+Một câu hỏi mở ra bao ngõ,\\
+Thầy nghe mà thấy tiết thêm hay.
+}{%
+\textit{Whoever doubts now lifts a hand,}\\
+\textit{Not fearing error in this band,}\\
+\textit{One question opens many ways,}\\
+\textit{And makes the lesson richer planned.}
+}
+
+\baitho{Bài 204 — Bàn Cuối Cũng Cười Đúng Lúc}{%
+Bàn cuối vẫn vui tính như xưa,\\
+Nhưng nay không ngủ suốt ban trưa,\\
+Cười xong lại cúi vào trang vở,\\
+Thế mới là duyên đẹp học đường.
+}{%
+\textit{The back row keeps its humor still,}\\
+\textit{But now it does not sleep at will,}\\
+\textit{It laughs, then bends back to the page,}\\
+\textit{That is school charm with steadier skill.}
+}
+
+\baitho{Bài 205 — Thảo Luận Ra Thảo Luận}{%
+Trao đổi hôm nay khác mọi ngày,\\
+Không còn drama chạy vòng tay,\\
+Chủ đề xoay đúng vào bài khó,\\
+Nói xong ai cũng sáng thêm ngay.
+}{%
+\textit{Discussion now has truly changed,}\\
+\textit{No rumor loops are loosely ranged,}\\
+\textit{The topic stays with what is hard,}\\
+\textit{And all grow clearer once exchanged.}
+}
+
+\baitho{Bài 206 — Bài Khó Mà Không Ngán}{%
+Gặp bài khó chẳng vội than đâu,\\
+Cả lớp ngồi nhìn lại từ đầu,\\
+Mỗi bạn góp thêm một ý nhỏ,\\
+Đến khi ra hướng thấy vui lâu.
+}{%
+\textit{A hard task comes; no one despairs,}\\
+\textit{The class looks back with patient care,}\\
+\textit{Each friend contributes one small thought,}\\
+\textit{Till joy appears with pathways clear.}
+}
+
+\baitho{Bài 207 — Tiếng Phấn Gặp Tiếng Bút}{%
+Tiếng phấn trên bảng gặp tiếng ghi,\\
+Nghe như đối đáp rất nhu mì,\\
+Thầy đưa đến đâu trò đón kịp,\\
+Cả giờ trôi mượt lạ kỳ ghê.
+}{%
+\textit{Chalk on the board meets pens below,}\\
+\textit{Like soft replies in even flow,}\\
+\textit{I offer one step, you catch it fast,}\\
+\textit{And all the hour moves bright and slow.}
+}
+
+\baitho{Bài 208 — Bạn Giỏi Không Làm Người Khác Réo}{%
+Bạn giỏi hôm nay vẫn rất hiền,\\
+Không làm ai sợ, chẳng khoe riêng,\\
+Ai chưa hiểu chỗ nào liền chỉ,\\
+Giỏi như vậy mới thật có duyên.
+}{%
+\textit{The strong student stays gentle too,}\\
+\textit{No fear is spread, no pride breaks through,}\\
+\textit{Where others doubt, they point the way,}\\
+\textit{That kind of skill is graceful, true.}
+}
+
+\baitho{Bài 209 — Hết Tiết Mà Còn Muốn Hỏi}{%
+Chuông hết giờ vang giữa không gian,\\
+Mà vài cánh tay vẫn chưa tàn,\\
+Bạn còn muốn hỏi thêm đôi chỗ,\\
+Thầy nghe mà biết lớp đang ngoan.
+}{%
+\textit{The ending bell rings through the air,}\\
+\textit{Yet some raised hands are still up there,}\\
+\textit{A few want just one question more,}\\
+\textit{And I can tell the class now cares.}
+}
+
+\baitho{Bài 210 — Học Thật Mà Vẫn Vui}{%
+Lớp học đẹp đâu phải lặng thinh,\\
+Mà là vui vẻ vẫn thông minh,\\
+Biết lúc bật cười, khi cúi học,\\
+Để một giờ tròn nghĩa lớp mình.
+}{%
+\textit{A good class need not silent be,}\\
+\textit{But joyful still with clarity,}\\
+\textit{Knowing when to laugh, when to lean down,}\\
+\textit{And make one hour a whole community.}
+}
+
+%------------------------------------------------------------
+\section{Bộ XXI — Lớp Mạnh Dần, Tự Học Và Tự Quản (Bài 211--220)}
+%------------------------------------------------------------
+
+\baitho{Không Đợi Nhắc Mới Mở Vở}{%
+Vào giờ ai nấy mở trang ra,\\
+Không đợi thầy kêu mới viết ra,\\
+Một lớp trưởng thành đâu ở điểm,\\
+Mà ở quen tay tự mở ra.
+}{%
+\textit{At class time, every notebook wakes,}\\
+\textit{No prompt is needed for hands to start,}\\
+\textit{A class grows up not just by scores,}\\
+\textit{But by the habits opening every heart.}
+}
+
+\baitho{Giữ Nhịp Không Cần Gõ}{%
+Thầy vừa ghi một ý lên cao,\\
+Cả lớp theo liền nhịp rất mau,\\
+Nhịp học đều như hơi thở nhẹ,\\
+Không ai phá sóng giữa lao xao.
+}{%
+\textit{I write one point across the board,}\\
+\textit{The class falls in with measured speed,}\\
+\textit{Its breathing calm, its motions freed,}\\
+\textit{No random wave disturbs the room,}\\
+\textit{The rhythm grows from shared good heed.}
+}
+
+\baitho{Bàn Trên Nhắc Bàn Sau}{%
+Bàn trên làm xong chẳng nghỉ ngơi,\\
+Quay xuống nhắc luôn bạn cuối ngồi,\\
+Lớp mạnh đâu vì riêng ai giỏi,\\
+Mà vì đi chậm vẫn thành đôi.
+}{%
+\textit{The front row finishes, then stays,}\\
+\textit{It turns to help the slower pace,}\\
+\textit{A strong class is not strength alone,}\\
+\textit{But shared progress held in one embrace.}
+}
+
+\baitho{Tự Sửa Trước Khi Thầy Sửa}{%
+Làm xong bạn đọc lại đôi lần,\\
+Thấy sai tự sửa, tự cân phân,\\
+Thầy chưa cần chỉ điều sơ suất,\\
+Mà vở đã bớt lỗi mười phần.
+}{%
+\textit{Work done, they read it through once more,}\\
+\textit{They spot and fix what was unsure,}\\
+\textit{Before I mark the smallest flaw,}\\
+\textit{Their pages grow much cleaner, sure.}
+}
+
+\baitho{Giờ Trống Không Trống Nữa}{%
+Thầy bận ra ngoài mấy phút thôi,\\
+Mà phòng vẫn giữ đúng hàng ngồi,\\
+Có nhóm mở sách ôn phần cũ,\\
+Hóa ra nền nếp đã lên rồi.
+}{%
+\textit{I step outside a little while,}\\
+\textit{The room still holds its steady style,}\\
+\textit{Some groups review the earlier work,}\\
+\textit{And discipline has learned to smile.}
+}
+
+\baitho{Bảng Phân Công Rất Sáng}{%
+Việc lớp chia ra rõ từng phần,\\
+Ai trông góc bảng, ai quét sân,\\
+Có tên, có hẹn, có người giữ,\\
+Nên chuyện nhỏ thôi cũng hóa gần.
+}{%
+\textit{Class tasks are split in ordered ways,}\\
+\textit{Who tends the board, who clears the space,}\\
+\textit{With names and times and someone watching,}\\
+\textit{Small duties gain a steadier place.}
+}
+
+\baitho{Tổ Học Tự Chạy Êm}{%
+Tổ học hôm nay chạy rất đều,\\
+Bạn tra công thức, bạn đọc điều,\\
+Bạn khác ghi nhanh phần kết luận,\\
+Cùng làm nên việc chẳng ai phiêu.
+}{%
+\textit{The study team runs smooth today,}\\
+\textit{One checks the rule, one reads the way,}\\
+\textit{Another writes the final thought,}\\
+\textit{And no one drifts too far astray.}
+}
+
+\baitho{Nhắc Nhau Bằng Giọng Dễ Nghe}{%
+Bạn quên trật tự, bạn bên kề,\\
+Nhắc bằng giọng nhẹ chứ không chê,\\
+Lớp tự quản bền nhờ chỗ ấy,\\
+Góp lời mà chẳng khiến ai quê.
+}{%
+\textit{A friend grows loud; the next speaks low,}\\
+\textit{A gentle word restores the flow,}\\
+\textit{Self-managed rooms endure through this,}\\
+\textit{Advice that helps without a blow.}
+}
+
+\baitho{Tự Học Thành Khí Chất}{%
+Ngày trước học là việc bị giao,\\
+Nay thành thói quen tự bước vào,\\
+Mỗi tối mở trang không ai nhắc,\\
+Đó là khí chất lớn lên cao.
+}{%
+\textit{Before, learning felt assigned from far,}\\
+\textit{Now it becomes a chosen star,}\\
+\textit{Each night they open books unasked,}\\
+\textit{And that is how true habits are.}
+}
+
+\baitho{Một Lớp Biết Tự Dẫn Đường}{%
+Thầy đứng trên bục thấy an tâm,\\
+Vì lớp nay đâu chỉ chăm chăm,\\
+Mà biết tự đi và tự giữ,\\
+Mai vào đời vẫn vững âm thầm.
+}{%
+\textit{I stand before you calm and sure,}\\
+\textit{This class has grown in ways that endure,}\\
+\textit{It knows to guide and steady itself,}\\
+\textit{And carry that strength beyond this door.}
+}
+
+%------------------------------------------------------------
+\section{Bộ XXII — Bản Lĩnh Học Thuật, Tranh Luận Và Phản Biện Đẹp (Bài 221--230)}
+%------------------------------------------------------------
+
+\baitho{Dám Hỏi Vì Sao}{%
+Gặp điều chưa rõ hỏi vì sao,\\
+Cả lớp lắng nghe chẳng ồn ào,\\
+Biết hỏi không làm ai yếu thế,\\
+Mà khiến điều sâu sáng biết bao.
+}{%
+\textit{When something stays unclear, ask why,}\\
+\textit{The room listens back without a cry,}\\
+\textit{A question does not make one weak,}\\
+\textit{It lets the deeper meaning clarify.}
+}
+
+\baitho{Cãi Bằng Luận, Không Bằng To}{%
+Bạn nêu ý khác rất đường hoàng,\\
+Không lấy âm thanh lấn lập trường,\\
+Lý lẽ đứng lên nhờ bằng chứng,\\
+Nên cuộc tranh luận vẫn văn chương.
+}{%
+\textit{A different view is raised with grace,}\\
+\textit{No louder voice is used for place,}\\
+\textit{Reason stands up with evidence,}\\
+\textit{And debate keeps its civilized face.}
+}
+
+\baitho{Mỗi Chữ Đều Có Căn}{%
+Một ý vừa nêu giữa lớp bàn,\\
+Em đem dẫn chứng đặt cho đàng,\\
+Không còn nói đại cho xong chuyện,\\
+Mỗi chữ đưa ra đều rõ ràng.
+}{%
+\textit{An idea rises in the room,}\\
+\textit{You place your evidence in bloom,}\\
+\textit{No careless claim is used to end,}\\
+\textit{Each word now stands with clearer room.}
+}
+
+\baitho{Thua Lý Thì Sửa}{%
+Câu vừa em nói lệch đôi đường,\\
+Bạn chỉ căn nguyên rất tỏ tường,\\
+Em gật nhận ngay không ái ngại,\\
+Thua lý một lần, được mở đường.
+}{%
+\textit{Your earlier point strayed off the way,}\\
+\textit{A friend shows why in open day,}\\
+\textit{You nod and change without defense,}\\
+\textit{And lose one claim to learn the way.}
+}
+
+\baitho{Không Cắt Lời Nhau}{%
+Bạn nói chưa xong, lớp lặng yên,\\
+Ai cũng giữ phần đáp thật hiền,\\
+Chờ hết ý rồi mình thêm ý,\\
+Tranh luận như vầy mới có duyên.
+}{%
+\textit{A friend is speaking; all stay still,}\\
+\textit{Each answer waits with measured will,}\\
+\textit{When one thought ends, the next begins,}\\
+\textit{And debate gains its human skill.}
+}
+
+\baitho{Dẫn Sách Dẫn Trang}{%
+Phản biện hôm nay chẳng nói chay,\\
+Trang nào sách ấy mở ra ngay,\\
+Từ câu, từ chữ đều soi kỹ,\\
+Nên tiếng em nghĩ hóa ra hay.
+}{%
+\textit{Today's rebuttal is not bare talk,}\\
+\textit{The book opens to the page you cite,}\\
+\textit{Each line and phrase is closely read,}\\
+\textit{So `I think' can stand in clearer light.}
+}
+
+\baitho{Một Câu Hỏi Mở}{%
+Một câu hỏi mở giữa giờ lên,\\
+Kéo cả bao đầu óc ngẩng lên,\\
+Bạn trước vừa xong, bạn sau nối,\\
+Mà không ai muốn cướp phần trên.
+}{%
+\textit{One open question fills the air,}\\
+\textit{And many minds rise up to share,}\\
+\textit{One friend concludes, another builds,}\\
+\textit{With no one rushing for the chair.}
+}
+
+\baitho{Phản Biện Không Chạm Người}{%
+Phản bác điều sai chẳng chạm người,\\
+Chỉ chạm vào câu với ý thôi,\\
+Giữ nhau nguyên vẹn trong tranh luận,\\
+Nên lớp càng sâu lại càng vui.
+}{%
+\textit{They challenge flaws, not human worth,}\\
+\textit{They stay with claims, not private earth,}\\
+\textit{So everyone remains intact,}\\
+\textit{And deeper thought gives brighter mirth.}
+}
+
+\baitho{Biết Nói Em Chưa Chắc}{%
+Khi chưa thật chắc, nói chưa tường,\\
+Em nhận phần mình vẫn thiếu đường,\\
+Chính chữ chưa thông làm lời mạnh,\\
+Vì còn chỗ mở để soi đường.
+}{%
+\textit{When you are unsure, you say so plain,}\\
+\textit{You leave some room for further gain,}\\
+\textit{That honest `not yet' strengthens thought,}\\
+\textit{Because more light can still remain.}
+}
+
+\baitho{Một Lớp Có Bản Lĩnh Học Thuật}{%
+Lớp mạnh đâu nhờ tiếng thật to,\\
+Mà nhờ suy nghĩ thật cho rõ,\\
+Biết hỏi, biết nghe, biết tranh luận,\\
+Nên trí cùng nhau sáng thêm rõ.
+}{%
+\textit{A strong class is not built by noise,}\\
+\textit{But by clear thought and careful poise,}\\
+\textit{It asks, it hears, it argues well,}\\
+\textit{And makes shared thinking one shared voice.}
+}
+
+\begin{baihoc}
+Thơ tứ tuyệt thất ngôn không chỉ để hát --- mà để đọc chậm lại và tìm trong bốn câu ngắn một điều thầy không nỡ nói thẳng. Câu thứ tư thường là nơi sự thật cất tiếng.\\
+\textit{(Seven-character quatrains are not only to be recited --- they are to be read slowly, searching within four short lines for what a teacher was too fond to say plainly. The fourth line is usually where the truth speaks.)}
+\end{baihoc}
+
+\begin{ghinhoanh}
+\textbf{Cấu trúc một bài thất ngôn tứ tuyệt:}\\[4pt]
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Câu 1 (Khai):} Mở đề --- giới thiệu khung cảnh.
+  \item \textbf{Câu 2 (Thừa):} Tiếp nối --- phát triển tình huống.
+  \item \textbf{Câu 3 (Chuyển):} Bẻ ngoặt bất ngờ --- thường là chỗ hài nhất.
+  \item \textbf{Câu 4 (Hợp):} Kết thúc --- cú đấm cuối để người đọc phải nghĩ lại.
+\end{itemize}
+\textit{(Structure of a seven-character quatrain: Line 1 (Opening): sets the scene. Line 2 (Continuation): develops the situation. Line 3 (Turn): the unexpected pivot---usually the funniest moment. Line 4 (Resolution): the closing punch that makes the reader pause and reconsider.)}
+\end{ghinhoanh}

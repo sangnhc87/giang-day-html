@@ -1,56 +1,66 @@
 \babel@toc {vietnamese}{}\relax 
 \contentsline {chapter}{Lời Tựa}{3}{}%
 \contentsline {chapter}{Hướng Dẫn Sử Dụng Sách}{5}{}%
-\contentsline {chapter}{Lời Mở Đầu}{iii}{}%
+\contentsline {chapter}{Lời Mở Đầu}{v}{}%
 \contentsline {chapter}{\numberline {1}Trầm Cảm Hay Lười Biếng?}{3}{}%
 \contentsline {section}{\numberline {1.1}Mượn Từ Chuyên Môn Để Trốn Việc Thường}{3}{}%
 \contentsline {section}{\numberline {1.2}Mệt Thật Thì Nghỉ Đúng, Không Phải Nghỉ Bừa}{4}{}%
 \contentsline {section}{\numberline {1.3}Tử Tế Với Bản Thân Không Có Nghĩa Là Nuông Mình}{4}{}%
+\contentsline {section}{\numberline {1.4}Lười Có Tổ Chức Nhưng Lại Gọi Là Mất Động Lực}{5}{}%
+\contentsline {section}{\numberline {1.5}Thức Đêm Tự Phá Rồi Sáng Ra Nhận Mình Kiệt Quệ}{5}{}%
+\contentsline {section}{\numberline {1.6}Xin Gia Hạn Vì Tinh Thần Em Không Ổn}{6}{}%
+\contentsline {section}{\numberline {1.7}Tự Gắn Nhãn Bệnh Để Không Phải Nhìn Vào Tật Xấu}{7}{}%
+\contentsline {section}{\numberline {1.8}Muốn Được Thương Nhưng Không Muốn Bị Nhắc}{7}{}%
 \contentsline {part}{PHẦN 1: TÂM LÝ CHIẾN GEN Z}{3}{}%
-\contentsline {chapter}{\numberline {2}Hệ Tư Tưởng Chữa Lành}{7}{}%
-\contentsline {section}{\numberline {2.1}Cái Gì Cũng Muốn Nhẹ Nhàng}{7}{}%
-\contentsline {section}{\numberline {2.2}Chữa Lành Bằng Mua Sắm Và Trốn Việc}{7}{}%
-\contentsline {section}{\numberline {2.3}Chữa Lành Kiểu Có Kỷ Luật}{8}{}%
-\contentsline {chapter}{\numberline {3}Áp Lực Đồng Trang Lứa}{11}{}%
-\contentsline {section}{\numberline {3.1}Bạn Em Giỏi Quá Nên Em Nản}{11}{}%
-\contentsline {section}{\numberline {3.2}Đồng Trang Lứa Hay Đồng Sân Khấu}{11}{}%
-\contentsline {section}{\numberline {3.3}Áp Lực Có Thể Đẩy, Không Nhất Thiết Phải Đè}{12}{}%
-\contentsline {chapter}{\numberline {4}Thầy Cũng Có Lúc Quên Mình Từng Là Trò}{17}{}%
-\contentsline {section}{\numberline {4.1}Thầy Quên Cảm Giác Bị Gọi Bất Ngờ}{17}{}%
-\contentsline {section}{\numberline {4.2}Khi Kỷ Luật Bị Dùng Như Cơn Cáu}{17}{}%
-\contentsline {section}{\numberline {4.3}Người Dạy Cũng Phải Tự Soi}{18}{}%
-\contentsline {part}{PHẦN 2: LÝ SỰ XOAY CHIỀU}{17}{}%
-\contentsline {chapter}{\numberline {5}Những Quy Định Trên Trời}{19}{}%
-\contentsline {section}{\numberline {5.1}Nội Quy Không Giải Thích}{19}{}%
-\contentsline {section}{\numberline {5.2}Cấm Cái Dễ Thấy, Bỏ Cái Cốt Lõi}{19}{}%
-\contentsline {section}{\numberline {5.3}Nội Quy Tốt Là Nội Quy Nuôi Ý Thức}{20}{}%
-\contentsline {chapter}{\numberline {6}Khi Thầy Cô Xin Lỗi}{23}{}%
-\contentsline {section}{\numberline {6.1}Người Lớn Sợ Mất Uy Khi Xin Lỗi}{23}{}%
-\contentsline {section}{\numberline {6.2}Một Lời Xin Lỗi Dạy Nhiều Hơn Một Bài Giảng}{23}{}%
-\contentsline {section}{\numberline {6.3}Xin Lỗi Không Làm Mất Ranh Giới}{24}{}%
-\contentsline {chapter}{\numberline {7}Ánh Trăng Lừa Dối Của Bố Mẹ}{29}{}%
-\contentsline {section}{\numberline {7.1}Ba Mẹ Chỉ Muốn Tốt Cho Con}{29}{}%
-\contentsline {section}{\numberline {7.2}Kỳ Vọng Được Bọc Trong Hy Sinh}{29}{}%
-\contentsline {section}{\numberline {7.3}Yêu Thương Mà Không Biết Lắng Nghe}{30}{}%
-\contentsline {part}{PHẦN 3: CUỘC CHIẾN BA TRÒN}{29}{}%
-\contentsline {chapter}{\numberline {8}Căn Bệnh Con Nhà Người Ta}{33}{}%
-\contentsline {section}{\numberline {8.1}Một Câu So Sánh, Mười Vết Xước}{33}{}%
-\contentsline {section}{\numberline {8.2}Con Nhà Người Ta Cũng Có Một Cơn Khổ Riêng}{33}{}%
-\contentsline {section}{\numberline {8.3}Muốn Con Tốt Hơn, Đừng Xóa Giá Trị Của Nó}{34}{}%
-\contentsline {chapter}{\numberline {9}Họp Phụ Huynh Bão Táp}{37}{}%
-\contentsline {section}{\numberline {9.1}Trên Lớp Một Kiểu, Trước Phụ Huynh Một Kiểu}{37}{}%
-\contentsline {section}{\numberline {9.2}Phụ Huynh Bênh Con Mù Quáng}{37}{}%
-\contentsline {section}{\numberline {9.3}Buổi Họp Tốt Là Buổi Họp Biết Mở Đường}{38}{}%
-\contentsline {chapter}{\numberline {10}Giấc Mộng Rớt Đại Học Vẫn Thành Tỷ Phú}{43}{}%
-\contentsline {section}{\numberline {10.1}Lấy Ngoại Lệ Để Xóa Công Sức Số Đông}{43}{}%
-\contentsline {section}{\numberline {10.2}Mơ Lớn Không Sai, Mơ Tắt Nền Mới Nguy}{43}{}%
-\contentsline {section}{\numberline {10.3}Mơ Giàu Thì Cũng Phải Tỉnh}{44}{}%
-\contentsline {part}{PHẦN 4: ẢO TƯỞNG TƯƠNG LAI}{43}{}%
-\contentsline {chapter}{\numberline {11}Đam Mê Trải Nghiệm}{47}{}%
-\contentsline {section}{\numberline {11.1}Cái Gì Cũng Muốn Thử Một Chút}{47}{}%
-\contentsline {section}{\numberline {11.2}Đi Nhiều Không Đồng Nghĩa Là Lớn Nhanh}{47}{}%
-\contentsline {section}{\numberline {11.3}Trải Nghiệm Tốt Phải Để Lại Một Vết Tích}{48}{}%
-\contentsline {chapter}{\numberline {12}Gen Z Đi Làm Sớm}{51}{}%
-\contentsline {section}{\numberline {12.1}Muốn Tự Lập Từ Sớm}{51}{}%
-\contentsline {section}{\numberline {12.2}Đi Làm Không Phải Để Đóng Kịch Người Lớn}{51}{}%
-\contentsline {section}{\numberline {12.3}Đi Sớm Hay Muộn, Cũng Phải Có Nền}{52}{}%
+\contentsline {chapter}{\numberline {2}Hệ Tư Tưởng Chữa Lành}{9}{}%
+\contentsline {section}{\numberline {2.1}Cái Gì Cũng Muốn Nhẹ Nhàng}{9}{}%
+\contentsline {section}{\numberline {2.2}Chữa Lành Bằng Mua Sắm Và Trốn Việc}{9}{}%
+\contentsline {section}{\numberline {2.3}Chữa Lành Kiểu Có Kỷ Luật}{10}{}%
+\contentsline {section}{\numberline {2.4}Chữa Lành Bằng Cách Chặn Hết Người Nói Thật}{10}{}%
+\contentsline {section}{\numberline {2.5}Đọc Trích Dẫn Chữa Lành Nhiều Hơn Cả Sửa Nếp Sống}{11}{}%
+\contentsline {section}{\numberline {2.6}Thích Năng Lượng Tích Cực Nhưng Ghét Mọi Nhắc Nhở}{12}{}%
+\contentsline {section}{\numberline {2.7}Biến Mong Manh Thành Đặc Quyền}{12}{}%
+\contentsline {section}{\numberline {2.8}Bình Yên Không Có Nghĩa Là Không Bị Đụng Tới}{13}{}%
+\contentsline {chapter}{\numberline {3}Áp Lực Đồng Trang Lứa}{15}{}%
+\contentsline {section}{\numberline {3.1}Bạn Em Giỏi Quá Nên Em Nản}{15}{}%
+\contentsline {section}{\numberline {3.2}Đồng Trang Lứa Hay Đồng Sân Khấu}{15}{}%
+\contentsline {section}{\numberline {3.3}Áp Lực Có Thể Đẩy, Không Nhất Thiết Phải Đè}{16}{}%
+\contentsline {chapter}{\numberline {4}Thầy Cũng Có Lúc Quên Mình Từng Là Trò}{21}{}%
+\contentsline {section}{\numberline {4.1}Thầy Quên Cảm Giác Bị Gọi Bất Ngờ}{21}{}%
+\contentsline {section}{\numberline {4.2}Khi Kỷ Luật Bị Dùng Như Cơn Cáu}{21}{}%
+\contentsline {section}{\numberline {4.3}Người Dạy Cũng Phải Tự Soi}{22}{}%
+\contentsline {part}{PHẦN 2: LÝ SỰ XOAY CHIỀU}{21}{}%
+\contentsline {chapter}{\numberline {5}Những Quy Định Trên Trời}{23}{}%
+\contentsline {section}{\numberline {5.1}Nội Quy Không Giải Thích}{23}{}%
+\contentsline {section}{\numberline {5.2}Cấm Cái Dễ Thấy, Bỏ Cái Cốt Lõi}{23}{}%
+\contentsline {section}{\numberline {5.3}Nội Quy Tốt Là Nội Quy Nuôi Ý Thức}{24}{}%
+\contentsline {chapter}{\numberline {6}Khi Thầy Cô Xin Lỗi}{27}{}%
+\contentsline {section}{\numberline {6.1}Người Lớn Sợ Mất Uy Khi Xin Lỗi}{27}{}%
+\contentsline {section}{\numberline {6.2}Một Lời Xin Lỗi Dạy Nhiều Hơn Một Bài Giảng}{27}{}%
+\contentsline {section}{\numberline {6.3}Xin Lỗi Không Làm Mất Ranh Giới}{28}{}%
+\contentsline {chapter}{\numberline {7}Ánh Trăng Lừa Dối Của Bố Mẹ}{33}{}%
+\contentsline {section}{\numberline {7.1}Ba Mẹ Chỉ Muốn Tốt Cho Con}{33}{}%
+\contentsline {section}{\numberline {7.2}Kỳ Vọng Được Bọc Trong Hy Sinh}{33}{}%
+\contentsline {section}{\numberline {7.3}Yêu Thương Mà Không Biết Lắng Nghe}{34}{}%
+\contentsline {part}{PHẦN 3: CUỘC CHIẾN BA TRÒN}{33}{}%
+\contentsline {chapter}{\numberline {8}Căn Bệnh Con Nhà Người Ta}{37}{}%
+\contentsline {section}{\numberline {8.1}Một Câu So Sánh, Mười Vết Xước}{37}{}%
+\contentsline {section}{\numberline {8.2}Con Nhà Người Ta Cũng Có Một Cơn Khổ Riêng}{37}{}%
+\contentsline {section}{\numberline {8.3}Muốn Con Tốt Hơn, Đừng Xóa Giá Trị Của Nó}{38}{}%
+\contentsline {chapter}{\numberline {9}Họp Phụ Huynh Bão Táp}{41}{}%
+\contentsline {section}{\numberline {9.1}Trên Lớp Một Kiểu, Trước Phụ Huynh Một Kiểu}{41}{}%
+\contentsline {section}{\numberline {9.2}Phụ Huynh Bênh Con Mù Quáng}{41}{}%
+\contentsline {section}{\numberline {9.3}Buổi Họp Tốt Là Buổi Họp Biết Mở Đường}{42}{}%
+\contentsline {chapter}{\numberline {10}Giấc Mộng Rớt Đại Học Vẫn Thành Tỷ Phú}{47}{}%
+\contentsline {section}{\numberline {10.1}Lấy Ngoại Lệ Để Xóa Công Sức Số Đông}{47}{}%
+\contentsline {section}{\numberline {10.2}Mơ Lớn Không Sai, Mơ Tắt Nền Mới Nguy}{47}{}%
+\contentsline {section}{\numberline {10.3}Mơ Giàu Thì Cũng Phải Tỉnh}{48}{}%
+\contentsline {part}{PHẦN 4: ẢO TƯỞNG TƯƠNG LAI}{47}{}%
+\contentsline {chapter}{\numberline {11}Đam Mê Trải Nghiệm}{51}{}%
+\contentsline {section}{\numberline {11.1}Cái Gì Cũng Muốn Thử Một Chút}{51}{}%
+\contentsline {section}{\numberline {11.2}Đi Nhiều Không Đồng Nghĩa Là Lớn Nhanh}{51}{}%
+\contentsline {section}{\numberline {11.3}Trải Nghiệm Tốt Phải Để Lại Một Vết Tích}{52}{}%
+\contentsline {chapter}{\numberline {12}Gen Z Đi Làm Sớm}{55}{}%
+\contentsline {section}{\numberline {12.1}Muốn Tự Lập Từ Sớm}{55}{}%
+\contentsline {section}{\numberline {12.2}Đi Làm Không Phải Để Đóng Kịch Người Lớn}{55}{}%
+\contentsline {section}{\numberline {12.3}Đi Sớm Hay Muộn, Cũng Phải Có Nền}{56}{}%

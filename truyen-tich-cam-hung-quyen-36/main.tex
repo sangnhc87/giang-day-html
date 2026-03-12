@@ -1,0 +1,138 @@
+\documentclass[11pt,a5paper,oneside,openany]{book}
+
+\usepackage[T5]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage[explicit]{titlesec}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage[unicode,hidelinks]{hyperref}
+\usepackage{bookmark}
+
+\microtypesetup{expansion=false}
+
+\makeatletter
+\pdfstringdefDisableCommands{%
+  \let\color\@gobble
+  \let\bfseries\relax
+  \let\itshape\relax
+  \let\scshape\relax
+}
+\makeatother
+
+\geometry{top=1.45cm,bottom=1.65cm,left=1.35cm,right=1.35cm,headheight=14pt,footskip=18pt}
+\setstretch{1.14}
+
+\definecolor{titlecolor}{HTML}{8C2F39}
+\definecolor{linecolor}{HTML}{2B2522}
+\definecolor{softline}{HTML}{E4C7AF}
+\definecolor{chapterline}{HTML}{C06A3C}
+\definecolor{notecolor}{HTML}{6B5447}
+\definecolor{transcolor}{HTML}{495867}
+\definecolor{bgbox}{HTML}{FDFBF7}
+\definecolor{framebox}{HTML}{D4A373}
+
+\setlength{\parindent}{0pt}
+\setcounter{tocdepth}{1}
+\setlist{itemsep=0.35em,topsep=0.45em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{Thơ học trò vui, gọn, đọc xuôi}}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\centering}
+  {\large\bfseries\color{chapterline} Chương \thechapter}
+  {0.45em}
+  {\LARGE\bfseries\color{titlecolor}#1}
+  [\vspace{0.8em}{\color{softline}\rule{0.76\linewidth}{0.9pt}}]
+\titlespacing*{\chapter}{0pt}{0.2em}{1.25em}
+
+\titleformat{\section}
+  {\large\bfseries\color{titlecolor}}
+  {}
+  {0em}
+  {#1}
+\titlespacing*{\section}{0pt}{0.2em}{0.2em}
+
+\setlength{\cftbeforechapskip}{4pt}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftchapfont}{\small\bfseries}
+\renewcommand{\cftchappagefont}{\small\bfseries}
+\setlength{\cftbeforesecskip}{1pt}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecfont}{\footnotesize}
+\renewcommand{\cftsecpagefont}{\footnotesize}
+
+\newcommand{\poem}[4]{%
+  \addcontentsline{toc}{section}{#2}%
+  \vspace{0.35em}
+  \begin{tcolorbox}[
+    colback=bgbox,
+    colframe=framebox,
+    title={\large\bfseries\color{titlecolor} #1},
+    halign title=center,
+    coltitle=titlecolor,
+    attach boxed title to top center={yshift=-2mm},
+    boxed title style={colback=white, colframe=framebox, boxrule=0.5pt, arc=1mm},
+    arc=2mm,
+    boxrule=0.6pt,
+    left=2.5mm,
+    right=2.5mm,
+    top=3mm,
+    bottom=2.4mm
+  ]
+  {\centering\small\bfseries\color{linecolor} #4\par}
+  \vspace{0.45em}
+  {\centering\footnotesize\itshape\color{transcolor} #3\par}
+  \end{tcolorbox}
+  \vspace{0.1em}
+}
+
+\newcommand{\chapterintro}[2]{%
+\begin{center}
+\begin{minipage}{0.9\linewidth}
+\centering
+{\normalsize\bfseries\color{titlecolor} #1\par}
+\vspace{0.32em}
+{\footnotesize\color{notecolor} #2\par}
+\end{minipage}
+\end{center}
+\vspace{0.4em}
+}
+
+\begin{document}
+
+\frontmatter
+\input{cover.tex}
+\input{loi-mo-dau.tex}
+\input{series-catalog.tex}
+
+\tableofcontents
+\clearpage
+
+\mainmatter
+\input{chapters/ch01-em-co-biet.tex}
+\input{chapters/ch02-em-co-lam.tex}
+\input{chapters/ch03-em-chi-dua.tex}
+\input{chapters/ch04-thich-ma-khong.tex}
+\input{chapters/ch05-ban-cung-ban.tex}
+\input{chapters/ch06-tan-hoc-doi.tex}
+\input{chapters/ch07-tat-xau-gio-hoc.tex}
+\input{chapters/ch08-nhat-quy-nhi-ma.tex}
+\input{chapters/ch09-nuoc-den-chan.tex}
+\input{chapters/ch10-phao-thi-dai-chien.tex}
+\input{chapters/ch11-chuyen-tinh-ga-bong.tex}
+\input{chapters/ch12-giam-thi-goi-ten.tex}
+\end{document}

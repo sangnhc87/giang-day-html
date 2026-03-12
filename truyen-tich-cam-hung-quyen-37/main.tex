@@ -1,0 +1,205 @@
+%============================================================
+% TRUYEN SONG NGU QUYEN 37
+% Nghệ Thuật Khịa Học Đường — Toàn Tập Quyển I (Câu 1–100 mỗi chủ đề)
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage[explicit]{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{xstring}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{\normalfont}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric,shadows}
+
+\geometry{a4paper,left=1.8cm,right=1.8cm,top=2.2cm,bottom=2.2cm,headheight=45pt}
+
+%============================================================
+% PHONG CACH: Midnight Ink & Copper
+%============================================================
+\definecolor{v3primary}{HTML}{2D4A6B}      % Deep Navy Blue
+\definecolor{v3secondary}{HTML}{B85C38}    % Copper Rust
+\definecolor{v3bg}{HTML}{FAFAF8}           % Warm Paper White
+\definecolor{v3text}{HTML}{1A2332}         % Dark Ink
+
+% Legacy color mappings for chapter compatibility
+\colorlet{v3navy}{v3text}
+\colorlet{v3gold}{v3secondary}
+\colorlet{v3teal}{v3primary}
+\colorlet{v3indigo}{v3primary}
+\colorlet{chalkgreen}{v3primary}
+\colorlet{sunclay}{v3secondary}
+\colorlet{inkdark}{v3text}
+
+%============================================================
+% HEADER & FOOTER
+%============================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{v3primary}\itshape\small Quyển XXXVII: Nghệ Thuật Khịa Học Đường}
+\fancyhead[RE,LO]{\color{v3primary}\itshape\small \leftmark}
+\fancyfoot[C]{
+  \begin{tikzpicture}[remember picture,overlay]
+    \draw[v3secondary, line width=0.5pt] ($(current page.south west)+(1.8cm,2cm)$) -- ($(current page.south east)+(-1.8cm,2cm)$);
+  \end{tikzpicture}
+  \color{v3secondary}\textbf{-- \thepage\ --}
+}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[CO,CE]{
+  \begin{tikzpicture}[remember picture,overlay]
+    \draw[v3secondary, line width=1pt] ($(current page.north west)+(1.8cm,-2.1cm)$) -- ($(current page.north east)+(-1.8cm,-2.1cm)$);
+  \end{tikzpicture}
+}
+
+%============================================================
+% CHUONG & MUC
+%============================================================
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{v3primary}\flushright}
+  {\fontsize{20}{24}\itshape\color{v3secondary} Chương \thechapter}
+  {10pt}
+  {\fontsize{36}{42}\scshape\bfseries}[\vspace{1ex}{\color{v3secondary}\hrule height 1.5pt}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\color{v3primary}\Large\bfseries}
+  {\thesection.}{1em}{#1}[\vspace{0.3ex}{\color{v3primary!30}\hrule height 1pt}]
+
+%============================================================
+% THAN TRUYEN & GHI CHU
+%============================================================
+\newtcolorbox{truyen}[2]{
+  enhanced,
+  colback=v3bg,
+  colframe=v3primary,
+  coltitle=v3primary,
+  fonttitle=\bfseries\Large,
+  title={#1 \hfill \normalsize\itshape\color{v3primary!70} #2},
+  arc=0pt,
+  outer arc=0pt,
+  boxrule=0pt,
+  leftrule=4pt,
+  breakable,
+  titlerule=0pt,
+  colbacktitle=v3bg,
+  bottomtitle=0pt,
+  top=1ex,
+}
+
+\newtcolorbox{baihoc}{
+  enhanced,
+  colback=v3secondary!5,
+  colframe=v3secondary,
+  coltitle=v3secondary,
+  fonttitle=\bfseries\large,
+  title={$\bigstar$ Bài Học Từ Lớp Học},
+  arc=3pt,
+  boxrule=0pt,
+  leftrule=3pt,
+  breakable,
+  titlerule=0pt,
+  colbacktitle=v3secondary!5,
+  bottomtitle=0pt,
+  top=1ex,
+}
+
+\newtcolorbox{ghinhoanh}{
+  enhanced,
+  colback=v3primary!5,
+  colframe=v3primary,
+  coltitle=v3primary,
+  fonttitle=\bfseries\large,
+  title={Easy English},
+  arc=3pt,
+  boxrule=0pt,
+  leftrule=3pt,
+  breakable,
+  titlerule=0pt,
+  colbacktitle=v3primary!5,
+  bottomtitle=0pt,
+  top=1ex,
+}
+
+\newtcolorbox{tuhocnhanh}{
+  enhanced,
+  colback=v3text!5,
+  colframe=v3text,
+  coltitle=v3text,
+  fonttitle=\bfseries\large,
+  title={Gợi Ý Tự Nghĩ},
+  arc=3pt,
+  boxrule=0pt,
+  leftrule=3pt,
+  breakable,
+  titlerule=0pt,
+  colbacktitle=v3text!5,
+  bottomtitle=0pt,
+  top=1ex,
+}
+
+%============================================================
+% CAU LENH NOI DUNG
+%============================================================
+\newcommand{\chuhoa}[2]{\lettrine[lines=2,lhang=0.1,loversize=0.15]{\textcolor{v3secondary}{#1}}{#2}}
+
+\newcommand{\studentpair}[2]{
+  \noindent\textbf{\color{v3text}Học sinh:} ``#1''\\
+  \textit{\color{v3primary!80}Student: ``#2''}\\[6pt]
+}
+
+\newcommand{\teacherpair}[2]{
+  \noindent\textbf{\color{v3secondary}Thầy:} ``#1''\\
+  \textit{\color{v3secondary!80}Teacher: ``#2''}\\[8pt]
+}
+
+\newcommand{\songnguitem}[2]{
+  \item \textbf{#1}\\
+  \textit{\color{v3primary!80}(#2)}
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+    \begin{tikzpicture}
+      \draw[v3primary!50, line width=0.5pt] (0,0) -- (1.5,0);
+      \node[color=v3secondary] at (2,0) {$\diamond$};
+      \draw[v3primary!50, line width=0.5pt] (2.5,0) -- (4,0);
+    \end{tikzpicture}
+  \end{center}
+  \vspace{6pt}
+}
+
+%============================================================
+% BAT DAU TAI LIEU
+%============================================================
+\begin{document}
+\include{cover}
+
+\frontmatter
+\tableofcontents
+\clearpage
+\include{loi-mo-dau}
+
+\mainmatter
+\include{chapters/ch01-chui-duyen}
+\include{chapters/ch02-ca-khia-hoc-duong}
+\include{chapters/ch03-hoi-ngu-tra-loi-khia}
+\include{chapters/ch04-tho-tu-tuyet}
+\include{chapters/ch05-chan-dung-hoc-tro}
+
+\backmatter
+\end{document}

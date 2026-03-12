@@ -1,0 +1,119 @@
+%============================================================
+% TRANG BIA - QUYEN XXXVII
+%============================================================
+\definecolor{q37accent}{HTML}{213A52}
+\definecolor{q37rust}{HTML}{A45F3B}
+\definecolor{q37gold}{HTML}{C9A56A}
+\definecolor{q37light}{HTML}{F7F1E8}
+\definecolor{q37ink}{HTML}{182638}
+\definecolor{q37mist}{HTML}{DCE6EA}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\pagecolor{q37light}
+
+\begin{tikzpicture}[remember picture, overlay]
+
+  % Outer border
+  \draw[q37gold!80!black, line width=2.8pt, rounded corners=15pt]
+    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
+    ($(current page.south east)+(-1.8cm,1.8cm)$);
+
+  % Inner border
+  \draw[q37accent!95!black, line width=1.1pt, rounded corners=12pt]
+    ($(current page.north west)+(2.1cm,-2.1cm)$) rectangle
+    ($(current page.south east)+(-2.1cm,2.1cm)$);
+
+  % Corner ornaments
+  \foreach \x/\y/\xs/\ys in {%
+    north west/1.8cm/1/-1,
+    north east/1.8cm/-1/-1,
+    south west/1.8cm/1/1,
+    south east/1.8cm/-1/1%
+  } {
+    \draw[q37gold!75!black, line width=1.4pt]
+      ($(current page.\x) + (\xs*0.8cm, \ys*2.8cm)$) --
+      ($(current page.\x) + (\xs*2.8cm, \ys*2.8cm)$) --
+      ($(current page.\x) + (\xs*2.8cm, \ys*0.8cm)$);
+    \fill[q37rust!70!white] ($(current page.\x) + (\xs*2cm, \ys*2cm)$) circle (3pt);
+  }
+
+  % Background circle
+  \node[anchor=center] at ($(current page.center)-(0, 1.5cm)$) {
+    \begin{tikzpicture}
+      \fill[q37mist!35] (0,0) circle (5.25cm);
+      \draw[q37accent!18, line width=0.5pt] (0,0) circle (5.35cm);
+      \draw[q37gold!55, line width=0.8pt] (0,0) circle (5.1cm);
+      \draw[q37rust!30, line width=1.1pt] (0,0) circle (4.85cm);
+    \end{tikzpicture}
+  };
+
+\end{tikzpicture}
+
+\vspace*{1.8cm}
+
+\begin{center}
+  {\color{q37gold!80!black}\large$\star\;\star\;\star$}\\[0.3cm]
+
+  {\color{q37ink}\fontsize{13}{16}\selectfont\bfseries
+    Tủ Sách Học Đường Song Ngữ}\\[0.15cm]
+
+  {\color{q37rust!90!black}\fontsize{11}{14}\selectfont\itshape
+    Bilingual School Life Series}\\[0.6cm]
+
+  \begin{tikzpicture}
+    \draw[q37gold!75!black, line width=1.3pt] (0,0) -- (10cm,0);
+  \end{tikzpicture}\\[0.5cm]
+
+  {\color{q37accent!90!black}\fontsize{11}{14}\selectfont\itshape
+    Quyển XXXVII — Phần I}\\[0.4cm]
+
+  {\color{q37ink}\fontsize{36}{42}\selectfont\bfseries
+    Nghệ Thuật\\[0.2cm]
+    Khịa\\[0.2cm]
+    Học Đường}\\[0.5cm]
+
+  {\color{q37rust!90!black}\fontsize{15}{18}\selectfont\itshape
+    The Art of School Wit}\\[0.6cm]
+
+  \begin{tikzpicture}
+    \draw[q37gold!75!black, line width=1.3pt] (0,0) -- (10cm,0);
+  \end{tikzpicture}\\[0.5cm]
+
+  {\color{q37ink!85!black}\fontsize{12}{15}\selectfont
+    250 câu Chửi Duyên (câu 1–250)\\[0.15cm]
+    100 câu Cà Khịa Học Đường (câu 1–100)\\[0.15cm]
+    50 màn Hỏi Ngu Trả Lời Khịa (màn 1–50)\\[0.15cm]
+    230 bài Thơ Tứ Tuyệt Chửi Duyên\\[0.15cm]
+    125 câu Chân Dung Học Trò Qua Lời Khen Độc}\\[0.3cm]
+
+  {\color{q37rust!75!black}\fontsize{10}{13}\selectfont\itshape
+    (Phần I của bộ 1000 câu mỗi chủ đề)}\\[1cm]
+
+  {\color{q37accent!75!black}\fontsize{10}{13}\selectfont
+    Song ngữ Việt — Anh \quad$\cdot$\quad Bilingual Vietnamese — English}\\[0.3cm]
+
+  {\color{q37gold!80!black}\large$\star\;\star\;\star$}
+\end{center}
+
+\vfill
+
+\begin{center}
+  \begin{tikzpicture}
+    \fill[q37mist!55, rounded corners=8pt]
+      (0,0) rectangle (12cm,1.6cm);
+    \draw[q37gold!55!black, rounded corners=8pt, line width=0.6pt]
+      (0,0) rectangle (12cm,1.6cm);
+    \node[anchor=center] at (6cm,0.8cm) {
+      {\color{q37ink}\small\itshape
+       ``Một lớp học đẹp không phải lớp không có tiếng cười, mà là lớp biết biến tiếng cười thành động lực học.''
+       \quad
+       \textit{A beautiful classroom is not one without laughter, but one that turns laughter into momentum for learning.}}
+    };
+  \end{tikzpicture}
+\end{center}
+
+\vspace*{1.2cm}
+
+\end{titlepage}
+\pagecolor{white}

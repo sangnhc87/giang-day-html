@@ -94,6 +94,162 @@ def simple_section(quote_vi, theme_en, theme_vi="suy nghĩ"):
         "Em có thể dùng câu này trong tình huống nào?", "When could you use this sentence?",
     )
 
+def q19_section(quote_vi, quote_en, idx):
+    q = quote_vi.lower()
+
+    def pick(items):
+        return items[idx % len(items)]
+
+    if "câu hỏi" in q or "hỏi" in q:
+        story_vi, story_en = pick([
+            (
+                "âu thầy viết câu ấy lên bảng rồi lùi lại. Mấy cánh tay đang định giơ lên chậm rãi hạ xuống, vì cả lớp nhận ra muốn trả lời cho trúng thì trước hết phải hiểu mình đang được hỏi điều gì.",
+                "The teacher wrote that sentence on the board and stepped back. A few hands that were about to rise slowly came down, because the class realized that to answer well, they first had to understand what was being asked.",
+            ),
+            (
+                "âu hỏi vừa dứt, phòng học yên đi. Không ai bị ép phải nói ngay; sự im lặng ấy là lúc từng bạn tự lật lại suy nghĩ của mình trước khi mở lời.",
+                "As soon as the question ended, the room grew quiet. No one was forced to answer at once; that silence was the moment each student turned their own thoughts over before speaking.",
+            ),
+            (
+                "âu thầy nói nghe rất ngắn, nhưng nó làm cả lớp chậm lại. Có khi một câu hỏi hay không cho đáp án; nó mở ra con đường để người học tự tìm đáp án.",
+                "What the teacher said sounded brief, but it slowed the whole class down. Sometimes a good question gives no answer; it opens a path for learners to find one themselves.",
+            ),
+        ])
+        baihoc_vi, baihoc_en = pick([
+            ("Một câu hỏi tốt buộc người học đi chậm lại để nghĩ sâu hơn.", "A good question makes learners slow down and think more deeply."),
+            ("Hiểu đúng câu hỏi thường quan trọng hơn trả lời thật nhanh.", "Understanding the question is often more important than answering quickly."),
+            ("Câu hỏi đúng không đóng lại buổi học; nó mở buổi học ra.", "The right question does not close a lesson; it opens it."),
+        ])
+        eng_short = pick([
+            "Good questions create thoughtful silence.",
+            "Do not race to answer; learn to understand first.",
+            "A strong question opens the mind before the mouth.",
+        ])
+        q1_vi, q1_en = "Câu hỏi nào trong mục này khiến em phải nghĩ lại cách học của mình?", "Which question in this section makes you rethink the way you study?"
+        q2_vi, q2_en = "Nếu em hỏi lại câu này theo cách của mình, em sẽ hỏi thế nào?", "If you rewrote this question in your own words, how would you ask it?"
+    elif "lớp học" in q or "cả lớp" in q or "trong lớp" in q or "phòng" in q:
+        story_vi, story_en = pick([
+            (
+                "âu nói ấy không nhắm vào một ai, nhưng cả lớp cùng nghe thấy mình trong đó. Tiếng quạt, tiếng lật vở bỗng rõ hơn, như thể phòng học vừa chuyển từ ồn ào sang một kiểu làm việc sâu hơn.",
+                "The sentence was not aimed at anyone in particular, yet the whole class heard themselves in it. The fan, the turning pages, suddenly sounded clearer, as if the room had shifted from noise into a deeper kind of work.",
+            ),
+            (
+                "âu thầy nói xong, lớp không còn chen nhau trả lời nữa. Chính khoảnh khắc không ai lên tiếng đã làm buổi học có chiều sâu hơn bất kỳ lời giảng dài nào.",
+                "When the teacher finished speaking, the class stopped rushing to respond. That moment when no one spoke gave the lesson more depth than any long explanation could.",
+            ),
+            (
+                "âu ấy đi qua căn phòng rất nhẹ, nhưng để lại một trật tự khác. Các bạn nhìn nhau, rồi nhìn vào vở, như hiểu rằng một lớp học tốt không chỉ biết nói mà còn biết dừng lại để nghĩ cùng nhau.",
+                "The sentence passed through the room gently, but it left behind a different order. Students looked at one another, then back at their notebooks, as if realizing that a good class knows not only how to speak, but also how to pause and think together.",
+            ),
+        ])
+        baihoc_vi, baihoc_en = pick([
+            ("Chiều sâu của lớp học nhiều khi được tạo ra từ những phút cả lớp cùng suy nghĩ.", "A classroom's depth is often built in the moments when everyone thinks together."),
+            ("Không khí học tập tốt không nằm ở chỗ ồn hay im, mà ở chỗ sự im lặng có ý nghĩa.", "A strong learning atmosphere is not about being loud or quiet, but about whether the silence has meaning."),
+            ("Một lớp học trưởng thành biết tôn trọng khoảnh khắc suy nghĩ chung.", "A mature class knows how to respect moments of shared reflection."),
+        ])
+        eng_short = pick([
+            "A good class knows when silence is doing the work.",
+            "Thoughtful rooms are not empty; they are focused.",
+            "Shared silence can deepen a whole lesson.",
+        ])
+        q1_vi, q1_en = "Lớp học của em thường im lặng theo kiểu suy nghĩ hay theo kiểu ngại nói?", "Does your class usually become quiet because people are thinking or because they are afraid to speak?"
+        q2_vi, q2_en = "Em có thể làm gì để một khoảnh khắc im lặng trong lớp trở nên có ích hơn?", "What could you do to make a quiet moment in class more useful?"
+    elif "lắng nghe" in q or "nghe" in q or "nói" in q or "lời" in q or "trả lời" in q:
+        story_vi, story_en = pick([
+            (
+                "âu ấy được nói ra đúng lúc một bạn đang định chen lời bạn khác. Cả lớp chững lại; ai cũng hiểu nói hay không nằm ở nói nhiều, mà ở chỗ lời nói đã đi qua suy nghĩ và lắng nghe chưa.",
+                "The sentence came just as one student was about to cut another off. The class paused, and everyone understood that speaking well is not about speaking often, but about whether your words have passed through thought and listening.",
+            ),
+            (
+                "âu thầy nói không hề nặng, nhưng đủ để những tiếng đáp lời vội vàng chậm lại. Từ sự chậm lại đó, nhiều bạn bắt đầu nghe kỹ hơn chính mình và người đối diện.",
+                "The teacher's words were not harsh, but they were enough to slow down the rushed replies. From that slowing down, many students began listening more carefully to themselves and to the person in front of them.",
+            ),
+            (
+                "âu nói ấy khiến vài bạn đang định trả lời ngay phải dừng một nhịp. Khi lời nói không còn chạy trước suy nghĩ, cuộc trò chuyện trong lớp bỗng trở nên tử tế hơn.",
+                "That sentence made a few students who were about to answer immediately pause for a moment. When speech no longer ran ahead of thought, the conversation in class became kinder.",
+            ),
+        ])
+        baihoc_vi, baihoc_en = pick([
+            ("Lắng nghe và suy nghĩ là điều làm cho lời nói có trọng lượng.", "Listening and reflection are what give words their weight."),
+            ("Tôn trọng người nghe bắt đầu từ việc không để miệng chạy trước đầu óc.", "Respect for the listener begins when the mouth does not run ahead of the mind."),
+            ("Một câu trả lời chậm nhưng chín thường đáng giá hơn một câu trả lời nhanh mà rỗng.", "A slow but thoughtful answer is often worth more than a fast and empty one."),
+        ])
+        eng_short = pick([
+            "Words matter more after listening.",
+            "Think first, then let the words come.",
+            "Listening gives speech its weight.",
+        ])
+        q1_vi, q1_en = "Trong lúc tranh luận hay phát biểu, em hay vội nói hay vội nghe?", "When you discuss or respond, do you rush to speak or rush to listen?"
+        q2_vi, q2_en = "Một câu trả lời của em sẽ khác đi thế nào nếu em dừng lại thêm mười giây?", "How would one of your answers change if you paused for ten more seconds?"
+    elif "thời gian" in q or "không gian" in q or "khoảnh khắc" in q or "một phút" in q:
+        story_vi, story_en = pick([
+            (
+                "âu ấy làm cả lớp chậm lại đúng một nhịp. Không ai thấy phí thời gian, vì chính khoảng dừng ngắn đó giúp mỗi người sắp xếp lại điều mình đang nghĩ.",
+                "The sentence slowed the whole class down by just a beat. No one felt the time was wasted, because that brief pause helped everyone arrange their thoughts.",
+            ),
+            (
+                "âu thầy nói xong rồi để yên vài giây, không lấp khoảng trống bằng lời khác. Nhờ vậy, sự im lặng không còn đáng ngại; nó trở thành không gian để điều quan trọng kịp xuất hiện.",
+                "The teacher finished speaking and then left a few seconds untouched, without filling the gap with more words. Because of that, silence no longer felt awkward; it became the space where something important could appear.",
+            ),
+            (
+                "âu ấy ngắn, nhưng có sức giữ cả lớp lại. Trong khoảnh khắc không ai nói, nhiều bạn nhận ra suy nghĩ cần chỗ đứng riêng chứ không thể lớn lên giữa sự vội vã.",
+                "The sentence was short, but it held the class in place. In the moment when no one spoke, many students realized that thought needs room of its own and cannot grow in haste.",
+            ),
+        ])
+        baihoc_vi, baihoc_en = pick([
+            ("Tư duy sâu cần khoảng dừng, giống như hơi thở cần nhịp.", "Deep thinking needs pauses, just as breathing needs rhythm."),
+            ("Không phải khoảng trống nào cũng vô ích; có khoảng trống đang làm việc cho suy nghĩ.", "Not every gap is empty; some gaps are working for thought."),
+            ("Cho mình thời gian nghĩ là một cách học nghiêm túc.", "Giving yourself time to think is a serious form of learning."),
+        ])
+        eng_short = pick([
+            "Silence gives thought room to grow.",
+            "A pause is not wasted when the mind is working.",
+            "Deep thought needs space and time.",
+        ])
+        q1_vi, q1_en = "Em thường có cho mình đủ thời gian nghĩ trước khi nói hay nộp bài không?", "Do you usually give yourself enough time to think before speaking or submitting work?"
+        q2_vi, q2_en = "Một khoảng dừng ngắn có thể giúp em tốt hơn ở việc nào?", "In which task could a short pause help you do better?"
+    else:
+        story_vi, story_en = pick([
+            (
+                "âu thầy nói không dài, nhưng nó chạm đúng chỗ khiến nhiều bạn phải nhìn lại mình. Có khi bài học thật sự không đến từ việc nghe thêm, mà từ việc tự đối diện với điều mình vừa nghe.",
+                "The teacher's sentence was not long, but it touched exactly the place that made many students look back at themselves. Sometimes the real lesson does not come from hearing more, but from facing what you have just heard.",
+            ),
+            (
+                "âu ấy đi vào vở rất nhanh, nhưng ở lại trong đầu lâu hơn. Mấy bạn cuối lớp thôi viết một lát, vì nhận ra điều đáng nhớ nhất không phải là chép kịp, mà là hiểu kịp.",
+                "The sentence entered notebooks quickly, but stayed in the mind longer. Even the students in the back stopped writing for a moment, realizing that what matters most is not copying fast enough, but understanding in time.",
+            ),
+            (
+                "âu thầy nói xong không tạo ra tiếng ồ lên, chỉ tạo ra một sự lặng đi rất thật. Chính lúc ấy, mỗi người bắt đầu có cuộc đối thoại riêng với suy nghĩ của mình.",
+                "What the teacher said did not produce a burst of reaction, only a very real stillness. At that moment, each student began a private conversation with their own thoughts.",
+            ),
+        ])
+        baihoc_vi, baihoc_en = pick([
+            ("Điều làm ta nhớ lâu thường không phải âm lượng lớn, mà là độ sâu của ý nghĩ.", "What stays with us is often not loudness, but depth."),
+            ("Một câu nói đáng học là câu khiến người nghe phải tự nghĩ tiếp.", "A sentence worth learning from is one that makes the listener continue thinking."),
+            ("Sự im lặng có ý nghĩa cho thấy bài học đã chạm vào bên trong.", "Meaningful silence shows that a lesson has reached something inside."),
+        ])
+        eng_short = pick([
+            "The best sentences keep working after they end.",
+            "A deep line keeps the mind awake.",
+            "Silence often means reflection has started.",
+        ])
+        q1_vi, q1_en = "Điều gì trong câu này chạm đúng vào trải nghiệm học tập của em?", "What in this sentence connects most strongly with your own learning experience?"
+        q2_vi, q2_en = "Nếu giữ lại một ý duy nhất từ câu này, em sẽ giữ ý nào?", "If you kept only one idea from this sentence, which idea would you keep?"
+
+    return build_section(
+        quote_vi,
+        quote_en,
+        story_vi,
+        story_en,
+        baihoc_vi,
+        baihoc_en,
+        eng_short,
+        q1_vi,
+        q1_en,
+        q2_vi,
+        q2_en,
+    )
+
 def section_humorous(quote_vi, quote_en_short):
     story_vi = "âu thầy nói xong, cả lớp cười — nhưng cười xong nhiều em chợt nghĩ."
     story_en = "The teacher said it; the class laughed — but after the laugh, many suddenly thought."
@@ -257,6 +413,108 @@ if __name__ == "__main__":
     while len(quotes_19) < 100:
         quotes_19.append("Im lặng đôi khi là câu trả lời hay nhất — và suy nghĩ là công việc quan trọng nhất.")
     quotes_19 = quotes_19[:100]
+    quotes_19_en = [
+        "Not everyone who talks a lot understands a lot.",
+        "Silence is sometimes the best answer.",
+        "Are you chasing grades or understanding?",
+        "A question matters more than an answer, because it opens the way.",
+        "The smartest person in the room is often the one who listens in silence.",
+        "Books do not think for you; they invite you to think.",
+        "If you do not ask questions, you are believing everything.",
+        "What you are afraid to say is often what you most need to say.",
+        "Learning is not about giving the right answer; it is about asking the right question.",
+        "One quiet minute of reflection is worth more than ten minutes of thoughtless talk.",
+        "Knowledge makes you stand out; asking questions makes you grow up.",
+        "You do not need to agree with the teacher; you need to think about what the teacher says.",
+        "A good classroom is one that knows when to be quiet.",
+        "Do not rush to answer; rush to understand the question.",
+        "The capable student is not the one who answers fastest.",
+        "Thinking before speaking is how you respect the listener.",
+        "There are no stupid questions, only questions that have not been asked.",
+        "When you are silent, you are giving yourself time to think.",
+        "What matters is not what you say, but what you think before you speak.",
+        "A noisy class may just be a class that has not started thinking.",
+        "The teacher does not need your agreement; the teacher needs your thinking.",
+        "One good question can change an entire lesson.",
+        "Silence is not emptiness; it is where ideas are born.",
+        "What do you learn when you listen in silence?",
+        "Do not fear silence; fear speaking without thinking.",
+        "People who understand often speak less, because they know words carry weight.",
+        "A memorable class is a class with moments of thoughtful silence.",
+        "A correct answer can come at the wrong time; a good question is always timely.",
+        "Thinking is what you do when you do not rush to answer.",
+        "The teacher has finished speaking; now it is your turn to think.",
+        "No one can think on your behalf; silence is when you think for yourself.",
+        "You have the right to remain silent, and that right is precious.",
+        "Speak less, think more; that is how adults use words.",
+        "When the whole class falls quiet, something important may be being considered.",
+        "What you keep in silence is sometimes stronger than what you say aloud.",
+        "Learning how to be quiet is also learning.",
+        "A moment of silence can be worth a whole page of text.",
+        "The teacher waits not because the teacher does not know, but because you need time to think.",
+        "The sentence that makes you fall silent is the sentence you remember.",
+        "Silence after a question shows that the class is at work.",
+        "Do not fill silence with meaningless words.",
+        "Thinking takes time, and silence gives you that time.",
+        "Those who know how to listen often become the people whose words matter later.",
+        "A good class is not the loudest or the quietest, but the one that knows when to be quiet.",
+        "You do not need to answer at once; you need to think first.",
+        "Silence is the language of deep thought.",
+        "The teacher's question is not for a quick answer; it is for careful thought.",
+        "When you are silent, you are respecting your own thinking.",
+        "Speaking before thinking means losing the chance to understand.",
+        "Silence does not mean ignorance; sometimes it means searching for the right answer.",
+        "The teacher values the moments when the whole class is quiet, because that is when real learning is happening.",
+        "Thinking before speaking is a gift you give the listener.",
+        "Words are not always needed; sometimes silence and thought are enough.",
+        "The sentence that makes you stop is the sentence worth keeping.",
+        "Silence gives you room to question yourself.",
+        "A good debater is not the one who talks the most, but the one who knows when to be quiet.",
+        "A deep classroom is a classroom unafraid of silence.",
+        "You may say nothing and still be thinking a great deal.",
+        "Silence is a kind of answer.",
+        "The teacher does not need an immediate correct answer; the teacher needs correct thinking.",
+        "The quiet moment after an important sentence is a moment of learning.",
+        "Thinking is the most important work in class, and silence is the space where it happens.",
+        "Do not mistake silence for failed communication; sometimes it is its highest form.",
+        "The sentence that makes you stop and think is the sentence worth learning from.",
+        "Silence does not make you less intelligent; speaking without thinking does.",
+        "Listening and silence are two skills of a strong learner.",
+        "When you are silent, you are giving yourself the right to think.",
+        "The teacher speaks little not because there is nothing to say, but to give you time to think.",
+        "A memorable class has moments when no one speaks, but everyone is thinking.",
+        "Thinking needs no words, but it does need silence.",
+        "You are not required to answer immediately; you have the right to think first.",
+        "Silence is the empty space where ideas grow.",
+        "A good question is often followed by silence, because everyone is thinking.",
+        "A person who knows how to be quiet at the right time often speaks with weight.",
+        "Learning is not only listening and answering; it is also being quiet and thinking.",
+        "Silence is not refusing to take part; it is taking part by thinking.",
+        "The teacher accepts silence because thinking takes time.",
+        "What you think in silence may matter more than what you say in noise.",
+        "A good classroom is a place where silence is respected.",
+        "Deep thinking often begins with a quiet moment.",
+        "You can answer later, but no one can think in your place.",
+        "Silence is how you say: I am thinking.",
+        "The sentence that silences a class is a sentence with weight.",
+        "Talking a lot is not always a contribution; sometimes silence is.",
+        "A real learner knows how to use silence for thinking.",
+        "Silence gives you a chance to hear yourself.",
+        "The teacher is not afraid of silence; the teacher is afraid you will speak without thinking.",
+        "A quiet moment in class is a golden moment.",
+        "Thought is not noisy, but it changes people.",
+        "You have the right not to answer immediately, and to use that right to think.",
+        "Silence is the language before words.",
+        "A memorable sentence is often followed by memorable silence.",
+        "A classroom with a culture of silence is a classroom with depth.",
+        "Do not rush to fill silence; let it do its work.",
+        "Thought needs space, and silence creates that space.",
+        "A mature person knows when to be quiet and think.",
+        "Silence does not mean having no opinion; it means an opinion is taking shape.",
+        "The teacher trusts that after silence, you will have a better answer.",
+        "A sentence that makes you silent is a successful sentence.",
+        "Learning from silence is also a skill.",
+    ]
 
     ch_titles_19 = [
         ("Im lặng và suy nghĩ", "Silence and Thinking"),
@@ -275,7 +533,7 @@ if __name__ == "__main__":
         for i in range(10):
             idx = ch * 10 + i
             q = quotes_19[idx]
-            sections.append(simple_section(q, q[:60] + "..." if len(q) > 60 else q))
+            sections.append(q19_section(q, quotes_19_en[idx], idx))
         make_chapter(q19_dir, ch + 1, ch_titles_19[ch][0], ch_titles_19[ch][1], sections)
 
     print("Done Q19.")

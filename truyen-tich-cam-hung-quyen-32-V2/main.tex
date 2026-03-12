@@ -1,0 +1,107 @@
+%============================================================
+% TRUYEN SONG NGU QUYEN 32-V2 - 100 CAP DOI XUNG TRIET LY NHAN SINH
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{\normalfont}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+
+\geometry{a4paper,left=1.8cm,right=1.8cm,top=2cm,bottom=2cm,headheight=41pt}
+
+\definecolor{midnightblue}{RGB}{53, 74, 96}
+\definecolor{bronze}{RGB}{176, 134, 82}
+\definecolor{inkdark}{RGB}{52, 61, 70}
+\definecolor{boxbg}{RGB}{247, 245, 241}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{midnightblue}\itshape\small 100 Cặp Đối Xứng Nhân Sinh}
+\fancyhead[RE,LO]{\color{inkdark}\itshape\small \leftmark}
+\fancyfoot[C]{\color{bronze}\textbf{-- \thepage\ --}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{bronze}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{inkdark}\centering}
+  {\large\itshape Chương \thechapter}
+  {1ex}
+  {\Huge\scshape}[\vspace{1ex}{\color{bronze}\rule{0.5\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}{\color{midnightblue}\Large\bfseries}{\thesection.}{1em}{}
+\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+
+\titleformat{\part}[display]
+  {\normalfont\bfseries\color{midnightblue}\centering}
+  {\Huge\scshape Phần \thepart}
+  {1ex}
+  {\fontsize{26}{32}\selectfont\bfseries}
+\titlespacing*{\part}{0pt}{0pt}{30pt}
+
+\newtcolorbox{truyen}[2]{colback=boxbg,colframe=midnightblue,coltitle=white,fonttitle=\bfseries\large,title={#1 \hfill \small\itshape #2},arc=5pt,boxrule=1.2pt,breakable,enhanced,drop shadow=black!15}
+\newtcolorbox{baihoc}{colback=inkdark!8,colframe=inkdark,coltitle=white,fonttitle=\bfseries,title={$\bigstar$ Nói Thẳng},arc=4pt,boxrule=1pt,breakable,enhanced}
+\newtcolorbox{ghinhoanh}{colback=midnightblue!6,colframe=midnightblue,coltitle=white,fonttitle=\bfseries,title={Easy English},arc=4pt,boxrule=1pt,breakable,enhanced}
+\newtcolorbox{tuhocnhanh}{colback=bronze!12,colframe=bronze!70!black,coltitle=black,fonttitle=\bfseries,title={Tự Hỏi Thật},arc=4pt,boxrule=1pt,breakable,enhanced}
+\newcommand{\chuhoa}[2]{\lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{inkdark}{#1}}{#2}}
+\newcommand{\ngancach}{\begin{center}\textcolor{bronze}{\rule{0.3\textwidth}{0.5pt}\hspace{6pt}$\diamond$\hspace{6pt}\rule{0.3\textwidth}{0.5pt}}\end{center}\vspace{6pt}}
+
+\begin{document}
+\include{cover}
+\input{chapters/loitua}
+\input{chapters/huong-dan}
+\frontmatter
+\tableofcontents
+\clearpage
+\include{loi-mo-dau}
+
+\mainmatter
+
+\part{Những Cặp Nhìn Đời}
+\include{chapters/ch01-co-va-khong}
+\include{chapters/ch02-duoc-va-mat}
+\include{chapters/ch03-gan-va-xa}
+\include{chapters/ch04-cho-va-nhan}
+\include{chapters/ch05-giu-va-buong}
+
+\part{Những Cặp Đi Đường}
+\include{chapters/ch06-nhanh-va-cham}
+\include{chapters/ch07-manh-va-yeu}
+\include{chapters/ch08-tien-va-lui}
+\include{chapters/ch09-hon-va-kem}
+\include{chapters/ch10-thanh-va-bai}
+
+\part{Những Cặp Xử Thế}
+\include{chapters/ch11-dung-va-sai}
+\include{chapters/ch12-that-va-gia}
+\include{chapters/ch13-im-va-noi}
+\include{chapters/ch14-nho-va-quen}
+\include{chapters/ch15-cung-va-mem}
+
+\part{Những Cặp Trưởng Thành}
+\include{chapters/ch16-tin-va-nghi}
+\include{chapters/ch17-mo-va-tinh}
+\include{chapters/ch18-moi-va-cu}
+\include{chapters/ch19-mo-va-khep}
+\include{chapters/ch20-di-va-ve}
+
+\end{document}

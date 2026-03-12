@@ -1,0 +1,275 @@
+\documentclass[12pt,a5paper,oneside,openany]{book}
+
+\usepackage[T5]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage[explicit]{titlesec}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage[unicode,hidelinks]{hyperref}
+\usepackage{bookmark}
+\usepackage{xstring}
+
+\microtypesetup{expansion=false}
+\geometry{top=1.5cm,bottom=1.7cm,left=1.45cm,right=1.45cm,headheight=14pt,footskip=18pt}
+\setstretch{1.14}
+\setlength{\parindent}{0pt}
+\setcounter{tocdepth}{1}
+\setlist[itemize]{leftmargin=1.45em,itemsep=0.28em,topsep=0.35em}
+
+\definecolor{titlecolor}{HTML}{6B2C2C}
+\definecolor{softline}{HTML}{E6C3A6}
+\definecolor{chapterline}{HTML}{B65A36}
+\definecolor{boxbg}{HTML}{FFFDF8}
+\definecolor{boxframe}{HTML}{D49A68}
+\definecolor{noteink}{HTML}{544740}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{Thơ Cà Khịa Học Sinh THPT | School Satire Poems}}
+\fancyhead[R]{\small Quyển 37-V2}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.2pt}
+
+\titleformat{\part}[display]
+  {\centering}
+  {\Large\bfseries\color{chapterline} Phần \thepart}
+  {0.4em}
+  {\Huge\bfseries\color{titlecolor}#1}
+  [\vspace{0.8em}{\color{softline}\rule{0.7\linewidth}{0.9pt}}]
+\titlespacing*{\part}{0pt}{1.4em}{1.2em}
+
+\titleformat{\chapter}[display]
+  {\centering}
+  {\large\bfseries\color{chapterline} Chương \thechapter}
+  {0.45em}
+  {\LARGE\bfseries\color{titlecolor}#1}
+  [\vspace{0.8em}{\color{softline}\rule{0.76\linewidth}{0.9pt}}]
+\titlespacing*{\chapter}{0pt}{0.2em}{1.2em}
+
+\titleformat{\section}
+  {\large\bfseries\color{titlecolor}}
+  {}
+  {0em}
+  {#1}
+\titlespacing*{\section}{0pt}{0.35em}{0.2em}
+
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftchapfont}{\small\bfseries}
+\renewcommand{\cftchappagefont}{\small\bfseries}
+
+\newtcolorbox{lucbatbox}[1]{
+  colback=boxbg,
+  colframe=boxframe,
+  title={\displaypoemtitle{#1}},
+  coltitle=titlecolor,
+  fonttitle=\bfseries,
+  before upper={\centering\obeylines},
+  arc=2mm,
+  boxrule=0.6pt,
+  left=2.2mm,
+  right=2.2mm,
+  top=1.3mm,
+  bottom=1.3mm
+}
+
+\newtcolorbox{tutuyetbox}[1]{
+  colback=titlecolor!4,
+  colframe=titlecolor!55,
+  title={\displaypoemtitle{#1}},
+  coltitle=titlecolor,
+  fonttitle=\bfseries,
+  before upper={\centering\obeylines},
+  arc=2mm,
+  boxrule=0.5pt,
+  left=2.2mm,
+  right=2.2mm,
+  top=1.2mm,
+  bottom=1.2mm
+}
+
+\newcommand{\displaypoemtitle}[1]{%
+  \IfBeginWith{#1}{Lục bát: }{%
+    \StrBehind{#1}{Lục bát: }[\tempPoemTitleA]%
+    \tempPoemTitleA%
+  }{%
+    \IfBeginWith{#1}{Thất ngôn tứ tuyệt: }{%
+      \StrBehind{#1}{Thất ngôn tứ tuyệt: }[\tempPoemTitleB]%
+      \tempPoemTitleB%
+    }{%
+      \IfBeginWith{#1}{Tứ tuyệt cà khịa: }{%
+        \StrBehind{#1}{Tứ tuyệt cà khịa: }[\tempPoemTitleC]%
+        \tempPoemTitleC%
+      }{#1}%
+    }%
+  }%
+}
+
+\newtcolorbox{ghichu}{
+  colback=chapterline!6,
+  colframe=chapterline!55,
+  title={Ghi chú cà khịa},
+  coltitle=titlecolor,
+  fonttitle=\bfseries,
+  arc=2mm,
+  boxrule=0.5pt,
+  left=2.2mm,
+  right=2.2mm,
+  top=1.2mm,
+  bottom=1.2mm
+}
+
+\newtcolorbox{englishnote}{
+  colback=softline!10,
+  colframe=boxframe!85,
+  title={English Pocket},
+  coltitle=titlecolor,
+  fonttitle=\bfseries,
+  arc=2mm,
+  boxrule=0.5pt,
+  left=2.2mm,
+  right=2.2mm,
+  top=1.2mm,
+  bottom=1.2mm
+}
+
+\newcommand{\chapterintro}[2]{%
+\begin{center}
+\begin{minipage}{0.92\linewidth}
+\centering
+{\normalsize\bfseries\color{titlecolor} #1\par}
+\vspace{0.32em}
+{\footnotesize\color{noteink} #2\par}
+\end{minipage}
+\end{center}
+\vspace{0.45em}
+}
+
+\newcommand{\chapterintrobi}[3]{%
+\begin{center}
+\begin{minipage}{0.92\linewidth}
+\centering
+{\normalsize\bfseries\color{titlecolor} #1\par}
+\vspace{0.2em}
+{\footnotesize\itshape\color{chapterline} #2\par}
+\vspace{0.32em}
+{\footnotesize\color{noteink} #3\par}
+\end{minipage}
+\end{center}
+\vspace{0.45em}
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+  {\color{softline}\rule{0.52\linewidth}{0.6pt}}
+  \end{center}
+  \vspace{0.15em}
+}
+
+\begin{document}
+
+\frontmatter
+\input{cover.tex}
+\input{loi-mo-dau.tex}
+\tableofcontents
+\clearpage
+
+\mainmatter
+\part{Nếp Học và Kỷ Luật}
+\input{chapters/ch01-thai-do-hoc-tap.tex}
+\input{chapters/ch02-chuyen-can-va-di-muon.tex}
+\input{chapters/ch03-kiem-tra-thi-cu.tex}
+\input{chapters/ch04-viet-bai-va-van-mau.tex}
+\input{chapters/ch05-hoc-them-hoc-nhom.tex}
+\input{chapters/ch06-yeu-duong-tuoi-hoc-tro.tex}
+\input{chapters/ch07-dien-thoai-mang-xa-hoi.tex}
+\input{chapters/ch08-ban-be-to-truong-can-su.tex}
+\input{chapters/ch09-giao-vien-va-nhung-cu-nga-ngua.tex}
+\input{chapters/ch10-cuoi-cap-mong-mo-va-hoang-hot.tex}
+\part{Bài Vở, Điểm Số và Những Cú Trượt Nhẹ}
+\input{chapters/ch11-dong-phuc-ne-nep.tex}
+\input{chapters/ch12-ngu-gat-trong-gio.tex}
+\input{chapters/ch13-phat-bieu-len-bang.tex}
+\input{chapters/ch14-truc-nhat-lao-dong.tex}
+\input{chapters/ch15-ban-cung-ban-doi-cho.tex}
+\input{chapters/ch16-hoc-lech-mon-tuong-khac.tex}
+\input{chapters/ch17-the-duc-quoc-phong-thuc-hanh.tex}
+\input{chapters/ch18-hop-phu-huynh-so-lien-lac.tex}
+\input{chapters/ch19-noi-quy-giay-kiem-diem.tex}
+\input{chapters/ch20-cang-tin-gio-ra-choi.tex}
+\part{Yêu Đương, Mơ Mộng và Tâm Trí Bay Xa}
+\input{chapters/ch21-yeu-tham-ban-cung-lop.tex}
+\input{chapters/ch22-nhan-tin-xuyen-dem.tex}
+\input{chapters/ch23-crush-va-doi-cho.tex}
+\input{chapters/ch24-mo-mong-trong-gio.tex}
+\input{chapters/ch25-mong-tuong-tuong-lai.tex}
+\input{chapters/ch26-khong-chep-bai.tex}
+\input{chapters/ch27-vo-sach-vo-ghi-vo-trang.tex}
+\input{chapters/ch28-khong-tap-trung.tex}
+\input{chapters/ch29-nghe-giang-nhu-nghe-gio.tex}
+\input{chapters/ch30-noi-nhieu-xuyen-tiet.tex}
+\part{Toán, Nỗi Sợ và Những Cơn Tự Ái Học Đường}
+\input{chapters/ch31-tam-chuyen-cuoi-ban.tex}
+\input{chapters/ch32-khong-thich-toan.tex}
+\input{chapters/ch33-toan-vo-toi.tex}
+\input{chapters/ch34-so-giao-vien-toan.tex}
+\input{chapters/ch35-mat-goc-tu-duy-so-hoc.tex}
+\input{chapters/ch36-hoc-them-toan-nhu-phieu-luu.tex}
+\input{chapters/ch37-that-tinh-dung-mua-thi.tex}
+\input{chapters/ch38-tha-thin-bang-giay-note.tex}
+\input{chapters/ch39-tuong-minh-se-noi-ma-khong.tex}
+\input{chapters/ch40-tuoi-hoc-tro-va-cac-cu-ngo-nghe.tex}
+\part{Trì Hoãn và Quên Trước Quên Sau}
+\input{chapters/ch41-cham-mo-vo.tex}
+\input{chapters/ch42-hua-hoc-tu-thu-hai.tex}
+\input{chapters/ch43-hoc-theo-mood.tex}
+\input{chapters/ch44-lam-bai-phut-chot.tex}
+\input{chapters/ch45-xin-gia-han-nop-bai.tex}
+\input{chapters/ch46-quen-but-quen-thuoc.tex}
+\input{chapters/ch47-quen-mang-sach.tex}
+\input{chapters/ch48-cho-ban-nhac-moi-lam.tex}
+\input{chapters/ch49-doc-de-luot.tex}
+\input{chapters/ch50-khoanh-bua-cau-may.tex}
+\part{Ngồi Trong Lớp Mà Tâm Đi Chỗ Khác}
+\input{chapters/ch51-thich-ngoi-cuoi-lop.tex}
+\input{chapters/ch52-chon-cho-gan-quat.tex}
+\input{chapters/ch53-doi-cho-de-tam.tex}
+\input{chapters/ch54-ne-mat-thay-co.tex}
+\input{chapters/ch55-giau-dien-thoai-duoi-ban.tex}
+\input{chapters/ch56-gia-vo-ghi-bai.tex}
+\input{chapters/ch57-gat-dau-cho-co.tex}
+\input{chapters/ch58-hoi-lai-du-vua-giang.tex}
+\input{chapters/ch59-nhin-dong-ho-lien-tuc.tex}
+\input{chapters/ch60-nghe-trong-la-tinh.tex}
+\part{Đủ Chiêu Né Tiết và Kéo Dài Giờ Chơi}
+\input{chapters/ch61-xin-di-ve-sinh-dung-luc.tex}
+\input{chapters/ch62-muon-do-hoc-lien-tuc.tex}
+\input{chapters/ch63-an-vung-trong-gio.tex}
+\input{chapters/ch64-ngu-bu-tiet-dau.tex}
+\input{chapters/ch65-keo-dai-gio-ra-choi.tex}
+\input{chapters/ch66-di-tre-co-kich-ban.tex}
+\input{chapters/ch67-nop-bai-xong-moi-lo.tex}
+\input{chapters/ch68-lam-lop-vui-qua-da.tex}
+\input{chapters/ch69-cuoi-truoc-ca-lop.tex}
+\input{chapters/ch70-buon-chuyen-nhom-chat.tex}
+\part{Áp Lực Kiểm Tra và Lời Hứa Đổi Đời}
+\input{chapters/ch71-so-kiem-tra-mieng.tex}
+\input{chapters/ch72-run-khi-len-bang.tex}
+\input{chapters/ch73-hoc-tu-lech-de.tex}
+\input{chapters/ch74-xin-via-ban-gioi.tex}
+\input{chapters/ch75-xem-dap-an-truoc-khi-hieu.tex}
+\input{chapters/ch76-chep-bai-giai-khong-hieu.tex}
+\input{chapters/ch77-ngai-hoi-khi-khong-hieu.tex}
+\input{chapters/ch78-che-diem-bang-tay.tex}
+\input{chapters/ch79-the-doi-thoi-sau-diem-kem.tex}
+\input{chapters/ch80-quyet-tam-mot-dem.tex}
+
+\end{document}

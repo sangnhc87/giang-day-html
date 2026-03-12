@@ -1,0 +1,166 @@
+\documentclass[11pt,a5paper,oneside,openany]{book}
+
+\usepackage[T5]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage[explicit]{titlesec}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage[most]{tcolorbox}
+\usepackage[unicode,hidelinks]{hyperref}
+\usepackage{bookmark}
+
+\microtypesetup{expansion=false}
+\geometry{top=1.45cm,bottom=1.65cm,left=1.35cm,right=1.35cm,headheight=14pt,footskip=18pt}
+\setstretch{1.12}
+\setlength{\parindent}{0pt}
+\setcounter{tocdepth}{1}
+
+\definecolor{titlecolor}{HTML}{7A2E2E}
+\definecolor{softline}{HTML}{E7C9AE}
+\definecolor{chapterline}{HTML}{C56C39}
+\definecolor{boxbg}{HTML}{FFFDF9}
+\definecolor{boxframe}{HTML}{D8A46C}
+\definecolor{noteink}{HTML}{5B4A40}
+\definecolor{enink}{HTML}{214A62}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{Dạy Học Vui Trên Lớp | Bản Gộp Song Ngữ}}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.2pt}
+
+\titleformat{\chapter}[display]
+  {\centering}
+  {\large\bfseries\color{chapterline} Chương \thechapter}
+  {0.45em}
+  {\LARGE\bfseries\color{titlecolor}#1}
+  [\vspace{0.8em}{\color{softline}\rule{0.76\linewidth}{0.9pt}}]
+\titlespacing*{\chapter}{0pt}{0.2em}{1.25em}
+
+\titleformat{\section}
+  {\large\bfseries\color{titlecolor}}
+  {}
+  {0em}
+  {#1}
+\titlespacing*{\section}{0pt}{0.35em}{0.2em}
+
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftchapfont}{\small\bfseries}
+\renewcommand{\cftchappagefont}{\small\bfseries}
+\renewcommand{\cftsecfont}{\footnotesize}
+\renewcommand{\cftsecpagefont}{\footnotesize}
+
+\newtcolorbox{tinhhuongbox}[1]{
+  colback=boxbg,
+  colframe=boxframe,
+  title={#1},
+  coltitle=titlecolor,
+  fonttitle=\bfseries,
+  arc=2mm,
+  boxrule=0.6pt,
+  left=2.2mm,
+  right=2.2mm,
+  top=1.3mm,
+  bottom=1.2mm
+}
+
+\newtcolorbox{noitrenlop}{
+  colback=titlecolor!4,
+  colframe=titlecolor!55,
+  title={Nói trên lớp | Say this in class},
+  coltitle=titlecolor,
+  fonttitle=\bfseries,
+  arc=2mm,
+  boxrule=0.5pt,
+  left=2.2mm,
+  right=2.2mm,
+  top=1.1mm,
+  bottom=1.1mm
+}
+
+\newtcolorbox{vihieuqua}{
+  colback=chapterline!6,
+  colframe=chapterline!55,
+  title={Vì sao hiệu quả | Why it works},
+  coltitle=titlecolor,
+  fonttitle=\bfseries,
+  arc=2mm,
+  boxrule=0.5pt,
+  left=2.2mm,
+  right=2.2mm,
+  top=1.1mm,
+  bottom=1.1mm
+}
+
+\newtcolorbox{englishpocket}{
+  colback=enink!5,
+  colframe=enink!55,
+  title={English Pocket},
+  coltitle=enink,
+  fonttitle=\bfseries,
+  arc=2mm,
+  boxrule=0.5pt,
+  left=2.2mm,
+  right=2.2mm,
+  top=1.1mm,
+  bottom=1.1mm
+}
+
+\newcommand{\chapterintro}[2]{%
+\begin{center}
+\begin{minipage}{0.92\linewidth}
+\centering
+{\normalsize\bfseries\color{titlecolor} #1\par}
+\vspace{0.32em}
+{\footnotesize\color{noteink} #2\par}
+\end{minipage}
+\end{center}
+\vspace{0.45em}
+}
+
+\newcommand{\songngu}[2]{%
+{\color{titlecolor}\textbf{VN:} #1\par}
+{\color{enink}\textit{EN: #2}\par}
+\vspace{0.28em}
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+  {\color{softline}\rule{0.52\linewidth}{0.6pt}}
+  \end{center}
+  \vspace{0.15em}
+}
+
+\begin{document}
+
+\frontmatter
+\input{cover.tex}
+\input{loi-mo-dau.tex}
+\tableofcontents
+\clearpage
+
+\mainmatter
+\part{Phần I: Cứu Tiết Học Đang Trôi}
+\input{chapters/ch01-mo-lop-khong-guong.tex}
+\input{chapters/ch02-keo-lop-dang-troi.tex}
+
+\part{Phần II: Đối Đáp Thầy Trò Thông Minh}
+\input{chapters/ch03-doi-dap-co-duyen.tex}
+\input{chapters/ch07-gio-chu-nhiem-de-tho.tex}
+
+\part{Phần III: Một Câu Hỏi Kéo Cả Lớp Nói}
+\input{chapters/ch04-hoi-de-ca-lop-noi.tex}
+\input{chapters/ch08-chot-tiet-van-con-vui.tex}
+
+\part{Phần IV: 5 Phút Khởi Động Cả Lớp}
+\input{chapters/ch05-nam-phut-khoi-dong.tex}
+\input{chapters/ch06-cuu-lop-sau-gio-kiem-tra.tex}
+
+\end{document}

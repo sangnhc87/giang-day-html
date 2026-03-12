@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.9)  12 MAR 2026 12:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.9)  12 MAR 2026 12:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1468,4 +1468,256 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             reported on input line 69.
  [85]
 Package lettrine.sty Info: Targeted height = 23.2pt
-(
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{K}) loversize=0.1;
+(lettrine.sty)             reported on input line 90.
+ [86]) [87]
+\openout2 = `chapters/ch15-cung-va-mem.aux'.
+
+ (./chapters/ch15-cung-va-mem.tex [88
+
+
+
+
+]
+Ch\uhorn \ohorn ng 15.
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{M}) loversize=0.1;
+(lettrine.sty)             reported on input line 6.
+[89]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
+(lettrine.sty)             reported on input line 27.
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{A}) loversize=0.1;
+(lettrine.sty)             reported on input line 48.
+ [90]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{K}) loversize=0.1;
+(lettrine.sty)             reported on input line 69.
+ [91]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{K}) loversize=0.1;
+(lettrine.sty)             reported on input line 90.
+ [92]) [93] [94
+
+
+
+] [95] [96]
+\openout2 = `chapters/ch16-tin-va-nghi.aux'.
+
+ (./chapters/ch16-tin-va-nghi.tex
+Ch\uhorn \ohorn ng 16.
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
+(lettrine.sty)             reported on input line 6.
+[97
+
+
+]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{S}) loversize=0.1;
+(lettrine.sty)             reported on input line 27.
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{E}) loversize=0.1;
+(lettrine.sty)             reported on input line 48.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [98]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{A}) loversize=0.1;
+(lettrine.sty)             reported on input line 69.
+ [99]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{D}) loversize=0.1;
+(lettrine.sty)             reported on input line 90.
+ [100]) [101]
+\openout2 = `chapters/ch17-mo-va-tinh.aux'.
+
+ (./chapters/ch17-mo-va-tinh.tex [102
+
+
+
+
+]
+Ch\uhorn \ohorn ng 17.
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
+(lettrine.sty)             reported on input line 6.
+[103]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{A}) loversize=0.1;
+(lettrine.sty)             reported on input line 27.
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{E}) loversize=0.1;
+(lettrine.sty)             reported on input line 48.
+ [104]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{N}) loversize=0.1;
+(lettrine.sty)             reported on input line 69.
+
+Underfull \vbox (badness 2080) has occurred while \output is active []
+
+ [105]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{K}) loversize=0.1;
+(lettrine.sty)             reported on input line 90.
+
+Underfull \vbox (badness 6300) has occurred while \output is active []
+
+ [106]) [107]
+\openout2 = `chapters/ch18-moi-va-cu.aux'.
+
+ (./chapters/ch18-moi-va-cu.tex [108
+
+
+
+
+]
+Ch\uhorn \ohorn ng 18.
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
+(lettrine.sty)             reported on input line 6.
+[109]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{B}) loversize=0.1;
+(lettrine.sty)             reported on input line 27.
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{M}) loversize=0.1;
+(lettrine.sty)             reported on input line 48.
+ [110]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{E}) loversize=0.1;
+(lettrine.sty)             reported on input line 69.
+
+Underfull \vbox (badness 1097) has occurred while \output is active []
+
+ [111]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{K}) loversize=0.1;
+(lettrine.sty)             reported on input line 90.
+
+Underfull \vbox (badness 1490) has occurred while \output is active []
+
+ [112]) [113]
+\openout2 = `chapters/ch19-mo-va-khep.aux'.
+
+ (./chapters/ch19-mo-va-khep.tex [114
+
+
+
+
+]
+Ch\uhorn \ohorn ng 19.
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{E}) loversize=0.1;
+(lettrine.sty)             reported on input line 6.
+[115]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{C}) loversize=0.1;
+(lettrine.sty)             reported on input line 27.
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{K}) loversize=0.1;
+(lettrine.sty)             reported on input line 48.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [116]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{M}) loversize=0.1;
+(lettrine.sty)             reported on input line 69.
+ [117]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{N}) loversize=0.1;
+(lettrine.sty)             reported on input line 90.
+
+Underfull \vbox (badness 2980) has occurred while \output is active []
+
+ [118]) [119]
+\openout2 = `chapters/ch20-di-va-ve.aux'.
+
+ (./chapters/ch20-di-va-ve.tex [120
+
+
+
+
+]
+Ch\uhorn \ohorn ng 20.
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{R}) loversize=0.1;
+(lettrine.sty)             reported on input line 6.
+[121]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{A}) loversize=0.1;
+(lettrine.sty)             reported on input line 27.
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{M}) loversize=0.1;
+(lettrine.sty)             reported on input line 48.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [122]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{S}) loversize=0.1;
+(lettrine.sty)             reported on input line 69.
+ [123]
+Package lettrine.sty Info: Targeted height = 23.2pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{T}) loversize=0.1;
+(lettrine.sty)             reported on input line 90.
+ [124]) [125] (./main.aux (./cover.aux) (./loi-mo-dau.aux) (./chapters/ch01-co-va-khong.aux) (./chapters/ch02-duoc-va-mat.aux) (./chapters/ch03-gan-va-xa.aux) (./chapters/ch04-cho-va-nhan.aux) (./chapters/ch05-giu-va-buong.aux) (./chapters/ch06-nhanh-va-cham.aux) (./chapters/ch07-manh-va-yeu.aux) (./chapters/ch08-tien-va-lui.aux) (./chapters/ch09-hon-va-kem.aux) (./chapters/ch10-thanh-va-bai.aux) (./chapters/ch11-dung-va-sai.aux) (./chapters/ch12-that-va-gia.aux) (./chapters/ch13-im-va-noi.aux) (./chapters/ch14-nho-va-quen.aux) (./chapters/ch15-cung-va-mem.aux) (./chapters/ch16-tin-va-nghi.aux) (./chapters/ch17-mo-va-tinh.aux) (./chapters/ch18-moi-va-cu.aux) (./chapters/ch19-mo-va-khep.aux) (./chapters/ch20-di-va-ve.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 24980 strings out of 475670
+ 518078 string characters out of 5784922
+ 1942975 words of memory out of 5000000
+ 46171 multiletter control sequences out of 15000+600000
+ 764485 words of font info for 289 fonts, out of 8000000 for 9000
+ 264 hyphenation exceptions out of 8191
+ 83i,13n,93p,1249b,1045s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (137 pages, 520989 bytes).
+PDF statistics:
+ 492 PDF objects out of 1000 (max. 8388607)
+ 333 compressed objects within 4 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 73741 words of extra memory for PDF output out of 74296 (max. 10000000)
+

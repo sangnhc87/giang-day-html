@@ -35,7 +35,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE,RO]{\color{chalkgreen}\itshape\small 1000 Câu Hỏi Học Sinh - Chửi Duyên Của Giáo Viên}
+\fancyhead[LE,RO]{\color{chalkgreen}\itshape\small Bí Kíp 1000 Pha Đối Đáp: Trò Nhây - Thầy Gắt}
 \fancyhead[RE,LO]{\color{inkdark}\itshape\small \leftmark}
 \fancyfoot[C]{\color{sunclay}\textbf{-- \thepage\ --}}
 \renewcommand{\headrulewidth}{0.6pt}
@@ -71,7 +71,10 @@
   title={Gợi Ý Tự Nghĩ},arc=4pt,boxrule=1pt,breakable,enhanced
 }
 \newcommand{\chuhoa}[2]{\lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{inkdark}{#1}}{#2}}
-\newcommand{\hsqa}[2]{\textbf{HS:} ``#1''\\\textbf{Thầy:} ``#2''}
+\newcommand{\hsqa}[4]{%
+  \textbf{HS:} ``#1'' \textbf{Thầy:} ``#2''\\
+  {\small\itshape\color{chalkgreen!80!black}Student: ``#3'' Teacher: ``#4''}%
+}
 \newcommand{\ngancach}{%
   \begin{center}\textcolor{sunclay}{\rule{0.3\textwidth}{0.5pt}\hspace{6pt}$\diamond$\hspace{6pt}\rule{0.3\textwidth}{0.5pt}}\end{center}\vspace{6pt}}
 

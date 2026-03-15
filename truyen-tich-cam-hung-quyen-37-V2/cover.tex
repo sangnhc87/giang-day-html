@@ -1,19 +1,33 @@
 \begin{titlepage}
-\centering
-\vspace*{2.2cm}
-{\Large\bfseries\color{chapterline} Tủ Sách Học Đường Vui\par}
-\vspace{0.25cm}
-{\large\bfseries\color{chapterline} Quyển 37-V2\par}
-\vspace{1cm}
-{\fontsize{24}{30}\selectfont\bfseries\color{titlecolor} Thơ Cà Khịa Học Sinh THPT\par}
-\vspace{0.35cm}
-{\Large\bfseries\color{titlecolor} Lục Bát và Thất Ngôn Tứ Tuyệt Song Ngữ\par}
-\vspace{0.8cm}
-{\large 80 chương cực hẹp, hơn 280 bài thơ khịa đúng từng thói quen học đường\par}
-{\large từ chậm mở vở, học theo mood, giấu điện thoại, ăn vụng trong giờ tới sợ kiểm tra miệng, học tủ và thề đổi đời sau điểm kém\par}
-\vspace{0.35cm}
-{\normalsize Vietnamese poems with English pockets for classroom reading and language learning\par}
-\vfill
-{\normalsize Cà khịa cho vui, chạm đúng thói quen, ưu tiên nhịp vui, vần gọn và không nhắm vào xúc phạm cá nhân\par}
-\vspace*{1.8cm}
+\begin{tikzpicture}[remember picture,overlay]
+    % Background Image
+    \node[anchor=center, inner sep=0pt] at (current page.center) {
+        \includegraphics[width=\paperwidth,height=\paperheight]{cover_art.png}
+    };
+    
+    % Overlay Darkener (optional, for better text readability)
+    \fill[black,opacity=0.25] (current page.south west) rectangle (current page.north east);
+
+    % Decorative Border (TikZ)
+    \draw[line width=2pt, color=white!80!gold] ([xshift=1cm,yshift=1cm]current page.south west) rectangle ([xshift=-1cm,yshift=-1cm]current page.north east);
+    \draw[line width=0.5pt, color=white!60!gold] ([xshift=1.2cm,yshift=1.2cm]current page.south west) rectangle ([xshift=-1.2cm,yshift=-1.2cm]current page.north east);
+
+    % Title and Info
+    \node[anchor=north, text width=0.8\paperwidth, align=center] at ([yshift=-2.5cm]current page.north) {
+        {\Large\bfseries\color{white} TỦ SÁCH HỌC ĐƯỜNG MẶN MÒI\par}
+        \vspace{0.4cm}
+        {\Huge\bfseries\color{white} THƠ CÀ KHỊA HỌC SINH\par}
+        \vspace{0.6cm}
+        {\Large\bfseries\color{white} Quyển 37-V2 | Premium Edition\par}
+    };
+
+    % Bottom Tagline
+    \node[anchor=south, text width=0.8\paperwidth, align=center] at ([yshift=2.5cm]current page.south) {
+        {\large\bfseries\color{white} 80 CHƯƠNG SATIRE - NIÊM LUẬT CHUẨN 100\%\par}
+        \vspace{0.3cm}
+        {\normalsize\color{white!90} Thách thức mọi giới hạn chịu đựng của học sinh cá biệt\par}
+        \vspace{0.8cm}
+        {\small\color{white!80} Vietnamese Satire Poetry Collection\par}
+    };
+\end{tikzpicture}
 \end{titlepage}

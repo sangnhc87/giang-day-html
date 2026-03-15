@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage{xstring}
+\usepackage[most]{tcolorbox}
+\usepackage{hyperref}
+
+\newcommand{\extractpoemtitle}[1]{%
+  \IfBeginWith{#1}{Lục bát: }{\StrBehind{#1}{Lục bát: }[\tempPoemTitle]}{%
+    \IfBeginWith{#1}{Thất ngôn tứ tuyệt: }{\StrBehind{#1}{Thất ngôn tứ tuyệt: }[\tempPoemTitle]}{%
+      \IfBeginWith{#1}{Tứ tuyệt cà khịa: }{\StrBehind{#1}{Tứ tuyệt cà khịa: }[\tempPoemTitle]}{%
+        \def\tempPoemTitle{#1}%
+      }%
+    }%
+  }%
+}
+
+\newtcolorbox{tutuyetbox}[1]{
+  code={\extractpoemtitle{#1}},
+  title={\tempPoemTitle},
+  phantom={\addcontentsline{toc}{section}{\tempPoemTitle}},
+}
+
+\begin{document}
+\tableofcontents
+
+\begin{tutuyetbox}{Tứ tuyệt cà khịa: Bài thơ một}
+Nội dung 1
+\end{tutuyetbox}
+
+\begin{tutuyetbox}{Lục bát: Bài thơ hai}
+Nội dung 2
+\end{tutuyetbox}
+
+\begin{tutuyetbox}{Bài thơ ba}
+Nội dung 3
+\end{tutuyetbox}
+
+\end{document}

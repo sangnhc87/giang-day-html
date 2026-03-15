@@ -1,4 +1,4 @@
-\documentclass[12pt,a5paper,oneside,openany]{book}
+\documentclass[12pt,a4paper,oneside,openany]{book}
 
 \usepackage[T5]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -14,6 +14,7 @@
 \usepackage{tocloft}
 \usepackage{enumitem}
 \usepackage[most]{tcolorbox}
+\tcbuselibrary{skins, breakable}
 \usepackage[unicode,hidelinks]{hyperref}
 \usepackage{bookmark}
 \usepackage{xstring}
@@ -25,12 +26,18 @@
 \setcounter{tocdepth}{1}
 \setlist[itemize]{leftmargin=1.45em,itemsep=0.28em,topsep=0.35em}
 
-\definecolor{titlecolor}{HTML}{6B2C2C}
-\definecolor{softline}{HTML}{E6C3A6}
-\definecolor{chapterline}{HTML}{B65A36}
-\definecolor{boxbg}{HTML}{FFFDF8}
-\definecolor{boxframe}{HTML}{D49A68}
-\definecolor{noteink}{HTML}{544740}
+\definecolor{navyroyal}{HTML}{002366}
+\definecolor{goldaccent}{HTML}{C5A02E}
+\definecolor{pearlbg}{HTML}{FFFFFF}
+\definecolor{softgray}{HTML}{F6F6F6}
+\definecolor{titlecolor}{HTML}{002366}
+\definecolor{softline}{HTML}{D4AF37}
+\definecolor{chapterline}{HTML}{C5A02E}
+\definecolor{boxbg}{HTML}{FFFFFF}
+\definecolor{boxframe}{HTML}{C5A02E}
+\definecolor{noteink}{HTML}{333333}
+\definecolor{gold}{HTML}{D4AF37}
+\definecolor{silver}{HTML}{A8A8A8}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -66,51 +73,64 @@
 \renewcommand{\cftchapfont}{\small\bfseries}
 \renewcommand{\cftchappagefont}{\small\bfseries}
 
-\newtcolorbox{lucbatbox}[1]{
+\newcommand{\extractpoemtitle}[1]{%
+  \IfBeginWith{#1}{Lục bát: }{\StrBehind{#1}{Lục bát: }[\tempPoemTitle]}{%
+    \IfBeginWith{#1}{Thất ngôn tứ tuyệt: }{\StrBehind{#1}{Thất ngôn tứ tuyệt: }[\tempPoemTitle]}{%
+      \IfBeginWith{#1}{Tứ tuyệt cà khịa: }{\StrBehind{#1}{Tứ tuyệt cà khịa: }[\tempPoemTitle]}{%
+        \def\tempPoemTitle{#1}%
+      }%
+    }%
+  }%
+}
+
+\newtcolorbox{lucbatbox}[2]{
+  enhanced,
   colback=boxbg,
   colframe=boxframe,
-  title={\displaypoemtitle{#1}},
-  coltitle=titlecolor,
+  title={#1 \hfill \small\itshape #2},
+  phantom={\addcontentsline{toc}{section}{#1}},
+  coltitle=white,
   fonttitle=\bfseries,
-  before upper={\centering\obeylines},
+  attach boxed title to top left={xshift=3mm, yshift=-3mm, yshifttext=-1mm},
+  boxed title style={colback=navyroyal, arc=1mm, right=3mm, width=\linewidth-12mm},
+  sidebyside,
+  sidebyside align=top,
+  sidebyside gap=4.5mm,
+  halign=center,
+  halign lower=center,
+  before upper={\obeylines},
+  before lower={\obeylines\small\itshape},
   arc=2mm,
-  boxrule=0.6pt,
-  left=2.2mm,
-  right=2.2mm,
-  top=1.3mm,
+  boxrule=0.8pt,
+  left=2mm,
+  right=2mm,
+  top=3mm,
   bottom=1.3mm
 }
 
-\newtcolorbox{tutuyetbox}[1]{
-  colback=titlecolor!4,
-  colframe=titlecolor!55,
-  title={\displaypoemtitle{#1}},
-  coltitle=titlecolor,
+\newtcolorbox{tutuyetbox}[2]{
+  enhanced,
+  colback=navyroyal!2,
+  colframe=navyroyal!80,
+  title={#1 \hfill \small\itshape #2},
+  phantom={\addcontentsline{toc}{section}{#1}},
+  coltitle=white,
   fonttitle=\bfseries,
-  before upper={\centering\obeylines},
+  attach boxed title to top left={xshift=2mm, yshift=-2.5mm, yshifttext=-1mm},
+  boxed title style={colback=navyroyal, arc=1mm, right=3mm, width=\linewidth-10mm},
+  sidebyside,
+  sidebyside align=top,
+  sidebyside gap=4.5mm,
+  halign=center,
+  halign lower=center,
+  before upper={\obeylines},
+  before lower={\obeylines\small\itshape},
   arc=2mm,
-  boxrule=0.5pt,
-  left=2.2mm,
-  right=2.2mm,
-  top=1.2mm,
+  boxrule=0.7pt,
+  left=2mm,
+  right=2mm,
+  top=2.5mm,
   bottom=1.2mm
-}
-
-\newcommand{\displaypoemtitle}[1]{%
-  \IfBeginWith{#1}{Lục bát: }{%
-    \StrBehind{#1}{Lục bát: }[\tempPoemTitleA]%
-    \tempPoemTitleA%
-  }{%
-    \IfBeginWith{#1}{Thất ngôn tứ tuyệt: }{%
-      \StrBehind{#1}{Thất ngôn tứ tuyệt: }[\tempPoemTitleB]%
-      \tempPoemTitleB%
-    }{%
-      \IfBeginWith{#1}{Tứ tuyệt cà khịa: }{%
-        \StrBehind{#1}{Tứ tuyệt cà khịa: }[\tempPoemTitleC]%
-        \tempPoemTitleC%
-      }{#1}%
-    }%
-  }%
 }
 
 \newtcolorbox{ghichu}{
@@ -184,9 +204,9 @@
 
 \mainmatter
 \part{Nếp Học và Kỷ Luật}
-% \input{chapters/ch01-thai-do-hoc-tap.tex}
+\input{chapters/ch01-thai-do-hoc-tap.tex}
 % \input{chapters/ch02-chuyen-can-va-di-muon.tex}
-\input{chapters/ch03-kiem-tra-thi-cu.tex}
+% \input{chapters/ch03-kiem-tra-thi-cu.tex}
 % \input{chapters/ch04-viet-bai-va-van-mau.tex}
 % \input{chapters/ch05-hoc-them-hoc-nhom.tex}
 % \input{chapters/ch06-yeu-duong-tuoi-hoc-tro.tex}
@@ -236,7 +256,7 @@
 % \input{chapters/ch46-quen-but-quen-thuoc.tex}
 % \input{chapters/ch47-quen-mang-sach.tex}
 % \input{chapters/ch48-cho-ban-nhac-moi-lam.tex}
-% \input{chapters/ch49-doc-de-luot.tex}
+% \input{chapters/ch49-doc-de-luot.tex} 
 % \input{chapters/ch50-khoanh-bua-cau-may.tex}
 % \part{Ngồi Trong Lớp Mà Tâm Đi Chỗ Khác}
 % \input{chapters/ch51-thich-ngoi-cuoi-lop.tex}
@@ -257,19 +277,19 @@
 % \input{chapters/ch65-keo-dai-gio-ra-choi.tex}
 % \input{chapters/ch66-di-tre-co-kich-ban.tex}
 % \input{chapters/ch67-nop-bai-xong-moi-lo.tex}
-% \input{chapters/ch68-lam-lop-vui-qua-da.tex}
+% \input{chapters/ch68-lam-khung-lam-dien.tex}
 % \input{chapters/ch69-cuoi-truoc-ca-lop.tex}
 % \input{chapters/ch70-buon-chuyen-nhom-chat.tex}
 % \part{Áp Lực Kiểm Tra và Lời Hứa Đổi Đời}
 % \input{chapters/ch71-so-kiem-tra-mieng.tex}
 % \input{chapters/ch72-run-khi-len-bang.tex}
-% \input{chapters/ch73-hoc-tu-lech-de.tex}
+% \input{chapters/ch73-hoi-tu-khong-trung.tex}
 % \input{chapters/ch74-xin-via-ban-gioi.tex}
 % \input{chapters/ch75-xem-dap-an-truoc-khi-hieu.tex}
-% \input{chapters/ch76-chep-bai-giai-khong-hieu.tex}
-% \input{chapters/ch77-ngai-hoi-khi-khong-hieu.tex}
+% \input{chapters/ch76-tu-ky-khi-rot-tiet.tex}
+% \input{chapters/ch77-so-sanh-voi-con-nha-nguoi-ta.tex}
 % \input{chapters/ch78-che-diem-bang-tay.tex}
-% \input{chapters/ch79-the-doi-thoi-sau-diem-kem.tex}
+% \input{chapters/ch79-xin-diem-cuoi-ky.tex}
 % \input{chapters/ch80-quyet-tam-mot-dem.tex}
 
 \end{document}

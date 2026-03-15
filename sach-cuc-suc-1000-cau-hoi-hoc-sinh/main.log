@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  9 MAR 2026 08:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  15 MAR 2026 11:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -921,53 +921,42 @@ File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
 shapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
-8.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
+1.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./main.aux
-(./cover-book.aux)
-LaTeX Font Info:    Trying to load font information for T5+lmr on input line 6.
-
- (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t5lmr.fd
-File: t5lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-(./loi-mo-dau-book.aux) (./chapters/book-ch01-bai-tap-va-chua-hieu.aux)
-(./chapters/book-ch02-diem-so-va-xin-diem.aux)
-(./chapters/book-ch03-bi-goi-len-bang.aux)
-(./chapters/book-ch04-khong-lam-bai-va-quen-bai.aux)
-(./chapters/book-ch05-hoc-hanh-va-luoi-bieng.aux)
-(./chapters/book-ch06-thi-cu-va-on-thi.aux)
-(./chapters/book-ch07-bi-phat-va-noi-quy.aux)
-(./chapters/book-ch08-tuong-lai-va-nghe-nghiep.aux)
-(./chapters/book-ch09-ly-su-cun-kinh-dien.aux)
-(./chapters/book-ch10-khien-thay-tho-dai.aux))
+No file main.aux.
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 78.
-LaTeX Font Info:    Trying to load font information for T5+cmr on input line 78
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 81.
+LaTeX Font Info:    Trying to load font information for T5+cmr on input line 81
 .
-
 (/usr/local/texlive/2024/texmf-dist/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Trying to load font information for T5+lmr on input line 81
+.
 
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t5lmr.fd
+File: t5lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count324
@@ -1024,19 +1013,19 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 78.
-Package microtype Info: Applying patch `item' on input line 78.
-Package microtype Info: Applying patch `toc' on input line 78.
-Package microtype Info: Applying patch `eqnum' on input line 78.
-Package microtype Info: Applying patch `footnote' on input line 78.
-Package microtype Info: Applying patch `verbatim' on input line 78.
+LaTeX Info: Redefining \microtypecontext on input line 81.
+Package microtype Info: Applying patch `item' on input line 81.
+Package microtype Info: Applying patch `toc' on input line 81.
+Package microtype Info: Applying patch `eqnum' on input line 81.
+Package microtype Info: Applying patch `footnote' on input line 81.
+Package microtype Info: Applying patch `verbatim' on input line 81.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 78.
+LaTeX Info: Redefining \showhyphens on input line 81.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1093,6 +1082,13 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 LaTeX Font Warning: Font shape `T5/lmr/bx/sc' undefined
 (Font)              using `T5/lmr/bx/n' instead on input line 27.
 
+LaTeX Font Info:    Calculating math sizes for size <18> on input line 38.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <18> on input line 38.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12.59995> on input line 38.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 38.
 
 
 [1
@@ -1137,20 +1133,25 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 
 ])
 
-[6] (./main.toc
-
-[1
-
-])
+[6]
+No file main.toc.
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
 
 
-[2]
+[1
+
+]
 \openout2 = `loi-mo-dau-book.aux'.
 
  (./loi-mo-dau-book.tex
+
+[2
+
+
+
+]
 Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 25.52023pt (\textcolor {inkdark}{L
@@ -1158,11 +1159,7 @@ Package lettrine.sty Info: Targeted height = 23.2pt
 (lettrine.sty)             reported on input line 6.
 )
 
-[3
-
-
-
-]
+[3]
 
 [4
 
@@ -1185,17 +1182,31 @@ Ch\uhorn \ohorn ng 1.
 [3]
 
 [4]
+Overfull \hbox (7.61028pt too wide) in paragraph at lines 48--49
+[]\T5/lmr/m/it/12 (-20) Student: ``I thought my reasoning was logical.'' Teache
+r: ``Logical in your head doesn't automatically
+ []
+
+
 
 [5]
 
-[6])
+[6]
 
 [7]
+
+[8]
+
+[9]
+
+[10])
+
+[11]
 \openout2 = `chapters/book-ch02-diem-so-va-xin-diem.aux'.
 
  (./chapters/book-ch02-diem-so-va-xin-diem.tex
 
-[8
+[12
 
 
 
@@ -1204,31 +1215,13 @@ Ch\uhorn \ohorn ng 1.
 Ch\uhorn \ohorn ng 2.
 
 
-[9]
-
-[10]
-
-[11]
-
-[12]
-
 [13]
 
-[14])
+[14]
 
 [15]
-\openout2 = `chapters/book-ch03-bi-goi-len-bang.aux'.
 
- (./chapters/book-ch03-bi-goi-len-bang.tex
-
-[16
-
-
-
-
-]
-Ch\uhorn \ohorn ng 3.
-
+[16]
 
 [17]
 
@@ -1243,9 +1236,9 @@ Ch\uhorn \ohorn ng 3.
 [22])
 
 [23]
-\openout2 = `chapters/book-ch04-khong-lam-bai-va-quen-bai.aux'.
+\openout2 = `chapters/book-ch03-bi-goi-len-bang.aux'.
 
- (./chapters/book-ch04-khong-lam-bai-va-quen-bai.tex
+ (./chapters/book-ch03-bi-goi-len-bang.tex
 
 [24
 
@@ -1253,7 +1246,7 @@ Ch\uhorn \ohorn ng 3.
 
 
 ]
-Ch\uhorn \ohorn ng 4.
+Ch\uhorn \ohorn ng 3.
 
 
 [25]
@@ -1266,47 +1259,37 @@ Ch\uhorn \ohorn ng 4.
 
 [29]
 
-[30])
+[30]
 
 [31]
-\openout2 = `chapters/book-ch05-hoc-hanh-va-luoi-bieng.aux'.
 
- (./chapters/book-ch05-hoc-hanh-va-luoi-bieng.tex
-
-[32
-
-
-
-
-]
-Ch\uhorn \ohorn ng 5.
-
+[32]
 
 [33]
 
-[34]
+[34])
 
 [35]
+\openout2 = `chapters/book-ch04-khong-lam-bai-va-quen-bai.aux'.
 
-[36]
+ (./chapters/book-ch04-khong-lam-bai-va-quen-bai.tex
 
-[37]
-
-[38])
-
-[39]
-\openout2 = `chapters/book-ch06-thi-cu-va-on-thi.aux'.
-
- (./chapters/book-ch06-thi-cu-va-on-thi.tex
-
-[40
+[36
 
 
 
 
 ]
-Ch\uhorn \ohorn ng 6.
+Ch\uhorn \ohorn ng 4.
 
+
+[37]
+
+[38]
+
+[39]
+
+[40]
 
 [41]
 
@@ -1321,9 +1304,9 @@ Ch\uhorn \ohorn ng 6.
 [46])
 
 [47]
-\openout2 = `chapters/book-ch07-bi-phat-va-noi-quy.aux'.
+\openout2 = `chapters/book-ch05-hoc-hanh-va-luoi-bieng.aux'.
 
- (./chapters/book-ch07-bi-phat-va-noi-quy.tex
+ (./chapters/book-ch05-hoc-hanh-va-luoi-bieng.tex
 
 [48
 
@@ -1331,7 +1314,7 @@ Ch\uhorn \ohorn ng 6.
 
 
 ]
-Ch\uhorn \ohorn ng 7.
+Ch\uhorn \ohorn ng 5.
 
 
 [49]
@@ -1344,49 +1327,56 @@ Ch\uhorn \ohorn ng 7.
 
 [53]
 
-[54])
+[54]
 
 [55]
-\openout2 = `chapters/book-ch08-tuong-lai-va-nghe-nghiep.aux'.
 
- (./chapters/book-ch08-tuong-lai-va-nghe-nghiep.tex
-
-[56
-
-
-
-
-]
-Ch\uhorn \ohorn ng 8.
-
+[56]
 
 [57]
 
-[58]
+[58])
 
 [59]
+\openout2 = `chapters/book-ch06-thi-cu-va-on-thi.aux'.
 
-[60]
+ (./chapters/book-ch06-thi-cu-va-on-thi.tex
 
-[61]
-
-[62])
-
-[63]
-\openout2 = `chapters/book-ch09-ly-su-cun-kinh-dien.aux'.
-
- (./chapters/book-ch09-ly-su-cun-kinh-dien.tex
-
-[64
+[60
 
 
 
 
 ]
-Ch\uhorn \ohorn ng 9.
+Ch\uhorn \ohorn ng 6.
+
+
+[61]
+
+[62]
+Overfull \hbox (18.8799pt too wide) in paragraph at lines 24--25
+[]\T5/lmr/m/it/12 (-20) Student: ``If I memorise everything, I'll be fine, righ
+t?'' Teacher: ``Memorising without understanding
+ []
+
+
+
+[63]
+
+[64]
+Overfull \hbox (1.28716pt too wide) in paragraph at lines 52--52
+|[]\T5/lmr/bx/n/20.74 (-20) T¥m T¼nh Pháng Thi V  Sü ^^^¡nh Rìi Phong
+ []
+
 
 
 [65]
+Overfull \hbox (2.23961pt too wide) in paragraph at lines 65--66
+[]\T5/lmr/m/it/12 (-20) Student: ``I'm just afraid of disappointing my parents.
+'' Teacher: ``Then revise out of responsibility,
+ []
+
+
 
 [66]
 
@@ -1396,23 +1386,29 @@ Ch\uhorn \ohorn ng 9.
 
 [69]
 
-[70])
+[70]
 
-[71]
-\openout2 = `chapters/book-ch10-khien-thay-tho-dai.aux'.
+[71])
 
- (./chapters/book-ch10-khien-thay-tho-dai.tex
+[72]
+\openout2 = `chapters/book-ch07-bi-phat-va-noi-quy.aux'.
 
-[72
+ (./chapters/book-ch07-bi-phat-va-noi-quy.tex
+Ch\uhorn \ohorn ng 7.
+
+
+[73
 
 
 
 
 ]
-Ch\uhorn \ohorn ng 10.
+Overfull \hbox (7.99602pt too wide) in paragraph at lines 14--15
+[]\T5/lmr/m/it/12 (-20) Student: ``I didn't do it on purpose.'' Teacher: ``Not 
+on purpose still requires learning responsibility.''[] 
+ []
 
 
-[73]
 
 [74]
 
@@ -1422,17 +1418,162 @@ Ch\uhorn \ohorn ng 10.
 
 [77]
 
-[78])
+[78]
 
 [79]
+Overfull \hbox (0.95451pt too wide) in paragraph at lines 89--90
+[]\T5/lmr/m/it/12 (-20) Student: ``I was just following the crowd.'' Teacher: `
+`The crowd won't sign for your consequences.''[] 
+ []
 
-[80
+
+
+[80]
+
+[81]
+
+[82])
+
+[83]
+\openout2 = `chapters/book-ch08-tuong-lai-va-nghe-nghiep.aux'.
+
+ (./chapters/book-ch08-tuong-lai-va-nghe-nghiep.tex
+
+[84
+
+
+
+
+]
+Ch\uhorn \ohorn ng 8.
+
+
+[85]
+
+[86]
+
+[87]
+
+[88]
+
+[89]
+
+[90]
+
+[91]
+
+[92]
+Overfull \hbox (4.10112pt too wide) in paragraph at lines 93--94
+[]\T5/lmr/m/it/12 (-20) Student: ``I think I lack leadership qualities.'' Teach
+er: ``That's fine. Be a person with responsibility
+ []
+
+
+
+[93]
+
+[94]
+Overfull \hbox (23.28831pt too wide) in paragraph at lines 117--118
+[]\T5/lmr/m/it/12 (-20) Student: ``What should I focus on this year?'' Teacher:
+ ``Study foundations, discipline, communication,
+ []
+
+
+
+[95])
+
+[96]
+\openout2 = `chapters/book-ch09-ly-su-cun-kinh-dien.aux'.
+
+ (./chapters/book-ch09-ly-su-cun-kinh-dien.tex
+Ch\uhorn \ohorn ng 9.
+
+
+[97
+
+
+
+
+]
+
+[98]
+
+[99]
+
+[100]
+Overfull \hbox (18.11874pt too wide) in paragraph at lines 54--55
+[]\T5/lmr/m/it/12 (-20) Student: ``I didn't do it wrong, the prompt misundersto
+od me.'' Teacher: ``The prompt misunderstands
+ []
+
+
+
+[101]
+
+[102]
+
+[103]
+
+[104]
+Overfull \hbox (9.5809pt too wide) in paragraph at lines 90--91
+[]\T5/lmr/m/it/12 (-20) Student: ``I didn't break a promise, I just postponed m
+y commitment.'' Teacher: ``Your commitments
+ []
+
+
+
+[105]
+
+[106]
+
+[107])
+
+[108]
+\openout2 = `chapters/book-ch10-khien-thay-tho-dai.aux'.
+
+ (./chapters/book-ch10-khien-thay-tho-dai.tex
+Ch\uhorn \ohorn ng 10.
+
+
+[109
+
+
+
+
+]
+
+[110]
+
+[111]
+
+[112]
+
+[113]
+
+[114]
+
+[115]
+
+[116]
+Overfull \hbox (3.4686pt too wide) in paragraph at lines 100--100
+|[]\T5/lmr/bx/n/20.74 (-20) Nhúng Líi Cuèi Còng D nh Cho Sü Tr÷ðng
+ []
+
+
+
+[117]
+
+[118])
+
+[119]
+
+[120
 
 
 
 ] (./series-catalog.tex
 
-[81
+[121
 
 ]) (./main.aux (./cover-book.aux) (./loi-mo-dau-book.aux)
 (./chapters/book-ch01-bai-tap-va-chua-hieu.aux)
@@ -1453,13 +1594,16 @@ L3 programming layer <2024-11-02>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 24289 strings out of 473362
- 507483 string characters out of 5720983
- 957417 words of memory out of 5000000
- 46624 multiletter control sequences out of 15000+600000
- 790353 words of font info for 233 fonts, out of 8000000 for 9000
+ 24497 strings out of 473362
+ 509167 string characters out of 5720983
+ 952537 words of memory out of 5000000
+ 46657 multiletter control sequences out of 15000+600000
+ 811959 words of font info for 348 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,12n,101p,1193b,1045s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
@@ -1472,10 +1616,10 @@ r8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></u
 sr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/t
 exlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/202
 4/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (91 pages, 383622 bytes).
+Output written on main.pdf (131 pages, 594228 bytes).
 PDF statistics:
- 360 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
+ 488 PDF objects out of 1000 (max. 8388607)
+ 329 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 86029 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 92173 words of extra memory for PDF output out of 106986 (max. 10000000)
 

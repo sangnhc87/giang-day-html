@@ -3,62 +3,62 @@
 \contentsline {chapter}{Hướng Dẫn Sử Dụng Sách}{5}{}%
 \contentsline {chapter}{Lời Mở Đầu}{iii}{}%
 \contentsline {chapter}{\numberline {1}Học sinh hỏi về bài tập và chuyện chưa hiểu}{1}{}%
-\contentsline {section}{\numberline {1.1}Từ câu 1 đến câu 20}{1}{}%
-\contentsline {section}{\numberline {1.2}Từ câu 21 đến câu 40}{2}{}%
-\contentsline {section}{\numberline {1.3}Từ câu 41 đến câu 60}{3}{}%
-\contentsline {section}{\numberline {1.4}Từ câu 61 đến câu 80}{5}{}%
-\contentsline {section}{\numberline {1.5}Từ câu 81 đến câu 100}{6}{}%
-\contentsline {chapter}{\numberline {2}Học sinh hỏi về điểm số và chuyện xin điểm}{9}{}%
-\contentsline {section}{\numberline {2.1}Từ câu 101 đến câu 120}{9}{}%
-\contentsline {section}{\numberline {2.2}Từ câu 121 đến câu 140}{10}{}%
-\contentsline {section}{\numberline {2.3}Từ câu 141 đến câu 160}{11}{}%
-\contentsline {section}{\numberline {2.4}Từ câu 161 đến câu 180}{13}{}%
-\contentsline {section}{\numberline {2.5}Từ câu 181 đến câu 200}{14}{}%
-\contentsline {chapter}{\numberline {3}Học sinh hỏi khi bị gọi lên bảng}{17}{}%
-\contentsline {section}{\numberline {3.1}Từ câu 201 đến câu 220}{17}{}%
-\contentsline {section}{\numberline {3.2}Từ câu 221 đến câu 240}{18}{}%
-\contentsline {section}{\numberline {3.3}Từ câu 241 đến câu 260}{19}{}%
-\contentsline {section}{\numberline {3.4}Từ câu 261 đến câu 280}{21}{}%
-\contentsline {section}{\numberline {3.5}Từ câu 281 đến câu 300}{22}{}%
-\contentsline {chapter}{\numberline {4}Học sinh hỏi khi không làm bài và quên bài}{25}{}%
-\contentsline {section}{\numberline {4.1}Từ câu 301 đến câu 320}{25}{}%
-\contentsline {section}{\numberline {4.2}Từ câu 321 đến câu 340}{26}{}%
-\contentsline {section}{\numberline {4.3}Từ câu 341 đến câu 360}{27}{}%
-\contentsline {section}{\numberline {4.4}Từ câu 361 đến câu 380}{29}{}%
-\contentsline {section}{\numberline {4.5}Từ câu 381 đến câu 400}{30}{}%
-\contentsline {chapter}{\numberline {5}Học sinh hỏi về việc học, sự lười và thiếu tập trung}{33}{}%
-\contentsline {section}{\numberline {5.1}Từ câu 401 đến câu 420}{33}{}%
-\contentsline {section}{\numberline {5.2}Từ câu 421 đến câu 440}{34}{}%
-\contentsline {section}{\numberline {5.3}Từ câu 441 đến câu 460}{35}{}%
-\contentsline {section}{\numberline {5.4}Từ câu 461 đến câu 480}{37}{}%
-\contentsline {section}{\numberline {5.5}Từ câu 481 đến câu 500}{38}{}%
-\contentsline {chapter}{\numberline {6}Học sinh hỏi về thi cử và chuyện ôn thi}{41}{}%
-\contentsline {section}{\numberline {6.1}Từ câu 501 đến câu 520}{41}{}%
-\contentsline {section}{\numberline {6.2}Từ câu 521 đến câu 540}{42}{}%
-\contentsline {section}{\numberline {6.3}Từ câu 541 đến câu 560}{43}{}%
-\contentsline {section}{\numberline {6.4}Từ câu 561 đến câu 580}{45}{}%
-\contentsline {section}{\numberline {6.5}Từ câu 581 đến câu 600}{46}{}%
-\contentsline {chapter}{\numberline {7}Học sinh hỏi khi bị phạt và chuyện nội quy lớp học}{49}{}%
-\contentsline {section}{\numberline {7.1}Từ câu 601 đến câu 620}{49}{}%
-\contentsline {section}{\numberline {7.2}Từ câu 621 đến câu 640}{50}{}%
-\contentsline {section}{\numberline {7.3}Từ câu 641 đến câu 660}{51}{}%
-\contentsline {section}{\numberline {7.4}Từ câu 661 đến câu 680}{53}{}%
-\contentsline {section}{\numberline {7.5}Từ câu 681 đến câu 700}{54}{}%
-\contentsline {chapter}{\numberline {8}Học sinh hỏi về tương lai và nghề nghiệp}{57}{}%
-\contentsline {section}{\numberline {8.1}Từ câu 701 đến câu 720}{57}{}%
-\contentsline {section}{\numberline {8.2}Từ câu 721 đến câu 740}{58}{}%
-\contentsline {section}{\numberline {8.3}Từ câu 741 đến câu 760}{59}{}%
-\contentsline {section}{\numberline {8.4}Từ câu 761 đến câu 780}{61}{}%
-\contentsline {section}{\numberline {8.5}Từ câu 781 đến câu 800}{62}{}%
-\contentsline {chapter}{\numberline {9}Những câu hỏi lý sự cùn kinh điển của học sinh}{65}{}%
-\contentsline {section}{\numberline {9.1}Từ câu 801 đến câu 820}{65}{}%
-\contentsline {section}{\numberline {9.2}Từ câu 821 đến câu 840}{66}{}%
-\contentsline {section}{\numberline {9.3}Từ câu 841 đến câu 860}{67}{}%
-\contentsline {section}{\numberline {9.4}Từ câu 861 đến câu 880}{69}{}%
-\contentsline {section}{\numberline {9.5}Từ câu 881 đến câu 900}{70}{}%
-\contentsline {chapter}{\numberline {10}Những câu hỏi khiến thầy muốn thở dài}{73}{}%
-\contentsline {section}{\numberline {10.1}Từ câu 901 đến câu 920}{73}{}%
-\contentsline {section}{\numberline {10.2}Từ câu 921 đến câu 940}{74}{}%
-\contentsline {section}{\numberline {10.3}Từ câu 941 đến câu 960}{75}{}%
-\contentsline {section}{\numberline {10.4}Từ câu 961 đến câu 980}{77}{}%
-\contentsline {section}{\numberline {10.5}Từ câu 981 đến câu 1000}{78}{}%
+\contentsline {section}{\numberline {1.1}Vừa Đọc Đề Đã Than Khó}{1}{}%
+\contentsline {section}{\numberline {1.2}Cố Chấp Với Cách Làm Sai}{3}{}%
+\contentsline {section}{\numberline {1.3}Những Sự Cố Hoang Mang Đáng Yêu}{5}{}%
+\contentsline {section}{\numberline {1.4}Sai Một Ly Đi Một Dặm}{7}{}%
+\contentsline {section}{\numberline {1.5}Những Nỗ Lực Muộn Màng Nửa Vời}{9}{}%
+\contentsline {chapter}{\numberline {2}Học sinh hỏi về điểm số và xin điểm}{13}{}%
+\contentsline {section}{\numberline {2.1}Cú Sốc Điểm Thấp Thấu Tim}{13}{}%
+\contentsline {section}{\numberline {2.2}Đổ Lỗi Cho Đề Thi Và Thời Vận}{15}{}%
+\contentsline {section}{\numberline {2.3}Nghệ Thuật Mặc Cả Điểm Số}{17}{}%
+\contentsline {section}{\numberline {2.4}Sự Hoang Mang Sau Khi Trả Bài}{19}{}%
+\contentsline {section}{\numberline {2.5}Lời Hứa Gió Bay Phút Chót}{21}{}%
+\contentsline {chapter}{\numberline {3}Học sinh hỏi khi bị gọi lên bảng}{25}{}%
+\contentsline {section}{\numberline {3.1}Đứng Trước Lớp Và Sự Run Rẩy Đầu Tiên}{25}{}%
+\contentsline {section}{\numberline {3.2}Những Lưỡng Lự Và Viện Cớ Trẻ Con}{27}{}%
+\contentsline {section}{\numberline {3.3}Xấu Hổ, Trống Rỗng Và Áp Lực Nhìn Từ Dưới Lên}{29}{}%
+\contentsline {section}{\numberline {3.4}Muốn Biến Mất Khỏi Căn Phòng}{31}{}%
+\contentsline {section}{\numberline {3.5}Những Bước Xuống Bảng Lịch Sử Đầu Đời}{33}{}%
+\contentsline {chapter}{\numberline {4}Học sinh hỏi khi không làm bài và quên bài}{37}{}%
+\contentsline {section}{\numberline {4.1}Não Cá Vàng Và Sự Lãng Quên Có Chọn Lọc}{37}{}%
+\contentsline {section}{\numberline {4.2}Lý Do Sáng Tạo Đến Mức Nghệ Thuật}{39}{}%
+\contentsline {section}{\numberline {4.3}Lầm Lỡ, Mạng Lag Và Lỗi Công Nghệ}{41}{}%
+\contentsline {section}{\numberline {4.4}Muôn Vàn Ngụy Biện Cho Sự Đùn Đẩy}{43}{}%
+\contentsline {section}{\numberline {4.5}Hứa Sẽ Nộp Và Lặng Lẽ Mất Tích}{45}{}%
+\contentsline {chapter}{\numberline {5}Học sinh hỏi về việc học, sự lười và thiếu tập trung}{49}{}%
+\contentsline {section}{\numberline {5.1}Không Có Động Lực Và Sự Ban Phát Năng Lực}{49}{}%
+\contentsline {section}{\numberline {5.2}Những Lời Bao Biện Về Hoàn Cảnh Và Bản Thân}{51}{}%
+\contentsline {section}{\numberline {5.3}Học Lan Man, Gián Đoạn Và Hội Chứng Hứa Hẹn}{53}{}%
+\contentsline {section}{\numberline {5.4}Khoảng Trống Của Sự Kỷ Luật}{55}{}%
+\contentsline {section}{\numberline {5.5}Những Chông Chênh Của Người Mới Bắt Đầu Thật Sự}{57}{}%
+\contentsline {chapter}{\numberline {6}Học sinh hỏi về thi cử và chuyện ôn thi}{61}{}%
+\contentsline {section}{\numberline {6.1}Nước Tới Cổ Mới Nhảy}{61}{}%
+\contentsline {section}{\numberline {6.2}Ôn Thi Kiểu Lướt Sóng Và Những Hy Vọng Mù}{63}{}%
+\contentsline {section}{\numberline {6.3}Tâm Tình Phòng Thi Và Sự Đánh Rơi Phong Độ}{65}{}%
+\contentsline {section}{\numberline {6.4}Chạy Trời Không Khỏi Áp Lực Thi Cử}{67}{}%
+\contentsline {section}{\numberline {6.5}Linh Cảm Bài Thi Và Nỗi Sợ Hãi Cuối Cùng}{70}{}%
+\contentsline {chapter}{\numberline {7}Học sinh hỏi khi bị phạt và chuyện nội quy lớp học}{73}{}%
+\contentsline {section}{\numberline {7.1}Những Lời Bào Chữa Khi Phạm Lỗi Nhỏ}{73}{}%
+\contentsline {section}{\numberline {7.2}Sự Khó Chịu Khung Nội Quy}{75}{}%
+\contentsline {section}{\numberline {7.3}Biện Minh Bằng Hoàn Cảnh Và Cảm Xúc Phút Chốc}{77}{}%
+\contentsline {section}{\numberline {7.4}Không Phục, Ức Chế Và Đòi Dân Chủ}{79}{}%
+\contentsline {section}{\numberline {7.5}Lý Lẽ Của Tuổi Thích Phá Cách}{81}{}%
+\contentsline {chapter}{\numberline {8}Học sinh hỏi về tương lai và nghề nghiệp}{85}{}%
+\contentsline {section}{\numberline {8.1}Hoang Mang Trước Màn Sương Tương Lai}{85}{}%
+\contentsline {section}{\numberline {8.2}Áp Lực Thành Công Và Tiền Bạc}{87}{}%
+\contentsline {section}{\numberline {8.3}Nghề "Hot", Nghề "Chill" Và Thực Tế}{89}{}%
+\contentsline {section}{\numberline {8.4}Làm Theo Đam Mê Hay Nghe Lời Ba Mẹ?}{91}{}%
+\contentsline {section}{\numberline {8.5}Những Câu Hỏi Lớn Trước Cửa Đời}{94}{}%
+\contentsline {chapter}{\numberline {9}Những câu hỏi lý sự cùn kinh điển của học sinh}{97}{}%
+\contentsline {section}{\numberline {9.1}Những Màn Cãi Cùn Với Phong Thái Của Một Luật Sư}{97}{}%
+\contentsline {section}{\numberline {9.2}Đổi Đen Thay Trắng Bằng Định Nghĩa Mới}{99}{}%
+\contentsline {section}{\numberline {9.3}Lấy Triết Lý Làm Bình Phong Cho Sự Lười}{101}{}%
+\contentsline {section}{\numberline {9.4}Không Bao Giờ Mình Sai, Chỉ Là Hoàn Cảnh Ép}{103}{}%
+\contentsline {section}{\numberline {9.5}Lý Lẽ Vô Thường Và Những Câu Chốt Đau Đầu}{106}{}%
+\contentsline {chapter}{\numberline {10}Những câu hỏi khiến thầy muốn thở dài}{109}{}%
+\contentsline {section}{\numberline {10.1}Hỏi Những Câu Chẳng Để Làm Gì}{109}{}%
+\contentsline {section}{\numberline {10.2}Ngây Ngô Giả Vờ Và Sự Ngây Thơ Gây Mệt}{111}{}%
+\contentsline {section}{\numberline {10.3}Chưa Từng Có Ý Định Nghe Cho Rõ}{113}{}%
+\contentsline {section}{\numberline {10.4}Đổ Lỗi Vũ Trụ Và Tìm Sự An Ủi Sai Chỗ}{115}{}%
+\contentsline {section}{\numberline {10.5}Những Lời Cuối Cùng Dành Cho Sự Trưởng Thành}{117}{}%

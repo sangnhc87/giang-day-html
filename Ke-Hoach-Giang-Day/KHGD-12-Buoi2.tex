@@ -1,0 +1,116 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage[top=2cm, bottom=2cm, left=1.5cm, right=1cm]{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{tabularx,longtable,multirow,makecell} % Thêm gói makecell
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+% Cấu hình cột bảng
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% Tăng độ giãn dòng để các ô không bị dính chữ
+\renewcommand{\arraystretch}{1.6} 
+
+% Cấu hình Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small Tổ Toán}
+\lhead{\small Phân phối chương trình Toán 12 - Buổi 2}
+\cfoot{\thepage}
+
+\begin{document}
+
+% --- PHẦN TIÊU NGỮ ---
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+    \centering
+    \textbf{TRƯỜNG THPT NGUYỄN HỮU CẢNH}\\
+    \textbf{TỔ TOÁN}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+    \centering
+    \textbf{CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM}\\
+    \textbf{Độc lập – Tự do – Hạnh phúc}\\
+    \rule{3cm}{0.4pt}
+\end{minipage}
+
+\vspace{0.8cm}
+
+\begin{center}
+    \Large \textbf{PHÂN PHỐI CHƯƠNG TRÌNH MÔN TOÁN – KHỐI 12} \\
+    \large \textbf{Năm học 2025 – 2026} \\
+    \large \textit{Buổi 2 Học kì II: 17 tuần}
+\end{center}
+
+\vspace{0.5cm}
+
+% --- BẢNG PHÂN PHỐI CHI TIẾT ---
+% Điều chỉnh lại độ rộng cột Tuần một chút để ngày tháng nằm gọn trên 2 dòng
+\begin{longtable}{|C{1cm}|C{2.8cm}|C{2cm}|C{1.5cm}|L{8.7cm}|}
+\hline
+\textbf{STT} & \textbf{Tuần} & \textbf{Tên môn} & \textbf{TIẾT} & \textbf{Tên bài dạy và Yêu cầu cần đạt} \\ \hline
+\endhead
+
+% TUẦN 1
+1 & \multirow{2}{*}{\makecell{1 \\ (19/01--25/01)}} & \multirow{2}{*}{Toán 12} & 1 B2 & \textbf{Chuyên đề nâng cao Nguyên hàm.} \\ \cline{1-1} \cline{4-5}
+2 & & & 2 B2 & \textit{Yêu cầu:} Vận dụng các phương pháp đổi biến, từng phần tìm nguyên hàm hàm hợp. \\ \hline
+
+% TUẦN 2
+3 & \multirow{2}{*}{\makecell{2 \\ (26/01--01/02)}} & \multirow{2}{*}{Toán 12} & 3 B2 & \textbf{Chuyên đề nâng cao PT mặt phẳng.} \\ \cline{1-1} \cline{4-5}
+4 & & & 4 B2 & \textit{Yêu cầu:} Giải bài toán cực trị về khoảng cách và góc liên quan đến mặt phẳng. \\ \hline
+
+% TUẦN 3
+5 & \multirow{2}{*}{\makecell{3 \\ (02/02--08/02)}} & \multirow{2}{*}{Toán 12} & 5 B2 & \textbf{Chuyên đề nâng cao tích phân.} \\ \cline{1-1} \cline{4-5}
+6 & & & 6 B2 & \textit{Yêu cầu:} Tính tích phân hàm ẩn và ứng dụng giải bài toán thực tế. \\ \hline
+
+\multicolumn{5}{|c|}{\textbf{NGHỈ TẾT NGUYÊN ĐÁN (09/02 $\to$ 22/02)}} \\ \hline
+
+% TUẦN 4
+7 & \multirow{2}{*}{\makecell{4 \\ (23/02--01/03)}} & \multirow{2}{*}{Toán 12} & 7 B2 & \textbf{Chuyên đề nâng cao PT mặt phẳng (tt).} \\ \cline{1-1} \cline{4-5}
+8 & & & 8 B2 & \textit{Yêu cầu:} Vận dụng phương trình mặt phẳng giải các bài toán tương giao phức tạp. \\ \hline
+
+% TUẦN 5
+9 & \multirow{2}{*}{\makecell{5 \\ (02/03--08/03)}} & \multirow{2}{*}{Toán 12} & 9 B2 & \textbf{CĐNC Ứng dụng hình học của tích phân.} \\ \cline{1-1} \cline{4-5}
+10 & & & 10 B2 & \textit{Yêu cầu:} Tính thiết diện, thể tích vật thể có hình dạng đặc biệt bằng tích phân. \\ \hline
+
+% TUẦN 13 (Ví dụ tuần có 3 tiết để thầy thấy sự linh hoạt)
+25 & \multirow{3}{*}{\makecell{13 \\ (27/04--03/05)}} & \multirow{3}{*}{Toán 12} & 25 B2 & \textbf{Ôn tập tốt nghiệp THPT.} \\ \cline{1-1} \cline{4-5}
+26 & & & 26 B2 & \multirow{2}{=}{\textit{Yêu cầu:} Luyện giải các dạng toán thực tế và vận dụng cao trong đề thi chính thức.} \\ \cline{1-1} \cline{4-4}
+27 & & & 27 B2 & \\ \hline
+
+% CÁC TUẦN CUỐI (Sửa lỗi dính chữ ở ảnh thầy gửi)
+28 & \makecell{14 \\ (04/05--10/05)} & Toán 12 & 28 B2 & \textbf{Ôn tập tốt nghiệp THPT.} \\ \hline
+
+29 & \multirow{2}{*}{\makecell{15 \\ (11/05--17/05)}} & \multirow{2}{*}{Toán 12} & 29 B2 & \multirow{2}{=}{\textbf{Ôn tập cuối năm, ôn thi tốt nghiệp.}} \\ \cline{1-1} \cline{4-4}
+30 & & & 30 B2 & \\ \hline
+
+31 & \multirow{2}{*}{\makecell{16 \\ (18/05--24/05)}} & \multirow{2}{*}{Toán 12} & 31 B2 & \multirow{2}{=}{\textbf{Ôn tập cuối năm, ôn thi tốt nghiệp.}} \\ \cline{1-1} \cline{4-4}
+32 & & & 32 B2 & \\ \hline
+
+33 & \multirow{2}{*}{\makecell{17 \\ (25/05--30/05)}} & \multirow{2}{*}{Toán 12} & 33 B2 & \multirow{2}{=}{\textbf{Ôn tập cuối năm, ôn thi tốt nghiệp.}} \\ \cline{1-1} \cline{4-4}
+34 & & & 34 B2 & \\ \hline
+
+\end{longtable}
+
+\vspace{1.0cm}
+% --- CHỮ KÝ ---
+\noindent
+\begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \textbf{P. HIỆU TRƯỞNG}\\
+    \vspace{2.5cm}
+    \textbf{...........................................}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \textit{Tp. HCM, ngày 05 tháng 09 năm 2025}\\
+    \textbf{TỔ TRƯỞNG}\\
+    \vspace{2cm}
+    \textbf{ĐỖ THỊ BẠCH LAN}
+\end{minipage}
+
+\end{document}

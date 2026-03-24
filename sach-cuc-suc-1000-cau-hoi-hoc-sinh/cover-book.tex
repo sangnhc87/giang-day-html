@@ -1,70 +1,78 @@
 %============================================================
 % TRANG BIA - SACH CUC SUC 1000 CAU HOI HOC SINH
 %============================================================
-\definecolor{seriesaccent}{HTML}{C97D52}
 \begin{titlepage}
 \thispagestyle{empty}
-\pagecolor{seriesaccent!7}
+\pagecolor{paperwarm}
 
 \begin{tikzpicture}[remember picture, overlay]
-  \fill[white, opacity=0.62, rounded corners=20pt]
-    ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
-    ($(current page.south east)+(-1.5cm,1.5cm)$);
+  \fill[inkdark] (current page.north west) rectangle ($(current page.south west)+(5.1cm,0)$);
+  \fill[sunclay!14] ($(current page.north west)+(5.1cm,0)$) rectangle (current page.south east);
 
-  \draw[sunclay!80!black, line width=3pt, rounded corners=15pt]
-    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
-    ($(current page.south east)+(-1.8cm,1.8cm)$);
+  \fill[white, opacity=0.88, rounded corners=22pt]
+    ($(current page.north west)+(5.9cm,-1.6cm)$) rectangle
+    ($(current page.south east)+(-1.4cm,1.5cm)$);
 
-  \draw[sunclay, line width=1pt, rounded corners=12pt]
-    ($(current page.north west)+(2cm,-2cm)$) rectangle
-    ($(current page.south east)+(-2cm,2cm)$);
+  \draw[sunclay!85!black, line width=2.2pt, rounded corners=18pt]
+    ($(current page.north west)+(6.15cm,-1.85cm)$) rectangle
+    ($(current page.south east)+(-1.65cm,1.75cm)$);
+
+  \fill[chalkgreen!18, rounded corners=14pt]
+    ($(current page.north west)+(6.55cm,-3.25cm)$) rectangle
+    ($(current page.north west)+(14.85cm,-1.95cm)$);
+
+  \fill[sunclay!82!black, rounded corners=12pt]
+    ($(current page.south east)+(-8.8cm,4.25cm)$) rectangle
+    ($(current page.south east)+(-1.9cm,2.75cm)$);
+
+  \foreach \y in {-4.9,-6.4,-7.9,-9.4,-10.9} {
+    \draw[sunclay!32, line width=0.5pt] ($(current page.north west)+(6.7cm,\y cm)$) -- ($(current page.north east)+(-2.0cm,\y cm)$);
+  }
+
+  \foreach \x/\y/\r in {2.1/-4.6/0.22,2.9/-5.35/0.14,3.5/-4.85/0.1,2.45/-6.2/0.09} {
+    \fill[sunclay!58] ($(current page.north west)+(\x cm,\y cm)$) circle (\r cm);
+  }
+
+  \node[anchor=north west] at ($(current page.north west)+(0.95cm,-1.3cm)$) {
+    \begin{minipage}{3.2cm}
+      {\color{white!90}\fontsize{13}{16}\selectfont\bfseries ẤN BẢN GỐC}\\[0.32cm]
+      {\color{sunclay!35}\fontsize{24}{26}\selectfont\bfseries QUYỂN XXV}
+    \end{minipage}
+  };
+
+  \node[anchor=north west] at ($(current page.north west)+(6.95cm,-2.2cm)$) {
+    \begin{minipage}{7.3cm}
+      {\color{inkdark}\fontsize{13}{16}\selectfont\itshape Bản lớp học gắt vừa đủ, duyên vừa đúng}\\[0.52cm]
+      {\color{inkdark}\fontsize{29}{34}\selectfont\bfseries BÍ KÍP 1000 PHA ĐỐI ĐÁP}\\[0.22cm]
+      {\color{sunclay!92!black}\fontsize{23}{28}\selectfont\bfseries Học sinh hỏi siêu nhây}\\[0.14cm]
+      {\color{chalkgreen!95!black}\fontsize{23}{28}\selectfont\bfseries Giáo viên đáp cực gắt}
+    \end{minipage}
+  };
+
+  \node[anchor=north west] at ($(current page.north west)+(7.05cm,-7.95cm)$) {
+    \begin{minipage}{6.8cm}
+      {\color{inkdark!85}\fontsize{14}{19}\selectfont\itshape
+      10 chương hỏi - đáp cực sát lớp học.\\
+      Bật cười trước, nhớ lâu sau.\\
+      Khịa nhẹ nhưng không hời hợt.}
+    \end{minipage}
+  };
+
+  \node[anchor=west] at ($(current page.south east)+(-8.5cm,3.55cm)$) {
+    \begin{minipage}{6.3cm}
+      {\color{white}\fontsize{13}{17}\selectfont\bfseries
+      Dùng để mở tiết, chốt tiết, sinh hoạt lớp, hoặc đọc một đoạn rồi soi lại chính mình.}
+    \end{minipage}
+  };
+
+  \node[anchor=south west] at ($(current page.south west)+(0.95cm,1.45cm)$) {
+    \begin{minipage}{4cm}
+      {\color{white!85}\small Biên soạn}\\[0.18cm]
+      {\color{white}\fontsize{16}{20}\selectfont\bfseries Nguyễn Văn Sang}\\[0.22cm]
+      {\color{sunclay!35}\small Năm 2026}
+    \end{minipage}
+  };
 \end{tikzpicture}
-
-\vspace*{2cm}
-
-\begin{center}
-  {\color{sunclay!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
-  {\fontsize{14}{16}\selectfont\color{chalkgreen!85!black}\scshape \textbf{Bản Lớp Học Cà Khịa Nhẹ Nhưng Thấm}}\\[1.2cm]
-
-  \begin{tcolorbox}[
-    width=11cm,
-    colback=white!95!sunclay,
-    colframe=sunclay!80!black,
-    arc=8pt,
-    boxrule=1.5pt,
-    halign=center
-  ]
-    {\fontsize{18}{22}\selectfont\bfseries\color{inkdark!90!black}
-     ẤN BẢN ĐẶC BIỆT $\star$ SONG NGỮ VIỆT -- ANH}
-  \end{tcolorbox}
-  \vspace{0.8cm}
-
-  {\fontsize{28}{34}\selectfont\bfseries\color{inkdark!90!black}
-    BÍ KÍP 1000 PHA ĐỐI ĐÁP}\\[0.4cm]
-  {\fontsize{24}{30}\selectfont\bfseries\color{sunclay!90!black}
-    Học Sinh Hỏi Siêu Nhây}\\[0.3cm]
-  {\fontsize{24}{30}\selectfont\bfseries\color{sunclay!90!black}
-    Giáo Viên Đáp Cực Gắt}\\[0.6cm]
-
-  {\fontsize{16}{20}\selectfont\color{sunclay!90!black}\itshape
-    10 chương, 1000 màn hỏi -- đáp rất đời lớp học\\
-    Hơi cà khịa, hơi thâm, nhưng không độc}\\[1cm]
-
-  {\color{chalkgreen!60}\rule{6cm}{1pt}}\\[5pt]
-  {\color{sunclay!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
-  {\color{chalkgreen!60}\rule{6cm}{1pt}}\\[1.5cm]
-
-  {\normalsize\itshape\color{chalkgreen!90!black}
-   ``Học sinh hỏi rất thật.\\
-   Giáo viên đáp hơi đau, nhưng để nhớ lâu.''}
-
-  \vfill
-
-  {\fontsize{16}{20}\selectfont\bfseries\color{chalkgreen!90!black}
-    Biên soạn: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
-
-  {\small\color{gray} Bản ý tưởng mở rộng --- Năm 2026}\\[0.5cm]
-\end{center}
-
+\null\vfill
 \afterpage{\nopagecolor}
 \end{titlepage}

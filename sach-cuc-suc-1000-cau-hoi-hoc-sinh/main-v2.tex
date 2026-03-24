@@ -1,0 +1,187 @@
+%============================================================
+% SACH CUC SUC - MAIN V2
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{\normalfont}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric,positioning}
+\usepackage{hyperref}
+
+\geometry{a4paper,left=1.8cm,right=1.8cm,top=2cm,bottom=2cm,headheight=42pt}
+
+% Bang mau V2: xanh bang lop, dat nung va giay am
+\definecolor{chalkgreen}{RGB}{46, 92, 96}
+\definecolor{sunclay}{RGB}{201, 124, 76}
+\definecolor{inkdark}{RGB}{35, 45, 57}
+\definecolor{paperwarm}{RGB}{248, 243, 234}
+\definecolor{mistgreen}{RGB}{225, 236, 231}
+\definecolor{dustrose}{RGB}{168, 95, 78}
+
+\hypersetup{colorlinks=true,linkcolor=chalkgreen,urlcolor=sunclay}
+
+\pagecolor{white}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{sunclay!90!black}\bfseries\small Sách Cục Súc V2 | Bản mở rộng đa tình huống}
+\fancyhead[RE,LO]{\color{inkdark}\itshape\small \leftmark}
+\fancyfoot[C]{\color{chalkgreen!85!black}\textbf{\thepage}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{sunclay!70!black}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\part}[display]
+  {\centering\normalfont\bfseries\color{inkdark}}
+  {\color{sunclay!90!black}\Large\itshape Phần \thepart}
+  {0.7ex}
+  {\Huge}
+  [\vspace{0.8ex}{\color{sunclay}\rule{0.48\textwidth}{1pt}}\vspace{1.2cm}]
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{inkdark}\centering}
+  {\Large\scshape Chương \thechapter}
+  {0.7ex}
+  {\Huge\bfseries}
+  [\vspace{0.8ex}{\color{sunclay}\rule{0.52\textwidth}{1.1pt}}]
+\titlespacing*{\chapter}{0pt}{-14pt}{34pt}
+
+\titleformat{\section}
+  {\color{chalkgreen!90!black}\Large\bfseries}
+  {\thesection.}{0.8em}{}
+\titlespacing*{\section}{0pt}{2.6ex plus 0.8ex minus .2ex}{1.4ex plus .2ex}
+
+\renewcommand{\cfttoctitlefont}{\Huge\bfseries\color{inkdark}}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftchapfont}{\bfseries\color{inkdark}}
+\renewcommand{\cftchappagefont}{\bfseries\color{inkdark}}
+\renewcommand{\cftsecfont}{\color{chalkgreen!80!black}}
+\renewcommand{\cftsecpagefont}{\color{chalkgreen!80!black}}
+\renewcommand{\cftdotsep}{2}
+
+\newtcolorbox{truyen}[2]{
+  enhanced,
+  breakable,
+  colback=white,
+  colframe=chalkgreen,
+  coltitle=white,
+  fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},
+  arc=6pt,
+  boxrule=1.2pt,
+  left=10pt,right=10pt,top=10pt,bottom=10pt,
+  borderline west={4pt}{0pt}{sunclay},
+  drop fuzzy shadow=black!10
+}
+\newtcolorbox{baihoc}{
+  enhanced,
+  breakable,
+  colback=sunclay!10,
+  colframe=sunclay!85!black,
+  coltitle=black,
+  fonttitle=\bfseries,
+  title={\Large Bài học chốt hạ},
+  arc=6pt,
+  boxrule=1pt,
+  left=10pt,right=10pt,top=10pt,bottom=10pt
+}
+\newtcolorbox{ghinhoanh}{
+  enhanced,
+  breakable,
+  colback=mistgreen,
+  colframe=chalkgreen,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Easy English},
+  arc=6pt,
+  boxrule=1pt
+}
+\newtcolorbox{tuhocnhanh}{
+  enhanced,
+  breakable,
+  colback=paperwarm,
+  colframe=dustrose,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Tự soi nhanh},
+  arc=6pt,
+  boxrule=1pt
+}
+\newtcolorbox{quotecard}[1]{
+  enhanced,
+  breakable,
+  colback=inkdark,
+  colframe=sunclay,
+  coltext=white,
+  title={#1},
+  fonttitle=\bfseries\large,
+  arc=8pt,
+  boxrule=1.2pt,
+  left=12pt,right=12pt,top=12pt,bottom=12pt,
+  drop fuzzy shadow=black!12
+}
+
+\newcommand{\chuhoa}[2]{\lettrine[lines=2,lhang=0.08,loversize=0.08]{\textcolor{inkdark}{#1}}{#2}}
+\newcommand{\hsqa}[4]{%
+  \textbf{HS:} ``#1'' \textbf{Thầy:} ``#2''\\
+  {\small\itshape\color{chalkgreen!80!black}Student: ``#3'' Teacher: ``#4''}%
+}
+\newcommand{\ngancach}{%
+  \begin{center}
+    \textcolor{sunclay}{\rule{0.25\textwidth}{0.6pt}\hspace{6pt}$\diamond$\hspace{6pt}\rule{0.25\textwidth}{0.6pt}}
+  \end{center}\vspace{6pt}}
+
+\begin{document}
+\frontmatter
+\include{cover-v2}
+\input{chapters/loitua-v2}
+\include{loi-mo-dau-v2}
+\tableofcontents
+\clearpage
+
+\mainmatter
+\part{Học, điểm số và cái tôi học đường}
+\include{chapters/v2-ch01-hoc-de-lam-gi}
+\include{chapters/v2-ch02-diem-so-va-si-dien}
+\include{chapters/v2-ch03-khong-phai-dua-nao-cung-tu-tin}
+\include{chapters/v2-ch04-luoi-tri-hoan-va-ao-tuong}
+\include{chapters/v2-ch05-sai-que-va-cam-giac-thua}
+
+\part{Tương lai, tiền bạc và nỗi lo lớn dần}
+\include{chapters/v2-ch06-tien-nghe-va-tuong-lai-mo}
+\include{chapters/v2-ch10-khong-co-dap-an-sach-se}
+
+\part{Va chạm trong lớp, trên mạng và giữa người với người}
+\include{chapters/v2-ch07-ky-luat-nghe-kho-chiu}
+\include{chapters/v2-ch08-ly-su-cun-sat-lop}
+\include{chapters/v2-ch09-cau-hoi-lam-thay-khung-lai}
+\include{chapters/v2-ch11-mang-xa-hoi-ai-va-khon-loi-online}
+\include{chapters/v2-ch12-lam-nhom-an-theo-va-dao-duc-linh-hoat}
+\include{chapters/v2-ch13-crush-drama-va-dau-oc-mat-song}
+
+\part{Kho câu đinh, câu chát và câu tỉnh người}
+\include{chapters/v2-bonus-1000-cau-a}
+\include{chapters/v2-bonus-1000-cau-b}
+\include{chapters/v2-bonus-viral-100}
+
+\backmatter
+\input{series-catalog}
+\end{document}

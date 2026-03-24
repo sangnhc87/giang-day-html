@@ -1,89 +1,81 @@
 %============================================================
-% TRANG BIA - QUYEN XXV V2
+% TRANG BIA - MAIN V2
 %============================================================
-\definecolor{seriesaccent}{HTML}{C97D52}
 \begin{titlepage}
 \thispagestyle{empty}
-\pagecolor{seriesaccent!7}
+\pagecolor{paperwarm}
 
 \begin{tikzpicture}[remember picture, overlay]
-  \fill[white, opacity=0.62, rounded corners=20pt]
-    ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
-    ($(current page.south east)+(-1.5cm,1.5cm)$);
+  \fill[inkdark] (current page.north west) rectangle ($(current page.south west)+(5.3cm,0)$);
+  \fill[sunclay!18] ($(current page.north west)+(5.3cm,0)$) rectangle (current page.south east);
 
-  \draw[sunclay!80!black, line width=3pt, rounded corners=15pt]
-    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
-    ($(current page.south east)+(-1.8cm,1.8cm)$);
+  \fill[white, opacity=0.84, rounded corners=22pt]
+    ($(current page.north west)+(6.1cm,-1.7cm)$) rectangle
+    ($(current page.south east)+(-1.4cm,1.6cm)$);
 
-  \draw[sunclay, line width=1pt, rounded corners=12pt]
-    ($(current page.north west)+(2cm,-2cm)$) rectangle
-    ($(current page.south east)+(-2cm,2cm)$);
+  \draw[sunclay!85!black, line width=2.2pt, rounded corners=18pt]
+    ($(current page.north west)+(6.35cm,-1.95cm)$) rectangle
+    ($(current page.south east)+(-1.65cm,1.85cm)$);
 
-  \foreach \x/\y/\xsign/\ysign in {%
-    north west/1.8cm/1/-1,
-    north east/1.8cm/-1/-1,
-    south west/1.8cm/1/1,
-    south east/1.8cm/-1/1%
-  } {
-    \draw[sunclay!80!black, line width=1.5pt]
-      ($(current page.\x) + (\xsign*0.8cm, \ysign*2.8cm)$) --
-      ($(current page.\x) + (\xsign*2.8cm, \ysign*2.8cm)$) --
-      ($(current page.\x) + (\xsign*2.8cm, \ysign*0.8cm)$);
+  \fill[chalkgreen!20, rounded corners=14pt]
+    ($(current page.north west)+(6.8cm,-3.35cm)$) rectangle
+    ($(current page.north west)+(14.8cm,-1.95cm)$);
 
-    \fill[sunclay!60!white] ($(current page.\x) + (\xsign*2cm, \ysign*2cm)$) circle (3pt);
+  \fill[sunclay!80!black, rounded corners=12pt]
+    ($(current page.south east)+(-8.6cm,4.4cm)$) rectangle
+    ($(current page.south east)+(-1.9cm,2.9cm)$);
+
+  \foreach \y in {-4.8,-6.3,-7.8,-9.3,-10.8} {
+    \draw[sunclay!35, line width=0.5pt] ($(current page.north west)+(6.9cm,\y cm)$) -- ($(current page.north east)+(-2.0cm,\y cm)$);
   }
 
-  \node[anchor=center] at ($(current page.center)-(0, 2cm)$) {
-    \begin{tikzpicture}
-      \draw[chalkgreen!20, line width=0.5pt] (0,0) circle (5cm);
-      \draw[sunclay!45, line width=1pt] (0,0) circle (4.8cm);
-    \end{tikzpicture}
+  \foreach \x/\y/\r in {2.1/-4.6/0.23,2.8/-5.4/0.15,3.6/-4.8/0.11,2.5/-6.3/0.09} {
+    \fill[sunclay!55] ($(current page.north west)+(\x cm,\y cm)$) circle (\r cm);
+  }
+
+  \node[anchor=north west] at ($(current page.north west)+(0.95cm,-1.3cm)$) {
+    \begin{minipage}{3.3cm}
+      {\color{white!90}\fontsize{13}{16}\selectfont\bfseries QUYỂN XXV}\\[0.35cm]
+      {\color{sunclay!35}\fontsize{24}{26}\selectfont\bfseries V2}
+    \end{minipage}
+  };
+
+  \node[anchor=north west] at ($(current page.north west)+(7.1cm,-2.28cm)$) {
+    \begin{minipage}{7.2cm}
+      {\color{inkdark}\fontsize{13}{16}\selectfont\scshape Bản mở rộng sáng tạo}\\[0.55cm]
+      {\color{inkdark}\fontsize{31}{36}\selectfont\bfseries 1000 CÂU HỎI}\\[0.16cm]
+      {\color{sunclay!90!black}\fontsize{28}{34}\selectfont\bfseries HỌC SINH}\\[0.16cm]
+      {\color{chalkgreen!90!black}\fontsize{26}{32}\selectfont\bfseries và những màn đáp trả}\\[0.16cm]
+      {\color{inkdark}\fontsize{24}{28}\selectfont\bfseries siêu khịa, siêu thật}
+    \end{minipage}
+  };
+
+  \node[anchor=north west] at ($(current page.north west)+(7.15cm,-8.25cm)$) {
+    \begin{minipage}{6.7cm}
+      {\color{inkdark!85}\fontsize{14}{19}\selectfont\itshape
+      Nhiều chủ đề hơn.\\
+      Nhiều tình huống hơn.\\
+      Nhiều câu nghe xóc nhưng chạm đúng hơn.}
+    \end{minipage}
+  };
+
+  \node[anchor=west] at ($(current page.south east)+(-8.25cm,3.65cm)$) {
+    \begin{minipage}{6.0cm}
+      {\color{white}\fontsize{13}{17}\selectfont\bfseries
+      Dành cho giáo viên muốn có câu đáp gọn, sắc và tỉnh.\\[2pt]
+      Dành cho học sinh đọc xong cười xong rồi khó cãi tiếp.}
+    \end{minipage}
+  };
+
+  \node[anchor=south west] at ($(current page.south west)+(0.95cm,1.45cm)$) {
+    \begin{minipage}{4cm}
+      {\color{white!85}\small Biên soạn lại}\\[0.18cm]
+      {\color{white}\fontsize{16}{20}\selectfont\bfseries Nguyễn Văn Sang}\\[0.22cm]
+      {\color{sunclay!35}\small Năm 2026}
+    \end{minipage}
   };
 \end{tikzpicture}
 
-\vspace*{2cm}
-
-\begin{center}
-  {\color{sunclay!90!black}\large$\star\;\star\;\star$}\\[0.3cm]
-  {\fontsize{14}{16}\selectfont\color{chalkgreen!85!black}\scshape \textbf{Phiên Bản V2 Thô - Thật - Thiết Thực}}\\[1.4cm]
-
-  \begin{tcolorbox}[
-    width=7cm,
-    colback=sunclay!20,
-    colframe=sunclay!80!black,
-    arc=4pt,
-    boxrule=1.5pt,
-    halign=center
-  ]
-    {\fontsize{18}{22}\selectfont\bfseries\color{inkdark!80!black}
-     QUYỂN XXV V2}
-  \end{tcolorbox}
-  \vspace{0.8cm}
-
-  {\fontsize{34}{40}\selectfont\bfseries\color{inkdark!80!black}
-    Lý Sự Cùn}\\[0.35cm]
-  {\fontsize{34}{40}\selectfont\bfseries\color{sunclay!85!black}
-    Rất Đời}\\[0.4cm]
-
-  {\fontsize{16}{20}\selectfont\color{sunclay!90!black}\itshape
-    40 màn đối đáp trò -- thầy sát lớp thật\\
-    Ít màu hồng hơn, nhiều va chạm thật hơn}\\[1cm]
-
-  {\color{chalkgreen!60}\rule{6cm}{1pt}}\\[5pt]
-  {\color{sunclay!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
-  {\color{chalkgreen!60}\rule{6cm}{1pt}}\\[1.5cm]
-
-  {\normalsize\itshape\color{chalkgreen!90!black}
-   ``Nhiều câu học sinh nói ra nghe rất cùn.\\
-   Nhưng nếu bóc kỹ, bên dưới thường là áp lực, sĩ diện hoặc mệt thật.''}
-
-  \vfill
-
-  {\fontsize{16}{20}\selectfont\bfseries\color{chalkgreen!90!black}
-    Biên soạn lại: \textbf{Nguyễn Văn Sang}}\\[0.4cm]
-
-  {\small\color{gray} Bản V2 nội dung --- Năm 2026}\\[0.5cm]
-\end{center}
-
+\null\vfill
 \afterpage{\nopagecolor}
 \end{titlepage}

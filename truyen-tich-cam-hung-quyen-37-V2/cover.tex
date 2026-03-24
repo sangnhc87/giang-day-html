@@ -1,33 +1,45 @@
 \begin{titlepage}
 \begin{tikzpicture}[remember picture,overlay]
-    % Background Image
     \node[anchor=center, inner sep=0pt] at (current page.center) {
         \includegraphics[width=\paperwidth,height=\paperheight]{cover_art.png}
     };
-    
-    % Overlay Darkener (optional, for better text readability)
-    \fill[black,opacity=0.25] (current page.south west) rectangle (current page.north east);
+    \fill[black,opacity=0.42] (current page.south west) rectangle (current page.north east);
+    \fill[navyroyal!70!black,opacity=0.2] (current page.south west) rectangle ([yshift=0.62\paperheight]current page.south east);
+    \fill[goldaccent!50!chapterline,opacity=0.12] (current page.south west) rectangle ([yshift=0.2\paperheight]current page.south east);
 
-    % Decorative Border (TikZ)
-    \draw[line width=2pt, color=white!80!gold] ([xshift=1cm,yshift=1cm]current page.south west) rectangle ([xshift=-1cm,yshift=-1cm]current page.north east);
-    \draw[line width=0.5pt, color=white!60!gold] ([xshift=1.2cm,yshift=1.2cm]current page.south west) rectangle ([xshift=-1.2cm,yshift=-1.2cm]current page.north east);
+    \draw[line width=2pt, color=white!80!goldaccent] ([xshift=0.9cm,yshift=0.9cm]current page.south west) rectangle ([xshift=-0.9cm,yshift=-0.9cm]current page.north east);
+    \draw[line width=0.6pt, color=white!55!goldaccent] ([xshift=1.15cm,yshift=1.15cm]current page.south west) rectangle ([xshift=-1.15cm,yshift=-1.15cm]current page.north east);
 
-    % Title and Info
-    \node[anchor=north, text width=0.8\paperwidth, align=center] at ([yshift=-2.5cm]current page.north) {
-        {\Large\bfseries\color{white} TỦ SÁCH HỌC ĐƯỜNG MẶN MÒI\par}
-        \vspace{0.4cm}
-        {\Huge\bfseries\color{white} THƠ CÀ KHỊA HỌC SINH\par}
-        \vspace{0.6cm}
-        {\Large\bfseries\color{white} Quyển 37-V2 | Premium Edition\par}
+    \fill[white,opacity=0.1,rounded corners=12pt] ([xshift=1.8cm,yshift=-2.3cm]current page.north west) rectangle ([xshift=-1.8cm,yshift=-10.7cm]current page.north east);
+    \fill[chapterline!88!black,opacity=0.82,rounded corners=10pt] ([xshift=2.1cm,yshift=5.1cm]current page.south west) rectangle ([xshift=-2.1cm,yshift=2.0cm]current page.south east);
+
+    \node[anchor=north west, align=left] at ([xshift=2.15cm,yshift=-2.65cm]current page.north west) {
+        {\large\bfseries\color{white!88} TỦ SÁCH GIẢNG BÀI NGẪU HỨNG\par}
+        \vspace{0.5cm}
+        {\fontsize{30}{34}\selectfont\bfseries\color{white} THƠ CÀ KHỊA\par}
+        {\fontsize{30}{34}\selectfont\bfseries\color{goldaccent!70!white} GIÁC NGỘ\par}
+        \vspace{0.55cm}
+        {\Large\bfseries\color{white!92} Quyển 37-V2\par}
+        \vspace{0.18cm}
+        {\normalsize\color{white!88} Bản song ngữ đủ 80 chương, tối ưu để đọc ngẫu hứng trên lớp\par}
     };
 
-    % Bottom Tagline
-    \node[anchor=south, text width=0.8\paperwidth, align=center] at ([yshift=2.5cm]current page.south) {
-        {\large\bfseries\color{white} 80 CHƯƠNG SATIRE - NIÊM LUẬT CHUẨN 100\%\par}
-        \vspace{0.3cm}
-        {\normalsize\color{white!90} Thách thức mọi giới hạn chịu đựng của học sinh cá biệt\par}
-        \vspace{0.8cm}
-        {\small\color{white!80} Vietnamese Satire Poetry Collection\par}
+    \node[anchor=north east, align=center] at ([xshift=-2.25cm,yshift=-2.95cm]current page.north east) {
+        \begin{tikzpicture}
+            \node[draw=goldaccent!85!white, line width=0.8pt, rounded corners=6pt, fill=white!10, inner sep=8pt, text width=4.2cm, align=center] {
+                {\small\bfseries\color{white} THẤT NGÔN TỨ TUYỆT\par}
+                \vspace{0.15cm}
+                {\scriptsize\color{white!85} Song ngữ, đọc gọn, chốt ý nhanh}\par
+            };
+        \end{tikzpicture}
+    };
+
+    \node[anchor=west, text width=0.72\paperwidth, align=left] at ([xshift=2.45cm,yshift=3.48cm]current page.south west) {
+        {\Large\bfseries\color{white} 80 CHƯƠNG SONG NGỮ | CÀ KHỊA SẮC | ĐỌC MIỆNG TRƠN\par}
+        \vspace{0.22cm}
+        {\normalsize\color{white!92} Cười xong là nhớ nếp, nhớ bài, nhớ luôn cái tật mình đang mắc\par}
+        \vspace{0.5cm}
+        {\small\color{white!78} Classroom-ready bilingual satire for quick live reading and instant wake-up moments\par}
     };
 \end{tikzpicture}
 \end{titlepage}

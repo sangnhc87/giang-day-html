@@ -1,0 +1,176 @@
+%============================================================
+% SACH CUC SUC - MAIN NEW PREMIUM EDITION
+%============================================================
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{\normalfont}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+\usepackage{hyperref}
+
+\geometry{a4paper,left=1.8cm,right=1.8cm,top=2cm,bottom=2cm,headheight=42pt}
+
+\definecolor{chalkgreen}{RGB}{47, 91, 91}
+\definecolor{sunclay}{RGB}{197, 122, 76}
+\definecolor{inkdark}{RGB}{33, 42, 52}
+\definecolor{boxbg}{RGB}{249, 245, 239}
+\definecolor{paperwarm}{RGB}{251, 248, 242}
+\definecolor{mistgreen}{RGB}{226, 237, 232}
+\definecolor{dustrose}{RGB}{164, 93, 77}
+\definecolor{linegold}{RGB}{214, 176, 120}
+
+\hypersetup{colorlinks=true,linkcolor=chalkgreen,urlcolor=sunclay}
+
+% Thay ten nay de ca nhan hoa PDF ban ra
+\newcommand{\bookowner}{Tên người sở hữu}
+
+\setlist[enumerate,1]{label=\color{sunclay!95!black}\bfseries Câu~\arabic*.,leftmargin=2cm,itemsep=9pt,topsep=8pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{sunclay!92!black}\bfseries\small Nói Vậy Mà Nghe Được À?}
+\fancyhead[RE,LO]{\color{inkdark}\itshape\small \leftmark}
+\fancyfoot[C]{\color{inkdark!88!black}\small\itshape Dành riêng cho \bookowner\hspace{0.7em}{\color{sunclay}$\diamond$}\hspace{0.7em}\textbf{\thepage}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{linegold!85!black}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\renewcommand{\cfttoctitlefont}{\Huge\bfseries\color{inkdark}}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftchapfont}{\bfseries\color{inkdark}}
+\renewcommand{\cftchappagefont}{\bfseries\color{inkdark}}
+\renewcommand{\cftsecfont}{\color{chalkgreen!90!black}}
+\renewcommand{\cftsecpagefont}{\color{chalkgreen!90!black}}
+\setlength{\cftbeforechapskip}{5pt}
+\setlength{\cftbeforesecskip}{2pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{inkdark}\centering}
+  {{\color{sunclay!95!black}\Large\itshape Chương \thechapter}\\[-0.2ex]
+   {\color{chalkgreen!85!black}\small HS hỏi \textbullet{} Thầy đáp \textbullet{} Cười xong phải tỉnh}}
+  {1ex}
+  {\Huge\bfseries}
+  [\vspace{0.8ex}{\color{sunclay}\rule{0.15\textwidth}{1pt}}\hspace{0.45em}{\color{linegold}\rule{0.24\textwidth}{1pt}}\hspace{0.45em}{\color{sunclay}\rule{0.15\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-18pt}{30pt}
+
+\titleformat{\section}
+  {\color{chalkgreen!98!black}\Large\bfseries}
+  {\thesection.}{0.9em}{}
+\titlespacing*{\section}{0pt}{2.6ex plus 0.8ex minus .2ex}{1.2ex plus .2ex}
+
+\newtcolorbox{truyen}[2]{
+  enhanced,breakable,
+  colback=boxbg,colframe=chalkgreen,coltitle=white,fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},arc=7pt,boxrule=1.1pt,
+  left=11pt,right=11pt,top=11pt,bottom=11pt,
+  borderline west={4pt}{0pt}{sunclay},drop shadow=black!10
+}
+
+\newtcolorbox{baihoc}{
+  enhanced,breakable,
+  colback=sunclay!10,colframe=sunclay!82!black,coltitle=black,fonttitle=\bfseries,
+  title={Bài học chốt hạ},arc=7pt,boxrule=1pt,
+  left=10pt,right=10pt,top=10pt,bottom=10pt
+}
+
+\newtcolorbox{ghinhoanh}{
+  enhanced,breakable,
+  colback=mistgreen,colframe=chalkgreen,coltitle=white,fonttitle=\bfseries,
+  title={Easy English},arc=7pt,boxrule=1pt
+}
+
+\newtcolorbox{tuhocnhanh}{
+  enhanced,breakable,
+  colback=paperwarm,colframe=dustrose,coltitle=black,fonttitle=\bfseries,
+  title={Gợi ý tự soi},arc=7pt,boxrule=1pt
+}
+
+\newtcolorbox{quotecard}[1]{
+  enhanced,breakable,
+  colback=inkdark,colframe=linegold,coltitle=white,coltext=white,
+  fonttitle=\bfseries\large,title={#1},arc=8pt,boxrule=1.2pt,
+  left=12pt,right=12pt,top=12pt,bottom=12pt,drop shadow=black!12
+}
+
+\newtcolorbox{studentbubble}{
+  enhanced,breakable,
+  colback=sunclay!10,colframe=sunclay!85!black,coltitle=inkdark,
+  title={Học sinh hỏi},fonttitle=\bfseries,arc=6pt,boxrule=0.9pt,
+  left=9pt,right=9pt,top=8pt,bottom=8pt
+}
+
+\newtcolorbox{teacherbubble}{
+  enhanced,breakable,
+  colback=mistgreen,colframe=chalkgreen!90!black,coltitle=inkdark,
+  title={Thầy đáp},fonttitle=\bfseries,arc=6pt,boxrule=0.9pt,
+  left=9pt,right=9pt,top=8pt,bottom=8pt
+}
+
+\newcommand{\chuhoa}[2]{\lettrine[lines=2,lhang=0.1,loversize=0.08]{\textcolor{inkdark}{#1}}{#2}}
+\newcommand{\hsqa}[4]{%
+  \begin{tcolorbox}[
+    enhanced,breakable,
+    colback=white,colframe=inkdark!18,boxrule=0.8pt,arc=9pt,
+    left=10pt,right=10pt,top=10pt,bottom=10pt,
+    drop shadow=black!8]
+    \begin{studentbubble}
+      #1
+    \end{studentbubble}
+    \vspace{4pt}
+    \begin{teacherbubble}
+      #2
+    \end{teacherbubble}
+    \vspace{5pt}
+    {\small\itshape\color{inkdark!82!black}Student: ``#3''\par Teacher: ``#4''}
+  \end{tcolorbox}%
+}
+\newcommand{\ngancach}{%
+  \begin{center}\textcolor{sunclay}{\rule{0.22\textwidth}{0.6pt}\hspace{6pt}$\diamond$\hspace{6pt}\rule{0.22\textwidth}{0.6pt}}\end{center}\vspace{6pt}}
+
+\begin{document}
+\frontmatter
+\include{cover-new}
+\input{chapters/loitua-book}
+\input{chapters/huong-dan}
+\tableofcontents
+\clearpage
+\include{loi-mo-dau-new}
+
+\mainmatter
+\include{chapters/book-ch01-bai-tap-va-chua-hieu}
+\include{chapters/book-ch02-diem-so-va-xin-diem}
+\include{chapters/book-ch03-bi-goi-len-bang}
+\include{chapters/book-ch04-khong-lam-bai-va-quen-bai}
+\include{chapters/book-ch05-hoc-hanh-va-luoi-bieng}
+\include{chapters/book-ch06-thi-cu-va-on-thi}
+\include{chapters/book-ch07-bi-phat-va-noi-quy}
+\include{chapters/book-ch08-tuong-lai-va-nghe-nghiep}
+\include{chapters/book-ch09-ly-su-cun-kinh-dien}
+\include{chapters/book-ch10-khien-thay-tho-dai}
+\include{chapters/book-ch11-dien-thoai-va-mang-xa-hoi}
+\include{chapters/book-ch12-ngu-gat-va-mat-tap-trung}
+\include{chapters/book-ch13-ban-be-loi-keo-va-tam-ly-dam-dong}
+\include{chapters/book-ch14-hoc-nhom-va-an-theo}
+\include{chapters/book-ch15-hua-nhieu-quyet-tam-lung-tung}
+
+\backmatter
+\input{series-catalog}
+\end{document}

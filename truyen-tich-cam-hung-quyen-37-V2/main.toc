@@ -1,0 +1,746 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {chapter}{Lời mở đầu}{i}{chapter*.1}%
+\contentsline {part}{I\hspace {1em}Nếp Học và Kỷ Luật}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}Mê Trai Mê Gái, Đánh Mất Tương Lai}{2}{chapter.1}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Hào quang ảo}{2}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Dại gái}{2}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mê muội thần tượng}{2}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đầu tư bết bát}{2}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Yêu xa ảo tưởng}{2}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ phá đám}{3}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Xe lôi tình ái}{3}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sự thật phũ phàng}{3}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hề học đường}{3}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỉnh mộng đi con}{3}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mê trai đầu lợn}{3}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ giao hàng}{3}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Định mệnh xe thồ}{4}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hào quang rác}{4}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ bị lừa}{4}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đòn ghen}{4}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lấy chồng đại gia}{4}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Khinh bỉ}{4}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mộng ngoại bang}{4}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Simp ăn mày}{5}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bán cả lương tâm}{5}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ giúp việc}{5}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ ở lại}{5}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mê muội phương xa}{5}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Phụ hồ tình ái}{5}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Khoảng cách}{5}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Yêu nhầm đối thủ}{6}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hào hoa rác}{6}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sống ảo}{6}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỉnh ngộ đi con}{6}{}
+\contentsline {chapter}{\numberline {2}Thái Độ Học Tập}{7}{chapter.2}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Hứa trước quên sau}{7}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bản tính khó dời}{7}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ảo tưởng sức mạnh}{7}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Gần thi mới nhảy}{7}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nỗ lực nửa vời}{7}{}
+\contentsline {chapter}{\numberline {3}Chuyên Cần Và Đi Muộn}{9}{chapter.3}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Sân khấu cổng trường}{9}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vở kịch bể má}{9}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Giấc mộng ban trưa}{9}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thánh lách cổng trường}{9}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kịch sĩ tài ba}{9}{}
+\contentsline {chapter}{\numberline {4}Kiểm Tra Và Thi Cử}{11}{chapter.4}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Cắn bút suy tư}{11}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Phao cứu sinh rách}{11}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Khấn nhầm địa chỉ}{11}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tình bạn tan vỡ}{11}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Gom bi hạ màn}{11}{}
+\contentsline {chapter}{\numberline {5}Viết Bài Và Văn Mẫu}{13}{chapter.5}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Họa sĩ văn chương}{13}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ý tưởng lớn gặp nhau}{13}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Giấc mộng Trạng Nguyên}{13}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tả mẹ nàng tiên}{13}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bút sa gà chết}{13}{}
+\contentsline {chapter}{\numberline {6}Học Thêm Học Nhóm}{15}{chapter.6}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Hội nghị bàn tròn}{15}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lò luyện linh hồn}{15}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tám chuyện xuyên lục địa}{15}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Động lực học đường}{15}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hao tiền tốn của}{15}{}
+\contentsline {chapter}{\numberline {7}Yêu Đương Tuổi Học Trò}{17}{chapter.7}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Bong bóng tình yêu}{17}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mộng tình quên sách}{17}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hứa hẹn hão huyền}{17}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tương tư nhầm chỗ}{17}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mộng tình say}{17}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cái kết phũ phàng}{17}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thề thốt làm chi}{18}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vị chát của tình}{18}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tiền mẹ nuôi bồ}{18}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tình tan theo điểm}{18}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tưởng mình là nhất}{18}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ phá đám}{18}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Giấc mơ tan vỡ}{18}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Học ở công viên}{19}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cái giá của yêu}{19}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sáng quá hóa tối}{19}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cổ tích thời nay}{19}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hết chữ vì yêu}{19}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nước mắt cha mẹ}{19}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lời khuyên cuối cùng}{19}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tương lai rạng ngời}{20}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cốc trà sữa đắng}{20}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lý do muôn thuở}{20}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Quà mừng thi trượt}{20}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Não bộ trống không}{20}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ba mẹ nhìn thấu}{20}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lọ Lem trượt vỏ chuối}{20}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tấm bằng ngăn cách}{21}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tình địch học giỏi}{21}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bán sách nuôi trai}{21}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tình nghèo bền lâu}{21}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Phu xe tình ái}{21}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Khoe mẽ}{21}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thề thốt}{21}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Người lạ từng yêu}{22}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hậu quả}{22}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tình không mài ra ăn}{22}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Osin tình yêu}{22}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chọn chồng}{22}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỉnh ngộ}{22}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nhớ bồ quên bài}{22}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cơm chan nước mắt}{23}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Soi gương tự nhục}{23}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hẹn khi đỗ đạt}{23}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Yêu là lẽ sống}{23}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ăn vụng tình yêu}{23}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mùa hè cuối cùng}{23}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đòn đau}{23}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Gái quê và Trai phố}{24}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỉnh mộng đi thôi}{24}{}
+\contentsline {chapter}{\numberline {8}Điện Thoại Và Mạng Xã Hội}{25}{chapter.8}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Kịch sĩ gầm bàn}{25}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chúa tể phô trương}{25}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hào quang ảo tưởng}{25}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nhan sắc "lừa tình"}{25}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Anh hùng bàn phím}{25}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tình ảo điểm thật}{26}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sống mượn}{26}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bậc thầy nói phét}{26}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thánh cày view}{26}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cái chết lâm sàng}{26}{}
+\contentsline {chapter}{\numberline {9}Bạn Bè, Tổ Trưởng, Cán Sự}{27}{chapter.9}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Bạn tốt hay "tố"}{27}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lớp trưởng oai vệ}{27}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đoàn kết dỏm}{27}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lớp phó học tập}{27}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bạn thân chí cốt}{27}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thủ quỹ đòi nợ}{27}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lớp phó lao động}{28}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bàn cuối anh hùng}{28}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tổ trưởng quyền lực}{28}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đôi bạn cùng lùi}{28}{}
+\contentsline {chapter}{\numberline {10}Giáo Viên Và Những Cú Ngã Ngựa}{29}{chapter.10}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Trò ma quỷ}{29}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Rớt nài}{29}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Gừng già vẫn cay}{29}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vở kịch đau bụng}{29}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mắt thần của cô}{29}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kịch bản lỗi thời}{29}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Gậy ông đập lưng ông}{30}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đòn đánh bất ngờ}{30}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Soi gương tự nhục}{30}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đừng đùa với thầy}{30}{}
+\contentsline {chapter}{\numberline {11}Cuối Cấp Mộng Mơ Hoảng Hốt}{31}{chapter.11}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Hoàng hôn cuối cấp}{31}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tháng cuối bù đầu}{31}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cánh thiệp đầu xuân}{31}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Định hướng nghề nghiệp}{31}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lưu bút hay lưu nợ}{31}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đổi chỗ}{31}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đủng đỉnh}{32}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Khách quen}{32}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thề thốt gió bay}{32}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hồi kết}{32}{}
+\contentsline {part}{II\hspace {1em}Bài Vở, Điểm Số và Những Cú Trượt Nhẹ}{33}{part.2}%
+\contentsline {chapter}{\numberline {12}Đồng Phục Và Nề Nếp}{34}{chapter.12}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Áo trắng dơ màu}{34}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vở kịch chỉnh trang}{34}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cầu vồng trên tóc}{34}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Công tử dép lê}{34}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hoa hậu giảng đường}{34}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Người vô danh}{35}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Phong cách giang hồ}{35}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thời trang "phá cách"}{35}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hội dị hợm}{35}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Giá trị thực}{35}{}
+\contentsline {chapter}{\numberline {13}Ngủ Gật Trong Giờ}{36}{chapter.13}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Gục ngã trên bàn}{36}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Giấc mộng tan tành}{36}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Dòng sông ký ức}{36}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lâu đài sách vở}{36}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kỹ năng ngủ đứng}{36}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vũ công ngủ gật}{37}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Dàn nhạc giao hưởng}{37}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ác mộng bảng đen}{37}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cú lừa bạn thân}{37}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lời cảnh tỉnh}{37}{}
+\contentsline {chapter}{\numberline {14}Phát Biểu Lên Bảng}{38}{chapter.14}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Run khi lên bảng}{38}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vị thần tàng hình}{38}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thánh giả vờ}{38}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tượng đá}{38}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tin bạn mất bò}{38}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bậc thầy câu giờ}{38}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ ngoại đạo}{39}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hồn bay phách lạc}{39}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đồng đội bù nhìn}{39}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Về chỗ cho rồi}{39}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Trốn trực}{39}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Giả bộ chăm}{39}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nghệ nhân lẩn trốn}{40}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cán sự gọi tên}{40}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bạn tốt}{40}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lau bảng}{40}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Anh hùng phút chót}{40}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Khi cô xuất hiện}{40}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Triết lý lớp học}{40}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chân lý cây chổi}{41}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hội trốn việc}{41}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Giả bộ bận}{41}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Khi cô chưa tới}{41}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bạn tốt tuyệt vời}{41}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chiến thần lau bảng}{41}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Anh hùng phút chót}{41}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đội trưởng khổ tâm}{42}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chân lý trực nhật}{42}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bậc thầy lẩn trốn}{42}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cây chổi định mệnh}{42}{}
+\contentsline {chapter}{\numberline {15}Bạn Cùng Bàn Đổi Chỗ}{43}{chapter.15}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Phao thi thất lạc}{43}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chiến tuyến bàn học}{43}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nhớ bạn cũ}{43}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bạn mới khó ở}{43}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bàn học chiến tranh}{43}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đồng minh bất đắc dĩ}{43}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bàn trước nguy hiểm}{44}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bàn cuối thiên đường}{44}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chia nửa lãnh thổ}{44}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tình bạn sau đổi chỗ}{44}{}
+\contentsline {chapter}{\numberline {16}Học Lệch Môn Tương Khắc}{45}{chapter.16}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Nỗi buồn điểm liệt}{45}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tự ái học đường}{45}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chiến thần mù chữ}{45}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ghét của nào trời trao của nấy}{45}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cánh chim què}{45}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cái cân gãy}{45}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Văn chương bã đậu}{46}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tiếng người hay tiếng thú}{46}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hàn lâm dỏm}{46}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đừng có lệch}{46}{}
+\contentsline {chapter}{\numberline {17}Thể Dục Quốc Phòng Thực Hành}{47}{chapter.17}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Trốn chạy mệt mỏi}{47}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đội nắng thao trường}{47}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Công tử bột}{47}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bò trườn hay bò lết}{47}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Treo mình trên giá}{47}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chạy hay lết}{47}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vụng thối vụng nát}{48}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nhảy vào hố cát}{48}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Giả bệnh}{48}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lời khuyên cuối}{48}{}
+\contentsline {chapter}{\numberline {18}Họp Phụ Huynh, Sổ Liên Lạc}{49}{chapter.18}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Ngày ký nháy}{49}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thịnh nộ giáng trần}{49}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mẹ đi họp về}{49}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lấp liếm}{49}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Gậy ông đập lưng ông}{49}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Võ thuật gia đình}{49}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nước mắt cá sấu}{50}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ đào tẩu}{50}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bút sa gà chết}{50}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lời vĩnh biệt lười}{50}{}
+\contentsline {chapter}{\numberline {19}Nội Quy Giấy Kiểm Điểm}{51}{chapter.19}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Nỗi oán thư rơi}{51}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hứa Cuội}{51}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Văn chương lừa đảo}{51}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chữ ký phù thủy}{51}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Văn mẫu kiểm điểm}{51}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Diễn viên Oscar}{52}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bộ sưu tập}{52}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thánh hứa}{52}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bản án cuối năm}{52}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỉnh ngộ đi con}{52}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Dòng lệ giả trân}{52}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hội đồng tội phạm}{52}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ký giả dỏm}{53}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nghệ thuật xào nấu}{53}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đổ tội cho đời}{53}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lì lợm}{53}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thi sĩ tội đồ}{53}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tên đỏ đầu trang}{53}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thánh hứa ẩu}{53}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hồi chuông cuối}{54}{}
+\contentsline {chapter}{\numberline {20}Căng Tin Giờ Ra Chơi}{55}{chapter.20}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Tranh ăn bấp bênh}{55}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nướng tiền vào game}{55}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sặc mì tôm}{55}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ổ bánh mì nhục}{55}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mùi bánh tráng trộn}{55}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ ăn bám}{56}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bữa ăn tội lỗi}{56}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đầu tư bốc vác}{56}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ăn no rồi ngủ}{56}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ăn ít thôi con}{56}{}
+\contentsline {part}{III\hspace {1em}Yêu Đương, Mơ Mộng và Tâm Trí Bay Xa}{57}{part.3}%
+\contentsline {chapter}{\numberline {21}Yêu Thầm Bạn Cùng Lớp}{58}{chapter.21}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Liếc nhìn trộm}{58}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tình thư dang dở}{58}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tưởng bở}{58}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Làm hộ bài}{58}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mặt dày}{58}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tiền mẹ nuôi trai}{58}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lụy tình}{59}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tấm bằng ngăn cách}{59}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chỉ điểm}{59}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỉnh mộng đi con}{59}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Osin tình ái}{59}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ thua cuộc}{59}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bức thư rác}{59}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ biến thái}{60}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỏ tình hụt}{60}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tiền mẹ nuôi trai}{60}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Người đi kẻ ở}{60}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đầu to não rỗng}{60}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Xây nhà cho crush}{60}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sự thật phũ phàng}{60}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ đơn phương}{61}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lụy tình mất gốc}{61}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đổ thừa}{61}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kéo xe tình ái}{61}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tương lai mù mịt}{61}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Người đi phố thị}{61}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Yêu là lẽ sống}{61}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đòn đau}{62}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ phá đám}{62}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lời kết mộng mơ}{62}{}
+\contentsline {chapter}{\numberline {22}Nhắn Tin Xuyên Đêm}{63}{chapter.22}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Đêm trắng}{63}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tin nhắn oan gia}{63}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nhan sắc tàn phai}{63}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Anh hùng bóng đêm}{63}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ánh sáng tử thần}{63}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ lụy tình}{64}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Gục ngã}{64}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thánh chém gió}{64}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ảo mộng tan vỡ}{64}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỉnh mộng đi con}{64}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Não thú mê trai}{64}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Xây nhà cho bồ}{64}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thằng lụy}{65}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mồm loa mép giải}{65}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mê muội phương xa}{65}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bán cả lương tâm}{65}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ ở lại}{65}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đầu to não rỗng}{65}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vả mặt}{66}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thiên tài bốc vác}{66}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hào quang rác}{66}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mộng ngoại bang}{66}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Simp rác}{66}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kéo xe}{66}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sự thật phũ phàng}{66}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đầu tư ngu}{67}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Yêu nhầm đối thủ}{67}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Học để làm gì}{67}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ phá đám}{67}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỉnh mộng đi con}{67}{}
+\contentsline {chapter}{\numberline {23}Crush Và Đợi Chờ}{68}{chapter.23}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Đứng cổng chờ mong}{68}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thất bại toàn tập}{68}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kịch sĩ đợi chờ}{68}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chó vàng đợi chủ}{68}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đầu tư bốc vác}{68}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đợi tin nhắn}{68}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Grab-Simp}{69}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Gương soi}{69}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ phá đám}{69}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỉnh mộng đi con}{69}{}
+\contentsline {chapter}{\numberline {24}Mơ Mộng Trong Giờ}{70}{chapter.24}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Viết hai dòng nhớ mười năm}{70}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mơ sai thời điểm}{70}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hồn lìa khỏi xác}{70}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mơ làm dâu hiền}{70}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thánh ảo tưởng}{70}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mơ không mất tiền}{71}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mắt nhìn mây bay}{71}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mơ trúng số}{71}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỉnh mộng}{71}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hồi kết}{71}{}
+\contentsline {chapter}{\numberline {25}Mơ Mộng Tương Lai}{72}{chapter.25}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Mộng làm sếp}{72}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tương lai mù mịt}{72}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tổng tài vỉa hè}{72}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Triệu phú nước bọt}{72}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Phi hành gia rác}{72}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mơ không tốn thuế}{72}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bạn làm quan, tôi làm công}{73}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chủ tịch... xã}{73}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ca sĩ kẹo kéo}{73}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hồi kết}{73}{}
+\contentsline {chapter}{\numberline {26}Không Chép Bài}{74}{chapter.26}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Chuyên gia mượn vở}{74}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vở trắng tinh khôi}{74}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ ngoại đạo}{74}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lười tay mỏi óc}{74}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sống nhờ tiệm in}{74}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vở sạch chữ... không}{74}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ phá hoại}{75}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Trí nhớ cá vàng}{75}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cú lừa}{75}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hồi kết}{75}{}
+\contentsline {chapter}{\numberline {27}Vở Sạch Và Chữ Đẹp}{76}{chapter.27}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Đầu non}{76}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ghi bài tung hỏa mù}{76}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chữ như gà bới}{76}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vở rách}{76}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hào quang rác}{76}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vượn múa rồng bay}{76}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bãi chiến trường}{77}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vở đi mượn}{77}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bút hết mực}{77}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỉnh ngộ đi con}{77}{}
+\contentsline {chapter}{\numberline {28}Không Tập Trung}{78}{chapter.28}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Tâm trên cành cây}{78}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hồn lìa khỏi xác}{78}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hóng chuyện vỉa hè}{78}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ngáo ngơ}{78}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hồn bay phách lạc}{78}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đầu to não rỗng}{78}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Trí nhớ ba giây}{79}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Viễn cảnh phụ hồ}{79}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Quay bút bay màu}{79}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỉnh mộng đi con}{79}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tai lọc thông minh}{79}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chuyên gia gật}{79}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vở trắng danh dự}{80}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ngủ có chiến lược}{80}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đã hiểu (trong tưởng)}{80}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hỏi gì cũng “dạ”}{80}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tập trung ngoài rìa}{80}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Não bật chế độ máy bay}{80}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thiên tài phút chót}{80}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nghe giảng kiểu… trang trí}{81}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Gió vào tai, bay khỏi ví}{81}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kỷ luật trong mơ}{81}{}
+\contentsline {chapter}{\numberline {29}Nói Nhiều Xuyên Tiết}{82}{chapter.29}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Loa phường}{82}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Máy phát thanh}{82}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nói thay giáo án}{82}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tám chuyện chuyên cần}{82}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cổ họng đa nhiệm}{82}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đề cương bị át}{82}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tiếng nói có lãi}{83}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Phá tiết có nghề}{83}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cười trước khi hiểu}{83}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chợ vỡ phiên ba}{83}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nói hộ cả bàn}{83}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đối thoại với im lặng}{83}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nhiệt tình sai chỗ}{83}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Âm lượng át điểm}{84}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kể chuyện cho bảng}{84}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chốt đơn thị phi}{84}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Xuyên tiết xuyên luôn điểm}{84}{}
+\contentsline {part}{IV\hspace {1em}Toán, Nỗi Sợ và Những Cơn Tự Ái Học Đường}{85}{part.4}%
+\contentsline {chapter}{\numberline {30}Tám Chuyện Cuối Bàn}{86}{chapter.30}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Hội nghị bàn cuối}{86}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Máy phát thanh}{86}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đài tin gầm giường}{86}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chuyên gia “biết tuốt”}{86}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cười khúc khích}{86}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nói nhỏ mà vang}{87}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chia sẻ kiến thức… tin đồn}{87}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tổ lái}{87}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bàn cuối đa kênh}{87}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chuyên cần… thông tin}{87}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Công suất lớn}{87}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bàn cuối “phân tích”}{87}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tài liệu truyền miệng}{88}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ngồi cuối để “an toàn”}{88}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tám chuyện có deadline}{88}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bảo kê sự ồn}{88}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kết sổ cuối kỳ}{88}{}
+\contentsline {chapter}{\numberline {31}Không Thích Môn Toán}{89}{chapter.31}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Nỗi sợ số học}{89}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ thù của những con số}{89}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sin Cos mù tịt}{89}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đứng hình}{89}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Triệu phú ảo}{89}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nỗi sợ số học}{89}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ thù của những con số}{90}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sin Cos mù tịt}{90}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đứng hình}{90}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Triệu phú ảo}{90}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đầu to não rỗng}{90}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nô lệ Casio}{90}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Giấy trắng mực đen}{90}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thánh tính sai}{91}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bạn và tôi}{91}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tìm X}{91}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đạo hàm hay đạo tặc}{91}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ đào tẩu}{91}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lời hứa hão}{91}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỉnh mộng}{91}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Triệu phú bốc phét}{92}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nhảy lầu hay nhảy lớp}{92}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Logic con bò}{92}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mù không gian}{92}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Xách vữa cho bạn}{92}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nô lệ Casio}{92}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vòng tròn ma quái}{92}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lý do của kẻ lười}{93}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đốt sách}{93}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đơ như khúc gỗ}{93}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tỉnh ngộ đi con}{93}{}
+\contentsline {chapter}{\numberline {32}Toán Học Vô Tội}{94}{chapter.32}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Rắc rối không gian}{94}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Dòng số lạc lối}{94}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}X không có lỗi}{94}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Y cũng vô can}{94}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Căn bậc hai}{94}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sai dấu}{95}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đồ thị biết đùa}{95}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hình học có thù}{95}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đạo hàm}{95}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tích phân}{95}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chứng minh}{95}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Phân số}{95}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bấm máy cũng sai}{96}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đề thi bật mode khó}{96}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Toán học vô tội}{96}{}
+\contentsline {chapter}{\numberline {33}Sợ Giao Viên Toán}{97}{chapter.33}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Vị thần xét xử}{97}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ tội đồ bảng đen}{97}{}
+\contentsline {chapter}{\numberline {34}Mất Gốc Tư Duy Số Học}{98}{chapter.34}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Mù chữ số}{98}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tư duy đổ gục}{98}{}
+\contentsline {chapter}{\numberline {35}Học Thêm Toán Như Phiêu Lưu}{99}{chapter.35}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Cuộc dạo chơi mỏi mệt}{99}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đầu rơi não tàn}{99}{}
+\contentsline {chapter}{\numberline {36}Thất Tình Đúng Mùa Thi}{100}{chapter.36}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Tim vỡ bài nát}{100}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đang sầu thì gặp thi}{100}{}
+\contentsline {chapter}{\numberline {37}Thả Thính Bằng Giấy Note}{101}{chapter.37}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Bức thư tay}{101}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mẩu giấy rơi}{101}{}
+\contentsline {chapter}{\numberline {38}Tưởng Mình Sẽ Nổi Mà Không}{102}{chapter.38}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Hào quang ảo giác}{102}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ bám đuôi}{102}{}
+\contentsline {chapter}{\numberline {39}Tuổi Học Trò Và Các Cú Ngô Nghê}{103}{chapter.39}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Góc ngô nghê}{103}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đùa quá trớn}{103}{}
+\contentsline {part}{V\hspace {1em}Trì Hoãn và Quên Trước Quên Sau}{104}{part.5}%
+\contentsline {chapter}{\numberline {40}Chậm Mở Vở}{105}{chapter.40}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Trì trệ đầu giờ}{105}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ chậm chân}{105}{}
+\contentsline {chapter}{\numberline {41}Hứa Học Từ Thứ Hai}{106}{chapter.41}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Điển tích hứa}{106}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chu kỳ lười}{106}{}
+\contentsline {chapter}{\numberline {42}Học Theo Mood}{107}{chapter.42}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Đợi chờ cảm hứng}{107}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tùy hứng tùy thời}{107}{}
+\contentsline {chapter}{\numberline {43}Làm Bài Phút Chót}{108}{chapter.43}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Vắt chân lên cổ}{108}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Phút bù giờ}{108}{}
+\contentsline {chapter}{\numberline {44}Xin Gia Hạn Nộp Bài}{109}{chapter.44}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Con xin khất}{109}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Văn kịch}{109}{}
+\contentsline {chapter}{\numberline {45}Quên Bút Quên Thước}{110}{chapter.45}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ đi xin xỏ}{110}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đi học như đi dạo}{110}{}
+\contentsline {chapter}{\numberline {46}Quên Mang Sách}{111}{chapter.46}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Cái đầu cá vàng}{111}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Điển tích lười}{111}{}
+\contentsline {chapter}{\numberline {47}Chờ Bạn Nhắc Mới Làm}{112}{chapter.47}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Ký sinh trùng học đường}{112}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Xúc tu đứt đoạn}{112}{}
+\contentsline {chapter}{\numberline {48}Đọc Đề Lướt}{113}{chapter.48}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Thiểu năng đọc chữ}{113}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bút sa gà chết}{113}{}
+\contentsline {chapter}{\numberline {49}Khoanh Bừa Cầu May}{114}{chapter.49}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Xác suất nghìn phần trăm}{114}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tín ngưỡng bút chì}{114}{}
+\contentsline {part}{VI\hspace {1em}Ngồi Trong Lớp Mà Tâm Đi Chỗ Khác}{115}{part.6}%
+\contentsline {chapter}{\numberline {50}Thích Ngồi Cuối Lớp}{116}{chapter.50}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Lãnh địa bàn cuối}{116}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tàng hình thất bại}{116}{}
+\contentsline {chapter}{\numberline {51}Chọn Chỗ Gần Quạt}{117}{chapter.51}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Ghế phong thủy}{117}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cơn gió tử thần}{117}{}
+\contentsline {chapter}{\numberline {52}Đổi Chỗ Để Tám}{118}{chapter.52}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Hội nghị du mục}{118}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sự kết hợp tai hại}{118}{}
+\contentsline {chapter}{\numberline {53}Né Ánh Mắt Thầy Cô}{119}{chapter.53}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Vị thần né tránh}{119}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cúi đầu nghệ thuật}{119}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nấp sau bạn giỏi}{119}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ngắm trời thay bảng}{119}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Gật đầu chuyên nghiệp}{119}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bàn cuối bình yên}{119}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Né kiểu lịch sự}{120}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mắt gặp mắt}{120}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ hụt tàng hình}{120}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kết sổ né nhìn}{120}{}
+\contentsline {chapter}{\numberline {54}Giấu Điện Thoại Dưới Bàn}{121}{chapter.54}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Ổ nhền nhện góc bàn}{121}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ánh sáng xanh phản chủ}{121}{}
+\contentsline {chapter}{\numberline {55}Giả Vờ Ghi Bài}{122}{chapter.55}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Họa sĩ bàn cuối}{122}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chép mà không nhớ}{122}{}
+\contentsline {chapter}{\numberline {56}Gật Đầu Cho Có}{123}{chapter.56}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Máy gật cơ học}{123}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sự hiểu lầm tai hại}{123}{}
+\contentsline {chapter}{\numberline {57}Hỏi Lại Dù Vừa Giảng}{124}{chapter.57}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Lỗ hổng không gian}{124}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Trí nhớ cá vàng}{124}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hỏi cho có lệ}{124}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chép thuê cho óc}{124}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ba giây tỉnh mộng}{124}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bạn bàn bên khóc thầm}{124}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Câu giờ phản đòn}{125}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hỏi hay với hỏi hớ}{125}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nụ cười thầy giáo}{125}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kết sổ hỏi lại}{125}{}
+\contentsline {chapter}{\numberline {58}Nhìn Đồng Hồ Liên Tục}{126}{chapter.58}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Dõi theo kim giây}{126}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kỷ băng hà trong lớp}{126}{}
+\contentsline {chapter}{\numberline {59}Nghe Trống Là Tỉnh}{127}{chapter.59}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Thức tỉnh chớp nhoáng}{127}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Giấc mộng tan tành}{127}{}
+\contentsline {part}{VII\hspace {1em}Đủ Chiêu Né Tiết và Kéo Dài Giờ Chơi}{128}{part.7}%
+\contentsline {chapter}{\numberline {60}Xin Đi Vệ Sinh Đúng Lúc}{129}{chapter.60}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Chiến thuật chuồn}{129}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Trú ẩn an toàn}{129}{}
+\contentsline {chapter}{\numberline {61}Mượn Đồ Học Liên Tục}{130}{chapter.61}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ hành khất lớp học}{130}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Một đi không trở lại}{130}{}
+\contentsline {chapter}{\numberline {62}Ăn Vụng Trong Giờ}{131}{chapter.62}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Bữa tiệc gầm bàn}{131}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ trộm thời gian}{131}{}
+\contentsline {chapter}{\numberline {63}Ngủ Bù Tiết Đầu}{132}{chapter.63}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Giấc ngủ chập chờn}{132}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bật dậy mơ màng}{132}{}
+\contentsline {chapter}{\numberline {64}Kéo Dài Giờ Ra Chơi}{133}{chapter.64}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Bước chân rùa bò}{133}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Trốn trong đám đông}{133}{}
+\contentsline {chapter}{\numberline {65}Đi Trễ Có Kịch Bản}{134}{chapter.65}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Đạo diễn cổng trường}{134}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vở kịch bể má}{134}{}
+\contentsline {chapter}{\numberline {66}Nộp Bài Xong Mới Lo}{135}{chapter.66}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Bàng hoàng phút cuối}{135}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Con vịt đếm thi}{135}{}
+\contentsline {chapter}{\numberline {67}Làm Khùng Làm Điên}{136}{chapter.67}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Rạp Xiếc Học Đường}{136}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thằng Hề Khóc Ròng}{136}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vui đến lố nhịp bài}{136}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Duyên hơn kế hoạch}{137}{}
+\contentsline {chapter}{\numberline {68}Cười Trước Cả Lớp}{138}{chapter.68}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ vô duyên}{138}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lố lăng phút nhỡ}{138}{}
+\contentsline {chapter}{\numberline {69}Buôn Chuyện Nhóm Chat}{139}{chapter.69}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Hội bàn tròn ảo}{139}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Dòng tin không nghỉ}{139}{}
+\contentsline {part}{VIII\hspace {1em}Áp Lực Kiểm Tra và Lời Hứa Đổi Đời}{140}{part.8}%
+\contentsline {chapter}{\numberline {70}Sợ Kiểm Tra Miệng}{141}{chapter.70}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Lời ru tử thần}{141}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ vô hồn trên bảng}{141}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bảng chữ cái oan nghiệt}{141}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Học tủ phản chủ}{141}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Xin vía đầu ngày}{141}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vệ sinh chiến lược}{141}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bạn thân quay mặt}{142}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đứng như cây cảnh}{142}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chuông cứu một đời}{142}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kết sổ miệng run}{142}{}
+\contentsline {chapter}{\numberline {71}Run Khi Lên Bảng}{143}{chapter.71}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Đôi chân khiêu vũ}{143}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vị thần im lặng}{143}{}
+\contentsline {chapter}{\numberline {72}Học Tủ Lệch Đề}{144}{chapter.72}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Canh bạc cuối cùng}{144}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sự phản bội của may mắn}{144}{}
+\contentsline {chapter}{\numberline {73}Xin Vía Bạn Giỏi}{145}{chapter.73}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Chạm vai lấy hên}{145}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}May mắn có giới hạn}{145}{}
+\contentsline {chapter}{\numberline {74}Xem Đáp Án Trước Khi Hiểu}{146}{chapter.74}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Biết rồi nhưng chưa hiểu}{146}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kết quả đi trước}{146}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Thần Thấu Google}{146}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Phép Màu Trang Cuối}{146}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chép Nhầm Dấu Phẩy}{146}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}A Ha Giả Tạo}{147}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Trộm Nhìn Bạn Kế}{147}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ảo Thuật Kết Quả}{147}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Logic Mượn Vay}{147}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mê Cung Lời Giải}{147}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bậc Thầy Chốt Đơn}{147}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cái Bẫy Đáp Án}{147}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Học Vẹt Tinh Vi}{148}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tri Thức Instant}{148}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Phù Thủy Copy}{148}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Gia Sư ChatGPT}{148}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Vọng Tưởng Thành Tài}{148}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Con Đường Tắt Đau Đớn}{148}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đôi Mắt Tinh Anh giả}{148}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẻ Cắp Kết Quả}{149}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sách Giải Là Bạn Thân}{149}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lời Thề Bỏ Giải}{149}{}
+\contentsline {chapter}{\numberline {75}Tự Kỷ Khi Rớt Tiết}{150}{chapter.75}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Góc quay điện ảnh}{150}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mưa phụ họa}{150}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tai nghe chữa lành}{150}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Status nửa đêm}{150}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nạn nhân rất nghề}{150}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bạn bè vẫn ăn quà}{150}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tắt máy cho hợp cảnh}{151}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Roi trong tưởng tượng}{151}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bi kịch có hạn}{151}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sáng mai đi học}{151}{}
+\contentsline {chapter}{\numberline {76}So Sánh Với Con Nhà Người Ta}{152}{chapter.76}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Con nhà người ta}{152}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bữa cơm xét xử}{152}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hàng xóm thành thước}{152}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Anh họ thần đồng}{152}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Câu thần chú người ta}{152}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Tủ cúp nhà bên}{153}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Soi gương cũng khổ}{153}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ăn cơm nghe điểm}{153}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}So sánh cả giấc ngủ}{153}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chốt hạ tại mình}{153}{}
+\contentsline {chapter}{\numberline {77}Che Điểm Bằng Tay}{154}{chapter.77}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Bàn tay cứu nét}{154}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Kẽ tay phản chủ}{154}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Gấp tư gấp tám}{154}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cúi đầu chiến thuật}{154}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Gió lật bài}{154}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bạn cùng bàn là camera}{155}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Nụ cười che nhục}{155}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Xin làm tròn bằng da}{155}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mồ hôi tố cáo}{155}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Cuối cùng vẫn lộ}{155}{}
+\contentsline {chapter}{\numberline {78}Xin Điểm Cuối Kỳ}{156}{chapter.78}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Chiến thần mặc cả}{156}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Quỳ bằng lời nói}{156}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sự thật 0.25}{156}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chăm chỉ mùa chốt}{156}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Gia cảnh dựng nhanh}{156}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Lời hứa năm sau}{157}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Khóc phải có số liệu}{157}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Binh đoàn xin xỏ}{157}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Đổi công lấy điểm}{157}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Chốt sổ}{157}{}
+\contentsline {chapter}{\numberline {79}Quyết Tâm Một Đêm}{158}{chapter.79}%
+\contentsline {section}{\numberline {}\hspace {1.2em}Đêm nay đổi đời}{158}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Bảng kế hoạch phát sáng}{158}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Mua sách để chụp}{158}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Học nhóm thành ăn nhóm}{158}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hai giờ sáng rất hiểu đời}{158}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Hẹn thứ hai}{159}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Học tủ gặp lệch đề}{159}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Ngủ gục trên ý chí}{159}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Sáng mai lại hoãn}{159}{}
+\contentsline {section}{\numberline {}\hspace {1.2em}Muốn bền phải nhiều đêm}{159}{}

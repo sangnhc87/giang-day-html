@@ -24,51 +24,80 @@
 \usepackage{afterpage}
 \usepackage{tikz}
 \usetikzlibrary{calc,shapes.geometric}
+\usepackage{hyperref}
 
 \geometry{a4paper,left=1.8cm,right=1.8cm,top=2cm,bottom=2cm,headheight=41pt}
 
 % Bang mau Quyển XXV: Xanh bang lop va cam dat nung
-\definecolor{chalkgreen}{RGB}{67, 109, 96}
-\definecolor{sunclay}{RGB}{201, 142, 84}
-\definecolor{inkdark}{RGB}{49, 58, 67}
-\definecolor{boxbg}{RGB}{247, 244, 239}
+\definecolor{chalkgreen}{RGB}{52, 96, 94}
+\definecolor{sunclay}{RGB}{196, 126, 78}
+\definecolor{inkdark}{RGB}{37, 48, 57}
+\definecolor{boxbg}{RGB}{248, 244, 237}
+\definecolor{paperwarm}{RGB}{250, 246, 239}
+\definecolor{mistgreen}{RGB}{225, 236, 231}
+\definecolor{dustrose}{RGB}{158, 92, 74}
+\definecolor{linegold}{RGB}{212, 177, 123}
+
+\hypersetup{colorlinks=true,linkcolor=chalkgreen,urlcolor=sunclay}
+
+% Thay ten nguoi so huu o mot cho duy nhat de ca nhan hoa PDF ban ra
+\newcommand{\bookowner}{Tên học sinh}
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE,RO]{\color{chalkgreen}\itshape\small Bí Kíp 1000 Pha Đối Đáp: Trò Nhây - Thầy Gắt}
+\fancyhead[LE,RO]{\color{sunclay!90!black}\bfseries\small Sách Cục Súc | 1000 pha đối đáp lớp học}
 \fancyhead[RE,LO]{\color{inkdark}\itshape\small \leftmark}
-\fancyfoot[C]{\color{sunclay}\textbf{-- \thepage\ --}}
+\fancyfoot[C]{\color{chalkgreen!90!black}\small\textbf{Bản của \bookowner}\hspace{0.8em}{\color{sunclay!65!black}|}\hspace{0.8em}\textbf{\thepage}}
 \renewcommand{\headrulewidth}{0.6pt}
-\renewcommand{\headrule}{\hbox to\headwidth{\color{sunclay}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{sunclay!70!black}\leaders\hrule height \headrulewidth\hfill}}
 \renewcommand{\footrulewidth}{0pt}
+
+\renewcommand{\cfttoctitlefont}{\Huge\bfseries\color{inkdark}}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftchapfont}{\bfseries\color{inkdark}}
+\renewcommand{\cftchappagefont}{\bfseries\color{inkdark}}
+\renewcommand{\cftsecfont}{\color{chalkgreen!85!black}}
+\renewcommand{\cftsecpagefont}{\color{chalkgreen!85!black}}
+\setlength{\cftbeforechapskip}{5pt}
+\setlength{\cftbeforesecskip}{1pt}
 
 \titleformat{\chapter}[display]
   {\normalfont\bfseries\color{inkdark}\centering}
-  {\large\itshape Chương \thechapter}
+  {{\color{sunclay!95!black}\Large\itshape Chương \thechapter}\\[-0.15ex]
+   {\color{chalkgreen!80!black}\small HS hỏi - Thầy đáp - Tỉnh ra rồi học tiếp}}
   {1ex}
-  {\Huge\scshape}[\vspace{1ex}{\color{sunclay}\rule{0.5\textwidth}{1pt}}]
-\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+  {\Huge\bfseries}[\vspace{0.9ex}{\color{sunclay}\rule{0.16\textwidth}{1pt}}\hspace{0.45em}{\color{linegold}\rule{0.22\textwidth}{1pt}}\hspace{0.45em}{\color{sunclay}\rule{0.16\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-18pt}{34pt}
 
 \titleformat{\section}
-  {\color{chalkgreen}\Large\bfseries}
+  {\color{chalkgreen!95!black}\Large\bfseries}
   {\thesection.}{1em}{}
-\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+\titlespacing*{\section}{0pt}{2.8ex plus 1ex minus .2ex}{1.6ex plus .2ex}
 
 \newtcolorbox{truyen}[2]{
   colback=boxbg,colframe=chalkgreen,coltitle=white,fonttitle=\bfseries\large,
-  title={#1 \hfill \small\itshape #2},arc=5pt,boxrule=1.2pt,breakable,enhanced,drop shadow=black!15
+  title={#1 \hfill \small\itshape #2},arc=6pt,boxrule=1.2pt,breakable,enhanced,
+  left=10pt,right=10pt,top=10pt,bottom=10pt,
+  borderline west={4pt}{0pt}{sunclay},drop shadow=black!10
 }
 \newtcolorbox{baihoc}{
-  colback=inkdark!8,colframe=inkdark,coltitle=white,fonttitle=\bfseries,
-  title={$\bigstar$ Bài học cuối giờ},arc=4pt,boxrule=1pt,breakable,enhanced
+  colback=sunclay!10,colframe=sunclay!80!black,coltitle=black,fonttitle=\bfseries,
+  title={Bài học chốt hạ},arc=6pt,boxrule=1pt,breakable,enhanced,
+  left=10pt,right=10pt,top=10pt,bottom=10pt
 }
 \newtcolorbox{ghinhoanh}{
-  colback=chalkgreen!6,colframe=chalkgreen,coltitle=white,fonttitle=\bfseries,
-  title={Easy English},arc=4pt,boxrule=1pt,breakable,enhanced
+  colback=mistgreen,colframe=chalkgreen,coltitle=white,fonttitle=\bfseries,
+  title={Easy English},arc=6pt,boxrule=1pt,breakable,enhanced
 }
 \newtcolorbox{tuhocnhanh}{
-  colback=sunclay!12,colframe=sunclay!70!black,coltitle=black,fonttitle=\bfseries,
-  title={Gợi Ý Tự Nghĩ},arc=4pt,boxrule=1pt,breakable,enhanced
+  colback=paperwarm,colframe=dustrose,coltitle=black,fonttitle=\bfseries,
+  title={Gợi Ý Tự Nghĩ},arc=6pt,boxrule=1pt,breakable,enhanced
+}
+\newtcolorbox{quotecard}[1]{
+  colback=inkdark,colframe=linegold,coltitle=white,coltext=white,
+  fonttitle=\bfseries\large,title={#1},arc=7pt,boxrule=1.2pt,
+  breakable,enhanced,left=12pt,right=12pt,top=12pt,bottom=12pt,
+  drop shadow=black!12
 }
 \newcommand{\chuhoa}[2]{\lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{inkdark}{#1}}{#2}}
 \newcommand{\hsqa}[4]{%
@@ -79,7 +108,8 @@
   \begin{center}\textcolor{sunclay}{\rule{0.3\textwidth}{0.5pt}\hspace{6pt}$\diamond$\hspace{6pt}\rule{0.3\textwidth}{0.5pt}}\end{center}\vspace{6pt}}
 
 \begin{document}
-\include{cover-book}
+\frontmatter
+\include{cover-new}
 
 %------------------------------------------------------------
 % LOI TUA
@@ -90,7 +120,6 @@
 % HUONG DAN SU DUNG
 %------------------------------------------------------------
 \input{chapters/huong-dan}
-\frontmatter
 \tableofcontents
 \clearpage
 \include{loi-mo-dau-book}
@@ -106,6 +135,11 @@
 \include{chapters/book-ch08-tuong-lai-va-nghe-nghiep}
 \include{chapters/book-ch09-ly-su-cun-kinh-dien}
 \include{chapters/book-ch10-khien-thay-tho-dai}
+\include{chapters/book-ch11-dien-thoai-va-mang-xa-hoi}
+\include{chapters/book-ch12-ngu-gat-va-mat-tap-trung}
+\include{chapters/book-ch13-ban-be-loi-keo-va-tam-ly-dam-dong}
+\include{chapters/book-ch14-hoc-nhom-va-an-theo}
+\include{chapters/book-ch15-hua-nhieu-quyet-tam-lung-tung}
 
 \backmatter
 \input{series-catalog}

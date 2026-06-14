@@ -1,0 +1,182 @@
+\documentclass[14pt,a4paper,twoside]{extbook}
+
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{\normalfont}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+
+\geometry{
+  a4paper,
+  left=1.8cm,
+  right=1.8cm,
+  top=2cm,
+  bottom=2cm,
+  headheight=41pt
+}
+
+\definecolor{truyenblue}{RGB}{40, 67, 91}
+\definecolor{truyenred}{RGB}{124, 68, 48}
+\definecolor{truyengold}{RGB}{184, 142, 79}
+\definecolor{boxbg}{RGB}{249, 246, 241}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{truyenblue}\itshape\small Sống Chắt Chiu Để Ngày Mai Bình Yên}
+\fancyhead[RE,LO]{\color{truyenred}\itshape\small \leftmark}
+\fancyfoot[C]{\color{truyengold}\textbf{-- \thepage\ --}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{truyengold}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{truyenred}\centering}
+  {\large\itshape Chương \thechapter}
+  {1ex}
+  {\Huge\scshape}[\vspace{1ex}{\color{truyengold}\rule{0.5\textwidth}{1pt}}]
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\color{truyenblue}\Large\bfseries}
+  {\thesection.}
+  {1em}
+  {}
+\titlespacing*{\section}{0pt}{3ex plus 1ex minus .2ex}{2ex plus .2ex}
+
+\newtcolorbox{truyen}[2]{
+  colback=boxbg,
+  colframe=truyenblue,
+  coltitle=white,
+  fonttitle=\bfseries\large,
+  title={#1 \hfill \small\itshape #2},
+  arc=5pt,
+  boxrule=1.2pt,
+  breakable,
+  enhanced,
+  drop shadow=black!15
+}
+
+\newtcolorbox{baihoc}{
+  colback=truyenred!8,
+  colframe=truyenred,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={$\bigstar$ Bài Học Rút Ra},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{ghinhoanh}{
+  colback=truyenblue!6,
+  colframe=truyenblue,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Easy English},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{tuhocnhanh}{
+  colback=truyengold!10,
+  colframe=truyengold!70!black,
+  coltitle=black,
+  fonttitle=\bfseries,
+  title={Tự Học Nhanh},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{turanminh}{
+  colback=truyenred!5,
+  colframe=truyenred!85!black,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Tự Răn Mình},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newtcolorbox{dayhoc}{
+  colback=truyenblue!5,
+  colframe=truyenblue!85!black,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={Gợi Ý Răn Dạy Học Sinh},
+  arc=4pt,
+  boxrule=1pt,
+  breakable,
+  enhanced
+}
+
+\newcommand{\chuhoa}[2]{%
+  \lettrine[lines=2,lhang=0.1,loversize=0.1]{\textcolor{truyenred}{#1}}{#2}%
+}
+
+\newcommand{\ngancach}{%
+  \begin{center}
+    \textcolor{truyengold}{\rule{0.3\textwidth}{0.5pt}%
+    \hspace{6pt}$\diamond$\hspace{6pt}%
+    \rule{0.3\textwidth}{0.5pt}}
+  \end{center}
+  \vspace{6pt}
+}
+
+\begin{document}
+
+\include{cover}
+\input{chapters/loitua}
+\input{chapters/huong-dan}
+
+\frontmatter
+\tableofcontents
+\clearpage
+\include{loi-mo-dau}
+
+\mainmatter
+\include{chapters/ch01-dong-tien-co-mo-hoi}
+\include{chapters/ch02-cai-bay-cua-mon-nho}
+\include{chapters/ch03-si-dien-la-mon-hang-dat}
+\include{chapters/ch04-biet-nhin-minh-dung-luc}
+\include{chapters/ch05-quy-du-phong-la-binh-yen}
+\include{chapters/ch06-thu-nhap-tang-ky-luat-phai-tang}
+\include{chapters/ch07-day-con-bang-nep-song}
+\include{chapters/ch08-dung-vay-de-nuoi-thoi-quen}
+\include{chapters/ch09-biet-du-la-giau-ben-trong}
+\include{chapters/ch10-giu-ngay-mai-tu-hom-nay}
+
+\backmatter
+\include{phu-luc-loi-tu-ran}
+\include{phu-luc-dien-tich}
+\include{phu-luc-thuc-hanh}
+\include{phu-luc-30-ngay}
+\include{phu-luc-gia-dinh}
+\include{phu-luc-50-cau-nhac}
+\include{phu-luc-loi-gui-hoc-sinh}
+\include{loi-ket}
+
+\end{document}

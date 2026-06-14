@@ -1,0 +1,71 @@
+\begin{titlepage}
+\thispagestyle{empty}
+\pagecolor{truyenred!5}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[white, opacity=0.65, rounded corners=20pt]
+    ($(current page.north west)+(1.5cm,-1.5cm)$) rectangle
+    ($(current page.south east)+(-1.5cm,1.5cm)$);
+
+  \draw[truyengold!80!black, line width=3pt, rounded corners=15pt]
+    ($(current page.north west)+(1.8cm,-1.8cm)$) rectangle
+    ($(current page.south east)+(-1.8cm,1.8cm)$);
+
+  \draw[truyengold, line width=1pt, rounded corners=12pt]
+    ($(current page.north west)+(2cm,-2cm)$) rectangle
+    ($(current page.south east)+(-2cm,2cm)$);
+
+  \node[anchor=center] at ($(current page.center)-(0, 2cm)$) {
+    \begin{tikzpicture}
+      \draw[truyenblue!20, line width=0.5pt] (0,0) circle (5cm);
+      \draw[truyengold!40, line width=1pt] (0,0) circle (4.8cm);
+    \end{tikzpicture}
+  };
+\end{tikzpicture}
+
+\vspace*{2.2cm}
+
+\begin{center}
+  {\color{truyengold!90!black}\large$\star\;\star\;\star$}\\[0.4cm]
+  {\fontsize{14}{16}\selectfont\color{truyenblue!80!black}\scshape \textbf{Truyện Kể Song Ngữ Tự Răn}}\\[1.4cm]
+
+  \begin{tcolorbox}[
+    width=8cm,
+    colback=truyengold!20,
+    colframe=truyengold!80!black,
+    arc=4pt,
+    boxrule=1.5pt,
+    halign=center
+  ]
+    {\fontsize{18}{22}\selectfont\bfseries\color{truyenred!80!black}
+     10 CHƯƠNG}
+  \end{tcolorbox}
+  \vspace{0.8cm}
+
+  {\fontsize{30}{36}\selectfont\bfseries\color{truyenred!85!black}
+    Sống Chắt Chiu}\\[0.3cm]
+  {\fontsize{30}{36}\selectfont\bfseries\color{truyengold!85!black}
+    Để Ngày Mai Bình Yên}\\[0.6cm]
+
+  {\fontsize{16}{20}\selectfont\color{truyenblue!85!black}\itshape
+    Bản hồi ký song ngữ của một người thầy đi lên từ tuổi thơ cơ cực,\
+    để tự răn mình, răn dạy học sinh và giữ lấy bình yên cho gia đình}\\[1cm]
+
+  {\color{truyenblue!60}\rule{7cm}{1pt}}\\[5pt]
+  {\color{truyengold!80!black}\large$\diamond$\hspace{1cm}$\diamond$\hspace{1cm}$\diamond$}\\[5pt]
+  {\color{truyenblue!60}\rule{7cm}{1pt}}\\[1.4cm]
+
+  {\normalsize\itshape\color{truyenblue!90!black}
+   ``Tiết kiệm không phải để sống hẹp.\\
+   Tiết kiệm là để sống vững.''}
+
+  \vfill
+
+  {\fontsize{15}{19}\selectfont\bfseries\color{truyenblue!90!black}
+    Biên soạn theo ký ức và trải nghiệm của một người thầy}\\[0.4cm]
+
+  {\small\color{gray} Bản LaTeX song ngữ --- Năm 2026}\\[0.5cm]
+\end{center}
+
+\afterpage{\nopagecolor}
+\end{titlepage}

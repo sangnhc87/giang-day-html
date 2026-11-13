@@ -1,0 +1,72 @@
+#import "../template.typ": *
+
+#chapter-open(5, "Điện thoại, game và màn hình trong lớp", 5, "Cấm thì các em giấu. Hiểu thì các em tự cất.", "Điện thoại là cuộc đấu mà thầy cô không thể thắng bằng cách cấm tuyệt đối, vì nó nằm trong túi của chính các em và trong đời sống của chính chúng ta. Chương này gợi những chiêu giữ điện thoại ở đúng chỗ trong giờ học mà vẫn giữ quan hệ, kèm ranh giới rõ cho những chuyện nặng hơn như quay chụp lén.", ("Em lén dùng điện thoại dưới bàn", "Cả nhóm cuối lớp chơi game", "Em chụp hay quay lén thầy và bạn", "Em cứ mười phút lại sờ điện thoại", "Em dùng điện thoại tra đáp án trong giờ kiểm tra",))
+
+#sec("Em lén dùng điện thoại dưới bàn")
+#tinhhuong("5.1", "Em lén dùng điện thoại dưới bàn", "Bạn Quân cúi đầu xuống ngăn bàn gần như cả tiết, ngón tay lướt liên tục. Thầy nhắc hai lần, em cất đi rồi vài phút sau lại lấy ra. Các bạn xung quanh đã thấy hết.")
+#chieu("Điện thoại đi nghỉ", "Thầy mang theo một chiếc hộp lót khăn gọi là khách sạn điện thoại. Thầy nói: điện thoại của em có vẻ mệt rồi, cho nó nghỉ trong khách sạn đến hết tiết nhé. Em tự đặt máy vào hộp, thầy phát cho em một cái thẻ phòng. Cuối tiết em đổi thẻ lấy máy. Lần thứ ba trong một tuần thì khách sạn giữ máy đến cuối ngày và em tự nhắn mẹ rằng mình cần lên lấy máy.")
+#scene("Thầy nói thế nào · gợi ý")[
+  #thay("Quân, điện thoại của em có vẻ cần nghỉ ngơi. Em cho nó vào khách sạn của thầy đến hết tiết nhé, thầy cho em thẻ phòng. Cuối tiết em đổi lại.")
+  #tro("Dạ... em cho vào ạ.")
+  #thay("Cảm ơn em. Nó nghỉ ngơi xong sẽ khỏe lại.")
+]
+#visao("Em tự đặt điện thoại vào hộp nên không có cảm giác bị tịch thu. Chút hài hước làm giảm căng thẳng, và cái thẻ phòng cho em thấy việc đó là có quy trình rõ ràng, công bằng. Lần thứ ba em tự nhắn mẹ để tự chịu trách nhiệm.")
+#ranhgioi("Không tự ý xem nội dung điện thoại. Không giữ qua đêm. Không để máy rơi hay hỏng khi giữ, nên đặt trong hộp có lót.")
+#bientau("Cho cả lớp một ngày khách sạn đầu tuần, ai muốn gửi máy tự nguyện thì nhận một dấu mộc.")
+#caunoi("Điện thoại của em cần nghỉ một chút. Mình gửi vào khách sạn của thầy nhé.")
+
+#sec("Cả nhóm cuối lớp chơi game")
+#tinhhuong("5.2", "Cả nhóm cuối lớp chơi game", "Cuối lớp có bốn em ngồi sát nhau, vừa che vừa nghiêng đầu, rõ ràng đang chơi game cùng nhau. Chúng ném mắt về phía bảng rồi lại cúi xuống. Thầy không muốn gọi tên cả nhóm trước lớp.")
+#chieu("Thi game bằng lời", "Giờ ra chơi, thầy mời cả nhóm ghé. Thầy nói: thầy không biết chơi, các em dạy thầy nhé. Mỗi em dạy thầy một kỹ năng trong game trong hai phút. Sau đó thầy nhờ cả nhóm chuẩn bị bài thuyết trình hai phút cho lớp vào cuối tuần về một điều có thể học được từ game: phối hợp nhóm, chiến lược, quản lý tài nguyên. Các em bị cuốn vào việc chuẩn bị nên trong giờ học không còn chơi.")
+#scene("Thầy nói thế nào · gợi ý")[
+  #thay("Các em chơi game cùng nhau thật hay. Thầy muốn học. Ra chơi các em dạy thầy hai phút nhé, rồi cuối tuần các em thuyết trình cho lớp một điều game dạy các em.")
+  #tro("Thầy cho tụi em thuyết trình về game thật hả thầy?")
+  #thay("Thật. Nhưng phải có điều học được và nói trong hai phút. Thầy chờ.")
+]
+#visao("Cấm game thì các em chơi lén. Biến game thành đề tài học giúp các em thấy sự quan tâm của mình có giá trị và đồng thời tự thấy mình cần quản lý việc chơi trong giờ học. Thầy còn được bước vào thế giới của các em.")
+#ranhgioi("Không chọn game bạo lực nặng làm đề tài. Không để phần thuyết trình trở thành quảng cáo game. Chỉ làm một lần mỗi nhóm, không biến thành thưởng cho việc chơi.")
+#bientau("Cho cả nhóm đóng vai huấn luyện viên dạy một bạn khác chơi game trong năm phút ra chơi.")
+#caunoi("Thầy muốn học game từ các em. Ra chơi các em dạy thầy hai phút nhé.")
+
+#sec("Em chụp hay quay lén thầy và bạn")
+#tinhhuong("5.3", "Em chụp hay quay lén thầy và bạn", "Thầy phát hiện Tuấn giơ điện thoại quay clip thầy đang giảng, hoặc chụp lén một bạn đang ngủ gật. Em cười, nói chỉ đùa thôi. Nhưng clip có thể bị đăng lên mạng.")
+#chieu("Xóa cùng nhau", "Thầy yêu cầu em đưa máy, và cùng em xóa clip ngay trước mặt, kiểm tra cả thùng rác. Thầy nói thẳng không đùa: thầy hiểu em chỉ nghĩ là vui, nhưng clip bị quay lén có thể làm người trong đó tổn thương và khó rút lại khi đã đăng. Em viết một trang ngắn về người bị quay có thể cảm thấy thế nào. Nếu clip là của bạn thì em trực tiếp xin lỗi bạn đó, không ép bạn tha thứ.")
+#scene("Thầy nói thế nào · gợi ý")[
+  #thay("Tuấn, thầy hiểu em chỉ đùa. Nhưng clip đó có thể làm người trong đó tổn thương và rất khó rút lại. Mình xóa cùng nhau ngay bây giờ, em đưa thầy xem thùng rác nhé.")
+  #tro("Dạ... em xin lỗi thầy.")
+  #thay("Em viết cho thầy một trang ngắn về cảm giác của người bị quay, và nếu là bạn nào đó thì em nói với bạn ấy riêng nhé.")
+]
+#visao("Quay lén là chuyện nghiêm trọng hơn nhiều so với tưởng tượng của em. Xóa ngay giúp loại bỏ nguy cơ, trang viết giúp em đặt mình vào vị trí người kia. Thầy giữ giọng nghiêm nhưng không làm em mất mặt, nên em nghe được.")
+#ranhgioi("Nếu clip đã đăng tải hay đã lan truyền, phải báo ngay nhà trường và gia đình, không tự xử lý một mình. Không công khai tên em. Không ép bạn bị quay phải tha thứ.")
+#bientau("Mời em và cả lớp cùng làm một tờ nội quy ngắn về quay chụp trong lớp do chính các em soạn.")
+#caunoi("Mình xóa cùng nhau bây giờ. Rồi em viết thầy một trang về cảm giác của người trong clip nhé.")
+
+#sec("Em cứ mười phút lại sờ điện thoại")
+#tinhhuong("5.4", "Em cứ mười phút lại sờ điện thoại", "Bạn Vy không chơi game, không nhắn tin nhiều, nhưng mỗi mười phút lại cầm điện thoại lên xem một cái rồi cất. Em nói không hiểu sao mình làm thế. Cả buổi học bị đứt quãng.")
+#chieu("Bảng đếm lần chạm", "Thầy phát cho Vy một thẻ nhỏ có các ô vuông. Mỗi lần em chạm điện thoại trong tiết, em tự đánh một dấu vào ô, không ai kiểm tra. Cuối ngày em đếm và ghi số. Ba ngày sau thầy hỏi: số nào thấy nhiều nhất, và em nghĩ điều gì kéo tay em đi. Thầy cùng em thử đặt mục tiêu giảm dần, ví dụ bớt hai lần mỗi ngày.")
+#scene("Thầy nói thế nào · gợi ý")[
+  #thay("Vy, thầy không bắt em bỏ điện thoại. Em thử đánh dấu mỗi lần chạm vào thẻ này trong ba ngày nhé, không cần ai kiểm tra. Rồi mình xem con số nói gì.")
+  #tro("Dạ... em đếm được không thầy?")
+  #thay("Được. Em đếm thật, thầy chỉ muốn biết em có thấy số đó là nhiều hay ít.")
+]
+#visao("Thói quen cầm máy là phản xạ chứ không phải ý định. Đếm biến phản xạ thành ý thức, nên chỉ riêng việc đếm đã giảm số lần. Em tự đặt mục tiêu nên không thấy bị ép.")
+#ranhgioi("Không đòi xem thẻ đếm nếu em không muốn. Không cho là em nghiện điện thoại. Nếu số lần quá cao và ảnh hưởng đến học tập lẫn cảm xúc, trao đổi với gia đình về việc nhờ chuyên gia tư vấn.")
+#bientau("Cùng làm với em một tuần, thầy cũng đếm lần chạm điện thoại của mình và chia sẻ.")
+#caunoi("Em thử đếm số lần chạm điện thoại trong ba ngày, rồi mình cùng nhìn con số nhé.")
+
+#sec("Em dùng điện thoại tra đáp án trong giờ kiểm tra")
+#tinhhuong("5.5", "Em dùng điện thoại tra đáp án trong giờ kiểm tra", "Giữa bài kiểm tra mười lăm phút, thầy thấy Lâm lén lấy điện thoại ra dưới bàn. Em cúi đầu rất thấp. Khi thầy đến gần, em cất đi, mặt đỏ bừng.")
+#chieu("Hai bài, một lời nói thật", "Thầy không công khai gì. Cuối tiết, thầy giữ riêng em lại. Thầy nói: bài của em thầy giữ. Ngày mai em làm lại một bài khác tương đương trong mười phút trước mặt thầy, điểm lần này thầy ghi nhận cả hai bài. Thầy hỏi em một câu: điều gì khiến em muốn tra đáp án, sợ điểm thấp hay chưa ôn kịp? Em nói thật thì thầy cùng em lập kế hoạch ôn.")
+#scene("Thầy nói thế nào · gợi ý")[
+  #thay("Lâm, thầy thấy em đã tra điện thoại. Thầy không nói với cả lớp. Mai em làm lại một bài tương đương trước mặt thầy. Còn bây giờ thầy muốn hỏi: em sợ điểm thấp hay chưa ôn kịp?")
+  #tro("Dạ... em sợ ba mẹ la, thầy.")
+  #thay("Cảm ơn em đã nói thật. Mình cùng tìm cách ôn cho đỡ áp lực nhé.")
+]
+#visao("Gian lận trong kiểm tra thường là nỗi sợ hơn là sự cố tình. Cho em làm lại có thầy và hỏi nguyên nhân thật giúp em thấy thầy giúp chứ không phạt. Giữ kín giúp em còn danh dự và muốn sửa.")
+#ranhgioi("Không tuyên bố công khai. Nếu quy chế trường yêu cầu xử lý chính thức thì làm đúng quy chế nhưng vẫn nói chuyện riêng với em. Không dùng điểm làm vũ khí.")
+#bientau("Cho em một cơ hội tự chấm lại bài làm cũ và ghi nhận những chỗ mình thiếu.")
+#caunoi("Thầy giữ bài của em và không nói với ai. Mai em làm lại, thầy muốn biết em có điều gì lo lắng.")
+
+#v(1.6em, weak: true)
+#heading(level: 2, numbering: none, outlined: false)[Cuối chương 5: mang theo bên mình]
+#listbox1("THẦY CÔ GHI NHỚ", rgb("1E293B"), softbg, ("Người cầm điện thoại mỗi mười phút thường không cố ý. Đo được thì giảm được, bắt đầu từ việc để em tự đếm.", "Chuyện quay chụp lén là ranh giới thật. Hãy nghiêm với hành vi nhưng nhẹ với người, và luôn báo gia đình nếu đã lan truyền.", "Học cách đặt điện thoại vào đúng chỗ là một kỹ năng sống. Thầy cô dạy bằng gương của mình, cất điện thoại khi giảng cũng là một bài học.",))

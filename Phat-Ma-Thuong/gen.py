@@ -8,7 +8,13 @@ ROOT = pathlib.Path(__file__).resolve().parent
 SRC, OUT = ROOT / "noidung", ROOT / "chapters"
 OUT.mkdir(exist_ok=True)
 for f in OUT.glob("*.typ"): f.unlink()
-PARTS = [("I", "Lớp học ồn ào", "Chương mẫu để thầy duyệt giọng và khuôn", "Những chuyện nhỏ xảy ra mỗi tiết: nói chuyện riêng, ồn, chọc bạn, đứng lên đi lại. Mỗi chuyện kèm một chiêu phạt vui, nhẹ, riêng tư mà vẫn có sức răn.", ["01"])]
+PARTS = [
+ ("I", "Lớp học ồn ào", "Khi cả lớp cần lấy lại nhịp", "Nói chuyện riêng, ồn tập thể, cười không dừng được. Những chiêu giữ nhịp lớp mà không phải la.", ["01", "02"]),
+ ("II", "Nề nếp hằng ngày", "Trễ, quên, ngủ gật, điện thoại", "Những lỗi nhỏ lặp lại mỗi tuần. Mỗi chiêu đều tặng em một công cụ để nhớ, để tỉnh, để tự giữ mình.", ["03", "04", "05"]),
+ ("III", "Lời nói và các mối quan hệ", "Nói tục, cãi thầy, làm nhóm", "Nơi em học cách dùng lời nói, cách bất đồng, cách sống cùng nhau.", ["06", "07", "08"]),
+ ("IV", "Trung thực và trách nhiệm", "Gian lận, trốn học, phá đồ, nội quy", "Những lỗi chạm đến nguyên tắc. Giữ rõ ranh giới nhưng vẫn mở cửa để em sửa.", ["09", "10", "11", "12"]),
+ ("V", "Khi em đang có chuyện, và kho chiêu", "Chiêu không phạt, chiêu đổi mỗi tuần", "Đôi khi câu trả lời hay nhất là không phạt. Cuối cùng là phương pháp để chiêu không bao giờ cạn.", ["13", "14"]),
+]
 q = lambda s: '"' + s.strip().replace("\\", "\\\\").replace('"', '\\"') + '"'
 def lst(xs): return "(" + ", ".join(q(x) for x in xs) + ",)"
 def parse(path):

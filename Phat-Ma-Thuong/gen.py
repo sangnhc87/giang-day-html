@@ -15,6 +15,11 @@ PARTS = [
  ("IV", "Trung thực và trách nhiệm", "Gian lận, trốn học, phá đồ, nội quy", "Những lỗi chạm đến nguyên tắc. Giữ rõ ranh giới nhưng vẫn mở cửa để em sửa.", ["09", "10", "11", "12"]),
  ("V", "Khi em đang có chuyện, và kho chiêu", "Chiêu không phạt, chiêu đổi mỗi tuần", "Đôi khi câu trả lời hay nhất là không phạt. Cuối cùng là phương pháp để chiêu không bao giờ cạn.", ["13", "14"]),
 ]
+PARTS_EN = ["A noisy classroom: when the whole class needs its rhythm back",
+ "Daily routines: lateness, forgetting, dozing, phones",
+ "Words and relationships: swearing, talking back, group work",
+ "Honesty and responsibility: cheating, truancy, vandalism, rules",
+ "When a student is in trouble, and the toolbox: no-punishment moves, rotating moves"]
 q = lambda s: '"' + s.strip().replace("\\", "\\\\").replace('"', '\\"') + '"'
 def lst(xs): return "(" + ", ".join(q(x) for x in xs) + ",)"
 def parse(path):
@@ -42,36 +47,52 @@ def parse(path):
         except Exception as e: sys.exit(f"LỖI {path.name}:{ln}: {e}\n  {l[:90]}")
     return ch
 chapters = {f.stem: parse(f) for f in sorted(SRC.glob("[0-9]*.txt"))}
+EN = ROOT / "noidung-en"
+def struct(c): return ([[t[0] for t in s["turns"]] for s in c["secs"]], len(c["gn"]))
+en_ch = {}
+for f in sorted(EN.glob("[0-9]*.txt")):
+    e = parse(f)
+    if f.stem not in chapters: sys.exit(f"EN {f.name}: không có bản Việt")
+    if struct(chapters[f.stem]) != struct(e): sys.exit(f"EN {f.name}: cấu trúc không khớp bản Việt")
+    for n, (a, b) in enumerate(zip(chapters[f.stem]["secs"], e["secs"]), 1):
+        for k in ("loi","vs","rg","cn","bt"):
+            if bool(a[k]) != bool(b[k]): sys.exit(f"EN {f.name} @{n}: lệch {k}")
+    en_ch[f.stem] = e
+qe = lambda v: "" if v is None else f", en: {q(v)}"
 names, idx, total, warn = [], 0, 0, []
 for pn, (rm, pt, ps, pd, codes) in enumerate(PARTS):
     codes = [c for c in codes if c in chapters]
     if not codes: continue
     titles = [f'({idx + i + 1}, {q(chapters[c]["title"])})' for i, c in enumerate(codes)]
-    (OUT / f"part{pn+1}.typ").write_text('#import "../template.typ": *\n\n' + f'#part-open({q(rm)}, {q(pt)}, {q(ps)}, {q(pd)}, ({", ".join(titles)},), idx: {pn+1})\n')
+    (OUT / f"part{pn+1}.typ").write_text('#import "../template.typ": *\n\n' + f'#part-open({q(rm)}, {q(pt)}, {q(ps + "  ·  " + PARTS_EN[pn])}, {q(pd)}, ({", ".join(titles)},), idx: {pn+1})\n')
     names.append(f"part{pn+1}.typ")
     for code in codes:
         idx += 1; ch = chapters[code]
-        o = ['#import "../template.typ": *', "", f'#chapter-open({idx}, {q(ch["title"])}, {idx}, {q(ch["epi"])}, {q(ch["lead"])}, {lst([s["t"] for s in ch["secs"]])})']
+        en = en_ch.get(code)
+        enarg = f', en: ({q(en["title"])}, {q(en["epi"])}, {q(en["lead"])}, {lst([s["t"] for s in en["secs"]])})' if en else ""
+        o = ['#import "../template.typ": *', "", f'#chapter-open({idx}, {q(ch["title"])}, {idx}, {q(ch["epi"])}, {q(ch["lead"])}, {lst([s["t"] for s in ch["secs"]])}{enarg})']
         for n, s in enumerate(ch["secs"], 1):
             total += 1
             for key in ("loi", "vs", "rg", "cn"):
                 if not s[key]: warn.append(f"{code} @{n} thiếu {key.upper()}")
             if not s["chieu"]: warn.append(f"{code} @{n} thiếu CHIEU"); continue
-            o.append(f'\n#sec({q(s["t"])})')
-            o.append(f'#tinhhuong("{idx}.{n}", {q(s["t"])}, {q(s["loi"])})')
-            o.append(f'#chieu({q(s["chieu"][0])}, {q(s["chieu"][1])})')
+            es = en["secs"][n - 1] if en else None
+            gg = (lambda k: es[k]) if es else (lambda k: None)
+            o.append(f'\n#sec({q(s["t"])}{qe(es["t"] if es else None)})')
+            o.append(f'#tinhhuong("{idx}.{n}", {q(s["t"])}, {q(s["loi"])}{qe(gg("loi"))})')
+            o.append(f'#chieu({q(s["chieu"][0])}, {q(s["chieu"][1])}' + (f', en: ({q(es["chieu"][0])}, {q(es["chieu"][1])})' if es else "") + ')')
             if s["turns"]:
                 o.append('#scene("Thầy nói thế nào · gợi ý")[')
-                for k, v in s["turns"]: o.append(f'  #{k}({q(v)})')
+                for ti, (k, v) in enumerate(s["turns"]): o.append(f'  #{k}({q(v)}{qe(es["turns"][ti][1] if es else None)})')
                 o.append(']')
-            o.append(f'#visao({q(s["vs"])})')
-            o.append(f'#ranhgioi({q(s["rg"])})')
-            if s["bt"]: o.append(f'#bientau({q(s["bt"])})')
-            o.append(f'#caunoi({q(s["cn"])})')
+            o.append(f'#visao({q(s["vs"])}{qe(gg("vs"))})')
+            o.append(f'#ranhgioi({q(s["rg"])}{qe(gg("rg"))})')
+            if s["bt"]: o.append(f'#bientau({q(s["bt"])}{qe(gg("bt"))})')
+            o.append(f'#caunoi({q(s["cn"])}{qe(gg("cn"))})')
         if ch["gn"]:
             o.append("\n#v(1.6em, weak: true)")
             o.append(f'#heading(level: 2, numbering: none, outlined: false)[Cuối chương {idx}: mang theo bên mình]')
-            o.append(f'#listbox1("THẦY CÔ GHI NHỚ", rgb("1E293B"), softbg, {lst(ch["gn"])})')
+            o.append(f'#listbox1("THẦY CÔ GHI NHỚ{"  ·  KEEP IN MIND" if en else ""}", rgb("1E293B"), softbg, {lst(ch["gn"])}' + (f', en: {lst(en["gn"])}' if en else "") + ')')
         (OUT / f"ch{idx:02d}.typ").write_text("\n".join(o) + "\n"); names.append(f"ch{idx:02d}.typ")
 (ROOT / "chapters.typ").write_text("\n".join(f'#include "chapters/{n}"' for n in names) + "\n")
-print(f"{idx} chương, {total} tình huống"); [print("  !", w) for w in warn]
+print(f"{idx} chương, {total} tình huống, {len(en_ch)} chương có tiếng Anh"); [print("  !", w) for w in warn]

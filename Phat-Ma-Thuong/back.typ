@@ -1,7 +1,9 @@
 #import "template.typ": *
 #pagebreak(weak: true)
-#heading(level: 1, numbering: none, outlined: true)[Phụ lục: ba mươi chiêu nhanh để dán trên bàn]
+#heading(level: 1, numbering: none, outlined: true)[Phụ lục: ba mươi chiêu nhanh để dán trên bàn  ·  Appendix: thirty quick moves]
 Khi không có thời gian lật sách, thầy cô chỉ cần liếc qua bảng này. Mỗi chiêu là một cái tên, thầy cô nhớ tên sẽ nhớ cách làm.
+
+#text(size: 9.4pt, style: "italic", fill: slate)[When there is no time to flip through the book, glance at this table. Each move has a name; remember the name and you remember the method.]
 #v(0.5em)
 #let rows = (
  ("Mười phút thả ga", "Nói chuyện riêng", "Cho nói đúng ba phút rồi vào học"),
@@ -43,4 +45,6 @@ Khi không có thời gian lật sách, thầy cô chỉ cần liếc qua bảng
 #v(1.5em)
 #block(fill: softbg, stroke: (left: 3pt + teal), inset: 12pt, radius: (right: 4pt), width: 100%)[
   #text(font: serif, style: "italic")[Một hình phạt hay là hình phạt mà học sinh kể lại cho bạn nghe và còn mỉm cười, nhưng lần sau vẫn nhớ không làm. Chúc thầy cô nhiều chiêu hay, và nhiều học sinh biết ơn.]
+  #v(0.3em)
+  #text(size: 9.4pt, style: "italic", fill: slate)[A good punishment is one the student retells to friends with a smile, and still remembers not to repeat. May you find many good moves, and many grateful students.]
 ]

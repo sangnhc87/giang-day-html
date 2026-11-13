@@ -1029,68 +1029,74 @@
 // ============================================================
 // KHUNG RIÊNG CHO SÁCH THẦY CÔ: PHẠT MÀ THƯƠNG
 // ============================================================
-#let tinhhuong(n, ten, loi) = block(
+#let tinhhuong(n, ten, loi, en: none) = block(
   width: 100%, breakable: false, spacing: 0.8em, fill: softbg,
   stroke: (left: 3pt + crimson), radius: (right: 6pt), inset: (x: 12pt, y: 8pt),
 )[
-  #text(font: sans, size: 7.6pt, weight: "bold", fill: crimson, tracking: 1.2pt)[TÌNH HUỐNG #n]
+  #text(font: sans, size: 7.6pt, weight: "bold", fill: crimson, tracking: 1.2pt)[TÌNH HUỐNG #n#if en != none [  ·  SITUATION #n]]
   #v(0.1em)
   #set par(justify: true, leading: 0.64em)
   #text(font: serif, size: 0.97em, fill: ink)[#loi]
+  #ensub(en)
 ]
 
-#let chieu(ten, cach) = block(
+#let chieu(ten, cach, en: none) = block(
   width: 100%, breakable: false, fill: white,
   stroke: 1.1pt + amber, radius: 7pt, clip: true, spacing: 0.8em,
 )[
   #block(width: 100%, fill: amber, inset: (x: 14pt, y: 6pt))[
-    #text(font: sans, size: 8.2pt, weight: "bold", fill: white, tracking: 1.1pt)[CHIÊU PHẠT  ·  #upper(ten)]
+    #text(font: sans, size: 8.2pt, weight: "bold", fill: white, tracking: 1.1pt)[CHIÊU PHẠT  ·  #upper(ten)#if en != none [  ·  #upper(en.at(0))]]
   ]
   #block(width: 100%, fill: warm, inset: (x: 14pt, y: 9pt))[
     #set par(justify: false, leading: 0.64em)
     #text(font: serif, size: 1em, fill: ink)[#cach]
+    #if en != none { ensub(en.at(1)) }
   ]
 ]
 
-#let thay(t) = loi("Thầy", t, rgb("F0F7FF"), sapphire, navy)
-#let tro(t)  = loi("Trò", t, rgb("FFF5F5"), crimson, crimson)
+#let thay(t, en: none) = loi("Thầy", t, rgb("F0F7FF"), sapphire, navy, en: en)
+#let tro(t, en: none)  = loi("Trò", t, rgb("FFF5F5"), crimson, crimson, en: en)
 
-#let visao(t) = block(
+#let visao(t, en: none) = block(
   width: 100%, breakable: false, fill: rgb("EEF2FF"),
   stroke: (left: 3pt + indigo), radius: (right: 6pt), inset: (x: 13pt, y: 8pt), spacing: 0.8em,
 )[
-  #text(font: sans, size: 8pt, weight: "bold", fill: indigo, tracking: 1.1pt)[VÌ SAO CHIÊU NÀY CÓ TÁC DỤNG]
+  #text(font: sans, size: 8pt, weight: "bold", fill: indigo, tracking: 1.1pt)[VÌ SAO CHIÊU NÀY CÓ TÁC DỤNG#if en != none [  ·  WHY IT WORKS]]
   #v(0.1em)
   #set par(justify: true, leading: 0.62em)
   #text(font: serif, size: 0.95em, fill: ink)[#t]
+  #ensub(en)
 ]
 
-#let ranhgioi(t) = block(
+#let ranhgioi(t, en: none) = block(
   width: 100%, breakable: false, fill: rgb("FFF5F5"),
   stroke: 0.8pt + crimson.lighten(55%), radius: 7pt, inset: (x: 13pt, y: 8pt), spacing: 0.8em,
 )[
-  #text(font: sans, size: 7.8pt, weight: "bold", fill: crimson, tracking: 1.1pt)[RANH GIỚI: DỪNG Ở ĐÂU]
+  #text(font: sans, size: 7.8pt, weight: "bold", fill: crimson, tracking: 1.1pt)[RANH GIỚI: DỪNG Ở ĐÂU#if en != none [  ·  WHERE TO STOP]]
   #v(0.05em)
   #set par(justify: false, leading: 0.62em)
   #text(font: serif, size: 0.94em, fill: ink)[#t]
+  #ensub(en)
 ]
 
-#let bientau(t) = block(
+#let bientau(t, en: none) = block(
   width: 100%, breakable: false, fill: rgb("F0FDF4"),
   stroke: (left: 3pt + green), radius: (right: 6pt), inset: (x: 13pt, y: 8pt), spacing: 0.8em,
 )[
-  #text(font: sans, size: 8pt, weight: "bold", fill: green, tracking: 1.1pt)[BIẾN TẤU THÊM]
+  #text(font: sans, size: 8pt, weight: "bold", fill: green, tracking: 1.1pt)[BIẾN TẤU THÊM#if en != none [  ·  VARIATIONS]]
   #v(0.05em)
   #set par(justify: false, leading: 0.62em)
   #text(font: serif, size: 0.94em, fill: ink)[#t]
+  #ensub(en)
 ]
 
-#let caunoi(t) = block(
+#let caunoi(t, en: none) = block(
   width: 100%, breakable: false, fill: warm,
   stroke: 1.1pt + amber.lighten(30%), radius: 7pt, inset: (x: 14pt, y: 10pt), spacing: 0.8em,
 )[
-  #text(font: sans, size: 7.8pt, weight: "bold", fill: amber, tracking: 1.2pt)[MỘT CÂU THẦY CÔ CÓ THỂ NÓI]
+  #text(font: sans, size: 7.8pt, weight: "bold", fill: amber, tracking: 1.2pt)[MỘT CÂU THẦY CÔ CÓ THỂ NÓI#if en != none [  ·  A LINE TO KEEP READY]]
   #v(0.05em)
   #set par(justify: false, leading: 0.6em)
   #text(font: serif, size: 1.1em, weight: "bold", style: "italic", fill: navy)[“#t”]
+  #if en != none { ensub("“" + en + "”", size: 0.92em, fill: teal.darken(30%)) }
 ]

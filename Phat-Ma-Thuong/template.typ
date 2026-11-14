@@ -538,43 +538,35 @@
 #let part-colors = (rgb("0F766E"), rgb("1D4ED8"), rgb("B45309"), rgb("BE123C"), rgb("4338CA"))
 #let part-open(n, title, en, desc, chapters, idx: 1) = {
   let col = part-colors.at(calc.rem(idx - 1, part-colors.len()))
-  let dark = rgb("0A1B2E")
-  let sun = rgb("F5B841")
   accent.update(col)
-  page(margin: 0pt, header: none, footer: none, fill: gradient.linear(dark, col.darken(35%), col, angle: 55deg))[
+  page(margin: 0pt, header: none, footer: none, fill: rgb("FFFBF5"))[
     #place(top + left, { show heading: none; heading(level: 1, numbering: none, outlined: true, supplement: [Phan])[Phần #n: #title] })
-    // Trang trí
-    #place(top + right, dx: 5cm, dy: -5cm, circle(radius: 8cm, fill: white.transparentize(94%)))
-    #place(bottom + left, dx: -5cm, dy: 4cm, circle(radius: 7cm, fill: white.transparentize(93%)))
-    #place(top + left, rect(width: 9pt, height: 100%, fill: sun))
-    // Số La Mã lớn
-    #place(top + right, dx: -1.5cm, dy: 1.1cm,
-      text(font: serif, size: 250pt, weight: "bold", fill: white.transparentize(86%))[#n])
-
-    #pad(left: 2.4cm, right: 2cm, top: 5.4cm)[
-      #box(fill: sun, radius: 3pt, inset: (x: 10pt, y: 4pt),
-        text(font: sans, size: 9.5pt, weight: "bold", fill: dark, tracking: 3pt)[PHẦN #n])
-      #v(0.7cm)
-      #set par(justify: false, leading: 0.42em)
-      #block(width: 14cm, text(font: serif, size: 46pt, weight: "bold", fill: white)[#title])
-      #v(-0.1cm)
-      #text(font: serif, size: 17pt, style: "italic", fill: sun)[#en]
-      #v(0.55cm)
-      #box(width: 3cm, height: 4pt, fill: sun, radius: 2pt)
+    #place(top + left, rect(width: 100%, height: 7.5cm, fill: col.lighten(86%)))
+    #place(top + left, rect(width: 10pt, height: 100%, fill: col))
+    #place(top + right, dx: -1.6cm, dy: 0.6cm, text(font: serif, size: 200pt, weight: "bold", fill: col.lighten(62%))[#n])
+    #pad(left: 2.4cm, right: 2cm, top: 3.4cm)[
+      #box(fill: col, radius: 3pt, inset: (x: 10pt, y: 4pt),
+        text(font: sans, size: 9.5pt, weight: "bold", fill: white, tracking: 3pt)[PHẦN #n])
       #v(0.6cm)
-      #set par(leading: 0.72em)
-      #block(width: 14.2cm, text(font: serif, size: 13pt, fill: white.transparentize(8%))[#desc])
+      #set par(justify: false, leading: 0.42em)
+      #block(width: 13cm, text(font: serif, size: 40pt, weight: "bold", fill: navy)[#title])
+      #v(0.1cm)
+      #block(width: 14cm, text(font: serif, size: 15pt, style: "italic", fill: col.darken(15%))[#en])
     ]
-
-    // Danh sách chương ở chân trang
+    #pad(left: 2.4cm, right: 2cm, top: 9.2cm)[
+      #box(width: 3cm, height: 4pt, fill: col, radius: 2pt)
+      #v(0.5cm)
+      #set par(leading: 0.72em, justify: false)
+      #block(width: 14.2cm, text(font: serif, size: 13pt, fill: ink)[#desc])
+    ]
     #place(bottom + left, block(width: 100%, inset: (left: 2.4cm, right: 2cm, bottom: 2cm))[
-      #text(font: sans, size: 8pt, weight: "bold", fill: white.transparentize(30%), tracking: 2.4pt)[TRONG PHẦN NÀY]
+      #text(font: sans, size: 8pt, weight: "bold", fill: slate, tracking: 2.4pt)[TRONG PHẦN NÀY]
       #v(0.35cm)
       #for c in chapters [
-        #block(width: 100%, spacing: 0pt, stroke: (top: 0.6pt + white.transparentize(75%)), inset: (y: 8.5pt))[
+        #block(width: 100%, spacing: 0pt, stroke: (top: 0.6pt + mist), inset: (y: 8.5pt))[
           #grid(columns: (1.5cm, 1fr), align: (left + horizon, left + horizon),
-            text(font: serif, size: 22pt, weight: "bold", fill: sun)[#if c.at(0) < 10 [0]#c.at(0)],
-            { set par(justify: false, leading: 0.5em); text(font: serif, size: 13pt, fill: white)[#c.at(1)] })
+            text(font: serif, size: 22pt, weight: "bold", fill: col)[#if c.at(0) < 10 [0]#c.at(0)],
+            { set par(justify: false, leading: 0.5em); text(font: serif, size: 13pt, fill: ink)[#c.at(1)] })
         ]
       ]
     ])

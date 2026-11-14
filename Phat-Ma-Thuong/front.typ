@@ -1,21 +1,26 @@
 #import "template.typ": *
+#import "toc-data.typ": *
 
-// ---------- BÌA ----------
-#page(margin: 0pt, fill: navy, header: none, footer: none)[
-  #place(top + left, dx: 0pt, dy: 0pt, rect(width: 100%, height: 9cm, fill: rgb("162F4D")))
-  #place(top + left, dx: 2.2cm, dy: 3.2cm, text(font: sans, size: 10pt, weight: "bold", tracking: 3pt, fill: gold)[SỔ TAY THẦY CÔ  ·  A TEACHER'S HANDBOOK  ·  VIỆT – ANH])
-  #place(top + left, dx: 2.2cm, dy: 4.4cm, block(width: 15cm, text(font: serif, size: 54pt, weight: "bold", fill: white)[Phạt Mà\ Thương]))
-  #place(top + left, dx: 2.2cm, dy: 11cm, block(width: 14cm)[
-    #text(font: serif, size: 15pt, style: "italic", fill: rgb("CBD5E1"))[Những chiêu phạt vui, nhẹ, tình cảm mà vẫn có sức răn, để học sinh nhớ lỗi mà không mất mặt.]\
-  #v(0.5em)
-  #text(font: serif, size: 12pt, style: "italic", fill: rgb("94A3B8"))[Light-hearted, kind, yet deterring punishments: students remember the fault without losing face.]
+// ---------- BÌA (sáng) ----------
+#page(margin: 0pt, fill: rgb("FFF8EC"), header: none, footer: none)[
+  #place(top + left, rect(width: 100%, height: 1.3cm, fill: amber))
+  #place(top + right, dx: 3cm, dy: 3cm, circle(radius: 9cm, fill: rgb("FDE8C4")))
+  #place(bottom + left, dx: -4cm, dy: 3cm, circle(radius: 8cm, fill: rgb("E0F2EF")))
+  #place(top + left, dx: 2.2cm, dy: 3.3cm, text(font: sans, size: 10pt, weight: "bold", tracking: 3pt, fill: amber)[SỔ TAY THẦY CÔ  ·  A TEACHER'S HANDBOOK])
+  #place(top + left, dx: 2.2cm, dy: 4.6cm, block(width: 15cm, text(font: serif, size: 58pt, weight: "bold", fill: navy)[Phạt Mà\ Thương]))
+  #place(top + left, dx: 2.2cm, dy: 12cm, rect(width: 3cm, height: 5pt, fill: amber, radius: 2pt))
+  #place(top + left, dx: 2.2cm, dy: 13cm, block(width: 14cm)[
+    #text(font: serif, size: 16pt, style: "italic", fill: ink)[Những chiêu phạt vui, nhẹ, tình cảm mà vẫn có sức răn, để học sinh nhớ lỗi mà không mất mặt.]\
+    #v(0.5em)
+    #text(font: serif, size: 12.5pt, style: "italic", fill: slate)[Light-hearted, kind, yet deterring punishments: students remember the fault without losing face.]
   ])
-  #place(top + left, dx: 2.2cm, dy: 16.5cm, block(width: 14cm)[
-    #text(font: sans, size: 12pt, weight: "bold", fill: gold)[14 chương · 69 tình huống  ·  14 chapters · 69 situations]\
-    #text(font: sans, size: 10pt, fill: rgb("94A3B8"))[Mỗi tình huống: một chiêu phạt, lời thầy nói, ranh giới dừng ở đâu, biến tấu thêm.]
+  #place(top + left, dx: 2.2cm, dy: 18.2cm, block(width: 15cm)[
+    #context [#text(font: sans, size: 12pt, weight: "bold", fill: teal)[#nch chương · #nsit tình huống  ·  #nch chapters · #nsit situations]]\
+    #v(0.2em)
+    #text(font: sans, size: 9.5pt, fill: slate)[Từ lớp ồn, đi trễ, quay cóp đến crush, thư tình, đánh nhau, bắt nạt: mỗi tình huống một chiêu phạt, lời thầy nói, ranh giới dừng ở đâu, biến tấu thêm.]
   ])
-  #place(bottom + left, dx: 2.2cm, dy: -2.4cm, text(font: serif, size: 14pt, fill: white)[Nguyễn Văn Sang])
-  #place(bottom + left, dx: 2.2cm, dy: -1.7cm, text(font: sans, size: 9pt, fill: rgb("94A3B8"))[Giáo viên THPT Nguyễn Hữu Cảnh, TP.HCM])
+  #place(bottom + left, dx: 2.2cm, dy: -2.6cm, text(font: serif, size: 15pt, weight: "bold", fill: navy)[Nguyễn Văn Sang])
+  #place(bottom + left, dx: 2.2cm, dy: -1.9cm, text(font: sans, size: 9pt, fill: slate)[Giáo viên THPT Nguyễn Hữu Cảnh, TP.HCM  ·  Bản song ngữ Việt – Anh])
 ]
 
 // ---------- LỜI TỰA ----------
@@ -74,4 +79,69 @@ Each situation follows a familiar pattern: what happened, the move, a suggested 
 // ---------- MỤC LỤC ----------
 #pagebreak(weak: true)
 #heading(level: 1, numbering: none, outlined: false)[Mục lục  ·  Contents]
-#outline(title: none, depth: 1)
+#let toc-dots = box(width: 1fr, clip: true, repeat(gap: 3pt)[#text(font: sans, size: 7pt, fill: rgb("CBD5E1"))[·]])
+#context {
+  let hs = query(heading.where(level: 1).or(heading.where(level: 2))).filter(h => h.outlined)
+  let seen-part = false
+  let seen-back = false
+  let ch = 0
+  let pcount = 0
+  let i = 0
+  while i < hs.len() {
+    let h = hs.at(i)
+    if h.level == 1 and h.supplement == [Phan] {
+      seen-part = true
+      pcount += 1
+      let col = part-colors.at(calc.rem(pcount - 1, part-colors.len()))
+      v(0.5em, weak: true)
+      link(h.location(), block(width: 100%, breakable: false, above: 0.9em, below: 0.5em, sticky: true,
+        fill: col.lighten(86%), stroke: (left: 4pt + col), radius: (right: 5pt), inset: (x: 12pt, y: 7pt))[
+        #grid(columns: (1fr, auto), align: (left + horizon, right + horizon),
+          text(font: serif, size: 12.5pt, weight: "bold", fill: navy)[#h.body],
+          text(font: sans, size: 8.5pt, weight: "bold", fill: col.darken(10%))[tr. #h.location().page()])
+      ])
+      i += 1
+    } else if h.level == 1 and h.numbering != none {
+      ch += 1
+      let col = palette.at(calc.rem(ch - 1, palette.len()))
+      let j = i + 1
+      let secs = ()
+      while j < hs.len() and hs.at(j).level == 2 {
+        secs.push(hs.at(j)); j += 1
+      }
+      let ent = if ch <= en-titles.len() { en-titles.at(ch - 1) } else { "" }
+      let ens = if ch <= en-secs.len() { en-secs.at(ch - 1) } else { () }
+      block(width: 100%, breakable: false, above: 0.45em, below: 0.45em, fill: white,
+        stroke: (left: 3.5pt + col, rest: 0.6pt + mist), radius: (right: 6pt), inset: (x: 11pt, y: 6pt))[
+        #link(h.location(), grid(columns: (2em, 1fr, auto), column-gutter: 7pt, align: (center + horizon, left + horizon, right + horizon),
+          box(width: 2em, height: 2em, radius: 5pt, fill: col, align(center + horizon, text(font: sans, size: 10.5pt, weight: "bold", fill: white)[#ch])),
+          [#text(font: serif, size: 10.8pt, weight: "bold", fill: navy)[#h.body] \
+           #text(font: serif, size: 8pt, style: "italic", fill: slate)[#ent]],
+          text(font: sans, size: 8.5pt, weight: "bold", fill: col)[#h.location().page()]))
+        #v(0.15em)
+        #for (k, sh) in secs.enumerate() [
+          #link(sh.location(), grid(columns: (2.3em, auto, 1fr, auto), column-gutter: 3pt, align: (left + top, left + top, left + top, right + top),
+            text(font: sans, size: 7.4pt, weight: "bold", fill: col)[#ch.#(k + 1)],
+            [#text(font: serif, size: 9pt, fill: ink)[#sh.body]#if k < ens.len() [ #text(font: serif, size: 7.6pt, style: "italic", fill: slate)[ · #ens.at(k)]]],
+            toc-dots,
+            text(font: sans, size: 7.8pt, weight: "bold", fill: slate)[#sh.location().page()]))
+          #v(0.08em)
+        ]
+      ]
+      i = j
+    } else {
+      // đầu sách / cuối sách
+      if seen-part and not seen-back {
+        seen-back = true
+        v(0.7em)
+      }
+      link(h.location(), block(width: 100%, breakable: false, above: 0.3em, below: 0.3em,
+        fill: if seen-part { rgb("F0FDFA") } else { softbg }, stroke: (left: 3pt + if seen-part { teal } else { gold }), radius: (right: 4pt), inset: (x: 10pt, y: 5pt))[
+        #grid(columns: (auto, 1fr, auto), column-gutter: 6pt, align: (left + horizon, left + horizon, right + horizon),
+          text(font: serif, size: 10.5pt, weight: "bold", fill: navy)[#h.body], toc-dots,
+          text(font: sans, size: 8.5pt, weight: "bold", fill: if seen-part { teal } else { amber })[#h.location().page()])
+      ])
+      i += 1
+    }
+  }
+}

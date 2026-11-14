@@ -12,13 +12,19 @@ PARTS = [
  ("I", "Lớp học ồn ào", "Khi cả lớp cần lấy lại nhịp", "Nói chuyện riêng, ồn tập thể, cười không dừng được. Những chiêu giữ nhịp lớp mà không phải la.", ["01", "02"]),
  ("II", "Nề nếp hằng ngày", "Trễ, quên, ngủ gật, điện thoại", "Những lỗi nhỏ lặp lại mỗi tuần. Mỗi chiêu đều tặng em một công cụ để nhớ, để tỉnh, để tự giữ mình.", ["03", "04", "05"]),
  ("III", "Lời nói và các mối quan hệ", "Nói tục, cãi thầy, làm nhóm", "Nơi em học cách dùng lời nói, cách bất đồng, cách sống cùng nhau.", ["06", "07", "08"]),
- ("IV", "Trung thực và trách nhiệm", "Gian lận, trốn học, phá đồ, nội quy", "Những lỗi chạm đến nguyên tắc. Giữ rõ ranh giới nhưng vẫn mở cửa để em sửa.", ["09", "10", "11", "12"]),
- ("V", "Khi em đang có chuyện, và kho chiêu", "Chiêu không phạt, chiêu đổi mỗi tuần", "Đôi khi câu trả lời hay nhất là không phạt. Cuối cùng là phương pháp để chiêu không bao giờ cạn.", ["13", "14"]),
+ ("IV", "Tình cảm tuổi mới lớn", "Crush, thư tình, quà, tỏ tình, chia tay", "Thích một người không phải là lỗi. Những chiêu giữ nhịp học, giữ sự tôn trọng cho cả hai phía, và biết lúc nào phải dừng chiêu nhẹ để bảo vệ em.", ["15"]),
+ ("V", "Trung thực và trách nhiệm", "Gian lận, nói dối, trốn học, phá đồ, nội quy", "Những lỗi chạm đến nguyên tắc. Giữ rõ ranh giới nhưng vẫn mở một đường lùi an toàn để em dám nói thật và sửa.", ["09", "17", "10", "11", "12"]),
+ ("VI", "Va chạm và hành vi nguy hiểm", "Đánh nhau, bắt nạt, thuốc lá, vật cấm", "An toàn đi trước, chiêu nhẹ đi sau. Phần này luôn kèm việc báo cáo và phối hợp mà thầy cô không nên bỏ qua.", ["16"]),
+ ("VII", "Sân trường và sinh hoạt tập thể", "Chào cờ, xếp hàng, hành lang, cổng trường", "Lỗi xảy ra giữa đám đông, khó phạt trực tiếp. Dùng chiêu đổi vai và giao nhiệm vụ cao cả.", ["18"]),
+ ("VIII", "Khi em đang có chuyện, và kho chiêu", "Chiêu không phạt, chiêu đổi mỗi tuần", "Đôi khi câu trả lời hay nhất là không phạt. Cuối cùng là phương pháp để chiêu không bao giờ cạn.", ["13", "14"]),
 ]
 PARTS_EN = ["A noisy classroom: when the whole class needs its rhythm back",
  "Daily routines: lateness, forgetting, dozing, phones",
  "Words and relationships: swearing, talking back, group work",
- "Honesty and responsibility: cheating, truancy, vandalism, rules",
+ "Adolescent feelings: crushes, love notes, gifts, confessions, break-ups",
+ "Honesty and responsibility: cheating, lying, truancy, vandalism, rules",
+ "Clashes and dangerous behaviour: fighting, bullying, tobacco, prohibited items",
+ "School yard and shared activities: flag salute, queues, corridors, the gate",
  "When a student is in trouble, and the toolbox: no-punishment moves, rotating moves"]
 q = lambda s: '"' + s.strip().replace("\\", "\\\\").replace('"', '\\"') + '"'
 def lst(xs): return "(" + ", ".join(q(x) for x in xs) + ",)"
@@ -96,3 +102,10 @@ for pn, (rm, pt, ps, pd, codes) in enumerate(PARTS):
         (OUT / f"ch{idx:02d}.typ").write_text("\n".join(o) + "\n"); names.append(f"ch{idx:02d}.typ")
 (ROOT / "chapters.typ").write_text("\n".join(f'#include "chapters/{n}"' for n in names) + "\n")
 print(f"{idx} chương, {total} tình huống, {len(en_ch)} chương có tiếng Anh"); [print("  !", w) for w in warn]
+en_titles = []; en_secs = []; vi_sec_count = []
+order = [c for (_,_,_,_,codes) in PARTS for c in codes if c in chapters]
+for c in order:
+    e = en_ch.get(c)
+    en_titles.append(e["title"] if e else "")
+    en_secs.append([s["t"] for s in e["secs"]] if e else [])
+(ROOT / "toc-data.typ").write_text(f"#let nch = {idx}\n#let nsit = {total}\n#let en-titles = {lst(en_titles)}\n#let en-secs = ({', '.join(lst(x) for x in en_secs)},)\n")

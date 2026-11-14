@@ -1,6 +1,6 @@
 #import "template.typ": *
 #pagebreak(weak: true)
-#heading(level: 1, numbering: none, outlined: true)[Phụ lục: ba mươi chiêu nhanh để dán trên bàn  ·  Appendix: thirty quick moves]
+#heading(level: 1, numbering: none, outlined: true)[Phụ lục: bốn mươi ba chiêu nhanh để dán trên bàn  ·  Appendix: forty-three quick moves]
 Khi không có thời gian lật sách, thầy cô chỉ cần liếc qua bảng này. Mỗi chiêu là một cái tên, thầy cô nhớ tên sẽ nhớ cách làm.
 
 #text(size: 9.4pt, style: "italic", fill: slate)[When there is no time to flip through the book, glance at this table. Each move has a name; remember the name and you remember the method.]
@@ -36,6 +36,18 @@ Khi không có thời gian lật sách, thầy cô chỉ cần liếc qua bảng
  ("Họa sĩ trả bàn", "Vẽ bậy lên bàn", "Lau bàn, cho một nơi vẽ hợp lệ"),
  ("Bảo mẫu của cây", "Khắc tên lên cây", "Chăm cây một tháng"),
  ("Phiếu miễn phạt", "Em đang không ổn", "Dùng phiếu, thầy không nhắc bài"),
+ ("Chuyện thầy ngày xưa", "Em có crush", "Kể chuyện vui, bình thường hóa, giữ chuẩn học"),
+ ("Thầy giữ thư, trả kín", "Chuyền thư tình", "Giữ giúp, không đọc, trả riêng cuối tiết"),
+ ("Luật ba món", "Tặng quà, đồ ăn", "Quà nhỏ, ngoài giờ, bạn đồng ý, bị từ chối thì dừng"),
+ ("Ba câu tôn trọng", "Tỏ tình trước lớp", "Tôn trọng người nói và người từ chối"),
+ ("Khoảng cách một cuốn từ điển", "Thân mật quá mức", "Đặt cuốn từ điển giữa bàn, nói riêng"),
+ ("Hai bản tường thuật", "Đánh nhau", "Tách, sơ cứu, mỗi em viết lại rồi đổi đọc"),
+ ("Hộp gửi an toàn", "Mang vật cấm", "Bình tĩnh, bỏ vào hộp, hỏi vì sao mang"),
+ ("Hai cơ hội nói lại", "Nói dối", "Cho đường lùi, nói lại thì không phạt thêm"),
+ ("Cửa trả lại không ai thấy", "Lấy đồ của bạn", "Hộp trả lại, không hỏi tên"),
+ ("Thẻ ra ngoài", "Xin ra liên tục", "Ba thẻ mỗi tuần, hết thẻ thì xin"),
+ ("Bước chân ngàn vàng", "Chạy trên hành lang", "Đi như bưng cốc nước đầy"),
+ ("Người cuối hàng danh dự", "Chen hàng", "Đứng cuối, nhường các bạn nhỏ"),
 )
 #table(
   columns: (auto, 1.2fr, 2fr), inset: 6pt, stroke: 0.4pt + mist, fill: (x, y) => if y == 0 { navy } else if calc.odd(y) { softbg } else { white },
